@@ -1,0 +1,15 @@
+{
+  "stage_count": 9,
+  "case_count": 60,
+  "company_contexts_tested": 3,
+  "keyboard_stage_selection": "passed",
+  "search_matching_cases": 6,
+  "empty_search": "passed",
+  "dimension_filter_expected_5": "passed",
+  "case_expansion": "passed",
+  "desktop_overflow": false,
+  "mobile_overflow": false,
+  "javascript_errors": [],
+  "pdf_rendered": true,
+  "limits": "Interaction smoke tests and document export, not validated causal recommendation engine or accessibility audit."
+}

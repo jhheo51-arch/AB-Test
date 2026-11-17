@@ -9,7 +9,9 @@ e-book/
   virtual-company/   # JH Motors 기업·여정·운영 가정
   virtual-data/      # 데이터 사전, v01 기본 DB, v02 실습 시나리오
   planning/          # 제작 방향·진행 체크리스트
-  manuscript/        # 원고 (집필 전)
+  manuscript/        # 시작 원고 v0.1 (전체 집필 미완료)
+  workflow/          # 진단 명세·60개 카드
+  exports/           # 시각화 HTML·SVG·시작 원고 PDF
   workbook/          # 독자 양식 (제작 전)
   design/cover/      # 표지 (제작 전)
   references/        # 참고문헌·권리 기록 (정리 전)
@@ -34,7 +36,16 @@ python scripts/prepare_scenarios_v02.py
 기존 출력이 있으면 덮어쓰지 않습니다. 완전 재생성은 출력 폴더를 백업한 별도 작업 사본에서 수행하세요. 생성용 하위 스크립트의 출력 위치는 `OEM_OUTPUT_ROOT`로 제어할 수 있습니다. 저장소 루트의 scripts가 기준이며, 시나리오 안의 scripts는 생성 당시 보조 사본입니다.
 
 ## 현재 상태
-데이터 생성·구조·CSV·직접 SQL 집계 대조 완료. 전체 원고·표지·PDF·독자 검토·출간 검수는 미완료.
+데이터 구조 검사와 클릭 가능한 워크플로우 구현, 23쪽 시작 원고 PDF 출력 완료. 전체 원고·최종 표지·통계 독립 검증·독자 검토·출간 검수는 미완료.
+
+## 읽기·시각화
+- `e-book/exports/workflow_explorer_v01.html`: G0~G8 단계 선택, 60개 카드 검색·필터, JH Motors/현대자동차/기아 맥락 설명.
+- `e-book/exports/reading_draft_v01.pdf`: 프롤로그·본문 6장·워크북 질문·60개 진단 카드의 시작 원고.
+- `e-book/exports/reading_draft_v01.html`: 웹 읽기본. PDF 도식은 인쇄 크기 확대, 일부 페이지의 여백은 후속 조정 필요.
+- `scripts/build_reading_artifacts.py`: Markdown 패키지 필요. HTML·SVG 생성.
+- `scripts/render_and_test_artifacts.py`: Playwright와 설치된 Chromium 필요. 상호작용 검사·PDF 출력.
+- `scripts/verify_reader_pdf.py`: PyMuPDF·Pillow 필요. PDF 텍스트·페이지 경계·연락 시트 검사.
+데이터 생성 코드는 표준 라이브러리만 사용하지만 읽기용 아티팩트 빌드는 별도 의존성이 있습니다.
 계획 문서에 남은 과거 로컬 경로보다 이 README의 폴더 구조를 우선합니다. 과거 체크 표시는 당시 범위의 결과이며 새 검증 완료를 뜻하지 않습니다.
 
 ## 권리·공개

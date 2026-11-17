@@ -1,0 +1,76 @@
+"""Build a self-contained workflow explorer and a reader draft."""
+import csv
+import html
+import json
+from datetime import datetime
+from pathlib import Path
+from zoneinfo import ZoneInfo
+import markdown
+
+ROOT=Path(__file__).resolve().parents[1]
+OUT=ROOT/'e-book/exports'
+OUT.mkdir(parents=True,exist_ok=True)
+with (ROOT/'e-book/workflow/case_catalog_v01.csv').open(encoding='utf-8-sig',newline='') as f:
+    cases=list(csv.DictReader(f))
+assert len(cases)==len({c['case_id'] for c in cases})
+stages=[
+('G0','질문·안전','허용되는 질문인가?','대상과 개입을 정의하고 동의·개인정보·안전·차별 위험을 확인합니다.','연락 자격·동의 원장·실험 목표','필수 안전 정보 미제공 실험은 제외. 위법·안전 위험은 성과로 상쇄하지 않습니다.'),
+('G1','비교·실행','효과를 식별할 수 있는가?','처치·대조, 배정·분석 단위, 가구·딜러·자원 간섭과 실제 실행 권한을 확인합니다.','배정 정책·확률·단위·실행 로그','배정 불가·밴딧·군집은 해당 설계의 분석 경로가 필요합니다.'),
+('G2','데이터 품질','무엇이 관측됐는가?','SRM·누락·중복·ID 연결·분모·프로토콜 이탈을 점검합니다.','배정 원본·이벤트 원장·거래 대조','오류가 영향을 미치는 추정 대상만 특정합니다. 모르면 그 결론을 보류합니다.'),
+('G3','기간·정보','판단할 만큼 성숙했는가?','개인별 추적 창·사건 수·사전 표본 계획·종료 규칙을 확인합니다.','관측 종료·코호트·검정력 계획','비유의성을 동등성으로 해석하지 않고 임의로 유의할 때까지 연장하지 않습니다.'),
+('G4','효과·불확실성','어느 크기의 차이인가?','절대·상대 효과와 구간, 다중 비교·중간 조회·희귀 사건·군집 가정을 확인합니다.','주지표·효과 구간·비교 가족','점추정 부호만으로 사업적 개선·악화를 확정하지 않습니다.'),
+('G5','상충 패턴','어디서 엇갈리는가?','관심→행동→가치와 관계·운영 지표를 연결해 경쟁 설명을 만듭니다.','지표 계약·퍼널·진단 카드','관측 패턴은 원인의 증명이 아닙니다. 원인 후보를 구별할 증거가 필요합니다.'),
+('G6','집단·전이','누구에게도 같은가?','사전 집단과 탐색을 구분하고 시간·지점·차종·규모의 적용 범위를 평가합니다.','사전 분석 계획·상호작용·탐색 이력','한 집단 유의·다른 집단 비유의는 집단 차이 증명이 아닙니다.'),
+('G7','가치·제약','사업과 관계에 유효한가?','증분 이익·비용·수용량·잠식·지연·장기 전망 가정을 분리합니다.','비용 원장·재고·대기·관계 가드레일','시승을 확정 매출로 환산하지 않습니다. 예측 LTV는 관측과 분리합니다.'),
+('G8','승인·재평가','어떤 조건에서 행동할까?','실행·제한 확대·중단·재설계·보류와 승인·감시·롤백 조건을 기록합니다.','결정 기록·책임자·재개 조건','자동 출시 엔진이 아닙니다. 최종 결정과 잔여 위험은 사람이 확인합니다.')]
+# Serpentine: nine stages, explicit stop/review branch, feedback loop.
+pos=[(20,20),(250,20),(480,20),(480,170),(250,170),(20,170),(20,320),(250,320),(480,320)]
+svg=['<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 550" role="img" aria-label="G0부터 G8까지의 CRM 판단 흐름과 보류·재설계 분기"><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#526168"/></marker></defs><g fill="none" stroke="#526168" stroke-width="2" marker-end="url(#arrow)">']
+for i in range(8):
+    x,y=pos[i]; xx,yy=pos[i+1]
+    if y==yy:
+        a=x+200 if xx>x else x;b=xx if xx>x else xx+200
+        svg.append(f'<path d="M{a},{y+44} L{b},{yy+44}"/>')
+    else: svg.append(f'<path d="M{x+100},{y+88} L{xx+100},{yy}"/>')
+svg.append('<path d="M580,408 L580,464"/><path d="M250,494 L120,494 L120,420" stroke-dasharray="5 5"/></g>')
+for i,((code,title,question,body,evidence,stop),(x,y)) in enumerate(zip(stages,pos)):
+    svg.append(f'<g class="node" data-step="{i}" tabindex="0" role="button" aria-label="{code} {title}" aria-pressed="false"><rect x="{x}" y="{y}" width="200" height="88" rx="3" fill="#FFFFFF" stroke="#125E59" stroke-width="1.5"/><text x="{x+14}" y="{y+23}" font-size="12" fill="#125E59" font-family="Malgun Gothic,sans-serif">{code}</text><text x="{x+14}" y="{y+48}" font-size="18" font-weight="700" fill="#162B33" font-family="Malgun Gothic,sans-serif">{title}</text><text x="{x+14}" y="{y+70}" font-size="11" fill="#526168" font-family="Malgun Gothic,sans-serif">{question}</text></g>')
+svg.append('<rect x="250" y="464" width="430" height="60" rx="3" fill="#F6F4EF" stroke="#526168" stroke-dasharray="5 4"/><text x="270" y="489" font-size="16" fill="#162B33" font-family="Malgun Gothic,sans-serif">미해결 문제 → 보류·재설계</text><text x="270" y="511" font-size="12" fill="#526168" font-family="Malgun Gothic,sans-serif">각 단계에서 진입 가능 · 근거가 생기면 해당 단계 재검토</text></svg>')
+svg=''.join(svg)
+(OUT/'workflow_v01.svg').write_text(svg,encoding='utf-8')
+css='''*{box-sizing:border-box}body{margin:0;color:#162B33;background:#F6F4EF;font-family:"Malgun Gothic","Apple SD Gothic Neo",sans-serif;font-size:16px;line-height:1.75}a{color:#125E59}button,input,select{font:inherit;color:inherit}button,select,input{min-height:44px}button{background:white;border:1px solid #526168;padding:8px 14px;cursor:pointer}button:hover,button[aria-pressed=true]{background:#125E59;color:white}button:focus-visible,input:focus-visible,select:focus-visible,.node:focus-visible{outline:3px solid #125E59;outline-offset:3px}.page{max-width:1440px;padding:36px 40px;margin:auto}.eyebrow{font-size:12px;letter-spacing:.13em;color:#125E59;font-weight:700}h1{font-size:clamp(28px,4vw,48px);line-height:1.25;letter-spacing:-.04em;margin:12px 0 18px}h2{font-size:24px;line-height:1.4}h3{line-height:1.5}.muted{color:#526168}.intro{max-width:860px}.toolbar{display:flex;flex-wrap:wrap;gap:8px;margin:24px 0}.context{border-top:1px solid #526168;padding:14px 0;min-height:95px}.map-layout{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(280px,1fr);gap:28px;align-items:start}.map{background:white;padding:16px;border:1px solid #c6cecc}.map svg{width:100%;display:block}.node{cursor:pointer}.node:hover rect,.node[aria-pressed=true] rect{fill:#F6F4EF;stroke-width:3}.detail{background:white;padding:24px;border:1px solid #c6cecc;min-height:430px}.detail dt{font-weight:bold;margin-top:18px}.detail dd{margin:6px 0}.steps{display:flex;gap:8px;flex-wrap:wrap}.steps button{min-width:48px}.case-header{display:flex;gap:16px;align-items:end;justify-content:space-between;margin-top:40px;border-top:2px solid #162B33;padding-top:16px}.filters{display:flex;gap:12px;flex-wrap:wrap}.filters input{min-width:240px;padding:8px}.filters select{max-width:100%;padding:8px}.case-list{margin-top:20px}.case{border-top:1px solid #c6cecc;padding:14px 0}.case summary{cursor:pointer;min-height:44px;font-weight:700}.case .tag{font-weight:400;font-size:12px;color:#526168;margin-right:12px}.case p{margin:10px 0}.count{white-space:nowrap}.note{font-size:14px;color:#526168}footer{margin-top:40px;border-top:1px solid #526168;padding-top:20px}.book{max-width:880px;margin:auto;background:white;padding:64px 72px}.book h1{font-size:32px;margin-top:56px}.book h2{font-size:23px;margin-top:32px}.book p{text-align:justify;word-break:keep-all;overflow-wrap:anywhere}.book table{width:100%;border-collapse:collapse;font-size:14px}.book th,.book td{padding:10px 8px;border-bottom:1px solid #c6cecc;text-align:left}.cover{min-height:850px;display:flex;flex-direction:column;justify-content:space-between;border-top:8px solid #125E59;padding-top:30px}.cover h1{font-size:54px;line-height:1.25}.cover .author{font-size:24px}.book .toc{background:#F6F4EF;padding:24px}.book svg{width:100%;height:auto}.book section.case-print{break-inside:avoid;border-top:1px solid #c6cecc;padding:12px 0}.book section.case-print h3{margin:0 0 8px;font-size:17px}.book section.case-print p{margin:5px 0;font-size:14px}.print-button{position:fixed;right:20px;bottom:20px}@media(max-width:850px){.page{padding:24px 18px}.map-layout{grid-template-columns:1fr}.detail{min-height:0}.book{padding:28px 22px}.cover{min-height:650px}.cover h1{font-size:40px}.case-header{display:block}.filters input{min-width:0;width:100%}}@media print{@page{size:A4;margin:18mm 17mm 20mm}body{background:white;font-size:12pt}.book{padding:0;max-width:none;line-height:1.5}.book h2{margin-top:20px;margin-bottom:10px}.book section.case-print{padding:9px 0}.book h1{break-before:page;font-size:25pt;margin-top:0}.book h2{font-size:17pt;break-after:avoid}.book h3{break-after:avoid}.book p{orphans:3;widows:3}.cover{height:245mm;min-height:0;break-after:page}.cover h1{break-before:auto;font-size:35pt}.book section.case-print p{font-size:12pt}.book table{font-size:12pt}.book tr{break-inside:avoid}.book .toc{break-after:page}.no-print,.print-button{display:none}a{color:#162B33;text-decoration:none}pre{white-space:pre-wrap}}'''
+companies={
+'jh':'합성 실습 · JH Motors: 고객 단위 SMS 안내 A/B, 배정 후 28일 시승 완료. 실제 기업·매출 자료 아님. 기본·무효과·배정 오류·누락 데이터가 있습니다.',
+'hyundai':'공개 사실 · 현대자동차: 공식 모델별 판매 XLSX 확인. 집계 판매이며 내부 CRM 실험 로그는 아닙니다. 제안: 시승 예약→완료 여정의 편의 안내 실험. 실제 병목·성과는 미확인입니다.',
+'kia':'공개 사실 · 기아: 공식 월별 판매 자료 목록 확인. 개별 파일 내부·고객별 CRM 데이터는 미검증입니다. 제안: 관심 모델·이용 목적 안내의 다음 유효 행동 효과 검증. 실제 효과는 미확인입니다.'}
+app='''<!doctype html><html lang="ko"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>TRI-V · CRM 진단 워크플로우 | 허재혁</title><style>CSS</style><body><main class="page"><div class="eyebrow">JH / CRM EXPERIMENT PLAYBOOK — VISUAL DRAFT 0.1</div><header class="intro"><h1>좋아 보이는 숫자에서,<br>설명 가능한 결정으로.</h1><p>단계를 눌러 판단 기준을 확인하고, 상황에 맞는 진단 카드를 찾으세요. 이 화면은 학습·설계 도구이며 검증된 자동 의사결정 엔진이 아닙니다.</p></header><div class="toolbar" aria-label="기업 맥락"><button data-company="jh" aria-pressed="true">JH Motors · 합성 실습</button><button data-company="hyundai" aria-pressed="false">현대자동차 · 제안</button><button data-company="kia" aria-pressed="false">기아 · 제안</button><button onclick="window.print()">인쇄</button></div><p id="context" class="context" aria-live="polite"></p><div class="map-layout"><div class="map">SVG</div><section class="detail" id="detail" aria-live="polite"></section></div><p class="note">화살표는 점검 순서입니다. 각 단계에서 보류·재설계할 수 있으며, 회사 조건에 따라 이전 단계로 돌아갑니다. SVG 노드는 Tab·Enter·Space로도 선택할 수 있습니다.</p><div class="case-header"><div><span class="eyebrow">CASE LIBRARY</span><h2>상황별 진단 카드</h2></div><p class="count" id="count" aria-live="polite"></p></div><div class="filters"><label>검색 <input id="search" type="search" placeholder="예: 매출, 슬롯, 동의, 클릭"></label><label>범주 <select id="dimension"><option value="">전체 범주</option></select></label><button id="reset">필터 초기화</button></div><div id="cases" class="case-list"></div><footer><p>허재혁 · TRI-V 저자 제안 · 모든 카드의 원인 설명은 검증 전 가설입니다. 합성 시뮬레이션과 카드의 전수 매핑은 미완료입니다.</p><a href="reading_draft_v01.html">전자책 시작 원고 읽기 →</a></footer></main><script>
+const stages=STAGES,cases=CASES,companies=COMPANIES;
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function selectStep(i){const s=stages[i];document.querySelectorAll('.node').forEach(n=>n.setAttribute('aria-pressed',String(Number(n.dataset.step)===i)));document.getElementById('detail').innerHTML=`<span class="eyebrow">${esc(s[0])} / JUDGMENT GATE</span><h2>${esc(s[1])}</h2><p>${esc(s[3])}</p><dl><dt>필요한 근거</dt><dd>${esc(s[4])}</dd><dt>멈추거나 별도 검토할 조건</dt><dd>${esc(s[5])}</dd></dl><p class="note">이 단계 선택은 검사 통과를 의미하지 않습니다.</p>`;}
+document.querySelectorAll('.node').forEach(n=>{n.addEventListener('click',()=>selectStep(+n.dataset.step));n.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();selectStep(+n.dataset.step)}})});
+function company(key){document.getElementById('context').textContent=companies[key];document.querySelectorAll('[data-company]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.company===key)))}
+document.querySelectorAll('[data-company]').forEach(b=>b.onclick=()=>company(b.dataset.company));
+const dim=document.getElementById('dimension'),search=document.getElementById('search');[...new Set(cases.map(c=>c.dimension))].forEach(d=>{const o=document.createElement('option');o.value=d;o.textContent=d;dim.append(o)});
+function render(){let q=search.value.trim().toLowerCase(),d=dim.value;const selected=cases.filter(c=>(!d||c.dimension===d)&&(!q||Object.values(c).join(' ').toLowerCase().includes(q)));document.getElementById('count').textContent=`${selected.length} / ${cases.length}개`;document.getElementById('cases').innerHTML=selected.length?selected.map(c=>`<details class="case"><summary><span class="tag">${esc(c.case_id)} · ${esc(c.dimension)}</span>${esc(c.observation)}</summary><p><b>가능한 설명</b> · ${esc(c.competing_explanations)}</p><p><b>필요한 증거</b> · ${esc(c.required_evidence)}</p><p><b>다음 단계</b> · ${esc(c.next_step)}</p><p class="note">검토용 가설 · 원인 확정 아님 · 자동 출시 권고 아님</p></details>`).join(''):'<p role="status">일치하는 카드가 없습니다. 다른 검색어나 전체 범주로 확인하세요.</p>';}
+search.oninput=render;dim.onchange=render;document.getElementById('reset').onclick=()=>{search.value='';dim.value='';render()};company('jh');selectStep(0);render();
+</script></body></html>'''
+app=app.replace('CSS',css).replace('SVG',svg,1).replace('STAGES',json.dumps(stages,ensure_ascii=False)).replace('CASES',json.dumps(cases,ensure_ascii=False)).replace('COMPANIES',json.dumps(companies,ensure_ascii=False))
+(OUT/'workflow_explorer_v01.html').write_text(app,encoding='utf-8')
+report=json.loads((ROOT/'e-book/virtual-data/v01/data/validation.json').read_text(encoding='utf-8'))
+a,b=report['experiment_summary']
+table='| 항목 | A | B |\n|---|---:|---:|\n'
+for label,key in [('배정 고객','assigned'),('예약','booked'),('시승 완료','completed'),('수신 거부','opted_out')]:table+=f'| {label} | {a[key]:,} | {b[key]:,} |\n'
+table+=f"| 배정 고객당 시승 완료율 | {a['completed']/a['assigned']:.2%} | {b['completed']/b['assigned']:.2%} |\n"
+text=(ROOT/'e-book/manuscript/reading_draft_v01.md').read_text(encoding='utf-8').replace('{{BASELINE_TABLE}}',table)
+(OUT/'reading_draft_v01.md').write_text(text,encoding='utf-8')
+body=markdown.markdown(text[text.index('# 프롤로그'):],extensions=['tables','toc','fenced_code'])
+appendix=['<h1>부록 · 상황별 진단 카드 초안</h1><p>모든 CRM 상황을 완전히 열거한 목록이 아닙니다. 경쟁 설명과 필요한 증거를 찾는 시작점이며, 각 카드의 실증·시뮬레이션 검증은 미완료입니다.</p>']
+for c in cases:
+    appendix.append('<section class="case-print"><h3>'+html.escape(c['case_id']+' · '+c['observation'])+'</h3><p><b>가능한 설명:</b> '+html.escape(c['competing_explanations'])+'</p><p><b>필요한 증거:</b> '+html.escape(c['required_evidence'])+'</p><p><b>다음 단계:</b> '+html.escape(c['next_step'])+'</p></section>')
+cover='<section class="cover"><div class="eyebrow">CRM EXPERIMENT PLAYBOOK / READER DRAFT 0.1</div><div><h1>그래서,<br>이 캠페인<br>계속할까요?</h1><h2>자동차 고객 여정으로 배우는<br>CRM A/B 테스트와 의사결정</h2></div><div><p class="author">허재혁</p><p class="muted">현대자동차·기아 적용 설계 제안<br>JH Motors 합성 실습 · TRI-V 진단 카드</p><p class="note">작업 제목 · 시작 원고 · 출간 전 검토본</p></div></section>'
+toc='<section class="toc"><h2>이 시작 원고의 구성</h2><p>프롤로그 / 고객 상태 / 비교의 정의 / 데이터 품질 / TRI-V / JH Motors 실습 / 현대차·기아 적용 경계 / 워크북 / 진단 카드</p><p>표본·검정력과 독립 추론 검증, 추가 시뮬레이션, 기업별 근거 장부, 권리·외부 검토는 후속 집필 범위입니다.</p></section>'
+book='<!doctype html><html lang="ko"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>그래서, 이 캠페인 계속할까요? | 허재혁 · 시작 원고</title><style>'+css+'</style><body><main class="book">'+cover+toc+body+'<h1>도식 · 기업 적응형 진단 워크플로우</h1><p>G0~G8은 질문에서 재평가까지의 점검 순서다. 각 단계에서 보류·재설계할 수 있다. 인과·측정·가치에 대한 사람의 검토를 대신하지 않는다.</p>'+svg+''.join(appendix)+'</main><button class="print-button" onclick="window.print()">인쇄 / PDF</button></body></html>'
+(OUT/'reading_draft_v01.html').write_text(book,encoding='utf-8')
+metadata={'author':'허재혁','target_companies':['현대자동차','기아'],'draft_status':'reader starting draft; not publication ready','case_count':len(cases),'stage_count':len(stages),'built_at_seoul':datetime.now(ZoneInfo('Asia/Seoul')).isoformat(),'design_proposal':{'ink':'#162B33','muted':'#526168','accent':'#125E59','paper':'#F6F4EF'},'contrast_normal_minimum':5.85,'font':'Malgun Gothic for Korean, installed local font; distribution rights not cleared'}
+(OUT/'build_manifest.json').write_text(json.dumps(metadata,ensure_ascii=False,indent=2),encoding='utf-8')
+print(json.dumps({'output':str(OUT),'case_count':len(cases),'stage_count':len(stages),'compiled_manuscript_characters':len(text)},ensure_ascii=False,indent=2))
