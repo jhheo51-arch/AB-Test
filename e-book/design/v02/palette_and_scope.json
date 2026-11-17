@@ -1,0 +1,18 @@
+{
+  "palette_proposal": [
+    "#162B33",
+    "#526168",
+    "#125E59",
+    "#8B431D",
+    "#F6F4EF",
+    "#FFFFFF"
+  ],
+  "contrast_minimum": 5.85,
+  "font": "Local Malgun Gothic; final distribution rights pending",
+  "status": "author review, not publication-approved",
+  "author": "허재혁",
+  "built_at_seoul": "2026-11-17T11:37:47.330418+09:00",
+  "case_count": 60,
+  "verified_metrics": 3,
+  "compiled_manuscript_characters": 18632
+}

@@ -1,0 +1,81 @@
+{
+  "dataset": "JH Motors synthetic v01",
+  "analysis_status": "Retrospective educational analysis, not a preregistered field experiment. Independence and binary outcomes assumed; no optional stopping correction.",
+  "methods": "Two-sided pooled two-proportion z test; 95% Newcombe difference interval from Wilson score limits; individual metric intervals are not simultaneous.",
+  "metrics": [
+    {
+      "metric": "completed",
+      "role": "primary",
+      "n_A": 3269,
+      "events_A": 298,
+      "n_B": 3286,
+      "events_B": 332,
+      "rate_A": 0.09115937595594983,
+      "rate_B": 0.101034692635423,
+      "diff_B_minus_A": 0.009875316679473167,
+      "diff_pp": 0.9875316679473167,
+      "relative_lift": 0.10833023565502611,
+      "ci95_low_pp": -0.44097919352030884,
+      "ci95_high_pp": 2.416949290947308,
+      "p_two_sided_pooled_z": 0.17499538689720853,
+      "independent_check": "statsmodels z and Newcombe CI matched; raw-event SQL matched",
+      "multiplicity": "Unadjusted per-metric results; diagnostic and guardrail tests do not establish a multi-metric winner."
+    },
+    {
+      "metric": "booked",
+      "role": "diagnostic",
+      "n_A": 3269,
+      "events_A": 373,
+      "n_B": 3286,
+      "events_B": 456,
+      "rate_A": 0.11410217191801775,
+      "rate_B": 0.13877054169202677,
+      "diff_B_minus_A": 0.02466836977400902,
+      "diff_pp": 2.466836977400902,
+      "relative_lift": 0.21619544448052408,
+      "ci95_low_pp": 0.8579017603161803,
+      "ci95_high_pp": 4.076369517120361,
+      "p_two_sided_pooled_z": 0.002660607619875726,
+      "independent_check": "statsmodels z and Newcombe CI matched; raw-event SQL matched",
+      "multiplicity": "Unadjusted per-metric results; diagnostic and guardrail tests do not establish a multi-metric winner."
+    },
+    {
+      "metric": "opted_out",
+      "role": "guardrail",
+      "n_A": 3269,
+      "events_A": 27,
+      "n_B": 3286,
+      "events_B": 41,
+      "rate_A": 0.008259406546344448,
+      "rate_B": 0.012477175897748022,
+      "diff_B_minus_A": 0.004217769351403574,
+      "diff_pp": 0.4217769351403574,
+      "relative_lift": 0.5106625188791958,
+      "ci95_low_pp": -0.07410638558918142,
+      "ci95_high_pp": 0.9320938183357309,
+      "p_two_sided_pooled_z": 0.09196304450453592,
+      "independent_check": "statsmodels z and Newcombe CI matched; raw-event SQL matched",
+      "multiplicity": "Unadjusted per-metric results; diagnostic and guardrail tests do not establish a multi-metric winner."
+    }
+  ],
+  "planning_example": {
+    "baseline_rate": 0.09,
+    "target_rate": 0.11,
+    "alpha_two_sided": 0.05,
+    "power": 0.8,
+    "approx_n_per_arm": 3531,
+    "status": "Separate approximate future-planning example, not the design that produced existing data; assumes independent individual equal allocation, no loss and fixed single primary comparison."
+  },
+  "limits": [
+    "No observed vehicle revenue, margin, contract or LTV outcomes.",
+    "No guardrail non-inferiority margin defined; nonsignificance cannot establish safety.",
+    "No sequential, cluster or multiple comparison correction implemented for this sample.",
+    "These checks verify implementation and aggregation, not real OEM effectiveness."
+  ],
+  "runtime": {
+    "python": "3.12.16",
+    "scipy": "1.18.1",
+    "statsmodels": "0.15.0",
+    "numpy": "2.5.5"
+  }
+}

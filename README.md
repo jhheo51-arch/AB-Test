@@ -36,9 +36,17 @@ python scripts/prepare_scenarios_v02.py
 기존 출력이 있으면 덮어쓰지 않습니다. 완전 재생성은 출력 폴더를 백업한 별도 작업 사본에서 수행하세요. 생성용 하위 스크립트의 출력 위치는 `OEM_OUTPUT_ROOT`로 제어할 수 있습니다. 저장소 루트의 scripts가 기준이며, 시나리오 안의 scripts는 생성 당시 보조 사본입니다.
 
 ## 현재 상태
-데이터 구조 검사와 클릭 가능한 워크플로우 구현, 23쪽 시작 원고 PDF 출력 완료. 전체 원고·최종 표지·통계 독립 검증·독자 검토·출간 검수는 미완료.
+최신 v0.2는 76쪽 저자 검토본, 60개 시각 진단 카드, 독립 라이브러리로 대조한 비율 분석과 워크북을 포함합니다. 최종 저자 승인·외부 통계/OEM 검토·실독자 테스트·권리·출간 검수는 미완료입니다.
 
-## 읽기·시각화
+## 최신 저자 검토본 v0.2
+- `e-book/exports/v02/ebook_review_v02.pdf`: 본문·도식 16쪽 + 독립 참조 카드 60쪽, 총 76쪽.
+- `e-book/exports/v02/diagnostic_atlas_v02.html`: 60개 반론·증거 카드, 실제 계산·판단 흐름 탭.
+- `e-book/workbook/workbook_v02.md`: 실험 계약·증거 장부·한 장 보고서 양식과 합성 답안.
+- `e-book/manuscript/author_story_v02.md`: 제공된 경력에 기초한 저자 서사, 최종 저자 확인 전.
+- `e-book/analysis/v02/verified_analysis.json`: 비율 검정·Newcombe 구간·별도 표본 계획 예. 자체 수식과 statsmodels 및 원본 SQL 대조.
+- 검증 한계·권리·외부 검토 상태는 `e-book/design/v02/REVIEW.md` 참고. 기존 v0.1은 보존.
+
+## 이전 읽기·시각화 v0.1
 - `e-book/exports/workflow_explorer_v01.html`: G0~G8 단계 선택, 60개 카드 검색·필터, JH Motors/현대자동차/기아 맥락 설명.
 - `e-book/exports/reading_draft_v01.pdf`: 프롤로그·본문 6장·워크북 질문·60개 진단 카드의 시작 원고.
 - `e-book/exports/reading_draft_v01.html`: 웹 읽기본. PDF 도식은 인쇄 크기 확대, 일부 페이지의 여백은 후속 조정 필요.
