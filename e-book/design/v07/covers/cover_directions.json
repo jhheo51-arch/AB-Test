@@ -1,0 +1,19 @@
+{
+  "recommended": "A",
+  "approval": "pending",
+  "directions": [
+    {
+      "key": "A",
+      "label": "편집형 / 비교에서 결정으로"
+    },
+    {
+      "key": "B",
+      "label": "논지형 / 세 관점의 연결"
+    },
+    {
+      "key": "C",
+      "label": "실무형 / 숫자와 다음 행동"
+    }
+  ],
+  "note": "Conceptual cover motifs, not empirical data. Original composition, not a publisher cover recreation."
+}

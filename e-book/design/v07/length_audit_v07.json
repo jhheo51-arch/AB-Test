@@ -1,0 +1,26 @@
+[
+  {
+    "version": "v02",
+    "pages": 76,
+    "characters": 18632,
+    "nonspace": 14088
+  },
+  {
+    "version": "v04",
+    "pages": 54,
+    "characters": 51290,
+    "nonspace": 39138
+  },
+  {
+    "version": "v05",
+    "pages": 29,
+    "characters": 33692,
+    "nonspace": 25616
+  },
+  {
+    "version": "v06",
+    "pages": 50,
+    "characters": 60795,
+    "nonspace": 46341
+  }
+]

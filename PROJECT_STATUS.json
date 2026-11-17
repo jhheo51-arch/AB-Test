@@ -1,5 +1,5 @@
 {
-  "checked_at_seoul": "2026-11-17T17:44:17.840808+09:00",
+  "checked_at_seoul": "2026-11-17T18:41:08.496906+09:00",
   "author": "허재혁",
   "project": "A/B Test",
   "repository": "https://github.com/jhheo51-arch/AB-Test",
@@ -24,26 +24,27 @@
     "workbook_v04": 17,
     "card_reference_v04": 60,
     "book_v05": 29,
-    "book_v06": 50
+    "book_v06": 50,
+    "book_v07": 79
   },
   "six_worked_case_start_pages": {
     "1": [
-      13
+      24
     ],
     "2": [
-      15
+      26
     ],
     "3": [
-      16
+      28
     ],
     "4": [
-      18
+      30
     ],
     "5": [
-      21
+      33
     ],
     "6": [
-      23
+      36
     ]
   },
   "diagnostic_cards": 60,
@@ -71,19 +72,23 @@
     "validation_v05": "e-book/exports/v05/validation_v05.json",
     "methodology_source": "e-book/planning/AUTHOR_METHOD_AND_VOICE.md",
     "book_v06": "e-book/exports/v06/ebook_review_v06.pdf",
-    "validation_v06": "e-book/exports/v06/validation_v06.json"
+    "validation_v06": "e-book/exports/v06/validation_v06.json",
+    "book_v07": "e-book/exports/v07/ebook_review_v07.pdf",
+    "validation_v07": "e-book/exports/v07/validation_v07.json"
   },
   "checks": [
     "required files exist",
     "v03 SQLite read-only integrity and foreign keys",
-    "frozen plan hash matches database",
+    "frozen plan byte mismatch: newline-only equivalence verified, original files not changed",
     "actual PDF page counts",
     "v04 six case bookmarks and required text",
     "exact PDFs match renderer hashes",
     "v05 exact PDF hash and six case bookmarks",
     "v05 original method names and zero middle dots",
     "v06 exact PDF hash, 36 glossary targets and zero middle dots",
-    "v06 numeric text ledger reconciliation: 103 checks; no inference rerun"
+    "v06 numeric text ledger reconciliation: 103 checks; no inference rerun",
+    "v07 PDF hash and actual12pt reading-body probe",
+    "v07 contents folios,36 glossary targets,103 numeric tokens and read-only chapter12 SQL"
   ],
   "not_repeated": [
     "statistical calculations/simulations in this inventory refresh; see actual analysis reports",
@@ -92,8 +97,8 @@
   ],
   "product_tool_status": "direction documents only, no implemented general analysis application",
   "publication_status": "not ready for sale; author/content/domain/reader/rights review pending",
-  "latest_reading_edition": "v0.6 study-integrated main book, author review",
-  "main_book_path": "e-book/exports/v06/ebook_review_v06.pdf",
+  "latest_reading_edition": "v0.7 expanded editorial review edition",
+  "main_book_path": "e-book/exports/v07/ebook_review_v07.pdf",
   "previous_v04_case_pages": {
     "1": [
       24
@@ -115,10 +120,10 @@
     ]
   },
   "methodology_chapter_start_pages": {
-    "1": 4,
-    "2": 6,
-    "3": 7,
-    "4": 8
+    "1": 5,
+    "2": 8,
+    "3": 9,
+    "4": 11
   },
   "middle_dot_counts": {
     "U+00B7": 0,
@@ -131,5 +136,35 @@
   "companion_scope": "v0.4 workbook/cards preserved, not re-edited in v0.6",
   "glossary_entries": 36,
   "method_title_proposal": "맥락항법: 비교의 근거에서 실행의 결론까지",
-  "method_title_approval": "pending"
+  "method_title_approval": "pending",
+  "all_chapter_start_pages": {
+    "1": 5,
+    "2": 8,
+    "3": 9,
+    "4": 11,
+    "5": 13,
+    "6": 18,
+    "7": 24,
+    "8": 39,
+    "9": 41,
+    "10": 46,
+    "11": 50,
+    "12": 54
+  },
+  "same_A4_body_only_control_pages": {
+    "v06": 48,
+    "v07": 66
+  },
+  "persona_review_status": "AI simulated review, not interviews or sales validation",
+  "source_characters": 85218,
+  "cover_approval": "A selected as recommendation; author approval pending",
+  "plan_identity": {
+    "exact_bytes_match": false,
+    "checkout_sha256": "4bcd06f0b5f6a8259f27022f3df8db6285d141091c984f3ee7581044f7e86a56",
+    "database_manifest_sha256": "f1226b7743ed4705f0e79a03f53fca2f057c7500e5e97f70131d4a5a7fe721f7",
+    "CRLF_reconstruction_sha256": "f1226b7743ed4705f0e79a03f53fca2f057c7500e5e97f70131d4a5a7fe721f7",
+    "newline_only_equivalence": true,
+    "original_files_modified": false,
+    "note": "Fresh checkout has LF while DB manifest matches CRLF representation; exact frozen byte identity is NOT claimed. Original plan and DB preserved."
+  }
 }

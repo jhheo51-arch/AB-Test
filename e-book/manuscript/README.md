@@ -1,6 +1,6 @@
 # 원고
 
-저자 허재혁. 최신 읽기본은 `e-book/exports/v06/ebook_review_v06.md`와 같은 이름의 50쪽 PDF다. v0.5의 방법론과 사례를 보존하고 Notion 학습 교정과 확장, 방법론 평가, 36개 키워드 설명을 통합했다. 이전 원고와 보조자료는 보존했다.
+저자 허재혁. 최신 읽기본은 `e-book/exports/v07/ebook_review_v07.md`와 같은 이름의79쪽 PDF다. v0.6의 방법론과 여섯 사례 및36개 용어를 유지하고 읽기 경로, 통계와 정보량의 대체 원고, 관통 실습과 완성 결정문 및 증거 명세를 추가했다. 추가 원고는 `reader_route_v07.md`, `statistical_foundations_v07.md`, `end_to_end_v07.md`이며 빌드에서 첫 판단문과 독자용 참고 자료를 통합한다. 이전 판은 보존했다.
 
 `methodology_v05.md`는 들어가며와 방법론1~4장, `numbers_and_cases_v05.md`는 통계와 표본 및 사례1~3, `winner_cases_456_v05.md`는 사례4~6, `decision_and_sources_v05.md`는 마지막 판단과 자료 부록이다. 실제 계산 표와 도식은 빌드 때 기존 검증 결과에서 삽입한다.
 

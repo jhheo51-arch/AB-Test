@@ -36,7 +36,13 @@ con=sqlite3.connect(f'file:{(ROOT/required["database_v03"]).as_posix()}?mode=ro'
 assert con.execute('PRAGMA integrity_check').fetchone()[0]=='ok'
 assert not con.execute('PRAGMA foreign_key_check').fetchall()
 plan_hash=hashlib.sha256((ROOT/required['plan_v03']).read_bytes()).hexdigest()
-assert json.loads(con.execute("SELECT value_json FROM generation_manifest WHERE key='plan_sha256'").fetchone()[0])==plan_hash
+stored_plan_hash=json.loads(con.execute("SELECT value_json FROM generation_manifest WHERE key='plan_sha256'").fetchone()[0])
+plan_exact_bytes=stored_plan_hash==plan_hash
+plan_bytes=(ROOT/required['plan_v03']).read_bytes()
+crlf_reconstruction_hash=hashlib.sha256(plan_bytes.replace(b'\r\n',b'\n').replace(b'\n',b'\r\n')).hexdigest()
+plan_line_ending_equivalent=crlf_reconstruction_hash==stored_plan_hash
+assert plan_exact_bytes or plan_line_ending_equivalent,'Plan differs beyond the detected newline-only representation'
+plan_identity={'exact_bytes_match':plan_exact_bytes,'checkout_sha256':plan_hash,'database_manifest_sha256':stored_plan_hash,'CRLF_reconstruction_sha256':crlf_reconstruction_hash,'newline_only_equivalence':plan_line_ending_equivalent,'original_files_modified':False,'note':'Fresh checkout has LF while DB manifest matches CRLF representation; exact frozen byte identity is NOT claimed. Original plan and DB preserved.'}
 counts={name:con.execute('SELECT COUNT(*) FROM '+name).fetchone()[0] for name in ['customers','assignments','messages','events','contracts']}
 arms=dict(con.execute('SELECT arm,COUNT(*) FROM assignments GROUP BY arm'))
 con.close()
@@ -55,7 +61,7 @@ with pymupdf.open(ROOT/required['book_v04']) as d:
 validation=json.loads((ROOT/required['validation_v04']).read_text(encoding='utf-8'))
 for key,name in [('ebook_review_v04','book_v04'),('workbook_v04','workbook_v04'),('diagnostic_cards_reference_v04','card_reference_v04')]:
     assert hashlib.sha256((ROOT/required[name]).read_bytes()).hexdigest()==validation['outputs'][key]['sha256']
-status={'checked_at_seoul':datetime.now(timezone(timedelta(hours=9),'Asia/Seoul')).isoformat(),'author':'허재혁','project':'A/B Test','repository':'https://github.com/jhheo51-arch/AB-Test','latest_data_version':'v0.3 preserved + separate v0.4 teaching scenarios','latest_complete_reader_bundle_version':'v0.4 author review, not final publication','counts_v03':counts,'arms_v03':arms,'chapter_v03_pages':chapter_pages,'reader_v02_pages':book_pages,'current_pdf_pages':current_pages,'six_worked_case_start_pages':case_pages,'diagnostic_cards':len(cards),'diagnostic_dimensions':len({c['dimension'] for c in cards}),'required_paths':required,'checks':['required files exist','v03 SQLite read-only integrity and foreign keys','frozen plan hash matches database','actual PDF page counts','v04 six case bookmarks and required text','exact PDFs match renderer hashes'],'not_repeated':['statistical calculations/simulations in this inventory refresh; see actual analysis reports','human statistical/domain/editorial approval','market/rights/distribution checks'],'product_tool_status':'direction documents only, no implemented general analysis application','publication_status':'not ready for sale; author/content/domain/reader/rights review pending'}
+status={'checked_at_seoul':datetime.now(timezone(timedelta(hours=9),'Asia/Seoul')).isoformat(),'author':'허재혁','project':'A/B Test','repository':'https://github.com/jhheo51-arch/AB-Test','latest_data_version':'v0.3 preserved + separate v0.4 teaching scenarios','latest_complete_reader_bundle_version':'v0.4 author review, not final publication','counts_v03':counts,'arms_v03':arms,'chapter_v03_pages':chapter_pages,'reader_v02_pages':book_pages,'current_pdf_pages':current_pages,'six_worked_case_start_pages':case_pages,'diagnostic_cards':len(cards),'diagnostic_dimensions':len({c['dimension'] for c in cards}),'required_paths':required,'checks':['required files exist','v03 SQLite read-only integrity and foreign keys','frozen plan bytes match' if plan_exact_bytes else 'frozen plan byte mismatch: newline-only equivalence verified, original files not changed','actual PDF page counts','v04 six case bookmarks and required text','exact PDFs match renderer hashes'],'not_repeated':['statistical calculations/simulations in this inventory refresh; see actual analysis reports','human statistical/domain/editorial approval','market/rights/distribution checks'],'product_tool_status':'direction documents only, no implemented general analysis application','publication_status':'not ready for sale; author/content/domain/reader/rights review pending'}
 v05=json.loads((ROOT/required['validation_v05']).read_text(encoding='utf-8'))
 assert hashlib.sha256((ROOT/required['book_v05']).read_bytes()).hexdigest()==v05['pdf_sha256']
 with pymupdf.open(ROOT/required['book_v05']) as d:
@@ -75,5 +81,15 @@ with pymupdf.open(ROOT/required['book_v06']) as d:
     for term in ['맥락항법','Overall Evaluation Criterion','키워드 찾아보기','Variable Control','Vector Segmentation','Value-Linked Decision']:assert term in text06,term
 status.update({'latest_reading_edition':'v0.6 study-integrated main book, author review','main_book_path':required['book_v06'],'six_worked_case_start_pages':{k:[v] for k,v in v06['case_start_pages'].items()},'methodology_chapter_start_pages':v06['methodology_chapter_start_pages'],'glossary_entries':v06['glossary_entries'],'method_title_proposal':'맥락항법: 비교의 근거에서 실행의 결론까지','method_title_approval':'pending','companion_scope':'v0.4 workbook/cards preserved, not re-edited in v0.6'})
 status['checks'].extend(['v06 exact PDF hash, 36 glossary targets and zero middle dots','v06 numeric text ledger reconciliation: 103 checks; no inference rerun'])
+required.update({'book_v07':'e-book/exports/v07/ebook_review_v07.pdf','validation_v07':'e-book/exports/v07/validation_v07.json'})
+v07=json.loads((ROOT/required['validation_v07']).read_text(encoding='utf-8'))
+assert hashlib.sha256((ROOT/required['book_v07']).read_bytes()).hexdigest()==v07['pdf_sha256']
+with pymupdf.open(ROOT/required['book_v07']) as d:
+    assert len(d)==v07['pdf_pages']
+    assert '허재혁' in d.metadata['author']
+current_pages['book_v07']=v07['pdf_pages']
+status.update({'latest_reading_edition':'v0.7 expanded editorial review edition','main_book_path':required['book_v07'],'six_worked_case_start_pages':{k:[v] for k,v in v07['case_start_pages'].items()},'methodology_chapter_start_pages':{k:v07['chapter_start_pages'][k] for k in ['1','2','3','4']},'all_chapter_start_pages':v07['chapter_start_pages'],'same_A4_body_only_control_pages':v07['same_A4_body_only_control_pages'],'persona_review_status':'AI simulated review, not interviews or sales validation','source_characters':v07['source_characters'],'cover_approval':'A selected as recommendation; author approval pending'})
+status['checks'].extend(['v07 PDF hash and actual12pt reading-body probe','v07 contents folios,36 glossary targets,103 numeric tokens and read-only chapter12 SQL'])
+status['plan_identity']=plan_identity
 (ROOT/'PROJECT_STATUS.json').write_text(json.dumps(status,ensure_ascii=False,indent=2),encoding='utf-8')
 print(json.dumps(status,ensure_ascii=False,indent=2))

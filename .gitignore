@@ -21,3 +21,5 @@ e-book/references/study_v06/microsoft_browser.json
 e-book/references/study_v06/notion_studying_readable.txt
 e-book/references/study_v06/notion_studying_source.txt
 e-book/references/study_v06/notion_read_progress.json
+# Same-layout length controls are reproducible local inspection artifacts.
+e-book/exports/v07/content_control_A4_*
