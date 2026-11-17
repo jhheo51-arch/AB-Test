@@ -1,0 +1,10 @@
+﻿key,value_json
+background_withdrawal_H,"""Organic consent withdrawal without experimental message, other campaign contacts not modeled"""
+economic_status,"""Synthetic contract values, not delivered/recognized vehicle revenue. No actual manufacturer costs."""
+independent_random_streams,"{""population"": 31001, ""assignment"": 31002, ""delivery"": 31003, ""outcomes"": 31004, ""timing"": 31005}"
+observation_cutoff_day,240
+plan_sha256,"""f1226b7743ed4705f0e79a03f53fca2f057c7500e5e97f70131d4a5a7fe721f7"""
+population_frozen_before_assignments,true
+probabilities_are_policy_level_ITT,true
+rows,"{""customers"": 120000, ""eligible"": 65559, ""arms"": {""H"": 21898, ""A"": 21637, ""B"": 22024}, ""messages"": 43661, ""events"": 15852, ""contracts"": 697}"
+time_unit,"""integer days since hypothetical campaign launch; no actual calendar or real campaign"""

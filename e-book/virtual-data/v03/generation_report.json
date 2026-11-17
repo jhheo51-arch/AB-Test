@@ -1,0 +1,66 @@
+{
+  "database": "C:\\Users\\Administrator\\Downloads\\AB-Test\\e-book\\virtual-data\\v03\\data\\jh_motors_v03.sqlite",
+  "rows": {
+    "customers": 120000,
+    "eligible": 65559,
+    "arms": {
+      "H": 21898,
+      "A": 21637,
+      "B": 22024
+    },
+    "messages": 43661,
+    "events": 15852,
+    "contracts": 697
+  },
+  "summary": [
+    {
+      "arm": "A",
+      "n": 21637,
+      "booked": 3301,
+      "completed": 1971,
+      "withdrawn": 181,
+      "contracted": 198
+    },
+    {
+      "arm": "B",
+      "n": 22024,
+      "booked": 3694,
+      "completed": 2212,
+      "withdrawn": 202,
+      "contracted": 268
+    },
+    {
+      "arm": "H",
+      "n": 21898,
+      "booked": 2231,
+      "completed": 1338,
+      "withdrawn": 25,
+      "contracted": 231
+    }
+  ],
+  "structural_checks": {
+    "integrity": true,
+    "foreign_key_errors": 0,
+    "ineligible": 0,
+    "holdout_message_leaks": 0,
+    "event_before_assignment": 0,
+    "incomplete_primary_windows": 0,
+    "incomplete_contract_windows": 0,
+    "completion_without_prior_booking": 0,
+    "contract_without_prior_completion": 0
+  },
+  "early_snapshot": {
+    "enrolled_by_day28": 58000,
+    "mature_primary": 2000,
+    "observed_completions_so_far": 2326
+  },
+  "database_bytes": 18964480,
+  "limitations": [
+    "All population sizes, probabilities, costs and timings are instructional assumptions, not inferred from Hyundai/Kia data.",
+    "No household/dealer interference, capacity constraints or cluster correction implemented.",
+    "Artificially larger N improves precision for the assumed synthetic population, not realism or real-world validity.",
+    "Uniform policy effect within each arm; subgroup discovery is not validated.",
+    "Contract economics omit cancellation, delivery, warranty and real accounting; synthetic contract contribution is not actual vehicle revenue recognized.",
+    "No conditional targeting after observing outcomes; no seed rerolling."
+  ]
+}

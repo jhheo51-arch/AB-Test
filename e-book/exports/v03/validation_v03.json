@@ -1,0 +1,17 @@
+{
+  "pages": 7,
+  "page_text_lengths": [
+    1038,
+    891,
+    944,
+    926,
+    1373,
+    937,
+    305
+  ],
+  "outside_page_words": [],
+  "js_errors": [],
+  "readiness_bars": 5,
+  "mobile_desktop_overflow": false,
+  "status": "Rendering and structural checks only, not statistical/domain/reader/rights approval"
+}

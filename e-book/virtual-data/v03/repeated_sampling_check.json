@@ -1,0 +1,62 @@
+{
+  "seed": 91103,
+  "alpha_each": 0.016666666666666666,
+  "replications_per_cell": 5000,
+  "results": [
+    {
+      "n_per_arm": 1000,
+      "scenario": "no_effect",
+      "replications": 5000,
+      "rejections": 88,
+      "observed_rejection_rate": 0.0176,
+      "normal_approx_target": 0.016666666666666666,
+      "monte_carlo_se_at_target": 0.0018104634152000358
+    },
+    {
+      "n_per_arm": 1000,
+      "scenario": "planned_effect",
+      "replications": 5000,
+      "rejections": 250,
+      "observed_rejection_rate": 0.05,
+      "normal_approx_target": 0.05217737400597421,
+      "monte_carlo_se_at_target": 0.0031449927073942444
+    },
+    {
+      "n_per_arm": 5000,
+      "scenario": "no_effect",
+      "replications": 5000,
+      "rejections": 76,
+      "observed_rejection_rate": 0.0152,
+      "normal_approx_target": 0.016666666666666666,
+      "monte_carlo_se_at_target": 0.0018104634152000358
+    },
+    {
+      "n_per_arm": 5000,
+      "scenario": "planned_effect",
+      "replications": 5000,
+      "rejections": 1216,
+      "observed_rejection_rate": 0.2432,
+      "normal_approx_target": 0.24548069159180583,
+      "monte_carlo_se_at_target": 0.006086376946056077
+    },
+    {
+      "n_per_arm": 18001,
+      "scenario": "no_effect",
+      "replications": 5000,
+      "rejections": 86,
+      "observed_rejection_rate": 0.0172,
+      "normal_approx_target": 0.016666666666666666,
+      "monte_carlo_se_at_target": 0.0018104634152000358
+    },
+    {
+      "n_per_arm": 18001,
+      "scenario": "planned_effect",
+      "replications": 5000,
+      "rejections": 4027,
+      "observed_rejection_rate": 0.8054,
+      "normal_approx_target": 0.800018127999501,
+      "monte_carlo_se_at_target": 0.005656661963944373
+    }
+  ],
+  "interpretation": "One-contrast repeated independent-binomial normal-approximation tests. Null rejection estimates false positives; alternative rejection estimates power. Same pA=.09 and alternative pB=.10 across N. Not three-arm joint FWER verification or real-world validation. No changes to main generated data or seeds."
+}

@@ -1,0 +1,180 @@
+<!doctype html><html lang="ko"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>우리 CRM은 실험할 수 있는 규모인가? | 허재혁 v0.3</title><style>*{box-sizing:border-box}body{margin:0;background:#F6F4EF;color:#162B33;font:16px/1.75 "Malgun Gothic",sans-serif}main{max-width:900px;margin:auto;padding:46px 60px;background:white}h1{font-size:38px;line-height:1.35}h2{font-size:24px;margin-top:34px;break-after:avoid}p{word-break:keep-all;overflow-wrap:anywhere}table{border-collapse:collapse;width:100%;font-size:14px}th,td{border-bottom:1px solid #b6c0bf;padding:10px 6px;text-align:left}th{background:#F6F4EF}a{color:#125E59;overflow-wrap:anywhere}.proof{border-top:3px solid #125E59;padding-top:18px}.meter{margin:18px 0}.meter p{margin:0 0 5px}.track{height:14px;background:#F6F4EF;border:1px solid #526168;position:relative}.fill{height:100%;background:#125E59}.marker{position:absolute;height:24px;border-left:2px dashed #162B33;left:80%;top:-6px}.sub{color:#526168;font-size:14px}button{font:inherit;padding:10px;min-height:44px;background:white;border:1px solid #526168;color:#162B33}button:focus-visible{outline:3px solid #125E59}@media(max-width:700px){main{padding:24px 16px}table{font-size:12px}}@media print{@page{size:A4;margin:18mm 16mm}body{background:white;font-size:12pt;line-height:1.6}main{padding:0;max-width:none}h1{font-size:27pt}h2{font-size:18pt}table{font-size:12pt}tr{break-inside:avoid}p{orphans:3;widows:3}button{display:none}.proof{break-before:page}.meter{break-inside:avoid}.sub{font-size:12pt}}</style><body><main><h1 id="crm">우리 CRM은 실험할 수 있는 규모인가?</h1>
+<h2 id="_1">고객 수가 아니라, 질문에 필요한 정보량을 계산한다</h2>
+<p><strong>허재혁 · 개정 장 v0.3 · 저자 검토용</strong></p>
+<p>“최소 수만 명의 사용자가 있어야 관심 있는 지표를 제대로 분석할 수 있다.” 낮은 전환율과 작은 개선을 다루는 온라인 실험에서는 자주 맞는 직관이다. 하지만 모든 실험의 입장권이 수만 명인 것은 아니다. 큰 변화를 구분하는 질문에는 더 적은 표본이 충분할 수 있고, 희귀한 부작용이나 미세한 개선에는 수만 명도 부족하다.</p>
+<p>통계 분석을 할 수 있는가, 원하는 정밀도로 효과를 구분할 수 있는가, 실제로 도입할 근거가 충분한가는 다른 질문이다. 작은 표본도 적합한 방법으로 분석할 수 있지만 구간이 넓을 수 있다. 큰 표본은 정밀도를 높일 수 있지만 잘못된 배정·누락·편향을 고쳐주지 않는다. 수신 거부의 비유의성을 안전으로 바꾸지도 않는다.</p>
+<p>이 장은 같은 회사에서 지표별로 필요한 표본이 얼마나 다른지 계산하고, 그 계산에 맞춰 기업과 데이터를 다시 설계하는 과정을 보여준다. 모든 비율·효과·기간은 교육용 가정이며 실제 OEM의 시장 평균이 아니다.</p>
+<h2 id="1">1. ‘관심 있는 지표’를 검증 가능한 질문으로 바꾸기</h2>
+<p>클릭이 늘기를 원한다는 말만으로 표본을 계산할 수 없다. 기준 클릭률과 최소한 구분하고 싶은 변화, 잘못된 긍정 판단의 허용 수준, 효과가 있을 때 발견할 가능성, 배정 비율과 분석 단위를 정해야 한다. 여기에 여러 버전·지표·세그먼트·중간 조회가 붙으면 설계가 달라진다.</p>
+<p>아래는 독립 개인, 동일한 두 군 배정, 단일 양측 비교, 유의수준 5%, 검정력 80%, 손실·군집 없음의 정규근사 계획이다. 표본 수는 각 군의 유일 고객 수이지 이벤트 수가 아니다. 공식 근사와 statsmodels 검정력 함수의 수치 해를 함께 계산했다. 큰 표본·독립 이항이라는 가정이 맞는지도 별도로 검토해야 한다.</p>
+<table>
+<thead>
+<tr>
+<th>구분할 변화</th>
+<th style="text-align: right;">군당 필요 표본</th>
+<th style="text-align: right;">두 군 합계</th>
+<th style="text-align: right;">관측 기간 가정</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>클릭 10%→12%</td>
+<td style="text-align: right;">3,841</td>
+<td style="text-align: right;">7,682</td>
+<td style="text-align: right;">7일</td>
+</tr>
+<tr>
+<td>시승 9%→10%</td>
+<td style="text-align: right;">13,495</td>
+<td style="text-align: right;">26,990</td>
+<td style="text-align: right;">28일</td>
+</tr>
+<tr>
+<td>계약 1%→1.2%</td>
+<td style="text-align: right;">42,693</td>
+<td style="text-align: right;">85,386</td>
+<td style="text-align: right;">180일</td>
+</tr>
+<tr>
+<td>철회 0.8%→1.0%</td>
+<td style="text-align: right;">35,001</td>
+<td style="text-align: right;">70,002</td>
+<td style="text-align: right;">28일</td>
+</tr>
+<tr>
+<td>희귀 불만 0.1%→0.12%</td>
+<td style="text-align: right;">431,212</td>
+<td style="text-align: right;">862,424</td>
+<td style="text-align: right;">28일</td>
+</tr>
+<tr>
+<td>시승 9%→9.09%</td>
+<td style="text-align: right;">1,594,361</td>
+<td style="text-align: right;">3,188,722</td>
+<td style="text-align: right;">28일</td>
+</tr>
+</tbody>
+</table>
+<p>9%에서 10%는 절대 1퍼센트포인트 변화다. 9%에서 9.09%는 상대 1% 변화이며 훨씬 작다. 둘을 같은 ‘1% 개선’으로 부르면 표본 계획부터 틀어진다. 희귀 불만의 0.1%에서 0.12%도 상대적으로는 20% 변화지만 절대 차이는 매우 작다.</p>
+<p>위 수치는 보편적인 최소 고객 수가 아니다. 기준 비율과 효과·방법·설계가 바뀌면 다시 계산한다. 특히 가구·지점 군집, 다중 비교, 이탈, 순차 분석, 비열등성은 이 표를 그대로 적용할 수 없다. Bayesian 방법을 쓴다는 이유만으로 정보 부족이 사라지는 것도 아니다.</p>
+<h3 id="_2">같은 모형에서 표본만 바꿔보기</h3>
+<p>v0.2와 v0.3은 설계가 다르므로 두 결과를 표본 크기의 효과라고 비교하지 않는다. 대신 A=9%, B=10%의 동일한 독립 이항 모형에서 군당 표본만 바꾸고 각 조건을 5,000회 반복했다. 단일 대비의 양측 임계값은 세 대비 보정에 대응하는 0.05/3으로 고정했다.</p>
+<table>
+<thead>
+<tr>
+<th>군당 고객</th>
+<th style="text-align: right;">5,000회 중 계획 효과 발견률</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1,000</td>
+<td style="text-align: right;">5.00%</td>
+</tr>
+<tr>
+<td>5,000</td>
+<td style="text-align: right;">24.32%</td>
+</tr>
+<tr>
+<td>18,001</td>
+<td style="text-align: right;">80.54%</td>
+</tr>
+</tbody>
+</table>
+<p>별도의 무효과 모형에서는 거짓 양성 비율이 계획한 약 1.67% 부근인지 점검했다. 이는 단일 대비의 정규근사 검정에 대한 Monte Carlo 점검이며 세 군 전체의 공동 오류율을 실증한 것은 아니다. 반복 시뮬레이션은 본 사례 DB를 다시 뽑거나 성공한 시드만 고르는 데 사용하지 않았다.</p>
+<h2 id="2-crm">2. 전체 CRM 고객과 실험 표본을 구분하기</h2>
+<p>JH Motors의 새 교육용 모집단은 120,000명으로 잡았다. 하지만 그 모두가 이번 시승 안내 실험의 고객은 아니다. 보유 고객, 연락 동의가 없는 고객, 기존 시승 경험이 있는 고객을 기준 시점 자격에서 구분한다. 고정 시드로 생성한 결과 적격 배정은 65,559명이다.</p>
+<p>모집단 속성은 먼저 한 번 생성해 고정했다. 이후 별도의 난수 스트림으로 배정·전달·결과·시점을 만든다. 이렇게 해야 효과 설정을 바꾸는 작업이 고객 구성까지 은밀하게 바꾸는 문제를 줄일 수 있다. 생성 전 계획 파일을 만들었고 DB에는 그 해시를 저장했다. 이는 로컬 합성 실습의 동결이지 실제 기업의 외부 사전등록은 아니다.</p>
+<h2 id="3-ab">3. A/B만이 아니라 미발송 정책도 비교하기</h2>
+<p>A는 차량 가치 안내, B는 시승 편의 안내, H는 해당 실험 메시지를 보내지 않는 정책이다. H에도 자연 예약과 계약은 생긴다. 발송 후 일어난 모든 구매를 메시지 덕분으로 세지 않기 위해서다. 이 시뮬레이션에는 다른 캠페인을 구현하지 않았으므로 실제 전사 홀드아웃 운영을 검증한 것은 아니다.</p>
+<table>
+<thead>
+<tr>
+<th>군</th>
+<th style="text-align: right;">배정</th>
+<th style="text-align: right;">28일 완료</th>
+<th style="text-align: right;">180일 계약</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td style="text-align: right;">21,637</td>
+<td style="text-align: right;">1,971</td>
+<td style="text-align: right;">198</td>
+</tr>
+<tr>
+<td>B</td>
+<td style="text-align: right;">22,024</td>
+<td style="text-align: right;">2,212</td>
+<td style="text-align: right;">268</td>
+</tr>
+<tr>
+<td>H</td>
+<td style="text-align: right;">21,898</td>
+<td style="text-align: right;">1,338</td>
+<td style="text-align: right;">231</td>
+</tr>
+</tbody>
+</table>
+<p>주지표는 배정 후 28일의 시승 완료다. B-A, A-H, B-H 세 대비를 계획된 주분석 가족으로 정하고 Bonferroni로 가족 유의수준 5%를 나눴다. 9%→10% 차이를 구분하는 교육용 계획에서는 군당 18,001명이 필요했다. 실제 배정은 각 군에서 이를 넘었다.</p>
+<p>이는 세 지표가 아니라 같은 완료 지표에 대한 세 정책 대비다. 계약·철회·이익을 슬쩍 이 성공 기준에 추가하지 않는다. 28일 예약은 진단, 철회는 관계 가드레일, 180일 계약과 가정 기반 손익은 탐색으로 남긴다.</p>
+<h2 id="4">4. 고객을 모았어도 시간이 지나야 한다</h2>
+<p>하루 최대 2,000명씩 등록한다고 가정했다. 캠페인 시작 28일 시점에는 이미 58,000명이 배정돼 있지만, 개인별 28일 관측을 끝낸 고객은 2,000명뿐이다. 방금 등록한 고객을 관측 완료 고객처럼 분모에 넣으면 불리한 기회를 준다.</p>
+<p>같은 날 180일 계약 결과가 성숙한 고객은 없다. 그렇다고 모두 계약하지 않을 고객인 것은 아니다. 실제로 관측 안 됨, 아직 시간이 안 됨, 이벤트 누락, 진짜 무사건을 구분해야 한다. 새 DB는 조기 스냅샷과 최종 성숙 집계를 분리했다. 가상의 최종 관측 종료는 시작 후 240일로 두어 모든 등록 고객의 180일 창을 확보했다.</p>
+<h2 id="5">5. 같은 데이터로 어떤 질문은 되고 어떤 질문은 부족하다</h2>
+<p>아래 검정력은 실제 배정 수를 사용하되 효과는 미리 정한 계획 값을 사용했다. 관측 효과를 끼워 넣는 사후 검정력 계산이 아니다. 완료는 세 대비 보정, 다른 행은 단일 비교 설계 시나리오다. 희귀 불만과 미세 효과는 현재 DB에 실제 이벤트를 생성한 주분석이 아니라 설계 타당성 질문이다.</p>
+<table>
+<thead>
+<tr>
+<th>질문</th>
+<th style="text-align: right;">현재 계획 검정력</th>
+<th>해석</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>시승 9%→10%</td>
+<td style="text-align: right;">87.9%</td>
+<td>계획 기준 충족</td>
+</tr>
+<tr>
+<td>계약 1%→1.2%</td>
+<td style="text-align: right;">51.8%</td>
+<td>목표 효과를 안정적으로 구분하기 부족</td>
+</tr>
+<tr>
+<td>철회 0.8%→1.0%</td>
+<td style="text-align: right;">60.0%</td>
+<td>목표 효과를 안정적으로 구분하기 부족</td>
+</tr>
+<tr>
+<td>희귀 불만 0.1%→0.12%</td>
+<td style="text-align: right;">9.7%</td>
+<td>목표 효과를 안정적으로 구분하기 부족</td>
+</tr>
+<tr>
+<td>시승 9%→9.09%</td>
+<td style="text-align: right;">6.2%</td>
+<td>목표 효과를 안정적으로 구분하기 부족</td>
+</tr>
+</tbody>
+</table>
+<p>여기서 ‘부족’은 계산 금지가 아니다. 특정 크기의 효과를 80%의 확률로 발견할 만큼 설계되지 않았다는 뜻이다. 부족한 검정력의 연구도 우연히 큰 관측 효과로 유의할 수 있고, 충분한 설계도 항상 유의한 결과를 보장하지 않는다. 계획의 능력과 이번 표본의 추론을 구분한다.</p>
+<h2 id="6">6. 이번 합성 결과는 어디까지 말할 수 있나</h2>
+<p>B-A의 완료율 차이는 +0.93pp이고, 세 대비 보정 p는 0.0027, 약 98.33% Newcombe 구간은 [+0.26, +1.61]pp다. 계획된 합성 조건에서 완료 주지표의 개선 근거는 생겼다. 자체 z/p 계산과 라이브러리, 원본 이벤트와 집계 뷰를 대조했다.</p>
+<p>그러나 이것만으로 B를 전면 도입하라고 하지 않는다. 철회 위험의 설계는 같은 수준으로 충분하지 않고, 실제 고객 관계의 허용 한계도 별도로 정해야 한다. 계약 표본의 계획 정밀도도 다르다. 합성 손익은 4천만 원의 계약 가치와 2백만 원의 기여액, 시승·발송 비용을 가정했을 뿐 실제 제조사 수익성이 아니다. 취소·출고·회계 매출·보증 비용·장기 LTV는 구현하지 않았다.</p>
+<p>무엇보다 작은 합성 표본을 크게 만든 것이 실세계 검증은 아니다. v0.3은 무발송군·정책 확률·관측 구조도 바꾼 새 실험이다. 따라서 이전 v0.2의 비유의 결과와 이번 결과를 비교해 ‘고객 수만 늘리니 유의해졌다’고 해석해서는 안 된다. 동일 모형의 표본 효과를 검증하려면 같은 생성 가정 아래 별도 반복 시뮬레이션이 필요하다. 효과 모수는 저자가 정했다. 이 결과는 그 환경에서의 설계와 계산 학습을 보여주며 현대차·기아에서 같은 효과가 난다는 뜻은 아니다.</p>
+<h2 id="7-oem">7. 실제 OEM 자료는 어떻게 쓰고, 어디에 쓰지 않을까</h2>
+<p>현대차 모델별 판매 XLSX와 Toyota 서비스·고객 피드백 보고서의 로컬 파일과 해시를 다시 확인했다. 기아는 공식 판매 자료 목록을 확인한 수준이다. 실제 기업 자료는 산업 배경과 공개 사실, 지표의 정의와 고객 여정 질문에 사용한다.</p>
+<p>모델 판매량은 연락 가능한 CRM 고객 수가 아니다. 등록 대수는 실험 참여자 수가 아니다. 고객센터 설문 응답자는 무작위 배정 고객이 아니다. 이 자료에서 개인별 동의율·시승 전환율·원가를 만들어 가상 기업을 ‘실제 데이터 기반’이라고 부르지 않았다.</p>
+<p>향후 권한 있는 CRM 자료가 확보되면 적격 고객 유입, 채널 도달, 지점별 수용량, 실제 전환·취소·지연·비용 분포를 보정할 수 있다. 그 전에는 가정 범위를 바꾼 민감도 시나리오로 현실의 불확실성을 보여줘야 한다. 공개 통계를 고객 로그와 행 단위로 연결한 것처럼 제시하지 않는다.</p>
+<h2 id="8">8. 적은 트래픽의 기업은 무엇을 해야 하나</h2>
+<p>첫째, 사업적으로 중요한 효과와 검출하려는 효과를 정렬한다. 무의미하게 작은 차이를 잡으려는 설계인지 확인한다. 둘째, 사전에 계획한 등록·관측 기간과 실제 적격 유입으로 실행 가능성을 계산한다. 셋째, 명확한 큰 변경이나 단순한 주 비교, 더 넓되 적합한 모집단을 검토한다. 넷째, 최종 성과의 대리지표를 쓰면 어떤 질문에만 답하는지 제한한다.</p>
+<p>무작위 실험이 불가능하면 관찰·준실험·사용성·질적 조사 등 다른 증거를 사용할 수 있다. 그러나 그 증거의 인과적 한계를 표시해야 한다. 유의수준을 결과에 맞춰 바꾸거나, 고객을 중복해서 세거나, 작은 표본을 합성 행으로 복제해 유효 표본이 커졌다고 하지 않는다.</p>
+<h2 id="9">9. 회의에서 사용할 결론 문장</h2>
+<p>“우리 CRM에는 12만 명이 있지만 이번 실험의 적격 배정은 약 6.6만 명입니다. 현재 설계는 28일 완료율의 계획된 차이를 구분할 정보는 확보했으나, 같은 고객 수로 작은 계약 개선이나 희귀한 관계 손상까지 충분히 확인하는 것은 아닙니다. 초기 28일에는 관측이 성숙한 고객도 일부뿐입니다. 따라서 지표별로 표본·기간·품질·위험·채택 조건을 따로 판단합니다.”</p>
+<p>이 문장이 ‘수만 명이면 분석 가능’보다 길지만 더 정확하다. CRM 실험의 규모는 보유 고객 숫자가 아니라 특정 질문에 필요한 정보와 관측 기회로 결정된다.</p>
+<h2 id="_3">실습과 확인 자료</h2>
+<p>계획: experiment_plan.json / sample_size_grid.csv. 데이터: jh_motors_v03.sqlite와 CSV. 조기 스냅샷: early_snapshot_day28. 결과: analysis_report.json / metric_readiness.csv / RESULTS.md. 고객·배정·원본 이벤트·최종 결과·계약·외부 출처·생성 명세를 분리했다.</p>
+<p>외부 방법 문서: https://www.statsmodels.org/stable/generated/statsmodels.stats.proportion.power_proportions_2indep.html . 실제 OEM 자료의 URL·검증 수준·상업 재이용 제한은 analysis_report.json과 공개자료 근거 장부를 따른다. 통계·OEM 실무자·독자·권리 검토는 아직 완료되지 않았다.</p><section class="proof"><h2>같은 표본, 다른 정보량</h2><p>현재 배정 수와 미리 정한 효과를 사용한 계획 검정력. 점선은 80% 기준입니다. 실제 관측 효과로 계산한 사후 검정력이 아닙니다.</p><div class="meter"><p>시승 9%→10% · 87.9%</p><div class="track"><div class="fill" style="width:87.88844779275155%"></div><span class="marker"></span></div><p class="sub">계획 기준 충족</p></div><div class="meter"><p>계약 1%→1.2% · 51.8%</p><div class="track"><div class="fill" style="width:51.76059048651267%"></div><span class="marker"></span></div><p class="sub">이 크기의 효과에 대한 정보 부족</p></div><div class="meter"><p>철회 0.8%→1.0% · 60.0%</p><div class="track"><div class="fill" style="width:60.00064213170647%"></div><span class="marker"></span></div><p class="sub">이 크기의 효과에 대한 정보 부족</p></div><div class="meter"><p>희귀 불만 0.1%→0.12% · 9.7%</p><div class="track"><div class="fill" style="width:9.685783949844687%"></div><span class="marker"></span></div><p class="sub">이 크기의 효과에 대한 정보 부족</p></div><div class="meter"><p>시승 9%→9.09% · 6.2%</p><div class="track"><div class="fill" style="width:6.240868914247931%"></div><span class="marker"></span></div><p class="sub">이 크기의 효과에 대한 정보 부족</p></div></section><button onclick="window.print()">인쇄 / PDF</button></main></body></html>

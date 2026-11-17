@@ -1,0 +1,6 @@
+﻿scenario,nA,nB,required_equal_n_each,planning_power_under_stated_effect,meets_80pct_planning_power,role
+drive_primary,21637,22024,18001,0.8788844779275156,True,confirmatory primary family
+contract_rare,21637,22024,42693,0.5176059048651267,False,design-feasibility scenario only; not proof of safety/equivalence or a new confirmatory outcome
+optout_risk,21637,22024,35001,0.6000064213170647,False,design-feasibility scenario only; not proof of safety/equivalence or a new confirmatory outcome
+complaint_rare,21637,22024,431212,0.09685783949844687,False,design-feasibility scenario only; not proof of safety/equivalence or a new confirmatory outcome
+drive_tiny,21637,22024,1594361,0.062408689142479316,False,design-feasibility scenario only; not proof of safety/equivalence or a new confirmatory outcome
