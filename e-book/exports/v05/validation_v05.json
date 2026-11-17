@@ -1,0 +1,121 @@
+{
+  "version": "0.5 author review",
+  "checked_at_seoul": "2026-11-17T16:26:24.897919+09:00",
+  "pdf_pages": 29,
+  "pdf_bytes": 412837,
+  "pdf_sha256": "deb6a1fd3e32856452966cddbdfca3edcc73ba2412097cfdaf029fac17e5228a",
+  "author": "허재혁",
+  "methodology_chapter_start_pages": {
+    "1": 3,
+    "2": 6,
+    "3": 7,
+    "4": 8
+  },
+  "case_start_pages": {
+    "1": 13,
+    "2": 15,
+    "3": 16,
+    "4": 18,
+    "5": 20,
+    "6": 22
+  },
+  "toc_entries": 18,
+  "links": 10,
+  "outside_page_words": [],
+  "footer_overlap": [],
+  "fonts": [
+    {
+      "name": "AAAAAA+MalgunGothic",
+      "extension": "ttf",
+      "embedded_bytes": 231564
+    },
+    {
+      "name": "BAAAAA+MalgunGothicBold",
+      "extension": "ttf",
+      "embedded_bytes": 96156
+    },
+    {
+      "name": "PDF Type3 glyph programs",
+      "extension": "CharProcs",
+      "embedded_bytes": 4408
+    },
+    {
+      "name": "PDF Type3 glyph programs",
+      "extension": "CharProcs",
+      "embedded_bytes": 1754
+    },
+    {
+      "name": "DAAAAA+ArialMT",
+      "extension": "ttf",
+      "embedded_bytes": 20496
+    },
+    {
+      "name": "EAAAAA+Consolas",
+      "extension": "ttf",
+      "embedded_bytes": 27780
+    },
+    {
+      "name": "FAAAAA+CambriaMath",
+      "extension": "ttf",
+      "embedded_bytes": 32420
+    }
+  ],
+  "page_text_lengths": [
+    89,
+    190,
+    1115,
+    1141,
+    977,
+    1387,
+    1330,
+    1186,
+    1398,
+    1427,
+    1196,
+    1167,
+    954,
+    1229,
+    997,
+    1009,
+    1013,
+    1127,
+    1614,
+    1463,
+    1530,
+    1340,
+    1365,
+    1323,
+    1370,
+    1462,
+    1005,
+    1237,
+    891
+  ],
+  "sparse_pages_under180_chars": [
+    1
+  ],
+  "middle_dot_counts": {
+    "U+00B7": 0,
+    "U+2022": 0,
+    "U+2027": 0,
+    "U+318D": 0,
+    "U+22C5": 0,
+    "U+30FB": 0
+  },
+  "paragraph_microheadings": {
+    "previous_h3": 38,
+    "new_h3": 0,
+    "new_other_h2": 0
+  },
+  "browser_version": "157.0.8103.79",
+  "browser_errors": [],
+  "desktop_mobile_overflow": false,
+  "unresolved_templates": false,
+  "numeric_sources": "Unchanged v0.4 verified analysis + v0.3 plan/repeated sampling; editorial rewrite, not new statistical inference",
+  "palette": "Same previously checked ink/teal/muted on white/paper; min text contrast5.85:1; not new company branding",
+  "review_limits": [
+    "Naturalness and author voice require author confirmation; no claim that AI involvement is undetectable",
+    "Human statistical/OEM/reader/rights/publication review pending",
+    "Historical v0.4 companion files were not re-edited in this main-book revision"
+  ]
+}

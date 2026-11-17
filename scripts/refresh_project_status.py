@@ -25,7 +25,10 @@ required={
 'card_reference_v04':'e-book/exports/v04/diagnostic_cards_reference_v04.pdf',
 'winner_core':'e-book/analysis/winner_v04/core_results.json',
 'winner_scenarios':'e-book/analysis/winner_v04/scenario_results.json',
-'validation_v04':'e-book/exports/v04/validation_v04.json'}
+'validation_v04':'e-book/exports/v04/validation_v04.json',
+'book_v05':'e-book/exports/v05/ebook_review_v05.pdf',
+'validation_v05':'e-book/exports/v05/validation_v05.json',
+'methodology_source':'e-book/planning/AUTHOR_METHOD_AND_VOICE.md'}
 for key,path in required.items():assert (ROOT/path).is_file(),path
 con=sqlite3.connect(f'file:{(ROOT/required["database_v03"]).as_posix()}?mode=ro',uri=True)
 assert con.execute('PRAGMA integrity_check').fetchone()[0]=='ok'
@@ -39,7 +42,7 @@ with pymupdf.open(ROOT/required['chapter_v03']) as d:chapter_pages=len(d)
 with pymupdf.open(ROOT/required['book_v02']) as d:book_pages=len(d)
 cards=json.loads((ROOT/required['cards_data']).read_text(encoding='utf-8'))
 current_pages={}
-for key in ['book_v04','workbook_v04','card_reference_v04']:
+for key in ['book_v04','workbook_v04','card_reference_v04','book_v05']:
     with pymupdf.open(ROOT/required[key]) as d:current_pages[key]=len(d)
 with pymupdf.open(ROOT/required['book_v04']) as d:
     import re
@@ -51,5 +54,15 @@ validation=json.loads((ROOT/required['validation_v04']).read_text(encoding='utf-
 for key,name in [('ebook_review_v04','book_v04'),('workbook_v04','workbook_v04'),('diagnostic_cards_reference_v04','card_reference_v04')]:
     assert hashlib.sha256((ROOT/required[name]).read_bytes()).hexdigest()==validation['outputs'][key]['sha256']
 status={'checked_at_seoul':datetime.now(timezone(timedelta(hours=9),'Asia/Seoul')).isoformat(),'author':'허재혁','project':'A/B Test','repository':'https://github.com/jhheo51-arch/AB-Test','latest_data_version':'v0.3 preserved + separate v0.4 teaching scenarios','latest_complete_reader_bundle_version':'v0.4 author review, not final publication','counts_v03':counts,'arms_v03':arms,'chapter_v03_pages':chapter_pages,'reader_v02_pages':book_pages,'current_pdf_pages':current_pages,'six_worked_case_start_pages':case_pages,'diagnostic_cards':len(cards),'diagnostic_dimensions':len({c['dimension'] for c in cards}),'required_paths':required,'checks':['required files exist','v03 SQLite read-only integrity and foreign keys','frozen plan hash matches database','actual PDF page counts','v04 six case bookmarks and required text','exact PDFs match renderer hashes'],'not_repeated':['statistical calculations/simulations in this inventory refresh; see actual analysis reports','human statistical/domain/editorial approval','market/rights/distribution checks'],'product_tool_status':'direction documents only, no implemented general analysis application','publication_status':'not ready for sale; author/content/domain/reader/rights review pending'}
+v05=json.loads((ROOT/required['validation_v05']).read_text(encoding='utf-8'))
+assert hashlib.sha256((ROOT/required['book_v05']).read_bytes()).hexdigest()==v05['pdf_sha256']
+with pymupdf.open(ROOT/required['book_v05']) as d:
+    latest_text='\n'.join(p.get_text() for p in d)
+    latest_cases={str(i):[t[2] for t in d.get_toc() if re.match(rf'^사례\s*{i}\s',t[1])] for i in range(1,7)}
+    assert all(len(x)==1 for x in latest_cases.values())
+    assert not any(x in latest_text for x in '\u00b7\u2022\u2027\u318d\u22c5\u30fb')
+    for term in ['트리아타시스','Tri-Ataxis','Variable Control','Vector Segmentation','Value-Linked Decision']:assert term in latest_text,term
+status.update({'latest_reading_edition':'v0.5 method-led main book, author review','main_book_path':required['book_v05'],'six_worked_case_start_pages':latest_cases,'previous_v04_case_pages':case_pages,'methodology_chapter_start_pages':v05['methodology_chapter_start_pages'],'middle_dot_counts':v05['middle_dot_counts'],'companion_scope':'v0.4 workbook/cards preserved, not re-edited in the v0.5 main-book revision'})
+status['checks'].extend(['v05 exact PDF hash and six case bookmarks','v05 original method names and zero middle dots'])
 (ROOT/'PROJECT_STATUS.json').write_text(json.dumps(status,ensure_ascii=False,indent=2),encoding='utf-8')
 print(json.dumps(status,ensure_ascii=False,indent=2))
