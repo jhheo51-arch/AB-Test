@@ -1,0 +1,51 @@
+{
+  "checked_at_seoul": "2026-11-17T13:58:19.941608+09:00",
+  "author": "허재혁",
+  "project": "A/B Test",
+  "repository": "https://github.com/jhheo51-arch/AB-Test",
+  "latest_data_version": "v0.3",
+  "latest_complete_reader_bundle_version": "v0.2 author review, not final publication",
+  "counts_v03": {
+    "customers": 120000,
+    "assignments": 65559,
+    "messages": 43661,
+    "events": 15852,
+    "contracts": 697
+  },
+  "arms_v03": {
+    "A": 21637,
+    "B": 22024,
+    "H": 21898
+  },
+  "chapter_v03_pages": 7,
+  "reader_v02_pages": 76,
+  "diagnostic_cards": 60,
+  "diagnostic_dimensions": 12,
+  "required_paths": {
+    "summary": "PROJECT_SUMMARY.md",
+    "company_v03": "e-book/virtual-company/JH_Motors_v03.md",
+    "database_v03": "e-book/virtual-data/v03/data/jh_motors_v03.sqlite",
+    "plan_v03": "e-book/virtual-data/v03/experiment_plan.json",
+    "analysis_v03": "e-book/virtual-data/v03/analysis_report.json",
+    "chapter_v03": "e-book/exports/v03/sample_and_data_chapter_v03.pdf",
+    "book_v02": "e-book/exports/v02/ebook_review_v02.pdf",
+    "visual_cards": "e-book/exports/v02/diagnostic_atlas_v02.html",
+    "cards_data": "e-book/workflow/diagnostic_cards_v02.json",
+    "market_review": "e-book/planning/MARKET_COMPARISON_AND_REDESIGN_REVIEW.md",
+    "workbook": "e-book/workbook/workbook_v02.md",
+    "product_direction": "tool/DIRECTION.md"
+  },
+  "checks": [
+    "required files exist",
+    "v03 SQLite integrity and foreign keys",
+    "frozen plan hash matches database",
+    "actual PDF page counts"
+  ],
+  "not_repeated": [
+    "statistical calculations and simulations; existing reports retained",
+    "human statistical/domain/editorial approval",
+    "market/rights/distribution checks"
+  ],
+  "product_tool_status": "direction documents only, no implemented general analysis application",
+  "publication_status": "not ready for sale; author/content/domain/reader/rights review pending"
+}

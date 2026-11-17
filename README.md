@@ -1,5 +1,13 @@
 # A/B Test
 
+## 최신 통합 안내
+- **[지금까지의 프로젝트 통합 정리](PROJECT_SUMMARY.md)**: 결정·산출물·실제/합성 자료·시장 비평·남은 일.
+- **[자동 확인 상태](PROJECT_STATUS.json)**: 실제 파일·DB·PDF 확인 시점과 수치.
+- **[제품 방향 문서](tool/README.md)**: 별도 tool/ 경로, 현재 구현되지 않은 제품 설계.
+- **[제작 체크리스트](e-book/planning/PROGRESS.md)**: 출간 완료와 제작 중 구분.
+
+최신 가상 기업·데이터·대표 장은 v0.3, 이전 전체 읽기본과 카드 탐색기는 v0.2입니다. 판매 승인된 책이나 일반 A/B 분석 앱은 아직 완성되지 않았습니다.
+
 저자: **허재혁**. CRM A/B 테스트 학습·전자책·합성 데이터 프로젝트.
 GitHub 주소용 이름은 `AB-Test`, 프로젝트 표시명은 **A/B Test**입니다.
 
@@ -7,15 +15,16 @@ GitHub 주소용 이름은 `AB-Test`, 프로젝트 표시명은 **A/B Test**입�
 ```text
 e-book/
   virtual-company/   # JH Motors 기업·여정·운영 가정
-  virtual-data/      # 데이터 사전, v01 기본 DB, v02 실습 시나리오
+  virtual-data/      # v01 기본 / v02 오류·무효과 / v03 표본·기간 설계
   planning/          # 제작 방향·진행 체크리스트
-  manuscript/        # 시작 원고 v0.1 (전체 집필 미완료)
+  manuscript/        # 원고·저자 서사·승리 근거 (전권 재편집 중)
   workflow/          # 진단 명세·60개 카드
   exports/           # 시각화 HTML·SVG·시작 원고 PDF
-  workbook/          # 독자 양식 (제작 전)
+  workbook/          # 실험 계약·증거·보고서와 합성 답안
   design/cover/      # 표지 (제작 전)
-  references/        # 참고문헌·권리 기록 (정리 전)
-scripts/             # 데이터 생성·검증 코드
+  references/        # 공개자료·시장·방법·도구 조사 (권리 검수 미완료)
+scripts/             # 생성·계획·분석·시뮬레이션·조판·검사
+tool/                # 제품 방향·페르소나·비교·출처, 구현 전
 ```
 
 ## 합성 데이터
@@ -25,10 +34,10 @@ scripts/             # 데이터 생성·검증 코드
 - `e-book/virtual-data/v02/instructor`: 교육자 정답지·원본 대조 자료
 - `e-book/virtual-data/DATA_DICTIONARY.md`: 기본 스키마 설명
 
-시나리오별 고객 ID는 중복될 수 있으므로 서로 합치지 않습니다. 오류 데이터는 의도적으로 잘못되어 있으며 의사결정에 사용하면 안 됩니다. 통계적 주효과·검정력·현장 타당성 검증은 아직 미완료입니다.
+시나리오별 고객 ID는 중복될 수 있으므로 서로 합치지 않습니다. 오류 데이터는 의도적으로 잘못되어 있으며 의사결정에 사용하면 안 됩니다. 일부 비율 계산·표본 계획은 코드로 대조했지만, 모든 분석 조건·현장 타당성·외부 전문가 검수까지 완료한 것은 아닙니다.
 
-## 재현
-Python 표준 라이브러리만 사용합니다. 생성 환경 Python 3.14.7.
+## 이전 v01/v02 데이터 생성
+아래 기본 생성 경로는 Python 표준 라이브러리만 사용합니다. 당시 생성 환경 Python 3.14.7. 최신 v0.3 계획·분석·출력에는 별도 의존성이 있으며 [v0.3 실행 안내](e-book/virtual-data/v03/README.md)를 따릅니다.
 ```sh
 python scripts/build_db.py
 python scripts/prepare_scenarios_v02.py
