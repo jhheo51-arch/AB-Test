@@ -1,0 +1,1142 @@
+{
+  "plugins": {
+    "total": 478,
+    "selected": [
+      {
+        "id": "image-template-3d-stone-staircase-evolution-infographic",
+        "name": null,
+        "title": "3D Stone Staircase Evolution Infographic",
+        "description": "Transforms a flat evolutionary timeline into a realistic 3D stone staircase infographic with detailed organism renders and structured side panels.",
+        "category": null,
+        "surface": null,
+        "previewType": null,
+        "mode": null
+      },
+      {
+        "id": "example-fs-editorial-forest",
+        "name": null,
+        "title": "Art-Direct an Annual Report like a Magazine Creative Director",
+        "description": "Art-directing a fashion house's annual report — the editorial system, the photography rhythm, and the data spreads. Built as a decision-grade design craft deck for brand stakeholders, exec audience.",
+        "category": null,
+        "surface": null,
+        "previewType": null,
+        "mode": null
+      },
+      {
+        "id": "design-system-artistic",
+        "name": null,
+        "title": "Artistic",
+        "description": "High-contrast, expressive style with creative typography and bold color choices for visually striking interfaces.",
+        "category": null,
+        "surface": null,
+        "previewType": null,
+        "mode": null
+      },
+      {
+        "id": "design-system-atelier-zero",
+        "name": null,
+        "title": "Atelier Zero",
+        "description": "A magazine-grade, collage-driven visual system: warm paper canvas, surreal plaster-and-architecture imagery, oversized display type, hairline rules, Roman-numeral section markers, and tiny editorial annotations. Inspired by the production v",
+        "category": null,
+        "surface": null,
+        "previewType": null,
+        "mode": null
+      },
+      {
+        "id": "design-system-bold",
+        "name": null,
+        "title": "Bold",
+        "description": "Strong visual presence with heavyweight typography, high-contrast colors, and commanding layouts.",
+        "category": null,
+        "surface": null,
+        "previewType": null,
+        "mode": null
+      },
+      {
+        "id": "video-template-frame-bold-poster",
+        "name": null,
+        "title": "Bold Poster Frame",
+        "description": "A 1970s European editorial poster in motion — a red rule draws across, a giant tilted figure drops in, a three-line headline rises line-by-line, an italic serif standfirst fades.",
+        "category": null,
+        "surface": null,
+        "previewType": null,
+        "mode": null
+      },
+      {
+        "id": "example-html-ppt-zhangzara-editorial-tri-tone",
+        "name": null,
+        "title": "Build an Editorial Design System like a Magazine Art Director",
+        "description": "A type-and-color system for a culture magazine relaunch — the grid, the tri-tone palette, and the layout kit. Built as a decision-grade design craft deck for editorial & design team.",
+        "category": null,
+        "surface": null,
+        "previewType": null,
+        "mode": null
+      },
+      {
+        "id": "design-system-cafe",
+        "name": null,
+        "title": "Cafe",
+        "description": "Cozy cafe-inspired interface with warm tones, soft typography, and clean layouts for a relaxed browsing experience.",
+        "category": null,
+        "surface": null,
+        "previewType": null,
+        "mode": null
+      },
+      {
+        "id": "design-system-claude",
+        "name": null,
+        "title": "Claude (Anthropic)",
+        "description": "Anthropic's AI assistant. Warm terracotta accent, clean editorial layout.",
+        "category": null,
+        "surface": null,
+        "previewType": null,
+        "mode": null
+      },
+      {
+        "id": "design-system-clean",
+        "name": null,
+        "title": "Clean",
+        "description": "Simplicity-focused design with ample whitespace, legible typography, and a limited color palette to reduce visual clutter.",
+        "category": null,
+        "surface": null,
+        "previewType": null,
+        "mode": null
+      },
+      {
+        "id": "design-system-clickhouse",
+        "name": null,
+        "title": "ClickHouse",
+        "description": "Fast analytics database. Yellow-accented, technical documentation style.",
+        "category": null,
+        "surface": null,
+        "previewType": null,
+        "mode": null
+      },
+      {
+        "id": "example-clinical-case-report",
+        "name": null,
+        "title": "Clinical Case Report",
+        "description": "Structured medical case presentation for clinical rounds, conferences, and documentation. Generates SOAP-format or narrative case reports with physiologically accurate vitals, labs, and evidence-based plans. Use when the brief mentions \"case report\", \"case presentation\", \"SOAP note\", \"clinical case\", \"ward rounds\", \"case summary\", or \"patient presentation\".",
+        "category": null,
+        "surface": null,
+        "previewType": null,
+        "mode": null
+      },
+      {
+        "id": "design-system-creative",
+        "name": null,
+        "title": "Creative",
+        "description": "Playful, character-driven design with expressive typography and bold graphics for landing pages and creative projects.",
+        "category": null,
+        "surface": null,
+        "previewType": null,
+        "mode": null
+      },
+      {
+        "id": "example-dating-web",
+        "name": null,
+        "title": "Dating Web",
+        "description": "A consumer-feeling dating / matchmaking dashboard — left rail navigation, ticker bar of community signals, headline KPIs, a 30-day mutual-matches bar chart, and a match-rate trend block. Editorial typography, restrained accent. Use when the brief asks for a \"dating site\", \"matchmaking\", \"community dashboard\", \"social network dashboard\", or any consumer product where the data is the story.",
+        "category": null,
+        "surface": null,
+        "previewType": null,
+        "mode": null
+      },
+      {
+        "id": "example-fs-notebook-tabs",
+        "name": null,
+        "title": "Defend a CS Capstone like a Top Thesis Advisor",
+        "description": "A computer-science capstone: an on-device ML keyboard that predicts next words privately — problem, method, evaluation, and defense answers. Built as a decision-grade coursework defense deck for professor, defense committee.",
+        "category": null,
+        "surface": null,
+        "previewType": null,
+        "mode": null
+      },
+      {
+        "id": "example-html-ppt-zhangzara-soft-editorial",
+        "name": null,
+        "title": "Deliver a Digital-Transformation Roadmap like a Big-Four Partner",
+        "description": "A digital-transformation roadmap for a legacy insurer — the diagnosis, the sequenced bets, and the operating rhythm to land them. Built as a decision-grade consulting deck for client executives.",
+        "category": null,
+        "surface": null,
+        "previewType": null,
+        "mode": null
+      },
+      {
+        "id": "example-webgl-depth-gallery",
+        "name": null,
+        "title": "Depth Gallery",
+        "description": "A scroll-reactive 3D image gallery in Three.js: Z-stacked images crossfade over per-image mood backgrounds with velocity breath, a glowing cursor trail and an editorial CMYK/RGB/HEX/PMS color card.",
+        "category": null,
+        "surface": null,
+        "previewType": null,
+        "mode": null
+      },
+      {
+        "id": "example-design-brief",
+        "name": null,
+        "title": "Design Brief",
+        "description": "Parse a structured design brief written in I-Lang protocol format into a concrete design spec. Eliminates ambiguity from vague requests like \"make it professional\" by requiring explicit dimensions: palette, typography, layout, mood, density, and constraints. Trigger keywords: \"design brief\", \"create a design brief\", \"ilang brief\", \"structured brief\".",
+        "category": null,
+        "surface": null,
+        "previewType": null,
+        "mode": null
+      },
+      {
+        "id": "example-docs-page",
+        "name": null,
+        "title": "Docs Page",
+        "description": "A documentation page — inline-start nav, scrollable article body, inline-end table of contents. Use when the brief mentions \"docs\", \"documentation\", \"guide\", \"API reference\", or \"tutorial\".",
+        "category": null,
+        "surface": null,
+        "previewType": null,
+        "mode": null
+      },
+      {
+        "id": "design-system-editorial",
+        "name": null,
+        "title": "Editorial",
+        "description": "Magazine-inspired editorial layout with refined serif typography, structured grids, and elegant reading experiences.",
+        "category": null,
+        "surface": null,
+        "previewType": null,
+        "mode": null
+      },
+      {
+        "id": "design-system-elegant",
+        "name": null,
+        "title": "Elegant",
+        "description": "Graceful, refined aesthetic with delicate typography, minimal palettes, and polished layouts that exude sophistication.",
+        "category": null,
+        "surface": null,
+        "previewType": null,
+        "mode": null
+      },
+      {
+        "id": "design-system-energetic",
+        "name": null,
+        "title": "Energetic",
+        "description": "Dynamic, vibrant style with thick borders, geometric shapes, high-contrast colors, and expressive typography conveying motion and vitality.",
+        "category": null,
+        "surface": null,
+        "previewType": null,
+        "mode": null
+      },
+      {
+        "id": "design-system-ferrari",
+        "name": null,
+        "title": "Ferrari",
+        "description": "Luxury automotive. Chiaroscuro editorial, Ferrari Red accents, cinematic black.",
+        "category": null,
+        "surface": null,
+        "previewType": null,
+        "mode": null
+      },
+      {
+        "id": "design-system-flat",
+        "name": null,
+        "title": "Flat",
+        "description": "Two-dimensional minimalist style with vibrant colors, clean typography, and no 3D effects for fast, user-friendly interfaces.",
+        "category": null,
+        "surface": null,
+        "previewType": null,
+        "mode": null
+      },
+      {
+        "id": "design-system-futuristic",
+        "name": null,
+        "title": "Futuristic",
+        "description": "Forward-looking design with tech-inspired typography, modern layouts, and a sleek, innovation-driven aesthetic.",
+        "category": null,
+        "surface": null,
+        "previewType": null,
+        "mode": null
+      },
+      {
+        "id": "example-html-ppt-taste-editorial",
+        "name": null,
+        "title": "Html Ppt Taste Editorial",
+        "description": "16:9 HTML deck in editorial-minimalist taste. Warm cream slides, serif display + grotesque body, hairline rules, monospace meta, generous macro-whitespace, one accent. Distilled from Leonxlnx/taste-skill `minimalist-skill`.",
+        "category": null,
+        "surface": null,
+        "previewType": null,
+        "mode": null
+      },
+      {
+        "id": "example-image-poster",
+        "name": null,
+        "title": "Image Poster",
+        "description": "Single-image generation skill for posters, key art, and editorial illustrations. Defaults to gpt-image-2 but is provider-agnostic — the same workflow drives Flux, Imagen, or Midjourney via the active upstream tooling. Output is one or more PNG/JPEG files saved to the project folder.",
+        "category": null,
+        "surface": null,
+        "previewType": null,
+        "mode": null
+      },
+      {
+        "id": "image-template-infographic-otaku-dance-choreography-breakdown-gokurakujodo-16-panels",
+        "name": null,
+        "title": "Infographic - Otaku Dance Choreography Breakdown (Gokuraku Jodo, 16 Panels)",
+        "description": "A single vertical 2:3 poster composed as a 4×4 grid of 16 connected square panels, forming a full choreography breakdown chart for the famous Japanese otaku dance song 極楽浄土 (Gokuraku Jodo). Each panel shows the same cute half-realistic anime idol girl (pink twin-tails, sailor-collar school-idol uniform) performing one signature pose from the dance, full-body, on a pastel-pink background with a small Japanese caption strip at the bottom and a numbered circle at the top-left. Explicitly engineered as a POSE REFERENCE sheet for AI video generation — every silhouette is crisp and unambiguous, no motion lines or background clutter. Tuned for gpt-image-2, aspect 2:3. Category: Infographic.",
+        "category": null,
+        "surface": null,
+        "previewType": null,
+        "mode": null
+      },
+      {
+        "id": "example-kami-landing",
+        "name": null,
+        "title": "Kami Landing",
+        "description": "Produce a print-grade single-page kami (紙 / 纸) document — warm parchment canvas, ink-blue accent, serif at one weight, no italic, no cool grays. The output reads like a professional white paper or studio one-pager, not an app UI. Multilingual by design (EN · zh-CN · ja). One self-contained HTML file, zero dependencies.",
+        "category": null,
+        "surface": null,
+        "previewType": null,
+        "mode": null
+      },
+      {
+        "id": "example-doc-kami-parchment",
+        "name": null,
+        "title": "Kami Parchment Document",
+        "description": "Warm parchment canvas (#f5f4ed), monochrome ink-blue accent (#1B365D), one serif family, and editorial-grade typography.",
+        "category": null,
+        "surface": null,
+        "previewType": null,
+        "mode": null
+      },
+      {
+        "id": "video-template-frame-kinetic-type",
+        "name": null,
+        "title": "Kinetic Type",
+        "description": "Bold kinetic typography promo",
+        "category": null,
+        "surface": null,
+        "previewType": null,
+        "mode": null
+      },
+      {
+        "id": "design-system-lamborghini",
+        "name": null,
+        "title": "Lamborghini",
+        "description": "Supercar brand. True black surfaces, gold accents, dramatic uppercase typography.",
+        "category": null,
+        "surface": null,
+        "previewType": null,
+        "mode": null
+      },
+      {
+        "id": "example-magazine-poster",
+        "name": null,
+        "title": "Magazine Poster",
+        "description": "An editorial-style poster — newsprint paper, dateline, oversized serif headline with a struck-through word and italic accent, a 2-column body block, and 6 numbered sections with annotated pull-quote captions. Reads like a Sunday-paper full-page essay or a thoughtful launch poster. Use when the brief asks for \"magazine poster\", \"editorial poster\", \"newsprint\", \"essay layout\", or \"manifesto\".",
+        "category": null,
+        "surface": null,
+        "previewType": null,
+        "mode": null
+      },
+      {
+        "id": "design-system-mastercard",
+        "name": null,
+        "title": "Mastercard",
+        "description": "Global payments network. Warm cream canvas, orbital pill shapes, editorial warmth.",
+        "category": null,
+        "surface": null,
+        "previewType": null,
+        "mode": null
+      },
+      {
+        "id": "design-system-minimal",
+        "name": null,
+        "title": "Minimal",
+        "description": "Stripped-back design emphasizing whitespace, clean typography, and restrained color for maximum clarity and focus.",
+        "category": null,
+        "surface": null,
+        "previewType": null,
+        "mode": null
+      },
+      {
+        "id": "design-system-mintlify",
+        "name": null,
+        "title": "Mintlify",
+        "description": "Documentation platform. Clean, green-accented, reading-optimized.",
+        "category": null,
+        "surface": null,
+        "previewType": null,
+        "mode": null
+      },
+      {
+        "id": "design-system-modern",
+        "name": null,
+        "title": "Modern",
+        "description": "Contemporary editorial style with serif typography, minimal palettes, and clean layouts for polished digital products.",
+        "category": null,
+        "surface": null,
+        "previewType": null,
+        "mode": null
+      },
+      {
+        "id": "design-system-mongodb",
+        "name": null,
+        "title": "MongoDB",
+        "description": "Document database. Green leaf branding, developer documentation focus.",
+        "category": null,
+        "surface": null,
+        "previewType": null,
+        "mode": null
+      },
+      {
+        "id": "video-template-frame-nyt-graph",
+        "name": null,
+        "title": "NYT Graph",
+        "description": "Animated data chart in print editorial style",
+        "category": null,
+        "surface": null,
+        "previewType": null,
+        "mode": null
+      },
+      {
+        "id": "example-frame-data-chart-nyt",
+        "name": null,
+        "title": "NYT-Style Data Chart Frame",
+        "description": "NYT-newsroom typography, staggered reveal animation, and editorial-grade charts (line, bar, or range band).",
+        "category": null,
+        "surface": null,
+        "previewType": null,
+        "mode": null
+      },
+      {
+        "id": "video-template-frame-data-chart-nyt",
+        "name": null,
+        "title": "NYT-Style Data Chart Frame",
+        "description": "NYT-newsroom typography, staggered reveal animation, and editorial-grade charts (line, bar, or range band).",
+        "category": null,
+        "surface": null,
+        "previewType": null,
+        "mode": null
+      },
+      {
+        "id": "design-system-openai",
+        "name": null,
+        "title": "OpenAI",
+        "description": "Calm, near-monochrome system anchored in deep teal-black with generous white space and editorial typography.",
+        "category": null,
+        "surface": null,
+        "previewType": null,
+        "mode": null
+      },
+      {
+        "id": "example-open-design-landing",
+        "name": null,
+        "title": "OpenDesign Landing",
+        "description": "Produce a world-class single-page editorial landing site in the Atelier Zero visual language (Monocle / Apartamento / Études editorial collage) — the same aesthetic OpenDesign uses for its own marketing surface. The agent fills a typed `inputs.json` from a brand brief, optionally generates 16 collage assets via gpt-image-2, then runs a pure-function composer that emits a self-contained HTML file. Drop-in scroll-reveal motion and a Headroom-style sticky nav are wired automatically.",
+        "category": null,
+        "surface": null,
+        "previewType": null,
+        "mode": null
+      },
+      {
+        "id": "example-motion-opus-design-lab",
+        "name": null,
+        "title": "Opus Motion Design Lab",
+        "description": "A 15-second interactive motion-design lab for OPUS 5.5, demonstrating spacing, typography, motion blur, easing, follow-through and anticipation before revealing motion designer CLAUDE.",
+        "category": null,
+        "surface": null,
+        "previewType": null,
+        "mode": null
+      },
+      {
+        "id": "example-orbit-notion",
+        "name": null,
+        "title": "Orbit Notion",
+        "description": "Open Orbit briefing skill — selected by the Orbit pipeline when Notion is the user's only connected connector, or when the user explicitly scopes their daily digest to Notion. Pulls the past 24 hours of document edits, comments, mentions, and database row changes from the user's authenticated Notion connection and renders the digest as a native Notion page (callout / toggle / database table primitives). This skill should not be triggered manually — it is invoked by Orbit's daily-digest scheduler against live Notion data.",
+        "category": null,
+        "surface": null,
+        "previewType": null,
+        "mode": null
+      },
+      {
+        "id": "design-system-paper",
+        "name": null,
+        "title": "Paper",
+        "description": "Paper-textured, print-inspired design with minimal colors, clean serif/sans typography, and tactile surface qualities.",
+        "category": null,
+        "surface": null,
+        "previewType": null,
+        "mode": null
+      },
+      {
+        "id": "video-template-frame-pentagram-stat",
+        "name": null,
+        "title": "Pentagram Stat Frame",
+        "description": "Swiss-grid statistic anchor — giant number, red accent, growing bars, black data bar. Rational and editorial.",
+        "category": null,
+        "surface": null,
+        "previewType": null,
+        "mode": null
+      },
+      {
+        "id": "design-system-perplexity",
+        "name": null,
+        "title": "Perplexity AI",
+        "description": "Conversational AI search engine. Deep-dark canvas, sharp typography, single violet accent, dense information hierarchy.",
+        "category": null,
+        "surface": null,
+        "previewType": null,
+        "mode": null
+      },
+      {
+        "id": "design-system-premium",
+        "name": null,
+        "title": "Premium",
+        "description": "Apple-inspired premium aesthetic with precise spacing, modern typography, and a refined, polished visual language.",
+        "category": null,
+        "surface": null,
+        "previewType": null,
+        "mode": null
+      },
+      {
+        "id": "example-ve-midnight-editorial",
+        "name": null,
+        "title": "Present a Financial Review like a Startup CFO",
+        "description": "OpenDesign's financial review: runway, burn, and the sustainability plan that keeps the project independent. Built as a decision-grade data & finance deck for board, leadership.",
+        "category": null,
+        "surface": null,
+        "previewType": null,
+        "mode": null
+      },
+      {
+        "id": "design-system-professional",
+        "name": null,
+        "title": "Professional",
+        "description": "Polished, business-ready design with modern typography, structured layouts, and a trustworthy visual identity.",
+        "category": null,
+        "surface": null,
+        "previewType": null,
+        "mode": null
+      },
+      {
+        "id": "image-template-profile-avatar-glamorous-woman-in-black-portrait",
+        "name": null,
+        "title": "Profile / Avatar - Glamorous Woman in Black Portrait",
+        "description": "This prompt generates a photorealistic luxury-style portrait of an elegant woman in a plunging black outfit, ideal for fashion editorial or beauty imagery.",
+        "category": null,
+        "surface": null,
+        "previewType": null,
+        "mode": null
+      },
+      {
+        "id": "image-template-profile-avatar-poetic-woman-in-garden-portrait",
+        "name": null,
+        "title": "Profile / Avatar - Poetic Woman in Garden Portrait",
+        "description": "This prompt generates a realistic editorial-style portrait of a bookish young woman in a sunlit garden, ideal for lifestyle photography, literary branding, or elegant character imagery.",
+        "category": null,
+        "surface": null,
+        "previewType": null,
+        "mode": null
+      },
+      {
+        "id": "image-template-profile-avatar-professional-identity-portrait-wallpaper",
+        "name": null,
+        "title": "Profile / Avatar - Professional Identity Portrait Wallpaper",
+        "description": "Generates a high-resolution, premium wallpaper featuring a subject in professional attire with career-related activities and typography.",
+        "category": null,
+        "surface": null,
+        "previewType": null,
+        "mode": null
+      },
+      {
+        "id": "design-system-publication",
+        "name": null,
+        "title": "Publication",
+        "description": "Print-inspired visual language for books, magazines, and reports with editorial grids and expressive typography.",
+        "category": null,
+        "surface": null,
+        "previewType": null,
+        "mode": null
+      },
+      {
+        "id": "design-system-refined",
+        "name": null,
+        "title": "Refined",
+        "description": "Carefully curated, modern minimal style with elegant serif typography and understated, sophisticated palettes.",
+        "category": null,
+        "surface": null,
+        "previewType": null,
+        "mode": null
+      },
+      {
+        "id": "design-system-renault",
+        "name": null,
+        "title": "Renault",
+        "description": "French automotive. Vibrant aurora gradients, NouvelR typography, bold energy.",
+        "category": null,
+        "surface": null,
+        "previewType": null,
+        "mode": null
+      },
+      {
+        "id": "design-system-retro",
+        "name": null,
+        "title": "Retro",
+        "description": "Throwback design with vintage-inspired typography, high-contrast retro palettes, and nostalgic visual elements.",
+        "category": null,
+        "surface": null,
+        "previewType": null,
+        "mode": null
+      },
+      {
+        "id": "example-saas-landing",
+        "name": null,
+        "title": "Saas Landing",
+        "description": "Single-page SaaS landing with hero, features, social proof, pricing, and CTA. Respects the active DESIGN.md color/typography/layout tokens. Trigger keywords: \"saas landing\", \"marketing page\", \"product landing\".",
+        "category": null,
+        "surface": null,
+        "previewType": null,
+        "mode": null
+      },
+      {
+        "id": "design-system-sanity",
+        "name": null,
+        "title": "Sanity",
+        "description": "Headless CMS. Red accent, content-first editorial layout.",
+        "category": null,
+        "surface": null,
+        "previewType": null,
+        "mode": null
+      },
+      {
+        "id": "design-system-simple",
+        "name": null,
+        "title": "Simple",
+        "description": "Straightforward, no-frills design with clean typography, neutral colors, and intuitive layouts that stay out of the way.",
+        "category": null,
+        "surface": null,
+        "previewType": null,
+        "mode": null
+      },
+      {
+        "id": "image-template-social-media-post-editorial-fashion-photography",
+        "name": null,
+        "title": "Social Media Post - Editorial Fashion Photography",
+        "description": "A moody, fashion-focused prompt for a minimalist studio scene with soft lighting and warm tones.",
+        "category": null,
+        "surface": null,
+        "previewType": null,
+        "mode": null
+      },
+      {
+        "id": "image-template-social-media-post-fashion-editorial-collage",
+        "name": null,
+        "title": "Social Media Post - Fashion Editorial Collage",
+        "description": "A highly detailed 2x2 photo collage prompt for fashion editorial shots, focusing on consistent styling, specific lighting, and facial features from a reference photo.",
+        "category": null,
+        "surface": null,
+        "previewType": null,
+        "mode": null
+      },
+      {
+        "id": "image-template-social-media-post-showa-day-retro-culture-magazine-cover",
+        "name": null,
+        "title": "Social Media Post - Showa Day Retro Culture Magazine Cover",
+        "description": "A warm editorial-style Japanese holiday feature page combining anime character art, nostalgic Showa-era street imagery, and magazine-style informational layout for seasonal cultural promotions.",
+        "category": null,
+        "surface": null,
+        "previewType": null,
+        "mode": null
+      },
+      {
+        "id": "example-sprite-animation",
+        "name": null,
+        "title": "Sprite Animation",
+        "description": "A pixel / sprite-style animated explainer slide — full-bleed cream stage, bold display year, animated pixel-art mascot (e.g. Hanafuda card, mushroom, or 8-bit console), kinetic Japanese display type, ticking timeline ribbon. Reads like a single frame of an educational motion video — looping CSS keyframes, no JS, ready to be screen-recorded into a vertical video. Use when the brief asks for a \"sprite animation\", \"pixel-art video\", \"8-bit explainer\", \"history of X explainer\", \"kinetic typography history\", \"Nintendo-style\", \"精灵图动画\", \"像素动画\", or \"复古动画\".",
+        "category": null,
+        "surface": null,
+        "previewType": null,
+        "mode": null
+      },
+      {
+        "id": "design-system-theverge",
+        "name": null,
+        "title": "The Verge",
+        "description": "Tech editorial media. Acid-mint and ultraviolet accents, Manuka display, rave-flyer story tiles.",
+        "category": null,
+        "surface": null,
+        "previewType": null,
+        "mode": null
+      },
+      {
+        "id": "example-hps-retro-tv",
+        "name": null,
+        "title": "Turn Home Movies into a Family-History Story like a Documentary Editor",
+        "description": "A family history told through five decades of home movies — the opening question, the eras, and what the footage reveals. Built as a decision-grade story deck for family, close friends.",
+        "category": null,
+        "surface": null,
+        "previewType": null,
+        "mode": null
+      },
+      {
+        "id": "example-html-ppt-zhangzara-sakura-chroma",
+        "name": null,
+        "title": "Turn a Cherry-Blossom Trip into a Photo Essay like a Travel Editorial Director",
+        "description": "A cherry-blossom-season travel photo essay through Kyoto — the arrival, the peak bloom, and the moment that made the trip. Built as a decision-grade story deck for friends, travel readers.",
+        "category": null,
+        "surface": null,
+        "previewType": null,
+        "mode": null
+      },
+      {
+        "id": "example-hps-memphis-pop",
+        "name": null,
+        "title": "Turn a Pop-Culture Retrospective into a Talk like an Editorial Curator",
+        "description": "A pop-culture retrospective on how 1980s design language shaped today's apps — the scenes, the turning point, and the takeaway. Built as a decision-grade story deck for talk audience, design community.",
+        "category": null,
+        "surface": null,
+        "previewType": null,
+        "mode": null
+      },
+      {
+        "id": "design-system-urdu",
+        "name": null,
+        "title": "Urdu Modern (Indus Script System)",
+        "description": "Urdu-first digital experiences with native RTL support,Nastaliq typography, and bilingual harmony.",
+        "category": null,
+        "surface": null,
+        "previewType": null,
+        "mode": null
+      },
+      {
+        "id": "design-system-vibrant",
+        "name": null,
+        "title": "Vibrant",
+        "description": "Lively, colorful design with bold playful typography, warm accents, and dynamic visual energy.",
+        "category": null,
+        "surface": null,
+        "previewType": null,
+        "mode": null
+      },
+      {
+        "id": "video-template-frame-vignelli",
+        "name": null,
+        "title": "Vignelli",
+        "description": "Bold typography with red accents",
+        "category": null,
+        "surface": null,
+        "previewType": null,
+        "mode": null
+      },
+      {
+        "id": "design-system-vintage",
+        "name": null,
+        "title": "Vintage",
+        "description": "1950s-1990s nostalgia with skeuomorphic touches, grainy textures, retro color palettes, and pixel-style typography.",
+        "category": null,
+        "surface": null,
+        "previewType": null,
+        "mode": null
+      },
+      {
+        "id": "example-waitlist-page",
+        "name": null,
+        "title": "Waitlist Page",
+        "description": "Minimal pre-launch landing with email capture, brand logo, and optional decorative layer. Reads DESIGN.md for colors, typography, and layout rules. Best for: product launches, beta signups, early access programs, indie projects.",
+        "category": null,
+        "surface": null,
+        "previewType": null,
+        "mode": null
+      },
+      {
+        "id": "design-system-warm-editorial",
+        "name": null,
+        "title": "Warm Editorial",
+        "description": "A serif-led magazine aesthetic. Terracotta accent on warm off-white paper — good for long-form, editorial, and brand-led marketing pages.",
+        "category": null,
+        "surface": null,
+        "previewType": null,
+        "mode": null
+      },
+      {
+        "id": "example-web-prototype-taste-editorial",
+        "name": null,
+        "title": "Web Prototype Taste Editorial",
+        "description": "Editorial-minimalist web prototype. Warm monochrome canvas, serif display + grotesque body, 1px hairline borders, muted pastel chips, generous macro-whitespace, ambient micro-motion. Distilled from Leonxlnx/taste-skill `minimalist-skill`.",
+        "category": null,
+        "surface": null,
+        "previewType": null,
+        "mode": null
+      },
+      {
+        "id": "example-fs-emerald-editorial",
+        "name": null,
+        "title": "Write a Brand-Launch Narrative like a Growth Strategy Lead",
+        "description": "OpenDesign's 'design on your desk' brand-launch narrative: the market moment, the story, and the proof that converts. Built as a decision-grade marketing & GTM deck for marketing team, press.",
+        "category": null,
+        "surface": null,
+        "previewType": null,
+        "mode": null
+      },
+      {
+        "id": "example-replit-deck",
+        "name": null,
+        "title": "Write a Feature Business Case like a Principal PM",
+        "description": "For product and technical management work: turn PRDs, roadmaps, RFCs, architecture reviews, and retros into decision documents. Built around the core query \"pm-feature-business-case-deck\", with product strategy lead judgment, buyer-ready proof, and this outcome: approve the feature, architecture, roadmap, or incident follow-up.",
+        "category": null,
+        "surface": null,
+        "previewType": null,
+        "mode": null
+      },
+      {
+        "id": "example-html-ppt-xhs-white-editorial",
+        "name": null,
+        "title": "Write a Staff-Engineer Promotion Case like a Calibration-Committee Insider",
+        "description": "A staff-engineer promotion packet — scope, the proof moments, the artifacts, and the impact that clears the bar. Built as a decision-grade career deck for manager, calibration committee.",
+        "category": null,
+        "surface": null,
+        "previewType": null,
+        "mode": null
+      },
+      {
+        "id": "example-deck-guizang-editorial",
+        "name": null,
+        "title": "Write an Annual Marketing Plan like a World-Class CMO",
+        "description": "OpenDesign's FY26 marketing plan: brand-to-pipeline — audience, offer, channel mix, and the launch calendar that ties creative to growth. Built as a decision-grade marketing & GTM deck for CMO, growth lead, founder.",
+        "category": null,
+        "surface": null,
+        "previewType": null,
+        "mode": null
+      },
+      {
+        "id": "design-system-kami",
+        "name": null,
+        "title": "kami (紙 / 纸)",
+        "description": "Editorial paper system: warm parchment canvas, ink-blue accent, serif-led hierarchy. Built for resumes, one-pagers, white papers, portfolios, slide decks — anything that should feel like high-quality print rather than UI. Multilingual by de",
+        "category": null,
+        "surface": null,
+        "previewType": null,
+        "mode": null
+      }
+    ]
+  },
+  "skills": {
+    "total": 169,
+    "selected": [
+      {
+        "id": "motion-design",
+        "name": "motion-design",
+        "title": null,
+        "description": "Apply motion craft to an active task: refine a brief, beat map, visual continuity, typography, pacing, and timeline implementation. Use when planning or improving motion graphics; the host task owns artifact creation, output format, and export.",
+        "category": "animation-motion",
+        "surface": "web",
+        "previewType": "html",
+        "mode": "utility"
+      },
+      {
+        "id": "deck-guizang-editorial",
+        "name": "deck-guizang-editorial",
+        "title": null,
+        "description": "Editorial magazine meets e-ink: 10 layouts and 5 palettes (Ink, Indigo Porcelain, Forest Ink, Kraft Paper, Dune).",
+        "category": null,
+        "surface": "web",
+        "previewType": "html",
+        "mode": "deck"
+      },
+      {
+        "id": "doc-kami-parchment",
+        "name": "doc-kami-parchment",
+        "title": null,
+        "description": "Warm parchment canvas (#f5f4ed), monochrome ink-blue accent (#1B365D), one serif family, and editorial-grade typography.",
+        "category": null,
+        "surface": "web",
+        "previewType": "html",
+        "mode": "prototype"
+      },
+      {
+        "id": "after-hours-editorial-template",
+        "name": "after-hours-editorial-template",
+        "title": null,
+        "description": "Luxury dark-editorial HyperFrames template for three-page cinematic storyboards,\ninspired by haute couture title cards and magazine chapter spreads. Use when the\nuser asks for premium fashion-style motion pages, moody serif-led storytelling,\nor a high-end dark presentation aesthetic with rich transitions.",
+        "category": null,
+        "surface": "video",
+        "previewType": "html",
+        "mode": "template"
+      },
+      {
+        "id": "brand-guidelines",
+        "name": "brand-guidelines",
+        "title": null,
+        "description": "Apply Anthropic's official brand colors and typography to artifacts for consistent visual identity and professional design standards. A reference for shaping your own.",
+        "category": "design-systems",
+        "surface": "web",
+        "previewType": "html",
+        "mode": "design-system"
+      },
+      {
+        "id": "brandkit",
+        "name": "brandkit",
+        "title": null,
+        "description": "Premium brand-kit image generation skill for creating high-end brand-guidelines boards, logo systems, identity decks, and visual-world presentations. Trained for minimalist, cinematic, editorial, dark-tech, luxury, cultural, security, gaming, developer-tool, and consumer-app brand systems. Optimized for intentional logo concepting, refined composition, sparse typography, strong symbolic meaning, premium mockups, art-directed imagery, and flexible grid layouts.",
+        "category": "image-generation",
+        "surface": "image",
+        "previewType": "markdown",
+        "mode": "image"
+      },
+      {
+        "id": "industrial-brutalist-ui",
+        "name": "industrial-brutalist-ui",
+        "title": null,
+        "description": "Raw mechanical interfaces fusing Swiss typographic print with military terminal aesthetics. Rigid grids, extreme type scale contrast, utilitarian color, analog degradation effects. For data-heavy dashboards, portfolios, or editorial sites that need to feel like declassified blueprints.",
+        "category": "creative-direction",
+        "surface": "web",
+        "previewType": "html",
+        "mode": "prototype"
+      },
+      {
+        "id": "canvas-design",
+        "name": "canvas-design",
+        "title": null,
+        "description": "Create beautiful visual art in PNG and PDF documents using design philosophy and aesthetic principles for posters, illustrations, and static pieces.",
+        "category": "image-generation",
+        "surface": "image",
+        "previewType": "html",
+        "mode": "image"
+      },
+      {
+        "id": "d3-visualization",
+        "name": "d3-visualization",
+        "title": null,
+        "description": "Teaches the agent to produce D3 charts and interactive data visualizations. A comprehensive D3.js skill with examples across chart types and techniques giving the agent expert-level knowledge to generate complex, interactive visualizations. Useful for editorial dashboards, reports, data-rich prototypes, and explanatory graphics.",
+        "category": "diagrams",
+        "surface": "web",
+        "previewType": "html",
+        "mode": "prototype"
+      },
+      {
+        "id": "design-brief",
+        "name": "design-brief",
+        "title": null,
+        "description": "Parse a structured design brief written in I-Lang protocol format into a\nconcrete design spec. Eliminates ambiguity from vague requests like\n\"make it professional\" by requiring explicit dimensions: palette, typography,\nlayout, mood, density, and constraints.\nTrigger keywords: \"design brief\", \"create a design brief\", \"ilang brief\", \"structured brief\".",
+        "category": null,
+        "surface": "web",
+        "previewType": "html",
+        "mode": "design-system"
+      },
+      {
+        "id": "doc",
+        "name": "doc",
+        "title": null,
+        "description": "Read, create, and edit .docx documents with formatting and layout fidelity via OpenAI's document skill.",
+        "category": "documents",
+        "surface": "web",
+        "previewType": "html",
+        "mode": "prototype"
+      },
+      {
+        "id": "docx",
+        "name": "docx",
+        "title": null,
+        "description": "Create, edit, and analyze Word documents with tracked changes, comments, and formatting. Useful for design briefs, copy docs, and review-ready deliverables.",
+        "category": "documents",
+        "surface": "web",
+        "previewType": "html",
+        "mode": "prototype"
+      },
+      {
+        "id": "editorial-burgundy-principles-template",
+        "name": "editorial-burgundy-principles-template",
+        "title": null,
+        "description": "Editorial studio deck template in burgundy / blush / muted-gold palette.\nUse when users ask for premium manifesto or culture slides with pill tags,\nlarge typographic statements, principle cards, and guided keyboard/click navigation.",
+        "category": null,
+        "surface": "video",
+        "previewType": "html",
+        "mode": "template"
+      },
+      {
+        "id": "fal-restore",
+        "name": "fal-restore",
+        "title": null,
+        "description": "Restore and fix image quality — deblur, denoise, fix faces, and restore old documents using fal.ai's hosted restoration models.",
+        "category": "image-generation",
+        "surface": "image",
+        "previewType": "html",
+        "mode": "image"
+      },
+      {
+        "id": "field-notes-editorial-template",
+        "name": "field-notes-editorial-template",
+        "title": null,
+        "description": "Editorial \"Field Notes\" report template with soft paper background, serif hero\ntypography, rounded pastel insight cards, and a retention chart panel.\nUse when users ask for a premium magazine-style business report, board memo\none-pager, or elegant data storytelling layout.",
+        "category": null,
+        "surface": "video",
+        "previewType": "html",
+        "mode": "template"
+      },
+      {
+        "id": "frame-data-chart-nyt",
+        "name": "frame-data-chart-nyt",
+        "title": null,
+        "description": "NYT-newsroom typography, staggered reveal animation, and editorial-grade charts (line, bar, or range band).",
+        "category": null,
+        "surface": "video",
+        "previewType": "html",
+        "mode": "video"
+      },
+      {
+        "id": "frontend-design",
+        "name": "frontend-design",
+        "title": null,
+        "description": "Create distinctive, production-grade frontend interfaces with strong visual direction, polished typography, considered layout, and working HTML/CSS/JS or framework code. Use for websites, landing pages, dashboards, React components, application screens, and UI beautification.",
+        "category": "web-artifacts",
+        "surface": "web",
+        "previewType": "html",
+        "mode": "prototype"
+      },
+      {
+        "id": "gpt-taste",
+        "name": "gpt-taste",
+        "title": null,
+        "description": "Elite UX/UI & Advanced GSAP Motion Engineer. Enforces Python-driven true randomization for layout variance, strict AIDA page structure, wide editorial typography (bans 6-line wraps), gapless bento grids, strict GSAP ScrollTriggers (pinning, stacking, scrubbing), inline micro-images, and massive section spacing.",
+        "category": "creative-direction",
+        "surface": "web",
+        "previewType": "html",
+        "mode": "prototype"
+      },
+      {
+        "id": "html-ppt-retro-quarterly-review",
+        "name": "html-ppt-retro-quarterly-review",
+        "title": null,
+        "description": "Retro Quarterly Review presentation template in a bold blue + orange editorial\nlanguage. Use when users ask for a high-impact quarterly review / roadmap deck\nwith heavyweight slab headlines, clean cream paper sections, structured grids,\nand fast premium motion pacing (3 slides, each hold under 3s in video mode).",
+        "category": null,
+        "surface": "video",
+        "previewType": "html",
+        "mode": "template"
+      },
+      {
+        "id": "image-enhancer",
+        "name": "image-enhancer",
+        "title": null,
+        "description": "Improve image and screenshot quality by enhancing resolution, sharpness, and clarity for professional presentations and documentation.",
+        "category": "image-generation",
+        "surface": "image",
+        "previewType": "html",
+        "mode": "image"
+      },
+      {
+        "id": "minimalist-ui",
+        "name": "minimalist-ui",
+        "title": null,
+        "description": "Clean editorial-style interfaces. Warm monochrome palette, typographic contrast, flat bento grids, muted pastels. No gradients, no heavy shadows.",
+        "category": "creative-direction",
+        "surface": "web",
+        "previewType": "html",
+        "mode": "prototype"
+      },
+      {
+        "id": "minimax-docx",
+        "name": "minimax-docx",
+        "title": null,
+        "description": "Professional DOCX document creation and editing using OpenXML SDK. Useful for branded reports, polished proposals, and template-based authoring.",
+        "category": "documents",
+        "surface": "web",
+        "previewType": "html",
+        "mode": "prototype"
+      },
+      {
+        "id": "minimax-pdf",
+        "name": "minimax-pdf",
+        "title": null,
+        "description": "Generate, fill, and reformat PDFs with a token-based design system and 15 cover styles. Useful for branded PDFs, e-guides, and reports.",
+        "category": "documents",
+        "surface": "web",
+        "previewType": "html",
+        "mode": "prototype"
+      },
+      {
+        "id": "nanobanana-ppt",
+        "name": "nanobanana-ppt",
+        "title": null,
+        "description": "AI-powered PPT generation with document analysis and styled images via the NanoBanana stack. Combines image generation with structured deck output.",
+        "category": "image-generation",
+        "surface": "web",
+        "previewType": "html",
+        "mode": "deck"
+      },
+      {
+        "id": "pdf",
+        "name": "pdf",
+        "title": null,
+        "description": "Extract text, create PDFs, and handle forms. Useful for press releases, branded one-pagers, and printable design deliverables.",
+        "category": "documents",
+        "surface": "web",
+        "previewType": "html",
+        "mode": "prototype"
+      },
+      {
+        "id": "stitch-design-taste",
+        "name": "stitch-design-taste",
+        "title": null,
+        "description": "Semantic Design System Skill for Google Stitch. Generates agent-friendly DESIGN.md files that enforce premium, anti-generic UI standards — strict typography, calibrated color, asymmetric layouts, perpetual micro-motion, and hardware-accelerated performance.",
+        "category": "design-systems",
+        "surface": "web",
+        "previewType": "markdown",
+        "mode": "design-system"
+      },
+      {
+        "id": "swiss-creative-mode-template",
+        "name": "swiss-creative-mode-template",
+        "title": null,
+        "description": "Swiss-inspired creative-mode presentation template skill with bold editorial\ntypography, high-contrast geometric cards, interactive slide navigation,\ntheme switching, hotspot overlays, and palette choreography in a single-file\nHTML artifact. Use when users ask for a premium presentation-style landing,\na Swiss/brutalist deck look, or a creative launch page with rich interactions.",
+        "category": null,
+        "surface": "video",
+        "previewType": "html",
+        "mode": "template"
+      },
+      {
+        "id": "swiss-user-research-video-template",
+        "name": "swiss-user-research-video-template",
+        "title": null,
+        "description": "Swiss-style user-research narrative template in warm-paper editorial aesthetics.\nUse when users ask for a premium research deck or story-first live artifact with\nminimalist typography, high-clarity layout, subtle motion, donut breakdowns,\nand keyboard/click navigation across slides in a single HTML file.",
+        "category": null,
+        "surface": "video",
+        "previewType": "html",
+        "mode": "template"
+      },
+      {
+        "id": "web-design-guidelines",
+        "name": "web-design-guidelines",
+        "title": null,
+        "description": "Review UI code for Web Interface Guidelines compliance by the Vercel engineering team. Covers layout, typography, color, motion, and accessibility for product UI.",
+        "category": "design-systems",
+        "surface": "web",
+        "previewType": "markdown",
+        "mode": "design-system"
+      },
+      {
+        "id": "weread-year-in-review-video-template",
+        "name": "weread-year-in-review-video-template",
+        "title": null,
+        "description": "WeRead-inspired HyperFrames video template for vertical annual reading reports,\npersonal reading dashboards, book-note recaps, and shareable year-in-review\nstories. Use when users want a 9:16 HTML-to-MP4 reading report with warm paper\ntexture, editorial Chinese typography, book-page metaphors, data highlights,\nand deterministic motion.",
+        "category": null,
+        "surface": "video",
+        "previewType": "html",
+        "mode": "template"
+      },
+      {
+        "id": "wpds",
+        "name": "wpds",
+        "title": null,
+        "description": "WordPress Design System. Apply WordPress's official design tokens, typography, and component patterns to themes and sites.",
+        "category": "design-systems",
+        "surface": "web",
+        "previewType": "html",
+        "mode": "design-system"
+      },
+      {
+        "id": "writing-guidelines",
+        "name": "writing-guidelines",
+        "title": null,
+        "description": "Review docs/prose for Writing Guidelines compliance. Use when asked to \"review my docs\", \"check writing style\", \"audit prose\", \"review docs voice and tone\", or \"check this page against the writing handbook\".",
+        "category": "documentation",
+        "surface": "web",
+        "previewType": "markdown",
+        "mode": "prototype"
+      }
+    ]
+  }
+}

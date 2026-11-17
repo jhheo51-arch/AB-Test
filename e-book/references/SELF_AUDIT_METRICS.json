@@ -1,0 +1,14 @@
+{
+  "checked_at_seoul": "2026-11-17T11:52:23.063980+09:00",
+  "pdf_pages": 76,
+  "card_pages": 60,
+  "card_page_share_pct": 78.94736842105263,
+  "cards_with_explicit_existing_data_reference": [
+    "CRM-001",
+    "CRM-007",
+    "CRM-011",
+    "CRM-021"
+  ],
+  "linked_card_count": 4,
+  "limits": "A data reference is not a fully worked or empirically validated case."
+}
