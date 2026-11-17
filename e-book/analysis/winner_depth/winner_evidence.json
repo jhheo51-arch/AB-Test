@@ -1,0 +1,65 @@
+{
+  "dataset": "JH Motors synthetic v0.3",
+  "primary": {
+    "rate_A": 0.09109395942136156,
+    "rate_B": 0.10043588812204868,
+    "difference_pp": 0.9341928700687119,
+    "relative_lift": 0.10255266935401686,
+    "p_family_adjusted": 0.002739925188375877,
+    "simultaneous_approx_ci_level": 0.9833333333333333,
+    "ci_low_pp": 0.2597990453563094,
+    "ci_high_pp": 1.6084954426550537
+  },
+  "minimum_benefit_sensitivity": [
+    {
+      "threshold_pp": 0,
+      "interval_lower_exceeds_threshold": true,
+      "threshold_status": "Retrospective teaching threshold, not a preregistered business cutoff or valid post-hoc success rule"
+    },
+    {
+      "threshold_pp": 0.25,
+      "interval_lower_exceeds_threshold": true,
+      "threshold_status": "Retrospective teaching threshold, not a preregistered business cutoff or valid post-hoc success rule"
+    },
+    {
+      "threshold_pp": 0.5,
+      "interval_lower_exceeds_threshold": false,
+      "threshold_status": "Retrospective teaching threshold, not a preregistered business cutoff or valid post-hoc success rule"
+    },
+    {
+      "threshold_pp": 1,
+      "interval_lower_exceeds_threshold": false,
+      "threshold_status": "Retrospective teaching threshold, not a preregistered business cutoff or valid post-hoc success rule"
+    }
+  ],
+  "guardrail": {
+    "rate_A": 0.0083653001802468,
+    "rate_B": 0.009171812568107519,
+    "difference_pp": 0.08065123878607197,
+    "unadjusted_ci95_low_pp": -0.09494866033497809,
+    "unadjusted_ci95_high_pp": 0.25645972540227124,
+    "safety_margin_status": "Not defined in frozen experiment plan; no safety/non-inferiority winner declared",
+    "illustrative_margin_pp": 0.2,
+    "unadjusted_ci_upper_below_illustrative_margin": false,
+    "limits": "Exploratory individual 95% interval, different from primary family intervals; hypothetical post-hoc margin does not create safety confirmation."
+  },
+  "descriptive_synthetic_economics": {
+    "per_assigned": {
+      "A": 16915.57332347368,
+      "B": 22801.4674900109,
+      "H": 20181.295095442507
+    },
+    "A_minus_H": -3265.721771968827,
+    "B_minus_A": 5885.894166537219,
+    "B_minus_H": 2620.1723945683916,
+    "limits": "Descriptive fixed-assumption contract contribution, no profit effect inference or real OEM financial winner."
+  },
+  "winner_status": {
+    "primary_superiority": "Supported under the planned synthetic model and analysis assumptions",
+    "minimum_business_benefit": "No externally approved minimum adoption benefit; sensitivity examples only",
+    "guardrail_safety": "Not established",
+    "net_business_value": "Not established by formal financial inference or real economics",
+    "full_rollout": "Not authorized; human review and operational evidence required"
+  },
+  "warning": "Do not select a threshold after seeing results, translate p into P(B is best), confuse primary superiority with adoption, or compare v0.2 and v0.3 significance as N-only change."
+}
