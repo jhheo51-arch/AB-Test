@@ -1,0 +1,20 @@
+{
+  "version": "0.4 author review",
+  "author": "허재혁",
+  "format": "full reading manuscript, six worked cases; diagnostic cards and workbook separate",
+  "headings": 18,
+  "worked_case_count": 6,
+  "manuscript_characters": 51290,
+  "requests_covered": {
+    "1_winner_layers": "chapter6",
+    "2_primary_vs_minimum_benefit": "chapter7 + case2",
+    "3_guardrail_safety": "chapter7 + case2 + chapter9",
+    "4_six_worked_cases": "chapter8 cases1-6"
+  },
+  "source_data_unchanged": [
+    "v01",
+    "v03"
+  ],
+  "palette": "Existing proposal, not company brand; mira_contrast_matrix passed all8 combinations; minimum normal-text contrast5.85:1",
+  "human_review": "pending; not publication-ready"
+}

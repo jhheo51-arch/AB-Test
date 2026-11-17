@@ -11,3 +11,5 @@ __pycache__/
 _book/
 .quarto/
 .DS_Store
+# Local PDF text-extraction probe; reading manuscript is tracked separately.
+e-book/exports/v04/ebook_review_v04_extracted.txt

@@ -1,0 +1,3 @@
+# Preserve exact bytes used by frozen-plan and data manifests.
+e-book/virtual-data/v03/experiment_plan.json -text
+e-book/analysis/winner_v04/scenarios/*.csv -text whitespace=cr-at-eol

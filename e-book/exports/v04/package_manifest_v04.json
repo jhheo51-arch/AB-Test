@@ -1,0 +1,207 @@
+{
+  "version": "v0.4 author review",
+  "files": [
+    {
+      "path": "e-book/analysis/v02/verified_analysis.json",
+      "bytes": 3425,
+      "sha256": "d380b8856b297bb3aa696ef87e7acbc03617f840153a7ab8c22c77baf36b52a3"
+    },
+    {
+      "path": "e-book/analysis/winner_v04/core_results.json",
+      "bytes": 7226,
+      "sha256": "501a32cef982f5bdca9c211cd9cc7f47126a35e2019921f9f6a53a55e8689db3"
+    },
+    {
+      "path": "e-book/analysis/winner_v04/scenario_results.json",
+      "bytes": 19852,
+      "sha256": "d3ad00f3b908484d354e5ff40205cf077aeb6dbc1a83fd0a63e8a82c1dfd429c"
+    },
+    {
+      "path": "e-book/analysis/winner_v04/scenarios/case4_log.csv",
+      "bytes": 168064,
+      "sha256": "d6ad6ec255ca7f29bb518c8b1ff217910749409349bfb36cd4a0e0c1d8b38295"
+    },
+    {
+      "path": "e-book/analysis/winner_v04/scenarios/case4_truth.csv",
+      "bytes": 152047,
+      "sha256": "41b148dc21e37c1726f043d352942aa61095c256300d6cd551393f83ded56a0d"
+    },
+    {
+      "path": "e-book/analysis/winner_v04/scenarios/case5_customers.csv",
+      "bytes": 360068,
+      "sha256": "a52c642861867be0f4a88801dfb2b3838d4c85f58dce3dd65caa531d614d4def"
+    },
+    {
+      "path": "e-book/analysis/winner_v04/scenarios/case6_fixed_demand.csv",
+      "bytes": 870013,
+      "sha256": "e91ebbf62741c1ad2ebd60f5ffb2d9fe9dba647e92437a92267c1806960f0249"
+    },
+    {
+      "path": "e-book/analysis/winner_v04/scenarios/case6_operations.csv",
+      "bytes": 4671846,
+      "sha256": "f806a0e346cea042464322bb4461ef6183f3156af4bd43ad99775cfe58db6a24"
+    },
+    {
+      "path": "e-book/exports/v02/ebook_review_v02.md",
+      "bytes": 42221,
+      "sha256": "3b1208a4b5153dfea5508ed10d8eec2a1b7f40d64292b50b6bd5a665d48b89fd"
+    },
+    {
+      "path": "e-book/exports/v02/ebook_review_v02.pdf",
+      "bytes": 868284,
+      "sha256": "bd9f0d8e85925263e4fcb7dc828d7463aff5e022410d115738f9b13f1eaf19fe"
+    },
+    {
+      "path": "e-book/exports/v02/validation_v02.json",
+      "bytes": 2873,
+      "sha256": "a4e3d5627153af40c99dbbff808fbf1e018ce491d20da312b2268414d04c8488"
+    },
+    {
+      "path": "e-book/exports/v03/sample_and_data_chapter_v03.md",
+      "bytes": 13271,
+      "sha256": "2242068a4ab5c5b748cb18dd10362409d02c55b9777b366f55d0b021650b675a"
+    },
+    {
+      "path": "e-book/exports/v04/build_manifest_v04.json",
+      "bytes": 721,
+      "sha256": "33f44ed0563ec40f781b6016032312226a12d8d80c01a53d914da220776291cd"
+    },
+    {
+      "path": "e-book/exports/v04/diagnostic_cards_reference_v04.pdf",
+      "bytes": 401495,
+      "sha256": "78b5f019dabcef8ac5283f8803d44a7a8d388770fa7cef10f0719b559d8f8fdc"
+    },
+    {
+      "path": "e-book/exports/v04/ebook_review_v04.html",
+      "bytes": 132674,
+      "sha256": "8b14afd741063c66f25d3fd95bb729a35f8cc1b8bcf4d718a15f4c5a9fbcc2e0"
+    },
+    {
+      "path": "e-book/exports/v04/ebook_review_v04.md",
+      "bytes": 111806,
+      "sha256": "2625809645fa71efb85c0e8c465ef8464cf1e5933df67751d9cf3131cc478b1c"
+    },
+    {
+      "path": "e-book/exports/v04/ebook_review_v04.pdf",
+      "bytes": 626421,
+      "sha256": "55fd0abc82922ac29a45d6c3419f1ea0a72962fcb465d5ba7f1cdc9a9dfd15b0"
+    },
+    {
+      "path": "e-book/exports/v04/guardrail_effect.svg",
+      "bytes": 1755,
+      "sha256": "6b3cd8d49c5f8ee0606f36ca995a08ccd21990e04afa8289400bd36a4a8c72f9"
+    },
+    {
+      "path": "e-book/exports/v04/READER_KIT_README.md",
+      "bytes": 1814,
+      "sha256": "5a3c01b758d364974b699221585942bc3ae58f18495861f0d2ab2cad539421bf"
+    },
+    {
+      "path": "e-book/exports/v04/validation_v04.json",
+      "bytes": 9512,
+      "sha256": "b445386aa85a25cff5d2217405d8e4027eca680764706fccff4a4f55408edf8d"
+    },
+    {
+      "path": "e-book/exports/v04/winner_chapters_v04.md",
+      "bytes": 57304,
+      "sha256": "c081b39f64c4b2be9f41f0f7976ed3cc737119c72065cc7f881520d3409aa537"
+    },
+    {
+      "path": "e-book/exports/v04/winner_effect.svg",
+      "bytes": 1752,
+      "sha256": "51cadd9ef1e7d71ed10caf1028bd9f4d5a1fabb333ec4c37739f1b617de7aadd"
+    },
+    {
+      "path": "e-book/exports/v04/workbook_v04.html",
+      "bytes": 42666,
+      "sha256": "c02ea63106d0a9009654c2d4d72af27e70c5bf26b2adb61fbacbbf505a2abcbd"
+    },
+    {
+      "path": "e-book/exports/v04/workbook_v04.md",
+      "bytes": 34576,
+      "sha256": "f96330d023c50e033b63a2392e0804013dc0e9f19a1c47c172472f5cc0f7cb51"
+    },
+    {
+      "path": "e-book/exports/v04/workbook_v04.pdf",
+      "bytes": 305084,
+      "sha256": "8ca49667279fafe0764a6f46b15a063ee8f4741cf87c717d6c9928b58c4e7400"
+    },
+    {
+      "path": "e-book/manuscript/author_story_v02.md",
+      "bytes": 3336,
+      "sha256": "849efa7a97a06dd640e3b69a2ca5abd6512760dd6afbf8fec4e72a4d56d34a37"
+    },
+    {
+      "path": "e-book/manuscript/winner_cases_456_v04.md",
+      "bytes": 29752,
+      "sha256": "ffff8c349fcefeea89f51e666dfb8932784b93fa3bedc04ce852b7022eb2b5ec"
+    },
+    {
+      "path": "e-book/manuscript/winner_core_v04.md",
+      "bytes": 25313,
+      "sha256": "f2d0279d757c40ad6985fc0fb0ae349f6004e6f362c300bf3dd3ca8800385ebc"
+    },
+    {
+      "path": "e-book/manuscript/winner_decision_v04.md",
+      "bytes": 12787,
+      "sha256": "a9d2144c7053ec2db691795637351049b1f90bf726c73309d9387ad287ab2215"
+    },
+    {
+      "path": "e-book/virtual-data/v01/data/oem_crm.sqlite",
+      "bytes": 2850816,
+      "sha256": "9361466b2bfef6beda882530c8ce81b492d29ae579478598cc4ee94bfc191d7d"
+    },
+    {
+      "path": "e-book/virtual-data/v03/analysis_report.json",
+      "bytes": 6961,
+      "sha256": "dbc4fa4398419ab7f903b1f4b50f0562b401384bfeaf89f07a114f2822232ca2"
+    },
+    {
+      "path": "e-book/virtual-data/v03/data/jh_motors_v03.sqlite",
+      "bytes": 18964480,
+      "sha256": "30aa331d355aaf60d20b4afc685c066fde5cbd2e72873f97d229a953eaa5d85a"
+    },
+    {
+      "path": "e-book/virtual-data/v03/DATA_DICTIONARY.md",
+      "bytes": 3547,
+      "sha256": "9c997c7c852edc37464816e183af734f8551c6bfd6df68f09ea19147afd8071b"
+    },
+    {
+      "path": "e-book/virtual-data/v03/experiment_plan.json",
+      "bytes": 10669,
+      "sha256": "f1226b7743ed4705f0e79a03f53fca2f057c7500e5e97f70131d4a5a7fe721f7"
+    },
+    {
+      "path": "scripts/analyze_winner_v04.py",
+      "bytes": 7901,
+      "sha256": "10142f85fe471434b5d7fc667752276381893a61f9f13459bbb20596c713d740"
+    },
+    {
+      "path": "scripts/build_ebook_v04.py",
+      "bytes": 21974,
+      "sha256": "5d33a8beb1e3c27508b09c9290927e2eb28851793106262397afd74ca759bcbd"
+    },
+    {
+      "path": "scripts/build_winner_scenarios_v04.py",
+      "bytes": 46330,
+      "sha256": "39efa0b557c11713852fc4494dee9fa18461bebd2d51ca8fd0443547ef9d653c"
+    },
+    {
+      "path": "scripts/package_reader_v04.py",
+      "bytes": 4730,
+      "sha256": "b8bc30b97d576f7a058969884fecd7cb63b800e6528219b28461fdaa598e84bd"
+    },
+    {
+      "path": "scripts/render_verify_v04.py",
+      "bytes": 9211,
+      "sha256": "9aa010094dfaf4fc5061f998eefb2761b542b6610bad70cf017bf6c6817070f9"
+    }
+  ],
+  "file_count_without_manifest": 39,
+  "page_counts": {
+    "ebook_review_v04": 54,
+    "workbook_v04": 17,
+    "diagnostic_cards_reference_v04": 60
+  },
+  "rights": "Only original synthetic/author/reproducible artifacts; real OEM source originals excluded; font/commercial rights review pending"
+}

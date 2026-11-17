@@ -1,10 +1,10 @@
 {
-  "checked_at_seoul": "2026-11-17T13:58:19.941608+09:00",
+  "checked_at_seoul": "2026-11-17T15:47:43.499774+09:00",
   "author": "허재혁",
   "project": "A/B Test",
   "repository": "https://github.com/jhheo51-arch/AB-Test",
-  "latest_data_version": "v0.3",
-  "latest_complete_reader_bundle_version": "v0.2 author review, not final publication",
+  "latest_data_version": "v0.3 preserved + separate v0.4 teaching scenarios",
+  "latest_complete_reader_bundle_version": "v0.4 author review, not final publication",
   "counts_v03": {
     "customers": 120000,
     "assignments": 65559,
@@ -19,6 +19,31 @@
   },
   "chapter_v03_pages": 7,
   "reader_v02_pages": 76,
+  "current_pdf_pages": {
+    "book_v04": 54,
+    "workbook_v04": 17,
+    "card_reference_v04": 60
+  },
+  "six_worked_case_start_pages": {
+    "1": [
+      24
+    ],
+    "2": [
+      26
+    ],
+    "3": [
+      29
+    ],
+    "4": [
+      32
+    ],
+    "5": [
+      35
+    ],
+    "6": [
+      38
+    ]
+  },
   "diagnostic_cards": 60,
   "diagnostic_dimensions": 12,
   "required_paths": {
@@ -33,16 +58,24 @@
     "cards_data": "e-book/workflow/diagnostic_cards_v02.json",
     "market_review": "e-book/planning/MARKET_COMPARISON_AND_REDESIGN_REVIEW.md",
     "workbook": "e-book/workbook/workbook_v02.md",
-    "product_direction": "tool/DIRECTION.md"
+    "product_direction": "tool/DIRECTION.md",
+    "book_v04": "e-book/exports/v04/ebook_review_v04.pdf",
+    "workbook_v04": "e-book/exports/v04/workbook_v04.pdf",
+    "card_reference_v04": "e-book/exports/v04/diagnostic_cards_reference_v04.pdf",
+    "winner_core": "e-book/analysis/winner_v04/core_results.json",
+    "winner_scenarios": "e-book/analysis/winner_v04/scenario_results.json",
+    "validation_v04": "e-book/exports/v04/validation_v04.json"
   },
   "checks": [
     "required files exist",
-    "v03 SQLite integrity and foreign keys",
+    "v03 SQLite read-only integrity and foreign keys",
     "frozen plan hash matches database",
-    "actual PDF page counts"
+    "actual PDF page counts",
+    "v04 six case bookmarks and required text",
+    "exact PDFs match renderer hashes"
   ],
   "not_repeated": [
-    "statistical calculations and simulations; existing reports retained",
+    "statistical calculations/simulations in this inventory refresh; see actual analysis reports",
     "human statistical/domain/editorial approval",
     "market/rights/distribution checks"
   ],
