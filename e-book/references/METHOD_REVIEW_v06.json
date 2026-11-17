@@ -1,0 +1,155 @@
+{
+  "review_version": "v06",
+  "checked_at_utc": "2026-11-17T08:26:38+00:00",
+  "author": "허재혁",
+  "scope": "저자 제안 Tri-Ataxis 관점과 TRI-V 실행 절차의 근거 기반 검토 및 임시 명칭 조사. 사용자 개인 노트는 이 검토의 열람 근거에 포함하지 않는다.",
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Patterns of Trustworthy Experimentation: During-Experiment Stage",
+      "institution": "Microsoft Research, Experimentation Platform",
+      "authors": ["Widad Machmouchi", "Somit Gupta", "Ruhan Zhang"],
+      "year": 2021,
+      "published": "2021-01-25",
+      "url": "https://www.microsoft.com/en-us/research/articles/patterns-of-trustworthy-experimentation-during-experiment-stage/",
+      "primary_source_type": "플랫폼 운영팀이 직접 작성한 실무 원칙. 해당 팀의 지침에 관한 1차자료이며 프레임의 인과적 효과를 검증한 시험은 아니다.",
+      "retrieval": "HTTP 요청은 403. 공개 브라우저에서 document.body.innerText로 본문을 실제 열람했다.",
+      "actually_read": "도입부터 Summary까지 전체 글. Measure Holistically and Frequently의 지표 분류표, Measure Early and Often, 경보와 자동 중단, Slice the Analysis with the Appropriate Segments, Use Segments that are Stable during the A/B Test, Segment by Date를 읽었다. 참고문헌 목록도 확인했으나 인용된 원 논문 전체를 읽었다는 뜻은 아니다.",
+      "evidence_excerpt": "Data Quality Metrics / Overall Evaluation Criteria (OEC) Metrics / Local Feature and Diagnostic Metrics / Guardrail Metrics",
+      "overlap": ["정화: 데이터 손실, 조인율, SRM 등 측정과 배정 품질 확인", "해체와 입체화: 처치에 영향받지 않는 안정적인 집단과 시간별 이질성 검토", "언어의 전환: OEC 개선과 guardrail 악화를 함께 고려한 채택 결정"],
+      "cautions": ["중간 모니터링 권고에는 다중검정과 조기 엿보기 보정 경고가 함께 있다.", "정적 집단이면 유한표본에서 집단별 불균형이 절대 생기지 않는다는 보장으로 읽지 않는다.", "관계 위험과 고객 동의, 공유 용량을 다루는 저자 제안 전체의 현장 검증 자료는 아니다."]
+    },
+    {
+      "id": "S2",
+      "title": "Patterns of Trustworthy Experimentation: Post-Experiment Stage",
+      "institution": "Microsoft Research, Experimentation Platform",
+      "authors": ["Widad Machmouchi", "Somit Gupta"],
+      "year": 2021,
+      "published": "2021-12-24",
+      "url": "https://www.microsoft.com/en-us/research/articles/patterns-of-trustworthy-experimentation-post-experiment-stage/",
+      "primary_source_type": "플랫폼 운영팀의 사후 분석 및 채택 지침",
+      "retrieval": "HTTP 요청은 403. 공개 브라우저로 본문을 실제 열람했다.",
+      "actually_read": "도입부터 Summary까지 전체 글. 실험 설정 정합성, telemetry-breaking changes, metric observation units와 분모, triggered/non-triggered 분석, dilution, Tradeoff the Observed Metric Movements, 재실험과 공유 및 아카이브 절을 읽었다. 인용된 원 논문 전체는 열람하지 않았다.",
+      "evidence_excerpt": "Note that these weights should be pre-determined and not depend on the specific A/B test being analyzed.",
+      "overlap": ["전체 SRM이 없더라도 지표별 관측 단위와 분모 문제를 확인하는 정화", "특정 대상 효과와 전체 정책 효과의 구별", "통계 결과 확인 후 채택을 별도로 판단하고 지표 간 상충 기준을 사전에 합의", "가설과 실험 기록 보존, 의심스러운 결과 재현"],
+      "cautions": ["triggered analysis는 대조군의 반사실 로깅과 trigger-complement 점검 등 조건을 전제로 한다. 단순 전달자나 클릭자 선택과 같지 않다.", "intended-to-treat라는 이 글의 표현을 임상 ITT의 전체 정의와 자동 동일시하지 않는다.", "count 지표와 ratio 지표의 dilution을 구별한다. 모든 지표에 단순 곱셈을 적용할 근거가 아니다.", "Microsoft도 지표 상충의 단일 표준 해법이 없다고 명시한다. 저자의 가치 판단 기준은 별도 제안이다."]
+    },
+    {
+      "id": "S3",
+      "title": "5.3.3.2. Randomized block designs",
+      "institution": "NIST/SEMATECH e-Handbook of Statistical Methods",
+      "year": null,
+      "year_note": "실제 열람한 개별 페이지에서 발행 연도를 확인하지 못했다. 추정 연도를 넣지 않는다.",
+      "url": "https://www.itl.nist.gov/div898/handbook/pri/section3/pri332.htm",
+      "primary_source_type": "국가기관의 실험설계 공식 안내",
+      "retrieval": "requests HTTP 200, HTMLParser로 텍스트 추출",
+      "actually_read": "추출 본문 1~230행. 방해 요인 정의, 블록 내 비교, Block what you can, randomize what you cannot 원칙, randomized block designs 표, 반도체 furnace run 예시와 무작위화 전 설계 및 행렬 설명 도입을 읽었다. 이후 수식과 페이지 말미는 이번 검토의 열람 범위에서 제외한다.",
+      "evidence_excerpt": "Block what you can, randomize what you cannot.",
+      "overlap": ["정화의 변수 통제와 무작위 배정은 기존 DOE 원칙과 겹친다.", "운영 시간과 담당자 등 주요 방해 요인을 설계 단계에서 다룬다."],
+      "cautions": ["블로킹은 사전 설계다. 결과를 본 뒤 좋은 집단만 고르는 행위가 아니다.", "모든 혼란 요인을 완전히 제거하거나 개별 표본의 완벽한 균형을 보증하지 않는다."]
+    },
+    {
+      "id": "S4",
+      "title": "Addendum on Estimands and Sensitivity Analysis in Clinical Trials to the Guideline on Statistical Principles for Clinical Trials E9(R1)",
+      "institution": "International Council for Harmonisation of Technical Requirements for Pharmaceuticals for Human Use (ICH)",
+      "year": 2019,
+      "published": "2019-11-20",
+      "url": "https://database.ich.org/sites/default/files/E9-R1_Step4_Guideline_2019_1203.pdf",
+      "primary_source_type": "ICH 최종 합의 지침 Step 4",
+      "retrieval": "requests HTTP 200, PyMuPDF로 PDF 텍스트 추출",
+      "actually_read": "PDF 물리 4~7쪽(인쇄 2~5쪽)의 A.1, A.2, A.3과 A.3.1 도입; 물리 11쪽의 A.3.3 시작부터 13쪽 끝(인쇄 9~11쪽)의 estimand 속성과 구성 고려사항; 물리 18~21쪽(인쇄 16~19쪽)의 추정 가정, 결측과 중간사건 구별, A.5.2 민감도 분석, A.5.3 보조 분석, A.6 문서화를 실제 읽었다. A.3.2의 전략별 전체 설명과 지침 전부를 읽었다고 주장하지 않는다.",
+      "evidence_excerpt": "The targets of estimation are to be defined in advance of a clinical trial.",
+      "overlap": ["비교 조건과 대상, 결과 및 사건 처리를 먼저 정의하는 분모와 정책 효과 원칙", "질문, 추정 방법, 수치 결과를 구별", "같은 estimand에 대한 가정 민감도 분석과 사전 계획 및 사후 변경 공개"],
+      "cautions": ["ITT와 단순한 완전 사례 분석은 다르며 결측 처리가 별도로 필요하다.", "중간사건과 결측은 같지 않다. 처치 뒤 선택을 단순 제외로 해결할 수 없다.", "임상 지침의 원칙을 CRM에 유추 적용한 것이며 임상 규제 준수나 CRM 성과를 인증하지 않는다."]
+    },
+    {
+      "id": "S5",
+      "title": "CONSORT 2025 explanation and elaboration: updated guideline for reporting randomised trials",
+      "institution": "CONSORT 공동 저자진, BMJ",
+      "authors": ["Sally Hopewell et al."],
+      "year": 2025,
+      "url": "https://www.bmj.com/content/389/bmj-2024-081124",
+      "primary_source_type": "보고 지침 개발자들이 작성한 공식 설명 및 해설",
+      "retrieval": "requests HTTP 200, HTMLParser로 텍스트 추출",
+      "actually_read": "Item 21d의 전체 예시와 Explanation부터 Item 22a 및 22b의 예시와 설명을 읽었다. Item 23a 도입도 회수되었지만 검토의 핵심 근거는 21d와 22a~22b다. 전체 39만자 문서를 완독한 것은 아니다.",
+      "evidence_excerpt": "It is incorrect to infer a subgroup effect (interaction) from one significant (in one subgroup) and one non-significant P value (in another subgroup).",
+      "overlap": ["집단별 효과 차이를 상호작용으로 직접 검토", "사전 계획과 사후 탐색 구별 및 선택적 보고 억제", "연속변수의 임의 절단과 유의성에 따른 절단점 선택 경계", "배정, 처치 수령, 분석 및 배제 사유의 흐름 기록"],
+      "cautions": ["보고 지침과 저자 프레임의 교육적 성능 시험은 다르다.", "사전 계획만으로 다중성, 낮은 검정력, 모형 가정 문제가 모두 해결되지 않는다.", "사후 탐색 계획 선택 문제와 처치 후 변수에 따른 집단 구성 문제를 구분해야 한다."]
+    }
+  ],
+  "searches": {
+    "source_discovery_queries": ["site.microsoft.com experimentation trustworthy metrics guardrail data quality segmentation ship decision", "site.itl.nist.gov experimental design randomization blocking", "ICH E9 R1 estimands sensitivity analysis 2019 guideline pdf", "heterogeneous treatment effects subgroup interaction post hoc selection randomized trial CONSORT statement"],
+    "method": "web_search의 따옴표 포함 정확 문자열 질의를 실행했다. 검색기가 따옴표를 엄격히 적용하지 않고 유사어와 무관한 결과를 반환하는 경우가 있었다. 아래의 미확인은 반환된 제목과 요약 범위에서 정확 일치 용례를 식별하지 못했다는 뜻이며 검색 색인 전체의 부재 증명이 아니다.",
+    "names": [
+      {
+        "candidate": "인과결",
+        "queries": ["\"인과결\""],
+        "observed_use": "정확 문자열의 실제 공개 사용을 확인했다. Marc Studio의 파란 게임 패치노트에서 게임 요소 이름으로 등장한다.",
+        "verified_hit": {"title": "파란 1.2.0 패치노트", "publisher": "Marc Studio", "published": "2026-03-31", "url": "https://marc-official.com/88", "read_range": "게시물 전체 추출 텍스트 및 본문 63~121행 실제 열람", "excerpt": "[인과결] 쇄도 제외 모든 공격에 쇄도 효과 발동이라는 변경 설명. 117행에서도 인과결이 반복된다."},
+        "other_returned_hits": ["https://cafe.daum.net/obh2004/Kjo/1864", "https://mobile.moegirl.org.cn/ko/%E7%A5%80(%E7%BB%88%E6%9C%AB%E5%9C%B0)"],
+        "other_hit_limits": "다음 시의 요약은 인과 결이라는 띄어쓰기 경계여서 정확 명칭 용례로 세지 않았다. 그 외 검색 결과는 본문 미확인으로 확정 근거에 넣지 않았다.",
+        "fit": "원인과 조건의 결을 읽는다는 설명은 가능하나 통계적 인과 식별을 새로 보증하는 이름으로 오해될 수 있다. 짧고 기억하기 쉬우나 이미 다른 분야에서 쓰인다.",
+        "recommendation": "완전한 신조어라는 홍보는 피하고, 선택한다면 실무 판단 프레임이라는 부제를 붙인다. 우선 추천은 아니다."
+      },
+      {
+        "candidate": "Causeweave",
+        "queries": ["\"Causeweave\"", "\"Causeweave\" \"method\""],
+        "observed_use": "반환된 제목과 요약에서 정확 문자열의 독립 사용을 확인하지 못했다. Causewayed enclosure, CoreWeave, CAUSEweb, Caseware, Leno weave 등의 유사어나 무관한 결과가 반환되었다.",
+        "returned_examples": ["https://www.causeweb.org/cause/", "https://en.wikipedia.org/wiki/CoreWeave", "https://www.caseware.com/docs"],
+        "fit": "원인과 조건을 엮는 비유가 가능하지만 영문 독해 부담과 인과 추론의 새로운 기법이라는 오해가 있다. 인과결의 영문 대응명도 자동 성립하지 않는다.",
+        "recommendation": "해외 명칭 후보로 보류한다. 발음, 검색 구별성, 도메인과 상표를 별도 점검한다."
+      },
+      {
+        "candidate": "맥락항법",
+        "queries": ["\"맥락항법\"", "\"맥락항법\" 방법론"],
+        "observed_use": "반환된 제목과 요약에서 정확 문자열의 독립 사용을 확인하지 못했다. 사전의 항법 관련 예문, 조세법 방법론, 맥락이라는 별도 사이트 등이 반환되었으나 정확 명칭 사용의 근거는 아니었다.",
+        "returned_examples": ["https://wordpedia.net/dict/fix", "https://wordpedia.net/dict/wander", "https://www.maekrak.kr/methodology"],
+        "fit": "측정 조건, 고객 집단, 실행 제약 사이를 오가며 판단한다는 상위 관점에 가장 잘 맞는다. 새 인과 원리를 암시하는 정도가 상대적으로 낮다. 다만 일반적인 맥락 읽기로 흐르지 않도록 실험 근거와 책임 기록을 부제로 한정해야 한다.",
+        "recommendation": "상위 이름의 우선 검토 후보로 추천한다. 제안 표기는 맥락항법: 실험 근거를 적용 판단으로 잇는 관점이다. 확정하거나 기존 이름을 자동 대체하지 않는다."
+      },
+      {
+        "candidate": "삼결판단",
+        "queries": ["\"삼결판단\"", "\"삼결판단\" 방법론"],
+        "observed_use": "반환된 제목과 요약에서 정확 문자열의 독립 사용을 확인하지 못했다. 삼세판, 삼결수포법, 삼복, 법적 삼단논법 및 Three-way Decisions 자료가 반환되었다. 이들은 정확 문자열 사용 흔적과 구별한다.",
+        "returned_examples": ["http://dh.aks.ac.kr/sillokwiki/index.php/삼결수포법(三結收布法)", "https://www2.cs.uregina.ca/~yyao/research/a_theory_of_three_way_decisions.html"],
+        "fit": "세 관점을 엮는다는 설명이 필요하며 세 번의 판단 또는 채택, 거절, 보류의 3방향 결정과 혼동될 수 있다.",
+        "recommendation": "절차 설명용 보조 후보로 보류한다. Three-way Decisions와 동일 이론이거나 이를 대체한다고 표현하지 않는다. 유사 이론의 전체 문헌 검토는 이번 범위에서 하지 않았다."
+      }
+    ],
+    "legal_and_novelty_limits": "검색 결과 미확인은 신규성, 최초성, 독점 사용 가능성, 도메인 확보, 상표 등록 가능성 또는 침해 없음의 보장이 아니다. KIPRIS, WIPO 및 목표 시장 상표 검색과 필요시 전문가 검토는 수행하지 않았다.",
+    "search_backend_issues": "일부 DDGS 질의가 실패해 도구가 keenable, exa, parallel, firecrawl 등의 대체 검색 결과를 반환했다. 단순 검색 건수를 전체 용례 수로 보고하지 않는다."
+  },
+  "reasoned_conclusion": {
+    "verdict": "지향은 기존 원칙과 정합적이고 실무교육용 통합 프레임으로 의미가 있다. 새 검정법, 새로운 원리의 최초성, 전례 없는 과학방법 또는 학술적 실증을 확보했다는 증거는 확인되지 않았다.",
+    "basis": "다섯 공식 1차자료는 구성 원칙의 선행 존재와 정합성을 뒷받침한다. 저자 프레임 자체의 현장 우월성을 직접 시험하지는 않는다. 단일 기업 연재 두 편을 서로 독립적인 현장 실증 두 건으로 세지 않는다.",
+    "author_contribution_claim_allowed": "기존 실험 원칙을 정화, 해체와 입체화, 언어의 전환으로 연결하고 CRM의 분모와 원장, 대상 집단, 이익과 관계, 공유 용량, 보류와 책임을 한 판단 기록에 묶으려는 저자의 교육 및 절차 설계 제안",
+    "validity_layers": [
+      {"layer": "논리적 유효성", "question": "추정 질문, 근거, 적용 결론이 일관되는가", "current_status": "확인한 기존 원칙과 큰 방향이 정합적이다. 개별 명세의 전제와 적용 범위는 계속 검토해야 한다."},
+      {"layer": "구현 유효성", "question": "명세와 실제 데이터 경로 및 계산이 맞으며 독립 분석자가 재현하는가", "current_status": "합성 사례는 점검 자산이다. 이 검토에서는 기존 분석을 재실행하거나 독립 코드 감사를 하지 않았다."},
+      {"layer": "현장 유효성", "question": "실제 조직에서 기존 방식보다 판단 오류와 손상을 줄이는가", "current_status": "제공된 맥락은 합성 사례뿐이다. 현장 효과나 성과 개선은 미입증이다."}
+    ],
+    "weaknesses_and_repairs": [
+      {"risk": "정화를 완벽한 통제로 오해", "repair": "무작위화와 블로킹, 원장 대조, 누락 점검 및 잔여 한계의 명시로 정의한다.", "evidence": ["S1", "S3", "S4"]},
+      {"risk": "과잉분할과 다중성 및 낮은 정보량", "repair": "사전 집단과 효과 척도, 상호작용, 다중성 전략을 정하고 사후 발견은 후속 표본에서 검증한다.", "evidence": ["S1", "S5"]},
+      {"risk": "사후 경제 모형과 희귀 guardrail", "repair": "관측과 가정을 분리하고 비용 및 기준을 사전 고정한다. 허용 손상 한계와 정보량, 장기 관측, 중단 규칙을 설계한다. 유의하지 않음을 안전과 동일시하지 않는다.", "evidence": ["S1", "S2"], "note": "희귀 관계 사건에 관한 구체적 CRM 운영안은 검토자의 설계 제안이다."},
+      {"risk": "공유 용량과 간섭으로 인한 비선형 전이", "repair": "규모, 고객 구성, 용량 정책을 명시하고 지점 단위 또는 단계적 확대를 검토한다. 단순 전체 고객 수 곱셈을 피한다.", "note": "저자 맥락에 대한 검토자의 설계 제안이며 다섯 자료만으로 해당 현장 효과가 입증된 것은 아니다."},
+      {"risk": "관측설계의 인과적 과장", "repair": "비교 대상 선택과 교란, 식별 가정 및 민감도를 별도로 명시한다. 프레임 사용 자체를 인과 식별로 취급하지 않는다.", "evidence": ["S4"], "note": "CRM의 구체적인 관측자료 분석법은 별도 검토가 필요하다."},
+      {"risk": "실행자 재량과 보류의 무기한화", "repair": "판단 기준, 승인 권한, 예외와 변경 사유, 보류 종료 조건과 책임자를 기록하고 독립 검토한다.", "evidence": ["S2", "S4"], "note": "책에 도입할 운영 보완안이며 효과 미검증이다."}
+    ],
+    "external_validation_design": [
+      "분석 명세, 추정 대상, 집단과 판단 기준을 결과 확인 전에 고정하고 독립 분석자가 원장부터 재현한다.",
+      "동의와 보안을 갖춘 익명화 실제 사례에서 기존 검토와 TRI-V 검토를 비교한다. 동일 사례 반복에 따른 학습 전이를 줄이도록 배정과 순서를 설계한다.",
+      "가능하면 평가자에게 검토 방식을 가린다. 품질 문제 탐지, 근거 없는 인과 주장, 집단 선택 오류, 보호 조건 누락, 검토자 일치와 소요 시간을 사전 정의한다.",
+      "정답이 자명하지 않은 사례는 독립 전문가가 근거를 남겨 판정한다. 평가자 합의와 실제 현장 진실을 혼동하지 않는다.",
+      "전향적으로 적용과 보류를 추적하고 경제 결과, 관계 손상과 운영 부담을 확인한다. 실제 성과의 인과적 개선을 주장하려면 운영 조건과 배정, 간섭을 고려한 별도 비교 설계가 필요하다.",
+      "표본 수와 합격 기준은 관심 오류와 사건 빈도, 비용을 바탕으로 계획하며 임의 숫자를 만들지 않는다. 실패와 수정도 공개하고 저자와 독립적인 검토를 받는다."
+    ],
+    "name_recommendation": {"first_candidate": "맥락항법", "status": "저자 승인 전 제안", "reason": "상위 관점을 표현하면서 새로운 인과 추론 원리라는 과장을 상대적으로 줄인다. 정확 문자열 사용은 이번 반환 결과에서 미확인이나 신규성은 보증하지 않는다.", "execution_label": "TRI-V는 실행 절차의 기존 작업명으로 유지 가능하다. 이번 작업에서 이름을 확정하거나 원고 전체를 치환하지 않았다."}
+  },
+  "issues": [
+    "web_extract는 현재 search-only backend라 모든 요청의 본문 추출이 실패했다. requests와 공개 브라우저를 대체 사용해 본문을 실제 확인했다.",
+    "NEJM Reporting of Subgroup Analyses in Clinical Trials URL은 HTTP 403으로 본문 열람에 실패했다. 검색 요약만으로 1차자료 열람 완료로 세지 않고 CONSORT 공식 해설로 대체했다.",
+    "브라우저 workspace 변수가 정의되지 않아 첫 저장 시도가 실패했다. 명시적 scratch 경로로 재시도해 Microsoft 두 본문을 저장했다.",
+    "원고와 검토 JSON 두 파일만 저장하며 commit 및 push는 수행하지 않는다."
+  ]
+}

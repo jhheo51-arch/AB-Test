@@ -13,3 +13,11 @@ _book/
 .DS_Store
 # Local PDF text-extraction probe; reading manuscript is tracked separately.
 e-book/exports/v04/ebook_review_v04_extracted.txt
+# Local-only extracted third-party research texts, not redistribution assets.
+e-book/references/study_v06/nist_randomized_blocks.txt
+e-book/references/study_v06/ich_e9_r1.txt
+e-book/references/study_v06/asa_p_value_statement.txt
+e-book/references/study_v06/microsoft_browser.json
+e-book/references/study_v06/notion_studying_readable.txt
+e-book/references/study_v06/notion_studying_source.txt
+e-book/references/study_v06/notion_read_progress.json

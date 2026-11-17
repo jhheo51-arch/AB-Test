@@ -28,7 +28,9 @@ required={
 'validation_v04':'e-book/exports/v04/validation_v04.json',
 'book_v05':'e-book/exports/v05/ebook_review_v05.pdf',
 'validation_v05':'e-book/exports/v05/validation_v05.json',
-'methodology_source':'e-book/planning/AUTHOR_METHOD_AND_VOICE.md'}
+'methodology_source':'e-book/planning/AUTHOR_METHOD_AND_VOICE.md',
+'book_v06':'e-book/exports/v06/ebook_review_v06.pdf',
+'validation_v06':'e-book/exports/v06/validation_v06.json'}
 for key,path in required.items():assert (ROOT/path).is_file(),path
 con=sqlite3.connect(f'file:{(ROOT/required["database_v03"]).as_posix()}?mode=ro',uri=True)
 assert con.execute('PRAGMA integrity_check').fetchone()[0]=='ok'
@@ -42,7 +44,7 @@ with pymupdf.open(ROOT/required['chapter_v03']) as d:chapter_pages=len(d)
 with pymupdf.open(ROOT/required['book_v02']) as d:book_pages=len(d)
 cards=json.loads((ROOT/required['cards_data']).read_text(encoding='utf-8'))
 current_pages={}
-for key in ['book_v04','workbook_v04','card_reference_v04','book_v05']:
+for key in ['book_v04','workbook_v04','card_reference_v04','book_v05','book_v06']:
     with pymupdf.open(ROOT/required[key]) as d:current_pages[key]=len(d)
 with pymupdf.open(ROOT/required['book_v04']) as d:
     import re
@@ -64,5 +66,14 @@ with pymupdf.open(ROOT/required['book_v05']) as d:
     for term in ['트리아타시스','Tri-Ataxis','Variable Control','Vector Segmentation','Value-Linked Decision']:assert term in latest_text,term
 status.update({'latest_reading_edition':'v0.5 method-led main book, author review','main_book_path':required['book_v05'],'six_worked_case_start_pages':latest_cases,'previous_v04_case_pages':case_pages,'methodology_chapter_start_pages':v05['methodology_chapter_start_pages'],'middle_dot_counts':v05['middle_dot_counts'],'companion_scope':'v0.4 workbook/cards preserved, not re-edited in the v0.5 main-book revision'})
 status['checks'].extend(['v05 exact PDF hash and six case bookmarks','v05 original method names and zero middle dots'])
+v06=json.loads((ROOT/required['validation_v06']).read_text(encoding='utf-8'))
+assert hashlib.sha256((ROOT/required['book_v06']).read_bytes()).hexdigest()==v06['pdf_sha256']
+with pymupdf.open(ROOT/required['book_v06']) as d:
+    text06='\n'.join(p.get_text() for p in d)
+    assert len(d)==v06['pdf_pages']
+    assert not any(c in text06 for c in '\u00b7\u2022\u2027\u318d\u22c5\u30fb')
+    for term in ['맥락항법','Overall Evaluation Criterion','키워드 찾아보기','Variable Control','Vector Segmentation','Value-Linked Decision']:assert term in text06,term
+status.update({'latest_reading_edition':'v0.6 study-integrated main book, author review','main_book_path':required['book_v06'],'six_worked_case_start_pages':{k:[v] for k,v in v06['case_start_pages'].items()},'methodology_chapter_start_pages':v06['methodology_chapter_start_pages'],'glossary_entries':v06['glossary_entries'],'method_title_proposal':'맥락항법: 비교의 근거에서 실행의 결론까지','method_title_approval':'pending','companion_scope':'v0.4 workbook/cards preserved, not re-edited in v0.6'})
+status['checks'].extend(['v06 exact PDF hash, 36 glossary targets and zero middle dots','v06 numeric text ledger reconciliation: 103 checks; no inference rerun'])
 (ROOT/'PROJECT_STATUS.json').write_text(json.dumps(status,ensure_ascii=False,indent=2),encoding='utf-8')
 print(json.dumps(status,ensure_ascii=False,indent=2))
