@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.venv/
+.env
+.env.*
+!.env.example
+*.zip
+*.sqlite-journal
+*.sqlite-wal
+*.sqlite-shm
+_book/
+.quarto/
+.DS_Store

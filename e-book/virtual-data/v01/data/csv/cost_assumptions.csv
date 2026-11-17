@@ -1,0 +1,4 @@
+﻿cost_key,amount,currency,basis,source
+B_fixed_setup,200000.0,KRW,B_fixed_setup,교육용 가정; 실제 가격 아님
+attempted_sms,20.0,KRW,attempted_sms,교육용 가정; 실제 가격 아님
+completed_test_drive,15000.0,KRW,completed_test_drive,교육용 가정; 실제 가격 아님

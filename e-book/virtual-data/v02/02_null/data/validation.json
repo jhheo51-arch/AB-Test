@@ -1,0 +1,38 @@
+{
+  "scenario": "02_null",
+  "counts": {
+    "assignments": 6503,
+    "company": 1,
+    "cost_assumptions": 3,
+    "customers": 12000,
+    "dealerships": 12,
+    "experiment_outcomes": 6503,
+    "experiments": 1,
+    "journey_events": 1543,
+    "messages": 6503,
+    "vehicle_models": 3
+  },
+  "arms": [
+    {
+      "arm": "A",
+      "assigned": 3243,
+      "booked": 360,
+      "completed": 271,
+      "opted_out": 22
+    },
+    {
+      "arm": "B",
+      "assigned": 3260,
+      "booked": 386,
+      "completed": 300,
+      "opted_out": 29
+    }
+  ],
+  "integrity": "ok",
+  "csv_counts_verified": true,
+  "direct_event_aggregation_matches": true,
+  "srm_p_normal_approx": 0.8330352183155036,
+  "srm_screen_threshold": 0.001,
+  "srm_flag": false,
+  "scope": "Structural checks and SQL cross-check only; no primary-effect test, power validation or deployment approval."
+}

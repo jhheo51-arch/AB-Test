@@ -1,0 +1,4 @@
+﻿model_id,company_id,body_style
+M01,CO_001,SUV
+M02,CO_001,Sedan
+M03,CO_001,Crossover

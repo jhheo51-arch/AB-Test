@@ -1,0 +1,46 @@
+{
+  "version": "0.1",
+  "author": "허재혁",
+  "synthetic": true,
+  "company": "JH Motors (교육용 작업명, 상표 미검증)",
+  "seed": 20261116,
+  "timezone": "Asia/Seoul",
+  "currency": "KRW",
+  "customers": 12000,
+  "experiment_id": "EXP_TD_001",
+  "enrollment": "2026-09-01 through 2026-09-28",
+  "data_cutoff": "2026-10-26T23:59:59+09:00",
+  "outcome_window_days": 28,
+  "design": "Independent Bernoulli randomization, P(B)=0.5; intention-to-treat analysis.",
+  "eligibility": "Marketing SMS consent, prospect lifecycle, no completed test drive at baseline.",
+  "primary": "At least one completed test drive within 28 days of assignment, among all assigned customers.",
+  "secondary": "Booked test drive within 28 days.",
+  "guardrail": "Opt out within 28 days; excludes later messages in a real deployment.",
+  "arm_A": "Vehicle value focused invitation",
+  "arm_B": "Booking convenience focused invitation",
+  "delivery_probability": 0.96,
+  "booking_probability_if_delivered": {
+    "A": 0.12,
+    "B": 0.15
+  },
+  "booking_probability_condition": "Delivered and not opted out in the preceding synthetic event stage.",
+  "completion_probability_given_booking": 0.75,
+  "optout_probability_if_delivered": {
+    "A": 0.008,
+    "B": 0.01
+  },
+  "cost_assumptions_KRW": {
+    "attempted_sms": 20,
+    "completed_test_drive": 15000,
+    "B_fixed_setup": 200000
+  },
+  "limitations": [
+    "Probabilities and costs are instructional assumptions, not market benchmarks.",
+    "The conditional booking and completion mechanism is deliberately simplified.",
+    "No generated heterogeneity of treatment effect by segment.",
+    "No orders, vehicle revenue, LTV or causal sales uplift is inferred.",
+    "Capacity, spillovers, households and repeated experiments are not modeled.",
+    "No planned power or business effect threshold has been validated for this dataset.",
+    "This is a post-generated teaching dataset, not a preregistered real experiment."
+  ]
+}

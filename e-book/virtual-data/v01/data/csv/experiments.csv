@@ -1,0 +1,2 @@
+﻿experiment_id,name,primary_metric,window_days,data_cutoff
+EXP_TD_001,시승 편의 안내 A/B,"At least one completed test drive within 28 days of assignment, among all assigned customers.",28,2026-10-26T23:59:59+09:00
