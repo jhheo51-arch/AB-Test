@@ -1,0 +1,18 @@
+{
+  "case_count": 60,
+  "dimension_counts": {
+    "배정·대상": 5,
+    "측정·정의": 5,
+    "통계·정보": 5,
+    "채널·관심": 5,
+    "여정·시승": 5,
+    "거래·출고": 5,
+    "경제·비용": 5,
+    "관계·안전": 5,
+    "시간·시장": 5,
+    "조직·간섭": 5,
+    "집단·탐색": 5,
+    "회사·설계": 5
+  },
+  "coverage_claim": "Initial representative catalog, not exhaustive; no empirical validation or simulation coverage claimed."
+}
