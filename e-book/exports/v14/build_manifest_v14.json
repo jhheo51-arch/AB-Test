@@ -1,0 +1,43 @@
+{
+  "version": "0.14 author review",
+  "author": "허재혁",
+  "selected_cover": "A, recommendation pending author approval",
+  "page_geometry_mm": [
+    190,
+    270
+  ],
+  "body_pt": 12,
+  "font_families": [
+    "Noto Serif KR reading face",
+    "Noto Sans KR headings, tables and labels"
+  ],
+  "source_characters": 97285,
+  "source_nonspace_characters": 73738,
+  "previous_v06_characters": 60795,
+  "six_cases_preserved": true,
+  "new_content": [
+    "P1",
+    "P2",
+    "P3",
+    "P4",
+    "P5"
+  ],
+  "new_layout_is_not_evidence_of_depth": true,
+  "old_numeric_ledgers": {
+    "e-book/analysis/winner_v04/core_results.json": "501a32cef982f5bdca9c211cd9cc7f47126a35e2019921f9f6a53a55e8689db3",
+    "e-book/analysis/winner_v04/scenario_results.json": "d3ad00f3b908484d354e5ff40205cf077aeb6dbc1a83fd0a63e8a82c1dfd429c"
+  },
+  "limits": [
+    "Simulated persona review, not real reader research",
+    "Author title and voice approval pending",
+    "No claims of actual OEM success, new statistical theory or publication readiness"
+  ],
+  "previous_v13_characters": 95064,
+  "methodology_name": "TRI-V",
+  "fixed_axes": true,
+  "record_fields": 6,
+  "publication_stage": "Bounded study-note integration, author review; no human or publication approval",
+  "old_v13_preserved": true,
+  "notion_direct_body_read": false,
+  "scope": "Only the user supplied passage; corrected concepts, no whole-source adaptation"
+}

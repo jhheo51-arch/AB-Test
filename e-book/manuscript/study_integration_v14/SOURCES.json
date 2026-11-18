@@ -1,0 +1,27 @@
+{
+  "read_scope": "Only supplied passage; Notion login blocked; see READ_SCOPE.json",
+  "sources": [
+    {
+      "url": "https://www.amstat.org/asa/files/pdfs/P-ValueStatement.pdf",
+      "actual_read": "Complete public 3-page release including six principles, not full statement journal article",
+      "applied": "Statistical thresholds do not alone make business decisions or bound business harm"
+    },
+    {
+      "url": "https://www.itl.nist.gov/div898/handbook/pri/section3/pri332.htm",
+      "actual_read": "Full accessible Randomized block designs page",
+      "applied": "Blocking known nuisance factors and analyzing the allocation structure; no universal superiority of simple randomization"
+    },
+    {
+      "url": "https://arxiv.org/pdf/1512.04922",
+      "version_observed": "1512.04922v3, 16 Jul 2019",
+      "actual_read": "Physical pages1-4 of52, abstract and introduction only",
+      "applied": "Continuous monitoring and always-valid inference rationale, not implementation or proof verification"
+    },
+    {
+      "url": "https://www.stat.cmu.edu/~aramdas/kdd19/",
+      "actual_read": "Full tutorial supporting page and outline; linked slides not read",
+      "applied": "Supplementary overview; not a substitute for the Johari paper introduction"
+    }
+  ],
+  "third_party_originals_in_reader_bundle": false
+}

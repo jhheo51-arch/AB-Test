@@ -18,3 +18,9 @@ e-book/exports/v13/** -text whitespace=cr-at-eol
 e-book/exports/v13/assets/LICENSE-*.txt -text whitespace=-blank-at-eol,cr-at-eol
 e-book/analysis/corrections_v13/** -text whitespace=cr-at-eol
 e-book/virtual-data/v13/** -text whitespace=cr-at-eol
+# Preserve v14 reading and scoped-study evidence bytes.
+e-book/exports/v14/** -text whitespace=cr-at-eol
+e-book/exports/v14/assets/LICENSE-*.txt -text whitespace=-blank-at-eol,cr-at-eol
+e-book/analysis/study_integration_v14/** -text whitespace=cr-at-eol
+e-book/manuscript/study_integration_v14/** -text whitespace=cr-at-eol
+e-book/review/study_integration_v14/** -text whitespace=cr-at-eol
