@@ -1,10 +1,10 @@
 {
-  "checked_at_seoul": "2026-11-18T15:47:49.389308+09:00",
+  "checked_at_seoul": "2026-11-18T16:26:49.903548+09:00",
   "author": "허재혁",
   "project": "A/B Test",
   "repository": "https://github.com/jhheo51-arch/AB-Test",
   "latest_data_version": "v0.3 preserved + separate v0.4 teaching scenarios",
-  "latest_complete_reader_bundle_version": "v0.11 portable reading bundle, not a full reproduction environment or approved publication",
+  "latest_complete_reader_bundle_version": "v0.12 portable reading bundle, not full reproduction or approved publication",
   "counts_v03": {
     "customers": 120000,
     "assignments": 65559,
@@ -29,26 +29,27 @@
     "book_v08": 80,
     "book_v09": 86,
     "book_v10": 90,
-    "book_v11": 89
+    "book_v11": 89,
+    "book_v12": 87
   },
   "six_worked_case_start_pages": {
     "1": [
-      30
+      29
     ],
     "2": [
-      33
+      32
     ],
     "3": [
-      35
+      34
     ],
     "4": [
-      37
+      36
     ],
     "5": [
-      40
+      39
     ],
     "6": [
-      43
+      42
     ]
   },
   "diagnostic_cards": 60,
@@ -95,7 +96,12 @@
     "book_v11": "e-book/exports/v11/ebook_review_v11.pdf",
     "validation_v11": "e-book/exports/v11/validation_v11.json",
     "integration_v11": "e-book/exports/v11/integration_validation_v11.json",
-    "package_smoke_v11": "e-book/exports/v11/package_smoke_v11.json"
+    "package_smoke_v11": "e-book/exports/v11/package_smoke_v11.json",
+    "book_v12": "e-book/exports/v12/ebook_review_v12.pdf",
+    "validation_v12": "e-book/exports/v12/validation_v12.json",
+    "integration_v12": "e-book/exports/v12/integration_validation_v12.json",
+    "package_smoke_v12": "e-book/exports/v12/package_smoke_v12.json",
+    "human_review_request_v12": "e-book/review/statistical_v12/REVIEW_REQUEST.md"
   },
   "checks": [
     "required files exist",
@@ -120,7 +126,11 @@
     "v11 exact PDF hash,89 pages and original103 numeric checks plus read-only chapter12 SQL",
     "v11 old v10 PDF and numeric ledgers preserved, original chapters5/6 and six cases unchanged",
     "v11 four counterexamples reconciled and six-field one-page record exercised",
-    "v11 portable33-file ZIP hash, integrity and extracted browser check"
+    "v11 portable33-file ZIP hash, integrity and extracted browser check",
+    "v12 ordered numerical tokens, English term sets, tables and code preserved in edited chapters",
+    "v12 unedited chapters, six original cases and canonical operating contract unchanged",
+    "v12 original103 numeric checks, read-only chapter12 SQL and final PDF protective phrases",
+    "v12 package exact hash and extracted browser check; human review remains pending"
   ],
   "not_repeated": [
     "statistical calculations/simulations in this inventory refresh; see actual analysis reports",
@@ -129,8 +139,8 @@
   ],
   "product_tool_status": "direction documents only, no implemented general analysis application",
   "publication_status": "not ready for sale; author/content/domain/reader/rights review pending",
-  "latest_reading_edition": "v0.11 method refinement integrated into bounded editorial review",
-  "main_book_path": "e-book/exports/v11/ebook_review_v11.pdf",
+  "latest_reading_edition": "v0.12 bounded whole-book prose editing applied; author review",
+  "main_book_path": "e-book/exports/v12/ebook_review_v12.pdf",
   "previous_v04_case_pages": {
     "1": [
       24
@@ -165,7 +175,7 @@
     "U+22C5": 0,
     "U+30FB": 0
   },
-  "companion_scope": "v11 six-field record included; v04 historical workbook/cards preserved rather than re-edited",
+  "companion_scope": "Same six-field one-page record reused byte-identically from v11; historical workbook/cards preserved",
   "glossary_entries": 36,
   "method_title_proposal": "TRI-V as the author-proposed method; another brand is optional",
   "method_title_approval": "Clarified the method/operating-guide distinction in response to the author; no new Contextvia brand or final cover approval inferred",
@@ -176,19 +186,19 @@
     "4": 17,
     "5": 19,
     "6": 24,
-    "7": 30,
-    "8": 47,
-    "9": 51,
-    "10": 55,
-    "11": 60,
-    "12": 63
+    "7": 29,
+    "8": 46,
+    "9": 50,
+    "10": 54,
+    "11": 59,
+    "12": 62
   },
   "same_A4_body_only_control_pages": {
     "v06": 48,
-    "v11": 74
+    "v12": 74
   },
   "persona_review_status": "AI simulated review, not interviews or sales validation",
-  "source_characters": 96131,
+  "source_characters": 94452,
   "cover_approval": "A selected as recommendation; author approval pending",
   "plan_identity": {
     "exact_bytes_match": false,
@@ -207,7 +217,7 @@
   "reader_test_protocol": "prepared, recruitment and conditions require approval",
   "reader_test_observation_rows": 0,
   "reader_test_preparation_checks": "fixture counts, rates/effects, CI/p recalculated and matched to participant and facilitator files; not learning outcomes",
-  "reader_test_source_edition": "Original preparation retains v08 PDF hash; v11 reading/tasks/rubric require explicit version fixation before actual testing",
+  "reader_test_source_edition": "Original preparation retains v08 PDF hash; v12 reading/tasks/rubric require explicit version fixation before actual testing",
   "operating_contract_page": 11,
   "english_name_candidates": {
     "previous_proposal": "Contexvia",
@@ -217,33 +227,38 @@
   },
   "three_operating_repairs": "integrated in the actual book, companion card and record; reader usability not yet tested",
   "reader_test_administration": "User will conduct the test; no independent recruitment or sharing authorized",
-  "later_publication_work": "PUB-02 authorized and started after clarification; no independent human review or publication inferred",
+  "later_publication_work": "PUB-02 prose changes applied and PUB-03 preparation only; no human or publication approval inferred",
   "new_explanation_pages": {
     "author_origin": 4,
     "operating_contract": 11,
-    "positive_cases": 49,
-    "scope": 60,
-    "chapter9": 51,
-    "chapter10": 55
+    "positive_cases": 48,
+    "chapter5": 19,
+    "chapter6": 24,
+    "chapter9": 50,
+    "chapter10": 54,
+    "scope": 59,
+    "chapter12": 62
   },
   "universal_applicability_claim": false,
   "historical_novelty_claim": false,
   "origin_scope": "Supplied draft already contains TRI-V; its first coinage is not established by the available excerpt",
   "minimum_record_fields": 6,
   "minimum_record_pdf_pages": 1,
-  "minimum_record_path": "e-book/exports/v11/MINIMUM_RECORD.html",
+  "minimum_record_path": "e-book/exports/v12/MINIMUM_RECORD.html",
   "counterexample_cases": 4,
-  "editorial_gate": "PUB-02 started: first integration and bounded chapter9/10 prose edit technically verified; remaining editorial work and author expression approval pending",
+  "editorial_gate": "PUB-02:29 paragraphs edited across chapters1/5/6/12, prior chapter9/10 editing retained; technical checks passed, final author voice approval pending",
   "reader_bundle": {
-    "archive": "C:\\Users\\Administrator\\Downloads\\AB-Test-v07\\JH_CRM_ebook_reader_v11.zip",
+    "archive": "C:\\Users\\Administrator\\Downloads\\AB-Test-v07\\JH_CRM_ebook_reader_v12.zip",
     "file_count": 33,
-    "bytes": 3486693,
-    "sha256": "28ce5ce4398b9ffeaf30ad9b8b647185050268833aaaed59a89a95275cb8ad81",
+    "bytes": 3474285,
+    "sha256": "1d70f899ce6f311440471e946f3506262f9acab54c4c2446ac1b23cc1eaa58c3",
     "integrity": "passed",
     "exact_entry_bytes": "passed",
     "extracted_book_and_minimum_record": "passed",
     "full_reproduction_environment": false,
     "real_reader_test_conducted": false,
     "human_review_approved": false
-  }
+  },
+  "human_statistical_review": "PUB-03 request,15-file inventory and empty findings form prepared; no reviewer selected or files shared",
+  "AI_semantic_review": "29 edits reviewed; two weakened protection/safety statements restored by integrator, final phrases asserted in PDF; not human review"
 }
