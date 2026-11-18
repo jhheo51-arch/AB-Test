@@ -5,3 +5,4 @@ e-book/analysis/winner_v04/scenarios/*.csv -text whitespace=cr-at-eol
 e-book/exports/v07/assets/LICENSE-*.txt -text whitespace=-blank-at-eol,cr-at-eol
 e-book/exports/v08/assets/LICENSE-*.txt -text whitespace=-blank-at-eol,cr-at-eol
 e-book/exports/v09/assets/LICENSE-*.txt -text whitespace=-blank-at-eol,cr-at-eol
+e-book/exports/v10/assets/LICENSE-*.txt -text whitespace=-blank-at-eol,cr-at-eol

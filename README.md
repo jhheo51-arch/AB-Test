@@ -10,7 +10,9 @@
 - **[세 판단의 주장 범위와 합성 사례 검토](e-book/review/publication/CLAIM_SCOPE_AND_SYNTHETIC_AUDIT.md)**: 교육적 제안의 근거와 한계.
 - **[실제 독자 시험 진행안](e-book/review/reader_test_v01/PROTOCOL.md)**: 참여자 과제와 별도 판정지 준비, 실제 시행과 결과는 없음.
 
-최신 전체 읽기본은 **[v0.9 본책 PDF](e-book/exports/v09/ebook_review_v09.pdf)**, 86쪽입니다. 1장8쪽부터 공통 운용 기준을 모으고, 최소 및 심화 경로와 사전 기준 및 변경 이력을 통일했습니다. [한 장 요약표](e-book/exports/v09/tri_v_operating_card_v09.pdf), [3쪽 작성 양식](e-book/exports/v09/tri_v_decision_record_v09.pdf), [편집 가능한 기록](e-book/exports/v09/tri_v_decision_record_v09.md), [보완과 검증 기록](e-book/design/v09/REVIEW.md)을 제공합니다. 영문 최종 이름은 아직 미확정이며 다른 출판 단계는 새로 진행하지 않았습니다.
+최신 전체 읽기본은 **[v0.10 본책 PDF](e-book/exports/v10/ebook_review_v10.pdf)**, 90쪽입니다. 1장6쪽부터 큰 그림3개와 쉬운 시승 안내 설명을 넣고, 11장57쪽부터 TRI-V의 구상 출처와 기존 원칙, 적용 조건과 신규성의 한계를 구분했습니다. TRI-V 자체를 저자 제안 방법론으로 설명하며 Contextvia는 필수 상위 이론이 아닌 선택 가능한 브랜드로 둡니다. [개정 기록](e-book/design/v10/REVIEW.md), [출처와 범위 확인](e-book/exports/v10/origin_scope_validation_v10.json), [편집 원고](e-book/exports/v10/ebook_review_v10.md)를 제공합니다.
+
+이전 **[v0.9 본책 PDF](e-book/exports/v09/ebook_review_v09.pdf)**, 86쪽도 보존합니다. 1장8쪽부터 공통 운용 기준을 모으고, 최소 및 심화 경로와 사전 기준 및 변경 이력을 통일했습니다. [한 장 요약표](e-book/exports/v09/tri_v_operating_card_v09.pdf), [3쪽 작성 양식](e-book/exports/v09/tri_v_decision_record_v09.pdf), [편집 가능한 기록](e-book/exports/v09/tri_v_decision_record_v09.md), [보완과 검증 기록](e-book/design/v09/REVIEW.md)을 제공합니다. 영문 최종 이름은 아직 미확정이며 다른 출판 단계는 새로 진행하지 않았습니다.
 
 이전 **[v0.8 본책 PDF](e-book/exports/v08/ebook_review_v08.pdf)**, 80쪽도 보존합니다. 대표 방법론 맥락항법, 실행 절차 TRI-V, 초기 이름은 1장 배경 한 문단으로 정리했습니다. 11장에는 방법론의 주장 범위, 합성 자료의 교육적 적합성, 실제 독자 학습의 미검증 상태를 반영했습니다. [v0.8 편집 원고](e-book/exports/v08/ebook_review_v08.md), [변경과 검증 기록](e-book/design/v08/REVIEW.md)을 제공합니다. 수치103항목과 12장 읽기 전용 SQL을 다시 대조했습니다. 전권 사람 검수와 실제 독자 시험 및 출간 승인은 남아 있습니다.
 
@@ -53,7 +55,7 @@ python scripts/prepare_scenarios_v02.py
 기존 출력이 있으면 덮어쓰지 않습니다. 완전 재생성은 출력 폴더를 백업한 별도 작업 사본에서 수행하세요. 생성용 하위 스크립트의 출력 위치는 `OEM_OUTPUT_ROOT`로 제어할 수 있습니다. 저장소 루트의 scripts가 기준이며, 시나리오 안의 scripts는 생성 당시 보조 사본입니다.
 
 ## 현재 상태
-전체 읽기본은 v0.9입니다. 연속 서술과 가운데 점 제거 기준을 유지하고, 용어집에만 탐색용 항목 제목을 사용합니다. 노션의 공개 본문을 끝까지 스크롤해 수집했으나 연결 영상을 모두 시청한 것은 아닙니다. 기본 기업과 DB는 v0.3, 별도 실습은 v0.4 그대로이며 새 그래프도 기존 계산 장부에서 생성했습니다. 실제 OEM 성과와 방법론의 현장 우월성은 검증하지 않았습니다. 저자 승인과 외부 검토, 실독자 테스트, 권리와 출간 검수는 남아 있습니다.
+전체 읽기본은 v0.10입니다. 연속 서술과 가운데 점 제거 기준을 유지하고, 용어집에만 탐색용 항목 제목을 사용합니다. 노션의 공개 본문을 끝까지 스크롤해 수집했으나 연결 영상을 모두 시청한 것은 아닙니다. 기본 기업과 DB는 v0.3, 별도 실습은 v0.4 그대로이며 새 그래프도 기존 계산 장부에서 생성했습니다. 실제 OEM 성과와 방법론의 현장 우월성은 검증하지 않았습니다. 저자 승인과 외부 검토, 실독자 테스트, 권리와 출간 검수는 남아 있습니다.
 
 ## 이전 본책 v0.5
 

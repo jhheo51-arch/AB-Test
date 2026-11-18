@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "scenes": [
+    "정말 안내문 때문일까요?",
+    "어떤 고객에게 좋았을까요?",
+    "그래서 지금 써도 될까요?"
+  ],
+  "tab_navigation": "passed",
+  "keyboard_and_previous_next": "passed",
+  "desktop_and_mobile_overflow": false,
+  "print_shows_all_scenes": true,
+  "browser_errors": [],
+  "main_book_renamed": false,
+  "scope": "ELI5 illustration, not statistical or field evidence",
+  "design_rationale": [
+    "Use one fictional test-drive story to avoid switching contexts.",
+    "Show one large picture and one question at a time to reduce terminology load.",
+    "Keep the method, operating guide and optional brand distinct without inventing another theoretical layer."
+  ]
+}

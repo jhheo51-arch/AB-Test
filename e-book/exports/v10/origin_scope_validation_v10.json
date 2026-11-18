@@ -1,0 +1,61 @@
+{
+  "checked_at_seoul": "2026-11-18T10:57:26.070421+09:00",
+  "supplied_draft": {
+    "file_name": "pasted_content_2026-11-16_08-46-55-414_0f762e.txt",
+    "sha256": "86f3f6d843c9cf42978115ab8d1ff5854bb9c9b9c39c7d978870a7aa6a111315",
+    "observed": "TRI-V and all three V expansions are already present; the draft itself says the framework had been completed earlier",
+    "limits": "This excerpt does not establish the first coiner, the full earlier dialogue, historical novelty, career achievements or validated effectiveness. Earlier praise is not a literature review."
+  },
+  "principle_sources": [
+    {
+      "id": "S1",
+      "title": "Patterns of Trustworthy Experimentation: During-Experiment Stage",
+      "url": "https://www.microsoft.com/en-us/research/articles/patterns-of-trustworthy-experimentation-during-experiment-stage/",
+      "scope": "Use the exact read ranges and cautions in METHOD_REVIEW_v06.json; these sources do not endorse TRI-V."
+    },
+    {
+      "id": "S2",
+      "title": "Patterns of Trustworthy Experimentation: Post-Experiment Stage",
+      "url": "https://www.microsoft.com/en-us/research/articles/patterns-of-trustworthy-experimentation-post-experiment-stage/",
+      "scope": "Use the exact read ranges and cautions in METHOD_REVIEW_v06.json; these sources do not endorse TRI-V."
+    },
+    {
+      "id": "S3",
+      "title": "5.3.3.2. Randomized block designs",
+      "url": "https://www.itl.nist.gov/div898/handbook/pri/section3/pri332.htm",
+      "scope": "Use the exact read ranges and cautions in METHOD_REVIEW_v06.json; these sources do not endorse TRI-V."
+    },
+    {
+      "id": "S4",
+      "title": "Addendum on Estimands and Sensitivity Analysis in Clinical Trials to the Guideline on Statistical Principles for Clinical Trials E9(R1)",
+      "url": "https://database.ich.org/sites/default/files/E9-R1_Step4_Guideline_2019_1203.pdf",
+      "scope": "Use the exact read ranges and cautions in METHOD_REVIEW_v06.json; these sources do not endorse TRI-V."
+    },
+    {
+      "id": "S5",
+      "title": "CONSORT 2025 explanation and elaboration: updated guideline for reporting randomised trials",
+      "url": "https://www.bmj.com/content/389/bmj-2024-081124",
+      "scope": "Use the exact read ranges and cautions in METHOD_REVIEW_v06.json; these sources do not endorse TRI-V."
+    }
+  ],
+  "current_browser_recheck": {
+    "NIST_S3": "Read opening blocking/randomization discussion and example excerpt, not the whole handbook",
+    "Microsoft_S2": "Read telemetry, observation-unit imbalance and tradeoff excerpts; predetermined tradeoff criteria, not endorsement of TRI-V"
+  },
+  "new_pdf_section_pages": {
+    "TRI-V를 시승 안내로 먼저 이해하기": 6,
+    "TRI-V 공통 운용 기준": 10,
+    "TRI-V의 출발점과 적용 범위": 57
+  },
+  "new_illustrations": [
+    "tri_v_easy_comparison.svg",
+    "tri_v_easy_population.svg",
+    "tri_v_easy_decision.svg"
+  ],
+  "primary_name": "TRI-V, author-proposed method",
+  "Contextvia_status": "Optional brand not approved or imposed",
+  "universal_applicability_established": false,
+  "historical_priority_established": false,
+  "human_learning_or_field_superiority_established": false,
+  "previous_reading_editions_and_data_modified": false
+}
