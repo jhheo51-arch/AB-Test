@@ -1,0 +1,45 @@
+{
+  "version": "0.9 author review",
+  "author": "허재혁",
+  "selected_cover": "A, recommendation pending author approval",
+  "page_geometry_mm": [
+    190,
+    270
+  ],
+  "body_pt": 12,
+  "font_families": [
+    "Noto Serif KR reading face",
+    "Noto Sans KR headings, tables and labels"
+  ],
+  "source_characters": 91885,
+  "source_nonspace_characters": 69529,
+  "previous_v06_characters": 60795,
+  "six_cases_preserved": true,
+  "new_content": [
+    "Shared TRI-V operating contract in chapter1 and cross-references in chapters2-4",
+    "Required deliverables and minimum/deep-route triggers",
+    "Pre-result criteria with explicit post-result change history",
+    "All six existing cases mapped to the same operating record",
+    "Chapter12 linked to the unified blank record"
+  ],
+  "new_layout_is_not_evidence_of_depth": true,
+  "old_numeric_ledgers": {
+    "e-book/analysis/winner_v04/core_results.json": "501a32cef982f5bdca9c211cd9cc7f47126a35e2019921f9f6a53a55e8689db3",
+    "e-book/analysis/winner_v04/scenario_results.json": "d3ad00f3b908484d354e5ff40205cf077aeb6dbc1a83fd0a63e8a82c1dfd429c"
+  },
+  "limits": [
+    "Simulated persona review, not real reader research",
+    "Author title and voice approval pending",
+    "No claims of actual OEM success, new statistical theory or publication readiness"
+  ],
+  "previous_v08_characters": 86139,
+  "english_name_status": {
+    "previous_proposal": "Contexvia",
+    "user_latest_spelling": "contextvia",
+    "display_candidate": "Contextvia",
+    "approved": false,
+    "book_cover_not_renamed": true
+  },
+  "reader_learning_evidence": "not yet tested",
+  "not_an_automatic_approval_rule": true
+}

@@ -1,0 +1,57 @@
+{
+  "checked_at_seoul": "2026-11-18T10:29:49.300338+09:00",
+  "operating_contract_page": 8,
+  "book_three_repairs_present": true,
+  "case_record_mappings": [
+    {
+      "id": 1,
+      "record_status": "주지표 우위 미확인과 원인 확인 보류",
+      "route": "최소 경로 뒤 자료 대사"
+    },
+    {
+      "id": 2,
+      "record_status": "완료 우위 지지, 사업 및 보호 미해결",
+      "route": "최소 경로, 필요 조건 확인"
+    },
+    {
+      "id": 3,
+      "record_status": "고정 가정의 탐색 가치, 실제 경제성 미확인",
+      "route": "경제 가정 심화"
+    },
+    {
+      "id": 4,
+      "record_status": "결함 로그의 완료 비교 보류",
+      "route": "V1 원장 대사로 되돌림"
+    },
+    {
+      "id": 5,
+      "record_status": "고객군과 표적 구성에 따른 적용 제한",
+      "route": "사전 고객군과 대상 이동 심화"
+    },
+    {
+      "id": 6,
+      "record_status": "조건부 모형 안의 전면 확대 보류",
+      "route": "공유 용량과 간섭 심화"
+    }
+  ],
+  "mapping_scope": "Editorial integration checks, not an automated statistical or adoption classifier",
+  "companion_outputs": {
+    "tri_v_operating_card_v09": {
+      "pages": 1,
+      "min_text_pt": 12.0,
+      "outside_words": [],
+      "sha256": "b393d0ed0b5cf0662321108702fc63b061dccb13e75e33fee8c8d89f9ea0b7c4"
+    },
+    "tri_v_decision_record_v09": {
+      "pages": 3,
+      "min_text_pt": 12.0,
+      "outside_words": [],
+      "sha256": "07dd63ed1f1a3f40356c50b72e792cacc90aa4dbe5647face981011e4e43fef0"
+    }
+  },
+  "criterion_change_rows": 0,
+  "svg_text_overflow": [],
+  "browser_errors": [],
+  "real_reader_results_created": false,
+  "name_finalized": false
+}

@@ -15,7 +15,7 @@ CRM 실무자가 실험을 설계하고, 결과의 신뢰성과 불확실성을 
 | 가상 기업 | JH Motors | JH 요청을 반영한 작업명, 상표 확인 전 |
 | 주 독자 | CRM 입문 마케터·기획자 | 임시 편집 기준, 독자 검증 전 |
 | 책 제목 | 그래서, 이 캠페인 계속할까요? | 작업 가제, 최종 승인 전 |
-| 방법론 | 맥락항법 + TRI-V 실행 절차 | 추천 명칭의 진행 승인과 v0.8 적용, 초기 이름은 구상 배경만 |
+| 방법론 | 현행 본문 맥락항법 + TRI-V, 영문 대표명은 재검토 | 이전 제안 Contexvia와 사용자 표기 contextvia를 구분. v0.9 운용 보완, 영문 최종 적용 전 |
 | 출간·판매·제품 배포 | 미실시 | 승인·검수·요건 확인 필요 |
 
 ## 3. 저자 서사의 방향
@@ -56,7 +56,9 @@ CRM 실무자가 실험을 설계하고, 결과의 신뢰성과 불확실성을 
 | v0.4 별도 실습 | 측정 원장/오류 로그·처치 전 집단/층화·상호작용·공유 슬롯40/60/90 민감도 CSV | 생성·재집계·수식 대조. 원래v0.3 DB는 수정하지 않음 |
 | v0.5 본책 | 29쪽 PDF와 HTML/MD, 방법론 도식, 출력 검사 | 트리아타시스 중심 재집필과 연속 서술. 가운데 점과 문단별 세부 소제목0개. 기존 분석 수치 유지 |
 
-현재 읽을 파일: [전체 v0.8 PDF](e-book/exports/v08/ebook_review_v08.pdf), 80쪽 저자 검토본. 명칭 정리와 세 판단을 반영했고 수치103항목 및 읽기 전용 SQL을 재대조했다. [변경 기록](e-book/design/v08/REVIEW.md), [합성 사례 검토](e-book/review/publication/CLAIM_SCOPE_AND_SYNTHETIC_AUDIT.md), [실제 독자 시험 준비](e-book/review/reader_test_v01/PROTOCOL.md)를 함께 본다. 키워드 색인은71쪽이다. 실제 독자의 수행 결과는 아직 없다.
+현재 읽을 파일: [전체 v0.9 PDF](e-book/exports/v09/ebook_review_v09.pdf), 86쪽 저자 검토본. 공통 운용 기준은8쪽, 관통 실습은60쪽, 용어집은77쪽이다. [한 장 요약표](e-book/exports/v09/tri_v_operating_card_v09.pdf), [3쪽 작성 양식](e-book/exports/v09/tri_v_decision_record_v09.pdf), [세 보완의 구현과 검증](e-book/design/v09/REVIEW.md)을 제공한다. 산출물 통일, 최소와 심화 경로, 사전 기준 및 변경 이력을 실제 본문과 여섯 사례에 연결했다. 영문 최종 이름과 사용성의 사람 확인은 대기이며 다른 출판 작업은 새로 시작하지 않았다.
+
+이전 기록: [전체 v0.8 PDF](e-book/exports/v08/ebook_review_v08.pdf), 80쪽 저자 검토본. 명칭 정리와 세 판단을 반영했고 수치103항목 및 읽기 전용 SQL을 재대조했다. [변경 기록](e-book/design/v08/REVIEW.md), [합성 사례 검토](e-book/review/publication/CLAIM_SCOPE_AND_SYNTHETIC_AUDIT.md), [실제 독자 시험 준비](e-book/review/reader_test_v01/PROTOCOL.md)를 함께 본다. 키워드 색인은71쪽이다. 실제 독자의 수행 결과는 아직 없다.
 
 이전 판 보존: [전체 v0.7 PDF](e-book/exports/v07/ebook_review_v07.pdf), 79쪽 저자 검토본. 방법론 1~4장은5,8,9,11쪽, 통계와 정보량 확장은13,18쪽, 사례1~6은24,26,28,30,33,36쪽, 관통 실습12장은54쪽, 사례별 증거 명세는64쪽,36개 키워드 색인은70쪽에서 시작한다. [개정 및 분량 대조](e-book/design/v07/REVIEW.md), [모의 페르소나 평가](e-book/design/v07/PERSONA_REVIEW_v07.md), [출력 검사](e-book/exports/v07/validation_v07.json)를 따른다. 표지 A안과 새 제목은 승인 전 제안이며 실제 독자 검증은 미실시다. 이전 v0.4 워크북과 참조 카드는 보존했다.
 

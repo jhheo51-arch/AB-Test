@@ -1,5 +1,5 @@
 {
-  "checked_at_seoul": "2026-11-18T09:40:18.075707+09:00",
+  "checked_at_seoul": "2026-11-18T10:29:58.783645+09:00",
   "author": "허재혁",
   "project": "A/B Test",
   "repository": "https://github.com/jhheo51-arch/AB-Test",
@@ -26,26 +26,27 @@
     "book_v05": 29,
     "book_v06": 50,
     "book_v07": 79,
-    "book_v08": 80
+    "book_v08": 80,
+    "book_v09": 86
   },
   "six_worked_case_start_pages": {
     "1": [
-      24
-    ],
-    "2": [
-      26
-    ],
-    "3": [
       28
     ],
-    "4": [
+    "2": [
       30
     ],
+    "3": [
+      32
+    ],
+    "4": [
+      35
+    ],
     "5": [
-      33
+      38
     ],
     "6": [
-      36
+      41
     ]
   },
   "diagnostic_cards": 60,
@@ -82,7 +83,10 @@
     "publication_checklist": "e-book/planning/PUBLICATION_CHECKLIST.md",
     "claim_and_synthetic_audit": "e-book/review/publication/CLAIM_SCOPE_AND_SYNTHETIC_AUDIT.md",
     "reader_protocol": "e-book/review/reader_test_v01/PROTOCOL.md",
-    "reader_preparation_validation": "e-book/review/reader_test_v01/PREPARATION_VALIDATION.json"
+    "reader_preparation_validation": "e-book/review/reader_test_v01/PREPARATION_VALIDATION.json",
+    "book_v09": "e-book/exports/v09/ebook_review_v09.pdf",
+    "validation_v09": "e-book/exports/v09/validation_v09.json",
+    "operations_validation_v09": "e-book/exports/v09/operations_validation_v09.json"
   },
   "checks": [
     "required files exist",
@@ -98,7 +102,10 @@
     "v07 PDF hash and actual12pt reading-body probe",
     "v07 contents folios,36 glossary targets,103 numeric tokens and read-only chapter12 SQL",
     "v08 exact PDF hash and approved terminology distribution",
-    "v08 original103 numeric tokens, read-only chapter12 SQL, printed folios and zero forbidden middle-dot characters"
+    "v08 original103 numeric tokens, read-only chapter12 SQL, printed folios and zero forbidden middle-dot characters",
+    "v09 PDF exact hash and central operating-contract bookmark",
+    "v09 original103 numeric checks and read-only chapter12 SQL",
+    "v09 six case-to-record mappings, one-page operating card and three-page decision record; not a statistical classifier"
   ],
   "not_repeated": [
     "statistical calculations/simulations in this inventory refresh; see actual analysis reports",
@@ -107,8 +114,8 @@
   ],
   "product_tool_status": "direction documents only, no implemented general analysis application",
   "publication_status": "not ready for sale; author/content/domain/reader/rights review pending",
-  "latest_reading_edition": "v0.8 approved terminology and publication-boundary review edition",
-  "main_book_path": "e-book/exports/v08/ebook_review_v08.pdf",
+  "latest_reading_edition": "v0.9 shared operating contract and decision-record review edition",
+  "main_book_path": "e-book/exports/v09/ebook_review_v09.pdf",
   "previous_v04_case_pages": {
     "1": [
       24
@@ -130,10 +137,10 @@
     ]
   },
   "methodology_chapter_start_pages": {
-    "1": 5,
-    "2": 8,
-    "3": 9,
-    "4": 11
+    "1": 6,
+    "2": 11,
+    "3": 13,
+    "4": 14
   },
   "middle_dot_counts": {
     "U+00B7": 0,
@@ -146,27 +153,27 @@
   "companion_scope": "v0.4 workbook/cards preserved, not re-edited in v0.6",
   "glossary_entries": 36,
   "method_title_proposal": "맥락항법",
-  "method_title_approval": "author approved proceeding with proposed naming structure; applied to v08",
+  "method_title_approval": "Existing Korean naming applied in v08; final English spelling not yet selected",
   "all_chapter_start_pages": {
-    "1": 5,
-    "2": 8,
-    "3": 9,
-    "4": 11,
-    "5": 13,
-    "6": 18,
-    "7": 24,
-    "8": 39,
-    "9": 41,
-    "10": 46,
-    "11": 50,
-    "12": 54
+    "1": 6,
+    "2": 11,
+    "3": 13,
+    "4": 14,
+    "5": 16,
+    "6": 21,
+    "7": 28,
+    "8": 45,
+    "9": 47,
+    "10": 51,
+    "11": 55,
+    "12": 60
   },
   "same_A4_body_only_control_pages": {
     "v06": 48,
-    "v08": 67
+    "v09": 71
   },
   "persona_review_status": "AI simulated review, not interviews or sales validation",
-  "source_characters": 86139,
+  "source_characters": 91885,
   "cover_approval": "A selected as recommendation; author approval pending",
   "plan_identity": {
     "exact_bytes_match": false,
@@ -185,5 +192,15 @@
   "reader_test_protocol": "prepared, recruitment and conditions require approval",
   "reader_test_observation_rows": 0,
   "reader_test_preparation_checks": "fixture counts, rates/effects, CI/p recalculated and matched to participant and facilitator files; not learning outcomes",
-  "reader_test_source_edition": "v0.7 development baseline, v0.8 assigned reading candidate with recorded exact PDF hash"
+  "reader_test_source_edition": "Original preparation retains v08 PDF hash; v09 assignment requires a new explicit version decision before actual testing",
+  "operating_contract_page": 8,
+  "english_name_candidates": {
+    "previous_proposal": "Contexvia",
+    "user_latest_literal": "contextvia",
+    "display_proposal": "Contextvia",
+    "approved": false
+  },
+  "three_operating_repairs": "integrated in the actual book, companion card and record; reader usability not yet tested",
+  "reader_test_administration": "User will conduct the test; no independent recruitment or sharing authorized",
+  "later_publication_work": "not started anew; user reserved it until methodology/name resolution"
 }
