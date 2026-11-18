@@ -1,5 +1,5 @@
 {
-  "checked_at_seoul": "2026-11-17T18:41:08.496906+09:00",
+  "checked_at_seoul": "2026-11-18T09:40:18.075707+09:00",
   "author": "허재혁",
   "project": "A/B Test",
   "repository": "https://github.com/jhheo51-arch/AB-Test",
@@ -25,7 +25,8 @@
     "card_reference_v04": 60,
     "book_v05": 29,
     "book_v06": 50,
-    "book_v07": 79
+    "book_v07": 79,
+    "book_v08": 80
   },
   "six_worked_case_start_pages": {
     "1": [
@@ -74,7 +75,14 @@
     "book_v06": "e-book/exports/v06/ebook_review_v06.pdf",
     "validation_v06": "e-book/exports/v06/validation_v06.json",
     "book_v07": "e-book/exports/v07/ebook_review_v07.pdf",
-    "validation_v07": "e-book/exports/v07/validation_v07.json"
+    "validation_v07": "e-book/exports/v07/validation_v07.json",
+    "book_v08": "e-book/exports/v08/ebook_review_v08.pdf",
+    "validation_v08": "e-book/exports/v08/validation_v08.json",
+    "publication_brief": "e-book/planning/PUBLICATION_BRIEF.md",
+    "publication_checklist": "e-book/planning/PUBLICATION_CHECKLIST.md",
+    "claim_and_synthetic_audit": "e-book/review/publication/CLAIM_SCOPE_AND_SYNTHETIC_AUDIT.md",
+    "reader_protocol": "e-book/review/reader_test_v01/PROTOCOL.md",
+    "reader_preparation_validation": "e-book/review/reader_test_v01/PREPARATION_VALIDATION.json"
   },
   "checks": [
     "required files exist",
@@ -88,7 +96,9 @@
     "v06 exact PDF hash, 36 glossary targets and zero middle dots",
     "v06 numeric text ledger reconciliation: 103 checks; no inference rerun",
     "v07 PDF hash and actual12pt reading-body probe",
-    "v07 contents folios,36 glossary targets,103 numeric tokens and read-only chapter12 SQL"
+    "v07 contents folios,36 glossary targets,103 numeric tokens and read-only chapter12 SQL",
+    "v08 exact PDF hash and approved terminology distribution",
+    "v08 original103 numeric tokens, read-only chapter12 SQL, printed folios and zero forbidden middle-dot characters"
   ],
   "not_repeated": [
     "statistical calculations/simulations in this inventory refresh; see actual analysis reports",
@@ -97,8 +107,8 @@
   ],
   "product_tool_status": "direction documents only, no implemented general analysis application",
   "publication_status": "not ready for sale; author/content/domain/reader/rights review pending",
-  "latest_reading_edition": "v0.7 expanded editorial review edition",
-  "main_book_path": "e-book/exports/v07/ebook_review_v07.pdf",
+  "latest_reading_edition": "v0.8 approved terminology and publication-boundary review edition",
+  "main_book_path": "e-book/exports/v08/ebook_review_v08.pdf",
   "previous_v04_case_pages": {
     "1": [
       24
@@ -135,8 +145,8 @@
   },
   "companion_scope": "v0.4 workbook/cards preserved, not re-edited in v0.6",
   "glossary_entries": 36,
-  "method_title_proposal": "맥락항법: 비교의 근거에서 실행의 결론까지",
-  "method_title_approval": "pending",
+  "method_title_proposal": "맥락항법",
+  "method_title_approval": "author approved proceeding with proposed naming structure; applied to v08",
   "all_chapter_start_pages": {
     "1": 5,
     "2": 8,
@@ -153,10 +163,10 @@
   },
   "same_A4_body_only_control_pages": {
     "v06": 48,
-    "v07": 66
+    "v08": 67
   },
   "persona_review_status": "AI simulated review, not interviews or sales validation",
-  "source_characters": 85218,
+  "source_characters": 86139,
   "cover_approval": "A selected as recommendation; author approval pending",
   "plan_identity": {
     "exact_bytes_match": false,
@@ -166,5 +176,14 @@
     "newline_only_equivalence": true,
     "original_files_modified": false,
     "note": "Fresh checkout has LF while DB manifest matches CRLF representation; exact frozen byte identity is NOT claimed. Original plan and DB preserved."
-  }
+  },
+  "methodology_name": "맥락항법",
+  "procedure": "TRI-V",
+  "reader_test_status": "protocol and task preparation only; actual participants and learning outcomes not yet tested",
+  "field_validation_scope": "No superiority claim; full field proof is not a prerequisite for a scoped educational proposal",
+  "publication_gate_scope": "final title, cover, sales promise and publication approval remain pending",
+  "reader_test_protocol": "prepared, recruitment and conditions require approval",
+  "reader_test_observation_rows": 0,
+  "reader_test_preparation_checks": "fixture counts, rates/effects, CI/p recalculated and matched to participant and facilitator files; not learning outcomes",
+  "reader_test_source_edition": "v0.7 development baseline, v0.8 assigned reading candidate with recorded exact PDF hash"
 }

@@ -1,0 +1,12 @@
+{
+  "archive": "C:\\Users\\Administrator\\Downloads\\AB-Test-v07\\JH_CRM_ebook_reader_v08.zip",
+  "sha256": "7b52b1e74986549fc448013c002578f0e80b9a829d095bc80d5ab5dceeb25cff",
+  "bytes": 3316364,
+  "zip_integrity": "passed",
+  "portable_local_html": "passed",
+  "chapters": 12,
+  "glossary_entries": 36,
+  "reader_kit_only": true,
+  "full_reproduction_environment": false,
+  "real_reader_test_conducted": false
+}

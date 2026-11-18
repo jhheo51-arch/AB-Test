@@ -91,5 +91,21 @@ current_pages['book_v07']=v07['pdf_pages']
 status.update({'latest_reading_edition':'v0.7 expanded editorial review edition','main_book_path':required['book_v07'],'six_worked_case_start_pages':{k:[v] for k,v in v07['case_start_pages'].items()},'methodology_chapter_start_pages':{k:v07['chapter_start_pages'][k] for k in ['1','2','3','4']},'all_chapter_start_pages':v07['chapter_start_pages'],'same_A4_body_only_control_pages':v07['same_A4_body_only_control_pages'],'persona_review_status':'AI simulated review, not interviews or sales validation','source_characters':v07['source_characters'],'cover_approval':'A selected as recommendation; author approval pending'})
 status['checks'].extend(['v07 PDF hash and actual12pt reading-body probe','v07 contents folios,36 glossary targets,103 numeric tokens and read-only chapter12 SQL'])
 status['plan_identity']=plan_identity
+required.update({'book_v08':'e-book/exports/v08/ebook_review_v08.pdf','validation_v08':'e-book/exports/v08/validation_v08.json','publication_brief':'e-book/planning/PUBLICATION_BRIEF.md','publication_checklist':'e-book/planning/PUBLICATION_CHECKLIST.md'})
+v08=json.loads((ROOT/required['validation_v08']).read_text(encoding='utf-8'))
+assert hashlib.sha256((ROOT/required['book_v08']).read_bytes()).hexdigest()==v08['pdf_sha256']
+with pymupdf.open(ROOT/required['book_v08']) as d:
+    assert len(d)==v08['pdf_pages']
+    text08='\n'.join(p.get_text() for p in d)
+    assert text08.count('트리아타시스')==1 and text08.count('Tri-Ataxis')==1
+    for term in ['맥락항법','Variable Control','Vector Segmentation','Value-Linked Decision']:assert term in text08,term
+current_pages['book_v08']=v08['pdf_pages']
+status.update({'latest_reading_edition':'v0.8 approved terminology and publication-boundary review edition','main_book_path':required['book_v08'],'six_worked_case_start_pages':{k:[v] for k,v in v08['case_start_pages'].items()},'methodology_chapter_start_pages':{k:v08['chapter_start_pages'][k] for k in ['1','2','3','4']},'all_chapter_start_pages':v08['chapter_start_pages'],'glossary_entries':v08['glossary_entries'],'same_A4_body_only_control_pages':v08['same_A4_body_only_control_pages'],'source_characters':v08['source_characters'],'method_title_proposal':'맥락항법','method_title_approval':'author approved proceeding with proposed naming structure; applied to v08','methodology_name':'맥락항법','procedure':'TRI-V','reader_test_status':'protocol and task preparation only; actual participants and learning outcomes not yet tested','field_validation_scope':'No superiority claim; full field proof is not a prerequisite for a scoped educational proposal','publication_gate_scope':'final title, cover, sales promise and publication approval remain pending'})
+status['checks'].extend(['v08 exact PDF hash and approved terminology distribution','v08 original103 numeric tokens, read-only chapter12 SQL, printed folios and zero forbidden middle-dot characters'])
+required.update({'claim_and_synthetic_audit':'e-book/review/publication/CLAIM_SCOPE_AND_SYNTHETIC_AUDIT.md','reader_protocol':'e-book/review/reader_test_v01/PROTOCOL.md','reader_preparation_validation':'e-book/review/reader_test_v01/PREPARATION_VALIDATION.json'})
+prep=json.loads((ROOT/required['reader_preparation_validation']).read_text(encoding='utf-8'))
+assert prep['assigned_reading_candidate']['sha256']==v08['pdf_sha256']
+assert prep['observation_rows']==0
+status.update({'reader_test_protocol':'prepared, recruitment and conditions require approval','reader_test_observation_rows':prep['observation_rows'],'reader_test_preparation_checks':'fixture counts, rates/effects, CI/p recalculated and matched to participant and facilitator files; not learning outcomes','reader_test_source_edition':'v0.7 development baseline, v0.8 assigned reading candidate with recorded exact PDF hash'})
 (ROOT/'PROJECT_STATUS.json').write_text(json.dumps(status,ensure_ascii=False,indent=2),encoding='utf-8')
 print(json.dumps(status,ensure_ascii=False,indent=2))

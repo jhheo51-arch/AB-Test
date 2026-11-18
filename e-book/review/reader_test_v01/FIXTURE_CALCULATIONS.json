@@ -1,0 +1,156 @@
+{
+  "status": "교육용 고정 카운트의 도구 재계산. 실제 실험과 사람 독자 결과가 아님. 모집 승인 전.",
+  "fixture_version": "reader_test_v01_fixed_counts_1",
+  "source_design": {
+    "origin": "책의 JH 자료를 복사하지 않은 신규 합성 CRM 상황. 시험 자료 제작 과정에서 교육 목적으로 카운트를 먼저 고정하고 한 번 계산. 저자가 직접 생성하거나 승인한 실제 성과가 아님. 난수 생성, 실제 고객, 관측 실험, 효과 실증 없음.",
+    "sources_read": [
+      {
+        "path": "e-book/exports/v07/ebook_review_v07.md",
+        "sha256": "a9b47dfca2f0c45b3b0f368f8b9a2fd38114d9b3654416918f1612109e65ca29"
+      },
+      {
+        "path": "e-book/planning/PUBLICATION_BRIEF.md",
+        "sha256": "1bb8e60403857186ed60b9c7cbf259085dfeacb62e1f9d07fe914a2cd252215c"
+      },
+      {
+        "path": "e-book/design/v07/PERSONA_REVIEW_v07.md",
+        "sha256": "947791f928af2b4ffd4ee073555c546efa3e5fdb1d8a1f5f4e04c54452b6dbb2"
+      }
+    ],
+    "selection": "비교 가능성과 확증 범위를 따로 설명할 수 있도록 두 상황의 교육용 카운트를 설계했다. 유의성을 맞추려고 난수나 표본을 반복 추출한 결과가 아니다.",
+    "assumptions": [
+      "각 상황은 서로 다른 독립 합성 사례다. 고객별 무작위 1:1 고정 배정의 교육용 가정이다.",
+      "개인 독립 이항 결과, 중복 고객 없음, 간섭 없음, 동일 수집과 완전한 결과 기록을 가정한다.",
+      "각 고객 관측 창은 모두 성숙했고 고정 종료 후 한 번 분석한다. 전달 실패도 배정 분모에 남는다.",
+      "상황마다 주지표 B-A 하나만 양측 alpha 0.05의 확증 질문이다. 두 상황은 별개이므로 하나의 실험 가족이 아니다.",
+      "클릭과 철회는 미보정 탐색 지표다. 이들까지 가족 수준 확증이라고 말하지 않는다.",
+      "사업 기준은 결과를 본 뒤 제안한 교육용 가정이다. 보호 비열등성 한계는 원 계획에 없으며 문제의 비교 한계도 사후 가정이다.",
+      "매출 합계는 가상 장부 입력이며 평균의 분산, 이익, 증분 LTV를 제공하지 않는다."
+    ]
+  },
+  "environment": {
+    "python": "3.12.16",
+    "numpy": "2.5.5",
+    "scipy": "1.18.1",
+    "statsmodels": "0.15.0"
+  },
+  "methods": {
+    "test": "statsmodels proportions_ztest([B,A],[nB,nA], alternative=two-sided, prop_var=False), pooled null variance",
+    "ci": "statsmodels confint_proportions_2indep(B,nB,A,nA, method=newcomb, compare=diff, alpha=0.05)",
+    "crosscheck": "scipy.stats.norm.sf를 쓴 pooled z 양측 p와 statsmodels Wilson 경계의 Newcombe 수동 결합을 대조",
+    "display": "백분율, pp, CI는 소수 둘째 자리, p는 소수 여섯째 자리. 판정은 반올림 전 값."
+  },
+  "fixtures": {
+    "S1": {
+      "primary": {
+        "events_A": 720,
+        "events_B": 870,
+        "n_A": 6000,
+        "n_B": 6000,
+        "rate_A_pct": 12.0,
+        "rate_B_pct": 14.499999999999998,
+        "difference_B_minus_A_pp": 2.4999999999999996,
+        "relative_change_pct": 20.833333333333332,
+        "ci95_newcombe_pp": [
+          1.2873057608152019,
+          3.7130937636538714
+        ],
+        "p_two_sided_pooled_z": 5.371340732875306e-05,
+        "display": "A 720/6000 (12.00%), B 870/6000 (14.50%), B-A +2.50pp, CI [+1.29, +3.71]pp, p=0.000054"
+      },
+      "withdrawal": {
+        "events_A": 48,
+        "events_B": 60,
+        "n_A": 6000,
+        "n_B": 6000,
+        "rate_A_pct": 0.8,
+        "rate_B_pct": 1.0,
+        "difference_B_minus_A_pp": 0.2,
+        "relative_change_pct": 25.0,
+        "ci95_newcombe_pp": [
+          -0.14130656671542696,
+          0.5459001216195275
+        ],
+        "p_two_sided_pooled_z": 0.24607648069855959,
+        "display": "A 48/6000 (0.80%), B 60/6000 (1.00%), B-A +0.20pp, CI [-0.14, +0.55]pp, p=0.246076"
+      }
+    },
+    "S2": {
+      "primary": {
+        "events_A": 165,
+        "events_B": 180,
+        "n_A": 1500,
+        "n_B": 1500,
+        "rate_A_pct": 11.0,
+        "rate_B_pct": 12.0,
+        "difference_B_minus_A_pp": 0.9999999999999996,
+        "relative_change_pct": 9.090909090909086,
+        "ci95_newcombe_pp": [
+          -1.2876326224394976,
+          3.28924832538044
+        ],
+        "p_two_sided_pooled_z": 0.39064940603134213,
+        "display": "A 165/1500 (11.00%), B 180/1500 (12.00%), B-A +1.00pp, CI [-1.29, +3.29]pp, p=0.390649"
+      },
+      "click": {
+        "events_A": 300,
+        "events_B": 405,
+        "n_A": 1500,
+        "n_B": 1500,
+        "rate_A_pct": 20.0,
+        "rate_B_pct": 27.0,
+        "difference_B_minus_A_pp": 7.000000000000001,
+        "relative_change_pct": 35.0,
+        "ci95_newcombe_pp": [
+          3.969019156635456,
+          10.015658617199268
+        ],
+        "p_two_sided_pooled_z": 6.145890042158166e-06,
+        "display": "A 300/1500 (20.00%), B 405/1500 (27.00%), B-A +7.00pp, CI [+3.97, +10.02]pp, p=0.000006"
+      },
+      "withdrawal": {
+        "events_A": 12,
+        "events_B": 20,
+        "n_A": 1500,
+        "n_B": 1500,
+        "rate_A_pct": 0.8,
+        "rate_B_pct": 1.3333333333333335,
+        "difference_B_minus_A_pp": 0.5333333333333334,
+        "relative_change_pct": 66.66666666666667,
+        "ci95_newcombe_pp": [
+          -0.22254869462239207,
+          1.3278004759683997
+        ],
+        "p_two_sided_pooled_z": 0.1550794075527353,
+        "display": "A 12/1500 (0.80%), B 20/1500 (1.33%), B-A +0.53pp, CI [-0.22, +1.33]pp, p=0.155079"
+      }
+    }
+  },
+  "other_fixed_inputs": {
+    "S1": {
+      "window_days": 21,
+      "delivered_A": 5700,
+      "delivered_B": 5580,
+      "gross_observed_sales_A_KRW": 18000000,
+      "gross_observed_sales_B_KRW": 21000000,
+      "posthoc_business_minimum_pp": 1.5,
+      "posthoc_withdrawal_margin_pp": 0.3
+    },
+    "S2": {
+      "window_days": 14,
+      "delivered_A": 1425,
+      "delivered_B": 1350,
+      "posthoc_business_minimum_pp": 0.8,
+      "posthoc_withdrawal_margin_pp": 0.4
+    }
+  },
+  "validation_three_numeric_types": {
+    "counts": "각 사건 수는 0 이상 배정 수 이하, 정수 고정 입력",
+    "rates_effects": "사건/배정 비율, B-A pp와 상대 변화 식으로 계산",
+    "inference": "pooled z p와 Wilson 결합 CI를 별도 식으로 허용오차 1e-12 대조"
+  },
+  "reproduction": {
+    "command": "uv run --with scipy --with statsmodels scripts/verify_publication_preparation_v08.py",
+    "minimal_python": "from statsmodels.stats.proportion import proportions_ztest, confint_proportions_2indep\na, b, na, nb = 720, 870, 6000, 6000\nprint(proportions_ztest([b,a],[nb,na],alternative=\"two-sided\",prop_var=False))\nprint(confint_proportions_2indep(b,nb,a,na,method=\"newcomb\",compare=\"diff\",alpha=0.05))\n# 위 고정 명세의 나머지 지표에도 같은 함수를 적용한다."
+  }
+}
