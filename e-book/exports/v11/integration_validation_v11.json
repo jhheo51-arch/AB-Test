@@ -1,0 +1,26 @@
+{
+  "status": "passed",
+  "chapter_pages": {
+    "author_origin": 4,
+    "operating_contract": 11,
+    "positive_cases": 49,
+    "scope": 60,
+    "chapter9": 51,
+    "chapter10": 55
+  },
+  "full_book_pages": 89,
+  "old_v10_pdf_unchanged": true,
+  "chapters5_6_and_six_existing_cases_exactly_preserved": true,
+  "chapter12_existing_analysis_preserved": true,
+  "old_ledgers_unchanged": {
+    "e-book/analysis/winner_v04/core_results.json": "501a32cef982f5bdca9c211cd9cc7f47126a35e2019921f9f6a53a55e8689db3",
+    "e-book/analysis/winner_v04/scenario_results.json": "d3ad00f3b908484d354e5ff40205cf077aeb6dbc1a83fd0a63e8a82c1dfd429c"
+  },
+  "new_counterexamples_reconciled": 4,
+  "method_axes": 3,
+  "minimum_record_fields": 6,
+  "minimum_record_pdf_pages": 1,
+  "chapter9_10_editorial_scope": "Bounded prose edit, author and human review pending",
+  "human_reader_or_field_effect_proven": false,
+  "PUB_02": "started and technically verified within this revision, not author-approved completion"
+}

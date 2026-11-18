@@ -1,0 +1,42 @@
+{
+  "version": "0.11 author review",
+  "author": "허재혁",
+  "selected_cover": "A, recommendation pending author approval",
+  "page_geometry_mm": [
+    190,
+    270
+  ],
+  "body_pt": 12,
+  "font_families": [
+    "Noto Serif KR reading face",
+    "Noto Sans KR headings, tables and labels"
+  ],
+  "source_characters": 96131,
+  "source_nonspace_characters": 72809,
+  "previous_v06_characters": 60795,
+  "six_cases_preserved": true,
+  "new_content": [
+    "Canonical six-field contract with action scope, distinct stopping meanings and decision-changing checks",
+    "Attributed author project narrative, not retrospective randomized A/B claims",
+    "Four positive and stop counterexamples in chapter8 with fixed educational counts",
+    "Bounded chapter9-10 prose editing and consolidated chapter11 claim scope",
+    "Final campaign mapped back to the six-field record"
+  ],
+  "new_layout_is_not_evidence_of_depth": true,
+  "old_numeric_ledgers": {
+    "e-book/analysis/winner_v04/core_results.json": "501a32cef982f5bdca9c211cd9cc7f47126a35e2019921f9f6a53a55e8689db3",
+    "e-book/analysis/winner_v04/scenario_results.json": "d3ad00f3b908484d354e5ff40205cf077aeb6dbc1a83fd0a63e8a82c1dfd429c"
+  },
+  "limits": [
+    "Simulated persona review, not real reader research",
+    "Author title and voice approval pending",
+    "No claims of actual OEM success, new statistical theory or publication readiness"
+  ],
+  "previous_v10_characters": 96106,
+  "methodology_name": "TRI-V",
+  "fixed_axes": true,
+  "record_fields": 6,
+  "publication_stage": "PUB-02 started, bounded full-book integration and editorial pass; human approval pending",
+  "field_effect_or_reader_learning_proven": false,
+  "old_v10_preserved": true
+}
