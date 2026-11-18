@@ -1,0 +1,6087 @@
+{
+  "review_type": "separate AI/code recomputation, NOT independent human statistical review",
+  "head": "eefdd4ee9ea026c06d65a760706a742e02407bce",
+  "command": "uv run e-book/review/ai_statistical_v12/scenarios/RECALCULATE.py",
+  "environment": {
+    "python": "3.12.16",
+    "numpy": "2.5.5",
+    "scipy": "1.18.1",
+    "statsmodels": "0.15.0"
+  },
+  "source_hashes_before": {
+    "e-book/analysis/v02/metric_results.csv": "97eb24e98ea6a0fd9935cc1f87cb86e675f33440b45cd39a899cee6de195da57",
+    "e-book/analysis/winner_v04/core_results.json": "501a32cef982f5bdca9c211cd9cc7f47126a35e2019921f9f6a53a55e8689db3",
+    "e-book/analysis/winner_v04/scenario_results.json": "d3ad00f3b908484d354e5ff40205cf077aeb6dbc1a83fd0a63e8a82c1dfd429c",
+    "e-book/analysis/winner_v04/scenarios/case4_log.csv": "d6ad6ec255ca7f29bb518c8b1ff217910749409349bfb36cd4a0e0c1d8b38295",
+    "e-book/analysis/winner_v04/scenarios/case4_truth.csv": "41b148dc21e37c1726f043d352942aa61095c256300d6cd551393f83ded56a0d",
+    "e-book/analysis/winner_v04/scenarios/case5_customers.csv": "a52c642861867be0f4a88801dfb2b3838d4c85f58dce3dd65caa531d614d4def",
+    "e-book/analysis/winner_v04/scenarios/case6_fixed_demand.csv": "e91ebbf62741c1ad2ebd60f5ffb2d9fe9dba647e92437a92267c1806960f0249",
+    "e-book/analysis/winner_v04/scenarios/case6_operations.csv": "f806a0e346cea042464322bb4461ef6183f3156af4bd43ad99775cfe58db6a24",
+    "e-book/exports/v09/tri_v_criteria_change_log_v09.csv": "36abe455d0e9b9c8b17d19321066d20d4dcf501ed1cbba260529cf56185597c1",
+    "e-book/exports/v12/ebook_review_v12.md": "00cc0928d158347fb614d80e06dede619ee69808531df29308a555ee83b1207c",
+    "e-book/manuscript/winner_cases_456_v04.md": "ffff8c349fcefeea89f51e666dfb8932784b93fa3bedc04ce852b7022eb2b5ec",
+    "e-book/planning/AUTHOR_METHOD_AND_VOICE.md": "9383630626413029af1cf03489e021dded92eaee47fa8f36d3c8e0a322e47fff",
+    "e-book/planning/CRM_DIAGNOSTIC_WORKFLOW.md": "4c0cb89f042d7f76538ca5ccb5b4c45dbfda58180cea367d4c48dd5fdd6e7d35",
+    "e-book/planning/EDITORIAL_CRITIQUE_v02_PRELIMINARY.md": "1e32d109423186812bc59e8d1e1b29176cd0fa3e27a04887948a9253eeb6aaba",
+    "e-book/planning/MARKET_COMPARISON_AND_REDESIGN_REVIEW.md": "034f6605626985cb394a5f957e7dcbe95d99c6fb2c7758a85d6af8ce897c36d7",
+    "e-book/planning/PRODUCTION_BRIEF.md": "9c1d46c1b2b0b91d3a3c8345b60f5731ffcfa114a4044980000aaded82db117e",
+    "e-book/planning/PROGRESS.md": "79adfe8615a7fa763dcdbece1a6f2dbb161cf538f36eb57161e96fa6a662ed3d",
+    "e-book/planning/PUBLICATION_BRIEF.md": "1a817563424371af02cc237ae274c7a49873514cefc0ecfa0d892e888518720b",
+    "e-book/planning/PUBLICATION_CHECKLIST.md": "e9a7ca31211b63d93ec322be69fe74215d19d83723af61ce396517e8c24b12a2",
+    "e-book/planning/WINNER_DEEP_DIVE.md": "0df320a2e8d1acce30cb3722399c5d6f3c030328fd319e2818fb48ebcda2bfdd",
+    "e-book/review/ab_only_methods_v01/calculated_results.json": "837ff067df0c403890e4216fc918b74bd53d32ca52fe0b248673707382e4045b",
+    "e-book/review/ab_only_methods_v01/customer_fixture.csv": "d7b04ad615c669aedec80ec7fae9af6be2b396e5c5220e91095551a6cc25b897",
+    "e-book/review/methodology/tri_v_sharpening_v02/OBSERVATIONS.csv": "bfd09f19fff4e3b5791cb7c20ac7ce0806fe62f0fff03a2ded09ad35b1f5c5ba",
+    "e-book/review/reader_test_v01/OBSERVATION_TEMPLATE.csv": "54b2b05d63ea561d7f51b6700d200fa3839b030dbbec793d90454f998fc70cf6",
+    "e-book/review/statistical_v12/FINDINGS_TEMPLATE.csv": "db5a2082d9b8c09ab688541ba5caafab332e3ce61add9ca787443c6d48e0534c",
+    "e-book/virtual-data/v01/data/csv/assignments.csv": "6f7dd96fe1e7428557104831561e272bdbae8381fa145e5c9c09d9b040a7ff60",
+    "e-book/virtual-data/v01/data/csv/company.csv": "e6224f8367daa5d089db49b594f38a8e54d2c5ef45576e88ce5826726444a58b",
+    "e-book/virtual-data/v01/data/csv/cost_assumptions.csv": "b366a213558ab479cf758899e7662d9d35d919d5790f6288bd05e1658682b683",
+    "e-book/virtual-data/v01/data/csv/customers.csv": "23bac95b8e757c39ee0d91921d2bdbbfae73c0b8675923c15ab15816d60e8d94",
+    "e-book/virtual-data/v01/data/csv/dealerships.csv": "a29826633535947b19f931802f65210e2b34cfaebbaa29cd8630e10f9f58a711",
+    "e-book/virtual-data/v01/data/csv/experiment_outcomes.csv": "b53a4527354325f3d1cb1df973c8cca4339c662cd4efca6fb6230096619a4df1",
+    "e-book/virtual-data/v01/data/csv/experiments.csv": "f162fb76beb785317dc281ff38237c54ae557134d815f88ecdcaec687c1a1782",
+    "e-book/virtual-data/v01/data/csv/journey_events.csv": "e1c5953ec10f381caa7bc3621903693832b458a97e39dad5b0070ae073d2593d",
+    "e-book/virtual-data/v01/data/csv/messages.csv": "ddf2e770e9dceaea090c3af9433021c98cf5487e0c253d7616e4f5da88092c68",
+    "e-book/virtual-data/v01/data/csv/vehicle_models.csv": "46a07c465171749f0d40b84316600c335302965b3592b5b95c49a551245ea1b6",
+    "e-book/virtual-data/v02/01_baseline/data/csv/assignments.csv": "6f7dd96fe1e7428557104831561e272bdbae8381fa145e5c9c09d9b040a7ff60",
+    "e-book/virtual-data/v02/01_baseline/data/csv/company.csv": "e6224f8367daa5d089db49b594f38a8e54d2c5ef45576e88ce5826726444a58b",
+    "e-book/virtual-data/v02/01_baseline/data/csv/cost_assumptions.csv": "b366a213558ab479cf758899e7662d9d35d919d5790f6288bd05e1658682b683",
+    "e-book/virtual-data/v02/01_baseline/data/csv/customers.csv": "23bac95b8e757c39ee0d91921d2bdbbfae73c0b8675923c15ab15816d60e8d94",
+    "e-book/virtual-data/v02/01_baseline/data/csv/dealerships.csv": "a29826633535947b19f931802f65210e2b34cfaebbaa29cd8630e10f9f58a711",
+    "e-book/virtual-data/v02/01_baseline/data/csv/experiment_outcomes.csv": "b53a4527354325f3d1cb1df973c8cca4339c662cd4efca6fb6230096619a4df1",
+    "e-book/virtual-data/v02/01_baseline/data/csv/experiments.csv": "f162fb76beb785317dc281ff38237c54ae557134d815f88ecdcaec687c1a1782",
+    "e-book/virtual-data/v02/01_baseline/data/csv/journey_events.csv": "e1c5953ec10f381caa7bc3621903693832b458a97e39dad5b0070ae073d2593d",
+    "e-book/virtual-data/v02/01_baseline/data/csv/messages.csv": "ddf2e770e9dceaea090c3af9433021c98cf5487e0c253d7616e4f5da88092c68",
+    "e-book/virtual-data/v02/01_baseline/data/csv/vehicle_models.csv": "46a07c465171749f0d40b84316600c335302965b3592b5b95c49a551245ea1b6",
+    "e-book/virtual-data/v02/02_null/data/csv/assignments.csv": "f6a8e03020cb31362331c0980b7084c395408e6730df147c2b607041d82e027e",
+    "e-book/virtual-data/v02/02_null/data/csv/company.csv": "e6224f8367daa5d089db49b594f38a8e54d2c5ef45576e88ce5826726444a58b",
+    "e-book/virtual-data/v02/02_null/data/csv/cost_assumptions.csv": "b366a213558ab479cf758899e7662d9d35d919d5790f6288bd05e1658682b683",
+    "e-book/virtual-data/v02/02_null/data/csv/customers.csv": "933936092648e9e042197f5a7cb83c95c2212b478652e14d072cafc2aedb3b30",
+    "e-book/virtual-data/v02/02_null/data/csv/dealerships.csv": "a29826633535947b19f931802f65210e2b34cfaebbaa29cd8630e10f9f58a711",
+    "e-book/virtual-data/v02/02_null/data/csv/experiment_outcomes.csv": "a36ef82e3338c2f2eea4084abba1acf544b561ad73689250f86e2d134d7c04a3",
+    "e-book/virtual-data/v02/02_null/data/csv/experiments.csv": "f162fb76beb785317dc281ff38237c54ae557134d815f88ecdcaec687c1a1782",
+    "e-book/virtual-data/v02/02_null/data/csv/journey_events.csv": "277ee95816abdfef226b3097b0167593f68efed6a859d018a4b7d9afbb117a42",
+    "e-book/virtual-data/v02/02_null/data/csv/messages.csv": "9408ed8a1fd20abe91b448e767166e93a4ea2fccc0be5b9df3d2721e9e022701",
+    "e-book/virtual-data/v02/02_null/data/csv/vehicle_models.csv": "46a07c465171749f0d40b84316600c335302965b3592b5b95c49a551245ea1b6",
+    "e-book/virtual-data/v02/03_srm/data/csv/assignments.csv": "08b7273f6b9c8d3ade4aa7118226b3ddf23b6525d2b9cbe6b35b6cf4657ab8c2",
+    "e-book/virtual-data/v02/03_srm/data/csv/company.csv": "e6224f8367daa5d089db49b594f38a8e54d2c5ef45576e88ce5826726444a58b",
+    "e-book/virtual-data/v02/03_srm/data/csv/cost_assumptions.csv": "b366a213558ab479cf758899e7662d9d35d919d5790f6288bd05e1658682b683",
+    "e-book/virtual-data/v02/03_srm/data/csv/customers.csv": "23bac95b8e757c39ee0d91921d2bdbbfae73c0b8675923c15ab15816d60e8d94",
+    "e-book/virtual-data/v02/03_srm/data/csv/dealerships.csv": "a29826633535947b19f931802f65210e2b34cfaebbaa29cd8630e10f9f58a711",
+    "e-book/virtual-data/v02/03_srm/data/csv/experiment_outcomes.csv": "d62802687de6ab61a0d0edc54d5d3855ad8cbfb703fe422a1b285a89f5962a2f",
+    "e-book/virtual-data/v02/03_srm/data/csv/experiments.csv": "f162fb76beb785317dc281ff38237c54ae557134d815f88ecdcaec687c1a1782",
+    "e-book/virtual-data/v02/03_srm/data/csv/journey_events.csv": "e1c5953ec10f381caa7bc3621903693832b458a97e39dad5b0070ae073d2593d",
+    "e-book/virtual-data/v02/03_srm/data/csv/messages.csv": "ddf2e770e9dceaea090c3af9433021c98cf5487e0c253d7616e4f5da88092c68",
+    "e-book/virtual-data/v02/03_srm/data/csv/vehicle_models.csv": "46a07c465171749f0d40b84316600c335302965b3592b5b95c49a551245ea1b6",
+    "e-book/virtual-data/v02/04_missing/data/csv/assignments.csv": "6f7dd96fe1e7428557104831561e272bdbae8381fa145e5c9c09d9b040a7ff60",
+    "e-book/virtual-data/v02/04_missing/data/csv/company.csv": "e6224f8367daa5d089db49b594f38a8e54d2c5ef45576e88ce5826726444a58b",
+    "e-book/virtual-data/v02/04_missing/data/csv/cost_assumptions.csv": "b366a213558ab479cf758899e7662d9d35d919d5790f6288bd05e1658682b683",
+    "e-book/virtual-data/v02/04_missing/data/csv/customers.csv": "23bac95b8e757c39ee0d91921d2bdbbfae73c0b8675923c15ab15816d60e8d94",
+    "e-book/virtual-data/v02/04_missing/data/csv/dealerships.csv": "a29826633535947b19f931802f65210e2b34cfaebbaa29cd8630e10f9f58a711",
+    "e-book/virtual-data/v02/04_missing/data/csv/experiment_outcomes.csv": "9b42df4e7373b36ba7313e88c56c103e8b2c8bef74c9c26d6dc502902ef707c6",
+    "e-book/virtual-data/v02/04_missing/data/csv/experiments.csv": "f162fb76beb785317dc281ff38237c54ae557134d815f88ecdcaec687c1a1782",
+    "e-book/virtual-data/v02/04_missing/data/csv/journey_events.csv": "f409aa4b26f1f94cfeac30d7eac1384fc0b01da897d014d27e192b55a600862f",
+    "e-book/virtual-data/v02/04_missing/data/csv/messages.csv": "ddf2e770e9dceaea090c3af9433021c98cf5487e0c253d7616e4f5da88092c68",
+    "e-book/virtual-data/v02/04_missing/data/csv/vehicle_models.csv": "46a07c465171749f0d40b84316600c335302965b3592b5b95c49a551245ea1b6",
+    "e-book/virtual-data/v02/instructor/baseline_reference_outcomes.csv": "b53a4527354325f3d1cb1df973c8cca4339c662cd4efca6fb6230096619a4df1",
+    "e-book/virtual-data/v03/data/csv/assignments.csv": "f8f0c6fded449c7bbafbbca9408b6e260eedd3fe5420a4f43a5774be7d60ec12",
+    "e-book/virtual-data/v03/data/csv/contracts.csv": "6781e348fbf6043a33fb8fea1600220323bf51b807d9a7508aa0be28805bace1",
+    "e-book/virtual-data/v03/data/csv/customers.csv": "13041ca056b26920bf03bf27114ed4e1fc0988f759182188da37cd0dcbfa556d",
+    "e-book/virtual-data/v03/data/csv/early_snapshot_day28.csv": "abac888226efeb2395f6866a522d0189446c0526625b5cab51f7a6076618610d",
+    "e-book/virtual-data/v03/data/csv/events.csv": "4d2e9bc19762a5b88f7070b4113f9909af620f2db074de4e225b9e51110431a4",
+    "e-book/virtual-data/v03/data/csv/external_sources.csv": "c78d37a8f0282fc403c92f3851e4f67fe23b2fda67843f8332fb0927f5450b99",
+    "e-book/virtual-data/v03/data/csv/generation_manifest.csv": "fdd12e2b24d24c359917c3b6d643660f18350c05fa108f54d6a8fbbe58507d3e",
+    "e-book/virtual-data/v03/data/csv/messages.csv": "f8817122fc8639f349415c5fb5f646ede728cac6dc2138abe39c97fed40579fc",
+    "e-book/virtual-data/v03/data/csv/outcomes.csv": "28cdd4ea7e60211a8de58516f95de71e48dda72ff5ad8aca60fd69191ba970a7",
+    "e-book/virtual-data/v03/experiment_plan.json": "4bcd06f0b5f6a8259f27022f3df8db6285d141091c984f3ee7581044f7e86a56",
+    "e-book/virtual-data/v03/metric_readiness.csv": "0d6f04f6c3072c191847a7a2adcd9ed0bce855670f4e6942e36512c6bb8a0954",
+    "e-book/virtual-data/v03/sample_size_grid.csv": "acd71e002b5cc0778a685e9cd601f44b4551b0813fc16afafd071dcf3e6f0011",
+    "e-book/workflow/case_catalog_v01.csv": "31ae1b1a4d8e5f5e96ef1daf4c2a8b9dcb7b067f2be74f0b73c309b93a8700d7",
+    "scripts/build_winner_scenarios_v04.py": "dca0b16c937f5ff9d5121e13b5b2ce50c96f74c7913c079b3fbb45227dc07576",
+    "scripts/plan_oem_v03.py": "0bb4a4ef749635a42b35d2e8b9bff6ea3a52d51097f6ad60cf2dc22bd4e0c14c"
+  },
+  "source_hashes_after": {
+    "e-book/analysis/v02/metric_results.csv": "97eb24e98ea6a0fd9935cc1f87cb86e675f33440b45cd39a899cee6de195da57",
+    "e-book/analysis/winner_v04/core_results.json": "501a32cef982f5bdca9c211cd9cc7f47126a35e2019921f9f6a53a55e8689db3",
+    "e-book/analysis/winner_v04/scenario_results.json": "d3ad00f3b908484d354e5ff40205cf077aeb6dbc1a83fd0a63e8a82c1dfd429c",
+    "e-book/analysis/winner_v04/scenarios/case4_log.csv": "d6ad6ec255ca7f29bb518c8b1ff217910749409349bfb36cd4a0e0c1d8b38295",
+    "e-book/analysis/winner_v04/scenarios/case4_truth.csv": "41b148dc21e37c1726f043d352942aa61095c256300d6cd551393f83ded56a0d",
+    "e-book/analysis/winner_v04/scenarios/case5_customers.csv": "a52c642861867be0f4a88801dfb2b3838d4c85f58dce3dd65caa531d614d4def",
+    "e-book/analysis/winner_v04/scenarios/case6_fixed_demand.csv": "e91ebbf62741c1ad2ebd60f5ffb2d9fe9dba647e92437a92267c1806960f0249",
+    "e-book/analysis/winner_v04/scenarios/case6_operations.csv": "f806a0e346cea042464322bb4461ef6183f3156af4bd43ad99775cfe58db6a24",
+    "e-book/exports/v09/tri_v_criteria_change_log_v09.csv": "36abe455d0e9b9c8b17d19321066d20d4dcf501ed1cbba260529cf56185597c1",
+    "e-book/exports/v12/ebook_review_v12.md": "00cc0928d158347fb614d80e06dede619ee69808531df29308a555ee83b1207c",
+    "e-book/manuscript/winner_cases_456_v04.md": "ffff8c349fcefeea89f51e666dfb8932784b93fa3bedc04ce852b7022eb2b5ec",
+    "e-book/planning/AUTHOR_METHOD_AND_VOICE.md": "9383630626413029af1cf03489e021dded92eaee47fa8f36d3c8e0a322e47fff",
+    "e-book/planning/CRM_DIAGNOSTIC_WORKFLOW.md": "4c0cb89f042d7f76538ca5ccb5b4c45dbfda58180cea367d4c48dd5fdd6e7d35",
+    "e-book/planning/EDITORIAL_CRITIQUE_v02_PRELIMINARY.md": "1e32d109423186812bc59e8d1e1b29176cd0fa3e27a04887948a9253eeb6aaba",
+    "e-book/planning/MARKET_COMPARISON_AND_REDESIGN_REVIEW.md": "034f6605626985cb394a5f957e7dcbe95d99c6fb2c7758a85d6af8ce897c36d7",
+    "e-book/planning/PRODUCTION_BRIEF.md": "9c1d46c1b2b0b91d3a3c8345b60f5731ffcfa114a4044980000aaded82db117e",
+    "e-book/planning/PROGRESS.md": "79adfe8615a7fa763dcdbece1a6f2dbb161cf538f36eb57161e96fa6a662ed3d",
+    "e-book/planning/PUBLICATION_BRIEF.md": "1a817563424371af02cc237ae274c7a49873514cefc0ecfa0d892e888518720b",
+    "e-book/planning/PUBLICATION_CHECKLIST.md": "e9a7ca31211b63d93ec322be69fe74215d19d83723af61ce396517e8c24b12a2",
+    "e-book/planning/WINNER_DEEP_DIVE.md": "0df320a2e8d1acce30cb3722399c5d6f3c030328fd319e2818fb48ebcda2bfdd",
+    "e-book/review/ab_only_methods_v01/calculated_results.json": "837ff067df0c403890e4216fc918b74bd53d32ca52fe0b248673707382e4045b",
+    "e-book/review/ab_only_methods_v01/customer_fixture.csv": "d7b04ad615c669aedec80ec7fae9af6be2b396e5c5220e91095551a6cc25b897",
+    "e-book/review/methodology/tri_v_sharpening_v02/OBSERVATIONS.csv": "bfd09f19fff4e3b5791cb7c20ac7ce0806fe62f0fff03a2ded09ad35b1f5c5ba",
+    "e-book/review/reader_test_v01/OBSERVATION_TEMPLATE.csv": "54b2b05d63ea561d7f51b6700d200fa3839b030dbbec793d90454f998fc70cf6",
+    "e-book/review/statistical_v12/FINDINGS_TEMPLATE.csv": "db5a2082d9b8c09ab688541ba5caafab332e3ce61add9ca787443c6d48e0534c",
+    "e-book/virtual-data/v01/data/csv/assignments.csv": "6f7dd96fe1e7428557104831561e272bdbae8381fa145e5c9c09d9b040a7ff60",
+    "e-book/virtual-data/v01/data/csv/company.csv": "e6224f8367daa5d089db49b594f38a8e54d2c5ef45576e88ce5826726444a58b",
+    "e-book/virtual-data/v01/data/csv/cost_assumptions.csv": "b366a213558ab479cf758899e7662d9d35d919d5790f6288bd05e1658682b683",
+    "e-book/virtual-data/v01/data/csv/customers.csv": "23bac95b8e757c39ee0d91921d2bdbbfae73c0b8675923c15ab15816d60e8d94",
+    "e-book/virtual-data/v01/data/csv/dealerships.csv": "a29826633535947b19f931802f65210e2b34cfaebbaa29cd8630e10f9f58a711",
+    "e-book/virtual-data/v01/data/csv/experiment_outcomes.csv": "b53a4527354325f3d1cb1df973c8cca4339c662cd4efca6fb6230096619a4df1",
+    "e-book/virtual-data/v01/data/csv/experiments.csv": "f162fb76beb785317dc281ff38237c54ae557134d815f88ecdcaec687c1a1782",
+    "e-book/virtual-data/v01/data/csv/journey_events.csv": "e1c5953ec10f381caa7bc3621903693832b458a97e39dad5b0070ae073d2593d",
+    "e-book/virtual-data/v01/data/csv/messages.csv": "ddf2e770e9dceaea090c3af9433021c98cf5487e0c253d7616e4f5da88092c68",
+    "e-book/virtual-data/v01/data/csv/vehicle_models.csv": "46a07c465171749f0d40b84316600c335302965b3592b5b95c49a551245ea1b6",
+    "e-book/virtual-data/v02/01_baseline/data/csv/assignments.csv": "6f7dd96fe1e7428557104831561e272bdbae8381fa145e5c9c09d9b040a7ff60",
+    "e-book/virtual-data/v02/01_baseline/data/csv/company.csv": "e6224f8367daa5d089db49b594f38a8e54d2c5ef45576e88ce5826726444a58b",
+    "e-book/virtual-data/v02/01_baseline/data/csv/cost_assumptions.csv": "b366a213558ab479cf758899e7662d9d35d919d5790f6288bd05e1658682b683",
+    "e-book/virtual-data/v02/01_baseline/data/csv/customers.csv": "23bac95b8e757c39ee0d91921d2bdbbfae73c0b8675923c15ab15816d60e8d94",
+    "e-book/virtual-data/v02/01_baseline/data/csv/dealerships.csv": "a29826633535947b19f931802f65210e2b34cfaebbaa29cd8630e10f9f58a711",
+    "e-book/virtual-data/v02/01_baseline/data/csv/experiment_outcomes.csv": "b53a4527354325f3d1cb1df973c8cca4339c662cd4efca6fb6230096619a4df1",
+    "e-book/virtual-data/v02/01_baseline/data/csv/experiments.csv": "f162fb76beb785317dc281ff38237c54ae557134d815f88ecdcaec687c1a1782",
+    "e-book/virtual-data/v02/01_baseline/data/csv/journey_events.csv": "e1c5953ec10f381caa7bc3621903693832b458a97e39dad5b0070ae073d2593d",
+    "e-book/virtual-data/v02/01_baseline/data/csv/messages.csv": "ddf2e770e9dceaea090c3af9433021c98cf5487e0c253d7616e4f5da88092c68",
+    "e-book/virtual-data/v02/01_baseline/data/csv/vehicle_models.csv": "46a07c465171749f0d40b84316600c335302965b3592b5b95c49a551245ea1b6",
+    "e-book/virtual-data/v02/02_null/data/csv/assignments.csv": "f6a8e03020cb31362331c0980b7084c395408e6730df147c2b607041d82e027e",
+    "e-book/virtual-data/v02/02_null/data/csv/company.csv": "e6224f8367daa5d089db49b594f38a8e54d2c5ef45576e88ce5826726444a58b",
+    "e-book/virtual-data/v02/02_null/data/csv/cost_assumptions.csv": "b366a213558ab479cf758899e7662d9d35d919d5790f6288bd05e1658682b683",
+    "e-book/virtual-data/v02/02_null/data/csv/customers.csv": "933936092648e9e042197f5a7cb83c95c2212b478652e14d072cafc2aedb3b30",
+    "e-book/virtual-data/v02/02_null/data/csv/dealerships.csv": "a29826633535947b19f931802f65210e2b34cfaebbaa29cd8630e10f9f58a711",
+    "e-book/virtual-data/v02/02_null/data/csv/experiment_outcomes.csv": "a36ef82e3338c2f2eea4084abba1acf544b561ad73689250f86e2d134d7c04a3",
+    "e-book/virtual-data/v02/02_null/data/csv/experiments.csv": "f162fb76beb785317dc281ff38237c54ae557134d815f88ecdcaec687c1a1782",
+    "e-book/virtual-data/v02/02_null/data/csv/journey_events.csv": "277ee95816abdfef226b3097b0167593f68efed6a859d018a4b7d9afbb117a42",
+    "e-book/virtual-data/v02/02_null/data/csv/messages.csv": "9408ed8a1fd20abe91b448e767166e93a4ea2fccc0be5b9df3d2721e9e022701",
+    "e-book/virtual-data/v02/02_null/data/csv/vehicle_models.csv": "46a07c465171749f0d40b84316600c335302965b3592b5b95c49a551245ea1b6",
+    "e-book/virtual-data/v02/03_srm/data/csv/assignments.csv": "08b7273f6b9c8d3ade4aa7118226b3ddf23b6525d2b9cbe6b35b6cf4657ab8c2",
+    "e-book/virtual-data/v02/03_srm/data/csv/company.csv": "e6224f8367daa5d089db49b594f38a8e54d2c5ef45576e88ce5826726444a58b",
+    "e-book/virtual-data/v02/03_srm/data/csv/cost_assumptions.csv": "b366a213558ab479cf758899e7662d9d35d919d5790f6288bd05e1658682b683",
+    "e-book/virtual-data/v02/03_srm/data/csv/customers.csv": "23bac95b8e757c39ee0d91921d2bdbbfae73c0b8675923c15ab15816d60e8d94",
+    "e-book/virtual-data/v02/03_srm/data/csv/dealerships.csv": "a29826633535947b19f931802f65210e2b34cfaebbaa29cd8630e10f9f58a711",
+    "e-book/virtual-data/v02/03_srm/data/csv/experiment_outcomes.csv": "d62802687de6ab61a0d0edc54d5d3855ad8cbfb703fe422a1b285a89f5962a2f",
+    "e-book/virtual-data/v02/03_srm/data/csv/experiments.csv": "f162fb76beb785317dc281ff38237c54ae557134d815f88ecdcaec687c1a1782",
+    "e-book/virtual-data/v02/03_srm/data/csv/journey_events.csv": "e1c5953ec10f381caa7bc3621903693832b458a97e39dad5b0070ae073d2593d",
+    "e-book/virtual-data/v02/03_srm/data/csv/messages.csv": "ddf2e770e9dceaea090c3af9433021c98cf5487e0c253d7616e4f5da88092c68",
+    "e-book/virtual-data/v02/03_srm/data/csv/vehicle_models.csv": "46a07c465171749f0d40b84316600c335302965b3592b5b95c49a551245ea1b6",
+    "e-book/virtual-data/v02/04_missing/data/csv/assignments.csv": "6f7dd96fe1e7428557104831561e272bdbae8381fa145e5c9c09d9b040a7ff60",
+    "e-book/virtual-data/v02/04_missing/data/csv/company.csv": "e6224f8367daa5d089db49b594f38a8e54d2c5ef45576e88ce5826726444a58b",
+    "e-book/virtual-data/v02/04_missing/data/csv/cost_assumptions.csv": "b366a213558ab479cf758899e7662d9d35d919d5790f6288bd05e1658682b683",
+    "e-book/virtual-data/v02/04_missing/data/csv/customers.csv": "23bac95b8e757c39ee0d91921d2bdbbfae73c0b8675923c15ab15816d60e8d94",
+    "e-book/virtual-data/v02/04_missing/data/csv/dealerships.csv": "a29826633535947b19f931802f65210e2b34cfaebbaa29cd8630e10f9f58a711",
+    "e-book/virtual-data/v02/04_missing/data/csv/experiment_outcomes.csv": "9b42df4e7373b36ba7313e88c56c103e8b2c8bef74c9c26d6dc502902ef707c6",
+    "e-book/virtual-data/v02/04_missing/data/csv/experiments.csv": "f162fb76beb785317dc281ff38237c54ae557134d815f88ecdcaec687c1a1782",
+    "e-book/virtual-data/v02/04_missing/data/csv/journey_events.csv": "f409aa4b26f1f94cfeac30d7eac1384fc0b01da897d014d27e192b55a600862f",
+    "e-book/virtual-data/v02/04_missing/data/csv/messages.csv": "ddf2e770e9dceaea090c3af9433021c98cf5487e0c253d7616e4f5da88092c68",
+    "e-book/virtual-data/v02/04_missing/data/csv/vehicle_models.csv": "46a07c465171749f0d40b84316600c335302965b3592b5b95c49a551245ea1b6",
+    "e-book/virtual-data/v02/instructor/baseline_reference_outcomes.csv": "b53a4527354325f3d1cb1df973c8cca4339c662cd4efca6fb6230096619a4df1",
+    "e-book/virtual-data/v03/data/csv/assignments.csv": "f8f0c6fded449c7bbafbbca9408b6e260eedd3fe5420a4f43a5774be7d60ec12",
+    "e-book/virtual-data/v03/data/csv/contracts.csv": "6781e348fbf6043a33fb8fea1600220323bf51b807d9a7508aa0be28805bace1",
+    "e-book/virtual-data/v03/data/csv/customers.csv": "13041ca056b26920bf03bf27114ed4e1fc0988f759182188da37cd0dcbfa556d",
+    "e-book/virtual-data/v03/data/csv/early_snapshot_day28.csv": "abac888226efeb2395f6866a522d0189446c0526625b5cab51f7a6076618610d",
+    "e-book/virtual-data/v03/data/csv/events.csv": "4d2e9bc19762a5b88f7070b4113f9909af620f2db074de4e225b9e51110431a4",
+    "e-book/virtual-data/v03/data/csv/external_sources.csv": "c78d37a8f0282fc403c92f3851e4f67fe23b2fda67843f8332fb0927f5450b99",
+    "e-book/virtual-data/v03/data/csv/generation_manifest.csv": "fdd12e2b24d24c359917c3b6d643660f18350c05fa108f54d6a8fbbe58507d3e",
+    "e-book/virtual-data/v03/data/csv/messages.csv": "f8817122fc8639f349415c5fb5f646ede728cac6dc2138abe39c97fed40579fc",
+    "e-book/virtual-data/v03/data/csv/outcomes.csv": "28cdd4ea7e60211a8de58516f95de71e48dda72ff5ad8aca60fd69191ba970a7",
+    "e-book/virtual-data/v03/experiment_plan.json": "4bcd06f0b5f6a8259f27022f3df8db6285d141091c984f3ee7581044f7e86a56",
+    "e-book/virtual-data/v03/metric_readiness.csv": "0d6f04f6c3072c191847a7a2adcd9ed0bce855670f4e6942e36512c6bb8a0954",
+    "e-book/virtual-data/v03/sample_size_grid.csv": "acd71e002b5cc0778a685e9cd601f44b4551b0813fc16afafd071dcf3e6f0011",
+    "e-book/workflow/case_catalog_v01.csv": "31ae1b1a4d8e5f5e96ef1daf4c2a8b9dcb7b067f2be74f0b73c309b93a8700d7",
+    "scripts/build_winner_scenarios_v04.py": "dca0b16c937f5ff9d5121e13b5b2ce50c96f74c7913c079b3fbb45227dc07576",
+    "scripts/plan_oem_v03.py": "0bb4a4ef749635a42b35d2e8b9bff6ea3a52d51097f6ad60cf2dc22bd4e0c14c"
+  },
+  "methods": {
+    "case4": "customer-ID join; manual Wilson/Newcombe/pooled-z/Fisher checked against statsmodels/scipy",
+    "case5": "fixed 0.5/0.5 standardized risk difference and within-cell binomial Wald variance; saturated cell-means OLS HC0 normal-contrast library check; pooled Newcombe reference only",
+    "case6": "full per-customer FCFS reconstruction from fixed latent CSV by day-wise sorted request selection; no carry-over or slot reuse; all saved fields checked, not just totals"
+  },
+  "case4": {
+    "truth": {
+      "groups": {
+        "A": {
+          "n": 4000,
+          "success": 480,
+          "rate": 0.12,
+          "wilson_ci": [
+            0.11029234261658878,
+            0.13043683428358435
+          ]
+        },
+        "B": {
+          "n": 4000,
+          "success": 630,
+          "rate": 0.1575,
+          "wilson_ci": [
+            0.14654055758550383,
+            0.1691166610679417
+          ]
+        }
+      },
+      "difference_B_minus_A": 0.037500000000000006,
+      "newcombe_ci": [
+        0.02236603528814543,
+        0.05263887136615973
+      ],
+      "confidence": 0.95,
+      "z": 4.851378421899942,
+      "p_two_sided": 1.226063580374753e-06,
+      "fisher_exact_two_sided_p": 1.3995821513149472e-06
+    },
+    "log": {
+      "groups": {
+        "A": {
+          "n": 4000,
+          "success": 480,
+          "rate": 0.12,
+          "wilson_ci": [
+            0.11029234261658878,
+            0.13043683428358435
+          ]
+        },
+        "B": {
+          "n": 4000,
+          "success": 289,
+          "rate": 0.07225,
+          "wilson_ci": [
+            0.06463046703330837,
+            0.08069033670103125
+          ]
+        }
+      },
+      "difference_B_minus_A": -0.04775,
+      "newcombe_ci": [
+        -0.06067225957383237,
+        -0.03488617881419081
+      ],
+      "confidence": 0.95,
+      "z": -7.244626665819323,
+      "p_two_sided": 4.3363198795032954e-13,
+      "fisher_exact_two_sided_p": 4.487494637045465e-13
+    },
+    "injected_missing": 341
+  },
+  "case4_missing_by_arm": {
+    "A": 0,
+    "B": 341
+  },
+  "case5": {
+    "overall": {
+      "groups": {
+        "A": {
+          "n": 6000,
+          "success": 820,
+          "rate": 0.13666666666666666,
+          "wilson_ci": [
+            0.1282073453292792,
+            0.14559093367184317
+          ]
+        },
+        "B": {
+          "n": 6000,
+          "success": 960,
+          "rate": 0.16,
+          "wilson_ci": [
+            0.15094171749901672,
+            0.16949336927267575
+          ]
+        }
+      },
+      "difference_B_minus_A": 0.023333333333333345,
+      "newcombe_ci": [
+        0.01061739752635075,
+        0.03604884266786505
+      ],
+      "confidence": 0.95,
+      "z": 3.595698009320899,
+      "p_two_sided": 0.00032352293632642007,
+      "stratified_primary": {
+        "estimate": 0.02333333333333333,
+        "se": 0.0064314418635671765,
+        "wald_ci": [
+          0.0107279389120785,
+          0.03593872775458816
+        ],
+        "confidence": 0.95,
+        "p_two_sided": 0.00028561455563145323
+      }
+    },
+    "segments": {
+      "new": {
+        "groups": {
+          "A": {
+            "n": 3000,
+            "success": 217,
+            "rate": 0.07233333333333333,
+            "wilson_ci": [
+              0.06243262408798983,
+              0.08366401368094828
+            ]
+          },
+          "B": {
+            "n": 3000,
+            "success": 455,
+            "rate": 0.15166666666666667,
+            "wilson_ci": [
+              0.13757103825394393,
+              0.16692700264125507
+            ]
+          }
+        },
+        "difference_B_minus_A": 0.07933333333333334,
+        "newcombe_ci": [
+          0.061248227375961,
+          0.09752404243490899
+        ],
+        "confidence": 0.975,
+        "z": 9.742845993242842,
+        "p_two_sided": 1.97931846987939e-22,
+        "bonferroni_two_group_p": 3.95863693975878e-22
+      },
+      "existing": {
+        "groups": {
+          "A": {
+            "n": 3000,
+            "success": 603,
+            "rate": 0.201,
+            "wilson_ci": [
+              0.18510646514792106,
+              0.2178932886157091
+            ]
+          },
+          "B": {
+            "n": 3000,
+            "success": 505,
+            "rate": 0.16833333333333333,
+            "wilson_ci": [
+              0.1535790388836549,
+              0.18419660771033844
+            ]
+          }
+        },
+        "difference_B_minus_A": -0.03266666666666668,
+        "newcombe_ci": [
+          -0.055095942289420496,
+          -0.010211201317349265
+        ],
+        "confidence": 0.975,
+        "z": -3.2605329731708914,
+        "p_two_sided": 0.0011120303670684312,
+        "bonferroni_two_group_p": 0.0022240607341368623
+      }
+    },
+    "interaction": {
+      "estimate": 0.11199999999999999,
+      "se": 0.012862883727134353,
+      "wald_ci": [
+        0.08678921115749033,
+        0.13721078884250965
+      ],
+      "confidence": 0.95,
+      "p_two_sided": 3.1140942343360724e-18
+    }
+  },
+  "case5_transfer_new20_existing80": -0.010266666666666674,
+  "case6": {
+    "summaries": [
+      {
+        "capacity_per_day": 40,
+        "policy": "all_A",
+        "customers": 12000,
+        "requested": 1167,
+        "accepted": 1086,
+        "waiting_end_window": 81,
+        "completed": 928,
+        "variable_cost_krw": 29793000,
+        "capacity_cost_krw": 5600000,
+        "total_cost_krw": 35393000,
+        "completed_value_krw": 55680000,
+        "net_value_krw": 20287000,
+        "waiting_fraction_of_requests": 0.06940874035989718,
+        "pilot_arm_descriptive": [
+          {
+            "arm": "A",
+            "n": 12000,
+            "completed": 928
+          },
+          {
+            "arm": "B",
+            "n": 0,
+            "completed": 0
+          }
+        ]
+      },
+      {
+        "capacity_per_day": 40,
+        "policy": "pilot_10pct_B",
+        "customers": 12000,
+        "requested": 1284,
+        "accepted": 1111,
+        "waiting_end_window": 173,
+        "completed": 951,
+        "variable_cost_krw": 32254000,
+        "capacity_cost_krw": 5600000,
+        "total_cost_krw": 37854000,
+        "completed_value_krw": 57060000,
+        "net_value_krw": 19206000,
+        "waiting_fraction_of_requests": 0.13473520249221183,
+        "pilot_arm_descriptive": [
+          {
+            "arm": "A",
+            "n": 10800,
+            "completed": 781
+          },
+          {
+            "arm": "B",
+            "n": 1200,
+            "completed": 170
+          }
+        ]
+      },
+      {
+        "capacity_per_day": 40,
+        "policy": "all_B",
+        "customers": 12000,
+        "requested": 2303,
+        "accepted": 1120,
+        "waiting_end_window": 1183,
+        "completed": 988,
+        "variable_cost_krw": 49549000,
+        "capacity_cost_krw": 5600000,
+        "total_cost_krw": 55149000,
+        "completed_value_krw": 59280000,
+        "net_value_krw": 4131000,
+        "waiting_fraction_of_requests": 0.513677811550152,
+        "pilot_arm_descriptive": [
+          {
+            "arm": "A",
+            "n": 0,
+            "completed": 0
+          },
+          {
+            "arm": "B",
+            "n": 12000,
+            "completed": 988
+          }
+        ]
+      },
+      {
+        "capacity_per_day": 60,
+        "policy": "all_A",
+        "customers": 12000,
+        "requested": 1167,
+        "accepted": 1167,
+        "waiting_end_window": 0,
+        "completed": 997,
+        "variable_cost_krw": 31575000,
+        "capacity_cost_krw": 8400000,
+        "total_cost_krw": 39975000,
+        "completed_value_krw": 59820000,
+        "net_value_krw": 19845000,
+        "waiting_fraction_of_requests": 0.0,
+        "pilot_arm_descriptive": [
+          {
+            "arm": "A",
+            "n": 12000,
+            "completed": 997
+          },
+          {
+            "arm": "B",
+            "n": 0,
+            "completed": 0
+          }
+        ]
+      },
+      {
+        "capacity_per_day": 60,
+        "policy": "pilot_10pct_B",
+        "customers": 12000,
+        "requested": 1284,
+        "accepted": 1284,
+        "waiting_end_window": 0,
+        "completed": 1100,
+        "variable_cost_krw": 36060000,
+        "capacity_cost_krw": 8400000,
+        "total_cost_krw": 44460000,
+        "completed_value_krw": 66000000,
+        "net_value_krw": 21540000,
+        "waiting_fraction_of_requests": 0.0,
+        "pilot_arm_descriptive": [
+          {
+            "arm": "A",
+            "n": 10800,
+            "completed": 901
+          },
+          {
+            "arm": "B",
+            "n": 1200,
+            "completed": 199
+          }
+        ]
+      },
+      {
+        "capacity_per_day": 60,
+        "policy": "all_B",
+        "customers": 12000,
+        "requested": 2303,
+        "accepted": 1680,
+        "waiting_end_window": 623,
+        "completed": 1486,
+        "variable_cost_krw": 61869000,
+        "capacity_cost_krw": 8400000,
+        "total_cost_krw": 70269000,
+        "completed_value_krw": 89160000,
+        "net_value_krw": 18891000,
+        "waiting_fraction_of_requests": 0.270516717325228,
+        "pilot_arm_descriptive": [
+          {
+            "arm": "A",
+            "n": 0,
+            "completed": 0
+          },
+          {
+            "arm": "B",
+            "n": 12000,
+            "completed": 1486
+          }
+        ]
+      },
+      {
+        "capacity_per_day": 90,
+        "policy": "all_A",
+        "customers": 12000,
+        "requested": 1167,
+        "accepted": 1167,
+        "waiting_end_window": 0,
+        "completed": 997,
+        "variable_cost_krw": 31575000,
+        "capacity_cost_krw": 12600000,
+        "total_cost_krw": 44175000,
+        "completed_value_krw": 59820000,
+        "net_value_krw": 15645000,
+        "waiting_fraction_of_requests": 0.0,
+        "pilot_arm_descriptive": [
+          {
+            "arm": "A",
+            "n": 12000,
+            "completed": 997
+          },
+          {
+            "arm": "B",
+            "n": 0,
+            "completed": 0
+          }
+        ]
+      },
+      {
+        "capacity_per_day": 90,
+        "policy": "pilot_10pct_B",
+        "customers": 12000,
+        "requested": 1284,
+        "accepted": 1284,
+        "waiting_end_window": 0,
+        "completed": 1100,
+        "variable_cost_krw": 36060000,
+        "capacity_cost_krw": 12600000,
+        "total_cost_krw": 48660000,
+        "completed_value_krw": 66000000,
+        "net_value_krw": 17340000,
+        "waiting_fraction_of_requests": 0.0,
+        "pilot_arm_descriptive": [
+          {
+            "arm": "A",
+            "n": 10800,
+            "completed": 901
+          },
+          {
+            "arm": "B",
+            "n": 1200,
+            "completed": 199
+          }
+        ]
+      },
+      {
+        "capacity_per_day": 90,
+        "policy": "all_B",
+        "customers": 12000,
+        "requested": 2303,
+        "accepted": 2301,
+        "waiting_end_window": 2,
+        "completed": 2034,
+        "variable_cost_krw": 75531000,
+        "capacity_cost_krw": 12600000,
+        "total_cost_krw": 88131000,
+        "completed_value_krw": 122040000,
+        "net_value_krw": 33909000,
+        "waiting_fraction_of_requests": 0.0008684324793747286,
+        "pilot_arm_descriptive": [
+          {
+            "arm": "A",
+            "n": 0,
+            "completed": 0
+          },
+          {
+            "arm": "B",
+            "n": 12000,
+            "completed": 2034
+          }
+        ]
+      }
+    ],
+    "pilot60_descriptive_risk_difference": 0.0824074074074074,
+    "invalid_naive_national_extrapolation_count": 988.8888888888888,
+    "actual_fixed_world_allB_minus_allA_completions": 489,
+    "inference": "single fixed demand world, no inferential CI"
+  },
+  "summary": {
+    "passed": 702,
+    "mismatch": 0,
+    "blocked": 3
+  },
+  "checks": [
+    {
+      "id": "repository.HEAD",
+      "actual": "eefdd4ee9ea026c06d65a760706a742e02407bce",
+      "expected": "eefdd4ee9ea026c06d65a760706a742e02407bce",
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case4.truth.rows",
+      "actual": 8000,
+      "expected": 8000,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case4.truth.unique_IDs",
+      "actual": 8000,
+      "expected": 8000,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case4.truth.28_day_invalid_rows",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case4.truth.binary_and_valid_arm_invalid_rows",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case4.log.rows",
+      "actual": 8000,
+      "expected": 8000,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case4.log.unique_IDs",
+      "actual": 8000,
+      "expected": 8000,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case4.log.28_day_invalid_rows",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case4.log.binary_and_valid_arm_invalid_rows",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case5.rows",
+      "actual": 12000,
+      "expected": 12000,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case5.unique_IDs",
+      "actual": 12000,
+      "expected": 12000,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case5.28_day_invalid_rows",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case5.binary_and_valid_arm_invalid_rows",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case4.ID_sets_symmetric_difference",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case4.customer_join.arm_window_and_outcome_minus_log_equals_missing.invalid",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case4.missing_only_B_completed.invalid",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case4.truth.A.Wilson_vs_statsmodels",
+      "actual": [
+        0.11029234261658878,
+        0.13043683428358435
+      ],
+      "expected": [
+        0.11029234261658877,
+        0.13043683428358435
+      ],
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "id": "case4.truth.B.Wilson_vs_statsmodels",
+      "actual": [
+        0.14654055758550383,
+        0.1691166610679417
+      ],
+      "expected": [
+        0.14654055758550383,
+        0.1691166610679417
+      ],
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "id": "case4.truth.Newcombe_vs_statsmodels",
+      "actual": [
+        0.02236603528814543,
+        0.05263887136615973
+      ],
+      "expected": [
+        0.02236603528814543,
+        0.05263887136615974
+      ],
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "id": "case4.truth.z_vs_statsmodels",
+      "actual": 4.851378421899942,
+      "expected": 4.851378421899942,
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "id": "case4.truth.p_vs_statsmodels",
+      "actual": 1.226063580374753e-06,
+      "expected": 1.2260635803747494e-06,
+      "tolerance": 1.2260635803747531e-16,
+      "status": "passed"
+    },
+    {
+      "id": "case4.truth.Fisher_vs_scipy",
+      "actual": 1.3995821513149472e-06,
+      "expected": 1.3995821513138152e-06,
+      "tolerance": 1.3995821513138152e-14,
+      "status": "passed"
+    },
+    {
+      "id": "case4.log.A.Wilson_vs_statsmodels",
+      "actual": [
+        0.11029234261658878,
+        0.13043683428358435
+      ],
+      "expected": [
+        0.11029234261658877,
+        0.13043683428358435
+      ],
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "id": "case4.log.B.Wilson_vs_statsmodels",
+      "actual": [
+        0.06463046703330837,
+        0.08069033670103125
+      ],
+      "expected": [
+        0.06463046703330835,
+        0.08069033670103126
+      ],
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "id": "case4.log.Newcombe_vs_statsmodels",
+      "actual": [
+        -0.06067225957383237,
+        -0.03488617881419081
+      ],
+      "expected": [
+        -0.06067225957383238,
+        -0.03488617881419079
+      ],
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "id": "case4.log.z_vs_statsmodels",
+      "actual": -7.244626665819323,
+      "expected": -7.244626665819323,
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "id": "case4.log.p_vs_statsmodels",
+      "actual": 4.3363198795032954e-13,
+      "expected": 4.3363198795032985e-13,
+      "tolerance": 4.3363198795032953e-23,
+      "status": "passed"
+    },
+    {
+      "id": "case4.log.Fisher_vs_scipy",
+      "actual": 4.487494637045465e-13,
+      "expected": 4.487494637033274e-13,
+      "tolerance": 4.487494637033274e-21,
+      "status": "passed"
+    },
+    {
+      "id": "case4.opposite_sign_CIs",
+      "actual": [
+        true,
+        true
+      ],
+      "expected": [
+        true,
+        true
+      ],
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case4.truth.groups.A.n",
+      "actual": 4000,
+      "expected": 4000,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case4.truth.groups.A.success",
+      "actual": 480,
+      "expected": 480,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case4.truth.groups.A.rate",
+      "actual": 0.12,
+      "expected": 0.12,
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case4.truth.groups.A.wilson_ci",
+      "actual": [
+        0.11029234261658878,
+        0.13043683428358435
+      ],
+      "expected": [
+        0.11029234261658877,
+        0.13043683428358435
+      ],
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case4.truth.groups.B.n",
+      "actual": 4000,
+      "expected": 4000,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case4.truth.groups.B.success",
+      "actual": 630,
+      "expected": 630,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case4.truth.groups.B.rate",
+      "actual": 0.1575,
+      "expected": 0.1575,
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case4.truth.groups.B.wilson_ci",
+      "actual": [
+        0.14654055758550383,
+        0.1691166610679417
+      ],
+      "expected": [
+        0.14654055758550383,
+        0.1691166610679417
+      ],
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case4.truth.difference_B_minus_A",
+      "actual": 0.037500000000000006,
+      "expected": 0.037500000000000006,
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case4.truth.newcombe_ci",
+      "actual": [
+        0.02236603528814543,
+        0.05263887136615973
+      ],
+      "expected": [
+        0.02236603528814543,
+        0.05263887136615974
+      ],
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case4.truth.confidence",
+      "actual": 0.95,
+      "expected": 0.95,
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case4.truth.z",
+      "actual": 4.851378421899942,
+      "expected": 4.851378421899942,
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case4.truth.p_two_sided",
+      "actual": 1.226063580374753e-06,
+      "expected": 1.2260635803747494e-06,
+      "tolerance": 1.226063580374753e-14,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case4.truth.fisher_exact_two_sided_p",
+      "actual": 1.3995821513149472e-06,
+      "expected": 1.3995821513138152e-06,
+      "tolerance": 1.3995821513149472e-14,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case4.log.groups.A.n",
+      "actual": 4000,
+      "expected": 4000,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case4.log.groups.A.success",
+      "actual": 480,
+      "expected": 480,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case4.log.groups.A.rate",
+      "actual": 0.12,
+      "expected": 0.12,
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case4.log.groups.A.wilson_ci",
+      "actual": [
+        0.11029234261658878,
+        0.13043683428358435
+      ],
+      "expected": [
+        0.11029234261658877,
+        0.13043683428358435
+      ],
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case4.log.groups.B.n",
+      "actual": 4000,
+      "expected": 4000,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case4.log.groups.B.success",
+      "actual": 289,
+      "expected": 289,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case4.log.groups.B.rate",
+      "actual": 0.07225,
+      "expected": 0.07225,
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case4.log.groups.B.wilson_ci",
+      "actual": [
+        0.06463046703330837,
+        0.08069033670103125
+      ],
+      "expected": [
+        0.06463046703330835,
+        0.08069033670103126
+      ],
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case4.log.difference_B_minus_A",
+      "actual": -0.04775,
+      "expected": -0.04775,
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case4.log.newcombe_ci",
+      "actual": [
+        -0.06067225957383237,
+        -0.03488617881419081
+      ],
+      "expected": [
+        -0.06067225957383238,
+        -0.03488617881419079
+      ],
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case4.log.confidence",
+      "actual": 0.95,
+      "expected": 0.95,
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case4.log.z",
+      "actual": -7.244626665819323,
+      "expected": -7.244626665819323,
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case4.log.p_two_sided",
+      "actual": 4.3363198795032954e-13,
+      "expected": 4.3363198795032985e-13,
+      "tolerance": 4.336319879503295e-21,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case4.log.fisher_exact_two_sided_p",
+      "actual": 4.487494637045465e-13,
+      "expected": 4.487494637033274e-13,
+      "tolerance": 4.487494637045465e-21,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case4.injected_missing",
+      "actual": 341,
+      "expected": 341,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case5.new.A.Wilson_vs_statsmodels",
+      "actual": [
+        0.06243262408798983,
+        0.08366401368094828
+      ],
+      "expected": [
+        0.06243262408798984,
+        0.08366401368094828
+      ],
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "id": "case5.new.B.Wilson_vs_statsmodels",
+      "actual": [
+        0.13757103825394393,
+        0.16692700264125507
+      ],
+      "expected": [
+        0.13757103825394393,
+        0.16692700264125507
+      ],
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "id": "case5.new.Newcombe_vs_statsmodels",
+      "actual": [
+        0.061248227375961,
+        0.09752404243490899
+      ],
+      "expected": [
+        0.06124822737596101,
+        0.09752404243490898
+      ],
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "id": "case5.new.z_vs_statsmodels",
+      "actual": 9.742845993242842,
+      "expected": 9.742845993242842,
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "id": "case5.new.p_vs_statsmodels",
+      "actual": 1.97931846987939e-22,
+      "expected": 1.9793184698793626e-22,
+      "tolerance": 1.97931846987939e-32,
+      "status": "passed"
+    },
+    {
+      "id": "case5.existing.A.Wilson_vs_statsmodels",
+      "actual": [
+        0.18510646514792106,
+        0.2178932886157091
+      ],
+      "expected": [
+        0.1851064651479211,
+        0.21789328861570909
+      ],
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "id": "case5.existing.B.Wilson_vs_statsmodels",
+      "actual": [
+        0.1535790388836549,
+        0.18419660771033844
+      ],
+      "expected": [
+        0.1535790388836549,
+        0.18419660771033844
+      ],
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "id": "case5.existing.Newcombe_vs_statsmodels",
+      "actual": [
+        -0.055095942289420496,
+        -0.010211201317349265
+      ],
+      "expected": [
+        -0.05509594228942047,
+        -0.010211201317349285
+      ],
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "id": "case5.existing.z_vs_statsmodels",
+      "actual": -3.2605329731708914,
+      "expected": -3.2605329731708914,
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "id": "case5.existing.p_vs_statsmodels",
+      "actual": 0.0011120303670684312,
+      "expected": 0.0011120303670684312,
+      "tolerance": 1.1120303670684312e-13,
+      "status": "passed"
+    },
+    {
+      "id": "case5.segment_values",
+      "actual": [
+        "existing",
+        "new"
+      ],
+      "expected": [
+        "existing",
+        "new"
+      ],
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case5.new.arm_sizes",
+      "actual": [
+        3000,
+        3000
+      ],
+      "expected": [
+        3000,
+        3000
+      ],
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case5.existing.arm_sizes",
+      "actual": [
+        3000,
+        3000
+      ],
+      "expected": [
+        3000,
+        3000
+      ],
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case5.pooled_reference.A.Wilson_vs_statsmodels",
+      "actual": [
+        0.1282073453292792,
+        0.14559093367184317
+      ],
+      "expected": [
+        0.1282073453292792,
+        0.14559093367184317
+      ],
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "id": "case5.pooled_reference.B.Wilson_vs_statsmodels",
+      "actual": [
+        0.15094171749901672,
+        0.16949336927267575
+      ],
+      "expected": [
+        0.15094171749901672,
+        0.16949336927267575
+      ],
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "id": "case5.pooled_reference.Newcombe_vs_statsmodels",
+      "actual": [
+        0.01061739752635075,
+        0.03604884266786505
+      ],
+      "expected": [
+        0.01061739752635075,
+        0.03604884266786505
+      ],
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "id": "case5.pooled_reference.z_vs_statsmodels",
+      "actual": 3.595698009320899,
+      "expected": 3.595698009320899,
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "id": "case5.pooled_reference.p_vs_statsmodels",
+      "actual": 0.00032352293632642007,
+      "expected": 0.00032352293632641915,
+      "tolerance": 3.235229363264201e-14,
+      "status": "passed"
+    },
+    {
+      "id": "case5.stratified_primary.estimate_vs_statsmodels_HC0",
+      "actual": 0.02333333333333333,
+      "expected": 0.023333333333333303,
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "id": "case5.stratified_primary.se_vs_statsmodels_HC0",
+      "actual": 0.0064314418635671765,
+      "expected": 0.006431441863567179,
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "id": "case5.stratified_primary.CI_vs_statsmodels_HC0",
+      "actual": [
+        0.0107279389120785,
+        0.03593872775458816
+      ],
+      "expected": [
+        0.010727938912078464,
+        0.035938727754588146
+      ],
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "id": "case5.stratified_primary.p_vs_statsmodels_HC0",
+      "actual": 0.00028561455563145323,
+      "expected": 0.00028561455563145887,
+      "tolerance": 2.8561455563145327e-13,
+      "status": "passed"
+    },
+    {
+      "id": "case5.interaction.estimate_vs_statsmodels_HC0",
+      "actual": 0.11199999999999999,
+      "expected": 0.11199999999999993,
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "id": "case5.interaction.se_vs_statsmodels_HC0",
+      "actual": 0.012862883727134353,
+      "expected": 0.012862883727134358,
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "id": "case5.interaction.CI_vs_statsmodels_HC0",
+      "actual": [
+        0.08678921115749033,
+        0.13721078884250965
+      ],
+      "expected": [
+        0.08678921115749025,
+        0.13721078884250962
+      ],
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "id": "case5.interaction.p_vs_statsmodels_HC0",
+      "actual": 3.1140942343360724e-18,
+      "expected": 3.1140942343362488e-18,
+      "tolerance": 3.1140942343360724e-27,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case5.overall.groups.A.n",
+      "actual": 6000,
+      "expected": 6000,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case5.overall.groups.A.success",
+      "actual": 820,
+      "expected": 820,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case5.overall.groups.A.rate",
+      "actual": 0.13666666666666666,
+      "expected": 0.13666666666666666,
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case5.overall.groups.A.wilson_ci",
+      "actual": [
+        0.1282073453292792,
+        0.14559093367184317
+      ],
+      "expected": [
+        0.1282073453292792,
+        0.14559093367184317
+      ],
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case5.overall.groups.B.n",
+      "actual": 6000,
+      "expected": 6000,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case5.overall.groups.B.success",
+      "actual": 960,
+      "expected": 960,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case5.overall.groups.B.rate",
+      "actual": 0.16,
+      "expected": 0.16,
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case5.overall.groups.B.wilson_ci",
+      "actual": [
+        0.15094171749901672,
+        0.16949336927267575
+      ],
+      "expected": [
+        0.15094171749901672,
+        0.16949336927267575
+      ],
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case5.overall.difference_B_minus_A",
+      "actual": 0.023333333333333345,
+      "expected": 0.023333333333333345,
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case5.overall.newcombe_ci",
+      "actual": [
+        0.01061739752635075,
+        0.03604884266786505
+      ],
+      "expected": [
+        0.01061739752635075,
+        0.03604884266786505
+      ],
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case5.overall.confidence",
+      "actual": 0.95,
+      "expected": 0.95,
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case5.overall.z",
+      "actual": 3.595698009320899,
+      "expected": 3.595698009320899,
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case5.overall.p_two_sided",
+      "actual": 0.00032352293632642007,
+      "expected": 0.00032352293632641915,
+      "tolerance": 3.2352293632642008e-12,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case5.overall.stratified_primary.estimate",
+      "actual": 0.02333333333333333,
+      "expected": 0.02333333333333333,
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case5.overall.stratified_primary.se",
+      "actual": 0.0064314418635671765,
+      "expected": 0.006431441863567177,
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case5.overall.stratified_primary.wald_ci",
+      "actual": [
+        0.0107279389120785,
+        0.03593872775458816
+      ],
+      "expected": [
+        0.010727938912078495,
+        0.035938727754588166
+      ],
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case5.overall.stratified_primary.confidence",
+      "actual": 0.95,
+      "expected": 0.95,
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case5.overall.stratified_primary.p_two_sided",
+      "actual": 0.00028561455563145323,
+      "expected": 0.00028561455563145323,
+      "tolerance": 2.8561455563145324e-12,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case5.segments.new.groups.A.n",
+      "actual": 3000,
+      "expected": 3000,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case5.segments.new.groups.A.success",
+      "actual": 217,
+      "expected": 217,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case5.segments.new.groups.A.rate",
+      "actual": 0.07233333333333333,
+      "expected": 0.07233333333333333,
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case5.segments.new.groups.A.wilson_ci",
+      "actual": [
+        0.06243262408798983,
+        0.08366401368094828
+      ],
+      "expected": [
+        0.06243262408798984,
+        0.08366401368094828
+      ],
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case5.segments.new.groups.B.n",
+      "actual": 3000,
+      "expected": 3000,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case5.segments.new.groups.B.success",
+      "actual": 455,
+      "expected": 455,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case5.segments.new.groups.B.rate",
+      "actual": 0.15166666666666667,
+      "expected": 0.15166666666666667,
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case5.segments.new.groups.B.wilson_ci",
+      "actual": [
+        0.13757103825394393,
+        0.16692700264125507
+      ],
+      "expected": [
+        0.13757103825394393,
+        0.16692700264125507
+      ],
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case5.segments.new.difference_B_minus_A",
+      "actual": 0.07933333333333334,
+      "expected": 0.07933333333333334,
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case5.segments.new.newcombe_ci",
+      "actual": [
+        0.061248227375961,
+        0.09752404243490899
+      ],
+      "expected": [
+        0.06124822737596101,
+        0.09752404243490898
+      ],
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case5.segments.new.confidence",
+      "actual": 0.975,
+      "expected": 0.975,
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case5.segments.new.z",
+      "actual": 9.742845993242842,
+      "expected": 9.742845993242842,
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case5.segments.new.p_two_sided",
+      "actual": 1.97931846987939e-22,
+      "expected": 1.9793184698793626e-22,
+      "tolerance": 1.9793184698793898e-30,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case5.segments.new.bonferroni_two_group_p",
+      "actual": 3.95863693975878e-22,
+      "expected": 3.9586369397587253e-22,
+      "tolerance": 3.9586369397587795e-30,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case5.segments.existing.groups.A.n",
+      "actual": 3000,
+      "expected": 3000,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case5.segments.existing.groups.A.success",
+      "actual": 603,
+      "expected": 603,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case5.segments.existing.groups.A.rate",
+      "actual": 0.201,
+      "expected": 0.201,
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case5.segments.existing.groups.A.wilson_ci",
+      "actual": [
+        0.18510646514792106,
+        0.2178932886157091
+      ],
+      "expected": [
+        0.1851064651479211,
+        0.21789328861570909
+      ],
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case5.segments.existing.groups.B.n",
+      "actual": 3000,
+      "expected": 3000,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case5.segments.existing.groups.B.success",
+      "actual": 505,
+      "expected": 505,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case5.segments.existing.groups.B.rate",
+      "actual": 0.16833333333333333,
+      "expected": 0.16833333333333333,
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case5.segments.existing.groups.B.wilson_ci",
+      "actual": [
+        0.1535790388836549,
+        0.18419660771033844
+      ],
+      "expected": [
+        0.1535790388836549,
+        0.18419660771033844
+      ],
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case5.segments.existing.difference_B_minus_A",
+      "actual": -0.03266666666666668,
+      "expected": -0.03266666666666668,
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case5.segments.existing.newcombe_ci",
+      "actual": [
+        -0.055095942289420496,
+        -0.010211201317349265
+      ],
+      "expected": [
+        -0.05509594228942047,
+        -0.010211201317349285
+      ],
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case5.segments.existing.confidence",
+      "actual": 0.975,
+      "expected": 0.975,
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case5.segments.existing.z",
+      "actual": -3.2605329731708914,
+      "expected": -3.2605329731708914,
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case5.segments.existing.p_two_sided",
+      "actual": 0.0011120303670684312,
+      "expected": 0.0011120303670684312,
+      "tolerance": 1.1120303670684312e-11,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case5.segments.existing.bonferroni_two_group_p",
+      "actual": 0.0022240607341368623,
+      "expected": 0.0022240607341368623,
+      "tolerance": 2.2240607341368625e-11,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case5.interaction.estimate",
+      "actual": 0.11199999999999999,
+      "expected": 0.11200000000000002,
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case5.interaction.se",
+      "actual": 0.012862883727134353,
+      "expected": 0.012862883727134355,
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case5.interaction.wald_ci",
+      "actual": [
+        0.08678921115749033,
+        0.13721078884250965
+      ],
+      "expected": [
+        0.08678921115749035,
+        0.1372107888425097
+      ],
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case5.interaction.confidence",
+      "actual": 0.95,
+      "expected": 0.95,
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case5.interaction.p_two_sided",
+      "actual": 3.1140942343360724e-18,
+      "expected": 3.114094234336001e-18,
+      "tolerance": 3.1140942343360726e-26,
+      "status": "passed"
+    },
+    {
+      "id": "case5.equal_weight_point_identity",
+      "actual": 0.023333333333333345,
+      "expected": 0.02333333333333333,
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "id": "case6.fixed_rows",
+      "actual": 12000,
+      "expected": 12000,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.fixed_unique_IDs",
+      "actual": 12000,
+      "expected": 12000,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.pilot_B_count",
+      "actual": 1200,
+      "expected": 1200,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.latent_invalid_rows",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.operations_rows",
+      "actual": 108000,
+      "expected": 108000,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.scenario_keys",
+      "actual": [
+        [
+          40,
+          "all_A"
+        ],
+        [
+          40,
+          "all_B"
+        ],
+        [
+          40,
+          "pilot_10pct_B"
+        ],
+        [
+          60,
+          "all_A"
+        ],
+        [
+          60,
+          "all_B"
+        ],
+        [
+          60,
+          "pilot_10pct_B"
+        ],
+        [
+          90,
+          "all_A"
+        ],
+        [
+          90,
+          "all_B"
+        ],
+        [
+          90,
+          "pilot_10pct_B"
+        ]
+      ],
+      "expected": [
+        [
+          40,
+          "all_A"
+        ],
+        [
+          40,
+          "all_B"
+        ],
+        [
+          40,
+          "pilot_10pct_B"
+        ],
+        [
+          60,
+          "all_A"
+        ],
+        [
+          60,
+          "all_B"
+        ],
+        [
+          60,
+          "pilot_10pct_B"
+        ],
+        [
+          90,
+          "all_A"
+        ],
+        [
+          90,
+          "all_B"
+        ],
+        [
+          90,
+          "pilot_10pct_B"
+        ]
+      ],
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.40.all_A.rows",
+      "actual": 12000,
+      "expected": 12000,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.40.all_A.unique_IDs",
+      "actual": 12000,
+      "expected": 12000,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.40.all_A.ID_set_delta",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.40.all_A.row_reconstruction.arm.mismatches",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.40.all_A.row_reconstruction.arrival_day.mismatches",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.40.all_A.row_reconstruction.requested.mismatches",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.40.all_A.row_reconstruction.accepted.mismatches",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.40.all_A.row_reconstruction.waiting_end_window.mismatches",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.40.all_A.row_reconstruction.completed.mismatches",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.40.all_A.row_reconstruction.contact_cost_krw.mismatches",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.40.all_A.row_reconstruction.variable_cost_krw.mismatches",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.40.all_A.row_funnel_invalid",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.40.all_A.daily_capacity_exceeded_days",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.40.all_A.capacity_per_day",
+      "actual": 40,
+      "expected": 40,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.40.all_A.customers",
+      "actual": 12000,
+      "expected": 12000,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.40.all_A.requested",
+      "actual": 1167,
+      "expected": 1167,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.40.all_A.accepted",
+      "actual": 1086,
+      "expected": 1086,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.40.all_A.waiting_end_window",
+      "actual": 81,
+      "expected": 81,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.40.all_A.completed",
+      "actual": 928,
+      "expected": 928,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.40.all_A.variable_cost_krw",
+      "actual": 29793000,
+      "expected": 29793000,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.40.all_A.capacity_cost_krw",
+      "actual": 5600000,
+      "expected": 5600000,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.40.all_A.total_cost_krw",
+      "actual": 35393000,
+      "expected": 35393000,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.40.all_A.completed_value_krw",
+      "actual": 55680000,
+      "expected": 55680000,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.40.all_A.net_value_krw",
+      "actual": 20287000,
+      "expected": 20287000,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.40.all_A.waiting_fraction_of_requests",
+      "actual": 0.06940874035989718,
+      "expected": 0.06940874035989718,
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.40.all_A.pilot_arm_descriptive[0].n",
+      "actual": 12000,
+      "expected": 12000,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.40.all_A.pilot_arm_descriptive[0].completed",
+      "actual": 928,
+      "expected": 928,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.40.all_A.pilot_arm_descriptive[1].n",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.40.all_A.pilot_arm_descriptive[1].completed",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.40.pilot_10pct_B.rows",
+      "actual": 12000,
+      "expected": 12000,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.40.pilot_10pct_B.unique_IDs",
+      "actual": 12000,
+      "expected": 12000,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.40.pilot_10pct_B.ID_set_delta",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.40.pilot_10pct_B.row_reconstruction.arm.mismatches",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.40.pilot_10pct_B.row_reconstruction.arrival_day.mismatches",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.40.pilot_10pct_B.row_reconstruction.requested.mismatches",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.40.pilot_10pct_B.row_reconstruction.accepted.mismatches",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.40.pilot_10pct_B.row_reconstruction.waiting_end_window.mismatches",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.40.pilot_10pct_B.row_reconstruction.completed.mismatches",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.40.pilot_10pct_B.row_reconstruction.contact_cost_krw.mismatches",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.40.pilot_10pct_B.row_reconstruction.variable_cost_krw.mismatches",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.40.pilot_10pct_B.row_funnel_invalid",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.40.pilot_10pct_B.daily_capacity_exceeded_days",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.40.pilot_10pct_B.capacity_per_day",
+      "actual": 40,
+      "expected": 40,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.40.pilot_10pct_B.customers",
+      "actual": 12000,
+      "expected": 12000,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.40.pilot_10pct_B.requested",
+      "actual": 1284,
+      "expected": 1284,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.40.pilot_10pct_B.accepted",
+      "actual": 1111,
+      "expected": 1111,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.40.pilot_10pct_B.waiting_end_window",
+      "actual": 173,
+      "expected": 173,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.40.pilot_10pct_B.completed",
+      "actual": 951,
+      "expected": 951,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.40.pilot_10pct_B.variable_cost_krw",
+      "actual": 32254000,
+      "expected": 32254000,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.40.pilot_10pct_B.capacity_cost_krw",
+      "actual": 5600000,
+      "expected": 5600000,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.40.pilot_10pct_B.total_cost_krw",
+      "actual": 37854000,
+      "expected": 37854000,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.40.pilot_10pct_B.completed_value_krw",
+      "actual": 57060000,
+      "expected": 57060000,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.40.pilot_10pct_B.net_value_krw",
+      "actual": 19206000,
+      "expected": 19206000,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.40.pilot_10pct_B.waiting_fraction_of_requests",
+      "actual": 0.13473520249221183,
+      "expected": 0.13473520249221183,
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.40.pilot_10pct_B.pilot_arm_descriptive[0].n",
+      "actual": 10800,
+      "expected": 10800,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.40.pilot_10pct_B.pilot_arm_descriptive[0].completed",
+      "actual": 781,
+      "expected": 781,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.40.pilot_10pct_B.pilot_arm_descriptive[1].n",
+      "actual": 1200,
+      "expected": 1200,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.40.pilot_10pct_B.pilot_arm_descriptive[1].completed",
+      "actual": 170,
+      "expected": 170,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.40.all_B.rows",
+      "actual": 12000,
+      "expected": 12000,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.40.all_B.unique_IDs",
+      "actual": 12000,
+      "expected": 12000,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.40.all_B.ID_set_delta",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.40.all_B.row_reconstruction.arm.mismatches",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.40.all_B.row_reconstruction.arrival_day.mismatches",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.40.all_B.row_reconstruction.requested.mismatches",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.40.all_B.row_reconstruction.accepted.mismatches",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.40.all_B.row_reconstruction.waiting_end_window.mismatches",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.40.all_B.row_reconstruction.completed.mismatches",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.40.all_B.row_reconstruction.contact_cost_krw.mismatches",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.40.all_B.row_reconstruction.variable_cost_krw.mismatches",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.40.all_B.row_funnel_invalid",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.40.all_B.daily_capacity_exceeded_days",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.40.all_B.capacity_per_day",
+      "actual": 40,
+      "expected": 40,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.40.all_B.customers",
+      "actual": 12000,
+      "expected": 12000,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.40.all_B.requested",
+      "actual": 2303,
+      "expected": 2303,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.40.all_B.accepted",
+      "actual": 1120,
+      "expected": 1120,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.40.all_B.waiting_end_window",
+      "actual": 1183,
+      "expected": 1183,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.40.all_B.completed",
+      "actual": 988,
+      "expected": 988,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.40.all_B.variable_cost_krw",
+      "actual": 49549000,
+      "expected": 49549000,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.40.all_B.capacity_cost_krw",
+      "actual": 5600000,
+      "expected": 5600000,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.40.all_B.total_cost_krw",
+      "actual": 55149000,
+      "expected": 55149000,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.40.all_B.completed_value_krw",
+      "actual": 59280000,
+      "expected": 59280000,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.40.all_B.net_value_krw",
+      "actual": 4131000,
+      "expected": 4131000,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.40.all_B.waiting_fraction_of_requests",
+      "actual": 0.513677811550152,
+      "expected": 0.513677811550152,
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.40.all_B.pilot_arm_descriptive[0].n",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.40.all_B.pilot_arm_descriptive[0].completed",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.40.all_B.pilot_arm_descriptive[1].n",
+      "actual": 12000,
+      "expected": 12000,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.40.all_B.pilot_arm_descriptive[1].completed",
+      "actual": 988,
+      "expected": 988,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.60.all_A.rows",
+      "actual": 12000,
+      "expected": 12000,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.60.all_A.unique_IDs",
+      "actual": 12000,
+      "expected": 12000,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.60.all_A.ID_set_delta",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.60.all_A.row_reconstruction.arm.mismatches",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.60.all_A.row_reconstruction.arrival_day.mismatches",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.60.all_A.row_reconstruction.requested.mismatches",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.60.all_A.row_reconstruction.accepted.mismatches",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.60.all_A.row_reconstruction.waiting_end_window.mismatches",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.60.all_A.row_reconstruction.completed.mismatches",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.60.all_A.row_reconstruction.contact_cost_krw.mismatches",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.60.all_A.row_reconstruction.variable_cost_krw.mismatches",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.60.all_A.row_funnel_invalid",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.60.all_A.daily_capacity_exceeded_days",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.60.all_A.capacity_per_day",
+      "actual": 60,
+      "expected": 60,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.60.all_A.customers",
+      "actual": 12000,
+      "expected": 12000,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.60.all_A.requested",
+      "actual": 1167,
+      "expected": 1167,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.60.all_A.accepted",
+      "actual": 1167,
+      "expected": 1167,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.60.all_A.waiting_end_window",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.60.all_A.completed",
+      "actual": 997,
+      "expected": 997,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.60.all_A.variable_cost_krw",
+      "actual": 31575000,
+      "expected": 31575000,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.60.all_A.capacity_cost_krw",
+      "actual": 8400000,
+      "expected": 8400000,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.60.all_A.total_cost_krw",
+      "actual": 39975000,
+      "expected": 39975000,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.60.all_A.completed_value_krw",
+      "actual": 59820000,
+      "expected": 59820000,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.60.all_A.net_value_krw",
+      "actual": 19845000,
+      "expected": 19845000,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.60.all_A.waiting_fraction_of_requests",
+      "actual": 0.0,
+      "expected": 0.0,
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.60.all_A.pilot_arm_descriptive[0].n",
+      "actual": 12000,
+      "expected": 12000,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.60.all_A.pilot_arm_descriptive[0].completed",
+      "actual": 997,
+      "expected": 997,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.60.all_A.pilot_arm_descriptive[1].n",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.60.all_A.pilot_arm_descriptive[1].completed",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.60.pilot_10pct_B.rows",
+      "actual": 12000,
+      "expected": 12000,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.60.pilot_10pct_B.unique_IDs",
+      "actual": 12000,
+      "expected": 12000,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.60.pilot_10pct_B.ID_set_delta",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.60.pilot_10pct_B.row_reconstruction.arm.mismatches",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.60.pilot_10pct_B.row_reconstruction.arrival_day.mismatches",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.60.pilot_10pct_B.row_reconstruction.requested.mismatches",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.60.pilot_10pct_B.row_reconstruction.accepted.mismatches",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.60.pilot_10pct_B.row_reconstruction.waiting_end_window.mismatches",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.60.pilot_10pct_B.row_reconstruction.completed.mismatches",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.60.pilot_10pct_B.row_reconstruction.contact_cost_krw.mismatches",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.60.pilot_10pct_B.row_reconstruction.variable_cost_krw.mismatches",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.60.pilot_10pct_B.row_funnel_invalid",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.60.pilot_10pct_B.daily_capacity_exceeded_days",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.60.pilot_10pct_B.capacity_per_day",
+      "actual": 60,
+      "expected": 60,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.60.pilot_10pct_B.customers",
+      "actual": 12000,
+      "expected": 12000,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.60.pilot_10pct_B.requested",
+      "actual": 1284,
+      "expected": 1284,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.60.pilot_10pct_B.accepted",
+      "actual": 1284,
+      "expected": 1284,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.60.pilot_10pct_B.waiting_end_window",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.60.pilot_10pct_B.completed",
+      "actual": 1100,
+      "expected": 1100,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.60.pilot_10pct_B.variable_cost_krw",
+      "actual": 36060000,
+      "expected": 36060000,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.60.pilot_10pct_B.capacity_cost_krw",
+      "actual": 8400000,
+      "expected": 8400000,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.60.pilot_10pct_B.total_cost_krw",
+      "actual": 44460000,
+      "expected": 44460000,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.60.pilot_10pct_B.completed_value_krw",
+      "actual": 66000000,
+      "expected": 66000000,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.60.pilot_10pct_B.net_value_krw",
+      "actual": 21540000,
+      "expected": 21540000,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.60.pilot_10pct_B.waiting_fraction_of_requests",
+      "actual": 0.0,
+      "expected": 0.0,
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.60.pilot_10pct_B.pilot_arm_descriptive[0].n",
+      "actual": 10800,
+      "expected": 10800,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.60.pilot_10pct_B.pilot_arm_descriptive[0].completed",
+      "actual": 901,
+      "expected": 901,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.60.pilot_10pct_B.pilot_arm_descriptive[1].n",
+      "actual": 1200,
+      "expected": 1200,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.60.pilot_10pct_B.pilot_arm_descriptive[1].completed",
+      "actual": 199,
+      "expected": 199,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.60.all_B.rows",
+      "actual": 12000,
+      "expected": 12000,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.60.all_B.unique_IDs",
+      "actual": 12000,
+      "expected": 12000,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.60.all_B.ID_set_delta",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.60.all_B.row_reconstruction.arm.mismatches",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.60.all_B.row_reconstruction.arrival_day.mismatches",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.60.all_B.row_reconstruction.requested.mismatches",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.60.all_B.row_reconstruction.accepted.mismatches",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.60.all_B.row_reconstruction.waiting_end_window.mismatches",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.60.all_B.row_reconstruction.completed.mismatches",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.60.all_B.row_reconstruction.contact_cost_krw.mismatches",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.60.all_B.row_reconstruction.variable_cost_krw.mismatches",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.60.all_B.row_funnel_invalid",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.60.all_B.daily_capacity_exceeded_days",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.60.all_B.capacity_per_day",
+      "actual": 60,
+      "expected": 60,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.60.all_B.customers",
+      "actual": 12000,
+      "expected": 12000,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.60.all_B.requested",
+      "actual": 2303,
+      "expected": 2303,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.60.all_B.accepted",
+      "actual": 1680,
+      "expected": 1680,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.60.all_B.waiting_end_window",
+      "actual": 623,
+      "expected": 623,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.60.all_B.completed",
+      "actual": 1486,
+      "expected": 1486,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.60.all_B.variable_cost_krw",
+      "actual": 61869000,
+      "expected": 61869000,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.60.all_B.capacity_cost_krw",
+      "actual": 8400000,
+      "expected": 8400000,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.60.all_B.total_cost_krw",
+      "actual": 70269000,
+      "expected": 70269000,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.60.all_B.completed_value_krw",
+      "actual": 89160000,
+      "expected": 89160000,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.60.all_B.net_value_krw",
+      "actual": 18891000,
+      "expected": 18891000,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.60.all_B.waiting_fraction_of_requests",
+      "actual": 0.270516717325228,
+      "expected": 0.270516717325228,
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.60.all_B.pilot_arm_descriptive[0].n",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.60.all_B.pilot_arm_descriptive[0].completed",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.60.all_B.pilot_arm_descriptive[1].n",
+      "actual": 12000,
+      "expected": 12000,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.60.all_B.pilot_arm_descriptive[1].completed",
+      "actual": 1486,
+      "expected": 1486,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.90.all_A.rows",
+      "actual": 12000,
+      "expected": 12000,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.90.all_A.unique_IDs",
+      "actual": 12000,
+      "expected": 12000,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.90.all_A.ID_set_delta",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.90.all_A.row_reconstruction.arm.mismatches",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.90.all_A.row_reconstruction.arrival_day.mismatches",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.90.all_A.row_reconstruction.requested.mismatches",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.90.all_A.row_reconstruction.accepted.mismatches",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.90.all_A.row_reconstruction.waiting_end_window.mismatches",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.90.all_A.row_reconstruction.completed.mismatches",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.90.all_A.row_reconstruction.contact_cost_krw.mismatches",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.90.all_A.row_reconstruction.variable_cost_krw.mismatches",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.90.all_A.row_funnel_invalid",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.90.all_A.daily_capacity_exceeded_days",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.90.all_A.capacity_per_day",
+      "actual": 90,
+      "expected": 90,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.90.all_A.customers",
+      "actual": 12000,
+      "expected": 12000,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.90.all_A.requested",
+      "actual": 1167,
+      "expected": 1167,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.90.all_A.accepted",
+      "actual": 1167,
+      "expected": 1167,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.90.all_A.waiting_end_window",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.90.all_A.completed",
+      "actual": 997,
+      "expected": 997,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.90.all_A.variable_cost_krw",
+      "actual": 31575000,
+      "expected": 31575000,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.90.all_A.capacity_cost_krw",
+      "actual": 12600000,
+      "expected": 12600000,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.90.all_A.total_cost_krw",
+      "actual": 44175000,
+      "expected": 44175000,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.90.all_A.completed_value_krw",
+      "actual": 59820000,
+      "expected": 59820000,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.90.all_A.net_value_krw",
+      "actual": 15645000,
+      "expected": 15645000,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.90.all_A.waiting_fraction_of_requests",
+      "actual": 0.0,
+      "expected": 0.0,
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.90.all_A.pilot_arm_descriptive[0].n",
+      "actual": 12000,
+      "expected": 12000,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.90.all_A.pilot_arm_descriptive[0].completed",
+      "actual": 997,
+      "expected": 997,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.90.all_A.pilot_arm_descriptive[1].n",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.90.all_A.pilot_arm_descriptive[1].completed",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.90.pilot_10pct_B.rows",
+      "actual": 12000,
+      "expected": 12000,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.90.pilot_10pct_B.unique_IDs",
+      "actual": 12000,
+      "expected": 12000,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.90.pilot_10pct_B.ID_set_delta",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.90.pilot_10pct_B.row_reconstruction.arm.mismatches",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.90.pilot_10pct_B.row_reconstruction.arrival_day.mismatches",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.90.pilot_10pct_B.row_reconstruction.requested.mismatches",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.90.pilot_10pct_B.row_reconstruction.accepted.mismatches",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.90.pilot_10pct_B.row_reconstruction.waiting_end_window.mismatches",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.90.pilot_10pct_B.row_reconstruction.completed.mismatches",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.90.pilot_10pct_B.row_reconstruction.contact_cost_krw.mismatches",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.90.pilot_10pct_B.row_reconstruction.variable_cost_krw.mismatches",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.90.pilot_10pct_B.row_funnel_invalid",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.90.pilot_10pct_B.daily_capacity_exceeded_days",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.90.pilot_10pct_B.capacity_per_day",
+      "actual": 90,
+      "expected": 90,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.90.pilot_10pct_B.customers",
+      "actual": 12000,
+      "expected": 12000,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.90.pilot_10pct_B.requested",
+      "actual": 1284,
+      "expected": 1284,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.90.pilot_10pct_B.accepted",
+      "actual": 1284,
+      "expected": 1284,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.90.pilot_10pct_B.waiting_end_window",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.90.pilot_10pct_B.completed",
+      "actual": 1100,
+      "expected": 1100,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.90.pilot_10pct_B.variable_cost_krw",
+      "actual": 36060000,
+      "expected": 36060000,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.90.pilot_10pct_B.capacity_cost_krw",
+      "actual": 12600000,
+      "expected": 12600000,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.90.pilot_10pct_B.total_cost_krw",
+      "actual": 48660000,
+      "expected": 48660000,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.90.pilot_10pct_B.completed_value_krw",
+      "actual": 66000000,
+      "expected": 66000000,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.90.pilot_10pct_B.net_value_krw",
+      "actual": 17340000,
+      "expected": 17340000,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.90.pilot_10pct_B.waiting_fraction_of_requests",
+      "actual": 0.0,
+      "expected": 0.0,
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.90.pilot_10pct_B.pilot_arm_descriptive[0].n",
+      "actual": 10800,
+      "expected": 10800,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.90.pilot_10pct_B.pilot_arm_descriptive[0].completed",
+      "actual": 901,
+      "expected": 901,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.90.pilot_10pct_B.pilot_arm_descriptive[1].n",
+      "actual": 1200,
+      "expected": 1200,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.90.pilot_10pct_B.pilot_arm_descriptive[1].completed",
+      "actual": 199,
+      "expected": 199,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.90.all_B.rows",
+      "actual": 12000,
+      "expected": 12000,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.90.all_B.unique_IDs",
+      "actual": 12000,
+      "expected": 12000,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.90.all_B.ID_set_delta",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.90.all_B.row_reconstruction.arm.mismatches",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.90.all_B.row_reconstruction.arrival_day.mismatches",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.90.all_B.row_reconstruction.requested.mismatches",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.90.all_B.row_reconstruction.accepted.mismatches",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.90.all_B.row_reconstruction.waiting_end_window.mismatches",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.90.all_B.row_reconstruction.completed.mismatches",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.90.all_B.row_reconstruction.contact_cost_krw.mismatches",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.90.all_B.row_reconstruction.variable_cost_krw.mismatches",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.90.all_B.row_funnel_invalid",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.90.all_B.daily_capacity_exceeded_days",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.90.all_B.capacity_per_day",
+      "actual": 90,
+      "expected": 90,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.90.all_B.customers",
+      "actual": 12000,
+      "expected": 12000,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.90.all_B.requested",
+      "actual": 2303,
+      "expected": 2303,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.90.all_B.accepted",
+      "actual": 2301,
+      "expected": 2301,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.90.all_B.waiting_end_window",
+      "actual": 2,
+      "expected": 2,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.90.all_B.completed",
+      "actual": 2034,
+      "expected": 2034,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.90.all_B.variable_cost_krw",
+      "actual": 75531000,
+      "expected": 75531000,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.90.all_B.capacity_cost_krw",
+      "actual": 12600000,
+      "expected": 12600000,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.90.all_B.total_cost_krw",
+      "actual": 88131000,
+      "expected": 88131000,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.90.all_B.completed_value_krw",
+      "actual": 122040000,
+      "expected": 122040000,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.90.all_B.net_value_krw",
+      "actual": 33909000,
+      "expected": 33909000,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.90.all_B.waiting_fraction_of_requests",
+      "actual": 0.0008684324793747286,
+      "expected": 0.0008684324793747286,
+      "tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.90.all_B.pilot_arm_descriptive[0].n",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.90.all_B.pilot_arm_descriptive[0].completed",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.90.all_B.pilot_arm_descriptive[1].n",
+      "actual": 12000,
+      "expected": 12000,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "ledger.case6.90.all_B.pilot_arm_descriptive[1].completed",
+      "actual": 2034,
+      "expected": 2034,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.all_A.requests_constant_across_capacities",
+      "actual": 1,
+      "expected": 1,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.all_A.accepted_monotone",
+      "actual": [
+        1086,
+        1167,
+        1167
+      ],
+      "expected": [
+        1086,
+        1167,
+        1167
+      ],
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.pilot_10pct_B.requests_constant_across_capacities",
+      "actual": 1,
+      "expected": 1,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.pilot_10pct_B.accepted_monotone",
+      "actual": [
+        1111,
+        1284,
+        1284
+      ],
+      "expected": [
+        1111,
+        1284,
+        1284
+      ],
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.all_B.requests_constant_across_capacities",
+      "actual": 1,
+      "expected": 1,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "case6.all_B.accepted_monotone",
+      "actual": [
+        1120,
+        1680,
+        2301
+      ],
+      "expected": [
+        1120,
+        1680,
+        2301
+      ],
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "manuscript.L423.numeric_token_count",
+      "actual": 2,
+      "expected": 2,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "manuscript.L423.token1",
+      "actual": 0.5,
+      "expected": 0.5,
+      "tolerance": 0.0050000000000050004,
+      "status": "passed",
+      "note": "source token 0.50"
+    },
+    {
+      "id": "manuscript.L423.token2",
+      "actual": 341.0,
+      "expected": 341.0,
+      "tolerance": 3.41e-12,
+      "status": "passed",
+      "note": "source token 341"
+    },
+    {
+      "id": "manuscript.L425.numeric_token_count",
+      "actual": 1,
+      "expected": 1,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "manuscript.L425.token1",
+      "actual": 4000.0,
+      "expected": 4000.0,
+      "tolerance": 4e-11,
+      "status": "passed",
+      "note": "source token 4,000"
+    },
+    {
+      "id": "manuscript.L427.numeric_token_count",
+      "actual": 23,
+      "expected": 23,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "manuscript.L427.token1",
+      "actual": 480.0,
+      "expected": 480.0,
+      "tolerance": 4.8e-12,
+      "status": "passed",
+      "note": "source token 480"
+    },
+    {
+      "id": "manuscript.L427.token2",
+      "actual": 4000.0,
+      "expected": 4000.0,
+      "tolerance": 4e-11,
+      "status": "passed",
+      "note": "source token 4,000"
+    },
+    {
+      "id": "manuscript.L427.token3",
+      "actual": 12.0,
+      "expected": 12.0,
+      "tolerance": 0.0050000000001200005,
+      "status": "passed",
+      "note": "source token 12.00"
+    },
+    {
+      "id": "manuscript.L427.token4",
+      "actual": 630.0,
+      "expected": 630.0,
+      "tolerance": 6.3e-12,
+      "status": "passed",
+      "note": "source token 630"
+    },
+    {
+      "id": "manuscript.L427.token5",
+      "actual": 4000.0,
+      "expected": 4000.0,
+      "tolerance": 4e-11,
+      "status": "passed",
+      "note": "source token 4,000"
+    },
+    {
+      "id": "manuscript.L427.token6",
+      "actual": 15.75,
+      "expected": 15.75,
+      "tolerance": 0.0050000000001575,
+      "status": "passed",
+      "note": "source token 15.75"
+    },
+    {
+      "id": "manuscript.L427.token7",
+      "actual": 3.7500000000000004,
+      "expected": 3.75,
+      "tolerance": 0.0050000000000375005,
+      "status": "passed",
+      "note": "source token +3.75"
+    },
+    {
+      "id": "manuscript.L427.token8",
+      "actual": 95.0,
+      "expected": 95.0,
+      "tolerance": 9.5e-13,
+      "status": "passed",
+      "note": "source token 95"
+    },
+    {
+      "id": "manuscript.L427.token9",
+      "actual": 2.236603528814543,
+      "expected": 2.24,
+      "tolerance": 0.005000000000022366,
+      "status": "passed",
+      "note": "source token +2.24"
+    },
+    {
+      "id": "manuscript.L427.token10",
+      "actual": 5.263887136615973,
+      "expected": 5.26,
+      "tolerance": 0.0050000000000526386,
+      "status": "passed",
+      "note": "source token +5.26"
+    },
+    {
+      "id": "manuscript.L427.token11",
+      "actual": 1.226063580374753e-06,
+      "expected": 1.226e-06,
+      "tolerance": 5.000000000122607e-10,
+      "status": "passed",
+      "note": "source token 1.226e-06"
+    },
+    {
+      "id": "manuscript.L427.token12",
+      "actual": 480.0,
+      "expected": 480.0,
+      "tolerance": 4.8e-12,
+      "status": "passed",
+      "note": "source token 480"
+    },
+    {
+      "id": "manuscript.L427.token13",
+      "actual": 4000.0,
+      "expected": 4000.0,
+      "tolerance": 4e-11,
+      "status": "passed",
+      "note": "source token 4,000"
+    },
+    {
+      "id": "manuscript.L427.token14",
+      "actual": 12.0,
+      "expected": 12.0,
+      "tolerance": 0.0050000000001200005,
+      "status": "passed",
+      "note": "source token 12.00"
+    },
+    {
+      "id": "manuscript.L427.token15",
+      "actual": 289.0,
+      "expected": 289.0,
+      "tolerance": 2.89e-12,
+      "status": "passed",
+      "note": "source token 289"
+    },
+    {
+      "id": "manuscript.L427.token16",
+      "actual": 4000.0,
+      "expected": 4000.0,
+      "tolerance": 4e-11,
+      "status": "passed",
+      "note": "source token 4,000"
+    },
+    {
+      "id": "manuscript.L427.token17",
+      "actual": 7.225,
+      "expected": 7.22,
+      "tolerance": 0.0050000000000722505,
+      "status": "passed",
+      "note": "source token 7.22"
+    },
+    {
+      "id": "manuscript.L427.token18",
+      "actual": -4.775,
+      "expected": -4.78,
+      "tolerance": 0.00500000000004775,
+      "status": "passed",
+      "note": "source token -4.78"
+    },
+    {
+      "id": "manuscript.L427.token19",
+      "actual": 95.0,
+      "expected": 95.0,
+      "tolerance": 9.5e-13,
+      "status": "passed",
+      "note": "source token 95"
+    },
+    {
+      "id": "manuscript.L427.token20",
+      "actual": -6.067225957383237,
+      "expected": -6.07,
+      "tolerance": 0.005000000000060672,
+      "status": "passed",
+      "note": "source token -6.07"
+    },
+    {
+      "id": "manuscript.L427.token21",
+      "actual": -3.488617881419081,
+      "expected": -3.49,
+      "tolerance": 0.005000000000034886,
+      "status": "passed",
+      "note": "source token -3.49"
+    },
+    {
+      "id": "manuscript.L427.token22",
+      "actual": 4.3363198795032954e-13,
+      "expected": 4.336e-13,
+      "tolerance": 5.000000000433632e-17,
+      "status": "passed",
+      "note": "source token 4.336e-13"
+    },
+    {
+      "id": "manuscript.L427.token23",
+      "actual": 0.0,
+      "expected": 0.0,
+      "tolerance": 0.0,
+      "status": "passed",
+      "note": "source token 0"
+    },
+    {
+      "id": "manuscript.L429.numeric_token_count",
+      "actual": 11,
+      "expected": 11,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "manuscript.L429.token1",
+      "actual": 95.0,
+      "expected": 95.0,
+      "tolerance": 9.5e-13,
+      "status": "passed",
+      "note": "source token 95"
+    },
+    {
+      "id": "manuscript.L429.token2",
+      "actual": 11.029234261658878,
+      "expected": 11.03,
+      "tolerance": 0.005000000000110292,
+      "status": "passed",
+      "note": "source token 11.03"
+    },
+    {
+      "id": "manuscript.L429.token3",
+      "actual": 13.043683428358435,
+      "expected": 13.04,
+      "tolerance": 0.0050000000001304366,
+      "status": "passed",
+      "note": "source token 13.04"
+    },
+    {
+      "id": "manuscript.L429.token4",
+      "actual": 14.654055758550383,
+      "expected": 14.65,
+      "tolerance": 0.005000000000146541,
+      "status": "passed",
+      "note": "source token 14.65"
+    },
+    {
+      "id": "manuscript.L429.token5",
+      "actual": 16.911666106794172,
+      "expected": 16.91,
+      "tolerance": 0.0050000000001691166,
+      "status": "passed",
+      "note": "source token 16.91"
+    },
+    {
+      "id": "manuscript.L429.token6",
+      "actual": 11.029234261658878,
+      "expected": 11.03,
+      "tolerance": 0.005000000000110292,
+      "status": "passed",
+      "note": "source token 11.03"
+    },
+    {
+      "id": "manuscript.L429.token7",
+      "actual": 13.043683428358435,
+      "expected": 13.04,
+      "tolerance": 0.0050000000001304366,
+      "status": "passed",
+      "note": "source token 13.04"
+    },
+    {
+      "id": "manuscript.L429.token8",
+      "actual": 6.4630467033308365,
+      "expected": 6.46,
+      "tolerance": 0.005000000000064631,
+      "status": "passed",
+      "note": "source token 6.46"
+    },
+    {
+      "id": "manuscript.L429.token9",
+      "actual": 8.069033670103124,
+      "expected": 8.07,
+      "tolerance": 0.005000000000080691,
+      "status": "passed",
+      "note": "source token 8.07"
+    },
+    {
+      "id": "manuscript.L429.token10",
+      "actual": 1.3995821513149472e-06,
+      "expected": 1.4e-06,
+      "tolerance": 5.0000000000013994e-08,
+      "status": "passed",
+      "note": "source token 1.4e-06"
+    },
+    {
+      "id": "manuscript.L429.token11",
+      "actual": 4.487494637045465e-13,
+      "expected": 4.487e-13,
+      "tolerance": 5.0000000004487496e-17,
+      "status": "passed",
+      "note": "source token 4.487e-13"
+    },
+    {
+      "id": "manuscript.L455.numeric_token_count",
+      "actual": 17,
+      "expected": 17,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "manuscript.L455.token1",
+      "actual": 2.333333333333333,
+      "expected": 2.33,
+      "tolerance": 0.005000000000023334,
+      "status": "passed",
+      "note": "source token +2.33"
+    },
+    {
+      "id": "manuscript.L455.token2",
+      "actual": 95.0,
+      "expected": 95.0,
+      "tolerance": 9.5e-13,
+      "status": "passed",
+      "note": "source token 95"
+    },
+    {
+      "id": "manuscript.L455.token3",
+      "actual": 1.07279389120785,
+      "expected": 1.07,
+      "tolerance": 0.005000000000010728,
+      "status": "passed",
+      "note": "source token +1.07"
+    },
+    {
+      "id": "manuscript.L455.token4",
+      "actual": 3.593872775458816,
+      "expected": 3.59,
+      "tolerance": 0.005000000000035939,
+      "status": "passed",
+      "note": "source token +3.59"
+    },
+    {
+      "id": "manuscript.L455.token5",
+      "actual": 0.00028561455563145323,
+      "expected": 0.0002856,
+      "tolerance": 5.0000000002856147e-08,
+      "status": "passed",
+      "note": "source token 0.0002856"
+    },
+    {
+      "id": "manuscript.L455.token6",
+      "actual": 820.0,
+      "expected": 820.0,
+      "tolerance": 8.2e-12,
+      "status": "passed",
+      "note": "source token 820"
+    },
+    {
+      "id": "manuscript.L455.token7",
+      "actual": 6000.0,
+      "expected": 6000.0,
+      "tolerance": 6e-11,
+      "status": "passed",
+      "note": "source token 6,000"
+    },
+    {
+      "id": "manuscript.L455.token8",
+      "actual": 13.666666666666666,
+      "expected": 13.67,
+      "tolerance": 0.005000000000136667,
+      "status": "passed",
+      "note": "source token 13.67"
+    },
+    {
+      "id": "manuscript.L455.token9",
+      "actual": 960.0,
+      "expected": 960.0,
+      "tolerance": 9.6e-12,
+      "status": "passed",
+      "note": "source token 960"
+    },
+    {
+      "id": "manuscript.L455.token10",
+      "actual": 6000.0,
+      "expected": 6000.0,
+      "tolerance": 6e-11,
+      "status": "passed",
+      "note": "source token 6,000"
+    },
+    {
+      "id": "manuscript.L455.token11",
+      "actual": 16.0,
+      "expected": 16.0,
+      "tolerance": 0.00500000000016,
+      "status": "passed",
+      "note": "source token 16.00"
+    },
+    {
+      "id": "manuscript.L455.token12",
+      "actual": 2.3333333333333344,
+      "expected": 2.33,
+      "tolerance": 0.005000000000023334,
+      "status": "passed",
+      "note": "source token +2.33"
+    },
+    {
+      "id": "manuscript.L455.token13",
+      "actual": 95.0,
+      "expected": 95.0,
+      "tolerance": 9.5e-13,
+      "status": "passed",
+      "note": "source token 95"
+    },
+    {
+      "id": "manuscript.L455.token14",
+      "actual": 1.061739752635075,
+      "expected": 1.06,
+      "tolerance": 0.0050000000000106175,
+      "status": "passed",
+      "note": "source token +1.06"
+    },
+    {
+      "id": "manuscript.L455.token15",
+      "actual": 3.604884266786505,
+      "expected": 3.6,
+      "tolerance": 0.0050000000000360485,
+      "status": "passed",
+      "note": "source token +3.60"
+    },
+    {
+      "id": "manuscript.L455.token16",
+      "actual": 0.00032352293632642007,
+      "expected": 0.0003235,
+      "tolerance": 5.000000000323523e-08,
+      "status": "passed",
+      "note": "source token 0.0003235"
+    },
+    {
+      "id": "manuscript.L455.token17",
+      "actual": 1.0,
+      "expected": 1.0,
+      "tolerance": 1e-14,
+      "status": "passed",
+      "note": "source token +1"
+    },
+    {
+      "id": "manuscript.L457.numeric_token_count",
+      "actual": 25,
+      "expected": 25,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "manuscript.L457.token1",
+      "actual": 217.0,
+      "expected": 217.0,
+      "tolerance": 2.17e-12,
+      "status": "passed",
+      "note": "source token 217"
+    },
+    {
+      "id": "manuscript.L457.token2",
+      "actual": 3000.0,
+      "expected": 3000.0,
+      "tolerance": 3e-11,
+      "status": "passed",
+      "note": "source token 3,000"
+    },
+    {
+      "id": "manuscript.L457.token3",
+      "actual": 7.233333333333333,
+      "expected": 7.23,
+      "tolerance": 0.005000000000072334,
+      "status": "passed",
+      "note": "source token 7.23"
+    },
+    {
+      "id": "manuscript.L457.token4",
+      "actual": 455.0,
+      "expected": 455.0,
+      "tolerance": 4.55e-12,
+      "status": "passed",
+      "note": "source token 455"
+    },
+    {
+      "id": "manuscript.L457.token5",
+      "actual": 3000.0,
+      "expected": 3000.0,
+      "tolerance": 3e-11,
+      "status": "passed",
+      "note": "source token 3,000"
+    },
+    {
+      "id": "manuscript.L457.token6",
+      "actual": 15.166666666666666,
+      "expected": 15.17,
+      "tolerance": 0.005000000000151667,
+      "status": "passed",
+      "note": "source token 15.17"
+    },
+    {
+      "id": "manuscript.L457.token7",
+      "actual": 7.933333333333334,
+      "expected": 7.93,
+      "tolerance": 0.005000000000079333,
+      "status": "passed",
+      "note": "source token +7.93"
+    },
+    {
+      "id": "manuscript.L457.token8",
+      "actual": 97.5,
+      "expected": 97.5,
+      "tolerance": 0.050000000000975,
+      "status": "passed",
+      "note": "source token 97.5"
+    },
+    {
+      "id": "manuscript.L457.token9",
+      "actual": 6.1248227375961,
+      "expected": 6.12,
+      "tolerance": 0.005000000000061248,
+      "status": "passed",
+      "note": "source token +6.12"
+    },
+    {
+      "id": "manuscript.L457.token10",
+      "actual": 9.752404243490899,
+      "expected": 9.75,
+      "tolerance": 0.0050000000000975245,
+      "status": "passed",
+      "note": "source token +9.75"
+    },
+    {
+      "id": "manuscript.L457.token11",
+      "actual": 1.97931846987939e-22,
+      "expected": 1.979e-22,
+      "tolerance": 5.000000000197932e-26,
+      "status": "passed",
+      "note": "source token 1.979e-22"
+    },
+    {
+      "id": "manuscript.L457.token12",
+      "actual": 3.95863693975878e-22,
+      "expected": 3.959e-22,
+      "tolerance": 5.000000000395864e-26,
+      "status": "passed",
+      "note": "source token 3.959e-22"
+    },
+    {
+      "id": "manuscript.L457.token13",
+      "actual": 603.0,
+      "expected": 603.0,
+      "tolerance": 6.03e-12,
+      "status": "passed",
+      "note": "source token 603"
+    },
+    {
+      "id": "manuscript.L457.token14",
+      "actual": 3000.0,
+      "expected": 3000.0,
+      "tolerance": 3e-11,
+      "status": "passed",
+      "note": "source token 3,000"
+    },
+    {
+      "id": "manuscript.L457.token15",
+      "actual": 20.1,
+      "expected": 20.1,
+      "tolerance": 0.005000000000201,
+      "status": "passed",
+      "note": "source token 20.10"
+    },
+    {
+      "id": "manuscript.L457.token16",
+      "actual": 505.0,
+      "expected": 505.0,
+      "tolerance": 5.05e-12,
+      "status": "passed",
+      "note": "source token 505"
+    },
+    {
+      "id": "manuscript.L457.token17",
+      "actual": 3000.0,
+      "expected": 3000.0,
+      "tolerance": 3e-11,
+      "status": "passed",
+      "note": "source token 3,000"
+    },
+    {
+      "id": "manuscript.L457.token18",
+      "actual": 16.833333333333332,
+      "expected": 16.83,
+      "tolerance": 0.005000000000168333,
+      "status": "passed",
+      "note": "source token 16.83"
+    },
+    {
+      "id": "manuscript.L457.token19",
+      "actual": -3.2666666666666675,
+      "expected": -3.27,
+      "tolerance": 0.005000000000032667,
+      "status": "passed",
+      "note": "source token -3.27"
+    },
+    {
+      "id": "manuscript.L457.token20",
+      "actual": 97.5,
+      "expected": 97.5,
+      "tolerance": 0.050000000000975,
+      "status": "passed",
+      "note": "source token 97.5"
+    },
+    {
+      "id": "manuscript.L457.token21",
+      "actual": -5.509594228942049,
+      "expected": -5.51,
+      "tolerance": 0.005000000000055096,
+      "status": "passed",
+      "note": "source token -5.51"
+    },
+    {
+      "id": "manuscript.L457.token22",
+      "actual": -1.0211201317349266,
+      "expected": -1.02,
+      "tolerance": 0.0050000000000102116,
+      "status": "passed",
+      "note": "source token -1.02"
+    },
+    {
+      "id": "manuscript.L457.token23",
+      "actual": 0.0011120303670684312,
+      "expected": 0.001112,
+      "tolerance": 5.000000000111202e-07,
+      "status": "passed",
+      "note": "source token 0.001112"
+    },
+    {
+      "id": "manuscript.L457.token24",
+      "actual": 0.0022240607341368623,
+      "expected": 0.002224,
+      "tolerance": 5.000000000222406e-07,
+      "status": "passed",
+      "note": "source token 0.002224"
+    },
+    {
+      "id": "manuscript.L457.token25",
+      "actual": 97.5,
+      "expected": 97.5,
+      "tolerance": 0.050000000000975,
+      "status": "passed",
+      "note": "source token 97.5"
+    },
+    {
+      "id": "manuscript.L459.numeric_token_count",
+      "actual": 7,
+      "expected": 7,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "manuscript.L459.token1",
+      "actual": 11.2,
+      "expected": 11.2,
+      "tolerance": 0.005000000000112,
+      "status": "passed",
+      "note": "source token +11.20"
+    },
+    {
+      "id": "manuscript.L459.token2",
+      "actual": 1.2862883727134353,
+      "expected": 1.286,
+      "tolerance": 0.0005000000000128629,
+      "status": "passed",
+      "note": "source token 1.286"
+    },
+    {
+      "id": "manuscript.L459.token3",
+      "actual": 95.0,
+      "expected": 95.0,
+      "tolerance": 9.5e-13,
+      "status": "passed",
+      "note": "source token 95"
+    },
+    {
+      "id": "manuscript.L459.token4",
+      "actual": 8.678921115749032,
+      "expected": 8.68,
+      "tolerance": 0.005000000000086789,
+      "status": "passed",
+      "note": "source token +8.68"
+    },
+    {
+      "id": "manuscript.L459.token5",
+      "actual": 13.721078884250964,
+      "expected": 13.72,
+      "tolerance": 0.005000000000137211,
+      "status": "passed",
+      "note": "source token +13.72"
+    },
+    {
+      "id": "manuscript.L459.token6",
+      "actual": 3.1140942343360724e-18,
+      "expected": 3.114e-18,
+      "tolerance": 5.000000000311409e-22,
+      "status": "passed",
+      "note": "source token 3.114e-18"
+    },
+    {
+      "id": "manuscript.L459.token7",
+      "actual": 1.0,
+      "expected": 1.0,
+      "tolerance": 1e-14,
+      "status": "passed",
+      "note": "source token 1"
+    },
+    {
+      "id": "manuscript.L465.numeric_token_count",
+      "actual": 6,
+      "expected": 6,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "manuscript.L465.token1",
+      "actual": 2.333333333333333,
+      "expected": 2.33,
+      "tolerance": 0.005000000000023334,
+      "status": "passed",
+      "note": "source token +2.33"
+    },
+    {
+      "id": "manuscript.L465.token2",
+      "actual": 20.0,
+      "expected": 20.0,
+      "tolerance": 2e-13,
+      "status": "passed",
+      "note": "source token 20"
+    },
+    {
+      "id": "manuscript.L465.token3",
+      "actual": 80.0,
+      "expected": 80.0,
+      "tolerance": 8e-13,
+      "status": "passed",
+      "note": "source token 80"
+    },
+    {
+      "id": "manuscript.L465.token4",
+      "actual": -1.0266666666666673,
+      "expected": -1.03,
+      "tolerance": 0.005000000000010267,
+      "status": "passed",
+      "note": "source token -1.03"
+    },
+    {
+      "id": "manuscript.L465.token5",
+      "actual": 0.2,
+      "expected": 0.2,
+      "tolerance": 0.050000000000002,
+      "status": "passed",
+      "note": "source token 0.2"
+    },
+    {
+      "id": "manuscript.L465.token6",
+      "actual": 0.8,
+      "expected": 0.8,
+      "tolerance": 0.050000000000008,
+      "status": "passed",
+      "note": "source token +0.8"
+    },
+    {
+      "id": "manuscript.L479.numeric_token_count",
+      "actual": 4,
+      "expected": 4,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "manuscript.L479.token1",
+      "actual": 60.0,
+      "expected": 60.0,
+      "tolerance": 6e-13,
+      "status": "passed",
+      "note": "source token 60"
+    },
+    {
+      "id": "manuscript.L479.token2",
+      "actual": 489.0,
+      "expected": 489.0,
+      "tolerance": 4.89e-12,
+      "status": "passed",
+      "note": "source token 489"
+    },
+    {
+      "id": "manuscript.L479.token3",
+      "actual": 954000.0,
+      "expected": 954000.0,
+      "tolerance": 9.54e-09,
+      "status": "passed",
+      "note": "source token 954,000"
+    },
+    {
+      "id": "manuscript.L479.token4",
+      "actual": 27.0516717325228,
+      "expected": 27.05,
+      "tolerance": 0.005000000000270517,
+      "status": "passed",
+      "note": "source token 27.05"
+    },
+    {
+      "id": "manuscript.L493.numeric_token_count",
+      "actual": 5,
+      "expected": 5,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "manuscript.L493.token1",
+      "actual": 40.0,
+      "expected": 40.0,
+      "tolerance": 4e-13,
+      "status": "passed",
+      "note": "source token 40"
+    },
+    {
+      "id": "manuscript.L493.token2",
+      "actual": 1167.0,
+      "expected": 1167.0,
+      "tolerance": 1.167e-11,
+      "status": "passed",
+      "note": "source token 1,167"
+    },
+    {
+      "id": "manuscript.L493.token3",
+      "actual": 928.0,
+      "expected": 928.0,
+      "tolerance": 9.28e-12,
+      "status": "passed",
+      "note": "source token 928"
+    },
+    {
+      "id": "manuscript.L493.token4",
+      "actual": 81.0,
+      "expected": 81.0,
+      "tolerance": 8.1e-13,
+      "status": "passed",
+      "note": "source token 81"
+    },
+    {
+      "id": "manuscript.L493.token5",
+      "actual": 20287000.0,
+      "expected": 20287000.0,
+      "tolerance": 2.0287e-07,
+      "status": "passed",
+      "note": "source token 20,287,000"
+    },
+    {
+      "id": "manuscript.L494.numeric_token_count",
+      "actual": 6,
+      "expected": 6,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "manuscript.L494.token1",
+      "actual": 40.0,
+      "expected": 40.0,
+      "tolerance": 4e-13,
+      "status": "passed",
+      "note": "source token 40"
+    },
+    {
+      "id": "manuscript.L494.token2",
+      "actual": 10.0,
+      "expected": 10.0,
+      "tolerance": 1e-13,
+      "status": "passed",
+      "note": "source token 10"
+    },
+    {
+      "id": "manuscript.L494.token3",
+      "actual": 1284.0,
+      "expected": 1284.0,
+      "tolerance": 1.284e-11,
+      "status": "passed",
+      "note": "source token 1,284"
+    },
+    {
+      "id": "manuscript.L494.token4",
+      "actual": 951.0,
+      "expected": 951.0,
+      "tolerance": 9.51e-12,
+      "status": "passed",
+      "note": "source token 951"
+    },
+    {
+      "id": "manuscript.L494.token5",
+      "actual": 173.0,
+      "expected": 173.0,
+      "tolerance": 1.7299999999999999e-12,
+      "status": "passed",
+      "note": "source token 173"
+    },
+    {
+      "id": "manuscript.L494.token6",
+      "actual": 19206000.0,
+      "expected": 19206000.0,
+      "tolerance": 1.9206e-07,
+      "status": "passed",
+      "note": "source token 19,206,000"
+    },
+    {
+      "id": "manuscript.L495.numeric_token_count",
+      "actual": 5,
+      "expected": 5,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "manuscript.L495.token1",
+      "actual": 40.0,
+      "expected": 40.0,
+      "tolerance": 4e-13,
+      "status": "passed",
+      "note": "source token 40"
+    },
+    {
+      "id": "manuscript.L495.token2",
+      "actual": 2303.0,
+      "expected": 2303.0,
+      "tolerance": 2.303e-11,
+      "status": "passed",
+      "note": "source token 2,303"
+    },
+    {
+      "id": "manuscript.L495.token3",
+      "actual": 988.0,
+      "expected": 988.0,
+      "tolerance": 9.88e-12,
+      "status": "passed",
+      "note": "source token 988"
+    },
+    {
+      "id": "manuscript.L495.token4",
+      "actual": 1183.0,
+      "expected": 1183.0,
+      "tolerance": 1.183e-11,
+      "status": "passed",
+      "note": "source token 1,183"
+    },
+    {
+      "id": "manuscript.L495.token5",
+      "actual": 4131000.0,
+      "expected": 4131000.0,
+      "tolerance": 4.131e-08,
+      "status": "passed",
+      "note": "source token 4,131,000"
+    },
+    {
+      "id": "manuscript.L496.numeric_token_count",
+      "actual": 5,
+      "expected": 5,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "manuscript.L496.token1",
+      "actual": 60.0,
+      "expected": 60.0,
+      "tolerance": 6e-13,
+      "status": "passed",
+      "note": "source token 60"
+    },
+    {
+      "id": "manuscript.L496.token2",
+      "actual": 1167.0,
+      "expected": 1167.0,
+      "tolerance": 1.167e-11,
+      "status": "passed",
+      "note": "source token 1,167"
+    },
+    {
+      "id": "manuscript.L496.token3",
+      "actual": 997.0,
+      "expected": 997.0,
+      "tolerance": 9.97e-12,
+      "status": "passed",
+      "note": "source token 997"
+    },
+    {
+      "id": "manuscript.L496.token4",
+      "actual": 0.0,
+      "expected": 0.0,
+      "tolerance": 0.0,
+      "status": "passed",
+      "note": "source token 0"
+    },
+    {
+      "id": "manuscript.L496.token5",
+      "actual": 19845000.0,
+      "expected": 19845000.0,
+      "tolerance": 1.9845e-07,
+      "status": "passed",
+      "note": "source token 19,845,000"
+    },
+    {
+      "id": "manuscript.L497.numeric_token_count",
+      "actual": 6,
+      "expected": 6,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "manuscript.L497.token1",
+      "actual": 60.0,
+      "expected": 60.0,
+      "tolerance": 6e-13,
+      "status": "passed",
+      "note": "source token 60"
+    },
+    {
+      "id": "manuscript.L497.token2",
+      "actual": 10.0,
+      "expected": 10.0,
+      "tolerance": 1e-13,
+      "status": "passed",
+      "note": "source token 10"
+    },
+    {
+      "id": "manuscript.L497.token3",
+      "actual": 1284.0,
+      "expected": 1284.0,
+      "tolerance": 1.284e-11,
+      "status": "passed",
+      "note": "source token 1,284"
+    },
+    {
+      "id": "manuscript.L497.token4",
+      "actual": 1100.0,
+      "expected": 1100.0,
+      "tolerance": 1.1e-11,
+      "status": "passed",
+      "note": "source token 1,100"
+    },
+    {
+      "id": "manuscript.L497.token5",
+      "actual": 0.0,
+      "expected": 0.0,
+      "tolerance": 0.0,
+      "status": "passed",
+      "note": "source token 0"
+    },
+    {
+      "id": "manuscript.L497.token6",
+      "actual": 21540000.0,
+      "expected": 21540000.0,
+      "tolerance": 2.154e-07,
+      "status": "passed",
+      "note": "source token 21,540,000"
+    },
+    {
+      "id": "manuscript.L498.numeric_token_count",
+      "actual": 5,
+      "expected": 5,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "manuscript.L498.token1",
+      "actual": 60.0,
+      "expected": 60.0,
+      "tolerance": 6e-13,
+      "status": "passed",
+      "note": "source token 60"
+    },
+    {
+      "id": "manuscript.L498.token2",
+      "actual": 2303.0,
+      "expected": 2303.0,
+      "tolerance": 2.303e-11,
+      "status": "passed",
+      "note": "source token 2,303"
+    },
+    {
+      "id": "manuscript.L498.token3",
+      "actual": 1486.0,
+      "expected": 1486.0,
+      "tolerance": 1.486e-11,
+      "status": "passed",
+      "note": "source token 1,486"
+    },
+    {
+      "id": "manuscript.L498.token4",
+      "actual": 623.0,
+      "expected": 623.0,
+      "tolerance": 6.23e-12,
+      "status": "passed",
+      "note": "source token 623"
+    },
+    {
+      "id": "manuscript.L498.token5",
+      "actual": 18891000.0,
+      "expected": 18891000.0,
+      "tolerance": 1.8891e-07,
+      "status": "passed",
+      "note": "source token 18,891,000"
+    },
+    {
+      "id": "manuscript.L499.numeric_token_count",
+      "actual": 5,
+      "expected": 5,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "manuscript.L499.token1",
+      "actual": 90.0,
+      "expected": 90.0,
+      "tolerance": 9e-13,
+      "status": "passed",
+      "note": "source token 90"
+    },
+    {
+      "id": "manuscript.L499.token2",
+      "actual": 1167.0,
+      "expected": 1167.0,
+      "tolerance": 1.167e-11,
+      "status": "passed",
+      "note": "source token 1,167"
+    },
+    {
+      "id": "manuscript.L499.token3",
+      "actual": 997.0,
+      "expected": 997.0,
+      "tolerance": 9.97e-12,
+      "status": "passed",
+      "note": "source token 997"
+    },
+    {
+      "id": "manuscript.L499.token4",
+      "actual": 0.0,
+      "expected": 0.0,
+      "tolerance": 0.0,
+      "status": "passed",
+      "note": "source token 0"
+    },
+    {
+      "id": "manuscript.L499.token5",
+      "actual": 15645000.0,
+      "expected": 15645000.0,
+      "tolerance": 1.5645e-07,
+      "status": "passed",
+      "note": "source token 15,645,000"
+    },
+    {
+      "id": "manuscript.L500.numeric_token_count",
+      "actual": 6,
+      "expected": 6,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "manuscript.L500.token1",
+      "actual": 90.0,
+      "expected": 90.0,
+      "tolerance": 9e-13,
+      "status": "passed",
+      "note": "source token 90"
+    },
+    {
+      "id": "manuscript.L500.token2",
+      "actual": 10.0,
+      "expected": 10.0,
+      "tolerance": 1e-13,
+      "status": "passed",
+      "note": "source token 10"
+    },
+    {
+      "id": "manuscript.L500.token3",
+      "actual": 1284.0,
+      "expected": 1284.0,
+      "tolerance": 1.284e-11,
+      "status": "passed",
+      "note": "source token 1,284"
+    },
+    {
+      "id": "manuscript.L500.token4",
+      "actual": 1100.0,
+      "expected": 1100.0,
+      "tolerance": 1.1e-11,
+      "status": "passed",
+      "note": "source token 1,100"
+    },
+    {
+      "id": "manuscript.L500.token5",
+      "actual": 0.0,
+      "expected": 0.0,
+      "tolerance": 0.0,
+      "status": "passed",
+      "note": "source token 0"
+    },
+    {
+      "id": "manuscript.L500.token6",
+      "actual": 17340000.0,
+      "expected": 17340000.0,
+      "tolerance": 1.734e-07,
+      "status": "passed",
+      "note": "source token 17,340,000"
+    },
+    {
+      "id": "manuscript.L501.numeric_token_count",
+      "actual": 5,
+      "expected": 5,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "manuscript.L501.token1",
+      "actual": 90.0,
+      "expected": 90.0,
+      "tolerance": 9e-13,
+      "status": "passed",
+      "note": "source token 90"
+    },
+    {
+      "id": "manuscript.L501.token2",
+      "actual": 2303.0,
+      "expected": 2303.0,
+      "tolerance": 2.303e-11,
+      "status": "passed",
+      "note": "source token 2,303"
+    },
+    {
+      "id": "manuscript.L501.token3",
+      "actual": 2034.0,
+      "expected": 2034.0,
+      "tolerance": 2.034e-11,
+      "status": "passed",
+      "note": "source token 2,034"
+    },
+    {
+      "id": "manuscript.L501.token4",
+      "actual": 2.0,
+      "expected": 2.0,
+      "tolerance": 2e-14,
+      "status": "passed",
+      "note": "source token 2"
+    },
+    {
+      "id": "manuscript.L501.token5",
+      "actual": 33909000.0,
+      "expected": 33909000.0,
+      "tolerance": 3.3909e-07,
+      "status": "passed",
+      "note": "source token 33,909,000"
+    },
+    {
+      "id": "manuscript.L503.numeric_token_count",
+      "actual": 22,
+      "expected": 22,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "manuscript.L503.token1",
+      "actual": 40.0,
+      "expected": 40.0,
+      "tolerance": 4e-13,
+      "status": "passed",
+      "note": "source token 40"
+    },
+    {
+      "id": "manuscript.L503.token2",
+      "actual": 10.0,
+      "expected": 10.0,
+      "tolerance": 1e-13,
+      "status": "passed",
+      "note": "source token 10"
+    },
+    {
+      "id": "manuscript.L503.token3",
+      "actual": 1086.0,
+      "expected": 1086.0,
+      "tolerance": 1.086e-11,
+      "status": "passed",
+      "note": "source token 1,086"
+    },
+    {
+      "id": "manuscript.L503.token4",
+      "actual": 1111.0,
+      "expected": 1111.0,
+      "tolerance": 1.111e-11,
+      "status": "passed",
+      "note": "source token 1,111"
+    },
+    {
+      "id": "manuscript.L503.token5",
+      "actual": 1120.0,
+      "expected": 1120.0,
+      "tolerance": 1.12e-11,
+      "status": "passed",
+      "note": "source token 1,120"
+    },
+    {
+      "id": "manuscript.L503.token6",
+      "actual": 35393000.0,
+      "expected": 35393000.0,
+      "tolerance": 3.5393e-07,
+      "status": "passed",
+      "note": "source token 35,393,000"
+    },
+    {
+      "id": "manuscript.L503.token7",
+      "actual": 37854000.0,
+      "expected": 37854000.0,
+      "tolerance": 3.7854e-07,
+      "status": "passed",
+      "note": "source token 37,854,000"
+    },
+    {
+      "id": "manuscript.L503.token8",
+      "actual": 55149000.0,
+      "expected": 55149000.0,
+      "tolerance": 5.5149e-07,
+      "status": "passed",
+      "note": "source token 55,149,000"
+    },
+    {
+      "id": "manuscript.L503.token9",
+      "actual": 60.0,
+      "expected": 60.0,
+      "tolerance": 6e-13,
+      "status": "passed",
+      "note": "source token 60"
+    },
+    {
+      "id": "manuscript.L503.token10",
+      "actual": 1167.0,
+      "expected": 1167.0,
+      "tolerance": 1.167e-11,
+      "status": "passed",
+      "note": "source token 1,167"
+    },
+    {
+      "id": "manuscript.L503.token11",
+      "actual": 1284.0,
+      "expected": 1284.0,
+      "tolerance": 1.284e-11,
+      "status": "passed",
+      "note": "source token 1,284"
+    },
+    {
+      "id": "manuscript.L503.token12",
+      "actual": 1680.0,
+      "expected": 1680.0,
+      "tolerance": 1.68e-11,
+      "status": "passed",
+      "note": "source token 1,680"
+    },
+    {
+      "id": "manuscript.L503.token13",
+      "actual": 39975000.0,
+      "expected": 39975000.0,
+      "tolerance": 3.9975e-07,
+      "status": "passed",
+      "note": "source token 39,975,000"
+    },
+    {
+      "id": "manuscript.L503.token14",
+      "actual": 44460000.0,
+      "expected": 44460000.0,
+      "tolerance": 4.446e-07,
+      "status": "passed",
+      "note": "source token 44,460,000"
+    },
+    {
+      "id": "manuscript.L503.token15",
+      "actual": 70269000.0,
+      "expected": 70269000.0,
+      "tolerance": 7.0269e-07,
+      "status": "passed",
+      "note": "source token 70,269,000"
+    },
+    {
+      "id": "manuscript.L503.token16",
+      "actual": 90.0,
+      "expected": 90.0,
+      "tolerance": 9e-13,
+      "status": "passed",
+      "note": "source token 90"
+    },
+    {
+      "id": "manuscript.L503.token17",
+      "actual": 1167.0,
+      "expected": 1167.0,
+      "tolerance": 1.167e-11,
+      "status": "passed",
+      "note": "source token 1,167"
+    },
+    {
+      "id": "manuscript.L503.token18",
+      "actual": 1284.0,
+      "expected": 1284.0,
+      "tolerance": 1.284e-11,
+      "status": "passed",
+      "note": "source token 1,284"
+    },
+    {
+      "id": "manuscript.L503.token19",
+      "actual": 2301.0,
+      "expected": 2301.0,
+      "tolerance": 2.301e-11,
+      "status": "passed",
+      "note": "source token 2,301"
+    },
+    {
+      "id": "manuscript.L503.token20",
+      "actual": 44175000.0,
+      "expected": 44175000.0,
+      "tolerance": 4.4175e-07,
+      "status": "passed",
+      "note": "source token 44,175,000"
+    },
+    {
+      "id": "manuscript.L503.token21",
+      "actual": 48660000.0,
+      "expected": 48660000.0,
+      "tolerance": 4.866e-07,
+      "status": "passed",
+      "note": "source token 48,660,000"
+    },
+    {
+      "id": "manuscript.L503.token22",
+      "actual": 88131000.0,
+      "expected": 88131000.0,
+      "tolerance": 8.8131e-07,
+      "status": "passed",
+      "note": "source token 88,131,000"
+    },
+    {
+      "id": "manuscript.L505.numeric_token_count",
+      "actual": 8,
+      "expected": 8,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "manuscript.L505.token1",
+      "actual": 997.0,
+      "expected": 997.0,
+      "tolerance": 9.97e-12,
+      "status": "passed",
+      "note": "source token 997"
+    },
+    {
+      "id": "manuscript.L505.token2",
+      "actual": 10.0,
+      "expected": 10.0,
+      "tolerance": 1e-13,
+      "status": "passed",
+      "note": "source token 10"
+    },
+    {
+      "id": "manuscript.L505.token3",
+      "actual": 1100.0,
+      "expected": 1100.0,
+      "tolerance": 1.1e-11,
+      "status": "passed",
+      "note": "source token 1,100"
+    },
+    {
+      "id": "manuscript.L505.token4",
+      "actual": 1486.0,
+      "expected": 1486.0,
+      "tolerance": 1.486e-11,
+      "status": "passed",
+      "note": "source token 1,486"
+    },
+    {
+      "id": "manuscript.L505.token5",
+      "actual": 2303.0,
+      "expected": 2303.0,
+      "tolerance": 2.303e-11,
+      "status": "passed",
+      "note": "source token 2,303"
+    },
+    {
+      "id": "manuscript.L505.token6",
+      "actual": 623.0,
+      "expected": 623.0,
+      "tolerance": 6.23e-12,
+      "status": "passed",
+      "note": "source token 623"
+    },
+    {
+      "id": "manuscript.L505.token7",
+      "actual": 27.0516717325228,
+      "expected": 27.05,
+      "tolerance": 0.005000000000270517,
+      "status": "passed",
+      "note": "source token 27.05"
+    },
+    {
+      "id": "manuscript.L505.token8",
+      "actual": 10.0,
+      "expected": 10.0,
+      "tolerance": 1e-13,
+      "status": "passed",
+      "note": "source token 10"
+    },
+    {
+      "id": "manuscript.L511.numeric_token_count",
+      "actual": 3,
+      "expected": 3,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "manuscript.L511.token1",
+      "actual": 90.0,
+      "expected": 90.0,
+      "tolerance": 9e-13,
+      "status": "passed",
+      "note": "source token 90"
+    },
+    {
+      "id": "manuscript.L511.token2",
+      "actual": 2034.0,
+      "expected": 2034.0,
+      "tolerance": 2.034e-11,
+      "status": "passed",
+      "note": "source token 2,034"
+    },
+    {
+      "id": "manuscript.L511.token3",
+      "actual": 33909000.0,
+      "expected": 33909000.0,
+      "tolerance": 3.3909e-07,
+      "status": "passed",
+      "note": "source token 33,909,000"
+    },
+    {
+      "id": "manuscript.interpretation.고정한 한 수요 세계의 조건부 결과",
+      "actual": true,
+      "expected": true,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "manuscript.interpretation.개인 독립 95% 신뢰구간이나 두 이항비율 검정 p값을 붙이지 않는다",
+      "actual": true,
+      "expected": true,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "manuscript.interpretation.주분석과 함께 확증하는 가족 전체 오류율을 통제한 설계는 아니다",
+      "actual": true,
+      "expected": true,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "manuscript.interpretation.전체 pooled z검정과 Newcombe 구간은 참고값",
+      "actual": true,
+      "expected": true,
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "inference.national_rollout_effect",
+      "actual": null,
+      "expected": "independent location/time or saturation policy experiment",
+      "tolerance": 0,
+      "status": "blocked",
+      "note": "Customer-level effect cannot identify national rollout under interference. Fixed-world simulation is not such an estimate."
+    },
+    {
+      "id": "provenance.prospective_plan_timing",
+      "actual": null,
+      "expected": "dated frozen case4-6 plan prior to outcomes",
+      "tolerance": 0,
+      "status": "blocked",
+      "note": "Specification and manuscript state prespecification; CSV/ledger cannot authenticate prospective timing or absence of seed selection. Existing v03 plan is preserved, not evidence for these added scenarios."
+    },
+    {
+      "id": "validity.real_outcomes_costs_safety",
+      "actual": null,
+      "expected": "real OEM operational validation and guardrail data",
+      "tolerance": 0,
+      "status": "blocked",
+      "note": "Synthetic data only; no human-independent review, real safety, external validity, cluster design or repeated-demand inference tested."
+    },
+    {
+      "id": "preservation.sha256.e-book/analysis/v02/metric_results.csv",
+      "actual": "97eb24e98ea6a0fd9935cc1f87cb86e675f33440b45cd39a899cee6de195da57",
+      "expected": "97eb24e98ea6a0fd9935cc1f87cb86e675f33440b45cd39a899cee6de195da57",
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "preservation.sha256.e-book/analysis/winner_v04/core_results.json",
+      "actual": "501a32cef982f5bdca9c211cd9cc7f47126a35e2019921f9f6a53a55e8689db3",
+      "expected": "501a32cef982f5bdca9c211cd9cc7f47126a35e2019921f9f6a53a55e8689db3",
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "preservation.sha256.e-book/analysis/winner_v04/scenario_results.json",
+      "actual": "d3ad00f3b908484d354e5ff40205cf077aeb6dbc1a83fd0a63e8a82c1dfd429c",
+      "expected": "d3ad00f3b908484d354e5ff40205cf077aeb6dbc1a83fd0a63e8a82c1dfd429c",
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "preservation.sha256.e-book/analysis/winner_v04/scenarios/case4_log.csv",
+      "actual": "d6ad6ec255ca7f29bb518c8b1ff217910749409349bfb36cd4a0e0c1d8b38295",
+      "expected": "d6ad6ec255ca7f29bb518c8b1ff217910749409349bfb36cd4a0e0c1d8b38295",
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "preservation.sha256.e-book/analysis/winner_v04/scenarios/case4_truth.csv",
+      "actual": "41b148dc21e37c1726f043d352942aa61095c256300d6cd551393f83ded56a0d",
+      "expected": "41b148dc21e37c1726f043d352942aa61095c256300d6cd551393f83ded56a0d",
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "preservation.sha256.e-book/analysis/winner_v04/scenarios/case5_customers.csv",
+      "actual": "a52c642861867be0f4a88801dfb2b3838d4c85f58dce3dd65caa531d614d4def",
+      "expected": "a52c642861867be0f4a88801dfb2b3838d4c85f58dce3dd65caa531d614d4def",
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "preservation.sha256.e-book/analysis/winner_v04/scenarios/case6_fixed_demand.csv",
+      "actual": "e91ebbf62741c1ad2ebd60f5ffb2d9fe9dba647e92437a92267c1806960f0249",
+      "expected": "e91ebbf62741c1ad2ebd60f5ffb2d9fe9dba647e92437a92267c1806960f0249",
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "preservation.sha256.e-book/analysis/winner_v04/scenarios/case6_operations.csv",
+      "actual": "f806a0e346cea042464322bb4461ef6183f3156af4bd43ad99775cfe58db6a24",
+      "expected": "f806a0e346cea042464322bb4461ef6183f3156af4bd43ad99775cfe58db6a24",
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "preservation.sha256.e-book/exports/v09/tri_v_criteria_change_log_v09.csv",
+      "actual": "36abe455d0e9b9c8b17d19321066d20d4dcf501ed1cbba260529cf56185597c1",
+      "expected": "36abe455d0e9b9c8b17d19321066d20d4dcf501ed1cbba260529cf56185597c1",
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "preservation.sha256.e-book/exports/v12/ebook_review_v12.md",
+      "actual": "00cc0928d158347fb614d80e06dede619ee69808531df29308a555ee83b1207c",
+      "expected": "00cc0928d158347fb614d80e06dede619ee69808531df29308a555ee83b1207c",
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "preservation.sha256.e-book/manuscript/winner_cases_456_v04.md",
+      "actual": "ffff8c349fcefeea89f51e666dfb8932784b93fa3bedc04ce852b7022eb2b5ec",
+      "expected": "ffff8c349fcefeea89f51e666dfb8932784b93fa3bedc04ce852b7022eb2b5ec",
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "preservation.sha256.e-book/planning/AUTHOR_METHOD_AND_VOICE.md",
+      "actual": "9383630626413029af1cf03489e021dded92eaee47fa8f36d3c8e0a322e47fff",
+      "expected": "9383630626413029af1cf03489e021dded92eaee47fa8f36d3c8e0a322e47fff",
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "preservation.sha256.e-book/planning/CRM_DIAGNOSTIC_WORKFLOW.md",
+      "actual": "4c0cb89f042d7f76538ca5ccb5b4c45dbfda58180cea367d4c48dd5fdd6e7d35",
+      "expected": "4c0cb89f042d7f76538ca5ccb5b4c45dbfda58180cea367d4c48dd5fdd6e7d35",
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "preservation.sha256.e-book/planning/EDITORIAL_CRITIQUE_v02_PRELIMINARY.md",
+      "actual": "1e32d109423186812bc59e8d1e1b29176cd0fa3e27a04887948a9253eeb6aaba",
+      "expected": "1e32d109423186812bc59e8d1e1b29176cd0fa3e27a04887948a9253eeb6aaba",
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "preservation.sha256.e-book/planning/MARKET_COMPARISON_AND_REDESIGN_REVIEW.md",
+      "actual": "034f6605626985cb394a5f957e7dcbe95d99c6fb2c7758a85d6af8ce897c36d7",
+      "expected": "034f6605626985cb394a5f957e7dcbe95d99c6fb2c7758a85d6af8ce897c36d7",
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "preservation.sha256.e-book/planning/PRODUCTION_BRIEF.md",
+      "actual": "9c1d46c1b2b0b91d3a3c8345b60f5731ffcfa114a4044980000aaded82db117e",
+      "expected": "9c1d46c1b2b0b91d3a3c8345b60f5731ffcfa114a4044980000aaded82db117e",
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "preservation.sha256.e-book/planning/PROGRESS.md",
+      "actual": "79adfe8615a7fa763dcdbece1a6f2dbb161cf538f36eb57161e96fa6a662ed3d",
+      "expected": "79adfe8615a7fa763dcdbece1a6f2dbb161cf538f36eb57161e96fa6a662ed3d",
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "preservation.sha256.e-book/planning/PUBLICATION_BRIEF.md",
+      "actual": "1a817563424371af02cc237ae274c7a49873514cefc0ecfa0d892e888518720b",
+      "expected": "1a817563424371af02cc237ae274c7a49873514cefc0ecfa0d892e888518720b",
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "preservation.sha256.e-book/planning/PUBLICATION_CHECKLIST.md",
+      "actual": "e9a7ca31211b63d93ec322be69fe74215d19d83723af61ce396517e8c24b12a2",
+      "expected": "e9a7ca31211b63d93ec322be69fe74215d19d83723af61ce396517e8c24b12a2",
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "preservation.sha256.e-book/planning/WINNER_DEEP_DIVE.md",
+      "actual": "0df320a2e8d1acce30cb3722399c5d6f3c030328fd319e2818fb48ebcda2bfdd",
+      "expected": "0df320a2e8d1acce30cb3722399c5d6f3c030328fd319e2818fb48ebcda2bfdd",
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "preservation.sha256.e-book/review/ab_only_methods_v01/calculated_results.json",
+      "actual": "837ff067df0c403890e4216fc918b74bd53d32ca52fe0b248673707382e4045b",
+      "expected": "837ff067df0c403890e4216fc918b74bd53d32ca52fe0b248673707382e4045b",
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "preservation.sha256.e-book/review/ab_only_methods_v01/customer_fixture.csv",
+      "actual": "d7b04ad615c669aedec80ec7fae9af6be2b396e5c5220e91095551a6cc25b897",
+      "expected": "d7b04ad615c669aedec80ec7fae9af6be2b396e5c5220e91095551a6cc25b897",
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "preservation.sha256.e-book/review/methodology/tri_v_sharpening_v02/OBSERVATIONS.csv",
+      "actual": "bfd09f19fff4e3b5791cb7c20ac7ce0806fe62f0fff03a2ded09ad35b1f5c5ba",
+      "expected": "bfd09f19fff4e3b5791cb7c20ac7ce0806fe62f0fff03a2ded09ad35b1f5c5ba",
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "preservation.sha256.e-book/review/reader_test_v01/OBSERVATION_TEMPLATE.csv",
+      "actual": "54b2b05d63ea561d7f51b6700d200fa3839b030dbbec793d90454f998fc70cf6",
+      "expected": "54b2b05d63ea561d7f51b6700d200fa3839b030dbbec793d90454f998fc70cf6",
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "preservation.sha256.e-book/review/statistical_v12/FINDINGS_TEMPLATE.csv",
+      "actual": "db5a2082d9b8c09ab688541ba5caafab332e3ce61add9ca787443c6d48e0534c",
+      "expected": "db5a2082d9b8c09ab688541ba5caafab332e3ce61add9ca787443c6d48e0534c",
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "preservation.sha256.e-book/virtual-data/v01/data/csv/assignments.csv",
+      "actual": "6f7dd96fe1e7428557104831561e272bdbae8381fa145e5c9c09d9b040a7ff60",
+      "expected": "6f7dd96fe1e7428557104831561e272bdbae8381fa145e5c9c09d9b040a7ff60",
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "preservation.sha256.e-book/virtual-data/v01/data/csv/company.csv",
+      "actual": "e6224f8367daa5d089db49b594f38a8e54d2c5ef45576e88ce5826726444a58b",
+      "expected": "e6224f8367daa5d089db49b594f38a8e54d2c5ef45576e88ce5826726444a58b",
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "preservation.sha256.e-book/virtual-data/v01/data/csv/cost_assumptions.csv",
+      "actual": "b366a213558ab479cf758899e7662d9d35d919d5790f6288bd05e1658682b683",
+      "expected": "b366a213558ab479cf758899e7662d9d35d919d5790f6288bd05e1658682b683",
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "preservation.sha256.e-book/virtual-data/v01/data/csv/customers.csv",
+      "actual": "23bac95b8e757c39ee0d91921d2bdbbfae73c0b8675923c15ab15816d60e8d94",
+      "expected": "23bac95b8e757c39ee0d91921d2bdbbfae73c0b8675923c15ab15816d60e8d94",
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "preservation.sha256.e-book/virtual-data/v01/data/csv/dealerships.csv",
+      "actual": "a29826633535947b19f931802f65210e2b34cfaebbaa29cd8630e10f9f58a711",
+      "expected": "a29826633535947b19f931802f65210e2b34cfaebbaa29cd8630e10f9f58a711",
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "preservation.sha256.e-book/virtual-data/v01/data/csv/experiment_outcomes.csv",
+      "actual": "b53a4527354325f3d1cb1df973c8cca4339c662cd4efca6fb6230096619a4df1",
+      "expected": "b53a4527354325f3d1cb1df973c8cca4339c662cd4efca6fb6230096619a4df1",
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "preservation.sha256.e-book/virtual-data/v01/data/csv/experiments.csv",
+      "actual": "f162fb76beb785317dc281ff38237c54ae557134d815f88ecdcaec687c1a1782",
+      "expected": "f162fb76beb785317dc281ff38237c54ae557134d815f88ecdcaec687c1a1782",
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "preservation.sha256.e-book/virtual-data/v01/data/csv/journey_events.csv",
+      "actual": "e1c5953ec10f381caa7bc3621903693832b458a97e39dad5b0070ae073d2593d",
+      "expected": "e1c5953ec10f381caa7bc3621903693832b458a97e39dad5b0070ae073d2593d",
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "preservation.sha256.e-book/virtual-data/v01/data/csv/messages.csv",
+      "actual": "ddf2e770e9dceaea090c3af9433021c98cf5487e0c253d7616e4f5da88092c68",
+      "expected": "ddf2e770e9dceaea090c3af9433021c98cf5487e0c253d7616e4f5da88092c68",
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "preservation.sha256.e-book/virtual-data/v01/data/csv/vehicle_models.csv",
+      "actual": "46a07c465171749f0d40b84316600c335302965b3592b5b95c49a551245ea1b6",
+      "expected": "46a07c465171749f0d40b84316600c335302965b3592b5b95c49a551245ea1b6",
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "preservation.sha256.e-book/virtual-data/v02/01_baseline/data/csv/assignments.csv",
+      "actual": "6f7dd96fe1e7428557104831561e272bdbae8381fa145e5c9c09d9b040a7ff60",
+      "expected": "6f7dd96fe1e7428557104831561e272bdbae8381fa145e5c9c09d9b040a7ff60",
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "preservation.sha256.e-book/virtual-data/v02/01_baseline/data/csv/company.csv",
+      "actual": "e6224f8367daa5d089db49b594f38a8e54d2c5ef45576e88ce5826726444a58b",
+      "expected": "e6224f8367daa5d089db49b594f38a8e54d2c5ef45576e88ce5826726444a58b",
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "preservation.sha256.e-book/virtual-data/v02/01_baseline/data/csv/cost_assumptions.csv",
+      "actual": "b366a213558ab479cf758899e7662d9d35d919d5790f6288bd05e1658682b683",
+      "expected": "b366a213558ab479cf758899e7662d9d35d919d5790f6288bd05e1658682b683",
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "preservation.sha256.e-book/virtual-data/v02/01_baseline/data/csv/customers.csv",
+      "actual": "23bac95b8e757c39ee0d91921d2bdbbfae73c0b8675923c15ab15816d60e8d94",
+      "expected": "23bac95b8e757c39ee0d91921d2bdbbfae73c0b8675923c15ab15816d60e8d94",
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "preservation.sha256.e-book/virtual-data/v02/01_baseline/data/csv/dealerships.csv",
+      "actual": "a29826633535947b19f931802f65210e2b34cfaebbaa29cd8630e10f9f58a711",
+      "expected": "a29826633535947b19f931802f65210e2b34cfaebbaa29cd8630e10f9f58a711",
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "preservation.sha256.e-book/virtual-data/v02/01_baseline/data/csv/experiment_outcomes.csv",
+      "actual": "b53a4527354325f3d1cb1df973c8cca4339c662cd4efca6fb6230096619a4df1",
+      "expected": "b53a4527354325f3d1cb1df973c8cca4339c662cd4efca6fb6230096619a4df1",
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "preservation.sha256.e-book/virtual-data/v02/01_baseline/data/csv/experiments.csv",
+      "actual": "f162fb76beb785317dc281ff38237c54ae557134d815f88ecdcaec687c1a1782",
+      "expected": "f162fb76beb785317dc281ff38237c54ae557134d815f88ecdcaec687c1a1782",
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "preservation.sha256.e-book/virtual-data/v02/01_baseline/data/csv/journey_events.csv",
+      "actual": "e1c5953ec10f381caa7bc3621903693832b458a97e39dad5b0070ae073d2593d",
+      "expected": "e1c5953ec10f381caa7bc3621903693832b458a97e39dad5b0070ae073d2593d",
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "preservation.sha256.e-book/virtual-data/v02/01_baseline/data/csv/messages.csv",
+      "actual": "ddf2e770e9dceaea090c3af9433021c98cf5487e0c253d7616e4f5da88092c68",
+      "expected": "ddf2e770e9dceaea090c3af9433021c98cf5487e0c253d7616e4f5da88092c68",
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "preservation.sha256.e-book/virtual-data/v02/01_baseline/data/csv/vehicle_models.csv",
+      "actual": "46a07c465171749f0d40b84316600c335302965b3592b5b95c49a551245ea1b6",
+      "expected": "46a07c465171749f0d40b84316600c335302965b3592b5b95c49a551245ea1b6",
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "preservation.sha256.e-book/virtual-data/v02/02_null/data/csv/assignments.csv",
+      "actual": "f6a8e03020cb31362331c0980b7084c395408e6730df147c2b607041d82e027e",
+      "expected": "f6a8e03020cb31362331c0980b7084c395408e6730df147c2b607041d82e027e",
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "preservation.sha256.e-book/virtual-data/v02/02_null/data/csv/company.csv",
+      "actual": "e6224f8367daa5d089db49b594f38a8e54d2c5ef45576e88ce5826726444a58b",
+      "expected": "e6224f8367daa5d089db49b594f38a8e54d2c5ef45576e88ce5826726444a58b",
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "preservation.sha256.e-book/virtual-data/v02/02_null/data/csv/cost_assumptions.csv",
+      "actual": "b366a213558ab479cf758899e7662d9d35d919d5790f6288bd05e1658682b683",
+      "expected": "b366a213558ab479cf758899e7662d9d35d919d5790f6288bd05e1658682b683",
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "preservation.sha256.e-book/virtual-data/v02/02_null/data/csv/customers.csv",
+      "actual": "933936092648e9e042197f5a7cb83c95c2212b478652e14d072cafc2aedb3b30",
+      "expected": "933936092648e9e042197f5a7cb83c95c2212b478652e14d072cafc2aedb3b30",
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "preservation.sha256.e-book/virtual-data/v02/02_null/data/csv/dealerships.csv",
+      "actual": "a29826633535947b19f931802f65210e2b34cfaebbaa29cd8630e10f9f58a711",
+      "expected": "a29826633535947b19f931802f65210e2b34cfaebbaa29cd8630e10f9f58a711",
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "preservation.sha256.e-book/virtual-data/v02/02_null/data/csv/experiment_outcomes.csv",
+      "actual": "a36ef82e3338c2f2eea4084abba1acf544b561ad73689250f86e2d134d7c04a3",
+      "expected": "a36ef82e3338c2f2eea4084abba1acf544b561ad73689250f86e2d134d7c04a3",
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "preservation.sha256.e-book/virtual-data/v02/02_null/data/csv/experiments.csv",
+      "actual": "f162fb76beb785317dc281ff38237c54ae557134d815f88ecdcaec687c1a1782",
+      "expected": "f162fb76beb785317dc281ff38237c54ae557134d815f88ecdcaec687c1a1782",
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "preservation.sha256.e-book/virtual-data/v02/02_null/data/csv/journey_events.csv",
+      "actual": "277ee95816abdfef226b3097b0167593f68efed6a859d018a4b7d9afbb117a42",
+      "expected": "277ee95816abdfef226b3097b0167593f68efed6a859d018a4b7d9afbb117a42",
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "preservation.sha256.e-book/virtual-data/v02/02_null/data/csv/messages.csv",
+      "actual": "9408ed8a1fd20abe91b448e767166e93a4ea2fccc0be5b9df3d2721e9e022701",
+      "expected": "9408ed8a1fd20abe91b448e767166e93a4ea2fccc0be5b9df3d2721e9e022701",
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "preservation.sha256.e-book/virtual-data/v02/02_null/data/csv/vehicle_models.csv",
+      "actual": "46a07c465171749f0d40b84316600c335302965b3592b5b95c49a551245ea1b6",
+      "expected": "46a07c465171749f0d40b84316600c335302965b3592b5b95c49a551245ea1b6",
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "preservation.sha256.e-book/virtual-data/v02/03_srm/data/csv/assignments.csv",
+      "actual": "08b7273f6b9c8d3ade4aa7118226b3ddf23b6525d2b9cbe6b35b6cf4657ab8c2",
+      "expected": "08b7273f6b9c8d3ade4aa7118226b3ddf23b6525d2b9cbe6b35b6cf4657ab8c2",
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "preservation.sha256.e-book/virtual-data/v02/03_srm/data/csv/company.csv",
+      "actual": "e6224f8367daa5d089db49b594f38a8e54d2c5ef45576e88ce5826726444a58b",
+      "expected": "e6224f8367daa5d089db49b594f38a8e54d2c5ef45576e88ce5826726444a58b",
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "preservation.sha256.e-book/virtual-data/v02/03_srm/data/csv/cost_assumptions.csv",
+      "actual": "b366a213558ab479cf758899e7662d9d35d919d5790f6288bd05e1658682b683",
+      "expected": "b366a213558ab479cf758899e7662d9d35d919d5790f6288bd05e1658682b683",
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "preservation.sha256.e-book/virtual-data/v02/03_srm/data/csv/customers.csv",
+      "actual": "23bac95b8e757c39ee0d91921d2bdbbfae73c0b8675923c15ab15816d60e8d94",
+      "expected": "23bac95b8e757c39ee0d91921d2bdbbfae73c0b8675923c15ab15816d60e8d94",
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "preservation.sha256.e-book/virtual-data/v02/03_srm/data/csv/dealerships.csv",
+      "actual": "a29826633535947b19f931802f65210e2b34cfaebbaa29cd8630e10f9f58a711",
+      "expected": "a29826633535947b19f931802f65210e2b34cfaebbaa29cd8630e10f9f58a711",
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "preservation.sha256.e-book/virtual-data/v02/03_srm/data/csv/experiment_outcomes.csv",
+      "actual": "d62802687de6ab61a0d0edc54d5d3855ad8cbfb703fe422a1b285a89f5962a2f",
+      "expected": "d62802687de6ab61a0d0edc54d5d3855ad8cbfb703fe422a1b285a89f5962a2f",
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "preservation.sha256.e-book/virtual-data/v02/03_srm/data/csv/experiments.csv",
+      "actual": "f162fb76beb785317dc281ff38237c54ae557134d815f88ecdcaec687c1a1782",
+      "expected": "f162fb76beb785317dc281ff38237c54ae557134d815f88ecdcaec687c1a1782",
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "preservation.sha256.e-book/virtual-data/v02/03_srm/data/csv/journey_events.csv",
+      "actual": "e1c5953ec10f381caa7bc3621903693832b458a97e39dad5b0070ae073d2593d",
+      "expected": "e1c5953ec10f381caa7bc3621903693832b458a97e39dad5b0070ae073d2593d",
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "preservation.sha256.e-book/virtual-data/v02/03_srm/data/csv/messages.csv",
+      "actual": "ddf2e770e9dceaea090c3af9433021c98cf5487e0c253d7616e4f5da88092c68",
+      "expected": "ddf2e770e9dceaea090c3af9433021c98cf5487e0c253d7616e4f5da88092c68",
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "preservation.sha256.e-book/virtual-data/v02/03_srm/data/csv/vehicle_models.csv",
+      "actual": "46a07c465171749f0d40b84316600c335302965b3592b5b95c49a551245ea1b6",
+      "expected": "46a07c465171749f0d40b84316600c335302965b3592b5b95c49a551245ea1b6",
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "preservation.sha256.e-book/virtual-data/v02/04_missing/data/csv/assignments.csv",
+      "actual": "6f7dd96fe1e7428557104831561e272bdbae8381fa145e5c9c09d9b040a7ff60",
+      "expected": "6f7dd96fe1e7428557104831561e272bdbae8381fa145e5c9c09d9b040a7ff60",
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "preservation.sha256.e-book/virtual-data/v02/04_missing/data/csv/company.csv",
+      "actual": "e6224f8367daa5d089db49b594f38a8e54d2c5ef45576e88ce5826726444a58b",
+      "expected": "e6224f8367daa5d089db49b594f38a8e54d2c5ef45576e88ce5826726444a58b",
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "preservation.sha256.e-book/virtual-data/v02/04_missing/data/csv/cost_assumptions.csv",
+      "actual": "b366a213558ab479cf758899e7662d9d35d919d5790f6288bd05e1658682b683",
+      "expected": "b366a213558ab479cf758899e7662d9d35d919d5790f6288bd05e1658682b683",
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "preservation.sha256.e-book/virtual-data/v02/04_missing/data/csv/customers.csv",
+      "actual": "23bac95b8e757c39ee0d91921d2bdbbfae73c0b8675923c15ab15816d60e8d94",
+      "expected": "23bac95b8e757c39ee0d91921d2bdbbfae73c0b8675923c15ab15816d60e8d94",
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "preservation.sha256.e-book/virtual-data/v02/04_missing/data/csv/dealerships.csv",
+      "actual": "a29826633535947b19f931802f65210e2b34cfaebbaa29cd8630e10f9f58a711",
+      "expected": "a29826633535947b19f931802f65210e2b34cfaebbaa29cd8630e10f9f58a711",
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "preservation.sha256.e-book/virtual-data/v02/04_missing/data/csv/experiment_outcomes.csv",
+      "actual": "9b42df4e7373b36ba7313e88c56c103e8b2c8bef74c9c26d6dc502902ef707c6",
+      "expected": "9b42df4e7373b36ba7313e88c56c103e8b2c8bef74c9c26d6dc502902ef707c6",
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "preservation.sha256.e-book/virtual-data/v02/04_missing/data/csv/experiments.csv",
+      "actual": "f162fb76beb785317dc281ff38237c54ae557134d815f88ecdcaec687c1a1782",
+      "expected": "f162fb76beb785317dc281ff38237c54ae557134d815f88ecdcaec687c1a1782",
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "preservation.sha256.e-book/virtual-data/v02/04_missing/data/csv/journey_events.csv",
+      "actual": "f409aa4b26f1f94cfeac30d7eac1384fc0b01da897d014d27e192b55a600862f",
+      "expected": "f409aa4b26f1f94cfeac30d7eac1384fc0b01da897d014d27e192b55a600862f",
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "preservation.sha256.e-book/virtual-data/v02/04_missing/data/csv/messages.csv",
+      "actual": "ddf2e770e9dceaea090c3af9433021c98cf5487e0c253d7616e4f5da88092c68",
+      "expected": "ddf2e770e9dceaea090c3af9433021c98cf5487e0c253d7616e4f5da88092c68",
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "preservation.sha256.e-book/virtual-data/v02/04_missing/data/csv/vehicle_models.csv",
+      "actual": "46a07c465171749f0d40b84316600c335302965b3592b5b95c49a551245ea1b6",
+      "expected": "46a07c465171749f0d40b84316600c335302965b3592b5b95c49a551245ea1b6",
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "preservation.sha256.e-book/virtual-data/v02/instructor/baseline_reference_outcomes.csv",
+      "actual": "b53a4527354325f3d1cb1df973c8cca4339c662cd4efca6fb6230096619a4df1",
+      "expected": "b53a4527354325f3d1cb1df973c8cca4339c662cd4efca6fb6230096619a4df1",
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "preservation.sha256.e-book/virtual-data/v03/data/csv/assignments.csv",
+      "actual": "f8f0c6fded449c7bbafbbca9408b6e260eedd3fe5420a4f43a5774be7d60ec12",
+      "expected": "f8f0c6fded449c7bbafbbca9408b6e260eedd3fe5420a4f43a5774be7d60ec12",
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "preservation.sha256.e-book/virtual-data/v03/data/csv/contracts.csv",
+      "actual": "6781e348fbf6043a33fb8fea1600220323bf51b807d9a7508aa0be28805bace1",
+      "expected": "6781e348fbf6043a33fb8fea1600220323bf51b807d9a7508aa0be28805bace1",
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "preservation.sha256.e-book/virtual-data/v03/data/csv/customers.csv",
+      "actual": "13041ca056b26920bf03bf27114ed4e1fc0988f759182188da37cd0dcbfa556d",
+      "expected": "13041ca056b26920bf03bf27114ed4e1fc0988f759182188da37cd0dcbfa556d",
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "preservation.sha256.e-book/virtual-data/v03/data/csv/early_snapshot_day28.csv",
+      "actual": "abac888226efeb2395f6866a522d0189446c0526625b5cab51f7a6076618610d",
+      "expected": "abac888226efeb2395f6866a522d0189446c0526625b5cab51f7a6076618610d",
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "preservation.sha256.e-book/virtual-data/v03/data/csv/events.csv",
+      "actual": "4d2e9bc19762a5b88f7070b4113f9909af620f2db074de4e225b9e51110431a4",
+      "expected": "4d2e9bc19762a5b88f7070b4113f9909af620f2db074de4e225b9e51110431a4",
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "preservation.sha256.e-book/virtual-data/v03/data/csv/external_sources.csv",
+      "actual": "c78d37a8f0282fc403c92f3851e4f67fe23b2fda67843f8332fb0927f5450b99",
+      "expected": "c78d37a8f0282fc403c92f3851e4f67fe23b2fda67843f8332fb0927f5450b99",
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "preservation.sha256.e-book/virtual-data/v03/data/csv/generation_manifest.csv",
+      "actual": "fdd12e2b24d24c359917c3b6d643660f18350c05fa108f54d6a8fbbe58507d3e",
+      "expected": "fdd12e2b24d24c359917c3b6d643660f18350c05fa108f54d6a8fbbe58507d3e",
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "preservation.sha256.e-book/virtual-data/v03/data/csv/messages.csv",
+      "actual": "f8817122fc8639f349415c5fb5f646ede728cac6dc2138abe39c97fed40579fc",
+      "expected": "f8817122fc8639f349415c5fb5f646ede728cac6dc2138abe39c97fed40579fc",
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "preservation.sha256.e-book/virtual-data/v03/data/csv/outcomes.csv",
+      "actual": "28cdd4ea7e60211a8de58516f95de71e48dda72ff5ad8aca60fd69191ba970a7",
+      "expected": "28cdd4ea7e60211a8de58516f95de71e48dda72ff5ad8aca60fd69191ba970a7",
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "preservation.sha256.e-book/virtual-data/v03/experiment_plan.json",
+      "actual": "4bcd06f0b5f6a8259f27022f3df8db6285d141091c984f3ee7581044f7e86a56",
+      "expected": "4bcd06f0b5f6a8259f27022f3df8db6285d141091c984f3ee7581044f7e86a56",
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "preservation.sha256.e-book/virtual-data/v03/metric_readiness.csv",
+      "actual": "0d6f04f6c3072c191847a7a2adcd9ed0bce855670f4e6942e36512c6bb8a0954",
+      "expected": "0d6f04f6c3072c191847a7a2adcd9ed0bce855670f4e6942e36512c6bb8a0954",
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "preservation.sha256.e-book/virtual-data/v03/sample_size_grid.csv",
+      "actual": "acd71e002b5cc0778a685e9cd601f44b4551b0813fc16afafd071dcf3e6f0011",
+      "expected": "acd71e002b5cc0778a685e9cd601f44b4551b0813fc16afafd071dcf3e6f0011",
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "preservation.sha256.e-book/workflow/case_catalog_v01.csv",
+      "actual": "31ae1b1a4d8e5f5e96ef1daf4c2a8b9dcb7b067f2be74f0b73c309b93a8700d7",
+      "expected": "31ae1b1a4d8e5f5e96ef1daf4c2a8b9dcb7b067f2be74f0b73c309b93a8700d7",
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "preservation.sha256.scripts/build_winner_scenarios_v04.py",
+      "actual": "dca0b16c937f5ff9d5121e13b5b2ce50c96f74c7913c079b3fbb45227dc07576",
+      "expected": "dca0b16c937f5ff9d5121e13b5b2ce50c96f74c7913c079b3fbb45227dc07576",
+      "tolerance": 0,
+      "status": "passed"
+    },
+    {
+      "id": "preservation.sha256.scripts/plan_oem_v03.py",
+      "actual": "0bb4a4ef749635a42b35d2e8b9bff6ea3a52d51097f6ad60cf2dc22bd4e0c14c",
+      "expected": "0bb4a4ef749635a42b35d2e8b9bff6ea3a52d51097f6ad60cf2dc22bd4e0c14c",
+      "tolerance": 0,
+      "status": "passed"
+    }
+  ]
+}

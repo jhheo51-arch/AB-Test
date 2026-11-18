@@ -1,0 +1,2 @@
+# Preserve exact bytes of this audit's outputs and runnable checks.
+** -text whitespace=cr-at-eol

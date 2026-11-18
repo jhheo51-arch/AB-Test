@@ -1,0 +1,636 @@
+{
+  "kind": "AI and separately implemented numerical audit, not human review",
+  "checked_at_seoul": "2026-11-18T16:52:18.677093+09:00",
+  "environment": {
+    "python": "3.12.16",
+    "scipy": "1.18.1",
+    "statsmodels": "0.15.0"
+  },
+  "input_hashes": {
+    "e-book/exports/v12/counterexample_fixture.json": "25ad0b1354227b8b9049c43a9c3cbb19aaf96eeb9193d81984a632d1379a560a",
+    "e-book/exports/v12/COUNTEREXAMPLE_RESULTS.json": "674f97af74941ea1ffb6ce74253e63acebdb8278e4f6ac1dc6fee96456a74260"
+  },
+  "method": "Direct Wilson-Newcombe construction; constrained-binomial likelihood score under fixed risk difference with MN finite-sample correction; one-sided upper bound obtained by root inversion; separate statsmodels checks",
+  "cases": [
+    {
+      "id": "P01",
+      "difference_pp": 3.0,
+      "performance_interval_pp": [
+        1.7506693946442344,
+        4.250830785215367
+      ],
+      "alpha_per_population": 0.05,
+      "guard_difference_pp": -0.10000000000000009,
+      "guard_one_sided_upper_pp": 0.2221384060706597,
+      "guard_NI_p": 0.0014286734833197155,
+      "guard_pass": true,
+      "state": "execution_candidate",
+      "actual_approval": "not_performed"
+    },
+    {
+      "id": "P02",
+      "difference_pp": 5.0,
+      "performance_interval_pp": [
+        3.4694559424744233,
+        6.536577040300292
+      ],
+      "alpha_per_population": 0.025,
+      "guard_difference_pp": -0.10000000000000009,
+      "guard_one_sided_upper_pp": 0.33304216754568544,
+      "guard_NI_p": 0.0038179556863987083,
+      "guard_pass": true,
+      "state": "execution_candidate",
+      "actual_approval": "not_performed",
+      "other_group": {
+        "id": "P02_other",
+        "difference_pp": 0.0,
+        "performance_interval_pp": [
+          -2.2958617274671864,
+          2.2958617274671864
+        ],
+        "alpha_per_population": 0.025,
+        "guard_difference_pp": -0.10000000000000009,
+        "guard_one_sided_upper_pp": 0.33304216754568544,
+        "guard_NI_p": 0.0038179556863987083,
+        "guard_pass": true,
+        "state": "additional_evidence",
+        "actual_approval": "not_performed"
+      }
+    },
+    {
+      "id": "P03",
+      "difference_pp": 0.7999999999999994,
+      "performance_interval_pp": [
+        -0.3972866907096891,
+        1.997876993802835
+      ],
+      "alpha_per_population": 0.05,
+      "guard_difference_pp": -0.10000000000000009,
+      "guard_one_sided_upper_pp": 0.2221384060706597,
+      "guard_NI_p": 0.0014286734833197155,
+      "guard_pass": true,
+      "state": "additional_evidence",
+      "actual_approval": "not_performed"
+    },
+    {
+      "id": "P04",
+      "difference_pp": 3.0,
+      "performance_interval_pp": [
+        1.7506693946442344,
+        4.250830785215367
+      ],
+      "alpha_per_population": 0.05,
+      "guard_difference_pp": 1.2,
+      "guard_one_sided_upper_pp": 1.6244492304369043,
+      "guard_NI_p": 0.997737125637881,
+      "guard_pass": false,
+      "state": "protection_review",
+      "actual_approval": "not_performed"
+    }
+  ],
+  "checks": [
+    {
+      "check": "P01/manual_newcombe_vs_library/0",
+      "actual": 0.017506693946442345,
+      "expected": 0.017506693946442345,
+      "absolute_tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "check": "P01/manual_newcombe_vs_library/1",
+      "actual": 0.04250830785215367,
+      "expected": 0.04250830785215367,
+      "absolute_tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "check": "P01/manual_constrained_score_z",
+      "actual": -2.9826820097433795,
+      "expected": -2.9839559836218776,
+      "absolute_tolerance": 1e-08,
+      "status": "mismatch"
+    },
+    {
+      "check": "P01/manual_score_p",
+      "actual": 0.0014286734833197155,
+      "expected": 0.001422738511882476,
+      "absolute_tolerance": 1e-09,
+      "status": "mismatch"
+    },
+    {
+      "check": "P01/manual_score_upper_vs_library",
+      "actual": 0.002221384060706597,
+      "expected": 0.0022210230805797507,
+      "absolute_tolerance": 2e-08,
+      "status": "mismatch"
+    },
+    {
+      "check": "P01/declared_expected_state",
+      "actual": "execution_candidate",
+      "expected": "execution_candidate",
+      "absolute_tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "P02/manual_newcombe_vs_library/0",
+      "actual": 0.03469455942474423,
+      "expected": 0.03469455942474423,
+      "absolute_tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "check": "P02/manual_newcombe_vs_library/1",
+      "actual": 0.06536577040300293,
+      "expected": 0.06536577040300293,
+      "absolute_tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "check": "P02/manual_constrained_score_z",
+      "actual": -2.667758540678571,
+      "expected": -2.6688980033111487,
+      "absolute_tolerance": 1e-08,
+      "status": "mismatch"
+    },
+    {
+      "check": "P02/manual_score_p",
+      "actual": 0.0038179556863987083,
+      "expected": 0.003805027809629604,
+      "absolute_tolerance": 1e-09,
+      "status": "mismatch"
+    },
+    {
+      "check": "P02/manual_score_upper_vs_library",
+      "actual": 0.0033304216754568546,
+      "expected": 0.0033294154701538478,
+      "absolute_tolerance": 2e-08,
+      "status": "mismatch"
+    },
+    {
+      "check": "P02/declared_expected_state",
+      "actual": "execution_candidate",
+      "expected": "execution_candidate",
+      "absolute_tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "P02_other/manual_newcombe_vs_library/0",
+      "actual": -0.022958617274671866,
+      "expected": -0.022958617274671866,
+      "absolute_tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "check": "P02_other/manual_newcombe_vs_library/1",
+      "actual": 0.022958617274671866,
+      "expected": 0.022958617274671866,
+      "absolute_tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "check": "P02_other/manual_constrained_score_z",
+      "actual": -2.667758540678571,
+      "expected": -2.6688980033111487,
+      "absolute_tolerance": 1e-08,
+      "status": "mismatch"
+    },
+    {
+      "check": "P02_other/manual_score_p",
+      "actual": 0.0038179556863987083,
+      "expected": 0.003805027809629604,
+      "absolute_tolerance": 1e-09,
+      "status": "mismatch"
+    },
+    {
+      "check": "P02_other/manual_score_upper_vs_library",
+      "actual": 0.0033304216754568546,
+      "expected": 0.0033294154701538478,
+      "absolute_tolerance": 2e-08,
+      "status": "mismatch"
+    },
+    {
+      "check": "P03/manual_newcombe_vs_library/0",
+      "actual": -0.003972866907096891,
+      "expected": -0.003972866907096893,
+      "absolute_tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "check": "P03/manual_newcombe_vs_library/1",
+      "actual": 0.01997876993802835,
+      "expected": 0.01997876993802835,
+      "absolute_tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "check": "P03/manual_constrained_score_z",
+      "actual": -2.9826820097433795,
+      "expected": -2.9839559836218776,
+      "absolute_tolerance": 1e-08,
+      "status": "mismatch"
+    },
+    {
+      "check": "P03/manual_score_p",
+      "actual": 0.0014286734833197155,
+      "expected": 0.001422738511882476,
+      "absolute_tolerance": 1e-09,
+      "status": "mismatch"
+    },
+    {
+      "check": "P03/manual_score_upper_vs_library",
+      "actual": 0.002221384060706597,
+      "expected": 0.0022210230805797507,
+      "absolute_tolerance": 2e-08,
+      "status": "mismatch"
+    },
+    {
+      "check": "P03/declared_expected_state",
+      "actual": "additional_evidence",
+      "expected": "additional_evidence",
+      "absolute_tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "P04/manual_newcombe_vs_library/0",
+      "actual": 0.017506693946442345,
+      "expected": 0.017506693946442345,
+      "absolute_tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "check": "P04/manual_newcombe_vs_library/1",
+      "actual": 0.04250830785215367,
+      "expected": 0.04250830785215367,
+      "absolute_tolerance": 1e-12,
+      "status": "passed"
+    },
+    {
+      "check": "P04/manual_constrained_score_z",
+      "actual": 2.838983569286052,
+      "expected": 2.8399742992948958,
+      "absolute_tolerance": 1e-08,
+      "status": "mismatch"
+    },
+    {
+      "check": "P04/manual_score_p",
+      "actual": 0.997737125637881,
+      "expected": 0.9977441415694438,
+      "absolute_tolerance": 1e-09,
+      "status": "mismatch"
+    },
+    {
+      "check": "P04/manual_score_upper_vs_library",
+      "actual": 0.016244492304369043,
+      "expected": 0.01623614475045274,
+      "absolute_tolerance": 2e-08,
+      "status": "mismatch"
+    },
+    {
+      "check": "P04/declared_expected_state",
+      "actual": "protection_review",
+      "expected": "protection_review",
+      "absolute_tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "P01/reference/difference_pp",
+      "actual": 3.0,
+      "expected": 3.0,
+      "absolute_tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "P01/reference/guard_difference_pp",
+      "actual": -0.10000000000000009,
+      "expected": -0.10000000000000009,
+      "absolute_tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "P01/reference/guard_one_sided_upper_pp",
+      "actual": 0.2221384060706597,
+      "expected": 0.22210230805797507,
+      "absolute_tolerance": 2e-06,
+      "status": "mismatch"
+    },
+    {
+      "check": "P01/reference/guard_NI_p",
+      "actual": 0.0014286734833197155,
+      "expected": 0.001422738511882476,
+      "absolute_tolerance": 1e-08,
+      "status": "mismatch"
+    },
+    {
+      "check": "P01/reference/guard_pass",
+      "actual": true,
+      "expected": true,
+      "absolute_tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "P01/reference/state",
+      "actual": "execution_candidate",
+      "expected": "execution_candidate",
+      "absolute_tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "P01/reference/actual_approval",
+      "actual": "not_performed",
+      "expected": "not_performed",
+      "absolute_tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "P01/reference/performance_interval_pp/0",
+      "actual": 1.7506693946442344,
+      "expected": 1.7506693946442344,
+      "absolute_tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "P01/reference/performance_interval_pp/1",
+      "actual": 4.250830785215367,
+      "expected": 4.250830785215367,
+      "absolute_tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "P02/reference/difference_pp",
+      "actual": 5.0,
+      "expected": 5.0,
+      "absolute_tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "P02/reference/guard_difference_pp",
+      "actual": -0.10000000000000009,
+      "expected": -0.10000000000000009,
+      "absolute_tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "P02/reference/guard_one_sided_upper_pp",
+      "actual": 0.33304216754568544,
+      "expected": 0.33294154701538475,
+      "absolute_tolerance": 2e-06,
+      "status": "mismatch"
+    },
+    {
+      "check": "P02/reference/guard_NI_p",
+      "actual": 0.0038179556863987083,
+      "expected": 0.003805027809629604,
+      "absolute_tolerance": 1e-08,
+      "status": "mismatch"
+    },
+    {
+      "check": "P02/reference/guard_pass",
+      "actual": true,
+      "expected": true,
+      "absolute_tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "P02/reference/state",
+      "actual": "execution_candidate",
+      "expected": "execution_candidate",
+      "absolute_tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "P02/reference/actual_approval",
+      "actual": "not_performed",
+      "expected": "not_performed",
+      "absolute_tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "P02/reference/performance_interval_pp/0",
+      "actual": 3.4694559424744233,
+      "expected": 3.4694559424744233,
+      "absolute_tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "P02/reference/performance_interval_pp/1",
+      "actual": 6.536577040300292,
+      "expected": 6.536577040300292,
+      "absolute_tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "P02_other/reference/difference_pp",
+      "actual": 0.0,
+      "expected": 0.0,
+      "absolute_tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "P02_other/reference/guard_difference_pp",
+      "actual": -0.10000000000000009,
+      "expected": -0.10000000000000009,
+      "absolute_tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "P02_other/reference/guard_one_sided_upper_pp",
+      "actual": 0.33304216754568544,
+      "expected": 0.33294154701538475,
+      "absolute_tolerance": 2e-06,
+      "status": "mismatch"
+    },
+    {
+      "check": "P02_other/reference/guard_NI_p",
+      "actual": 0.0038179556863987083,
+      "expected": 0.003805027809629604,
+      "absolute_tolerance": 1e-08,
+      "status": "mismatch"
+    },
+    {
+      "check": "P02_other/reference/guard_pass",
+      "actual": true,
+      "expected": true,
+      "absolute_tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "P02_other/reference/state",
+      "actual": "additional_evidence",
+      "expected": "additional_evidence",
+      "absolute_tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "P02_other/reference/actual_approval",
+      "actual": "not_performed",
+      "expected": "not_performed",
+      "absolute_tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "P02_other/reference/performance_interval_pp/0",
+      "actual": -2.2958617274671864,
+      "expected": -2.2958617274671864,
+      "absolute_tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "P02_other/reference/performance_interval_pp/1",
+      "actual": 2.2958617274671864,
+      "expected": 2.2958617274671864,
+      "absolute_tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "P03/reference/difference_pp",
+      "actual": 0.7999999999999994,
+      "expected": 0.7999999999999994,
+      "absolute_tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "P03/reference/guard_difference_pp",
+      "actual": -0.10000000000000009,
+      "expected": -0.10000000000000009,
+      "absolute_tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "P03/reference/guard_one_sided_upper_pp",
+      "actual": 0.2221384060706597,
+      "expected": 0.22210230805797507,
+      "absolute_tolerance": 2e-06,
+      "status": "mismatch"
+    },
+    {
+      "check": "P03/reference/guard_NI_p",
+      "actual": 0.0014286734833197155,
+      "expected": 0.001422738511882476,
+      "absolute_tolerance": 1e-08,
+      "status": "mismatch"
+    },
+    {
+      "check": "P03/reference/guard_pass",
+      "actual": true,
+      "expected": true,
+      "absolute_tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "P03/reference/state",
+      "actual": "additional_evidence",
+      "expected": "additional_evidence",
+      "absolute_tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "P03/reference/actual_approval",
+      "actual": "not_performed",
+      "expected": "not_performed",
+      "absolute_tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "P03/reference/performance_interval_pp/0",
+      "actual": -0.3972866907096891,
+      "expected": -0.39728669070968925,
+      "absolute_tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "P03/reference/performance_interval_pp/1",
+      "actual": 1.997876993802835,
+      "expected": 1.997876993802835,
+      "absolute_tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "P04/reference/difference_pp",
+      "actual": 3.0,
+      "expected": 3.0,
+      "absolute_tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "P04/reference/guard_difference_pp",
+      "actual": 1.2,
+      "expected": 1.2,
+      "absolute_tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "P04/reference/guard_one_sided_upper_pp",
+      "actual": 1.6244492304369043,
+      "expected": 1.623614475045274,
+      "absolute_tolerance": 2e-06,
+      "status": "mismatch"
+    },
+    {
+      "check": "P04/reference/guard_NI_p",
+      "actual": 0.997737125637881,
+      "expected": 0.9977441415694438,
+      "absolute_tolerance": 1e-08,
+      "status": "mismatch"
+    },
+    {
+      "check": "P04/reference/guard_pass",
+      "actual": false,
+      "expected": false,
+      "absolute_tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "P04/reference/state",
+      "actual": "protection_review",
+      "expected": "protection_review",
+      "absolute_tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "P04/reference/actual_approval",
+      "actual": "not_performed",
+      "expected": "not_performed",
+      "absolute_tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "P04/reference/performance_interval_pp/0",
+      "actual": 1.7506693946442344,
+      "expected": 1.7506693946442344,
+      "absolute_tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "P04/reference/performance_interval_pp/1",
+      "actual": 4.250830785215367,
+      "expected": 4.250830785215367,
+      "absolute_tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "input_unchanged/e-book/exports/v12/counterexample_fixture.json",
+      "actual": "25ad0b1354227b8b9049c43a9c3cbb19aaf96eeb9193d81984a632d1379a560a",
+      "expected": "25ad0b1354227b8b9049c43a9c3cbb19aaf96eeb9193d81984a632d1379a560a",
+      "absolute_tolerance": 1e-08,
+      "status": "passed"
+    },
+    {
+      "check": "input_unchanged/e-book/exports/v12/COUNTEREXAMPLE_RESULTS.json",
+      "actual": "674f97af74941ea1ffb6ce74253e63acebdb8278e4f6ac1dc6fee96456a74260",
+      "expected": "674f97af74941ea1ffb6ce74253e63acebdb8278e4f6ac1dc6fee96456a74260",
+      "absolute_tolerance": 1e-08,
+      "status": "passed"
+    }
+  ],
+  "summary": {
+    "total": 76,
+    "passed": 51,
+    "mismatch": 25
+  },
+  "limits": [
+    "Fixed educational counts only, no individual event database for these counterexamples",
+    "No human expert approval or production validation",
+    "No original builder imported, executed or reused",
+    "Missing-measurement and optional-survey states of the old user interface are not independently retested here"
+  ]
+}
