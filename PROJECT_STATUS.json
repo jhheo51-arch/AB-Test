@@ -1,10 +1,10 @@
 {
-  "checked_at_seoul": "2026-11-18T18:23:07.644640+09:00",
+  "checked_at_seoul": "2026-11-18T19:18:46.249979+09:00",
   "author": "허재혁",
   "project": "A/B Test",
   "repository": "https://github.com/jhheo51-arch/AB-Test",
   "latest_data_version": "v0.3 original preserved, v0.13 derived copy with corrected outcomes view, separate v0.4 teaching scenarios preserved",
-  "latest_complete_reader_bundle_version": "v0.14 scoped study integration reader; not full reproduction or approved publication",
+  "latest_complete_reader_bundle_version": "v0.15 portable developed reader, not full reproduction or approved publication",
   "counts_v03": {
     "customers": 120000,
     "assignments": 65559,
@@ -32,26 +32,27 @@
     "book_v11": 89,
     "book_v12": 87,
     "book_v13": 88,
-    "book_v14": 90
+    "book_v14": 90,
+    "book_v15": 93
   },
   "six_worked_case_start_pages": {
     "1": [
-      31
+      34
     ],
     "2": [
-      33
+      36
     ],
     "3": [
-      35
-    ],
-    "4": [
       38
     ],
-    "5": [
+    "4": [
       41
     ],
-    "6": [
+    "5": [
       44
+    ],
+    "6": [
+      47
     ]
   },
   "diagnostic_cards": 60,
@@ -117,7 +118,13 @@
     "integration_v14": "e-book/exports/v14/integration_validation_v14.json",
     "package_smoke_v14": "e-book/exports/v14/package_smoke_v14.json",
     "study_comparison_v14": "e-book/exports/v14/COMPARISON.md",
-    "study_coverage_v14": "e-book/exports/v14/COVERAGE_AFTER.json"
+    "study_coverage_v14": "e-book/exports/v14/COVERAGE_AFTER.json",
+    "book_v15": "e-book/exports/v15/ebook_review_v15.pdf",
+    "validation_v15": "e-book/exports/v15/validation_v15.json",
+    "integration_v15": "e-book/exports/v15/integration_validation_v15.json",
+    "package_smoke_v15": "e-book/exports/v15/package_smoke_v15.json",
+    "development_v15": "e-book/exports/v15/DEVELOPMENT.md",
+    "planning_example_v15": "e-book/analysis/development_v15/PLANNING_EXAMPLE.json"
   },
   "checks": [
     "required files exist",
@@ -152,7 +159,10 @@
     "v13 registered manuscript corrections only, old input hashes preserved and actual12pt reading probe",
     "v14 exact90-page PDF and41-file reading bundle hashes, source v13 preserved",
     "v14 sixteen concepts compared; eleven existing explanations retained and five linked explanations added",
-    "v14 original103 numeric checks, read-only SQL and disclosed analytic teaching examples; no new field experiment"
+    "v14 original103 numeric checks, read-only SQL and disclosed analytic teaching examples; no new field experiment",
+    "v15 exact PDF and reading archive hashes, original v14 and numeric inputs preserved",
+    "v15 existing103 numeric checks plus new planning power and MDE calculation comparisons",
+    "v15 design tables and complete developed paragraphs located in final PDF; not evidence of learning effectiveness"
   ],
   "not_repeated": [
     "statistical calculations/simulations in this inventory refresh; see actual analysis reports",
@@ -161,8 +171,8 @@
   ],
   "product_tool_status": "direction documents only, no implemented general analysis application",
   "publication_status": "not ready for sale; author/content/domain/reader/rights review pending",
-  "latest_reading_edition": "v0.14 supplied study-note gaps integrated into complete book; author review",
-  "main_book_path": "e-book/exports/v14/ebook_review_v14.pdf",
+  "latest_reading_edition": "v0.15 principles developed into design choices and decision records; author review",
+  "main_book_path": "e-book/exports/v15/ebook_review_v15.pdf",
   "previous_v04_case_pages": {
     "1": [
       24
@@ -186,7 +196,7 @@
   "methodology_chapter_start_pages": {
     "1": 6,
     "2": 14,
-    "3": 16,
+    "3": 17,
     "4": 18
   },
   "middle_dot_counts": {
@@ -197,30 +207,30 @@
     "U+22C5": 0,
     "U+30FB": 0
   },
-  "companion_scope": "Original v13 corrected numerical ledgers and six-field record retained byte-identically; comparison and read-scope records included",
+  "companion_scope": "Original six-field record and corrected statistics retained byte-identically; development note, planning illustration and three self-check questions included",
   "glossary_entries": 36,
   "method_title_proposal": "TRI-V as the author-proposed method; another brand is optional",
   "method_title_approval": "Clarified the method/operating-guide distinction in response to the author; no new Contextvia brand or final cover approval inferred",
   "all_chapter_start_pages": {
     "1": 6,
     "2": 14,
-    "3": 16,
+    "3": 17,
     "4": 18,
     "5": 20,
-    "6": 24,
-    "7": 31,
-    "8": 48,
-    "9": 52,
-    "10": 56,
-    "11": 61,
-    "12": 64
+    "6": 25,
+    "7": 34,
+    "8": 51,
+    "9": 55,
+    "10": 60,
+    "11": 64,
+    "12": 67
   },
   "same_A4_body_only_control_pages": {
     "v06": 48,
     "v12": 74
   },
   "persona_review_status": "AI simulated review, not interviews or sales validation",
-  "source_characters": 97285,
+  "source_characters": 101153,
   "cover_approval": "A selected as recommendation; author approval pending",
   "plan_identity": {
     "exact_bytes_match": false,
@@ -239,7 +249,7 @@
   "reader_test_protocol": "prepared, recruitment and conditions require approval",
   "reader_test_observation_rows": 0,
   "reader_test_preparation_checks": "fixture counts, rates/effects, CI/p recalculated and matched to participant and facilitator files; not learning outcomes",
-  "reader_test_source_edition": "Original preparation retains v08 PDF hash; v14 not automatically assigned to any actual reader test",
+  "reader_test_source_edition": "Original preparation retains v08 PDF hash; v15 self-check is not administration of the formal reader test",
   "operating_contract_page": 11,
   "english_name_candidates": {
     "previous_proposal": "Contexvia",
@@ -249,28 +259,28 @@
   },
   "three_operating_repairs": "integrated in the actual book, companion card and record; reader usability not yet tested",
   "reader_test_administration": "User will conduct the test; no independent recruitment or sharing authorized",
-  "later_publication_work": "Only supplied-note integration authorized; no new human review, external sharing or publication release",
+  "later_publication_work": "Bounded development only; no actual customer recruitment, send, external review or publication release",
   "new_explanation_pages": {
     "author_origin": 4,
     "operating_contract": 11,
-    "positive_cases": 50,
-    "scope": 61,
-    "chapter6": 24,
-    "chapter12": 64
+    "positive_cases": 53,
+    "scope": 64,
+    "chapter6": 25,
+    "chapter12": 67
   },
   "universal_applicability_claim": false,
   "historical_novelty_claim": false,
   "origin_scope": "Supplied draft already contains TRI-V; its first coinage is not established by the available excerpt",
   "minimum_record_fields": 6,
   "minimum_record_pdf_pages": 1,
-  "minimum_record_path": "e-book/exports/v14/MINIMUM_RECORD.html",
+  "minimum_record_path": "e-book/exports/v15/MINIMUM_RECORD.html",
   "counterexample_cases": 4,
-  "editorial_gate": "Bounded study-note integration applied to chapters2/6/9, original method axes and six fields preserved; final author and human technical review pending",
+  "editorial_gate": "Developed chapters2/6/9 design choices and decision writing; human technical and author review pending",
   "reader_bundle": {
-    "archive": "C:\\Users\\Administrator\\Downloads\\AB-Test-v07\\JH_CRM_ebook_reader_v14.zip",
-    "file_count": 41,
-    "bytes": 3526012,
-    "sha256": "b04a04ab9f79748d529b75453d61cfe8689943d3f283ec1fb2753ac8546aa278",
+    "archive": "C:\\Users\\Administrator\\Downloads\\AB-Test-v07\\JH_CRM_ebook_reader_v15.zip",
+    "file_count": 42,
+    "bytes": 3571542,
+    "sha256": "c7e4831576884bbc742bbcb9299ea87202e406adc5699f5019971bd09f01b53a",
     "integrity": "passed",
     "exact_entry_bytes": "passed",
     "extracted_book_and_minimum_record": "passed",
@@ -300,5 +310,27 @@
     "scope": "Full supplied pasted passage only; linked Notion body login blocked; Georgiev original chapter numbers not verified",
     "new_sequential_engine_implemented": false,
     "original_statistics_unchanged": true
+  },
+  "development_v15": {
+    "groups": 4,
+    "integration_checks_passed": 326,
+    "planning_example": {
+      "n_A": 10000,
+      "n_B": 10000,
+      "power_direct": 0.6742514668534754,
+      "power_library": 0.6742514668534754,
+      "power_display_percent": 67.4,
+      "required_n_each": 13495,
+      "required_n_total": 26990,
+      "additional_eligible_customers": 6990,
+      "mde_at_available_n": 0.011661930556866722,
+      "mde_display_pp": 1.17,
+      "mde_library": 0.01166193055686672
+    },
+    "historical_statistics_unchanged": true,
+    "new_experiment_conducted": false,
+    "sequential_engine_implemented": false,
+    "self_check_questions": 3,
+    "self_check_is_real_reader_test": false
   }
 }

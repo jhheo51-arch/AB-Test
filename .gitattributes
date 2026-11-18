@@ -24,3 +24,8 @@ e-book/exports/v14/assets/LICENSE-*.txt -text whitespace=-blank-at-eol,cr-at-eol
 e-book/analysis/study_integration_v14/** -text whitespace=cr-at-eol
 e-book/manuscript/study_integration_v14/** -text whitespace=cr-at-eol
 e-book/review/study_integration_v14/** -text whitespace=cr-at-eol
+# Preserve v15 reader and development evidence bytes.
+e-book/exports/v15/** -text whitespace=cr-at-eol
+e-book/exports/v15/assets/LICENSE-*.txt -text whitespace=-blank-at-eol,cr-at-eol
+e-book/analysis/development_v15/** -text whitespace=cr-at-eol
+e-book/manuscript/development_v15/** -text whitespace=cr-at-eol

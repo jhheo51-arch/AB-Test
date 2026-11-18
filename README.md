@@ -1,12 +1,13 @@
 # A/B Test
 
 ## 최신 통합 안내
+- **[v0.15 설계와 판단 보강 본책](e-book/exports/v15/ebook_review_v15.pdf)**: 93쪽. 기존 원리를 블록 배정 선택, 가용 고객 수에 따른 계획 계산과 선택, 종료 상황별 행동 및 실제 보고 문장으로 발전시켰습니다. [전후 보완과 실제 위치](e-book/exports/v15/DEVELOPMENT.md), [자기점검 세 질문](e-book/exports/v15/SELF_CHECK.md), [읽기 묶음](JH_CRM_ebook_reader_v15.zip)을 제공합니다. 새 숫자는 가상 후속 설계의 계획값이며 실제 모집과 실험 결과가 아닙니다. TRI-V의 세 축과 여섯 항목, 원자료와 이전 판은 보존했습니다.
 - **[v0.14 독서 가이드 통합 본책](e-book/exports/v14/ebook_review_v14.pdf)**: 90쪽. 붙여넣은 가이드의16개 개념을 대조해 이미 있던11개는 유지하고 연결 설명이 약했던5개를 기존 장에 보완했습니다. [있었던 내용과 부족했던 설명](e-book/exports/v14/COMPARISON.md), [읽기 묶음](JH_CRM_ebook_reader_v14.zip)을 제공합니다. 노션 직접 본문은 로그인으로 확인하지 못해 첨부 텍스트 전체로 범위를 한정했습니다. TRI-V의 세 축과 여섯 항목, 기존 통계 결과는 유지했으며 사람 검수와 출간 승인은 별개입니다.
 - **[v0.13 통계 보완 본책](e-book/exports/v13/ebook_review_v13.pdf)**: 88쪽. 검수에서 발견한 군별 검정력 대응, 비영 위험차 보호 score와 사건 시간 하한을 실제로 보완했습니다. [전후 수정과 재검사](e-book/design/v13/REVIEW.md), [읽기 묶음](JH_CRM_ebook_reader_v13.zip), [교정 데이터와 실행 경로](e-book/virtual-data/v13/README.md)를 제공합니다. 원자료와 계획 및 기존 장부와 지난 판, v0.12 감사는 보존했습니다. 사람 검수와 출간 승인은 별개이며 이번 보완 전달에서 멈춥니다.
 - **[v0.12 본책 교정 검토본](e-book/exports/v12/ebook_review_v12.pdf)**: 87쪽. 5장과6장,12장을 중심으로29개 문단을 실제 교정하고 계산에서 결정문으로 이어지는 연결을 정리했습니다. [편집 범위와 장별 학습 목표](e-book/design/v12/REVIEW.md), [다음 사람 통계 검수 요청서](e-book/review/statistical_v12/REVIEW_REQUEST.md)를 제공합니다. 세 축과 여섯 칸은 유지했으며 저자 표현 및 사람 검수는 승인 전입니다.
 - **[v0.11 본책 편집 검토본](e-book/exports/v11/ebook_review_v11.pdf)**: 89쪽. 세 축과 여섯 항목을 유지하고 저자 경험, 선택별 충분성, 실행 후보 반례와9장 및10장 윤문을 통합했습니다. [한 장 기록](e-book/exports/v11/MINIMUM_RECORD.pdf), [편집 가능한 양식](e-book/exports/v11/MINIMUM_RECORD.html), [개정 범위와 실제 쪽수](e-book/design/v11/REVIEW.md)를 제공합니다. PUB-02 첫 적용본이며 저자 및 사람 검수는 남습니다.
-- **[TRI-V 실전 정리 v0.3](e-book/review/methodology/tri_v_refinement_v03/README.md)**: 여섯 항목의 한 장 기록, 실행을 허용하는 반례와 필요한 추가 확인, 저자 제공 경험에서 추출한 검토 기준. 새 통계 이론이나 실제 시간 절감의 입증이 아니라 실무 보완편이며 당시 전체 본책 v0.10은 보존했고 이 보완 내용은 v0.11부터 통합했고 최신 읽기본은 v0.14입니다.
-- **[TRI-V 산출물 개정과 조건변형 시험 v0.2](e-book/review/methodology/tri_v_sharpening_v02/README.md)**: PDCA와 TRI-V는 A/B 판단 틀로 유지하고 병행 확장은 중단. TRI-V의 주장별 근거, 적용 경계, 결정 변경과 확인 중단 조건을 구체화합니다. 개발 규칙 검사이며 사람의 누락과 시간 감소는 미검증입니다. 원본 v0.10 전체 읽기본은 변경하지 않았으며 최신 통합본은 v0.14입니다.
+- **[TRI-V 실전 정리 v0.3](e-book/review/methodology/tri_v_refinement_v03/README.md)**: 여섯 항목의 한 장 기록, 실행을 허용하는 반례와 필요한 추가 확인, 저자 제공 경험에서 추출한 검토 기준. 새 통계 이론이나 실제 시간 절감의 입증이 아니라 실무 보완편이며 당시 전체 본책 v0.10은 보존했고 이 보완 내용은 v0.11부터 통합했고 최신 읽기본은 v0.15입니다.
+- **[TRI-V 산출물 개정과 조건변형 시험 v0.2](e-book/review/methodology/tri_v_sharpening_v02/README.md)**: PDCA와 TRI-V는 A/B 판단 틀로 유지하고 병행 확장은 중단. TRI-V의 주장별 근거, 적용 경계, 결정 변경과 확인 중단 조건을 구체화합니다. 개발 규칙 검사이며 사람의 누락과 시간 감소는 미검증입니다. 원본 v0.10 전체 읽기본은 변경하지 않았으며 최신 통합본은 v0.15입니다.
 - **[지금까지의 프로젝트 통합 정리](PROJECT_SUMMARY.md)**: 결정·산출물·실제/합성 자료·시장 비평·남은 일.
 - **[자동 확인 상태](PROJECT_STATUS.json)**: 실제 파일·DB·PDF 확인 시점과 수치.
 - **[제품 방향 문서](tool/README.md)**: 별도 tool/ 경로, 현재 구현되지 않은 제품 설계.

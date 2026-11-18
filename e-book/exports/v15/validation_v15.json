@@ -1,0 +1,695 @@
+{
+  "version": "0.15 author review",
+  "checked_at_seoul": "2026-11-18T19:11:48.318837+09:00",
+  "pdf_pages": 93,
+  "pdf_bytes": 3657245,
+  "pdf_sha256": "57b25dd7496c74217fec641448df97f3e0f80e7ba9c25bbf59f35f1c14c983e7",
+  "page_geometry_mm": [
+    190,
+    270
+  ],
+  "actual_pdf_reading_body_probe_min_pt": 12.0,
+  "chapter_start_pages": {
+    "1": 6,
+    "2": 14,
+    "3": 17,
+    "4": 18,
+    "5": 20,
+    "6": 25,
+    "7": 34,
+    "8": 51,
+    "9": 55,
+    "10": 60,
+    "11": 64,
+    "12": 67
+  },
+  "case_start_pages": {
+    "1": 34,
+    "2": 36,
+    "3": 38,
+    "4": 41,
+    "5": 44,
+    "6": 47
+  },
+  "glossary_start_page": 85,
+  "glossary_entries": 36,
+  "toc_entries": 66,
+  "links": 55,
+  "contents_have_printed_page_numbers": true,
+  "same_A4_body_only_control_pages": {
+    "v06": 48,
+    "v15": 78
+  },
+  "source_characters": 101153,
+  "previous_v06_characters": 60795,
+  "outside_words": [],
+  "footer_overlap": [],
+  "browser_errors": [],
+  "desktop_mobile_overflow": false,
+  "broken_internal_links": [],
+  "fonts": [
+    {
+      "name": "Type3 glyph programs",
+      "bytes": 8491
+    },
+    {
+      "name": "Type3 glyph programs",
+      "bytes": 3984
+    },
+    {
+      "name": "Type3 glyph programs",
+      "bytes": 9520
+    },
+    {
+      "name": "Type3 glyph programs",
+      "bytes": 495
+    },
+    {
+      "name": "Type3 glyph programs",
+      "bytes": 4186
+    },
+    {
+      "name": "Type3 glyph programs",
+      "bytes": 4966
+    },
+    {
+      "name": "Type3 glyph programs",
+      "bytes": 8360
+    },
+    {
+      "name": "Type3 glyph programs",
+      "bytes": 1881
+    },
+    {
+      "name": "Type3 glyph programs",
+      "bytes": 6230
+    },
+    {
+      "name": "Type3 glyph programs",
+      "bytes": 1792
+    },
+    {
+      "name": "Type3 glyph programs",
+      "bytes": 14915
+    },
+    {
+      "name": "Type3 glyph programs",
+      "bytes": 5881
+    },
+    {
+      "name": "Type3 glyph programs",
+      "bytes": 7243
+    },
+    {
+      "name": "Type3 glyph programs",
+      "bytes": 2468
+    },
+    {
+      "name": "Type3 glyph programs",
+      "bytes": 2046
+    },
+    {
+      "name": "Type3 glyph programs",
+      "bytes": 1804
+    },
+    {
+      "name": "Type3 glyph programs",
+      "bytes": 2702
+    },
+    {
+      "name": "Type3 glyph programs",
+      "bytes": 10209
+    },
+    {
+      "name": "Type3 glyph programs",
+      "bytes": 5897
+    },
+    {
+      "name": "Type3 glyph programs",
+      "bytes": 87660
+    },
+    {
+      "name": "Type3 glyph programs",
+      "bytes": 271898
+    },
+    {
+      "name": "Type3 glyph programs",
+      "bytes": 85154
+    },
+    {
+      "name": "Type3 glyph programs",
+      "bytes": 95342
+    },
+    {
+      "name": "Type3 glyph programs",
+      "bytes": 22754
+    },
+    {
+      "name": "Type3 glyph programs",
+      "bytes": 94335
+    },
+    {
+      "name": "Helvetica",
+      "use": "standard PDF folio font"
+    },
+    {
+      "name": "Type3 glyph programs",
+      "bytes": 30764
+    },
+    {
+      "name": "Type3 glyph programs",
+      "bytes": 1644827
+    },
+    {
+      "name": "Type3 glyph programs",
+      "bytes": 705883
+    },
+    {
+      "name": "Type3 glyph programs",
+      "bytes": 1765294
+    },
+    {
+      "name": "Type3 glyph programs",
+      "bytes": 418514
+    },
+    {
+      "name": "Type3 glyph programs",
+      "bytes": 27948
+    },
+    {
+      "name": "Type3 glyph programs",
+      "bytes": 53983
+    },
+    {
+      "name": "Type3 glyph programs",
+      "bytes": 46884
+    },
+    {
+      "name": "Type3 glyph programs",
+      "bytes": 24144
+    },
+    {
+      "name": "Type3 glyph programs",
+      "bytes": 11617
+    },
+    {
+      "name": "Type3 glyph programs",
+      "bytes": 32226
+    },
+    {
+      "name": "Type3 glyph programs",
+      "bytes": 77878
+    },
+    {
+      "name": "Type3 glyph programs",
+      "bytes": 13485
+    },
+    {
+      "name": "Type3 glyph programs",
+      "bytes": 4346
+    },
+    {
+      "name": "Type3 glyph programs",
+      "bytes": 3946
+    },
+    {
+      "name": "Type3 glyph programs",
+      "bytes": 3947
+    },
+    {
+      "name": "Type3 glyph programs",
+      "bytes": 7332
+    },
+    {
+      "name": "Type3 glyph programs",
+      "bytes": 23172
+    },
+    {
+      "name": "Type3 glyph programs",
+      "bytes": 6419
+    },
+    {
+      "name": "Type3 glyph programs",
+      "bytes": 11567
+    },
+    {
+      "name": "Type3 glyph programs",
+      "bytes": 1923
+    },
+    {
+      "name": "Type3 glyph programs",
+      "bytes": 893
+    },
+    {
+      "name": "Type3 glyph programs",
+      "bytes": 4138
+    },
+    {
+      "name": "Type3 glyph programs",
+      "bytes": 3196
+    },
+    {
+      "name": "Type3 glyph programs",
+      "bytes": 9263
+    },
+    {
+      "name": "Type3 glyph programs",
+      "bytes": 2720
+    },
+    {
+      "name": "Type3 glyph programs",
+      "bytes": 5237
+    },
+    {
+      "name": "Type3 glyph programs",
+      "bytes": 3966
+    },
+    {
+      "name": "Type3 glyph programs",
+      "bytes": 2305
+    },
+    {
+      "name": "Type3 glyph programs",
+      "bytes": 801
+    },
+    {
+      "name": "Type3 glyph programs",
+      "bytes": 75326
+    },
+    {
+      "name": "Type3 glyph programs",
+      "bytes": 16112
+    },
+    {
+      "name": "Type3 glyph programs",
+      "bytes": 22245
+    },
+    {
+      "name": "Type3 glyph programs",
+      "bytes": 18936
+    },
+    {
+      "name": "Type3 glyph programs",
+      "bytes": 32105
+    },
+    {
+      "name": "Type3 glyph programs",
+      "bytes": 106
+    },
+    {
+      "name": "Type3 glyph programs",
+      "bytes": 14935
+    },
+    {
+      "name": "Type3 glyph programs",
+      "bytes": 3402
+    },
+    {
+      "name": "Type3 glyph programs",
+      "bytes": 42553
+    },
+    {
+      "name": "Type3 glyph programs",
+      "bytes": 121251
+    },
+    {
+      "name": "TAAAAA+Consolas",
+      "bytes": 28504
+    },
+    {
+      "name": "Type3 glyph programs",
+      "bytes": 40149
+    },
+    {
+      "name": "Type3 glyph programs",
+      "bytes": 10572
+    },
+    {
+      "name": "Type3 glyph programs",
+      "bytes": 8893
+    },
+    {
+      "name": "Type3 glyph programs",
+      "bytes": 24829
+    },
+    {
+      "name": "Type3 glyph programs",
+      "bytes": 19597
+    },
+    {
+      "name": "Type3 glyph programs",
+      "bytes": 47090
+    },
+    {
+      "name": "Type3 glyph programs",
+      "bytes": 71024
+    },
+    {
+      "name": "Type3 glyph programs",
+      "bytes": 9198
+    },
+    {
+      "name": "Type3 glyph programs",
+      "bytes": 37046
+    },
+    {
+      "name": "Type3 glyph programs",
+      "bytes": 12113
+    },
+    {
+      "name": "Type3 glyph programs",
+      "bytes": 14354
+    },
+    {
+      "name": "Type3 glyph programs",
+      "bytes": 2654
+    },
+    {
+      "name": "Type3 glyph programs",
+      "bytes": 10164
+    },
+    {
+      "name": "Type3 glyph programs",
+      "bytes": 6662
+    },
+    {
+      "name": "Type3 glyph programs",
+      "bytes": 12903
+    },
+    {
+      "name": "Type3 glyph programs",
+      "bytes": 26153
+    },
+    {
+      "name": "Type3 glyph programs",
+      "bytes": 3222
+    },
+    {
+      "name": "Type3 glyph programs",
+      "bytes": 12453
+    },
+    {
+      "name": "Type3 glyph programs",
+      "bytes": 3836
+    },
+    {
+      "name": "Type3 glyph programs",
+      "bytes": 23923
+    },
+    {
+      "name": "Type3 glyph programs",
+      "bytes": 106774
+    },
+    {
+      "name": "Type3 glyph programs",
+      "bytes": 25031
+    },
+    {
+      "name": "Type3 glyph programs",
+      "bytes": 59241
+    }
+  ],
+  "middle_dot_counts": {
+    "U+00B7": 0,
+    "U+2022": 0,
+    "U+2027": 0,
+    "U+318D": 0,
+    "U+22C5": 0,
+    "U+30FB": 0
+  },
+  "sparse_pages_under180chars": [
+    1
+  ],
+  "all_heading_pages": [
+    {
+      "title": "그래서,이 캠페인계속할까요?",
+      "page": 1
+    },
+    {
+      "title": "목차",
+      "page": 2
+    },
+    {
+      "title": "읽기 전에",
+      "page": 3
+    },
+    {
+      "title": "들어가며",
+      "page": 4
+    },
+    {
+      "title": "1장 TRI-V로 실험에서 결정까지",
+      "page": 6
+    },
+    {
+      "title": "TRI-V를 시승 안내로 먼저 이해하기",
+      "page": 6
+    },
+    {
+      "title": "TRI-V 공통 운용 기준",
+      "page": 11
+    },
+    {
+      "title": "2장 정화, 비교할 수 있는 결과를 만들기",
+      "page": 14
+    },
+    {
+      "title": "3장 해체와 입체화, 평균 아래의 고객을 읽기",
+      "page": 17
+    },
+    {
+      "title": "4장 언어의 전환, 차이를 회사의 선택으로 옮기기",
+      "page": 18
+    },
+    {
+      "title": "5장 숫자를 읽을 때 필요한 통계",
+      "page": 20
+    },
+    {
+      "title": "6장 고객 수보다 필요한 정보량부터",
+      "page": 25
+    },
+    {
+      "title": "7장 결과가 엇갈리는 여섯 상황",
+      "page": 34
+    },
+    {
+      "title": "사례 1 예약이 늘었는데 왜 결정을 못 할까",
+      "page": 34
+    },
+    {
+      "title": "사례 2 완료에서 이겼어도 남는 질문",
+      "page": 36
+    },
+    {
+      "title": "사례 3 문구의 승자와 캠페인의 승자",
+      "page": 38
+    },
+    {
+      "title": "사례 4 측정이 바뀌면 승자도 바뀐다",
+      "page": 41
+    },
+    {
+      "title": "사례 5 전체의 승리를 누구에게 적용할 것인가",
+      "page": 44
+    },
+    {
+      "title": "사례 6 요청이 늘자 공유 용량이 답을 바꾼다",
+      "page": 47
+    },
+    {
+      "title": "8장 다시 한 건의 결정으로",
+      "page": 51
+    },
+    {
+      "title": "충분한 근거가 있을 때 검토를 끝내기",
+      "page": 53
+    },
+    {
+      "title": "9장 학습을 실험 설계로 옮기기",
+      "page": 55
+    },
+    {
+      "title": "10장 실험을 조직의 기억으로 남기기",
+      "page": 60
+    },
+    {
+      "title": "11장 TRI-V의 기여와 적용 범위",
+      "page": 64
+    },
+    {
+      "title": "TRI-V의 출발점과 적용 범위",
+      "page": 64
+    },
+    {
+      "title": "12장 한 건의 캠페인을 설계에서 결정까지",
+      "page": 67
+    },
+    {
+      "title": "부록 사례와 자료를 찾아가는 길",
+      "page": 78
+    },
+    {
+      "title": "부록 계산과 자료",
+      "page": 79
+    },
+    {
+      "title": "참고 자료와 계산의 범위",
+      "page": 83
+    },
+    {
+      "title": "키워드 찾아보기와 설명",
+      "page": 85
+    },
+    {
+      "title": "무작위 배정 (Randomization)",
+      "page": 85
+    },
+    {
+      "title": "반사실 (Counterfactual)",
+      "page": 86
+    },
+    {
+      "title": "추정 대상 (Estimand)",
+      "page": 86
+    },
+    {
+      "title": "배정 기준 분석 (ITT, Intention-to-Treat)",
+      "page": 86
+    },
+    {
+      "title": "배정 단위와 분석 단위 (Units)",
+      "page": 86
+    },
+    {
+      "title": "분모 (Denominator)",
+      "page": 86
+    },
+    {
+      "title": "관측 성숙 (Maturity)",
+      "page": 87
+    },
+    {
+      "title": "표본 비율 불일치 (SRM, Sample Ratio Mismatch)",
+      "page": 87
+    },
+    {
+      "title": "A/A 테스트 (A/A Test)",
+      "page": 87
+    },
+    {
+      "title": "전체 평가 기준 (OEC, Overall Evaluation Criterion)",
+      "page": 87
+    },
+    {
+      "title": "주지표 (Primary Metric)",
+      "page": 87
+    },
+    {
+      "title": "진단 지표 (Diagnostic Metric)",
+      "page": 88
+    },
+    {
+      "title": "보호 지표, 가드레일 (Guardrail Metric)",
+      "page": 88
+    },
+    {
+      "title": "유의확률 (p-value)",
+      "page": 88
+    },
+    {
+      "title": "유의수준과 제1종 오류 (Alpha, Type I Error)",
+      "page": 88
+    },
+    {
+      "title": "제2종 오류와 검정력 (Type II Error, Power)",
+      "page": 89
+    },
+    {
+      "title": "신뢰구간 (CI, Confidence Interval)",
+      "page": 89
+    },
+    {
+      "title": "절대 효과와 상대 효과 (Percentage Points, Relative Effect)",
+      "page": 89
+    },
+    {
+      "title": "최소 검출 효과 (MDE, Minimum Detectable Effect)",
+      "page": 89
+    },
+    {
+      "title": "최소 사업 효과 (Business Threshold)",
+      "page": 90
+    },
+    {
+      "title": "다중 비교 (Multiplicity, Multiple Testing)",
+      "page": 90
+    },
+    {
+      "title": "피킹 (Peeking)",
+      "page": 90
+    },
+    {
+      "title": "순차 검정 (Sequential Testing)",
+      "page": 90
+    },
+    {
+      "title": "세그먼트 (Segments)",
+      "page": 91
+    },
+    {
+      "title": "상호작용과 효과 이질성 (Interaction, Heterogeneity)",
+      "page": 91
+    },
+    {
+      "title": "처치 후 선택 (Post-treatment Selection)",
+      "page": 91
+    },
+    {
+      "title": "홀드아웃 (Holdout)",
+      "page": 91
+    },
+    {
+      "title": "증분 효과 (Incrementality)",
+      "page": 92
+    },
+    {
+      "title": "고객생애가치 (LTV, Lifetime Value)",
+      "page": 92
+    },
+    {
+      "title": "민감도 분석 (Sensitivity Analysis)",
+      "page": 92
+    },
+    {
+      "title": "간섭 (Interference, Spillover)",
+      "page": 92
+    },
+    {
+      "title": "군집 실험 (Cluster-randomized Experiment)",
+      "page": 92
+    },
+    {
+      "title": "이중차분법 (DID, Difference-in-Differences)",
+      "page": 93
+    },
+    {
+      "title": "요인 설계와 다변량 테스트 (Factorial Design, MVT)",
+      "page": 93
+    },
+    {
+      "title": "다중 팔 밴딧 (Multi-armed Bandit, MAB)",
+      "page": 93
+    },
+    {
+      "title": "트와이먼의 법칙 (Twyman's Law)",
+      "page": 93
+    }
+  ],
+  "browser_version": "157.0.8103.79",
+  "limits": [
+    "Automated checks and simulated personas do not establish publication quality",
+    "Real reader tests, human technical and rights review remain pending",
+    "Page-size change separately measured from actual text expansion"
+  ]
+}

@@ -1,0 +1,1362 @@
+{
+  "status": "passed",
+  "edition": "v0.15 developed design decisions",
+  "full_book_pages": 93,
+  "chapter_pages": {
+    "author_origin": 4,
+    "operating_contract": 11,
+    "positive_cases": 53,
+    "scope": 64,
+    "chapter6": 25,
+    "chapter12": 67
+  },
+  "checks_passed": 326,
+  "checks": [
+    {
+      "check": "Unique registered change 지점마다 평소의 완료율이나 고객 구성이 크게 다르다면 배정 단계에서 그 ",
+      "pass": true
+    },
+    {
+      "check": "Unique registered change MDE는 정한 표본과 유의수준, 검정력, 분석 방법 아래 검출하도록 설계",
+      "pass": true
+    },
+    {
+      "check": "Unique registered change 계획된 중간 판단의 경계는 여러 번 기회를 얻으면서도 정한 오류 기준을 ",
+      "pass": true
+    },
+    {
+      "check": "Unique registered change 이 오류 기준을 사업의 손실 한도와 혼동하지 않아야 한다. 완료율이 개선",
+      "pass": true
+    },
+    {
+      "check": "Unique registered change python scripts/check_study_concepts_v14.",
+      "pass": true
+    },
+    {
+      "check": "Unique registered change scripts/build_ebook_v14.py",
+      "pass": true
+    },
+    {
+      "check": "Unique registered change scripts/prepare_fonts_v14.py",
+      "pass": true
+    },
+    {
+      "check": "Unique registered change scripts/verify_ebook_v14_numbers.py",
+      "pass": true
+    },
+    {
+      "check": "Unique registered change scripts/render_verify_v14.py",
+      "pass": true
+    },
+    {
+      "check": "Unique registered change scripts/verify_v14_integration.py",
+      "pass": true
+    },
+    {
+      "check": "Unique registered change 이 판에서는 생성기와 이전 정정 코드를 다시 돌리지 않는다. v0.13에",
+      "pass": true
+    },
+    {
+      "check": "Only registered design and reproduction development",
+      "pass": true
+    },
+    {
+      "check": "Frozen JH_CRM_ebook_reader_v13.zip",
+      "pass": true
+    },
+    {
+      "check": "Frozen JH_CRM_ebook_reader_v14.zip",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/analysis/corrections_v13/CORRECTION_REPORT.md",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/analysis/corrections_v13/COUNTEREXAMPLE_RESULTS.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/analysis/corrections_v13/PROVENANCE.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/analysis/corrections_v13/REGRESSION_CHECK.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/analysis/corrections_v13/SCORE_DETAILS.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/analysis/corrections_v13/outcomes_v13.sql",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/analysis/v02/execution_log.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/analysis/v02/metric_results.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/analysis/v02/verified_analysis.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/analysis/winner_v04/core_results.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/analysis/winner_v04/scenario_results.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/analysis/winner_v04/scenarios/case4_log.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/analysis/winner_v04/scenarios/case4_truth.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/analysis/winner_v04/scenarios/case5_customers.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/analysis/winner_v04/scenarios/case6_fixed_demand.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/analysis/winner_v04/scenarios/case6_operations.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v12/COUNTEREXAMPLES.md",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v12/COUNTEREXAMPLE_RESULTS.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v12/MINIMUM_RECORD.html",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v12/MINIMUM_RECORD.md",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v12/MINIMUM_RECORD.pdf",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v12/MINIMUM_RECORD_WORKED.md",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v12/VALIDATION.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v12/assets/LICENSE-sans.txt",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v12/assets/LICENSE-serif.txt",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v12/assets/fonts_manifest.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v12/assets/reader-sans.woff2",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v12/assets/reader-serif.woff2",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v12/build_manifest_v12.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v12/campaign_path_v08.svg",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v12/capacity_v06.svg",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v12/chapter12_sql_validation_v12.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v12/content_control_A4_v06.html",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v12/content_control_A4_v06.pdf",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v12/content_control_A4_v12.html",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v12/content_control_A4_v12.pdf",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v12/counterexample_fixture.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v12/ebook_review_v12.html",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v12/ebook_review_v12.md",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v12/ebook_review_v12.pdf",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v12/guardrail_effect.svg",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v12/integration_validation_v12.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v12/measurement_v06.svg",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v12/numeric_text_validation_v12.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v12/package_smoke_v12.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v12/segments_v06.svg",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v12/tri_v_easy_comparison.svg",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v12/tri_v_easy_decision.svg",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v12/tri_v_easy_population.svg",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v12/tri_v_method.svg",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v12/validation_v12.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v12/winner_effect.svg",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v13/COUNTEREXAMPLES.md",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v13/COUNTEREXAMPLE_RESULTS.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v13/MANUSCRIPT_CHANGES.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v13/MINIMUM_RECORD.html",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v13/MINIMUM_RECORD.md",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v13/MINIMUM_RECORD.pdf",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v13/MINIMUM_RECORD_WORKED.md",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v13/PROVENANCE.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v13/REGRESSION_CHECK.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v13/VALIDATION.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v13/analysis_report_v13.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v13/assets/LICENSE-sans.txt",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v13/assets/LICENSE-serif.txt",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v13/assets/fonts_manifest.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v13/assets/reader-sans.woff2",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v13/assets/reader-serif.woff2",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v13/build_manifest_v13.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v13/campaign_path_v08.svg",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v13/capacity_v06.svg",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v13/chapter12_sql_validation_v13.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v13/content_control_A4_v06.html",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v13/content_control_A4_v06.pdf",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v13/content_control_A4_v13.html",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v13/content_control_A4_v13.pdf",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v13/counterexample_fixture.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v13/ebook_review_v13.html",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v13/ebook_review_v13.md",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v13/ebook_review_v13.pdf",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v13/guardrail_effect.svg",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v13/integration_validation_v13.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v13/measurement_v06.svg",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v13/numeric_text_validation_v13.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v13/package_smoke_v13.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v13/segments_v06.svg",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v13/tri_v_easy_comparison.svg",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v13/tri_v_easy_decision.svg",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v13/tri_v_easy_population.svg",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v13/tri_v_method.svg",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v13/validation_v13.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v13/winner_effect.svg",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v14/BEFORE_COVERAGE.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v14/COMPARISON.md",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v14/CONCEPT_CHECKS.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v14/COUNTEREXAMPLES.md",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v14/COUNTEREXAMPLE_RESULTS.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v14/COVERAGE_AFTER.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v14/MANUSCRIPT_CHANGES.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v14/MINIMUM_RECORD.html",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v14/MINIMUM_RECORD.md",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v14/MINIMUM_RECORD.pdf",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v14/MINIMUM_RECORD_WORKED.md",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v14/PROVENANCE.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v14/READ_SCOPE.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v14/REGRESSION_CHECK.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v14/VALIDATION.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v14/analysis_report_v13.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v14/assets/LICENSE-sans.txt",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v14/assets/LICENSE-serif.txt",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v14/assets/fonts_manifest.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v14/assets/reader-sans.woff2",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v14/assets/reader-serif.woff2",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v14/build_manifest_v14.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v14/campaign_path_v08.svg",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v14/capacity_v06.svg",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v14/chapter12_sql_validation_v14.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v14/content_control_A4_v06.html",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v14/content_control_A4_v06.pdf",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v14/content_control_A4_v14.html",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v14/content_control_A4_v14.pdf",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v14/counterexample_fixture.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v14/ebook_review_v14.html",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v14/ebook_review_v14.md",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v14/ebook_review_v14.pdf",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v14/guardrail_effect.svg",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v14/integration_validation_v14.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v14/measurement_v06.svg",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v14/numeric_text_validation_v14.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v14/package_smoke_v14.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v14/segments_v06.svg",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v14/tri_v_easy_comparison.svg",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v14/tri_v_easy_decision.svg",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v14/tri_v_easy_population.svg",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v14/tri_v_method.svg",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v14/validation_v14.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v14/winner_effect.svg",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/manuscript/study_integration_v14/BASELINE.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/manuscript/study_integration_v14/READ_SCOPE.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/manuscript/study_integration_v14/SOURCES.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/DATA_DICTIONARY.md",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v01/data/csv/assignments.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v01/data/csv/company.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v01/data/csv/cost_assumptions.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v01/data/csv/customers.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v01/data/csv/dealerships.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v01/data/csv/experiment_outcomes.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v01/data/csv/experiments.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v01/data/csv/journey_events.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v01/data/csv/messages.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v01/data/csv/vehicle_models.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v01/data/manifest.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v01/data/oem_crm.sqlite",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v01/data/validation.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/01_baseline/data/csv/assignments.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/01_baseline/data/csv/company.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/01_baseline/data/csv/cost_assumptions.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/01_baseline/data/csv/customers.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/01_baseline/data/csv/dealerships.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/01_baseline/data/csv/experiment_outcomes.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/01_baseline/data/csv/experiments.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/01_baseline/data/csv/journey_events.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/01_baseline/data/csv/messages.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/01_baseline/data/csv/vehicle_models.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/01_baseline/data/manifest.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/01_baseline/data/oem_crm.sqlite",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/01_baseline/data/validation.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/01_baseline/scripts/build_db.py",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/02_null/data/csv/assignments.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/02_null/data/csv/company.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/02_null/data/csv/cost_assumptions.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/02_null/data/csv/customers.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/02_null/data/csv/dealerships.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/02_null/data/csv/experiment_outcomes.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/02_null/data/csv/experiments.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/02_null/data/csv/journey_events.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/02_null/data/csv/messages.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/02_null/data/csv/vehicle_models.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/02_null/data/manifest.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/02_null/data/oem_crm.sqlite",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/02_null/data/validation.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/02_null/scripts/build_db.py",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/03_srm/data/csv/assignments.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/03_srm/data/csv/company.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/03_srm/data/csv/cost_assumptions.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/03_srm/data/csv/customers.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/03_srm/data/csv/dealerships.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/03_srm/data/csv/experiment_outcomes.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/03_srm/data/csv/experiments.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/03_srm/data/csv/journey_events.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/03_srm/data/csv/messages.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/03_srm/data/csv/vehicle_models.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/03_srm/data/manifest.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/03_srm/data/oem_crm.sqlite",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/03_srm/data/validation.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/04_missing/data/csv/assignments.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/04_missing/data/csv/company.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/04_missing/data/csv/cost_assumptions.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/04_missing/data/csv/customers.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/04_missing/data/csv/dealerships.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/04_missing/data/csv/experiment_outcomes.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/04_missing/data/csv/experiments.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/04_missing/data/csv/journey_events.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/04_missing/data/csv/messages.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/04_missing/data/csv/vehicle_models.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/04_missing/data/manifest.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/04_missing/data/oem_crm.sqlite",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/04_missing/data/validation.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/README.md",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/checksums.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/instructor/answer_key.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/instructor/baseline_reference_outcomes.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/summary.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v03/DATA_DICTIONARY.md",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v03/README.md",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v03/RESULTS.md",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v03/analysis_report.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v03/data/csv/assignments.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v03/data/csv/contracts.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v03/data/csv/customers.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v03/data/csv/early_snapshot_day28.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v03/data/csv/events.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v03/data/csv/external_sources.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v03/data/csv/generation_manifest.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v03/data/csv/messages.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v03/data/csv/outcomes.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v03/data/jh_motors_v03.sqlite",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v03/experiment_plan.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v03/generation_report.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v03/metric_readiness.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v03/repeated_sampling_check.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v03/sample_size_grid.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v13/DERIVED_MANIFEST.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v13/README.md",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v13/analysis_report_v13.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v13/data/jh_motors_v13.sqlite",
+      "pass": true
+    },
+    {
+      "check": "Byte-identical companion MINIMUM_RECORD.pdf",
+      "pass": true
+    },
+    {
+      "check": "Byte-identical companion MINIMUM_RECORD.html",
+      "pass": true
+    },
+    {
+      "check": "Byte-identical companion MINIMUM_RECORD.md",
+      "pass": true
+    },
+    {
+      "check": "Byte-identical companion COUNTEREXAMPLE_RESULTS.json",
+      "pass": true
+    },
+    {
+      "check": "Byte-identical companion analysis_report_v13.json",
+      "pass": true
+    },
+    {
+      "check": "Byte-identical companion counterexample_fixture.json",
+      "pass": true
+    },
+    {
+      "check": "Byte-identical companion REGRESSION_CHECK.json",
+      "pass": true
+    },
+    {
+      "check": "Byte-identical companion PROVENANCE.json",
+      "pass": true
+    },
+    {
+      "check": "Unedited chapter 1",
+      "pass": true
+    },
+    {
+      "check": "Unedited chapter 3",
+      "pass": true
+    },
+    {
+      "check": "Unedited chapter 4",
+      "pass": true
+    },
+    {
+      "check": "Unedited chapter 5",
+      "pass": true
+    },
+    {
+      "check": "Unedited chapter 7",
+      "pass": true
+    },
+    {
+      "check": "Unedited chapter 8",
+      "pass": true
+    },
+    {
+      "check": "Unedited chapter 10",
+      "pass": true
+    },
+    {
+      "check": "Unedited chapter 11",
+      "pass": true
+    },
+    {
+      "check": "Unedited chapter 12",
+      "pass": true
+    },
+    {
+      "check": "Chapter and case headings unchanged",
+      "pass": true
+    },
+    {
+      "check": "Forbidden middle dots absent",
+      "pass": true
+    },
+    {
+      "check": "New illustration is explicitly hypothetical",
+      "pass": true
+    },
+    {
+      "check": "New illustration is not the old A/B/H design",
+      "pass": true
+    },
+    {
+      "check": "Planning display 67.4%",
+      "pass": true
+    },
+    {
+      "check": "Planning display 13,495",
+      "pass": true
+    },
+    {
+      "check": "Planning display 26,990",
+      "pass": true
+    },
+    {
+      "check": "Planning display 6,990",
+      "pass": true
+    },
+    {
+      "check": "Planning display 1.17pp",
+      "pass": true
+    },
+    {
+      "check": "Power has separate calculation agreement",
+      "pass": true
+    },
+    {
+      "check": "MDE has separate calculation agreement",
+      "pass": true
+    },
+    {
+      "check": "Budget deficit reconciles",
+      "pass": true
+    },
+    {
+      "check": "Prior toy probability still correct",
+      "pass": true
+    },
+    {
+      "check": "Preserved safeguard 관계 안전은 통과했다고 말할 수 없다",
+      "pass": true
+    },
+    {
+      "check": "Preserved safeguard 운영 중단 사유로 두며",
+      "pass": true
+    },
+    {
+      "check": "Preserved safeguard 목표 80%",
+      "pass": true
+    },
+    {
+      "check": "Preserved safeguard 보호 기준과 필요한 수를 별도로",
+      "pass": true
+    },
+    {
+      "check": "Preserved safeguard Variable Control",
+      "pass": true
+    },
+    {
+      "check": "Preserved safeguard Vector Segmentation",
+      "pass": true
+    },
+    {
+      "check": "Preserved safeguard Value-Linked Decision",
+      "pass": true
+    },
+    {
+      "check": "PDF complete paragraph D1",
+      "pass": true
+    },
+    {
+      "check": "PDF table cell D1 설계에서 확인한 조건",
+      "pass": true
+    },
+    {
+      "check": "PDF table cell D1 선택과 남길 근거",
+      "pass": true
+    },
+    {
+      "check": "PDF table cell D1 같은 적격 대상에서 독립적인 개인을 ",
+      "pass": true
+    },
+    {
+      "check": "PDF table cell D1 단순 무작위배정을 기본안으로 두고 배",
+      "pass": true
+    },
+    {
+      "check": "PDF table cell D1 결과와 관련된 고객 상태를 처치 전에",
+      "pass": true
+    },
+    {
+      "check": "PDF table cell D1 상태 안 무작위배정을 검토하고 목표 ",
+      "pass": true
+    },
+    {
+      "check": "PDF table cell D1 같은 지점의 시승 슬롯을 고객끼리 경",
+      "pass": true
+    },
+    {
+      "check": "PDF table cell D1 상태별 균형만으로 해결하지 않는다. ",
+      "pass": true
+    },
+    {
+      "check": "PDF complete paragraph D1",
+      "pass": true
+    },
+    {
+      "check": "PDF complete paragraph D2",
+      "pass": true
+    },
+    {
+      "check": "PDF complete paragraph D2",
+      "pass": true
+    },
+    {
+      "check": "PDF table cell D2 가능한 선택",
+      "pass": true
+    },
+    {
+      "check": "PDF table cell D2 얻는 것과 포기하는 것",
+      "pass": true
+    },
+    {
+      "check": "PDF table cell D2 적격 고객을 추가 확보해 목표 수를 ",
+      "pass": true
+    },
+    {
+      "check": "PDF table cell D2 같은 1pp 질문의 목표 검정력을 유",
+      "pass": true
+    },
+    {
+      "check": "PDF table cell D2 현재 수에서 더 큰 변화를 노리는 개",
+      "pass": true
+    },
+    {
+      "check": "PDF table cell D2 큰 효과를 학습할 수 있지만 기존의 ",
+      "pass": true
+    },
+    {
+      "check": "PDF table cell D2 현재 수와 1pp 질문을 유지하고 낮",
+      "pass": true
+    },
+    {
+      "check": "PDF table cell D2 무작위 비교가 자동으로 무효가 되는 ",
+      "pass": true
+    },
+    {
+      "check": "PDF complete paragraph D2",
+      "pass": true
+    },
+    {
+      "check": "PDF complete paragraph D2",
+      "pass": true
+    },
+    {
+      "check": "PDF complete paragraph D3",
+      "pass": true
+    },
+    {
+      "check": "PDF table cell D3 실행 중 들어온 정보",
+      "pass": true
+    },
+    {
+      "check": "PDF table cell D3 그때 할 수 있는 행동과 결론",
+      "pass": true
+    },
+    {
+      "check": "PDF table cell D3 배정 누락이나 이벤트 수집 장애",
+      "pass": true
+    },
+    {
+      "check": "PDF table cell D3 원장을 조사하고 해당 지표의 해석을 ",
+      "pass": true
+    },
+    {
+      "check": "PDF table cell D3 일반 고정 표본 p값이 중간에 작아짐",
+      "pass": true
+    },
+    {
+      "check": "PDF table cell D3 예정한 최종 판단을 대신하지 않는다.",
+      "pass": true
+    },
+    {
+      "check": "PDF table cell D3 중대한 권리 침해나 고객 피해",
+      "pass": true
+    },
+    {
+      "check": "PDF table cell D3 보호 절차에 따라 대응하고 필요하면 ",
+      "pass": true
+    },
+    {
+      "check": "PDF complete paragraph D3",
+      "pass": true
+    },
+    {
+      "check": "PDF complete paragraph D4",
+      "pass": true
+    },
+    {
+      "check": "PDF complete paragraph D4",
+      "pass": true
+    },
+    {
+      "check": "Final PDF value and guard 67.4%",
+      "pass": true
+    },
+    {
+      "check": "Final PDF value and guard 1.17pp",
+      "pass": true
+    },
+    {
+      "check": "Final PDF value and guard 관계 안전은 통과했다고 말할 수 없다",
+      "pass": true
+    },
+    {
+      "check": "Final PDF value and guard 운영 중단 사유로 두며",
+      "pass": true
+    },
+    {
+      "check": "No stranded last glossary entry",
+      "pass": true
+    }
+  ],
+  "developments": [
+    {
+      "id": "D1",
+      "reason": "블록의 장단점 설명을 배정 선택, 필요한 필드와 분석 대상 문장으로 완성",
+      "text": "뒤의 사례5를 설계 단계로 되돌려 보자. 신규 관심 고객과 기존 고객이 메시지를 받기 전부터 구분되고, 평소 반응과 운영 조건도 다를 것으로 예상된다면 이 상태 안에서 A와 B를 배정하는 안을 검토할 수 있다. 기록에는 배정 직전의 상태와 블록 식별자, 각 상태 안의 배정 확률과 실제 배정 수를 남긴다. 발송 뒤 클릭한 사람을 새 블록으로 만드는 것은 이 설계가 아니다. 클릭 자체가 메시지의 영향을 받기 때문이다.\n\n| 설계에서 확인한 조건 | 선택과 남길 근거 |\n|---|---|\n| 같은 적격 대상에서 독립적인 개인을 비교하며 중요한 사전 차이를 따로 관리할 이유가 크지 않음 | 단순 무작위배정을 기본안으로 두고 배정 확률과 분모를 기록한다. |\n| 결과와 관련된 고객 상태를 처치 전에 안정적으로 알 수 있음 | 상태 안 무작위배정을 검토하고 목표 고객 구성과 분석 가중치를 사전에 정한다. |\n| 같은 지점의 시승 슬롯을 고객끼리 경쟁함 | 상태별 균형만으로 해결하지 않는다. 배정 단위와 운영 정책을 다시 설계한다. |\n\n사례5의 고정된 신규와 기존 구성은 그 실습의 추정 대상이다. 블록을 쓴 뒤에는 전체 고객을 아무렇게나 합치는 대신 정한 목표 구성에 맞게 효과와 불확실성을 읽어야 한다. 신규가 많은 다음 캠페인으로 옮기면 평균 효과가 달라질 수 있으므로 같은 추정값을 복사하지 않는다. 설계 검토 기록은 “사전 고객 상태 안에서 무작위배정하고 정한 구성으로 전체 효과를 읽는다. 지점 간 자원 간섭이 있으면 개인 비교를 그대로 승인하지 않는다”로 정리할 수 있다. 이는 실제 배정을 완료했다는 보고가 아니라, V1의 비교 근거와 V2의 적용 대상을 정하는 문장이다.",
+      "pdf_pages": [
+        15,
+        16
+      ]
+    },
+    {
+      "id": "D2",
+      "reason": "표본 부담의 직관을 가용 모수, 계산, 세 가지 합법적 설계 선택과 여섯 칸 기록으로 연결",
+      "text": "이번에는 같은 회사의 후속 실험을 새로 계획한다고 가정해 보자. 이는 앞의 A/B/H 실험을 다시 해석하거나 그 표본을 바꾸는 일이 아니다. 미리 확보할 수 있는 적격 고객이 총 20,000명이고, 같은 기간에 A와 B에 10,000명씩 배정할 수 있다는 별도 교육용 조건이다. 독립 개인의 시승 완료를 단일 양측 비교로 보고, 기준율 9%에서 10%로의 1pp 변화, 유의수준 5%와 검정력 80%를 목표로 둔다. 미발송군은 없으므로 발송 자체의 증분 효과에는 답하지 않는다. 관측 창은 배정 후 28일로 놓되 누락, 군집과 중간 분석 보정은 이 계산에 넣지 않았다.\n\n같은 정규 근사 계획법으로 계산하면 현재 수에서 1pp 변화를 발견할 검정력은 약 67.4%다. 목표 80%에 필요한 수는 군당 13,495명, 합계 26,990명이어서 적격 고객 6,990명을 더 확보해야 한다. 현재 20,000명에 목표 검정력을 맞추어 역산한 최소 검출 효과는 약 1.17pp다. 이 값은 실제 관측 효과나 보장된 발견 경계가 아니다. 정한 근사와 가정 아래 검정력이 목표에 도달하는 계획 효과다. 새로운 계획값은 직접 정규 근사식과 별도 라이브러리 호출을 대조했다.\n\n| 가능한 선택 | 얻는 것과 포기하는 것 |\n|---|---|\n| 적격 고객을 추가 확보해 목표 수를 채움 | 같은 1pp 질문의 목표 검정력을 유지한다. 모집 가능성과 대기 비용, 관측 성숙 시간을 확인해야 한다. |\n| 현재 수에서 더 큰 변화를 노리는 개입을 설계함 | 큰 효과를 학습할 수 있지만 기존의 1pp 질문을 해결한 것은 아니다. 결과를 보기 전에 새로운 개입과 목표를 정한다. |\n| 현재 수와 1pp 질문을 유지하고 낮은 검정력을 수용함 | 무작위 비교가 자동으로 무효가 되는 것은 아니다. 계획 효과를 놓칠 위험을 더 감수하며 비유의를 효과 없음으로 보고하지 않는다. |\n\n사업 담당자가 최소 1pp를 중요하게 본다면 MDE를 1.17pp로 고쳐 적는 것만으로 간격이 사라지지 않는다. 지금 필요한 확인은 고객을 더 모을 수 있는지와 그 대기가 현재 선택을 바꿀 만큼 가치가 있는지다. “고객이 부족하다”는 보고 대신 “현재 모수에서는 정한 계획 효과의 발견 능력이 목표보다 낮다. 추가 모집 가능성과 비용을 확인한 뒤 목표 검정력을 유지할지, 다른 개입을 학습할지, 낮은 발견 능력을 수용할지 정한다”라고 쓸 수 있다. 어느 선택을 하든 결과를 본 뒤 유리한 효과 크기로 계획을 갈아 끼우지는 않는다.\n\n이 기록은 기존 여섯 칸을 그대로 쓴다. 첫 칸의 결정은 후속 설계의 선택이고, V1에는 계산 가정과 정밀도 한계, V2에는 연락 동의와 미시승 적격 고객의 범위, V3에는 현재 승인 상태를 남긴다. 추가 확인에는 모집 가능성과 대기 비용의 담당 역할을, 재검토 조건에는 확보 가능한 고객 수나 기준율이 바뀌는 경우를 적는다. 위 수는 주지표에 대한 계획일 뿐 철회와 불만의 보호 정보량까지 충족했다는 뜻은 아니다. 실제 모집과 발송 전에 보호 기준과 필요한 수를 별도로 설계하고 승인받아야 한다.",
+      "pdf_pages": [
+        27,
+        28
+      ]
+    },
+    {
+      "id": "D3",
+      "reason": "순차 경계의 설명을 실제 조회 상황별 행동과 결과 성숙 조건으로 전환",
+      "text": "추가 모집으로 목표 수를 확보하는 안이 채택됐다면, 종료 조건도 같은 설계서에서 정한다. 이 후속 설계가 고정 종료 방식이라면 목표 고객의 배정이 끝난 날과 모든 고객의 개인별 28일 창이 성숙한 날을 따로 기록한다. 목표 인원을 채웠다는 이유로 마지막 고객의 미성숙 결과를 미완료로 확정하지 않는다. 모집이 멈췄어도 결과 확인은 계속될 수 있다.\n\n| 실행 중 들어온 정보 | 그때 할 수 있는 행동과 결론 |\n|---|---|\n| 배정 누락이나 이벤트 수집 장애 | 원장을 조사하고 해당 지표의 해석을 제한한다. 성과 우위로 읽지 않는다. |\n| 일반 고정 표본 p값이 중간에 작아짐 | 예정한 최종 판단을 대신하지 않는다. 조기 효능 판단 절차가 없었다면 그 통과선으로 확대를 제안하지 않는다. |\n| 중대한 권리 침해나 고객 피해 | 보호 절차에 따라 대응하고 필요하면 운영을 중단한다. 통계적 유의성을 기다리지 않는다. |\n\n중간 효능 판단이 꼭 필요하다는 요구가 실험 전에 나온다면 분석 담당 역할이 조회 규칙과 오류 통제를 갖춘 설계를 제시하고 사업 담당 역할은 그 정보가 어떤 행동을 바꿀지 정한다. 이미 결과를 본 뒤라면 같은 자료의 일반 p값에 새 순차 이름만 붙여 소급 승인하지 않는다. 계획 이탈과 보류한 주장을 기록하고, 기존 결과에서 어디까지 말할 수 있는지 검토한 뒤 아직 보지 않은 자료의 후속 설계를 정한다. 여기에 보편적으로 쓸 수 있는 순차 경계 숫자를 제시하지 않은 이유는 각 설계의 가정과 비교 가족이 다르기 때문이다. 빠른 종료라는 요구가 고객 보호 대응이나 관측 기회의 생략으로 바뀌지 않게 하는 것이 핵심이다.",
+      "pdf_pages": [
+        32
+      ]
+    },
+    {
+      "id": "D4",
+      "reason": "통계 위험과 사업 피해의 구분을 기존 실행 후보와 보호 검토 반례의 결정문으로 구체화",
+      "text": "같은 완료 개선이라도 어떤 문장으로 넘길지는 8장의 보완 예제에서 확인할 수 있다. 조건 가와 라의 완료 결과는 같지만 보호 결과가 다르다. 조건 가에서는 정한 현재 범위의 성과와 보호 근거가 충족돼 실행 후보로 넘기고 실제 승인과 운영 책임을 확인한다. 조건 라에서는 완료 개선을 인정하면서도 보호 평가가 허용 조건을 충족하지 못했으므로 그 근거로 확대를 제안하지 않는다. 이때 비열등성 근거 부족을 곧바로 확정 위해라는 말로 바꾸거나, 성과가 좋다는 이유로 보호 한계를 사후에 느슨하게 고쳐서도 안 된다.\n\n회의에서 “B가 유의하니 확대한다”는 문장이 나왔다면 관측과 통계, 현재 선택을 나누어 고쳐 쓴다. 조건 가의 기록은 “정한 지표와 보호 조건이 현재 범위에서 충족돼 실행 후보로 넘긴다. 승인 전에는 발송하지 않으며 적용 규모와 관찰 및 되돌릴 책임을 확인한다”가 된다. 조건 라에서는 “완료 개선 근거는 있으나 보호 조건의 충족 근거가 부족해 확대를 제안하지 않는다. 보호 담당 역할이 철회와 피해 원장을 확인하고 실제 피해가 있으면 정한 대응을 먼저 실행한다”가 된다. 이 문장들은 예제의 조건을 따른 작성 예시이지 실제 담당자가 승인하거나 조치했다는 보고가 아니다. 추가 분석을 마냥 늘리는 대신 어느 확인이 실행과 보호 선택을 바꾸는지 적는 것이 TRI-V의 끝이다.",
+      "pdf_pages": [
+        58
+      ]
+    }
+  ],
+  "source_v14_preserved": true,
+  "historical_statistics_unchanged": true,
+  "new_planning_illustration_only": true,
+  "human_review_approved": false,
+  "actual_reader_test_conducted": false,
+  "new_sequential_engine_implemented": false
+}
