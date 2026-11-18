@@ -1,0 +1,956 @@
+{
+  "status": "passed",
+  "edition": "v0.13 statistical correction",
+  "full_book_pages": 88,
+  "chapter_pages": {
+    "author_origin": 4,
+    "operating_contract": 11,
+    "positive_cases": 48,
+    "scope": 59,
+    "chapter6": 24,
+    "chapter12": 62
+  },
+  "checks": [
+    {
+      "check": "registered replacement 계약 1%에서 1.2% 변화는 약 51.8%, 철회 0.8%에서 1.0% 변화는 약 60.0%다.",
+      "status": "passed"
+    },
+    {
+      "check": "registered replacement 보호 조건에는 해당 집단의 단측 score 비열등성 평가와 대응 상한을 사용했다.",
+      "status": "passed"
+    },
+    {
+      "check": "registered replacement e-book/virtual-data/v03/data/jh_motors_v03.sqlite",
+      "status": "passed"
+    },
+    {
+      "check": "registered replacement 이며 `DATA_DICTIONARY.md`와 실제 SQLite 정의를 함께 확인한다.",
+      "status": "passed"
+    },
+    {
+      "check": "registered replacement 집계가 나왔다고 정화를 끝내지 않는다. 실제 정의를 보면 이 뷰의 시간 조건은 배정일에 관측 창을 ",
+      "status": "passed"
+    },
+    {
+      "check": "registered replacement 자료는 v03 DB이며 작성 시 읽기 전용으로 실제 outcomes 뷰와",
+      "status": "passed"
+    },
+    {
+      "check": "registered replacement | 추가 실습 코드 | `scripts/build_winner_scenarios_v04.py` |",
+      "status": "passed"
+    },
+    {
+      "check": "registered replacement python scripts/edit_ebook_v12.py",
+      "status": "passed"
+    },
+    {
+      "check": "registered replacement scripts/build_ebook_v12.py",
+      "status": "passed"
+    },
+    {
+      "check": "registered replacement scripts/prepare_fonts_v12.py",
+      "status": "passed"
+    },
+    {
+      "check": "registered replacement scripts/verify_ebook_v12_numbers.py",
+      "status": "passed"
+    },
+    {
+      "check": "registered replacement scripts/render_verify_v12.py",
+      "status": "passed"
+    },
+    {
+      "check": "registered replacement scripts/verify_v12_integration.py",
+      "status": "passed"
+    },
+    {
+      "check": "registered replacement 원래 분석과 생성 코드를 다시 돌리는 명령은 여기에 섞지 않는다. 숫자 검사는 기존 결과 장부와 읽",
+      "status": "passed"
+    },
+    {
+      "check": "registered replacement 방법 문서는 statsmodels의 두 비율 검정, 비율 차이 구간, 검정력과 scipy의 Welc",
+      "status": "passed"
+    },
+    {
+      "check": "Only registered manuscript corrections",
+      "status": "passed"
+    },
+    {
+      "check": "Old v12 PDF unchanged",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/analysis/v02/execution_log.json",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/analysis/v02/metric_results.csv",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/analysis/v02/verified_analysis.json",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/analysis/winner_v04/core_results.json",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/analysis/winner_v04/scenario_results.json",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/analysis/winner_v04/scenarios/case4_log.csv",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/analysis/winner_v04/scenarios/case4_truth.csv",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/analysis/winner_v04/scenarios/case5_customers.csv",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/analysis/winner_v04/scenarios/case6_fixed_demand.csv",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/analysis/winner_v04/scenarios/case6_operations.csv",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/exports/v12/COUNTEREXAMPLES.md",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/exports/v12/COUNTEREXAMPLE_RESULTS.json",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/exports/v12/MINIMUM_RECORD.html",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/exports/v12/MINIMUM_RECORD.md",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/exports/v12/MINIMUM_RECORD.pdf",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/exports/v12/MINIMUM_RECORD_WORKED.md",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/exports/v12/VALIDATION.json",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/exports/v12/assets/LICENSE-sans.txt",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/exports/v12/assets/LICENSE-serif.txt",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/exports/v12/assets/fonts_manifest.json",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/exports/v12/assets/reader-sans.woff2",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/exports/v12/assets/reader-serif.woff2",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/exports/v12/build_manifest_v12.json",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/exports/v12/campaign_path_v08.svg",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/exports/v12/capacity_v06.svg",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/exports/v12/chapter12_sql_validation_v12.json",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/exports/v12/content_control_A4_v06.html",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/exports/v12/content_control_A4_v06.pdf",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/exports/v12/content_control_A4_v12.html",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/exports/v12/content_control_A4_v12.pdf",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/exports/v12/counterexample_fixture.json",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/exports/v12/ebook_review_v12.html",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/exports/v12/ebook_review_v12.md",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/exports/v12/ebook_review_v12.pdf",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/exports/v12/guardrail_effect.svg",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/exports/v12/integration_validation_v12.json",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/exports/v12/measurement_v06.svg",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/exports/v12/numeric_text_validation_v12.json",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/exports/v12/package_smoke_v12.json",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/exports/v12/segments_v06.svg",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/exports/v12/tri_v_easy_comparison.svg",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/exports/v12/tri_v_easy_decision.svg",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/exports/v12/tri_v_easy_population.svg",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/exports/v12/tri_v_method.svg",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/exports/v12/validation_v12.json",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/exports/v12/winner_effect.svg",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/virtual-data/DATA_DICTIONARY.md",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/virtual-data/v01/data/csv/assignments.csv",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/virtual-data/v01/data/csv/company.csv",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/virtual-data/v01/data/csv/cost_assumptions.csv",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/virtual-data/v01/data/csv/customers.csv",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/virtual-data/v01/data/csv/dealerships.csv",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/virtual-data/v01/data/csv/experiment_outcomes.csv",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/virtual-data/v01/data/csv/experiments.csv",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/virtual-data/v01/data/csv/journey_events.csv",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/virtual-data/v01/data/csv/messages.csv",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/virtual-data/v01/data/csv/vehicle_models.csv",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/virtual-data/v01/data/manifest.json",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/virtual-data/v01/data/oem_crm.sqlite",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/virtual-data/v01/data/validation.json",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/virtual-data/v02/01_baseline/data/csv/assignments.csv",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/virtual-data/v02/01_baseline/data/csv/company.csv",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/virtual-data/v02/01_baseline/data/csv/cost_assumptions.csv",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/virtual-data/v02/01_baseline/data/csv/customers.csv",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/virtual-data/v02/01_baseline/data/csv/dealerships.csv",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/virtual-data/v02/01_baseline/data/csv/experiment_outcomes.csv",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/virtual-data/v02/01_baseline/data/csv/experiments.csv",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/virtual-data/v02/01_baseline/data/csv/journey_events.csv",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/virtual-data/v02/01_baseline/data/csv/messages.csv",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/virtual-data/v02/01_baseline/data/csv/vehicle_models.csv",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/virtual-data/v02/01_baseline/data/manifest.json",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/virtual-data/v02/01_baseline/data/oem_crm.sqlite",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/virtual-data/v02/01_baseline/data/validation.json",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/virtual-data/v02/01_baseline/scripts/build_db.py",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/virtual-data/v02/02_null/data/csv/assignments.csv",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/virtual-data/v02/02_null/data/csv/company.csv",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/virtual-data/v02/02_null/data/csv/cost_assumptions.csv",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/virtual-data/v02/02_null/data/csv/customers.csv",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/virtual-data/v02/02_null/data/csv/dealerships.csv",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/virtual-data/v02/02_null/data/csv/experiment_outcomes.csv",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/virtual-data/v02/02_null/data/csv/experiments.csv",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/virtual-data/v02/02_null/data/csv/journey_events.csv",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/virtual-data/v02/02_null/data/csv/messages.csv",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/virtual-data/v02/02_null/data/csv/vehicle_models.csv",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/virtual-data/v02/02_null/data/manifest.json",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/virtual-data/v02/02_null/data/oem_crm.sqlite",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/virtual-data/v02/02_null/data/validation.json",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/virtual-data/v02/02_null/scripts/build_db.py",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/virtual-data/v02/03_srm/data/csv/assignments.csv",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/virtual-data/v02/03_srm/data/csv/company.csv",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/virtual-data/v02/03_srm/data/csv/cost_assumptions.csv",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/virtual-data/v02/03_srm/data/csv/customers.csv",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/virtual-data/v02/03_srm/data/csv/dealerships.csv",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/virtual-data/v02/03_srm/data/csv/experiment_outcomes.csv",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/virtual-data/v02/03_srm/data/csv/experiments.csv",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/virtual-data/v02/03_srm/data/csv/journey_events.csv",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/virtual-data/v02/03_srm/data/csv/messages.csv",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/virtual-data/v02/03_srm/data/csv/vehicle_models.csv",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/virtual-data/v02/03_srm/data/manifest.json",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/virtual-data/v02/03_srm/data/oem_crm.sqlite",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/virtual-data/v02/03_srm/data/validation.json",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/virtual-data/v02/04_missing/data/csv/assignments.csv",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/virtual-data/v02/04_missing/data/csv/company.csv",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/virtual-data/v02/04_missing/data/csv/cost_assumptions.csv",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/virtual-data/v02/04_missing/data/csv/customers.csv",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/virtual-data/v02/04_missing/data/csv/dealerships.csv",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/virtual-data/v02/04_missing/data/csv/experiment_outcomes.csv",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/virtual-data/v02/04_missing/data/csv/experiments.csv",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/virtual-data/v02/04_missing/data/csv/journey_events.csv",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/virtual-data/v02/04_missing/data/csv/messages.csv",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/virtual-data/v02/04_missing/data/csv/vehicle_models.csv",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/virtual-data/v02/04_missing/data/manifest.json",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/virtual-data/v02/04_missing/data/oem_crm.sqlite",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/virtual-data/v02/04_missing/data/validation.json",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/virtual-data/v02/README.md",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/virtual-data/v02/checksums.json",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/virtual-data/v02/instructor/answer_key.json",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/virtual-data/v02/instructor/baseline_reference_outcomes.csv",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/virtual-data/v02/summary.json",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/virtual-data/v03/DATA_DICTIONARY.md",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/virtual-data/v03/README.md",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/virtual-data/v03/RESULTS.md",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/virtual-data/v03/analysis_report.json",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/virtual-data/v03/data/csv/assignments.csv",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/virtual-data/v03/data/csv/contracts.csv",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/virtual-data/v03/data/csv/customers.csv",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/virtual-data/v03/data/csv/early_snapshot_day28.csv",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/virtual-data/v03/data/csv/events.csv",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/virtual-data/v03/data/csv/external_sources.csv",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/virtual-data/v03/data/csv/generation_manifest.csv",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/virtual-data/v03/data/csv/messages.csv",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/virtual-data/v03/data/csv/outcomes.csv",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/virtual-data/v03/data/jh_motors_v03.sqlite",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/virtual-data/v03/experiment_plan.json",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/virtual-data/v03/generation_report.json",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/virtual-data/v03/metric_readiness.csv",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/virtual-data/v03/repeated_sampling_check.json",
+      "status": "passed"
+    },
+    {
+      "check": "frozen e-book/virtual-data/v03/sample_size_grid.csv",
+      "status": "passed"
+    },
+    {
+      "check": "corrected power vs independent audit drive_primary",
+      "status": "passed"
+    },
+    {
+      "check": "corrected power vs independent audit contract_rare",
+      "status": "passed"
+    },
+    {
+      "check": "corrected power vs independent audit optout_risk",
+      "status": "passed"
+    },
+    {
+      "check": "corrected power vs independent audit complaint_rare",
+      "status": "passed"
+    },
+    {
+      "check": "corrected power vs independent audit drive_tiny",
+      "status": "passed"
+    },
+    {
+      "check": "Correct contract and withdrawal displays",
+      "status": "passed"
+    },
+    {
+      "check": "P01 corrected guard_NI_p",
+      "status": "passed"
+    },
+    {
+      "check": "P01 corrected guard_one_sided_upper_pp",
+      "status": "passed"
+    },
+    {
+      "check": "P01 unchanged difference_pp",
+      "status": "passed"
+    },
+    {
+      "check": "P01 unchanged performance_interval_pp",
+      "status": "passed"
+    },
+    {
+      "check": "P01 unchanged state",
+      "status": "passed"
+    },
+    {
+      "check": "P01 unchanged guard_pass",
+      "status": "passed"
+    },
+    {
+      "check": "P01 unchanged actual_approval",
+      "status": "passed"
+    },
+    {
+      "check": "P02 corrected guard_NI_p",
+      "status": "passed"
+    },
+    {
+      "check": "P02 corrected guard_one_sided_upper_pp",
+      "status": "passed"
+    },
+    {
+      "check": "P02 unchanged difference_pp",
+      "status": "passed"
+    },
+    {
+      "check": "P02 unchanged performance_interval_pp",
+      "status": "passed"
+    },
+    {
+      "check": "P02 unchanged state",
+      "status": "passed"
+    },
+    {
+      "check": "P02 unchanged guard_pass",
+      "status": "passed"
+    },
+    {
+      "check": "P02 unchanged actual_approval",
+      "status": "passed"
+    },
+    {
+      "check": "P02_other corrected guard_NI_p",
+      "status": "passed"
+    },
+    {
+      "check": "P02_other corrected guard_one_sided_upper_pp",
+      "status": "passed"
+    },
+    {
+      "check": "P02_other unchanged difference_pp",
+      "status": "passed"
+    },
+    {
+      "check": "P02_other unchanged performance_interval_pp",
+      "status": "passed"
+    },
+    {
+      "check": "P02_other unchanged state",
+      "status": "passed"
+    },
+    {
+      "check": "P02_other unchanged guard_pass",
+      "status": "passed"
+    },
+    {
+      "check": "P02_other unchanged actual_approval",
+      "status": "passed"
+    },
+    {
+      "check": "P03 corrected guard_NI_p",
+      "status": "passed"
+    },
+    {
+      "check": "P03 corrected guard_one_sided_upper_pp",
+      "status": "passed"
+    },
+    {
+      "check": "P03 unchanged difference_pp",
+      "status": "passed"
+    },
+    {
+      "check": "P03 unchanged performance_interval_pp",
+      "status": "passed"
+    },
+    {
+      "check": "P03 unchanged state",
+      "status": "passed"
+    },
+    {
+      "check": "P03 unchanged guard_pass",
+      "status": "passed"
+    },
+    {
+      "check": "P03 unchanged actual_approval",
+      "status": "passed"
+    },
+    {
+      "check": "P04 corrected guard_NI_p",
+      "status": "passed"
+    },
+    {
+      "check": "P04 corrected guard_one_sided_upper_pp",
+      "status": "passed"
+    },
+    {
+      "check": "P04 unchanged difference_pp",
+      "status": "passed"
+    },
+    {
+      "check": "P04 unchanged performance_interval_pp",
+      "status": "passed"
+    },
+    {
+      "check": "P04 unchanged state",
+      "status": "passed"
+    },
+    {
+      "check": "P04 unchanged guard_pass",
+      "status": "passed"
+    },
+    {
+      "check": "P04 unchanged actual_approval",
+      "status": "passed"
+    },
+    {
+      "check": "Corrected counterexample fixture unchanged",
+      "status": "passed"
+    },
+    {
+      "check": "six field tool unchanged MINIMUM_RECORD.pdf",
+      "status": "passed"
+    },
+    {
+      "check": "six field tool unchanged MINIMUM_RECORD.html",
+      "status": "passed"
+    },
+    {
+      "check": "six field tool unchanged MINIMUM_RECORD.md",
+      "status": "passed"
+    },
+    {
+      "check": "derived source table unchanged customers",
+      "status": "passed"
+    },
+    {
+      "check": "derived source table unchanged assignments",
+      "status": "passed"
+    },
+    {
+      "check": "derived source table unchanged messages",
+      "status": "passed"
+    },
+    {
+      "check": "derived source table unchanged events",
+      "status": "passed"
+    },
+    {
+      "check": "derived source table unchanged contracts",
+      "status": "passed"
+    },
+    {
+      "check": "derived source table unchanged external_sources",
+      "status": "passed"
+    },
+    {
+      "check": "derived source table unchanged generation_manifest",
+      "status": "passed"
+    },
+    {
+      "check": "corrected database outcome counts unchanged",
+      "status": "passed"
+    },
+    {
+      "check": "corrected database integrity",
+      "status": "passed"
+    },
+    {
+      "check": "no forbidden separators",
+      "status": "passed"
+    },
+    {
+      "check": "no new microheadings",
+      "status": "passed"
+    },
+    {
+      "check": "PDF destination author_origin",
+      "status": "passed"
+    },
+    {
+      "check": "PDF destination operating_contract",
+      "status": "passed"
+    },
+    {
+      "check": "PDF destination positive_cases",
+      "status": "passed"
+    },
+    {
+      "check": "PDF destination scope",
+      "status": "passed"
+    },
+    {
+      "check": "PDF destination chapter6",
+      "status": "passed"
+    },
+    {
+      "check": "PDF destination chapter12",
+      "status": "passed"
+    },
+    {
+      "check": "Final PDF corrected phrase 51.7%",
+      "status": "passed"
+    },
+    {
+      "check": "Final PDF corrected phrase 59.9%",
+      "status": "passed"
+    },
+    {
+      "check": "Final PDF corrected phrase MN 유한표본 보정",
+      "status": "passed"
+    },
+    {
+      "check": "Final PDF corrected phrase 하한과 상한을 모두 넣었다",
+      "status": "passed"
+    },
+    {
+      "check": "Final PDF corrected phrase PROVENANCE.json",
+      "status": "passed"
+    },
+    {
+      "check": "Final PDF corrected phrase 관계 안전은 통과했다고 말할 수 없다",
+      "status": "passed"
+    },
+    {
+      "check": "Final PDF corrected phrase 운영 중단 사유로 두며",
+      "status": "passed"
+    },
+    {
+      "check": "Final PDF no obsolete planning values",
+      "status": "passed"
+    },
+    {
+      "check": "Final PDF forbidden separators absent",
+      "status": "passed"
+    },
+    {
+      "check": "No stranded single glossary entry",
+      "status": "passed"
+    }
+  ],
+  "checks_passed": 227,
+  "raw_table_equality_count": 7,
+  "counterexamples_reconciled": 4,
+  "method_axes": 3,
+  "minimum_record_fields": 6,
+  "minimum_record_pdf_pages": 1,
+  "source_v12_preserved": true,
+  "original_plan_exact_byte_issue": "Historical mismatch retained; v13 records the actual source hashes separately",
+  "human_review_approved": false,
+  "new_publication_stage_started": false,
+  "original_outcomes_rows": [
+    [
+      "A",
+      21637,
+      1971,
+      181,
+      198
+    ],
+    [
+      "B",
+      22024,
+      2212,
+      202,
+      268
+    ],
+    [
+      "H",
+      21898,
+      1338,
+      25,
+      231
+    ]
+  ]
+}

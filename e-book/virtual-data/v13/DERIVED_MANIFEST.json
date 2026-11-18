@@ -1,0 +1,18 @@
+{
+  "source_database_sha256_actual": "30aa331d355aaf60d20b4afc685c066fde5cbd2e72873f97d229a953eaa5d85a",
+  "derived_database_sha256": "74230af964df270339a86affa2ebfcdf9488a60ceabe42ee6fc561c9689a5814",
+  "plan": {
+    "actual_file_sha256": "4bcd06f0b5f6a8259f27022f3df8db6285d141091c984f3ee7581044f7e86a56",
+    "historical_manifest_sha256": "f1226b7743ed4705f0e79a03f53fca2f057c7500e5e97f70131d4a5a7fe721f7",
+    "actual_bytes_match_historical": false,
+    "LF_normalized_sha256": "4bcd06f0b5f6a8259f27022f3df8db6285d141091c984f3ee7581044f7e86a56",
+    "CRLF_representation_sha256": "f1226b7743ed4705f0e79a03f53fca2f057c7500e5e97f70131d4a5a7fe721f7",
+    "git_HEAD_blob_sha256": "4bcd06f0b5f6a8259f27022f3df8db6285d141091c984f3ee7581044f7e86a56",
+    "git_HEAD_JSON_semantically_equal": true,
+    "git_HEAD_LF_representation_equal": true,
+    "status": "Historical exact-byte discrepancy retained. Representation equivalence does not repair exact-byte provenance or establish historical freeze."
+  },
+  "canonical_analysis": "e-book/virtual-data/v13/analysis_report_v13.json",
+  "provenance": "e-book/analysis/corrections_v13/PROVENANCE.json",
+  "outcomes_sql": "e-book/analysis/corrections_v13/outcomes_v13.sql"
+}
