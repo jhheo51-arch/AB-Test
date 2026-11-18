@@ -1,6 +1,7 @@
 # A/B Test
 
 ## 최신 통합 안내
+- **[TRI-V 실전 정리 v0.3](e-book/review/methodology/tri_v_refinement_v03/README.md)**: 여섯 항목의 한 장 기록, 실행을 허용하는 반례와 필요한 추가 확인, 저자 제공 경험에서 추출한 검토 기준. 새 통계 이론이나 실제 시간 절감의 입증이 아니라 실무 보완편이며 전체 본책은 v0.10을 유지합니다.
 - **[TRI-V 산출물 개정과 조건변형 시험 v0.2](e-book/review/methodology/tri_v_sharpening_v02/README.md)**: PDCA와 TRI-V는 A/B 판단 틀로 유지하고 병행 확장은 중단. TRI-V의 주장별 근거, 적용 경계, 결정 변경과 확인 중단 조건을 구체화합니다. 개발 규칙 검사이며 사람의 누락과 시간 감소는 미검증입니다. 아래 v0.10 전체 읽기본은 변경하지 않았습니다.
 - **[지금까지의 프로젝트 통합 정리](PROJECT_SUMMARY.md)**: 결정·산출물·실제/합성 자료·시장 비평·남은 일.
 - **[자동 확인 상태](PROJECT_STATUS.json)**: 실제 파일·DB·PDF 확인 시점과 수치.

@@ -1,0 +1,23 @@
+{
+  "image_file": "SOURCE_IMAGE.png",
+  "image_sha256": "4cacfd15877cda31761de74fe7943f4366dd7e3860eb0180fd72ef739b475a51",
+  "authority": "사용자가 제공 이미지를 자신의 경험으로 지칭하고 방법론에 활용하도록 요청함",
+  "historical_randomized_AB": "주장하지 않음",
+  "historical_TRI_V_name_use": "미확인. 당시부터 현재 이름이나 양식을 썼다고 소급하지 않음",
+  "quantified_error_or_time_reduction_proven": false,
+  "source_review_status": "CRM LOOP 고객 가치와 캠페인 기획 및 README, Aurora PRD와 README의 관련 발췌를 직접 대조. MC 원문은 특정하지 못함. 원 분석과 org 테스트 재실행은 하지 않음",
+  "verified_document_blobs": [
+    {"repo": "jhheo51-arch/crm-loop", "path": "docs/CUSTOMER-VALUE.md", "blob": "6a3b43e8db2ab1e19b864ae4024163711ebfc25d"},
+    {"repo": "jhheo51-arch/crm-loop", "path": "docs/CAMPAIGN-BRIEF.md", "blob": "f019e4316fd6fce3a58ac0bd9d43574faee25427"},
+    {"repo": "jhheo51-arch/crm-loop", "path": "README.md", "blob": "97c8a55d9b88a5d0148a1609fcf78862a4c9b082"},
+    {"repo": "jhheo51-arch/aurora-owners-360", "path": "docs/PRD.md", "blob": "8390fd2dfd7ef32d5099f0b678527075a9e90853"},
+    {"repo": "jhheo51-arch/aurora-owners-360", "path": "README.md", "blob": "e5a69bd361fed78829c100f5fd32ce7824d07649"}
+  ],
+  "aurora_documented_boundary": "T4는 생성 기준 기한 +2.00h, T7은 차주와 차량 공란 접수 허용, T8은 필요한 팀장 미지정 VOC-H 저장 차단. 실제 처리시간 단축과 모든 누락 입력 차단이 아님",
+  "claims": [
+    {"id": "MILITARY", "statement": "정보통신 소대장으로 군단 노드 연결의 구성과 경로 대안을 여러 차례 시험하고 실패 원인을 기록", "evidence_level": "제공 이미지와 저자 진술", "not_claimed": "구체 구성, 시험 횟수, 개선 수치와 무작위 배정의 입증"},
+    {"id": "CRM_LOOP", "statement": "정제한 753,458줄에서 대상 666명을 선정한 이유를 설명", "source_units": ["753,458줄", "666명"], "evidence_level": "제공 이미지와 저자 진술. 원문 대조는 별도 근거표", "not_claimed": "행과 사람을 동일 분모로 한 전환율, 실제 발송과 배정 인원 및 A/B 효과"},
+    {"id": "MC", "statement": "열람률과 미발송 수치를 그대로 믿을 수 없는 이유를 확인", "evidence_level": "제공 이미지와 저자 진술. 원문 대조는 별도 근거표", "not_claimed": "이미지에 없는 실제 발송, 계정 설정과 특정 원인의 확정"},
+    {"id": "AURORA", "statement": "안전 VOC의 생성 +2시간과 정보 누락 시 저장 0건을 확인한 경로", "source_units": ["생성 +2시간", "저장 0건"], "evidence_level": "제공 이미지와 저자 진술. 시간 조건과 테스트 분모는 원문 대조 필요", "not_claimed": "시간 기준의 임의 해석, 모든 입력에 대한 저장 차단이나 TRI-V 효과의 일반적 보장"}
+  ]
+}
