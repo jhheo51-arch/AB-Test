@@ -1,0 +1,197 @@
+{
+  "charts": [
+    {
+      "file": "winner_effect.svg",
+      "source": {
+        "n_A": 21637,
+        "n_B": 22024,
+        "events_A": 1971,
+        "events_B": 2212,
+        "rate_A": 0.09109395942136156,
+        "rate_B": 0.10043588812204868,
+        "diff_pp": 0.9341928700687119,
+        "relative_lift": 0.10255266935401684,
+        "p_raw": 0.0009133083961252922,
+        "ci_level": 0.9833333333333333,
+        "ci_low_pp": 0.2597990453563094,
+        "ci_high_pp": 1.6084954426550537,
+        "comparison": "B-A",
+        "p_family": 0.002739925188375877
+      },
+      "axis_domain_pp": [
+        -0.2,
+        1.8
+      ],
+      "axis_ticks_pp": [
+        -0.2,
+        0.3,
+        0.8,
+        1.3,
+        1.8
+      ],
+      "threshold_is_retrospective_example": true,
+      "minimum_font_svg": 20,
+      "footer_text_moved_to_caption": [
+        "배정 분모 A 21,637명 / B 22,024명",
+        "점은 추정, 선은 구간. 단위 pp. 0은 차이 없음.",
+        "점선 +0.5pp: 사후 학습 기준이며 사전 성공 조건이 아님"
+      ]
+    },
+    {
+      "file": "guardrail_effect.svg",
+      "source": {
+        "n_A": 21637,
+        "n_B": 22024,
+        "events_A": 181,
+        "events_B": 202,
+        "rate_A": 0.0083653001802468,
+        "rate_B": 0.009171812568107519,
+        "diff_pp": 0.08065123878607197,
+        "relative_lift": 0.09641164937095245,
+        "p_raw": 0.36621272527243764,
+        "ci_level": 0.95,
+        "ci_low_pp": -0.09494866033497809,
+        "ci_high_pp": 0.25645972540227124
+      },
+      "axis_domain_pp": [
+        -0.15,
+        0.35
+      ],
+      "axis_ticks_pp": [
+        -0.15,
+        -0.05,
+        0.05,
+        0.15,
+        0.25,
+        0.35
+      ],
+      "threshold_is_retrospective_example": true,
+      "minimum_font_svg": 20,
+      "footer_text_moved_to_caption": [
+        "배정 분모 A 21,637명 / B 22,024명",
+        "점은 추정, 선은 구간. 단위 pp. 0은 차이 없음.",
+        "점선 +0.2pp: 사후 허용 악화 예시이며 사전 보호 한계가 아님",
+        "철회 증가가 악화. 이 양측 탐색 구간은 안전 확인이 아니다."
+      ]
+    },
+    {
+      "file": "measurement_v06.svg",
+      "source": "Frozen v16 printed values and inverse vector coordinates, redesigned into separate annotation and plot columns",
+      "minimum_font_svg": 26,
+      "footer_text_moved_to_caption": [
+        "같은 배정 분모: 군당4,000명. 별도 합성 누락 실습.",
+        "B-A 완료율 차이, 개별 95% Newcombe 구간"
+      ]
+    },
+    {
+      "file": "segments_v06.svg",
+      "source": "Frozen v16 printed values and inverse vector coordinates, redesigned into separate annotation and plot columns",
+      "minimum_font_svg": 26,
+      "footer_text_moved_to_caption": [
+        "전체는0.5/0.5 고정 구성. 상태별 군당3,000명, 전체 군당6,000명.",
+        "전체 95% 층화 Wald / 상태별 97.5% Newcombe"
+      ]
+    },
+    {
+      "file": "capacity_v06.svg",
+      "source_rows": [
+        {
+          "capacity_per_day": 60,
+          "policy": "all_A",
+          "customers": 12000,
+          "requested": 1167,
+          "accepted": 1167,
+          "waiting_end_window": 0,
+          "completed": 997,
+          "variable_cost_krw": 31575000,
+          "capacity_cost_krw": 8400000,
+          "total_cost_krw": 39975000,
+          "completed_value_krw": 59820000,
+          "net_value_krw": 19845000,
+          "waiting_fraction_of_requests": 0.0,
+          "pilot_arm_descriptive": [
+            {
+              "arm": "A",
+              "n": 12000,
+              "completed": 997
+            },
+            {
+              "arm": "B",
+              "n": 0,
+              "completed": 0
+            }
+          ]
+        },
+        {
+          "capacity_per_day": 60,
+          "policy": "pilot_10pct_B",
+          "customers": 12000,
+          "requested": 1284,
+          "accepted": 1284,
+          "waiting_end_window": 0,
+          "completed": 1100,
+          "variable_cost_krw": 36060000,
+          "capacity_cost_krw": 8400000,
+          "total_cost_krw": 44460000,
+          "completed_value_krw": 66000000,
+          "net_value_krw": 21540000,
+          "waiting_fraction_of_requests": 0.0,
+          "pilot_arm_descriptive": [
+            {
+              "arm": "A",
+              "n": 10800,
+              "completed": 901
+            },
+            {
+              "arm": "B",
+              "n": 1200,
+              "completed": 199
+            }
+          ]
+        },
+        {
+          "capacity_per_day": 60,
+          "policy": "all_B",
+          "customers": 12000,
+          "requested": 2303,
+          "accepted": 1680,
+          "waiting_end_window": 623,
+          "completed": 1486,
+          "variable_cost_krw": 61869000,
+          "capacity_cost_krw": 8400000,
+          "total_cost_krw": 70269000,
+          "completed_value_krw": 89160000,
+          "net_value_krw": 18891000,
+          "waiting_fraction_of_requests": 0.270516717325228,
+          "pilot_arm_descriptive": [
+            {
+              "arm": "A",
+              "n": 0,
+              "completed": 0
+            },
+            {
+              "arm": "B",
+              "n": 12000,
+              "completed": 1486
+            }
+          ]
+        }
+      ],
+      "zero_axes": true,
+      "independent_units": true,
+      "minimum_font_svg": 24,
+      "footer_text_moved_to_caption": [
+        "28일, 총12,000명, 일60슬롯의 고정 수요 모형. 두 패널의 척도는 다르다.",
+        "실제 관측 이익이나 신뢰구간이 아니다. 10% 정책의 나머지90%는 A."
+      ]
+    }
+  ],
+  "chart_count": 5,
+  "frozen_source_hashes": {
+    "e-book/analysis/winner_v04/core_results.json": "501a32cef982f5bdca9c211cd9cc7f47126a35e2019921f9f6a53a55e8689db3",
+    "e-book/analysis/winner_v04/scenario_results.json": "d3ad00f3b908484d354e5ff40205cf077aeb6dbc1a83fd0a63e8a82c1dfd429c"
+  },
+  "inference_not_changed": true,
+  "styles_are_proposals": true,
+  "redesigned_geometry_manifest": "GRAPH_LAYOUT_V17.json"
+}

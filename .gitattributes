@@ -35,3 +35,9 @@ e-book/exports/v16/assets/LICENSE-*.* -text whitespace=-blank-at-eol,cr-at-eol
 e-book/design/v16/** -text whitespace=cr-at-eol
 e-book/review/visual_numeric_v16/** -text whitespace=cr-at-eol
 e-book/manuscript/visual_v16/** -text whitespace=cr-at-eol
+# Preserve v17 page-review evidence and portable reader bytes.
+e-book/exports/v17/** -text whitespace=cr-at-eol
+e-book/exports/v17/assets/LICENSE-*.* -text whitespace=-blank-at-eol,cr-at-eol
+e-book/design/v17/** -text whitespace=cr-at-eol
+e-book/manuscript/editorial_v17/** -text whitespace=cr-at-eol
+e-book/review/page_personas_v17/** -text whitespace=cr-at-eol
