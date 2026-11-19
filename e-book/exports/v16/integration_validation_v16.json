@@ -1,0 +1,1505 @@
+{
+  "status": "passed",
+  "edition": "v0.16 visual publication review",
+  "full_book_pages": 83,
+  "chapter_pages": {
+    "author_origin": 4,
+    "operating_contract": 10,
+    "positive_cases": 48,
+    "scope": 58,
+    "chapter6": 22,
+    "chapter12": 61
+  },
+  "checks_passed": 357,
+  "checks": [
+    {
+      "check": "Registered change ![TRI-V 공통 기준과 세 산출물](tri_v_method.svg)",
+      "pass": true
+    },
+    {
+      "check": "Registered change 등록 종료일과 최종 결과 확정일을 따로 적는다. 늦게 들어온 고객을 미완료로 확정하면 아직",
+      "pass": true
+    },
+    {
+      "check": "Registered change 회의에는 완료율에서 B가 높았고 정한 완료 가족에서 개선 근거가 있다는 문장을 남긴다. 사",
+      "pass": true
+    },
+    {
+      "check": "Registered change # 8장 다시 한 건의 결정으로",
+      "pass": true
+    },
+    {
+      "check": "Registered change ## 사례 4 측정이 바뀌면 승자도 바뀐다\n\n![같은 배정 분모에서도 기록 누락은 결론의 ",
+      "pass": true
+    },
+    {
+      "check": "Registered change ## 사례 5 전체의 승리를 누구에게 적용할 것인가\n\n![전체는 고정 구성 0.5/0.5의",
+      "pass": true
+    },
+    {
+      "check": "Registered change ## 사례 6 요청이 늘자 공유 용량이 답을 바꾼다\n\n![일 60슬롯에서 완료와 순가치가 ",
+      "pass": true
+    },
+    {
+      "check": "Registered change B를 채택하지 않더라도 A가 모든 대안 중 최선이라는 답이 나온 것은 아니다.",
+      "pass": true
+    },
+    {
+      "check": "Registered change 추가 분석을 멈추는 것, 실험을 종료하는 것, 운영을 중단하는 것은 서로 다르다.",
+      "pass": true
+    },
+    {
+      "check": "Registered change 차이를 발견하지 못했다는 결론을 안전 확인으로 바꾸지 않는다.",
+      "pass": true
+    },
+    {
+      "check": "Registered change # 읽기 전에\n\n이 책의 주 독자는 CRM 캠페인을 운영하거나 기획하지만 실험 결과를 자신",
+      "pass": true
+    },
+    {
+      "check": "Registered change scripts/build_ebook_v15.py",
+      "pass": true
+    },
+    {
+      "check": "Registered change scripts/prepare_fonts_v15.py",
+      "pass": true
+    },
+    {
+      "check": "Registered change scripts/verify_ebook_v15_numbers.py",
+      "pass": true
+    },
+    {
+      "check": "Registered change scripts/render_verify_v15.py",
+      "pass": true
+    },
+    {
+      "check": "Registered change scripts/verify_v15_integration.py",
+      "pass": true
+    },
+    {
+      "check": "Only registered visual/source-call changes",
+      "pass": true
+    },
+    {
+      "check": "Frozen JH_CRM_ebook_reader_v13.zip",
+      "pass": true
+    },
+    {
+      "check": "Frozen JH_CRM_ebook_reader_v14.zip",
+      "pass": true
+    },
+    {
+      "check": "Frozen JH_CRM_ebook_reader_v15.zip",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/analysis/corrections_v13/CORRECTION_REPORT.md",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/analysis/corrections_v13/COUNTEREXAMPLE_RESULTS.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/analysis/corrections_v13/PROVENANCE.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/analysis/corrections_v13/REGRESSION_CHECK.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/analysis/corrections_v13/SCORE_DETAILS.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/analysis/corrections_v13/outcomes_v13.sql",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/analysis/development_v15/PLANNING_EXAMPLE.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/analysis/v02/execution_log.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/analysis/v02/metric_results.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/analysis/v02/verified_analysis.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/analysis/winner_v04/core_results.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/analysis/winner_v04/scenario_results.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/analysis/winner_v04/scenarios/case4_log.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/analysis/winner_v04/scenarios/case4_truth.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/analysis/winner_v04/scenarios/case5_customers.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/analysis/winner_v04/scenarios/case6_fixed_demand.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/analysis/winner_v04/scenarios/case6_operations.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v12/COUNTEREXAMPLES.md",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v12/COUNTEREXAMPLE_RESULTS.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v12/MINIMUM_RECORD.html",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v12/MINIMUM_RECORD.md",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v12/MINIMUM_RECORD.pdf",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v12/MINIMUM_RECORD_WORKED.md",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v12/VALIDATION.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v12/assets/LICENSE-sans.txt",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v12/assets/LICENSE-serif.txt",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v12/assets/fonts_manifest.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v12/assets/reader-sans.woff2",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v12/assets/reader-serif.woff2",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v12/build_manifest_v12.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v12/campaign_path_v08.svg",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v12/capacity_v06.svg",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v12/chapter12_sql_validation_v12.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v12/content_control_A4_v06.html",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v12/content_control_A4_v06.pdf",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v12/content_control_A4_v12.html",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v12/content_control_A4_v12.pdf",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v12/counterexample_fixture.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v12/ebook_review_v12.html",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v12/ebook_review_v12.md",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v12/ebook_review_v12.pdf",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v12/guardrail_effect.svg",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v12/integration_validation_v12.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v12/measurement_v06.svg",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v12/numeric_text_validation_v12.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v12/package_smoke_v12.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v12/segments_v06.svg",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v12/tri_v_easy_comparison.svg",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v12/tri_v_easy_decision.svg",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v12/tri_v_easy_population.svg",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v12/tri_v_method.svg",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v12/validation_v12.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v12/winner_effect.svg",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v13/COUNTEREXAMPLES.md",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v13/COUNTEREXAMPLE_RESULTS.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v13/MANUSCRIPT_CHANGES.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v13/MINIMUM_RECORD.html",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v13/MINIMUM_RECORD.md",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v13/MINIMUM_RECORD.pdf",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v13/MINIMUM_RECORD_WORKED.md",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v13/PROVENANCE.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v13/REGRESSION_CHECK.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v13/VALIDATION.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v13/analysis_report_v13.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v13/assets/LICENSE-sans.txt",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v13/assets/LICENSE-serif.txt",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v13/assets/fonts_manifest.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v13/assets/reader-sans.woff2",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v13/assets/reader-serif.woff2",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v13/build_manifest_v13.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v13/campaign_path_v08.svg",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v13/capacity_v06.svg",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v13/chapter12_sql_validation_v13.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v13/content_control_A4_v06.html",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v13/content_control_A4_v06.pdf",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v13/content_control_A4_v13.html",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v13/content_control_A4_v13.pdf",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v13/counterexample_fixture.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v13/ebook_review_v13.html",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v13/ebook_review_v13.md",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v13/ebook_review_v13.pdf",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v13/guardrail_effect.svg",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v13/integration_validation_v13.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v13/measurement_v06.svg",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v13/numeric_text_validation_v13.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v13/package_smoke_v13.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v13/segments_v06.svg",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v13/tri_v_easy_comparison.svg",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v13/tri_v_easy_decision.svg",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v13/tri_v_easy_population.svg",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v13/tri_v_method.svg",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v13/validation_v13.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v13/winner_effect.svg",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v14/BEFORE_COVERAGE.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v14/COMPARISON.md",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v14/CONCEPT_CHECKS.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v14/COUNTEREXAMPLES.md",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v14/COUNTEREXAMPLE_RESULTS.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v14/COVERAGE_AFTER.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v14/MANUSCRIPT_CHANGES.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v14/MINIMUM_RECORD.html",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v14/MINIMUM_RECORD.md",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v14/MINIMUM_RECORD.pdf",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v14/MINIMUM_RECORD_WORKED.md",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v14/PROVENANCE.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v14/READ_SCOPE.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v14/REGRESSION_CHECK.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v14/VALIDATION.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v14/analysis_report_v13.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v14/assets/LICENSE-sans.txt",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v14/assets/LICENSE-serif.txt",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v14/assets/fonts_manifest.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v14/assets/reader-sans.woff2",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v14/assets/reader-serif.woff2",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v14/build_manifest_v14.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v14/campaign_path_v08.svg",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v14/capacity_v06.svg",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v14/chapter12_sql_validation_v14.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v14/content_control_A4_v06.html",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v14/content_control_A4_v06.pdf",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v14/content_control_A4_v14.html",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v14/content_control_A4_v14.pdf",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v14/counterexample_fixture.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v14/ebook_review_v14.html",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v14/ebook_review_v14.md",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v14/ebook_review_v14.pdf",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v14/guardrail_effect.svg",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v14/integration_validation_v14.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v14/measurement_v06.svg",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v14/numeric_text_validation_v14.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v14/package_smoke_v14.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v14/segments_v06.svg",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v14/tri_v_easy_comparison.svg",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v14/tri_v_easy_decision.svg",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v14/tri_v_easy_population.svg",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v14/tri_v_method.svg",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v14/validation_v14.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v14/winner_effect.svg",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v15/CONCEPT_CHECKS.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v15/COUNTEREXAMPLES.md",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v15/COUNTEREXAMPLE_RESULTS.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v15/DEVELOPMENT.md",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v15/MANUSCRIPT_CHANGES.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v15/MINIMUM_RECORD.html",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v15/MINIMUM_RECORD.md",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v15/MINIMUM_RECORD.pdf",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v15/MINIMUM_RECORD_WORKED.md",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v15/PLANNING_EXAMPLE.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v15/PROVENANCE.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v15/READ_SCOPE.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v15/REGRESSION_CHECK.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v15/SELF_CHECK.md",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v15/VALIDATION.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v15/analysis_report_v13.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v15/assets/LICENSE-sans.txt",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v15/assets/LICENSE-serif.txt",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v15/assets/fonts_manifest.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v15/assets/reader-sans.woff2",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v15/assets/reader-serif.woff2",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v15/build_manifest_v15.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v15/campaign_path_v08.svg",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v15/capacity_v06.svg",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v15/chapter12_sql_validation_v15.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v15/content_control_A4_v06.html",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v15/content_control_A4_v06.pdf",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v15/content_control_A4_v15.html",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v15/content_control_A4_v15.pdf",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v15/counterexample_fixture.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v15/ebook_review_v15.html",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v15/ebook_review_v15.md",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v15/ebook_review_v15.pdf",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v15/guardrail_effect.svg",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v15/integration_validation_v15.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v15/measurement_v06.svg",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v15/numeric_text_validation_v15.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v15/package_smoke_v15.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v15/segments_v06.svg",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v15/tri_v_easy_comparison.svg",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v15/tri_v_easy_decision.svg",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v15/tri_v_easy_population.svg",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v15/tri_v_method.svg",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v15/validation_v15.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/exports/v15/winner_effect.svg",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/manuscript/development_v15/BASELINE.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/manuscript/study_integration_v14/BASELINE.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/manuscript/study_integration_v14/READ_SCOPE.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/manuscript/study_integration_v14/SOURCES.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/DATA_DICTIONARY.md",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v01/data/csv/assignments.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v01/data/csv/company.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v01/data/csv/cost_assumptions.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v01/data/csv/customers.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v01/data/csv/dealerships.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v01/data/csv/experiment_outcomes.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v01/data/csv/experiments.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v01/data/csv/journey_events.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v01/data/csv/messages.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v01/data/csv/vehicle_models.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v01/data/manifest.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v01/data/oem_crm.sqlite",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v01/data/validation.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/01_baseline/data/csv/assignments.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/01_baseline/data/csv/company.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/01_baseline/data/csv/cost_assumptions.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/01_baseline/data/csv/customers.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/01_baseline/data/csv/dealerships.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/01_baseline/data/csv/experiment_outcomes.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/01_baseline/data/csv/experiments.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/01_baseline/data/csv/journey_events.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/01_baseline/data/csv/messages.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/01_baseline/data/csv/vehicle_models.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/01_baseline/data/manifest.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/01_baseline/data/oem_crm.sqlite",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/01_baseline/data/validation.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/01_baseline/scripts/build_db.py",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/02_null/data/csv/assignments.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/02_null/data/csv/company.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/02_null/data/csv/cost_assumptions.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/02_null/data/csv/customers.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/02_null/data/csv/dealerships.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/02_null/data/csv/experiment_outcomes.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/02_null/data/csv/experiments.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/02_null/data/csv/journey_events.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/02_null/data/csv/messages.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/02_null/data/csv/vehicle_models.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/02_null/data/manifest.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/02_null/data/oem_crm.sqlite",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/02_null/data/validation.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/02_null/scripts/build_db.py",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/03_srm/data/csv/assignments.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/03_srm/data/csv/company.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/03_srm/data/csv/cost_assumptions.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/03_srm/data/csv/customers.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/03_srm/data/csv/dealerships.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/03_srm/data/csv/experiment_outcomes.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/03_srm/data/csv/experiments.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/03_srm/data/csv/journey_events.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/03_srm/data/csv/messages.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/03_srm/data/csv/vehicle_models.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/03_srm/data/manifest.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/03_srm/data/oem_crm.sqlite",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/03_srm/data/validation.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/04_missing/data/csv/assignments.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/04_missing/data/csv/company.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/04_missing/data/csv/cost_assumptions.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/04_missing/data/csv/customers.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/04_missing/data/csv/dealerships.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/04_missing/data/csv/experiment_outcomes.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/04_missing/data/csv/experiments.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/04_missing/data/csv/journey_events.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/04_missing/data/csv/messages.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/04_missing/data/csv/vehicle_models.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/04_missing/data/manifest.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/04_missing/data/oem_crm.sqlite",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/04_missing/data/validation.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/README.md",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/checksums.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/instructor/answer_key.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/instructor/baseline_reference_outcomes.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v02/summary.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v03/DATA_DICTIONARY.md",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v03/README.md",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v03/RESULTS.md",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v03/analysis_report.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v03/data/csv/assignments.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v03/data/csv/contracts.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v03/data/csv/customers.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v03/data/csv/early_snapshot_day28.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v03/data/csv/events.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v03/data/csv/external_sources.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v03/data/csv/generation_manifest.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v03/data/csv/messages.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v03/data/csv/outcomes.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v03/data/jh_motors_v03.sqlite",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v03/experiment_plan.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v03/generation_report.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v03/metric_readiness.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v03/repeated_sampling_check.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v03/sample_size_grid.csv",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v13/DERIVED_MANIFEST.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v13/README.md",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v13/analysis_report_v13.json",
+      "pass": true
+    },
+    {
+      "check": "Frozen e-book/virtual-data/v13/data/jh_motors_v13.sqlite",
+      "pass": true
+    },
+    {
+      "check": "Exact numerical/record companion MINIMUM_RECORD.pdf",
+      "pass": true
+    },
+    {
+      "check": "Exact numerical/record companion MINIMUM_RECORD.html",
+      "pass": true
+    },
+    {
+      "check": "Exact numerical/record companion MINIMUM_RECORD.md",
+      "pass": true
+    },
+    {
+      "check": "Exact numerical/record companion COUNTEREXAMPLE_RESULTS.json",
+      "pass": true
+    },
+    {
+      "check": "Exact numerical/record companion analysis_report_v13.json",
+      "pass": true
+    },
+    {
+      "check": "Exact numerical/record companion PLANNING_EXAMPLE.json",
+      "pass": true
+    },
+    {
+      "check": "Exact numerical/record companion REGRESSION_CHECK.json",
+      "pass": true
+    },
+    {
+      "check": "Exact numerical/record companion counterexample_fixture.json",
+      "pass": true
+    },
+    {
+      "check": "No new prose microheadings",
+      "pass": true
+    },
+    {
+      "check": "All chapter titles preserved",
+      "pass": true
+    },
+    {
+      "check": "Separate-code bounded numeric audit passes",
+      "pass": true
+    },
+    {
+      "check": "Five quantitative chart sources",
+      "pass": true
+    },
+    {
+      "check": "Chart ledger hash e-book/analysis/winner_v04/core_results.json",
+      "pass": true
+    },
+    {
+      "check": "Chart ledger hash e-book/analysis/winner_v04/scenario_results.json",
+      "pass": true
+    },
+    {
+      "check": "Chart vs fresh audit winner_effect.svg diff_pp",
+      "pass": true
+    },
+    {
+      "check": "Chart vs fresh audit winner_effect.svg ci_low_pp",
+      "pass": true
+    },
+    {
+      "check": "Chart vs fresh audit winner_effect.svg ci_high_pp",
+      "pass": true
+    },
+    {
+      "check": "Point position winner_effect.svg",
+      "pass": true
+    },
+    {
+      "check": "CI endpoints winner_effect.svg",
+      "pass": true
+    },
+    {
+      "check": "Chart vs fresh audit guardrail_effect.svg diff_pp",
+      "pass": true
+    },
+    {
+      "check": "Chart vs fresh audit guardrail_effect.svg ci_low_pp",
+      "pass": true
+    },
+    {
+      "check": "Chart vs fresh audit guardrail_effect.svg ci_high_pp",
+      "pass": true
+    },
+    {
+      "check": "Point position guardrail_effect.svg",
+      "pass": true
+    },
+    {
+      "check": "CI endpoints guardrail_effect.svg",
+      "pass": true
+    },
+    {
+      "check": "Unambiguous guardrail ticks",
+      "pass": true
+    },
+    {
+      "check": "Capacity value all_A",
+      "pass": true
+    },
+    {
+      "check": "Capacity value pilot_10pct_B",
+      "pass": true
+    },
+    {
+      "check": "Capacity value all_B",
+      "pass": true
+    },
+    {
+      "check": "Four conceptual diagrams inserted",
+      "pass": true
+    },
+    {
+      "check": "Actual labels at least12pt within tolerance",
+      "pass": true
+    },
+    {
+      "check": "Footnotes all on caller page",
+      "pass": true
+    },
+    {
+      "check": "Three restrained emphasis spans",
+      "pass": true
+    },
+    {
+      "check": "Median bottom leftover reduced",
+      "pass": true
+    },
+    {
+      "check": "High-percentile bottom leftover reduced",
+      "pass": true
+    },
+    {
+      "check": "Fewer pages with30mm bottom leftovers",
+      "pass": true
+    },
+    {
+      "check": "Exact final PDF hash",
+      "pass": true
+    },
+    {
+      "check": "Final PDF retained 관계 안전은 통과했다고 말할 수 없다",
+      "pass": true
+    },
+    {
+      "check": "Final PDF retained 운영 중단 사유로 두며",
+      "pass": true
+    },
+    {
+      "check": "Final PDF retained Variable Control",
+      "pass": true
+    },
+    {
+      "check": "Final PDF retained Vector Segmentation",
+      "pass": true
+    },
+    {
+      "check": "Final PDF retained Value-Linked Decision",
+      "pass": true
+    },
+    {
+      "check": "Final PDF retained 51.7%",
+      "pass": true
+    },
+    {
+      "check": "Final PDF retained 59.9%",
+      "pass": true
+    },
+    {
+      "check": "Final PDF retained 67.4%",
+      "pass": true
+    },
+    {
+      "check": "Final PDF retained 1.17pp",
+      "pass": true
+    },
+    {
+      "check": "No forbidden separator",
+      "pass": true
+    },
+    {
+      "check": "All PDF internal links valid",
+      "pass": true
+    },
+    {
+      "check": "At least two entries on final glossary page",
+      "pass": true
+    },
+    {
+      "check": "Exact PDF destination author_origin",
+      "pass": true
+    },
+    {
+      "check": "Exact PDF destination operating_contract",
+      "pass": true
+    },
+    {
+      "check": "Exact PDF destination positive_cases",
+      "pass": true
+    },
+    {
+      "check": "Exact PDF destination scope",
+      "pass": true
+    },
+    {
+      "check": "Exact PDF destination chapter6",
+      "pass": true
+    },
+    {
+      "check": "Exact PDF destination chapter12",
+      "pass": true
+    }
+  ],
+  "source_v15_preserved": true,
+  "historical_statistics_unchanged": true,
+  "new_concept_figures": [
+    {
+      "file": "tri_v_workflow_v16.svg",
+      "page": 9,
+      "minimum_label_pt": 12.787395833333331,
+      "caption": "TRI-V의 선택과 세 축, 되돌림과 승인 구분을 연결한 개념 워크플로우"
+    },
+    {
+      "file": "three_judgments_v16.svg",
+      "page": 22,
+      "minimum_label_pt": 12.787395833333331,
+      "caption": "관측, 통계적 해석, 사업과 보호 선택은 서로 다른 문장이다. TRI-V에 새 축을 추가한 것이 아닌 개념도다."
+    },
+    {
+      "file": "observation_maturity_v16.svg",
+      "page": 27,
+      "minimum_label_pt": 12.787395833333331,
+      "caption": "모집을 멈춘 시점과 개인별 관측 창의 성숙은 다르다. 날짜와 고객 수를 나타내는 실측 자료가 아닌 개념도다."
+    },
+    {
+      "file": "decision_record_v16.svg",
+      "page": 46,
+      "minimum_label_pt": 12.787395833333331,
+      "caption": "기존 여섯 칸은 계획과 결과를 다시 쓰는 서류가 아니라 근거와 선택 및 재검토를 연결하는 기록이다."
+    }
+  ],
+  "footnote_count": 8,
+  "bounded_numeric_audit_checks": 82,
+  "numeric_audit_not_full_book": true,
+  "cover_proposal": "A",
+  "cover_approved": false,
+  "human_review_approved": false,
+  "real_reader_test_conducted": false,
+  "whitespace_before": {
+    "median_remaining_bottom_mm": 14.23,
+    "p90_remaining_bottom_mm": 31.7,
+    "pages_with_at_least_30mm_unused": [
+      9,
+      11,
+      15,
+      33,
+      36,
+      40,
+      77,
+      82,
+      90,
+      91
+    ]
+  },
+  "whitespace_after": {
+    "median_remaining_bottom_mm": 10.415,
+    "p90_remaining_bottom_mm": 21.88,
+    "pages_with_at_least_30mm_unused": [
+      26,
+      45,
+      60,
+      83
+    ]
+  }
+}

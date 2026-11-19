@@ -1,10 +1,10 @@
 {
-  "checked_at_seoul": "2026-11-18T19:18:46.249979+09:00",
+  "checked_at_seoul": "2026-11-19T10:07:38.108512+09:00",
   "author": "허재혁",
   "project": "A/B Test",
   "repository": "https://github.com/jhheo51-arch/AB-Test",
   "latest_data_version": "v0.3 original preserved, v0.13 derived copy with corrected outcomes view, separate v0.4 teaching scenarios preserved",
-  "latest_complete_reader_bundle_version": "v0.15 portable developed reader, not full reproduction or approved publication",
+  "latest_complete_reader_bundle_version": "v0.16 portable visual reader, not full reproduction or approved publication",
   "counts_v03": {
     "customers": 120000,
     "assignments": 65559,
@@ -33,26 +33,27 @@
     "book_v12": 87,
     "book_v13": 88,
     "book_v14": 90,
-    "book_v15": 93
+    "book_v15": 93,
+    "book_v16": 83
   },
   "six_worked_case_start_pages": {
     "1": [
-      34
+      30
     ],
     "2": [
-      36
+      32
     ],
     "3": [
-      38
+      34
     ],
     "4": [
-      41
+      36
     ],
     "5": [
-      44
+      39
     ],
     "6": [
-      47
+      42
     ]
   },
   "diagnostic_cards": 60,
@@ -124,7 +125,11 @@
     "integration_v15": "e-book/exports/v15/integration_validation_v15.json",
     "package_smoke_v15": "e-book/exports/v15/package_smoke_v15.json",
     "development_v15": "e-book/exports/v15/DEVELOPMENT.md",
-    "planning_example_v15": "e-book/analysis/development_v15/PLANNING_EXAMPLE.json"
+    "planning_example_v15": "e-book/analysis/development_v15/PLANNING_EXAMPLE.json",
+    "book_v16": "e-book/exports/v16/ebook_review_v16.pdf",
+    "validation_v16": "e-book/exports/v16/validation_v16.json",
+    "integration_v16": "e-book/exports/v16/integration_validation_v16.json",
+    "package_smoke_v16": "e-book/exports/v16/package_smoke_v16.json"
   },
   "checks": [
     "required files exist",
@@ -162,7 +167,10 @@
     "v14 original103 numeric checks, read-only SQL and disclosed analytic teaching examples; no new field experiment",
     "v15 exact PDF and reading archive hashes, original v14 and numeric inputs preserved",
     "v15 existing103 numeric checks plus new planning power and MDE calculation comparisons",
-    "v15 design tables and complete developed paragraphs located in final PDF; not evidence of learning effectiveness"
+    "v15 design tables and complete developed paragraphs located in final PDF; not evidence of learning effectiveness",
+    "v16 exact83-page PDF and55-file archive hashes verified",
+    "v16 13 figures, four new conceptual diagrams, eight actual caller-page footnotes, label typography and protected inputs verified",
+    "v16 bounded separate-code82 numeric checks, existing103 token checks and read-only SQL verified; not full statistical or human approval"
   ],
   "not_repeated": [
     "statistical calculations/simulations in this inventory refresh; see actual analysis reports",
@@ -171,8 +179,8 @@
   ],
   "product_tool_status": "direction documents only, no implemented general analysis application",
   "publication_status": "not ready for sale; author/content/domain/reader/rights review pending",
-  "latest_reading_edition": "v0.15 principles developed into design choices and decision records; author review",
-  "main_book_path": "e-book/exports/v15/ebook_review_v15.pdf",
+  "latest_reading_edition": "v0.16 visual and footnote typesetting, author review",
+  "main_book_path": "e-book/exports/v16/ebook_review_v16.pdf",
   "previous_v04_case_pages": {
     "1": [
       24
@@ -195,9 +203,9 @@
   },
   "methodology_chapter_start_pages": {
     "1": 6,
-    "2": 14,
-    "3": 17,
-    "4": 18
+    "2": 12,
+    "3": 15,
+    "4": 16
   },
   "middle_dot_counts": {
     "U+00B7": 0,
@@ -207,30 +215,30 @@
     "U+22C5": 0,
     "U+30FB": 0
   },
-  "companion_scope": "Original six-field record and corrected statistics retained byte-identically; development note, planning illustration and three self-check questions included",
+  "companion_scope": "Original six-field record and corrected numerical ledgers preserved byte-identically; cover alternatives and bounded audit included",
   "glossary_entries": 36,
   "method_title_proposal": "TRI-V as the author-proposed method; another brand is optional",
   "method_title_approval": "Clarified the method/operating-guide distinction in response to the author; no new Contextvia brand or final cover approval inferred",
   "all_chapter_start_pages": {
     "1": 6,
-    "2": 14,
-    "3": 17,
-    "4": 18,
-    "5": 20,
-    "6": 25,
-    "7": 34,
-    "8": 51,
-    "9": 55,
-    "10": 60,
-    "11": 64,
-    "12": 67
+    "2": 12,
+    "3": 15,
+    "4": 16,
+    "5": 18,
+    "6": 22,
+    "7": 30,
+    "8": 46,
+    "9": 50,
+    "10": 54,
+    "11": 58,
+    "12": 61
   },
   "same_A4_body_only_control_pages": {
     "v06": 48,
     "v12": 74
   },
   "persona_review_status": "AI simulated review, not interviews or sales validation",
-  "source_characters": 101153,
+  "source_characters": 102415,
   "cover_approval": "A selected as recommendation; author approval pending",
   "plan_identity": {
     "exact_bytes_match": false,
@@ -249,8 +257,8 @@
   "reader_test_protocol": "prepared, recruitment and conditions require approval",
   "reader_test_observation_rows": 0,
   "reader_test_preparation_checks": "fixture counts, rates/effects, CI/p recalculated and matched to participant and facilitator files; not learning outcomes",
-  "reader_test_source_edition": "Original preparation retains v08 PDF hash; v15 self-check is not administration of the formal reader test",
-  "operating_contract_page": 11,
+  "reader_test_source_edition": "Original preparation retains v08 PDF hash; visual checks do not administer reader testing",
+  "operating_contract_page": 10,
   "english_name_candidates": {
     "previous_proposal": "Contexvia",
     "user_latest_literal": "contextvia",
@@ -259,28 +267,28 @@
   },
   "three_operating_repairs": "integrated in the actual book, companion card and record; reader usability not yet tested",
   "reader_test_administration": "User will conduct the test; no independent recruitment or sharing authorized",
-  "later_publication_work": "Bounded development only; no actual customer recruitment, send, external review or publication release",
+  "later_publication_work": "Bounded visual development and delivery only; no external sharing or publication release",
   "new_explanation_pages": {
     "author_origin": 4,
-    "operating_contract": 11,
-    "positive_cases": 53,
-    "scope": 64,
-    "chapter6": 25,
-    "chapter12": 67
+    "operating_contract": 10,
+    "positive_cases": 48,
+    "scope": 58,
+    "chapter6": 22,
+    "chapter12": 61
   },
   "universal_applicability_claim": false,
   "historical_novelty_claim": false,
   "origin_scope": "Supplied draft already contains TRI-V; its first coinage is not established by the available excerpt",
   "minimum_record_fields": 6,
   "minimum_record_pdf_pages": 1,
-  "minimum_record_path": "e-book/exports/v15/MINIMUM_RECORD.html",
+  "minimum_record_path": "e-book/exports/v16/MINIMUM_RECORD.html",
   "counterexample_cases": 4,
-  "editorial_gate": "Developed chapters2/6/9 design choices and decision writing; human technical and author review pending",
+  "editorial_gate": "Full visual edit applied; final author, human technical, reader and rights review pending",
   "reader_bundle": {
-    "archive": "C:\\Users\\Administrator\\Downloads\\AB-Test-v07\\JH_CRM_ebook_reader_v15.zip",
-    "file_count": 42,
-    "bytes": 3571542,
-    "sha256": "c7e4831576884bbc742bbcb9299ea87202e406adc5699f5019971bd09f01b53a",
+    "archive": "C:\\Users\\Administrator\\Downloads\\AB-Test-v07\\JH_CRM_ebook_reader_v16.zip",
+    "file_count": 55,
+    "bytes": 4548360,
+    "sha256": "ecbe804518f363f3fec21bf5f472da370d8f3aeb11debd9901884ccaf73fba40",
     "integrity": "passed",
     "exact_entry_bytes": "passed",
     "extracted_book_and_minimum_record": "passed",
@@ -332,5 +340,64 @@
     "sequential_engine_implemented": false,
     "self_check_questions": 3,
     "self_check_is_real_reader_test": false
+  },
+  "visual_v16": {
+    "new_concept_figures": [
+      {
+        "file": "tri_v_workflow_v16.svg",
+        "page": 9,
+        "minimum_label_pt": 12.787395833333331,
+        "caption": "TRI-V의 선택과 세 축, 되돌림과 승인 구분을 연결한 개념 워크플로우"
+      },
+      {
+        "file": "three_judgments_v16.svg",
+        "page": 22,
+        "minimum_label_pt": 12.787395833333331,
+        "caption": "관측, 통계적 해석, 사업과 보호 선택은 서로 다른 문장이다. TRI-V에 새 축을 추가한 것이 아닌 개념도다."
+      },
+      {
+        "file": "observation_maturity_v16.svg",
+        "page": 27,
+        "minimum_label_pt": 12.787395833333331,
+        "caption": "모집을 멈춘 시점과 개인별 관측 창의 성숙은 다르다. 날짜와 고객 수를 나타내는 실측 자료가 아닌 개념도다."
+      },
+      {
+        "file": "decision_record_v16.svg",
+        "page": 46,
+        "minimum_label_pt": 12.787395833333331,
+        "caption": "기존 여섯 칸은 계획과 결과를 다시 쓰는 서류가 아니라 근거와 선택 및 재검토를 연결하는 기록이다."
+      }
+    ],
+    "actual_same_page_footnotes": 8,
+    "bounded_numeric_checks": 82,
+    "integration_checks_passed": 357,
+    "whitespace_before": {
+      "median_remaining_bottom_mm": 14.23,
+      "p90_remaining_bottom_mm": 31.7,
+      "pages_with_at_least_30mm_unused": [
+        9,
+        11,
+        15,
+        33,
+        36,
+        40,
+        77,
+        82,
+        90,
+        91
+      ]
+    },
+    "whitespace_after": {
+      "median_remaining_bottom_mm": 10.415,
+      "p90_remaining_bottom_mm": 21.88,
+      "pages_with_at_least_30mm_unused": [
+        26,
+        45,
+        60,
+        83
+      ]
+    },
+    "cover_proposal": "A",
+    "cover_approved": false
   }
 }

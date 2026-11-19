@@ -1,0 +1,860 @@
+{
+  "kind": "conceptual_illustrations_not_data",
+  "source": "e-book/exports/v15/ebook_review_v15.md",
+  "source_read_scope": "방법론 1-4장과 공통 기준, 관측 성숙 관련 6장",
+  "author": "허재혁",
+  "print_width_mm": 156,
+  "svg_width_units": 900,
+  "font_family": "ReaderSans,Noto Sans KR,sans-serif",
+  "minimum_font_size_px": 28,
+  "minimum_print_pt": 13.757480314960631,
+  "scale_calculation": "SVG font units * (156 mm / 900 units) * (72 pt / 25.4 mm). 28 px = 13.7575 pt; 25 px = 12.2835 pt. No downstream shrink below the stated 156 mm width.",
+  "render_engine": "Playwright Chromium, actual screenshot at device_scale_factor=2",
+  "new_colors_are_illustration_surfaces_only": true,
+  "figures": [
+    {
+      "svg": "tri_v_workflow_v16.svg",
+      "png": "tri_v_workflow_v16.png",
+      "viewBox": [
+        0,
+        0,
+        900,
+        1050
+      ],
+      "actual_png_size": [
+        1800,
+        2100
+      ],
+      "svg_bytes": 168121,
+      "png_bytes": 310426,
+      "minimum_font_size_px": 28,
+      "flowedges": [
+        {
+          "from": "comparison_and_options",
+          "to": "V1",
+          "kind": "forward",
+          "path": "M480 188V212"
+        },
+        {
+          "from": "V1",
+          "to": "V2",
+          "kind": "forward",
+          "path": "M480 392V416"
+        },
+        {
+          "from": "V2",
+          "to": "V3",
+          "kind": "forward",
+          "path": "M480 586V610"
+        },
+        {
+          "from": "V3",
+          "to": "V1",
+          "kind": "return",
+          "path": "M100 710H54V308H96"
+        },
+        {
+          "from": "V3",
+          "to": "V2",
+          "kind": "return",
+          "path": "M54 504H96"
+        },
+        {
+          "from": "V3",
+          "to": "current_choice",
+          "kind": "forward",
+          "path": "M480 772V793"
+        }
+      ],
+      "verification": {
+        "fontLoaded": true,
+        "textCount": 23,
+        "minFont": 28,
+        "overflow": [],
+        "textBounds": [
+          {
+            "text": "비교에서 현재 선택까지",
+            "x": 36,
+            "y": 2,
+            "width": 351.375,
+            "height": 52,
+            "size": 36
+          },
+          {
+            "text": "개념 설명 | 실제 고객이나 성과 데이터가 아님",
+            "x": 36,
+            "y": 50,
+            "width": 526.125,
+            "height": 40,
+            "size": 28
+          },
+          {
+            "text": "무엇을 비교하고 무엇을 선택할까?",
+            "x": 122,
+            "y": 106,
+            "width": 455.53125,
+            "height": 46,
+            "size": 32
+          },
+          {
+            "text": "전환, 범위가 정해진 적용, 현행 유지, 새 검증",
+            "x": 122,
+            "y": 142,
+            "width": 516.25,
+            "height": 40,
+            "size": 28
+          },
+          {
+            "text": "V1 정화 | Purification / Variable Control",
+            "x": 121,
+            "y": 223,
+            "width": 531.7349853515625,
+            "height": 40,
+            "size": 28
+          },
+          {
+            "text": "비교 근거와 측정 상태를 먼저 확인한다",
+            "x": 122,
+            "y": 260,
+            "width": 483.99981689453125,
+            "height": 44,
+            "size": 30
+          },
+          {
+            "text": "해석 가능 / 일부 지표 제한 / 비교 보류",
+            "x": 122,
+            "y": 302,
+            "width": 445.375,
+            "height": 40,
+            "size": 28
+          },
+          {
+            "text": "측정과 추론을 구분하고 의존하는 주장만 제한",
+            "x": 122,
+            "y": 342,
+            "width": 528.8798828125,
+            "height": 40,
+            "size": 28
+          },
+          {
+            "text": "V2 해체와 입체화 | Prism",
+            "x": 121,
+            "y": 425,
+            "width": 309.34375,
+            "height": 40,
+            "size": 28
+          },
+          {
+            "text": "Vector Segmentation",
+            "x": 121,
+            "y": 460,
+            "width": 290.625,
+            "height": 40,
+            "size": 28
+          },
+          {
+            "text": "기본은 현재 전체 범위의 적용 근거 확인",
+            "x": 122,
+            "y": 496,
+            "width": 492,
+            "height": 44,
+            "size": 30
+          },
+          {
+            "text": "선택에 중요할 때만 세분화와 대상 차이 검토",
+            "x": 122,
+            "y": 538,
+            "width": 510.734375,
+            "height": 40,
+            "size": 28
+          },
+          {
+            "text": "V3 언어의 전환 | Translation",
+            "x": 121,
+            "y": 618,
+            "width": 359.3125,
+            "height": 40,
+            "size": 28
+          },
+          {
+            "text": "Value-Linked Decision",
+            "x": 121,
+            "y": 653,
+            "width": 305.15625,
+            "height": 40,
+            "size": 28
+          },
+          {
+            "text": "성과 판단 / 사업 조건 / 보호 상태를 나눈다",
+            "x": 122,
+            "y": 689,
+            "width": 532.5997924804688,
+            "height": 44,
+            "size": 30
+          },
+          {
+            "text": "부족한 근거가 있는 질문으로 돌아간다",
+            "x": 122,
+            "y": 726,
+            "width": 443.7598876953125,
+            "height": 40,
+            "size": 28
+          },
+          {
+            "text": "실행 후보 또는 조건부 후보",
+            "x": 116,
+            "y": 800,
+            "width": 314.734375,
+            "height": 40,
+            "size": 28
+          },
+          {
+            "text": "추가 확인",
+            "x": 506,
+            "y": 800,
+            "width": 110.890625,
+            "height": 40,
+            "size": 28
+          },
+          {
+            "text": "미확대",
+            "x": 116,
+            "y": 852,
+            "width": 77.28125,
+            "height": 40,
+            "size": 28
+          },
+          {
+            "text": "보호 대응 또는 운영 중단",
+            "x": 506,
+            "y": 852,
+            "width": 289.199951171875,
+            "height": 40,
+            "size": 28
+          },
+          {
+            "text": "실행 후보 ≠ 실제 승인",
+            "x": 100,
+            "y": 900,
+            "width": 284.40625,
+            "height": 44,
+            "size": 30
+          },
+          {
+            "text": "추가 분석 종료 ≠ 통계적 실험 종료",
+            "x": 100,
+            "y": 945,
+            "width": 409.921875,
+            "height": 40,
+            "size": 28
+          },
+          {
+            "text": "통계적 실험 종료 ≠ 보호 운영 중단",
+            "x": 100,
+            "y": 987,
+            "width": 410.159912109375,
+            "height": 40,
+            "size": 28
+          }
+        ],
+        "panelOverflow": [],
+        "line_metric_bbox_intersections": [
+          [
+            "비교에서 현재 선택까지",
+            "개념 설명 | 실제 고객이나 성과 데이터가 아님"
+          ],
+          [
+            "무엇을 비교하고 무엇을 선택할까?",
+            "전환, 범위가 정해진 적용, 현행 유지, 새 검증"
+          ],
+          [
+            "V1 정화 | Purification / Variable Control",
+            "비교 근거와 측정 상태를 먼저 확인한다"
+          ],
+          [
+            "비교 근거와 측정 상태를 먼저 확인한다",
+            "해석 가능 / 일부 지표 제한 / 비교 보류"
+          ],
+          [
+            "V2 해체와 입체화 | Prism",
+            "Vector Segmentation"
+          ],
+          [
+            "Vector Segmentation",
+            "기본은 현재 전체 범위의 적용 근거 확인"
+          ],
+          [
+            "기본은 현재 전체 범위의 적용 근거 확인",
+            "선택에 중요할 때만 세분화와 대상 차이 검토"
+          ],
+          [
+            "V3 언어의 전환 | Translation",
+            "Value-Linked Decision"
+          ],
+          [
+            "Value-Linked Decision",
+            "성과 판단 / 사업 조건 / 보호 상태를 나눈다"
+          ],
+          [
+            "성과 판단 / 사업 조건 / 보호 상태를 나눈다",
+            "부족한 근거가 있는 질문으로 돌아간다"
+          ]
+        ],
+        "line_metric_note": "SVG font metric boxes include unused ascent and descent; intersections are not painted glyph overlap. All four PNGs also require visual inspection."
+      }
+    },
+    {
+      "svg": "three_judgments_v16.svg",
+      "png": "three_judgments_v16.png",
+      "viewBox": [
+        0,
+        0,
+        900,
+        660
+      ],
+      "actual_png_size": [
+        1800,
+        1320
+      ],
+      "svg_bytes": 165753,
+      "png_bytes": 156999,
+      "minimum_font_size_px": 28,
+      "flowedges": [
+        {
+          "from": "observation",
+          "to": "inference",
+          "kind": "forward",
+          "path": "M450 258V279"
+        },
+        {
+          "from": "inference",
+          "to": "business_and_protection_choice",
+          "kind": "forward",
+          "path": "M450 422V443"
+        }
+      ],
+      "verification": {
+        "fontLoaded": true,
+        "textCount": 12,
+        "minFont": 28,
+        "overflow": [],
+        "textBounds": [
+          {
+            "text": "본 것과 말할 수 있는 것, 선택할 것",
+            "x": 36,
+            "y": 2,
+            "width": 512.859375,
+            "height": 52,
+            "size": 36
+          },
+          {
+            "text": "개념 설명 | 실제 고객이나 성과 데이터가 아님",
+            "x": 36,
+            "y": 50,
+            "width": 526.125,
+            "height": 40,
+            "size": 28
+          },
+          {
+            "text": "관측 문장",
+            "x": 66,
+            "y": 121,
+            "width": 126.734375,
+            "height": 46,
+            "size": 32
+          },
+          {
+            "text": "기록에서 본 차이를 말한다",
+            "x": 66,
+            "y": 164,
+            "width": 329.19989013671875,
+            "height": 44,
+            "size": 30
+          },
+          {
+            "text": "“배정 고객의 시승 완료를 비교했다.”",
+            "x": 66,
+            "y": 206,
+            "width": 426.421875,
+            "height": 40,
+            "size": 28
+          },
+          {
+            "text": "추론 문장",
+            "x": 66,
+            "y": 285,
+            "width": 126.734375,
+            "height": 46,
+            "size": 32
+          },
+          {
+            "text": "설계와 불확실성 아래 효과를 말한다",
+            "x": 66,
+            "y": 328,
+            "width": 447.9998779296875,
+            "height": 44,
+            "size": 30
+          },
+          {
+            "text": "“어디까지 효과라고 말할 수 있을까?”",
+            "x": 66,
+            "y": 370,
+            "width": 431.90625,
+            "height": 40,
+            "size": 28
+          },
+          {
+            "text": "사업과 보호 선택 문장",
+            "x": 66,
+            "y": 449,
+            "width": 291.84375,
+            "height": 46,
+            "size": 32
+          },
+          {
+            "text": "비용, 용량, 동의와 안전을 따로 본다",
+            "x": 66,
+            "y": 492,
+            "width": 445.53985595703125,
+            "height": 44,
+            "size": 30
+          },
+          {
+            "text": "“어떤 범위와 조건으로 선택할까?”",
+            "x": 66,
+            "y": 534,
+            "width": 398.3125,
+            "height": 40,
+            "size": 28
+          },
+          {
+            "text": "서로 대신할 수 없는 문장 | 실행 후보는 승인이 아님",
+            "x": 40,
+            "y": 601,
+            "width": 594.0625,
+            "height": 40,
+            "size": 28
+          }
+        ],
+        "panelOverflow": [],
+        "line_metric_bbox_intersections": [
+          [
+            "본 것과 말할 수 있는 것, 선택할 것",
+            "개념 설명 | 실제 고객이나 성과 데이터가 아님"
+          ],
+          [
+            "관측 문장",
+            "기록에서 본 차이를 말한다"
+          ],
+          [
+            "기록에서 본 차이를 말한다",
+            "“배정 고객의 시승 완료를 비교했다.”"
+          ],
+          [
+            "추론 문장",
+            "설계와 불확실성 아래 효과를 말한다"
+          ],
+          [
+            "설계와 불확실성 아래 효과를 말한다",
+            "“어디까지 효과라고 말할 수 있을까?”"
+          ],
+          [
+            "사업과 보호 선택 문장",
+            "비용, 용량, 동의와 안전을 따로 본다"
+          ],
+          [
+            "비용, 용량, 동의와 안전을 따로 본다",
+            "“어떤 범위와 조건으로 선택할까?”"
+          ]
+        ],
+        "line_metric_note": "SVG font metric boxes include unused ascent and descent; intersections are not painted glyph overlap. All four PNGs also require visual inspection."
+      }
+    },
+    {
+      "svg": "observation_maturity_v16.svg",
+      "png": "observation_maturity_v16.png",
+      "viewBox": [
+        0,
+        0,
+        900,
+        650
+      ],
+      "actual_png_size": [
+        1800,
+        1300
+      ],
+      "svg_bytes": 166078,
+      "png_bytes": 142846,
+      "minimum_font_size_px": 28,
+      "flowedges": [
+        {
+          "from": "earlier_time",
+          "to": "later_time",
+          "kind": "forward",
+          "path": "M75 146H834"
+        }
+      ],
+      "verification": {
+        "fontLoaded": true,
+        "textCount": 13,
+        "minFont": 28,
+        "overflow": [],
+        "textBounds": [
+          {
+            "text": "모집을 멈춰도 관측은 이어진다",
+            "x": 36,
+            "y": 2,
+            "width": 460.8125,
+            "height": 52,
+            "size": 36
+          },
+          {
+            "text": "개념 설명 | 실제 고객이나 성과 데이터가 아님",
+            "x": 36,
+            "y": 50,
+            "width": 526.125,
+            "height": 40,
+            "size": 28
+          },
+          {
+            "text": "시간의 흐름",
+            "x": 76,
+            "y": 97,
+            "width": 136.640625,
+            "height": 40,
+            "size": 28
+          },
+          {
+            "text": "모집 중지 시점",
+            "x": 580,
+            "y": 175,
+            "width": 182.40625,
+            "height": 44,
+            "size": 30
+          },
+          {
+            "text": "먼저 배정된 고객",
+            "x": 76,
+            "y": 216,
+            "width": 210,
+            "height": 44,
+            "size": 30
+          },
+          {
+            "text": "같은 길이의 관측 창",
+            "x": 112,
+            "y": 284,
+            "width": 229.8399658203125,
+            "height": 40,
+            "size": 28
+          },
+          {
+            "text": "성숙",
+            "x": 468,
+            "y": 284,
+            "width": 51.53125,
+            "height": 40,
+            "size": 28
+          },
+          {
+            "text": "늦게 배정된 고객",
+            "x": 76,
+            "y": 336,
+            "width": 210,
+            "height": 44,
+            "size": 30
+          },
+          {
+            "text": "같은 길이의 관측 창",
+            "x": 382,
+            "y": 404,
+            "width": 229.8399658203125,
+            "height": 40,
+            "size": 28
+          },
+          {
+            "text": "성숙",
+            "x": 738,
+            "y": 404,
+            "width": 51.53125,
+            "height": 40,
+            "size": 28
+          },
+          {
+            "text": "늦게 들어온 고객도 정한 관측 기회를 채운다",
+            "x": 64,
+            "y": 501,
+            "width": 547.5997924804688,
+            "height": 44,
+            "size": 30
+          },
+          {
+            "text": "아직 미성숙한 상태를 미완료로 확정하지 않는다",
+            "x": 64,
+            "y": 541,
+            "width": 554.639892578125,
+            "height": 40,
+            "size": 28
+          },
+          {
+            "text": "모집 중지와 통계적 종료, 보호 대응은 별도 판단",
+            "x": 64,
+            "y": 574,
+            "width": 553.6878662109375,
+            "height": 40,
+            "size": 28
+          }
+        ],
+        "panelOverflow": [],
+        "line_metric_bbox_intersections": [
+          [
+            "모집을 멈춰도 관측은 이어진다",
+            "개념 설명 | 실제 고객이나 성과 데이터가 아님"
+          ],
+          [
+            "늦게 들어온 고객도 정한 관측 기회를 채운다",
+            "아직 미성숙한 상태를 미완료로 확정하지 않는다"
+          ],
+          [
+            "아직 미성숙한 상태를 미완료로 확정하지 않는다",
+            "모집 중지와 통계적 종료, 보호 대응은 별도 판단"
+          ]
+        ],
+        "line_metric_note": "SVG font metric boxes include unused ascent and descent; intersections are not painted glyph overlap. All four PNGs also require visual inspection."
+      }
+    },
+    {
+      "svg": "decision_record_v16.svg",
+      "png": "decision_record_v16.png",
+      "viewBox": [
+        0,
+        0,
+        900,
+        840
+      ],
+      "actual_png_size": [
+        1800,
+        1680
+      ],
+      "svg_bytes": 166902,
+      "png_bytes": 189168,
+      "minimum_font_size_px": 28,
+      "flowedges": [
+        {
+          "from": "1",
+          "to": "2",
+          "kind": "forward",
+          "path": "M470 200V217"
+        },
+        {
+          "from": "2",
+          "to": "3",
+          "kind": "forward",
+          "path": "M470 304V321"
+        },
+        {
+          "from": "3",
+          "to": "4",
+          "kind": "forward",
+          "path": "M470 408V425"
+        },
+        {
+          "from": "4",
+          "to": "5",
+          "kind": "forward",
+          "path": "M470 512V529"
+        },
+        {
+          "from": "5",
+          "to": "6",
+          "kind": "forward",
+          "path": "M470 616V633"
+        },
+        {
+          "from": "6",
+          "to": "1",
+          "kind": "return",
+          "path": "M92 678H46V157H88"
+        }
+      ],
+      "verification": {
+        "fontLoaded": true,
+        "textCount": 16,
+        "minFont": 28,
+        "overflow": [],
+        "textBounds": [
+          {
+            "text": "기존 여섯 칸으로 판단을 잇는다",
+            "x": 36,
+            "y": 2,
+            "width": 470.890625,
+            "height": 52,
+            "size": 36
+          },
+          {
+            "text": "개념 설명 | 실제 고객이나 성과 데이터가 아님",
+            "x": 36,
+            "y": 50,
+            "width": 526.125,
+            "height": 40,
+            "size": 28
+          },
+          {
+            "text": "지금 결정할 것",
+            "x": 116,
+            "y": 116,
+            "width": 182.40625,
+            "height": 44,
+            "size": 30
+          },
+          {
+            "text": "가능한 선택과 범위",
+            "x": 116,
+            "y": 153,
+            "width": 221.765625,
+            "height": 40,
+            "size": 28
+          },
+          {
+            "text": "V1 믿고 쓸 근거와 제한",
+            "x": 115,
+            "y": 220,
+            "width": 292.06988525390625,
+            "height": 44,
+            "size": 30
+          },
+          {
+            "text": "결과 위치와 제한할 주장",
+            "x": 116,
+            "y": 257,
+            "width": 281.35992431640625,
+            "height": 40,
+            "size": 28
+          },
+          {
+            "text": "V2 적용 대상",
+            "x": 115,
+            "y": 324,
+            "width": 164.86993408203125,
+            "height": 44,
+            "size": 30
+          },
+          {
+            "text": "같은 대상인지, 다른 근거인지",
+            "x": 116,
+            "y": 361,
+            "width": 340.453125,
+            "height": 40,
+            "size": 28
+          },
+          {
+            "text": "V3 현재 선택",
+            "x": 115,
+            "y": 428,
+            "width": 164.484375,
+            "height": 44,
+            "size": 30
+          },
+          {
+            "text": "선택과 실제 승인 상태 구분",
+            "x": 116,
+            "y": 465,
+            "width": 314.734375,
+            "height": 40,
+            "size": 28
+          },
+          {
+            "text": "추가 확인 또는 생략",
+            "x": 116,
+            "y": 532,
+            "width": 246,
+            "height": 44,
+            "size": 30
+          },
+          {
+            "text": "행동을 바꿀 질문과 책임",
+            "x": 116,
+            "y": 569,
+            "width": 281.125,
+            "height": 40,
+            "size": 28
+          },
+          {
+            "text": "다시 검토할 조건",
+            "x": 116,
+            "y": 636,
+            "width": 210,
+            "height": 44,
+            "size": 30
+          },
+          {
+            "text": "관측이나 가정이 바뀌는 때",
+            "x": 116,
+            "y": 673,
+            "width": 306.890625,
+            "height": 40,
+            "size": 28
+          },
+          {
+            "text": "같은 실험 식별자로 기존 계획과 결과를 참조",
+            "x": 92,
+            "y": 745,
+            "width": 510.734375,
+            "height": 40,
+            "size": 28
+          },
+          {
+            "text": "여섯 칸의 연결 설명이며 새 작성 양식이 아님",
+            "x": 92,
+            "y": 786,
+            "width": 518.5625,
+            "height": 40,
+            "size": 28
+          }
+        ],
+        "panelOverflow": [],
+        "line_metric_bbox_intersections": [
+          [
+            "기존 여섯 칸으로 판단을 잇는다",
+            "개념 설명 | 실제 고객이나 성과 데이터가 아님"
+          ],
+          [
+            "지금 결정할 것",
+            "가능한 선택과 범위"
+          ],
+          [
+            "V1 믿고 쓸 근거와 제한",
+            "결과 위치와 제한할 주장"
+          ],
+          [
+            "V2 적용 대상",
+            "같은 대상인지, 다른 근거인지"
+          ],
+          [
+            "V3 현재 선택",
+            "선택과 실제 승인 상태 구분"
+          ],
+          [
+            "추가 확인 또는 생략",
+            "행동을 바꿀 질문과 책임"
+          ],
+          [
+            "다시 검토할 조건",
+            "관측이나 가정이 바뀌는 때"
+          ]
+        ],
+        "line_metric_note": "SVG font metric boxes include unused ascent and descent; intersections are not painted glyph overlap. All four PNGs also require visual inspection."
+      }
+    }
+  ],
+  "verified_figure_count": 4,
+  "checks": {
+    "all_four_rendered": true,
+    "all_fonts_loaded": true,
+    "canvas_text_overflow": 0,
+    "middle_dot_characters": 0,
+    "svg_xml_valid": true,
+    "workflow_height_at_most_1050": true,
+    "no_book_or_color_token_files_modified_by_script": true
+  }
+}

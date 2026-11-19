@@ -1,0 +1,33 @@
+{
+  "status": "insertion_recommendations_only_parent_handles_insertion",
+  "placements": [
+    {
+      "file": "tri_v_workflow_v16.svg",
+      "anchor": "1장 TRI-V 공통 운용 기준, 여섯 항목 표 직전",
+      "why": "선택부터 출발하는 최소 경로와 되돌아갈 질문을 먼저 보여줘 모든 심화 분석을 자동 요구하는 오독을 막는다.",
+      "replace_recommendation": "기존 tri_v_method.svg를 대체하고 인접한 세 단계 설명 그림과 중복 삽입하지 않는다.",
+      "source_lines": "89-118"
+    },
+    {
+      "file": "three_judgments_v16.svg",
+      "anchor": "4장 통계적 우위와 실행 선택은 서로 다른 기록이라는 문단 뒤",
+      "why": "관측한 기록, 추론 가능한 효과, 사업과 보호 선택을 다른 문장으로 읽게 한다. 새 축을 더하지 않는다.",
+      "replace_recommendation": "독립적으로 삽입하되 같은 내용을 반복하는 개념 카드가 있으면 그 카드를 대체한다. winner_effect.svg와 guardrail_effect.svg의 정량 사례를 대체하지 않는다.",
+      "source_lines": "178-197"
+    },
+    {
+      "file": "observation_maturity_v16.svg",
+      "anchor": "2장 개인별 관측 기간 설명 뒤, 또는 6장 등록 종료일과 최종 결과 확정일 설명 뒤 중 한 곳만",
+      "why": "모집을 멈춘 달력 시점과 개인별 결과가 성숙하는 시점의 차이를 한눈에 보여준다.",
+      "replace_recommendation": "본문의 기간 개념 그림이 있으면 대체한다. 같은 그림을 두 장에 반복하지 않는다.",
+      "source_lines": "146,300-304,324-326"
+    },
+    {
+      "file": "decision_record_v16.svg",
+      "anchor": "1장 공통 운용 기준의 기존 여섯 항목 표 뒤 또는 8장 결정 기록 도입 중 한 곳만",
+      "why": "기존 자료를 참조하며 선택에서 재검토까지 연결함을 설명한다. 입력 칸을 늘리지 않는다.",
+      "replace_recommendation": "기존 여섯 칸 표와 작성용 양식은 유지한다. 별도의 기록 연결 그림이 있다면 그 그림만 대체한다.",
+      "source_lines": "93-102"
+    }
+  ]
+}
