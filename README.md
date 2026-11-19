@@ -1,5 +1,9 @@
 # A/B Test
 
+## A/B 실험노트 영상 제작
+
+입문 영상 1~10화의 대본, 장면 도표, 음성에 맞춘 강조, 롱폼과 숏폼 렌더링을 [영상 제작 안내](video-production/README.md)에서 재현할 수 있습니다. 완성 영상은 기존 비공개 보관함에서 관리합니다.
+
 ## 최신 통합 안내
 - **[v0.19 제목과 핵심 세 문제 보완본](e-book/exports/v19/ebook_review_v19.pdf)**: 95쪽. 질문형 제목 유지와 장르 ‘CRM A/B 테스트 실무’ 및 TRI-V 부제를 적용했습니다. 독해와 계산 검증 경로 분리, 기존 명세 재사용 대조, 요청 이후 수정 판단을 보완했습니다. [실제 변경](e-book/design/v19/DEVELOPMENT.md), [제출 준비도](e-book/design/v19/SUBMISSION_READINESS.md), [웹 읽기본](e-book/exports/v19/ebook_review_v19.html), [읽기 묶음](JH_CRM_ebook_reader_v19.zip)을 제공합니다. 통합 검사 486건과 기존 수치 문자 103건 및 읽기 전용 SQL을 확인했으며 사람 검수와 실제 독자시험, 권리 및 출품 규격 확인은 별도입니다.
 - **[v0.18 글과 정량 그림 개발본](e-book/exports/v18/ebook_review_v18.pdf)**: 89쪽. 윤문 83건과 구조 편집 29건을 반영했습니다. [글 품질 평가](e-book/review/editorial_quality_v18/PROSE_QUALITY_FINAL.md), [구조 의미 재검토](e-book/review/editorial_quality_v18/STRUCTURAL_SEMANTIC_RECHECK.md), [읽기 묶음](JH_CRM_ebook_reader_v18.zip)을 보존합니다. AI 편집과 의미 검토이지 사람의 검수나 실제 독자시험이 아닙니다.
