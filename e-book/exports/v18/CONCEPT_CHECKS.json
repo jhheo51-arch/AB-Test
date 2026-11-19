@@ -1,0 +1,18 @@
+{
+  "kind": "Analytic teaching illustrations, not an observed experiment or field validation",
+  "independent_true_null_tests": {
+    "assumptions": "All null hypotheses true, independent rejection events, exact per-test type-I error equal to alpha; not a guarantee for arbitrary tests or business decisions",
+    "alpha": 0.01,
+    "trials": 100,
+    "expected_false_rejections": 1.0,
+    "probability_at_least_one": 0.6339676587267705,
+    "display_percent": 63.4
+  },
+  "local_small_effect_sample_approximation": {
+    "assumptions": "Other design parameters and variance approximation held fixed; n proportional to inverse squared absolute effect; not exact arbitrary binary-outcome planning",
+    "effect_ratio": 0.5,
+    "approximate_sample_ratio": 4.0
+  },
+  "checks_passed": 3,
+  "no_customer_inputs_modified": true
+}

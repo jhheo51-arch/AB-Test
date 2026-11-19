@@ -1,0 +1,594 @@
+{
+  "pdf": "e-book\\exports\\v17\\ebook_review_v17.pdf",
+  "pdf_pages": 85,
+  "scope": "Text-bearing content extent including figure labels and footnotes; excludes cover and contents. Measures bottom leftover in the defined frame, not total white-pixel percentage. Natural final-page tails are not automatically layout errors.",
+  "frame_margin_top_mm": 17,
+  "frame_margin_bottom_mm": 18,
+  "median_remaining_bottom_mm": 10.04,
+  "p90_remaining_bottom_mm": 24.02,
+  "pages_with_at_least_30mm_unused": [
+    10,
+    16,
+    39,
+    44,
+    46,
+    61,
+    84
+  ],
+  "rows": [
+    {
+      "page": 4,
+      "words": 302,
+      "last_content_y_mm": 239.01,
+      "remaining_bottom_space_mm": 12.91,
+      "at_least_30mm_unused": false
+    },
+    {
+      "page": 5,
+      "words": 297,
+      "last_content_y_mm": 248.18,
+      "remaining_bottom_space_mm": 3.74,
+      "at_least_30mm_unused": false
+    },
+    {
+      "page": 6,
+      "words": 213,
+      "last_content_y_mm": 248.0,
+      "remaining_bottom_space_mm": 3.91,
+      "at_least_30mm_unused": false
+    },
+    {
+      "page": 7,
+      "words": 155,
+      "last_content_y_mm": 240.86,
+      "remaining_bottom_space_mm": 11.06,
+      "at_least_30mm_unused": false
+    },
+    {
+      "page": 8,
+      "words": 342,
+      "last_content_y_mm": 249.58,
+      "remaining_bottom_space_mm": 2.34,
+      "at_least_30mm_unused": false
+    },
+    {
+      "page": 9,
+      "words": 224,
+      "last_content_y_mm": 236.36,
+      "remaining_bottom_space_mm": 15.56,
+      "at_least_30mm_unused": false
+    },
+    {
+      "page": 10,
+      "words": 218,
+      "last_content_y_mm": 169.69,
+      "remaining_bottom_space_mm": 82.23,
+      "at_least_30mm_unused": true
+    },
+    {
+      "page": 11,
+      "words": 312,
+      "last_content_y_mm": 248.8,
+      "remaining_bottom_space_mm": 3.12,
+      "at_least_30mm_unused": false
+    },
+    {
+      "page": 12,
+      "words": 321,
+      "last_content_y_mm": 246.15,
+      "remaining_bottom_space_mm": 5.77,
+      "at_least_30mm_unused": false
+    },
+    {
+      "page": 13,
+      "words": 340,
+      "last_content_y_mm": 250.12,
+      "remaining_bottom_space_mm": 1.8,
+      "at_least_30mm_unused": false
+    },
+    {
+      "page": 14,
+      "words": 290,
+      "last_content_y_mm": 248.18,
+      "remaining_bottom_space_mm": 3.74,
+      "at_least_30mm_unused": false
+    },
+    {
+      "page": 15,
+      "words": 296,
+      "last_content_y_mm": 245.61,
+      "remaining_bottom_space_mm": 6.31,
+      "at_least_30mm_unused": false
+    },
+    {
+      "page": 16,
+      "words": 274,
+      "last_content_y_mm": 209.11,
+      "remaining_bottom_space_mm": 42.81,
+      "at_least_30mm_unused": true
+    },
+    {
+      "page": 17,
+      "words": 308,
+      "last_content_y_mm": 246.15,
+      "remaining_bottom_space_mm": 5.77,
+      "at_least_30mm_unused": false
+    },
+    {
+      "page": 18,
+      "words": 320,
+      "last_content_y_mm": 246.15,
+      "remaining_bottom_space_mm": 5.77,
+      "at_least_30mm_unused": false
+    },
+    {
+      "page": 19,
+      "words": 327,
+      "last_content_y_mm": 242.7,
+      "remaining_bottom_space_mm": 9.22,
+      "at_least_30mm_unused": false
+    },
+    {
+      "page": 20,
+      "words": 356,
+      "last_content_y_mm": 250.12,
+      "remaining_bottom_space_mm": 1.8,
+      "at_least_30mm_unused": false
+    },
+    {
+      "page": 21,
+      "words": 341,
+      "last_content_y_mm": 241.65,
+      "remaining_bottom_space_mm": 10.26,
+      "at_least_30mm_unused": false
+    },
+    {
+      "page": 22,
+      "words": 223,
+      "last_content_y_mm": 235.21,
+      "remaining_bottom_space_mm": 16.7,
+      "at_least_30mm_unused": false
+    },
+    {
+      "page": 23,
+      "words": 302,
+      "last_content_y_mm": 236.88,
+      "remaining_bottom_space_mm": 15.04,
+      "at_least_30mm_unused": false
+    },
+    {
+      "page": 24,
+      "words": 312,
+      "last_content_y_mm": 251.97,
+      "remaining_bottom_space_mm": 0.0,
+      "at_least_30mm_unused": false
+    },
+    {
+      "page": 25,
+      "words": 326,
+      "last_content_y_mm": 242.98,
+      "remaining_bottom_space_mm": 8.94,
+      "at_least_30mm_unused": false
+    },
+    {
+      "page": 26,
+      "words": 315,
+      "last_content_y_mm": 249.86,
+      "remaining_bottom_space_mm": 2.06,
+      "at_least_30mm_unused": false
+    },
+    {
+      "page": 27,
+      "words": 226,
+      "last_content_y_mm": 228.69,
+      "remaining_bottom_space_mm": 23.23,
+      "at_least_30mm_unused": false
+    },
+    {
+      "page": 28,
+      "words": 321,
+      "last_content_y_mm": 249.86,
+      "remaining_bottom_space_mm": 2.06,
+      "at_least_30mm_unused": false
+    },
+    {
+      "page": 29,
+      "words": 320,
+      "last_content_y_mm": 248.18,
+      "remaining_bottom_space_mm": 3.74,
+      "at_least_30mm_unused": false
+    },
+    {
+      "page": 30,
+      "words": 294,
+      "last_content_y_mm": 240.79,
+      "remaining_bottom_space_mm": 11.13,
+      "at_least_30mm_unused": false
+    },
+    {
+      "page": 31,
+      "words": 313,
+      "last_content_y_mm": 237.68,
+      "remaining_bottom_space_mm": 14.23,
+      "at_least_30mm_unused": false
+    },
+    {
+      "page": 32,
+      "words": 324,
+      "last_content_y_mm": 241.65,
+      "remaining_bottom_space_mm": 10.26,
+      "at_least_30mm_unused": false
+    },
+    {
+      "page": 33,
+      "words": 199,
+      "last_content_y_mm": 232.91,
+      "remaining_bottom_space_mm": 19.01,
+      "at_least_30mm_unused": false
+    },
+    {
+      "page": 34,
+      "words": 253,
+      "last_content_y_mm": 233.72,
+      "remaining_bottom_space_mm": 18.2,
+      "at_least_30mm_unused": false
+    },
+    {
+      "page": 35,
+      "words": 259,
+      "last_content_y_mm": 251.71,
+      "remaining_bottom_space_mm": 0.21,
+      "at_least_30mm_unused": false
+    },
+    {
+      "page": 36,
+      "words": 275,
+      "last_content_y_mm": 251.17,
+      "remaining_bottom_space_mm": 0.75,
+      "at_least_30mm_unused": false
+    },
+    {
+      "page": 37,
+      "words": 230,
+      "last_content_y_mm": 251.71,
+      "remaining_bottom_space_mm": 0.21,
+      "at_least_30mm_unused": false
+    },
+    {
+      "page": 38,
+      "words": 308,
+      "last_content_y_mm": 234.77,
+      "remaining_bottom_space_mm": 17.14,
+      "at_least_30mm_unused": false
+    },
+    {
+      "page": 39,
+      "words": 289,
+      "last_content_y_mm": 214.4,
+      "remaining_bottom_space_mm": 37.52,
+      "at_least_30mm_unused": true
+    },
+    {
+      "page": 40,
+      "words": 245,
+      "last_content_y_mm": 250.65,
+      "remaining_bottom_space_mm": 1.27,
+      "at_least_30mm_unused": false
+    },
+    {
+      "page": 41,
+      "words": 342,
+      "last_content_y_mm": 250.12,
+      "remaining_bottom_space_mm": 1.8,
+      "at_least_30mm_unused": false
+    },
+    {
+      "page": 42,
+      "words": 308,
+      "last_content_y_mm": 234.77,
+      "remaining_bottom_space_mm": 17.14,
+      "at_least_30mm_unused": false
+    },
+    {
+      "page": 43,
+      "words": 277,
+      "last_content_y_mm": 240.07,
+      "remaining_bottom_space_mm": 11.85,
+      "at_least_30mm_unused": false
+    },
+    {
+      "page": 44,
+      "words": 198,
+      "last_content_y_mm": 220.66,
+      "remaining_bottom_space_mm": 31.25,
+      "at_least_30mm_unused": true
+    },
+    {
+      "page": 45,
+      "words": 287,
+      "last_content_y_mm": 246.42,
+      "remaining_bottom_space_mm": 5.5,
+      "at_least_30mm_unused": false
+    },
+    {
+      "page": 46,
+      "words": 201,
+      "last_content_y_mm": 164.4,
+      "remaining_bottom_space_mm": 87.52,
+      "at_least_30mm_unused": true
+    },
+    {
+      "page": 47,
+      "words": 227,
+      "last_content_y_mm": 241.65,
+      "remaining_bottom_space_mm": 10.26,
+      "at_least_30mm_unused": false
+    },
+    {
+      "page": 48,
+      "words": 336,
+      "last_content_y_mm": 243.24,
+      "remaining_bottom_space_mm": 8.68,
+      "at_least_30mm_unused": false
+    },
+    {
+      "page": 49,
+      "words": 305,
+      "last_content_y_mm": 248.26,
+      "remaining_bottom_space_mm": 3.66,
+      "at_least_30mm_unused": false
+    },
+    {
+      "page": 50,
+      "words": 333,
+      "last_content_y_mm": 245.36,
+      "remaining_bottom_space_mm": 6.56,
+      "at_least_30mm_unused": false
+    },
+    {
+      "page": 51,
+      "words": 303,
+      "last_content_y_mm": 235.57,
+      "remaining_bottom_space_mm": 16.35,
+      "at_least_30mm_unused": false
+    },
+    {
+      "page": 52,
+      "words": 356,
+      "last_content_y_mm": 234.77,
+      "remaining_bottom_space_mm": 17.14,
+      "at_least_30mm_unused": false
+    },
+    {
+      "page": 53,
+      "words": 326,
+      "last_content_y_mm": 227.9,
+      "remaining_bottom_space_mm": 24.02,
+      "at_least_30mm_unused": false
+    },
+    {
+      "page": 54,
+      "words": 341,
+      "last_content_y_mm": 241.65,
+      "remaining_bottom_space_mm": 10.26,
+      "at_least_30mm_unused": false
+    },
+    {
+      "page": 55,
+      "words": 326,
+      "last_content_y_mm": 251.18,
+      "remaining_bottom_space_mm": 0.74,
+      "at_least_30mm_unused": false
+    },
+    {
+      "page": 56,
+      "words": 335,
+      "last_content_y_mm": 241.65,
+      "remaining_bottom_space_mm": 10.26,
+      "at_least_30mm_unused": false
+    },
+    {
+      "page": 57,
+      "words": 342,
+      "last_content_y_mm": 241.65,
+      "remaining_bottom_space_mm": 10.26,
+      "at_least_30mm_unused": false
+    },
+    {
+      "page": 58,
+      "words": 351,
+      "last_content_y_mm": 248.53,
+      "remaining_bottom_space_mm": 3.38,
+      "at_least_30mm_unused": false
+    },
+    {
+      "page": 59,
+      "words": 298,
+      "last_content_y_mm": 248.18,
+      "remaining_bottom_space_mm": 3.74,
+      "at_least_30mm_unused": false
+    },
+    {
+      "page": 60,
+      "words": 300,
+      "last_content_y_mm": 233.19,
+      "remaining_bottom_space_mm": 18.73,
+      "at_least_30mm_unused": false
+    },
+    {
+      "page": 61,
+      "words": 270,
+      "last_content_y_mm": 185.03,
+      "remaining_bottom_space_mm": 66.88,
+      "at_least_30mm_unused": true
+    },
+    {
+      "page": 62,
+      "words": 254,
+      "last_content_y_mm": 248.8,
+      "remaining_bottom_space_mm": 3.12,
+      "at_least_30mm_unused": false
+    },
+    {
+      "page": 63,
+      "words": 360,
+      "last_content_y_mm": 241.65,
+      "remaining_bottom_space_mm": 10.26,
+      "at_least_30mm_unused": false
+    },
+    {
+      "page": 64,
+      "words": 315,
+      "last_content_y_mm": 240.33,
+      "remaining_bottom_space_mm": 11.59,
+      "at_least_30mm_unused": false
+    },
+    {
+      "page": 65,
+      "words": 180,
+      "last_content_y_mm": 228.6,
+      "remaining_bottom_space_mm": 23.32,
+      "at_least_30mm_unused": false
+    },
+    {
+      "page": 66,
+      "words": 357,
+      "last_content_y_mm": 241.11,
+      "remaining_bottom_space_mm": 10.81,
+      "at_least_30mm_unused": false
+    },
+    {
+      "page": 67,
+      "words": 348,
+      "last_content_y_mm": 234.77,
+      "remaining_bottom_space_mm": 17.14,
+      "at_least_30mm_unused": false
+    },
+    {
+      "page": 68,
+      "words": 349,
+      "last_content_y_mm": 241.65,
+      "remaining_bottom_space_mm": 10.26,
+      "at_least_30mm_unused": false
+    },
+    {
+      "page": 69,
+      "words": 358,
+      "last_content_y_mm": 249.58,
+      "remaining_bottom_space_mm": 2.34,
+      "at_least_30mm_unused": false
+    },
+    {
+      "page": 70,
+      "words": 354,
+      "last_content_y_mm": 223.84,
+      "remaining_bottom_space_mm": 28.08,
+      "at_least_30mm_unused": false
+    },
+    {
+      "page": 71,
+      "words": 212,
+      "last_content_y_mm": 242.09,
+      "remaining_bottom_space_mm": 9.82,
+      "at_least_30mm_unused": false
+    },
+    {
+      "page": 72,
+      "words": 249,
+      "last_content_y_mm": 239.27,
+      "remaining_bottom_space_mm": 12.65,
+      "at_least_30mm_unused": false
+    },
+    {
+      "page": 73,
+      "words": 288,
+      "last_content_y_mm": 245.09,
+      "remaining_bottom_space_mm": 6.82,
+      "at_least_30mm_unused": false
+    },
+    {
+      "page": 74,
+      "words": 233,
+      "last_content_y_mm": 230.18,
+      "remaining_bottom_space_mm": 21.74,
+      "at_least_30mm_unused": false
+    },
+    {
+      "page": 75,
+      "words": 284,
+      "last_content_y_mm": 246.42,
+      "remaining_bottom_space_mm": 5.5,
+      "at_least_30mm_unused": false
+    },
+    {
+      "page": 76,
+      "words": 287,
+      "last_content_y_mm": 251.44,
+      "remaining_bottom_space_mm": 0.47,
+      "at_least_30mm_unused": false
+    },
+    {
+      "page": 77,
+      "words": 278,
+      "last_content_y_mm": 251.44,
+      "remaining_bottom_space_mm": 0.47,
+      "at_least_30mm_unused": false
+    },
+    {
+      "page": 78,
+      "words": 248,
+      "last_content_y_mm": 230.28,
+      "remaining_bottom_space_mm": 21.64,
+      "at_least_30mm_unused": false
+    },
+    {
+      "page": 79,
+      "words": 262,
+      "last_content_y_mm": 247.74,
+      "remaining_bottom_space_mm": 4.18,
+      "at_least_30mm_unused": false
+    },
+    {
+      "page": 80,
+      "words": 204,
+      "last_content_y_mm": 250.56,
+      "remaining_bottom_space_mm": 1.36,
+      "at_least_30mm_unused": false
+    },
+    {
+      "page": 81,
+      "words": 267,
+      "last_content_y_mm": 245.36,
+      "remaining_bottom_space_mm": 6.56,
+      "at_least_30mm_unused": false
+    },
+    {
+      "page": 82,
+      "words": 127,
+      "last_content_y_mm": 242.18,
+      "remaining_bottom_space_mm": 9.73,
+      "at_least_30mm_unused": false
+    },
+    {
+      "page": 83,
+      "words": 285,
+      "last_content_y_mm": 248.53,
+      "remaining_bottom_space_mm": 3.38,
+      "at_least_30mm_unused": false
+    },
+    {
+      "page": 84,
+      "words": 149,
+      "last_content_y_mm": 221.81,
+      "remaining_bottom_space_mm": 30.11,
+      "at_least_30mm_unused": true
+    },
+    {
+      "page": 85,
+      "words": 278,
+      "last_content_y_mm": 229.22,
+      "remaining_bottom_space_mm": 22.7,
+      "at_least_30mm_unused": false
+    }
+  ]
+}

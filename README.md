@@ -1,6 +1,8 @@
 # A/B Test
 
 ## 최신 통합 안내
+- **[v0.19 제목과 핵심 세 문제 보완본](e-book/exports/v19/ebook_review_v19.pdf)**: 95쪽. 질문형 제목 유지와 장르 ‘CRM A/B 테스트 실무’ 및 TRI-V 부제를 적용했습니다. 독해와 계산 검증 경로 분리, 기존 명세 재사용 대조, 요청 이후 수정 판단을 보완했습니다. [실제 변경](e-book/design/v19/DEVELOPMENT.md), [제출 준비도](e-book/design/v19/SUBMISSION_READINESS.md), [웹 읽기본](e-book/exports/v19/ebook_review_v19.html), [읽기 묶음](JH_CRM_ebook_reader_v19.zip)을 제공합니다. 통합 검사 486건과 기존 수치 문자 103건 및 읽기 전용 SQL을 확인했으며 사람 검수와 실제 독자시험, 권리 및 출품 규격 확인은 별도입니다.
+- **[v0.18 글과 정량 그림 개발본](e-book/exports/v18/ebook_review_v18.pdf)**: 89쪽. 윤문 83건과 구조 편집 29건을 반영했습니다. [글 품질 평가](e-book/review/editorial_quality_v18/PROSE_QUALITY_FINAL.md), [구조 의미 재검토](e-book/review/editorial_quality_v18/STRUCTURAL_SEMANTIC_RECHECK.md), [읽기 묶음](JH_CRM_ebook_reader_v18.zip)을 보존합니다. AI 편집과 의미 검토이지 사람의 검수나 실제 독자시험이 아닙니다.
 - **[v0.17 쪽별 검토와 탐색 보완본](e-book/exports/v17/ebook_review_v17.pdf)**: 85쪽. 기존83쪽의 모의 페르소나 평가와 최종85쪽 재검수를 바탕으로 독립 색인, 검색과 양방향 링크, 후면 재배치, 그래프 수치 열과 각주 번호를 보완했습니다. [편집 검토](e-book/design/v17/REVIEW.md), [쪽별 평가와 처리](e-book/review/page_personas_v17/PAGE_REVIEW.md), [읽기 묶음](JH_CRM_ebook_reader_v17.zip)을 제공합니다. 실제 독자시험이나 사람의 통계 검수는 아니며 최종 출간 승인은 남아 있습니다.
 - **[v0.16 시각 편집 본책](e-book/exports/v16/ebook_review_v16.pdf)**: 83쪽. 표지3안, TRI-V 워크플로우와 학습 도형4개, 실제 하단 각주8개와 정량 그래프5개를 반영했습니다. 본문12pt를 유지하고 하단30mm 이상 남는 쪽은10곳에서4곳으로 줄였습니다. [전후 검토](e-book/design/v16/REVIEW.md), [읽기 묶음](JH_CRM_ebook_reader_v16.zip)을 제공합니다. 핵심 수치 별도 재계산82건은 일치했으나 책 전체 무오류 판정이나 사람 검수는 아닙니다. 표지 A와 가제는 제안이며 최종 승인은 남습니다.
 - **[v0.15 설계와 판단 보강 본책](e-book/exports/v15/ebook_review_v15.pdf)**: 93쪽. 기존 원리를 블록 배정 선택, 가용 고객 수에 따른 계획 계산과 선택, 종료 상황별 행동 및 실제 보고 문장으로 발전시켰습니다. [전후 보완과 실제 위치](e-book/exports/v15/DEVELOPMENT.md), [자기점검 세 질문](e-book/exports/v15/SELF_CHECK.md), [읽기 묶음](JH_CRM_ebook_reader_v15.zip)을 제공합니다. 새 숫자는 가상 후속 설계의 계획값이며 실제 모집과 실험 결과가 아닙니다. TRI-V의 세 축과 여섯 항목, 원자료와 이전 판은 보존했습니다.
@@ -8,8 +10,8 @@
 - **[v0.13 통계 보완 본책](e-book/exports/v13/ebook_review_v13.pdf)**: 88쪽. 검수에서 발견한 군별 검정력 대응, 비영 위험차 보호 score와 사건 시간 하한을 실제로 보완했습니다. [전후 수정과 재검사](e-book/design/v13/REVIEW.md), [읽기 묶음](JH_CRM_ebook_reader_v13.zip), [교정 데이터와 실행 경로](e-book/virtual-data/v13/README.md)를 제공합니다. 원자료와 계획 및 기존 장부와 지난 판, v0.12 감사는 보존했습니다. 사람 검수와 출간 승인은 별개이며 이번 보완 전달에서 멈춥니다.
 - **[v0.12 본책 교정 검토본](e-book/exports/v12/ebook_review_v12.pdf)**: 87쪽. 5장과6장,12장을 중심으로29개 문단을 실제 교정하고 계산에서 결정문으로 이어지는 연결을 정리했습니다. [편집 범위와 장별 학습 목표](e-book/design/v12/REVIEW.md), [다음 사람 통계 검수 요청서](e-book/review/statistical_v12/REVIEW_REQUEST.md)를 제공합니다. 세 축과 여섯 칸은 유지했으며 저자 표현 및 사람 검수는 승인 전입니다.
 - **[v0.11 본책 편집 검토본](e-book/exports/v11/ebook_review_v11.pdf)**: 89쪽. 세 축과 여섯 항목을 유지하고 저자 경험, 선택별 충분성, 실행 후보 반례와9장 및10장 윤문을 통합했습니다. [한 장 기록](e-book/exports/v11/MINIMUM_RECORD.pdf), [편집 가능한 양식](e-book/exports/v11/MINIMUM_RECORD.html), [개정 범위와 실제 쪽수](e-book/design/v11/REVIEW.md)를 제공합니다. PUB-02 첫 적용본이며 저자 및 사람 검수는 남습니다.
-- **[TRI-V 실전 정리 v0.3](e-book/review/methodology/tri_v_refinement_v03/README.md)**: 여섯 항목의 한 장 기록, 실행을 허용하는 반례와 필요한 추가 확인, 저자 제공 경험에서 추출한 검토 기준. 새 통계 이론이나 실제 시간 절감의 입증이 아니라 실무 보완편이며 당시 전체 본책 v0.10은 보존했고 이 보완 내용은 v0.11부터 통합했고 최신 읽기본은 v0.17입니다.
-- **[TRI-V 산출물 개정과 조건변형 시험 v0.2](e-book/review/methodology/tri_v_sharpening_v02/README.md)**: PDCA와 TRI-V는 A/B 판단 틀로 유지하고 병행 확장은 중단. TRI-V의 주장별 근거, 적용 경계, 결정 변경과 확인 중단 조건을 구체화합니다. 개발 규칙 검사이며 사람의 누락과 시간 감소는 미검증입니다. 원본 v0.10 전체 읽기본은 변경하지 않았으며 최신 통합본은 v0.17입니다.
+- **[TRI-V 실전 정리 v0.3](e-book/review/methodology/tri_v_refinement_v03/README.md)**: 여섯 항목의 한 장 기록, 실행을 허용하는 반례와 필요한 추가 확인, 저자 제공 경험에서 추출한 검토 기준. 새 통계 이론이나 실제 시간 절감의 입증이 아니라 실무 보완편이며 당시 전체 본책 v0.10은 보존했고 이 보완 내용은 v0.11부터 통합했고 최신 읽기본은 v0.19입니다.
+- **[TRI-V 산출물 개정과 조건변형 시험 v0.2](e-book/review/methodology/tri_v_sharpening_v02/README.md)**: PDCA와 TRI-V는 A/B 판단 틀로 유지하고 병행 확장은 중단. TRI-V의 주장별 근거, 적용 경계, 결정 변경과 확인 중단 조건을 구체화합니다. 개발 규칙 검사이며 사람의 누락과 시간 감소는 미검증입니다. 원본 v0.10 전체 읽기본은 변경하지 않았으며 최신 통합본은 v0.19입니다.
 - **[지금까지의 프로젝트 통합 정리](PROJECT_SUMMARY.md)**: 결정·산출물·실제/합성 자료·시장 비평·남은 일.
 - **[자동 확인 상태](PROJECT_STATUS.json)**: 실제 파일·DB·PDF 확인 시점과 수치.
 - **[제품 방향 문서](tool/README.md)**: 별도 tool/ 경로, 현재 구현되지 않은 제품 설계.
@@ -64,7 +66,7 @@ python scripts/prepare_scenarios_v02.py
 기존 출력이 있으면 덮어쓰지 않습니다. 완전 재생성은 출력 폴더를 백업한 별도 작업 사본에서 수행하세요. 생성용 하위 스크립트의 출력 위치는 `OEM_OUTPUT_ROOT`로 제어할 수 있습니다. 저장소 루트의 scripts가 기준이며, 시나리오 안의 scripts는 생성 당시 보조 사본입니다.
 
 ## 현재 상태
-전체 읽기본은 v0.12입니다. PUB-02 문체 교정과 기술 대조를 적용하고 독립 사람 검수와 저자 표현 승인은 대기로 남깁니다. 연속 서술과 가운데 점 제거 기준을 유지하고, 용어집에만 탐색용 항목 제목을 사용합니다. 노션의 공개 본문을 끝까지 스크롤해 수집했으나 연결 영상을 모두 시청한 것은 아닙니다. 기본 기업과 DB는 v0.3, 별도 실습은 v0.4 그대로이며 새 그래프도 기존 계산 장부에서 생성했습니다. 실제 OEM 성과와 방법론의 현장 우월성은 검증하지 않았습니다. 저자 승인과 외부 검토, 실독자 테스트, 권리와 출간 검수는 남아 있습니다.
+현재 읽기본은 v0.19, 95쪽 저자 검토본입니다. 제목 구성은 저자의 진행 승인에 따라 적용했으며 최종 시각과 출간 및 출품 승인은 별도입니다. TRI-V의 세 축과 여섯 항목, 연속 서술과 본문 가운데 점 제거 기준을 유지합니다. 원본 v0.3과 뷰를 교정한 파생 v0.13 DB, 별도 v0.4 실습 및 지난 판은 보존합니다. 정량 그림은 기존 계산 장부에 근거하며 실제 OEM 성과나 방법론의 현장 우월성은 검증하지 않았습니다. 실제 독자 수행시험, 사람의 통계 및 편집 검수, 권리와 제출처 요건 확인은 남아 있습니다. 비공개 GitHub 최신화는 외부 출품이나 공개 출간이 아닙니다.
 
 ## 이전 본책 v0.5
 

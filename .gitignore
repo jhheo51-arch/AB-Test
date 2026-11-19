@@ -23,3 +23,7 @@ e-book/references/study_v06/notion_studying_source.txt
 e-book/references/study_v06/notion_read_progress.json
 # Same-layout length controls are reproducible local inspection artifacts.
 e-book/exports/v07/content_control_A4_*
+# Third-party cover copies and embedded-image boards stay local.
+e-book/review/cover_positioning_v19/reference_*.png
+e-book/review/cover_positioning_v19/BENCHMARK.html
+e-book/review/cover_positioning_v19/POSITIONING_REVIEW.html
