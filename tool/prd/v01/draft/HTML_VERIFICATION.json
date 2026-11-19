@@ -1,0 +1,41 @@
+{
+  "document": "index.html",
+  "requirements": 15,
+  "tests_passed": 19,
+  "tests": [
+    "file opens offline with expected title",
+    "12 PRD sections present",
+    "P0 filter shows 12 requirements",
+    "P1 filter shows 3 requirements",
+    "requirement keyword search works",
+    "empty search state works",
+    "all 3 illustrative screen tabs switch correctly",
+    "tabs support arrow-key navigation",
+    "review notes and checks persist on reload",
+    "only this PRD review state can be cleared",
+    "print includes all requirements and restores filter",
+    "no page-level horizontal overflow and working navigation at 1440px",
+    "no page-level horizontal overflow and working navigation at 1024px",
+    "no page-level horizontal overflow and working navigation at 768px",
+    "no page-level horizontal overflow and working navigation at 390px",
+    "all requirements visible in print media",
+    "no JavaScript page errors",
+    "malformed review storage is handled without page failure",
+    "disabled browser storage falls back without breaking PRD"
+  ],
+  "browser_errors": [],
+  "network_dependencies": "none; HTTPS requests blocked during test",
+  "contrast_tool": "mira_contrast_matrix",
+  "contrast_normal_text_min_ratio": 6.12,
+  "contrast_pairs_passed": 9,
+  "verification_scope": "HTML PRD only; product statistical engine and customer workflows not implemented",
+  "visual_audit": {
+    "surface": "document / Decide-Learn",
+    "slop_score": 0,
+    "flagged_tells": [],
+    "note": "stylistic self-audit only; not product quality or usability validation"
+  },
+  "created_at_seoul": "2026-11-19T11:56:02.153702+09:00",
+  "html_sha256": "26eb26247145678430d841bd730e483946331d6842351ec0162597104ec0eda9",
+  "visual_inspection": "desktop and mobile screenshots inspected; no overlap or clipping at primary viewport"
+}
