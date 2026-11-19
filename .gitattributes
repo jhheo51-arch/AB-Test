@@ -42,9 +42,9 @@ e-book/design/v17/** -text whitespace=cr-at-eol
 e-book/manuscript/editorial_v17/** -text whitespace=cr-at-eol
 e-book/review/page_personas_v17/** -text whitespace=cr-at-eol
 # Preserve v18/v19 reader bytes and registered editorial evidence.
-e-book/exports/v18/** -text whitespace=cr-at-eol
+e-book/build-inputs/v18/** -text whitespace=cr-at-eol
 e-book/exports/v19/** -text whitespace=cr-at-eol
-e-book/exports/v18/assets/LICENSE-*.* -text whitespace=-blank-at-eol,cr-at-eol
+e-book/build-inputs/v18/assets/LICENSE-*.* -text whitespace=-blank-at-eol,cr-at-eol
 e-book/exports/v19/assets/LICENSE-*.* -text whitespace=-blank-at-eol,cr-at-eol
 e-book/design/v18/** -text whitespace=cr-at-eol
 e-book/design/v19/** -text whitespace=cr-at-eol

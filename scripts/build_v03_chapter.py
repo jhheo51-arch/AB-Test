@@ -6,7 +6,7 @@ from pathlib import Path
 import markdown
 ROOT=Path(__file__).resolve().parents[1]
 DATA=ROOT/'e-book/virtual-data/v03'
-OUT=ROOT/'e-book/exports/v03';OUT.mkdir(parents=True,exist_ok=True)
+OUT=ROOT/'e-book/learning-materials/sample-and-data';OUT.mkdir(parents=True,exist_ok=True)
 p=json.loads((DATA/'experiment_plan.json').read_text(encoding='utf-8'))
 a=json.loads((DATA/'analysis_report.json').read_text(encoding='utf-8'))
 g=json.loads((DATA/'generation_report.json').read_text(encoding='utf-8'))

@@ -6,8 +6,8 @@ import pymupdf
 from PIL import Image,ImageDraw
 from playwright.sync_api import sync_playwright
 ROOT=Path(__file__).resolve().parents[1]
-OUT=ROOT/'e-book/exports/v03'
-REVIEW=ROOT/'e-book/design/v03/review';REVIEW.mkdir(parents=True,exist_ok=True)
+OUT=ROOT/'e-book/learning-materials/sample-and-data'
+REVIEW=ROOT/'e-book/learning-materials/review/sample-and-data';REVIEW.mkdir(parents=True,exist_ok=True)
 errors=[]
 with sync_playwright() as p:
     browser=p.chromium.launch(headless=True)

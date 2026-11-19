@@ -36,7 +36,7 @@ for row,field in [(s['case5']['overall']['stratified_primary'],'wald_ci'),(s['ca
 for row in s['case6']['summaries']:
     for key in ['requested','completed','waiting_end_window','net_value_krw','accepted','total_cost_krw']:check(f'{row[key]:,}',case_source,'case6 '+key)
 # Exact ledgers must be unchanged since the earlier book's verified build.
-manifest=json.loads((ROOT/'e-book/exports/v05/build_manifest_v05.json').read_text(encoding='utf-8'))
+manifest=json.loads((ROOT/'e-book/build-inputs/v05-numeric-manifest.json').read_text(encoding='utf-8'))
 assert hashlib.sha256((ROOT/'e-book/analysis/winner_v04/core_results.json').read_bytes()).hexdigest()==manifest['source_analysis_sha256']
 assert not re.search(r'^### ',text,re.M)
 assert not any(c in text for c in '\u00b7\u2022\u2027\u318d\u22c5\u30fb')

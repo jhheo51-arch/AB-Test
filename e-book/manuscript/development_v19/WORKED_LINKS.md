@@ -30,5 +30,5 @@
 - 1장은 이미 있는 기준 설명을 지운 대체문이 아니라 기존 여섯 칸의 구체적 적용 대조다. 9장도 기존 연습을 남기고 인계의 추가 장면을 붙였다. 부모 통합 단계에서 장간 연결과 표 조판은 다시 확인해야 한다.
 
 ## 읽기 전용 원본 SHA-256
-- `e-book/exports/v18/ebook_review_v18.md`: `a272c2ecb367a382566b510a264f4254d8e1a3c1b3054abb2cb1909a76ea934d`
+- `e-book/build-inputs/v18/ebook_review_v18.md`: `a272c2ecb367a382566b510a264f4254d8e1a3c1b3054abb2cb1909a76ea934d`
 - `e-book/virtual-data/v03/experiment_plan.json`: `4bcd06f0b5f6a8259f27022f3df8db6285d141091c984f3ee7581044f7e86a56`

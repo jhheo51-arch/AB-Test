@@ -1,7 +1,7 @@
 """Copy frozen v18 figures and apply the approved v19 title hierarchy."""
 from pathlib import Path
 import json,shutil,html,hashlib
-R=Path(__file__).resolve().parents[1];B=R/'e-book/exports/v18';O=R/'e-book/exports/v19';O.mkdir(parents=True,exist_ok=True)
+R=Path(__file__).resolve().parents[1];B=R/'e-book/build-inputs/v18';O=R/'e-book/exports/v19';O.mkdir(parents=True,exist_ok=True)
 figures=[]
 for p in B.glob('*.svg'):
  if p.name=='cover_A.svg':continue

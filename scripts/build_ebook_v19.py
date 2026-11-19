@@ -4,7 +4,7 @@ from collections import OrderedDict
 import re,json,html,shutil,ast,hashlib,sys
 import markdown
 R=Path(__file__).resolve().parents[1];O=R/'e-book/exports/v19';O.mkdir(parents=True,exist_ok=True);D=R/'e-book/manuscript/development_v19'
-s=(R/'e-book/exports/v18/ebook_review_v18.md').read_text(encoding='utf-8');sections={};order=[]
+s=(R/'e-book/build-inputs/v18/ebook_review_v18.md').read_text(encoding='utf-8');sections={};order=[]
 for block in re.split(r'(?=^# )',s,flags=re.M):
  if not block.strip():continue
  title=block.splitlines()[0][2:];sections[title]=block;order.append(title)
@@ -26,7 +26,7 @@ for group,paragraphs in groups.items():appendix_notes+='<p class="analysis-group
 main=re.sub(r'<a id="b-[^"]+"></a>\s*','',main)
 main=re.sub(r'\[사례 자료 길잡이\]\([^\n]+\)\s*','',main)
 terms=[]
-terms=json.loads((R/'e-book/exports/v18/LOOKUP.json').read_text(encoding='utf-8'))['terms']
+terms=json.loads((R/'e-book/build-inputs/v18/LOOKUP.json').read_text(encoding='utf-8'))['terms']
 assert len(terms)==36
 aliases={'randomization':['무작위 배정','무작위배정'],'counterfactual':['반사실'],'estimand':['추정 대상'],'itt':['ITT','배정 기준','원래 배정군'],'units':['배정 단위','분석 단위'],'denominator':['분모'],'maturity':['관측 성숙','관측 창'],'srm':['SRM','표본 비율'],'aa':['A/A'],'oec':['OEC','전체 평가 기준'],'primary':['주지표'],'diagnostic':['진단 지표','퍼널을 진단'],'guardrail':['보호 지표','가드레일'],'pvalue':['p값','p-value'],'alpha':['유의수준','제1종'],'power':['검정력','제2종'],'ci':['신뢰구간'],'effect':['pp','상대 효과'],'mde':['MDE','최소 검출'],'business-threshold':['최소 사업 효과','사업 문턱'],'multiplicity':['다중 비교','Bonferroni'],'peeking':['피킹','고정 시점','매일 고정 표본'],'sequential':['순차'],'segments':['세그먼트'],'interaction':['상호작용'],'post-treatment':['처치 후','발송 후 클릭','발송 뒤 클릭'],'holdout':['홀드아웃','미발송'],'incrementality':['증분'],'ltv':['LTV','고객생애가치'],'sensitivity':['민감도'],'interference':['간섭'],'cluster':['군집','지점별'],'did':['이중차분'],'factorial':['요인 설계','다변량'],'bandit':['밴딧'],'twyman':['트와이먼']}
 preferred={'randomization':2,'counterfactual':5,'estimand':2,'itt':2,'units':2,'denominator':2,'maturity':6,'srm':2,'aa':9,'oec':9,'primary':2,'diagnostic':9,'guardrail':4,'pvalue':5,'alpha':5,'power':6,'ci':5,'effect':5,'mde':6,'business-threshold':6,'multiplicity':5,'peeking':6,'sequential':6,'segments':3,'interaction':3,'post-treatment':3,'holdout':7,'incrementality':4,'ltv':4,'sensitivity':4,'interference':7,'cluster':2,'did':9,'factorial':9,'bandit':9,'twyman':9}
@@ -77,15 +77,15 @@ for stem in ['tri_v_workflow','three_judgments','observation_maturity','decision
 assert not any(c in text for c in '\u00b7\u2022\u2027\u318d\u22c5\u30fb')
 text=text.rstrip()+'\n'
 (O/'ebook_review_v19.md').write_text(text,encoding='utf-8',newline='\n')
-shutil.copytree(R/'e-book/exports/v18/assets',O/'assets',dirs_exist_ok=True)
-for name in ['MINIMUM_RECORD.pdf','MINIMUM_RECORD.html','MINIMUM_RECORD.md','MINIMUM_RECORD_WORKED.md','VALIDATION.json','COUNTEREXAMPLES.md','counterexample_fixture.json','COUNTEREXAMPLE_RESULTS.json','analysis_report_v13.json','REGRESSION_CHECK.json','PROVENANCE.json','READ_SCOPE.json','CONCEPT_CHECKS.json','PLANNING_EXAMPLE.json','SELF_CHECK.md','FOOTNOTES.json','FIGURE_DATA.json']:shutil.copyfile(R/'e-book/exports/v18'/name,O/name)
+shutil.copytree(R/'e-book/build-inputs/v18/assets',O/'assets',dirs_exist_ok=True)
+for name in ['MINIMUM_RECORD.pdf','MINIMUM_RECORD.html','MINIMUM_RECORD.md','MINIMUM_RECORD_WORKED.md','VALIDATION.json','COUNTEREXAMPLES.md','counterexample_fixture.json','COUNTEREXAMPLE_RESULTS.json','analysis_report_v13.json','REGRESSION_CHECK.json','PROVENANCE.json','READ_SCOPE.json','CONCEPT_CHECKS.json','PLANNING_EXAMPLE.json','SELF_CHECK.md','FOOTNOTES.json','FIGURE_DATA.json']:shutil.copyfile(R/'e-book/build-inputs/v18'/name,O/name)
 figmeta=json.loads((O/'FIGURE_DATA_V19.json').read_text(encoding='utf-8'))
 (O/'FIGURE_DATA.json').write_text(json.dumps(figmeta,ensure_ascii=False,indent=2),encoding='utf-8',newline='\n')
 fn=json.loads((O/'FOOTNOTES.json').read_text(encoding='utf-8'))
 for n in fn['notes']:n['text']=n['text'].replace(note_old,note_new)
 (O/'FOOTNOTES.json').write_text(json.dumps(fn,ensure_ascii=False,indent=2),encoding='utf-8',newline='\n')
 body=markdown.markdown(text,extensions=['tables','toc','fenced_code'])
-oldhtml=(R/'e-book/exports/v18/ebook_review_v18.html').read_text(encoding='utf-8')
+oldhtml=(R/'e-book/build-inputs/v18/ebook_review_v18.html').read_text(encoding='utf-8')
 # Preserve exact figure captions, including statistical methods and conditions.
 caps={m[1]:m[2] for m in re.finditer(r'<figure[^>]*data-figure="([^"]+)".*?<figcaption>(.*?)</figcaption></figure>',oldhtml,re.S)}
 def embed(m):

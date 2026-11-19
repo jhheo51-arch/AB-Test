@@ -1,7 +1,7 @@
 # v0.3 데이터·본문 개정 안내
 
 ## 이 버전의 목적
-기존 카드집을 크게 출력하는 대신, 실험 가능성→적격 모집단→관측 성숙도→지표별 추론→결정 한계를 하나의 본문 사례로 연결한다. 원고의 새 대표 장은 e-book/exports/v03/sample_and_data_chapter_v03.html 및 PDF에 있다. 기존 전체 책 v0.2를 덮어쓰지 않는다.
+기존 카드집을 크게 출력하는 대신, 실험 가능성→적격 모집단→관측 성숙도→지표별 추론→결정 한계를 하나의 본문 사례로 연결한다. 원고의 새 대표 장은 e-book/learning-materials/sample-and-data/sample_and_data_chapter_v03.html 및 PDF에 있다. 기존 전체 책 v0.2를 덮어쓰지 않는다.
 
 ## 실행 순서
 1. `uv run --with scipy --with statsmodels scripts/plan_oem_v03.py`: 기준 비율·효과·오류·기간·다중성·표본 계획 동결. 기존 계획이 있으면 중단.

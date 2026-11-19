@@ -3,7 +3,8 @@ from pathlib import Path
 from zipfile import ZipFile,ZIP_DEFLATED
 import json,hashlib,os,tempfile,re
 from playwright.sync_api import sync_playwright
-R=Path(__file__).resolve().parents[1];O=R/'e-book/exports/v19';dest=R/'JH_CRM_ebook_reader_v19.zip'
+R=Path(__file__).resolve().parents[1];O=R/'e-book/exports/v19';dest=R/'e-book/packages/JH_CRM_ebook_reader_v19.zip'
+dest.parent.mkdir(parents=True,exist_ok=True)
 v=json.loads((O/'validation_v19.json').read_text(encoding='utf-8'));integration=json.loads((O/'integration_validation_v19.json').read_text(encoding='utf-8'));assert integration['status']=='passed'
 allow=['ebook_review_v19.pdf','ebook_review_v19.html','ebook_review_v19.md','validation_v19.json','integration_validation_v19.json','numeric_text_validation_v19.json','chapter12_sql_validation_v19.json','build_manifest_v19.json','LOOKUP.json','FIGURE_DATA_V19.json','MANUSCRIPT_CHANGES.json','visual_geometry_v19.json','FOOTNOTES.json','FIGURE_DATA.json','MINIMUM_RECORD.pdf','MINIMUM_RECORD.html','MINIMUM_RECORD.md','MINIMUM_RECORD_WORKED.md','PLANNING_EXAMPLE.json','SELF_CHECK.md','COUNTEREXAMPLE_RESULTS.json','analysis_report_v13.json','REGRESSION_CHECK.json','PROVENANCE.json']
 entries={name:O/name for name in allow}
@@ -50,5 +51,5 @@ with tempfile.TemporaryDirectory(prefix='reader_v19_',dir=os.environ.get('TMPDIR
    else:q.locator('#r1').fill('입력 확인');assert q.locator('#r1').input_value()=='입력 확인'
    q.set_viewport_size({'width':390,'height':844});assert not q.evaluate('document.documentElement.scrollWidth>innerWidth');q.close()
   b.close()
-report={'archive':str(dest),'file_count':count,'bytes':dest.stat().st_size,'sha256':hashlib.sha256(dest.read_bytes()).hexdigest(),'integrity':'passed','exact_entry_bytes':'passed','extracted_book_search_and_record':'passed','full_reproduction_environment':False,'actual_reader_test':False,'human_review_approved':False}
+report={'archive':dest.relative_to(R).as_posix(),'file_count':count,'bytes':dest.stat().st_size,'sha256':hashlib.sha256(dest.read_bytes()).hexdigest(),'integrity':'passed','exact_entry_bytes':'passed','extracted_book_search_and_record':'passed','full_reproduction_environment':False,'actual_reader_test':False,'human_review_approved':False}
 (O/'package_smoke_v19.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8',newline='\n');print(json.dumps(report,ensure_ascii=False,indent=2))

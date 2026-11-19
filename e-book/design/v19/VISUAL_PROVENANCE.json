@@ -7,109 +7,109 @@
   "publication_approved": false,
   "figures": [
     {
-      "source": "e-book/exports/v18/campaign_path_v08.svg",
+      "source": "e-book/build-inputs/v18/campaign_path_v08.svg",
       "output": "campaign_path_v08.svg",
       "sha256": "dd2e0b295c8f1acc99f21efda2c8f7b6422c54033e5d9350e0e3043836474ad7",
       "unchanged_bytes": true
     },
     {
-      "source": "e-book/exports/v18/capacity_v06.svg",
+      "source": "e-book/build-inputs/v18/capacity_v06.svg",
       "output": "capacity_v06.svg",
       "sha256": "281f127b9daad952a461f35a049f3bc26e3e26b21607e44962cb8c6f33275a71",
       "unchanged_bytes": true
     },
     {
-      "source": "e-book/exports/v18/decision_record_v16.svg",
+      "source": "e-book/build-inputs/v18/decision_record_v16.svg",
       "output": "decision_record_v16.svg",
       "sha256": "cad3050ed0651ee341412a8a86d72368c4e2241f9f47a615ca14c78fed967f7d",
       "unchanged_bytes": true
     },
     {
-      "source": "e-book/exports/v18/decision_record_v18.svg",
+      "source": "e-book/build-inputs/v18/decision_record_v18.svg",
       "output": "decision_record_v19.svg",
       "sha256": "4b50b0ff4d14e8601773224d4389a1855a7c6eb1ae703b613e5844948f78c3b5",
       "unchanged_bytes": true
     },
     {
-      "source": "e-book/exports/v18/guardrail_effect.svg",
+      "source": "e-book/build-inputs/v18/guardrail_effect.svg",
       "output": "guardrail_effect.svg",
       "sha256": "af7b2f591310900c804a4971de61b0414945b2ea8f819f7ddab9a772752ef87e",
       "unchanged_bytes": true
     },
     {
-      "source": "e-book/exports/v18/measurement_v06.svg",
+      "source": "e-book/build-inputs/v18/measurement_v06.svg",
       "output": "measurement_v06.svg",
       "sha256": "8b014a1adab95143a9ab2ecb08e2d379c64f131ef6ad8292ae12ffbe0f28d28b",
       "unchanged_bytes": true
     },
     {
-      "source": "e-book/exports/v18/observation_maturity_v16.svg",
+      "source": "e-book/build-inputs/v18/observation_maturity_v16.svg",
       "output": "observation_maturity_v16.svg",
       "sha256": "445bf0a4575fb73ddfc9b4900ff291837ca5dd191d53da369292959d405b26e1",
       "unchanged_bytes": true
     },
     {
-      "source": "e-book/exports/v18/observation_maturity_v18.svg",
+      "source": "e-book/build-inputs/v18/observation_maturity_v18.svg",
       "output": "observation_maturity_v19.svg",
       "sha256": "c353680b9dc6179d6e413665dfb34ec23c7037c3a15002fc0daebd30ccf6baaf",
       "unchanged_bytes": true
     },
     {
-      "source": "e-book/exports/v18/segments_v06.svg",
+      "source": "e-book/build-inputs/v18/segments_v06.svg",
       "output": "segments_v06.svg",
       "sha256": "e157cea3ac0b11f3b6a8ffe39723635f78e41ea3f477955e91d341657e32ff9e",
       "unchanged_bytes": true
     },
     {
-      "source": "e-book/exports/v18/three_judgments_v16.svg",
+      "source": "e-book/build-inputs/v18/three_judgments_v16.svg",
       "output": "three_judgments_v16.svg",
       "sha256": "dbb45d6a45cc8ff2189d658d3a13aeeeca6e14be5fe0433b4790da9dfe8a1f2a",
       "unchanged_bytes": true
     },
     {
-      "source": "e-book/exports/v18/three_judgments_v18.svg",
+      "source": "e-book/build-inputs/v18/three_judgments_v18.svg",
       "output": "three_judgments_v19.svg",
       "sha256": "48574220daf51b2f0f4ab664a6a7b40022bbd30b8279deff17242f74fcf7bad8",
       "unchanged_bytes": true
     },
     {
-      "source": "e-book/exports/v18/tri_v_easy_comparison.svg",
+      "source": "e-book/build-inputs/v18/tri_v_easy_comparison.svg",
       "output": "tri_v_easy_comparison.svg",
       "sha256": "ad73834204dac9eda6d22125b5ee0783398621af39ac42571e9dbd665ace6ec7",
       "unchanged_bytes": true
     },
     {
-      "source": "e-book/exports/v18/tri_v_easy_decision.svg",
+      "source": "e-book/build-inputs/v18/tri_v_easy_decision.svg",
       "output": "tri_v_easy_decision.svg",
       "sha256": "bdc173d94310fc04d924252fa11c50a5ad4732d1bb3c19f226c630f1db741384",
       "unchanged_bytes": true
     },
     {
-      "source": "e-book/exports/v18/tri_v_easy_population.svg",
+      "source": "e-book/build-inputs/v18/tri_v_easy_population.svg",
       "output": "tri_v_easy_population.svg",
       "sha256": "147b793ee6a92cf02729a99241a0045bf07a21401182ad93713d1615612dc6f3",
       "unchanged_bytes": true
     },
     {
-      "source": "e-book/exports/v18/tri_v_method.svg",
+      "source": "e-book/build-inputs/v18/tri_v_method.svg",
       "output": "tri_v_method.svg",
       "sha256": "2c9a95762db31381844e0efba1f6d67a960d4807505372768e2bb4ef04ad46ab",
       "unchanged_bytes": true
     },
     {
-      "source": "e-book/exports/v18/tri_v_workflow_v16.svg",
+      "source": "e-book/build-inputs/v18/tri_v_workflow_v16.svg",
       "output": "tri_v_workflow_v16.svg",
       "sha256": "cd0d235402ebf0bc0b72f806a918afed9fb4b56925caf94ded7a20142bdf63af",
       "unchanged_bytes": true
     },
     {
-      "source": "e-book/exports/v18/tri_v_workflow_v18.svg",
+      "source": "e-book/build-inputs/v18/tri_v_workflow_v18.svg",
       "output": "tri_v_workflow_v19.svg",
       "sha256": "91f876f6f778c0c51021250843ef9dca90718bf0a8bb2ab589ff9d3dd09ff4d7",
       "unchanged_bytes": true
     },
     {
-      "source": "e-book/exports/v18/winner_effect.svg",
+      "source": "e-book/build-inputs/v18/winner_effect.svg",
       "output": "winner_effect.svg",
       "sha256": "9cbb50243742bd587fa8e9b7310a25a9a3b562823426fd927ea6f3e3e67e72e7",
       "unchanged_bytes": true

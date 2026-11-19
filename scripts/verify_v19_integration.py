@@ -8,7 +8,7 @@ def check(name,ok):checks.append({'check':name,'pass':bool(ok)});assert ok,name
 def compact(s):return re.sub(r'\s+','',s)
 def near(a,b):return math.isclose(float(a),float(b),abs_tol=1e-9,rel_tol=1e-10)
 for path,h in load('e-book/manuscript/development_v19/BASELINE.json')['hashes'].items():check('Frozen '+path,hashlib.sha256((R/path).read_bytes()).hexdigest()==h)
-old=(R/'e-book/exports/v18/ebook_review_v18.md').read_text(encoding='utf-8');new=(O/'ebook_review_v19.md').read_text(encoding='utf-8');expected=old.split('# 찾아보기')[0]
+old=(R/'e-book/build-inputs/v18/ebook_review_v18.md').read_text(encoding='utf-8');new=(O/'ebook_review_v19.md').read_text(encoding='utf-8');expected=old.split('# 찾아보기')[0]
 pref=load('e-book/manuscript/development_v19/PREFACE_EDITS.json');edits=load('e-book/manuscript/development_v19/READING_LAYERS.json');ops=load('e-book/manuscript/development_v19/WORKED_LINKS.json')
 for e in pref+edits:
  check('Exact replacement '+e['before'][:40],expected.count(e['before'])==1 and e['before']!=e['after']);expected=expected.replace(e['before'],e['after'])
@@ -24,8 +24,8 @@ m=load('e-book/exports/v19/MANUSCRIPT_CHANGES.json');check('Full edition, not pr
 check('Three substantive fixes represented',len(edits)>=8 and {'1','9'}<={str(e['chapter']) for e in ops})
 check('Approved title and scope applied',all(t in (O/'cover_A.svg').read_text(encoding='utf-8') for t in ['그래서, 이 캠페인','계속할까요?','CRM A/B 테스트 실무','TRI-V로 근거를 점검하고','적용 범위와 다음 행동을 정하는 법','허재혁 지음']))
 for name in ['MINIMUM_RECORD.pdf','MINIMUM_RECORD.html','MINIMUM_RECORD.md','MINIMUM_RECORD_WORKED.md','analysis_report_v13.json','COUNTEREXAMPLE_RESULTS.json','PLANNING_EXAMPLE.json','REGRESSION_CHECK.json','PROVENANCE.json']:
- check('Preserved companion '+name,(O/name).read_bytes()==(R/'e-book/exports/v18'/name).read_bytes())
-lookup=load('e-book/exports/v19/LOOKUP.json');previous=load('e-book/exports/v18/LOOKUP.json');check('Definitions unchanged',{t['id']:t['definition'] for t in lookup['terms']}=={t['id']:t['definition'] for t in previous['terms']})
+ check('Preserved companion '+name,(O/name).read_bytes()==(R/'e-book/build-inputs/v18'/name).read_bytes())
+lookup=load('e-book/exports/v19/LOOKUP.json');previous=load('e-book/build-inputs/v18/LOOKUP.json');check('Definitions unchanged',{t['id']:t['definition'] for t in lookup['terms']}=={t['id']:t['definition'] for t in previous['terms']})
 v=load('e-book/exports/v19/validation_v19.json');geom=load('e-book/exports/v19/visual_geometry_v19.json')
 check('Thirteen centered figures without text collision or overflow',len(geom['figures'])==13 and not geom['issues'])
 check('Printed graph labels at least12pt within tolerance',all(f['minimum_label_pt']>=11.9 for f in v['figure_layout']))
