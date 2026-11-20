@@ -1,0 +1,26 @@
+'use strict';
+const assert=require('node:assert/strict'),E=require('../engine.js'),N=require('../narrative.js');
+const plan={randomized:true,independent:true,mature:true,fixedStop:true,includeSegments:false,segmentPrespecified:true,alpha:.05};
+const run=(csv,p={})=>E.analyze(E.prepare(csv,'aggregate'),{...plan,...p});
+let passed=0;function test(name,f){f();passed++;console.log('PASS '+name);}
+const two='arm,success,total\nA,10,100\nB,30,100';
+const segmented='arm,success,total,segment\nA,50,500,new\nB,75,500,new\nA,80,500,existing\nB,75,500,existing';
+test('whole hold reason from actual results',()=>{let r=run('arm,success,total\nA,130,1000\nB,150,1000');assert.equal(N.group(r,r.overall,'overall').code,'HOLD');});
+test('B superior remains statistical not application approval',()=>{let r=run(two),n=N.group(r,r.overall,'overall');assert.equal(n.code,'SUPERIOR');assert.match(n.headline,/B/);assert.match(n.next,/別|별도로/);});
+test('A superior is not biased to B',()=>{let r=run('arm,success,total\nA,30,100\nB,10,100');assert.match(N.group(r,r.overall,'overall').headline,/A/);});
+test('Holm reversal explained from actual raw and adjusted p',()=>{let r=run(segmented,{includeSegments:true});assert.equal(N.group(r,r.segments[0],'segment').code,'HOLM_HOLD');});
+test('unconfirmed assumptions do not create an inference',()=>{let r=run(two,{randomized:false});assert.equal(N.group(r,r.overall,'overall').code,'ASSUMPTIONS');assert.equal(N.interaction(r).code,'INTERACTION_BLOCKED');});
+test('arm cap is unsupported not a winner',()=>{let r=run('arm,success,total\nA,100,200001\nB,101,200001');assert.equal(N.group(r,r.overall,'overall').code,'UNSUPPORTED');});
+test('posthoc descriptive group is labelled exploratory',()=>{let r=run(segmented,{includeSegments:true,segmentPrespecified:false});assert.equal(N.group(r,r.segments[0],'segment').code,'EXPLORATORY');});
+test('missing segment blocks group inference not overall counts',()=>{let r=run('arm,success,total,segment\nA,10,100,new\nB,20,100,new\nA,5,50,\nA,5,50,old\nB,10,50,old',{includeSegments:true});assert.equal(N.group(r,r.segments[0],'segment').code,'MISSING_SEGMENT');});
+test('empty group arm has separate explanation',()=>{let r=run('arm,success,total,segment\nA,0,0,x\nB,10,100,x\nA,10,100,y\nB,10,100,y',{includeSegments:true});assert.equal(N.group(r,r.segments[0],'segment').code,'GROUP_UNSUPPORTED');});
+test('insufficient interaction information does not imply equality',()=>{let r=run('arm,success,total,segment\nA,1,20,x\nB,4,20,x\nA,2,20,y\nB,4,20,y',{includeSegments:true});assert.equal(N.interaction(r).code,'INTERACTION_UNSUPPORTED');});
+test('actual interaction hold is not proof of no difference',()=>{let r=run(segmented,{includeSegments:true}),n=N.interaction(r);assert.equal(n.code,'INTERACTION_HOLD');assert.match(n.body,/증명은 아니/);});
+test('supported direct difference is not an A or B treatment winner',()=>{let r=run('arm,success,total,segment\nA,10,100,x\nB,70,100,x\nA,40,100,y\nB,35,100,y',{includeSegments:true});assert.equal(N.interaction(r).code,'INTERACTION_SUPPORTED');assert.match(N.interaction(r).body,/별도 판단/);});
+test('unrequested interaction stays unrequested',()=>{let r=run(two);assert.equal(N.interaction(r).code,'INTERACTION_NOT_REQUESTED');});
+test('invalid input produces no invented comparison',()=>{let r=run('arm,success,total\nA,110,100\nB,1,100');assert.equal(N.group(r,r.overall,'overall').code,'INVALID');});
+test('context missing values never infer audience',()=>{let h=N.context({});assert.match(h,/설명 미기록/);assert.match(h,/추정하지 않음/);});
+test('all free context values HTML escaped',()=>{let h=N.context({policyA:'<img src=x onerror=1>',policyB:'</script>',purpose:'<iframe>',audience:'A&B'});assert(!h.includes('<img'));assert(!h.includes('</script>'));assert(h.includes('&lt;img'));assert(h.includes('A&amp;B'));});
+test('explanation card escapes arbitrary text',()=>{let h=N.card({code:'X',headline:'<script>',body:'<img>',next:'<iframe>'});assert(!h.includes('<script>'));assert(h.includes('&lt;script&gt;'));});
+test('zero overall denominator is not falsely called unknown design',()=>{let r=run('arm,success,total\nA,0,0\nB,1,10');assert.equal(N.group(r,r.overall,'overall').code,'EMPTY_ARM');});
+console.log('RESULT '+passed+' narrative groups passed.');

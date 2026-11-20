@@ -1,0 +1,106 @@
+{
+  "scope": "read-only isolated pure-function/file tests; no HTTP/model/credential access",
+  "node": {
+    "facts": {
+      "analysis_status": "valid",
+      "overall_decision": "hold",
+      "segments": [
+        {
+          "id": "G1",
+          "decision": "hold"
+        },
+        {
+          "id": "G2",
+          "decision": "hold"
+        }
+      ],
+      "interaction": "supported",
+      "guardrail": "not_assessed",
+      "design_user_confirmed": true,
+      "adjustment": "holm",
+      "issues": []
+    },
+    "model_payload_has_free_text": false,
+    "model_payload_has_original_group": false,
+    "excluded": {
+      "has_private_names": false,
+      "has_group_reason": false,
+      "has_group_pvalue": false,
+      "has_family_keys": true,
+      "has_free_text": true,
+      "included_report_has_private_names": true
+    },
+    "escaping": {
+      "literal_markup": false,
+      "escaped_markup": true,
+      "user_group_text_preserved": true
+    },
+    "roundtrip": [
+      {
+        "case": "segment_201_char",
+        "prepare_errors": [],
+        "result": {
+          "saved_cells": 2,
+          "saved_bytes": 1066,
+          "toast": "복원 실패: 저장된 집계가 유효하지 않습니다."
+        }
+      },
+      {
+        "case": "seven_segments_fourteen_cells",
+        "prepare_errors": [],
+        "result": {
+          "saved_cells": 14,
+          "saved_bytes": 1268,
+          "toast": "복원 실패: 이 버전의 프로젝트 파일이 아닙니다."
+        }
+      },
+      {
+        "case": "per_arm_200001",
+        "prepare_errors": [],
+        "result": {
+          "saved_cells": 2,
+          "saved_bytes": 676,
+          "toast": "복원 실패: 저장된 집계가 유효하지 않습니다."
+        }
+      }
+    ]
+  },
+  "server_validator": {
+    "extra_free_text_keys_rejected": {
+      "audience": true,
+      "policyA": true,
+      "purpose": true,
+      "raw_csv": true
+    },
+    "arbitrary_identifier_shaped_issue_strings_accepted": true,
+    "sentinel_issues": [
+      "EMAIL_ALICE_EXAMPLE_COM",
+      "CUSTOMER_01012345678"
+    ]
+  },
+  "source_sha256_before": {
+    "app.js": "8833272af66a066b25c477d18b149135801112b5a8b4b7010a0b3fd18bf3ed81",
+    "server.py": "5ad91ec531e7c58e08e5a0f9b8a724478a0f6ba522aa2ceec94c58d8e086db4b",
+    "narrative.js": "0cdf5942f55de8364a250d66dcfd2bc246bb64e2ebf5ac55cbf9e708b0f42c4c",
+    "engine.js": "f40cc1fbd3e87dde4050cb0155673c2f368b2e88274a30fa03aeb09dbcde05f7",
+    "index.html": "90eedd60340b88905110871452e110a4257c32a0d9ba31b780b133cf3a3149ab",
+    "INPUT_DECISION_CONTRACT.md": "458b9f1616303255130a5d1c9288fdc20fa759af5ae38ace5b9dc477a25f6ce0",
+    "DECISION_CONTEXT_CONTRACT_v04.md": "f57d5d38819890484cb5098b5a06f7de95d94b039f6499bec987a0dbe2592752"
+  },
+  "source_sha256_after": {
+    "app.js": "8833272af66a066b25c477d18b149135801112b5a8b4b7010a0b3fd18bf3ed81",
+    "server.py": "5ad91ec531e7c58e08e5a0f9b8a724478a0f6ba522aa2ceec94c58d8e086db4b",
+    "narrative.js": "0cdf5942f55de8364a250d66dcfd2bc246bb64e2ebf5ac55cbf9e708b0f42c4c",
+    "engine.js": "f40cc1fbd3e87dde4050cb0155673c2f368b2e88274a30fa03aeb09dbcde05f7",
+    "index.html": "90eedd60340b88905110871452e110a4257c32a0d9ba31b780b133cf3a3149ab",
+    "INPUT_DECISION_CONTRACT.md": "458b9f1616303255130a5d1c9288fdc20fa759af5ae38ace5b9dc477a25f6ce0",
+    "DECISION_CONTEXT_CONTRACT_v04.md": "f57d5d38819890484cb5098b5a06f7de95d94b039f6499bec987a0dbe2592752"
+  },
+  "all_read_sources_unchanged": true,
+  "limitations": [
+    "No browser end-to-end execution",
+    "No actual Hermes/LLM request",
+    "No claim about real provider payload or CLI-added context",
+    "Only named source files hashed, not a complete workspace snapshot"
+  ]
+}

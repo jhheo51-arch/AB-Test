@@ -1,0 +1,69 @@
+{
+  "scope": "synthetic adversarial audit; no app source edits; timing controlled only where stated",
+  "cases": [
+    {
+      "id": "E01",
+      "scenario": "print approved old report, edit audience, use browser print pipeline without app print button",
+      "finding_reproduced": true,
+      "results_disabled": true,
+      "share_confirmation_cleared": true,
+      "old_print_retained": true,
+      "new_audience_in_print": false,
+      "evidence": "stale_print_after_edit.pdf",
+      "timing_controlled": false
+    },
+    {
+      "id": "E02",
+      "scenario": "edit data while actual SHA-256 promise completion is delayed",
+      "finding_reproduced": true,
+      "worker_busy_during_hash": false,
+      "prepare_button_disabled_after_cancel": true,
+      "data_still_editable": true,
+      "timing_controlled": "real crypto digest result delayed; bytes/hash not modified"
+    },
+    {
+      "id": "E03",
+      "scenario": "type new table while earlier file read is pending",
+      "finding_reproduced": true,
+      "latest_typed_table_preserved": false,
+      "source_after": "사용자 CSV · 출처 미검증",
+      "timing_controlled": "actual file bytes delayed; not modified"
+    },
+    {
+      "id": "E04",
+      "scenario": "save valid integer input above inference cap then restore generated project",
+      "finding_reproduced": true,
+      "save_succeeded": true,
+      "restore_message": "복원 실패: 저장된 집계가 유효하지 않습니다.",
+      "scope": "outside supported inference cap; parser/save permit it; round-trip inconsistency not evidence of wrong statistics",
+      "timing_controlled": false
+    },
+    {
+      "id": "E05",
+      "scenario": "malformed project must not destroy current result",
+      "pass": true,
+      "timing_controlled": false
+    },
+    {
+      "id": "E06",
+      "scenario": "late old explanation failure after reanalysis must not overwrite new result",
+      "pass": true,
+      "timing_controlled": "explicit simulated HTTP 503, not actual model failure"
+    },
+    {
+      "id": "E07",
+      "scenario": "two groups and 200 participants per arm with 201-character group name save successfully but fail restore",
+      "finding_reproduced": true,
+      "max_segment_length": 201,
+      "saved_cells": 4,
+      "scope": "within count and group-number support bounds; input parser declares no segment name length error",
+      "timing_controlled": false
+    }
+  ],
+  "post_requests": [
+    {
+      "url": "http://127.0.0.1:9693/api/explain",
+      "method": "POST"
+    }
+  ]
+}

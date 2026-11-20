@@ -1,0 +1,11 @@
+{
+  "old_audience_after_invalidation": false,
+  "new_unapproved_data_after_invalidation": false,
+  "notice_present": true,
+  "current_approved_audience": true,
+  "current_approved_decision": true,
+  "pdf_sha256": {
+    "native_print_after_invalidation.pdf": "f476a54d1c61a463c7fa80bd69c778132d4e4baca0326fa5cf0ee19005544dc0",
+    "native_print_current_approved.pdf": "825bd999dcd3d7f0f12df0d19c6c72d30b3755a212039d1cfe42f1a63a4411de"
+  }
+}

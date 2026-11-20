@@ -76,3 +76,9 @@ scripts/*v19*.py -text whitespace=cr-at-eol
 scripts/*v20*.py -text whitespace=cr-at-eol
 scripts/*v21*.py -text whitespace=cr-at-eol
 scripts/*v22*.py -text whitespace=cr-at-eol
+
+# Preserve local app, fixed-input audits and result evidence byte-for-byte.
+tool/workspace/v041/** -text whitespace=cr-at-eol
+tool/reviews/v04_audit/** -text whitespace=cr-at-eol
+tool/reviews/v03_personas/** -text whitespace=cr-at-eol
+tool/workspace/v041/fonts/LICENSE.txt -text whitespace=-blank-at-eol,cr-at-eol

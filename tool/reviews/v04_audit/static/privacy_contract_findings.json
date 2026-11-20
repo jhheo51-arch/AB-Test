@@ -1,0 +1,47 @@
+{
+  "audit": "v04 read-only privacy/report/input contract audit",
+  "evidence": "privacy_contract_evidence.json",
+  "reproduce": "python C:/Users/Administrator/Downloads/AB_Test_Workspace_v04_Audit/static/privacy_contract_probe.py",
+  "findings": [
+    {
+      "id": "PC-01",
+      "classification": "reproduced_defect",
+      "severity": "medium",
+      "title": "저장 가능한 정상 파싱 집계의 자체 복원 실패",
+      "sources": ["app.js:34 projectObject", "app.js:36 restoreProject", "app.js:48 save-project", "engine.js:103-128 prepare", "engine.js:229-238 inference limits"],
+      "reproduction": ["segment 201자로 A/B 두 행 준비 → 오류 없음 → projectObject → restoreProject → 저장된 집계가 유효하지 않습니다", "서로 다른 7개 집단 A/B 14셀 준비 → 오류 없음 → 저장 → 복원 → 이 버전의 프로젝트 파일이 아닙니다", "A/B 각각 total=200001 준비 → 파싱 오류 없음 → 저장 → 복원 → 저장된 집계가 유효하지 않습니다"],
+      "scope": "저장은 prepared.issues의 error만 차단한다. 복원은 추가로 cells<=12, segment<=200자, 각 cell total<=200000을 요구한다. 과다 집단·분모는 추론 미지원이어도 기술 통계 및 계획 보관이라는 별도 경로가 있다.",
+      "impact": "앱이 생성한 프로젝트를 앱이 읽지 못해 저장 신뢰성이 깨진다. 자동 원자료 삭제나 외부 유출은 재현하지 않았다.",
+      "limits": "실제 파일 다운로드/브라우저 자동화 대신 동일 projectObject 결과를 JSON 직렬화하여 restoreProject에 전달했다. UI save guard와 파싱 오류 부재는 소스로 대조했다."
+    },
+    {
+      "id": "PC-02",
+      "classification": "reproduced_validation_gap_with_conditional_privacy_risk",
+      "severity": "low",
+      "title": "issues는 알려진 엔진 코드 허용목록이 아니라 형식 검사뿐이며 raw_data_sent=false는 조건부 주장",
+      "sources": ["server.py:14-26 validate_facts", "server.py:93-100 prompt and success metadata", "app.js:28 explanationFacts", "INPUT_DECISION_CONTRACT.md:50-54"],
+      "reproduction": ["server.py의 validate_facts 함수만 AST로 격리 실행", "정상 facts의 issues를 EMAIL_ALICE_EXAMPLE_COM 및 CUSTOMER_01012345678 합성 문자열로 교체", "검사 통과 확인; 실제 HTTP 요청/모델 호출 없음"],
+      "scope": "정상 앱 경로는 엔진 코드만 사용하며 정책·대상·목적을 섞지 않는다. 그러나 같은 origin의 커스텀 클라이언트가 이미 임의 전송을 시도할 수 있는 상황에서는 식별자 모양의 내용을 issues에 넣어 서버 스키마를 통과시킬 수 있다. 이것만으로 외부 사이트 공격이나 자동 유출을 뜻하지 않는다.",
+      "impact": "서버 성공 응답의 raw_data_sent=false는 payload 내용 비식별 검증 결과가 아니며 정상 생성 경로에 의존한다. 키 제한과 코드 정규식만으로 어떤 요청에도 원자료가 없다고 보증할 수 없다.",
+      "limits": "순수 검증 함수의 수용만 재현했다. 실제 CLI/provider 전송 및 성공 응답은 실행하지 않았다. 원자료 전송이 발생했다고 주장하지 않는다."
+    },
+    {
+      "id": "PC-03",
+      "classification": "static_observation_not_reproduced_defect",
+      "severity": "informational",
+      "title": "source_digest는 저장되지만 복원에서 사용되지 않는다",
+      "sources": ["app.js:14 markChanged(true)", "app.js:22 prepare hash", "app.js:34 projectObject", "app.js:36 restoreProject"],
+      "scope": "복원은 기존 hash를 초기화하며 source_digest를 되살리지 않는다. 이후 준비는 복원된 집계 CSV 자체의 새 hash를 계산한다. 원자료 hash와 집계 hash의 계보는 유지되지 않는다.",
+      "reproduction": "정적 데이터 흐름 대조만 수행; 별도 동적 재현 없음",
+      "impact": "프로젝트의 원천 해시가 감사용 보존값이라고 해석되면 오해 가능. 앱이 원자료 재검증 아님을 명시하므로 인증 우회라고 단정하지 않는다.",
+      "limits": "해시 종류를 표시하는 제품 의도가 미확정이고 원자료 검증 보증은 하지 않으므로 개선 관찰로만 분류."
+    }
+  ],
+  "verified_controls": [
+    {"sources": ["app.js:25,28-29", "server.py:14-26"], "result": "합성 자유서술 표식을 policy/audience/purpose 등 모든 맥락 필드에 넣어도 explanationFacts에 없음. 원래 집단명도 없음. 서버는 audience/policyA/purpose/raw_csv 추가 키를 거절."},
+    {"sources": ["app.js:30,33,47", "DECISION_CONTEXT_CONTRACT_v04.md:34-36"], "result": "집단 공유 제외 reportHTML에 원래 집단명·집단 이유카드·선택 집단 p값 문자열 없음. 포함 케이스에는 집단명 있음. family에는 계약상 필요한 G1/G2 식별자가 남지만 상세 p값은 복사하지 않음. HTML 내 숨긴 상세 블록을 만들지 않음."},
+    {"sources": ["index.html:12", "narrative.js:39", "app.js:30"], "result": "사용자 자유서술은 제외 옵션과 별도이며 공유 경고가 실제로 있음. audience에 직접 적은 집단명은 의도대로 남고 img 문자열은 이스케이프됨. 이를 구현 버그나 자동 유출로 세지 않음."},
+    {"sources": ["server.py:66-89,110"], "result": "소스상 loopback 바인딩, exact Host 및 Origin, JSON 및 confirmed=true, 명시 facts 키 검증이 subprocess보다 앞섬. 런타임 HTTP 검증은 하지 않음."}
+  ],
+  "limitations": ["실제 LLM/CLI 실행 없음", "credentials 접근 없음", "네트워크 및 기존 서버 확인 생략", "브라우저 DOM/실제 다운로드/PDF 미검증; reportHTML 문자열 및 동일 순수함수 경로만 검증", "가상 DOM 스텁은 파일 제한 및 HTML 생성 검사에 한정", "app.js 등 읽은 7개 파일의 실행 전후 SHA256 일치; 전체 폴더 해시 검사 아님", "앱·기존 테스트·ZIP 미수정; 모든 생성물은 Audit/static에만 기록"]
+}
