@@ -1,7 +1,7 @@
 # 전자책 자료 안내
 
-- [현재 읽기본과 작성 양식](exports/v19) 및 [다운로드 ZIP](packages/JH_CRM_ebook_reader_v19.zip)
-- [최신 편집 및 검수 기록](design/v19)
+- [현재 읽기본과 작성 양식](exports/v22) 및 [다운로드 ZIP](packages/JH_CRM_ebook_reader_v22.zip)
+- [최신 편집 및 검수 기록](design/v22)
 - [v0.3 합성 데이터와 분석 안내](virtual-data/v03/README.md) 및 [v0.13 교정 자료](virtual-data/v13/README.md)
 - [표본과 데이터 설계 실습 장](learning-materials/sample-and-data/sample_and_data_chapter_v03.pdf), [워크북](learning-materials/workbook-and-cards/workbook_v04.pdf), [진단 카드](learning-materials/workbook-and-cards/diagnostic_cards_reference_v04.pdf)
 - [동결 빌드 입력](build-inputs/) 및 [재생성 순서](../scripts/README.md)

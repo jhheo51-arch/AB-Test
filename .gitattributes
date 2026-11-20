@@ -52,3 +52,27 @@ e-book/manuscript/development_v18/** -text whitespace=cr-at-eol
 e-book/manuscript/development_v19/** -text whitespace=cr-at-eol
 e-book/review/editorial_quality_v18/** -text whitespace=cr-at-eol
 e-book/review/cover_positioning_v19/** -text whitespace=cr-at-eol
+# Preserve v20 outputs, source snapshots and review evidence.
+e-book/exports/v20/** -text whitespace=cr-at-eol
+e-book/exports/v20/assets/LICENSE-*.* -text whitespace=-blank-at-eol,cr-at-eol
+e-book/design/v20/** -text whitespace=cr-at-eol
+e-book/manuscript/development_v20/** -text whitespace=cr-at-eol
+e-book/review/development_review_v19/** -text whitespace=cr-at-eol
+e-book/review/development_review_v20/** -text whitespace=cr-at-eol
+# Preserve exact pre-existing result-ledger bytes used by edition baselines.
+e-book/analysis/winner_v04/core_results.json -text whitespace=cr-at-eol
+e-book/analysis/winner_v04/scenario_results.json -text whitespace=cr-at-eol
+# Preserve completed v21/v22 readers, proof evidence and hash-locked scripts.
+e-book/exports/v21/** -text whitespace=cr-at-eol
+e-book/exports/v22/** -text whitespace=cr-at-eol
+e-book/exports/v21/assets/LICENSE-*.* -text whitespace=-blank-at-eol,cr-at-eol
+e-book/exports/v22/assets/LICENSE-*.* -text whitespace=-blank-at-eol,cr-at-eol
+e-book/design/v21/** -text whitespace=cr-at-eol
+e-book/design/v22/** -text whitespace=cr-at-eol
+e-book/manuscript/development_v21/** -text whitespace=cr-at-eol
+e-book/manuscript/development_v22/** -text whitespace=cr-at-eol
+e-book/review/proof_v21/** -text whitespace=cr-at-eol
+scripts/*v19*.py -text whitespace=cr-at-eol
+scripts/*v20*.py -text whitespace=cr-at-eol
+scripts/*v21*.py -text whitespace=cr-at-eol
+scripts/*v22*.py -text whitespace=cr-at-eol

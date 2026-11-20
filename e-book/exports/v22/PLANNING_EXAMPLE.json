@@ -1,0 +1,31 @@
+{
+  "scope": "Separate hypothetical follow-up design before results; not the historical A/B/H design or a completed experiment",
+  "assumptions": {
+    "allocation": "Equal independent individuals, two arms A/B only; no holdout claim",
+    "p_A": 0.09,
+    "target_p_B": 0.09999999999999999,
+    "alpha_two_sided": 0.05,
+    "target_power": 0.8,
+    "available_n_total": 20000,
+    "observation_window_days": 28,
+    "loss_clustering_sequential_adjustment_included": false,
+    "guardrail_sample_requirement_calculated": false
+  },
+  "available_plan": {
+    "n_A": 10000,
+    "n_B": 10000,
+    "power_direct": 0.6742514668534754,
+    "power_library": 0.6742514668534754,
+    "power_display_percent": 67.4,
+    "required_n_each": 13495,
+    "required_n_total": 26990,
+    "additional_eligible_customers": 6990,
+    "mde_at_available_n": 0.011661930556866722,
+    "mde_display_pp": 1.17,
+    "mde_library": 0.01166193055686672
+  },
+  "checks_passed": 4,
+  "statistics_are_planning_approximations": true,
+  "not_authorized_to_recruit_or_send": true,
+  "old_data_or_ledgers_modified": false
+}

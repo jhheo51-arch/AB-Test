@@ -1,0 +1,88 @@
+{
+  "scope": "Actual browser text boxes; conceptual labels additionally checked against declared panels. Not a reader study or a complete accessibility audit.",
+  "cover": {
+    "title": "그래서, 이 캠페인 계속할까요?",
+    "text_issues": []
+  },
+  "figures": [
+    {
+      "file": "tri_v_easy_comparison.svg",
+      "centering_error_css_px": 0.0078125,
+      "text_collisions": [],
+      "outside_intended_regions": []
+    },
+    {
+      "file": "tri_v_easy_population.svg",
+      "centering_error_css_px": 0.0078125,
+      "text_collisions": [],
+      "outside_intended_regions": []
+    },
+    {
+      "file": "tri_v_easy_decision.svg",
+      "centering_error_css_px": 0.0078125,
+      "text_collisions": [],
+      "outside_intended_regions": []
+    },
+    {
+      "file": "tri_v_workflow_v20.svg",
+      "centering_error_css_px": 0.0078125,
+      "text_collisions": [],
+      "outside_intended_regions": []
+    },
+    {
+      "file": "three_judgments_v20.svg",
+      "centering_error_css_px": 0.0078125,
+      "text_collisions": [],
+      "outside_intended_regions": []
+    },
+    {
+      "file": "observation_maturity_v20.svg",
+      "centering_error_css_px": 0.0078125,
+      "text_collisions": [],
+      "outside_intended_regions": []
+    },
+    {
+      "file": "winner_effect.svg",
+      "centering_error_css_px": 0,
+      "text_collisions": [],
+      "outside_intended_regions": []
+    },
+    {
+      "file": "guardrail_effect.svg",
+      "centering_error_css_px": 0,
+      "text_collisions": [],
+      "outside_intended_regions": []
+    },
+    {
+      "file": "measurement_v06.svg",
+      "centering_error_css_px": 0,
+      "text_collisions": [],
+      "outside_intended_regions": []
+    },
+    {
+      "file": "segments_v06.svg",
+      "centering_error_css_px": 0,
+      "text_collisions": [],
+      "outside_intended_regions": []
+    },
+    {
+      "file": "capacity_v06.svg",
+      "centering_error_css_px": 0,
+      "text_collisions": [],
+      "outside_intended_regions": []
+    },
+    {
+      "file": "decision_record_v20.svg",
+      "centering_error_css_px": 0.0078125,
+      "text_collisions": [],
+      "outside_intended_regions": []
+    },
+    {
+      "file": "campaign_path_v08.svg",
+      "centering_error_css_px": 0.0078125,
+      "text_collisions": [],
+      "outside_intended_regions": []
+    }
+  ],
+  "issues": []
+}

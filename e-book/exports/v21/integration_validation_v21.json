@@ -1,0 +1,429 @@
+{
+  "status": "passed",
+  "check_count": 82,
+  "checks": [
+    {
+      "name": "baseline e-book/exports/v20/analysis_report_v13.json",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "name": "baseline e-book/exports/v20/build_manifest_v20.json",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "name": "baseline e-book/exports/v20/campaign_path_v08.svg",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "name": "baseline e-book/exports/v20/capacity_v06.svg",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "name": "baseline e-book/exports/v20/chapter12_sql_validation_v20.json",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "name": "baseline e-book/exports/v20/CONCEPT_CHECKS.json",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "name": "baseline e-book/exports/v20/COUNTEREXAMPLES.md",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "name": "baseline e-book/exports/v20/counterexample_fixture.json",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "name": "baseline e-book/exports/v20/COUNTEREXAMPLE_RESULTS.json",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "name": "baseline e-book/exports/v20/cover_A.svg",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "name": "baseline e-book/exports/v20/decision_record_v16.svg",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "name": "baseline e-book/exports/v20/decision_record_v20.svg",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "name": "baseline e-book/exports/v20/ebook_review_v20.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "name": "baseline e-book/exports/v20/ebook_review_v20.md",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "name": "baseline e-book/exports/v20/ebook_review_v20.pdf",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "name": "baseline e-book/exports/v20/ebook_review_v20_print.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "name": "baseline e-book/exports/v20/FIGURE_DATA.json",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "name": "baseline e-book/exports/v20/FIGURE_DATA_V20.json",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "name": "baseline e-book/exports/v20/FOOTNOTES.json",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "name": "baseline e-book/exports/v20/guardrail_effect.svg",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "name": "baseline e-book/exports/v20/integration_validation_v20.json",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "name": "baseline e-book/exports/v20/LOOKUP.json",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "name": "baseline e-book/exports/v20/MANUSCRIPT_CHANGES.json",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "name": "baseline e-book/exports/v20/measurement_v06.svg",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "name": "baseline e-book/exports/v20/MINIMUM_RECORD.html",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "name": "baseline e-book/exports/v20/MINIMUM_RECORD.md",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "name": "baseline e-book/exports/v20/MINIMUM_RECORD.pdf",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "name": "baseline e-book/exports/v20/MINIMUM_RECORD_WORKED.md",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "name": "baseline e-book/exports/v20/numeric_text_validation_v20.json",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "name": "baseline e-book/exports/v20/observation_maturity_v16.svg",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "name": "baseline e-book/exports/v20/observation_maturity_v20.svg",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "name": "baseline e-book/exports/v20/package_smoke_v20.json",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "name": "baseline e-book/exports/v20/PLANNING_EXAMPLE.json",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "name": "baseline e-book/exports/v20/PROVENANCE.json",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "name": "baseline e-book/exports/v20/READ_SCOPE.json",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "name": "baseline e-book/exports/v20/REGRESSION_CHECK.json",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "name": "baseline e-book/exports/v20/segments_v06.svg",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "name": "baseline e-book/exports/v20/SELF_CHECK.md",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "name": "baseline e-book/exports/v20/three_judgments_v16.svg",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "name": "baseline e-book/exports/v20/three_judgments_v20.svg",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "name": "baseline e-book/exports/v20/tri_v_easy_comparison.svg",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "name": "baseline e-book/exports/v20/tri_v_easy_decision.svg",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "name": "baseline e-book/exports/v20/tri_v_easy_population.svg",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "name": "baseline e-book/exports/v20/tri_v_method.svg",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "name": "baseline e-book/exports/v20/tri_v_workflow_v16.svg",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "name": "baseline e-book/exports/v20/tri_v_workflow_v20.svg",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "name": "baseline e-book/exports/v20/VALIDATION.json",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "name": "baseline e-book/exports/v20/validation_v20.json",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "name": "baseline e-book/exports/v20/visual_geometry_v20.json",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "name": "baseline e-book/exports/v20/winner_effect.svg",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "name": "baseline e-book/exports/v20/assets/fonts_manifest.json",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "name": "baseline e-book/exports/v20/assets/LICENSE-pagedjs.md",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "name": "baseline e-book/exports/v20/assets/LICENSE-sans.txt",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "name": "baseline e-book/exports/v20/assets/LICENSE-serif.txt",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "name": "baseline e-book/exports/v20/assets/paged.polyfill.min.js",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "name": "baseline e-book/exports/v20/assets/reader-sans.woff2",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "name": "baseline e-book/exports/v20/assets/reader-serif.woff2",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "name": "baseline scripts/build_ebook_v20.py",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "name": "baseline scripts/render_verify_v20.py",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "name": "baseline scripts/prepare_fonts_v20.py",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "name": "baseline scripts/verify_ebook_v20_numbers.py",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "name": "baseline scripts/package_reader_v20.py",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "name": "unique source v21-ch06-question-order",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "name": "unique source v21-ch11-author-choice",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "name": "unique source v21-ch11-name-compression",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "name": "unique source v21-ch12-decision-task",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "name": "unique source v21-ch12-evidence-check",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "name": "exact editorial replay apart from regenerated navigation",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "name": "only question markers removed, no changed numerical values",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "name": "fenced code unchanged",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "name": "chapter6 table content preserved across reordering",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "name": "decision wording unchanged",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "name": "footnote identities unchanged",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "name": "final PDF hash",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "name": "eight same-page footnotes",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "name": "all figure print labels >=12pt",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "name": "complete decision stays one face on physical page 79",
+      "status": "passed",
+      "detail": [
+        {
+          "unit": "unit-23",
+          "tag": "SECTION",
+          "cls": "worked-record",
+          "page": 79,
+          "text": "완성된 한 장 결정문 예시JH Motors의 시승 편의 안내 B는 후속 검토 후보로 유지하고 전면 적용은 보류한다. 질문은 기준 시점 SMS 동의가 있고 기존 시"
+        }
+      ]
+    },
+    {
+      "name": "unchanged decision paragraphs physically on page79",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "name": "six-axis terms retained",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "name": "UI exercised against final edition, not fixture",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "name": "no new statistical inference",
+      "status": "passed",
+      "detail": null
+    },
+    {
+      "name": "numeric text and read-only SQL results exist",
+      "status": "passed",
+      "detail": null
+    }
+  ],
+  "pdf_pages": 97,
+  "decision_page": 79,
+  "new_statistical_inference": false,
+  "actual_reader_test": false,
+  "human_approval": false
+}

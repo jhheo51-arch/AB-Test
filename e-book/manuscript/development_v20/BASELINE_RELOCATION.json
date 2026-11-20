@@ -1,0 +1,19 @@
+{
+  "original_baseline_unchanged": true,
+  "upstream_commit": "888617b4ea8854bc391dd42f2227729fdd27a216",
+  "paths": [
+    {"original_path":"JH_CRM_ebook_reader_v19.zip","current_path":"e-book/packages/JH_CRM_ebook_reader_v19.zip","sha256":"815c2c213a81f40f9bbefc0bcd2dd13f10aa66f38d45beb56483f6a43f7469f6","reason":"Exact original archive bytes moved to the upstream package directory"},
+    {
+      "original_path": "e-book/exports/v19/package_smoke_v19.json",
+      "current_path": "e-book/manuscript/development_v20/frozen_v19/e-book/exports/v19/package_smoke_v19.json",
+      "sha256": "264bf99677dace0dc703c6b7939a36919f2e806f4f62d7621854396266cd21ca",
+      "reason": "Original validation input bytes snapshotted before upstream metadata/code reorganization; not an active legacy script"
+    },
+    {
+      "original_path": "scripts/build_ebook_v19.py",
+      "current_path": "e-book/manuscript/development_v20/frozen_v19/scripts/build_ebook_v19.py.txt",
+      "sha256": "19e90eaad5f7afc4dfec184adfc71f833a013d39aef22968c9de6c5a1668ab62",
+      "reason": "Original validation input bytes snapshotted before upstream metadata/code reorganization; not an active legacy script"
+    }
+  ]
+}

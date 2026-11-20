@@ -1,0 +1,158 @@
+{
+  "scope": "Actual browser rendering measurements and controls, not a reader study or a WCAG font-size threshold judgment",
+  "reading_states": [
+    {
+      "viewport": 1200,
+      "horizontal_overflow": false,
+      "body_font_css": "16px",
+      "figures": [
+        {
+          "file": "tri_v_easy_comparison.svg",
+          "smallest_rendered_text_css_px": 18.601728386415452,
+          "width_css_px": 566.921875
+        },
+        {
+          "file": "tri_v_easy_population.svg",
+          "smallest_rendered_text_css_px": 19.487499999999997,
+          "width_css_px": 566.921875
+        },
+        {
+          "file": "tri_v_easy_decision.svg",
+          "smallest_rendered_text_css_px": 18.60128909426254,
+          "width_css_px": 566.921875
+        },
+        {
+          "file": "tri_v_workflow_v20.svg",
+          "smallest_rendered_text_css_px": 17.547291666666666,
+          "width_css_px": 566.921875
+        },
+        {
+          "file": "three_judgments_v20.svg",
+          "smallest_rendered_text_css_px": 18.22224864130435,
+          "width_css_px": 566.921875
+        },
+        {
+          "file": "observation_maturity_v20.svg",
+          "smallest_rendered_text_css_px": 17.547229205183797,
+          "width_css_px": 566.921875
+        },
+        {
+          "file": "winner_effect.svg",
+          "smallest_rendered_text_css_px": 16.797585754356508,
+          "width_css_px": 604.71875
+        },
+        {
+          "file": "guardrail_effect.svg",
+          "smallest_rendered_text_css_px": 16.79687618448156,
+          "width_css_px": 604.71875
+        },
+        {
+          "file": "measurement_v06.svg",
+          "smallest_rendered_text_css_px": 16.79760406462628,
+          "width_css_px": 604.71875
+        },
+        {
+          "file": "segments_v06.svg",
+          "smallest_rendered_text_css_px": 16.79759837962963,
+          "width_css_px": 604.71875
+        },
+        {
+          "file": "capacity_v06.svg",
+          "smallest_rendered_text_css_px": 17.46958762886598,
+          "width_css_px": 604.71875
+        },
+        {
+          "file": "decision_record_v20.svg",
+          "smallest_rendered_text_css_px": 17.547045454545454,
+          "width_css_px": 566.921875
+        },
+        {
+          "file": "campaign_path_v08.svg",
+          "smallest_rendered_text_css_px": 16.534839527027028,
+          "width_css_px": 566.921875
+        }
+      ]
+    },
+    {
+      "viewport": 390,
+      "horizontal_overflow": false,
+      "body_font_css": "16px",
+      "figures": [
+        {
+          "file": "tri_v_easy_comparison.svg",
+          "smallest_rendered_text_css_px": 11.615110572129447,
+          "width_css_px": 354
+        },
+        {
+          "file": "tri_v_easy_population.svg",
+          "smallest_rendered_text_css_px": 12.16875,
+          "width_css_px": 354
+        },
+        {
+          "file": "tri_v_easy_decision.svg",
+          "smallest_rendered_text_css_px": 11.614255399321738,
+          "width_css_px": 354
+        },
+        {
+          "file": "tri_v_workflow_v20.svg",
+          "smallest_rendered_text_css_px": 10.9565625,
+          "width_css_px": 354
+        },
+        {
+          "file": "three_judgments_v20.svg",
+          "smallest_rendered_text_css_px": 11.377785326086958,
+          "width_css_px": 354
+        },
+        {
+          "file": "observation_maturity_v20.svg",
+          "smallest_rendered_text_css_px": 10.95691667885914,
+          "width_css_px": 354
+        },
+        {
+          "file": "winner_effect.svg",
+          "smallest_rendered_text_css_px": 9.83286985545578,
+          "width_css_px": 354
+        },
+        {
+          "file": "guardrail_effect.svg",
+          "smallest_rendered_text_css_px": 9.832990393919367,
+          "width_css_px": 354
+        },
+        {
+          "file": "measurement_v06.svg",
+          "smallest_rendered_text_css_px": 9.833164602853675,
+          "width_css_px": 354
+        },
+        {
+          "file": "segments_v06.svg",
+          "smallest_rendered_text_css_px": 9.832899305555555,
+          "width_css_px": 354
+        },
+        {
+          "file": "capacity_v06.svg",
+          "smallest_rendered_text_css_px": 10.226610824742268,
+          "width_css_px": 354
+        },
+        {
+          "file": "decision_record_v20.svg",
+          "smallest_rendered_text_css_px": 10.956931818181818,
+          "width_css_px": 354
+        },
+        {
+          "file": "campaign_path_v08.svg",
+          "smallest_rendered_text_css_px": 10.324408783783785,
+          "width_css_px": 354
+        }
+      ]
+    }
+  ],
+  "worksheet_controls": [
+    {
+      "tag": "BUTTON",
+      "text": "현재 입력 인쇄",
+      "type": "button"
+    }
+  ],
+  "worksheet_input_lost_on_reload": true,
+  "body_and_pdf_unchanged": true
+}

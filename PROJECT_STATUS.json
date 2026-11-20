@@ -1,28 +1,58 @@
 {
-  "checked_at_seoul": "2026-11-19",
-  "latest_reading_edition": "v0.19",
+  "checked_at_seoul": "2026-11-20T11:11:39.233665+09:00",
+  "latest_reading_edition": "v0.22",
   "book_title": "그래서, 이 캠페인 계속할까요?",
   "publication_status": "저자 검토본",
   "book": {
-    "pdf": "e-book/exports/v19/ebook_review_v19.pdf",
-    "html": "e-book/exports/v19/ebook_review_v19.html",
-    "pages": 95,
-    "sha256": "e869c205bbb81122e49de4c3757579e4e7cc655c71f3a0ac14976cc80eef4f2a"
+    "pdf": "e-book/exports/v22/ebook_review_v22.pdf",
+    "html": "e-book/exports/v22/ebook_review_v22.html",
+    "pages": 97,
+    "sha256": "b73b26e180f21b23226a1d60752b129578824082b8ca04124ce6af60372542fe"
   },
   "reader_bundle": {
-    "archive": "e-book/packages/JH_CRM_ebook_reader_v19.zip",
-    "file_count": 52,
-    "bytes": 4183891,
-    "sha256": "815c2c213a81f40f9bbefc0bcd2dd13f10aa66f38d45beb56483f6a43f7469f6",
-    "integrity": "passed",
+    "status": "passed",
+    "archive": "e-book/packages/JH_CRM_ebook_reader_v22.zip",
+    "file_count": 45,
+    "bytes": 3976551,
+    "sha256": "7e5fcc7207e95ac87461ac3238603497479ba4e620485665f011f330d3e1e5f7",
     "exact_entry_bytes": "passed",
-    "extracted_book_search_and_record": "passed",
+    "extracted_search_svg_click_return_and_download": "passed",
+    "worksheet_pdf_pages": 1,
     "full_reproduction_environment": false,
     "actual_reader_test": false,
-    "human_review_approved": false
+    "human_approval": false
   },
   "verification": {
-    "integration_checks": 486,
+    "integration_checks": 96,
+    "integration_scope": "v0.22 최소 교정 보존 및 출력 검사. 이전 판 검사와 별도 범위.",
+    "preserved_input_checks": 191,
+    "zoom_and_return_cases": 26,
+    "long_input_print_cases": [
+      {
+        "case": "same_failure_case",
+        "pages": 3,
+        "expected_lines": 78,
+        "missing_lines": [],
+        "input_restored": true,
+        "print_dom_removed": true
+      },
+      {
+        "case": "single_field_spans_pages",
+        "pages": 5,
+        "expected_lines": 156,
+        "missing_lines": [],
+        "input_restored": true,
+        "print_dom_removed": true
+      },
+      {
+        "case": "blank",
+        "pages": 1,
+        "expected_lines": 0,
+        "missing_lines": [],
+        "input_restored": true,
+        "print_dom_removed": true
+      }
+    ],
     "numeric_text_checks": 103,
     "read_only_sql_ledger_match": true,
     "actual_reader_test": false,

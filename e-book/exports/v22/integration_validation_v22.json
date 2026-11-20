@@ -1,0 +1,395 @@
+{
+  "status": "passed",
+  "check_count": 96,
+  "checks": [
+    {
+      "name": "preserved e-book/exports/v21/analysis_report_v13.json",
+      "status": "passed"
+    },
+    {
+      "name": "preserved e-book/exports/v21/build_manifest_v21.json",
+      "status": "passed"
+    },
+    {
+      "name": "preserved e-book/exports/v21/campaign_path_v08.svg",
+      "status": "passed"
+    },
+    {
+      "name": "preserved e-book/exports/v21/capacity_v06.svg",
+      "status": "passed"
+    },
+    {
+      "name": "preserved e-book/exports/v21/chapter12_sql_validation_v21.json",
+      "status": "passed"
+    },
+    {
+      "name": "preserved e-book/exports/v21/CONCEPT_CHECKS.json",
+      "status": "passed"
+    },
+    {
+      "name": "preserved e-book/exports/v21/COUNTEREXAMPLES.md",
+      "status": "passed"
+    },
+    {
+      "name": "preserved e-book/exports/v21/counterexample_fixture.json",
+      "status": "passed"
+    },
+    {
+      "name": "preserved e-book/exports/v21/COUNTEREXAMPLE_RESULTS.json",
+      "status": "passed"
+    },
+    {
+      "name": "preserved e-book/exports/v21/cover_A.svg",
+      "status": "passed"
+    },
+    {
+      "name": "preserved e-book/exports/v21/decision_record_v16.svg",
+      "status": "passed"
+    },
+    {
+      "name": "preserved e-book/exports/v21/decision_record_v21.svg",
+      "status": "passed"
+    },
+    {
+      "name": "preserved e-book/exports/v21/ebook_review_v21.html",
+      "status": "passed"
+    },
+    {
+      "name": "preserved e-book/exports/v21/ebook_review_v21.md",
+      "status": "passed"
+    },
+    {
+      "name": "preserved e-book/exports/v21/ebook_review_v21.pdf",
+      "status": "passed"
+    },
+    {
+      "name": "preserved e-book/exports/v21/ebook_review_v21_print.html",
+      "status": "passed"
+    },
+    {
+      "name": "preserved e-book/exports/v21/FIGURE_DATA.json",
+      "status": "passed"
+    },
+    {
+      "name": "preserved e-book/exports/v21/FIGURE_DATA_V21.json",
+      "status": "passed"
+    },
+    {
+      "name": "preserved e-book/exports/v21/FOOTNOTES.json",
+      "status": "passed"
+    },
+    {
+      "name": "preserved e-book/exports/v21/guardrail_effect.svg",
+      "status": "passed"
+    },
+    {
+      "name": "preserved e-book/exports/v21/integration_validation_v21.json",
+      "status": "passed"
+    },
+    {
+      "name": "preserved e-book/exports/v21/LOOKUP.json",
+      "status": "passed"
+    },
+    {
+      "name": "preserved e-book/exports/v21/MANUSCRIPT_CHANGES.json",
+      "status": "passed"
+    },
+    {
+      "name": "preserved e-book/exports/v21/measurement_v06.svg",
+      "status": "passed"
+    },
+    {
+      "name": "preserved e-book/exports/v21/MINIMUM_RECORD.html",
+      "status": "passed"
+    },
+    {
+      "name": "preserved e-book/exports/v21/MINIMUM_RECORD.md",
+      "status": "passed"
+    },
+    {
+      "name": "preserved e-book/exports/v21/MINIMUM_RECORD.pdf",
+      "status": "passed"
+    },
+    {
+      "name": "preserved e-book/exports/v21/MINIMUM_RECORD_WORKED.md",
+      "status": "passed"
+    },
+    {
+      "name": "preserved e-book/exports/v21/numeric_text_validation_v21.json",
+      "status": "passed"
+    },
+    {
+      "name": "preserved e-book/exports/v21/observation_maturity_v16.svg",
+      "status": "passed"
+    },
+    {
+      "name": "preserved e-book/exports/v21/observation_maturity_v21.svg",
+      "status": "passed"
+    },
+    {
+      "name": "preserved e-book/exports/v21/package_smoke_v21.json",
+      "status": "passed"
+    },
+    {
+      "name": "preserved e-book/exports/v21/PLANNING_EXAMPLE.json",
+      "status": "passed"
+    },
+    {
+      "name": "preserved e-book/exports/v21/PROVENANCE.json",
+      "status": "passed"
+    },
+    {
+      "name": "preserved e-book/exports/v21/READ_SCOPE.json",
+      "status": "passed"
+    },
+    {
+      "name": "preserved e-book/exports/v21/REGRESSION_CHECK.json",
+      "status": "passed"
+    },
+    {
+      "name": "preserved e-book/exports/v21/segments_v06.svg",
+      "status": "passed"
+    },
+    {
+      "name": "preserved e-book/exports/v21/SELF_CHECK.md",
+      "status": "passed"
+    },
+    {
+      "name": "preserved e-book/exports/v21/three_judgments_v16.svg",
+      "status": "passed"
+    },
+    {
+      "name": "preserved e-book/exports/v21/three_judgments_v21.svg",
+      "status": "passed"
+    },
+    {
+      "name": "preserved e-book/exports/v21/tri_v_easy_comparison.svg",
+      "status": "passed"
+    },
+    {
+      "name": "preserved e-book/exports/v21/tri_v_easy_decision.svg",
+      "status": "passed"
+    },
+    {
+      "name": "preserved e-book/exports/v21/tri_v_easy_population.svg",
+      "status": "passed"
+    },
+    {
+      "name": "preserved e-book/exports/v21/tri_v_method.svg",
+      "status": "passed"
+    },
+    {
+      "name": "preserved e-book/exports/v21/tri_v_workflow_v16.svg",
+      "status": "passed"
+    },
+    {
+      "name": "preserved e-book/exports/v21/tri_v_workflow_v21.svg",
+      "status": "passed"
+    },
+    {
+      "name": "preserved e-book/exports/v21/VALIDATION.json",
+      "status": "passed"
+    },
+    {
+      "name": "preserved e-book/exports/v21/validation_v21.json",
+      "status": "passed"
+    },
+    {
+      "name": "preserved e-book/exports/v21/visual_geometry_v21.json",
+      "status": "passed"
+    },
+    {
+      "name": "preserved e-book/exports/v21/winner_effect.svg",
+      "status": "passed"
+    },
+    {
+      "name": "preserved e-book/exports/v21/assets/fonts_manifest.json",
+      "status": "passed"
+    },
+    {
+      "name": "preserved e-book/exports/v21/assets/LICENSE-pagedjs.md",
+      "status": "passed"
+    },
+    {
+      "name": "preserved e-book/exports/v21/assets/LICENSE-sans.txt",
+      "status": "passed"
+    },
+    {
+      "name": "preserved e-book/exports/v21/assets/LICENSE-serif.txt",
+      "status": "passed"
+    },
+    {
+      "name": "preserved e-book/exports/v21/assets/paged.polyfill.min.js",
+      "status": "passed"
+    },
+    {
+      "name": "preserved e-book/exports/v21/assets/reader-sans.woff2",
+      "status": "passed"
+    },
+    {
+      "name": "preserved e-book/exports/v21/assets/reader-serif.woff2",
+      "status": "passed"
+    },
+    {
+      "name": "preserved scripts/build_ebook_v21.py",
+      "status": "passed"
+    },
+    {
+      "name": "preserved scripts/package_reader_v21.py",
+      "status": "passed"
+    },
+    {
+      "name": "preserved scripts/prepare_fonts_v21.py",
+      "status": "passed"
+    },
+    {
+      "name": "preserved scripts/reader_features_v21.py",
+      "status": "passed"
+    },
+    {
+      "name": "preserved scripts/render_verify_v21.py",
+      "status": "passed"
+    },
+    {
+      "name": "preserved scripts/verify_reader_features_v21.py",
+      "status": "passed"
+    },
+    {
+      "name": "preserved scripts/verify_visual_geometry_v21.py",
+      "status": "passed"
+    },
+    {
+      "name": "preserved e-book/manuscript/development_v21/EDITORIAL_EDITS.json",
+      "status": "passed"
+    },
+    {
+      "name": "single source F1",
+      "status": "passed"
+    },
+    {
+      "name": "single source F2",
+      "status": "passed"
+    },
+    {
+      "name": "single source F3",
+      "status": "passed"
+    },
+    {
+      "name": "single source C1",
+      "status": "passed"
+    },
+    {
+      "name": "single source C2",
+      "status": "passed"
+    },
+    {
+      "name": "entire manuscript matches only approved five corrections and regenerated navigation",
+      "status": "passed"
+    },
+    {
+      "name": "decision words unchanged",
+      "status": "passed"
+    },
+    {
+      "name": "corrected text present F1",
+      "status": "passed"
+    },
+    {
+      "name": "corrected text present F2",
+      "status": "passed"
+    },
+    {
+      "name": "corrected text present F3",
+      "status": "passed"
+    },
+    {
+      "name": "corrected text present C1",
+      "status": "passed"
+    },
+    {
+      "name": "corrected text present C2",
+      "status": "passed"
+    },
+    {
+      "name": "97 pages",
+      "status": "passed"
+    },
+    {
+      "name": "PDF bytes match rendered validation",
+      "status": "passed"
+    },
+    {
+      "name": "decision atomic on page79",
+      "status": "passed"
+    },
+    {
+      "name": "eight same-page footnotes",
+      "status": "passed"
+    },
+    {
+      "name": "all 13 figure labels >=12pt",
+      "status": "passed"
+    },
+    {
+      "name": "record physically complete on79",
+      "status": "passed"
+    },
+    {
+      "name": "corrected passage in final PDF F1",
+      "status": "passed"
+    },
+    {
+      "name": "corrected passage in final PDF F2",
+      "status": "passed"
+    },
+    {
+      "name": "corrected passage in final PDF F3",
+      "status": "passed"
+    },
+    {
+      "name": "corrected passage in final PDF C1",
+      "status": "passed"
+    },
+    {
+      "name": "corrected passage in final PDF C2",
+      "status": "passed"
+    },
+    {
+      "name": "quantitative figure bytes preserved winner_effect.svg",
+      "status": "passed"
+    },
+    {
+      "name": "quantitative figure bytes preserved guardrail_effect.svg",
+      "status": "passed"
+    },
+    {
+      "name": "quantitative figure bytes preserved measurement_v06.svg",
+      "status": "passed"
+    },
+    {
+      "name": "quantitative figure bytes preserved segments_v06.svg",
+      "status": "passed"
+    },
+    {
+      "name": "quantitative figure bytes preserved capacity_v06.svg",
+      "status": "passed"
+    },
+    {
+      "name": "UI executed",
+      "status": "passed"
+    },
+    {
+      "name": "printing executed",
+      "status": "passed"
+    },
+    {
+      "name": "numeric and read-only SQL results exist",
+      "status": "passed"
+    }
+  ],
+  "pdf_pages": 97,
+  "decision_page": 79,
+  "statistical_results_changed": false,
+  "actual_reader_test": false,
+  "human_approval": false
+}
