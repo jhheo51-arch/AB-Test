@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "fixture_only": false,
+  "copy": "native clipboard write/read passed",
+  "copy_denial_fallback": "passed",
+  "download_exact_values_and_six_fields": "passed",
+  "download_name": "TRI-V_record_v22.txt",
+  "utf8_bom": "passed",
+  "automatic_storage": false,
+  "remote_requests": [],
+  "browser_errors": []
+}
+Zoom and position cases: 26

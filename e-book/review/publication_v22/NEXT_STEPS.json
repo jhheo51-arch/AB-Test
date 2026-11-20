@@ -1,0 +1,106 @@
+{
+  "edition": "v0.22",
+  "scope": "본문 개발 종료. 검수 오류와 구체적인 읽기 장애만 최소 수정.",
+  "current_assessment": "AI 출판 편집 검토 완료. 편집 검토용 투고 가능 의견이며 판매용 최종 승인은 아님.",
+  "submission_route": null,
+  "human_review_completed": false,
+  "actual_reader_test_completed": false,
+  "publication_approved": false,
+  "tasks": [
+    {
+      "id": "N1",
+      "priority": 1,
+      "gates": [
+        "P08"
+      ],
+      "title": "출판 경로와 제출처 확정",
+      "owner": "허재혁",
+      "status": "cancelled_publication_goal",
+      "depends_on": [],
+      "action": "기획출판 투고, PDF 직접 판매, EPUB 유통 중 실제 경로와 대상 한 곳을 정한다. 후보는 확정이 아니다.",
+      "completion_evidence": "선정한 경로와 제출처, 공식 요구사항의 URL과 확인 기록",
+      "boundary": "경로 선택은 실제 접수나 계약, 판매 승인과 별개다.",
+      "disposition": "출판과 판매를 하지 않아 해당 경로의 과제 중단. 일반적인 출처와 이용 조건 보존은 계속."
+    },
+    {
+      "id": "N2",
+      "priority": 2,
+      "gates": [
+        "P02",
+        "P03",
+        "P05"
+      ],
+      "title": "사람의 교정과 통계 해석 검수",
+      "owner": "저자 및 미지정 사람 검수자",
+      "status": "optional_quality_review",
+      "depends_on": [],
+      "action": "오탈자와 지시 대상, 표와 해석의 연결, 분모와 가정 및 비교 가족, 보호 판정과 비용 모형을 검토받는다. 자동차 실무 검토는 현장 적절성 보완 범위로 구분한다.",
+      "completion_evidence": "검수자와 범위가 식별되는 서면 결과, 발견사항별 수정 또는 유지 이유 및 재검사 기록",
+      "boundary": "실제 검수자 지정이나 외부 파일 전송, 유료 의뢰는 아직 하지 않았다. 모든 교육서의 법정 의무라는 뜻은 아니다.",
+      "disposition": "사람 감수 미실시 상태는 유지. Git 보관을 막는 출판 승인 요건으로 요구하지 않음."
+    },
+    {
+      "id": "N3",
+      "priority": 3,
+      "gates": [
+        "P04"
+      ],
+      "title": "저자가 직접 읽기와 작성 시험 진행",
+      "owner": "허재혁",
+      "status": "transferred_to_repository_maintenance",
+      "depends_on": [],
+      "action": "기존 읽기 경로와 과제로 비교 명세와 판단문을 작성해 막히는 위치를 기록한다. 저자 자기점검과 다른 독자의 독립 수행, 절차 안내와 내용 힌트를 구분한다.",
+      "completion_evidence": "사용 판과 실제 수행 기록, 최초 작성물, 도움을 받은 내용, 오류 및 막힌 문장의 위치와 처리 기록",
+      "boundary": "AI 답변을 실제 독자 수행으로 세지 않는다. 새 독자 모집이나 새 문제 개발을 자동으로 진행하지 않는다.",
+      "disposition": "저자 직접 확인 과제를 R3로 이전. 실제 수행 완료가 아님."
+    },
+    {
+      "id": "N4",
+      "priority": 4,
+      "gates": [
+        "P07",
+        "P08"
+      ],
+      "title": "최종 권리와 제출 파일 요건 대조",
+      "owner": "저자 및 선정한 출판 담당자",
+      "status": "cancelled_publication_goal",
+      "depends_on": [
+        "N1"
+      ],
+      "action": "이미 확인한 글꼴 고지와 인용 근거를 바탕으로 배포 조건을 확정한다. 실제 제출처의 파일 형식, 표지와 판권, AI 활용 고지, 저자 정보 및 해당 경로에 적용되는 사항을 확인한다.",
+      "completion_evidence": "자료별 출처와 이용 근거, 실제 공식 지침과 최종 파일 대조표, 미확인 사항의 처리 기록",
+      "boundary": "EPUB이나 PDF/X, ISBN 등 특정 요건을 경로 미지정 상태에서 공통 필수로 단정하지 않는다. 기존에 차단된 PDF 인용 전수 대조를 재승인한 것도 아니다.",
+      "disposition": "출판과 판매를 하지 않아 해당 경로의 과제 중단. 일반적인 출처와 이용 조건 보존은 계속."
+    },
+    {
+      "id": "N5",
+      "priority": 5,
+      "gates": [
+        "P09"
+      ],
+      "title": "최종 교정본 확인과 저자 배포 승인",
+      "owner": "허재혁 및 실제 출판 또는 판매 담당자",
+      "status": "cancelled_publication_goal",
+      "depends_on": [
+        "N2",
+        "N4"
+      ],
+      "action": "확인된 오류만 수정하고 영향을 받은 수치와 조판, 링크와 동작을 재검사한다. 독자시험 등 남은 미확인 사항은 숨기지 않고 처리 방침을 정한다. 마지막 배포 파일과 상품 문구를 사람이 보고 승인한다.",
+      "completion_evidence": "발견사항 처리 완료 기록, 승인한 파일의 버전과 해시, 승인자와 실제 승인 일시 및 배포 범위",
+      "boundary": "97쪽과 79쪽 결정문 보존 조건을 유지한다. 정확성에 필요한 수정과 보존 조건이 충돌하면 저자에게 먼저 알린다. Git 저장이나 AI 검토 완료는 출간 승인이나 효용 입증이 아니다.",
+      "disposition": "출판과 판매를 하지 않아 해당 경로의 과제 중단. 일반적인 출처와 이용 조건 보존은 계속."
+    }
+  ],
+  "sequencing": "N1부터 결정하고 N2와 N3는 가능한 범위에서 병행한다. N4는 실제 경로의 요건을 따라 진행하고 마지막에 N5를 닫는다. 미완료 검수를 밝힌 편집 검토용 투고를 N2와 N3의 선행 완료 조건으로 막지는 않는다.",
+  "not_in_scope": [
+    "새 장과 사례, 이론 및 방법론 확장",
+    "새 양식과 기능 개발",
+    "임의의 독자 모집과 외부 공유",
+    "비용 집행과 자동 접수",
+    "효율이나 학습 향상 및 판매량의 미검증 주장"
+  ],
+  "active": false,
+  "superseded_by": "e-book/maintenance/TASKS.json",
+  "retirement_reason": "저자가 출판하지 않고 비공개 GitHub에서만 관리한다고 명시함.",
+  "retired_at_seoul": "2026-11-20T13:58:03.414969+09:00"
+}

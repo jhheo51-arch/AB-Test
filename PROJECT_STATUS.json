@@ -1,8 +1,8 @@
 {
-  "checked_at_seoul": "2026-11-20T11:11:39.233665+09:00",
+  "checked_at_seoul": "2026-11-20T15:04:30.277583+09:00",
   "latest_reading_edition": "v0.22",
   "book_title": "그래서, 이 캠페인 계속할까요?",
-  "publication_status": "저자 검토본",
+  "publication_status": "출판하지 않음. 비공개 GitHub 참고 자료",
   "book": {
     "pdf": "e-book/exports/v22/ebook_review_v22.pdf",
     "html": "e-book/exports/v22/ebook_review_v22.html",
@@ -57,6 +57,86 @@
     "read_only_sql_ledger_match": true,
     "actual_reader_test": false,
     "human_approved": false
+  },
+  "repository_maintenance": {
+    "edition": "v0.22",
+    "goal": "private_github_learning_reference",
+    "publication_intent": false,
+    "visibility_policy": "keep_private",
+    "scope": "본문 개발 종료. 오류와 구체적인 읽기 장애만 최소 수정. 출판과 판매 준비는 진행하지 않음.",
+    "human_review_completed": false,
+    "actual_reader_test_completed": false,
+    "tasks": [
+      {
+        "id": "R1",
+        "title": "저장소와 기존 산출물의 무결성 확인",
+        "owner": "미라(AI)",
+        "status": "completed",
+        "evidence": "e-book/maintenance/checks/repository_check.json",
+        "completion": "기존 원고와 PDF, ZIP 및 동결 입력 해시, 문서 링크, 원래 검토 기록 보존을 실제 검사"
+      },
+      {
+        "id": "R2",
+        "title": "기존 웹 읽기본과 작성 양식 회귀 검사",
+        "owner": "미라(AI)",
+        "status": "completed",
+        "evidence": "e-book/maintenance/checks/regression_check.json",
+        "completion": "현재 v0.22의 확대와 위치 복귀, 복사와 파일 저장, 긴 입력 인쇄를 재검사. 결과는 관리 폴더에만 기록"
+      },
+      {
+        "id": "R3",
+        "title": "저자가 직접 읽고 기존 과제를 작성",
+        "owner": "허재혁",
+        "status": "ready_for_author",
+        "evidence": "e-book/maintenance/AUTHOR_CHECK.md",
+        "completion": "기존 과제의 실제 작성물과 막힌 위치, 도움받은 범위를 기록. 자기점검과 다른 독자의 독립 수행을 구분"
+      },
+      {
+        "id": "R4",
+        "title": "확인된 오류만 기록하고 최소 수정",
+        "owner": "저자와 미라(AI)",
+        "status": "ongoing",
+        "evidence": "e-book/maintenance/ISSUES.csv",
+        "completion": "실제로 발견한 문제만 기록하고 수정 또는 유지 이유와 영향을 받은 검사 결과를 남김. 새로운 문제를 억지로 만들지 않음"
+      }
+    ],
+    "cancelled_work": [
+      "출판사와 판매처 선정 및 투고",
+      "판매용 표지와 판권 및 상품 정보 제작",
+      "출간 경로를 전제로 한 EPUB 또는 PDF/X 전환",
+      "출판 승인과 판매 개시 준비"
+    ],
+    "optional_not_completed": [
+      "독립된 사람의 통계 검수",
+      "자동차 CRM 실무자의 범위 검토",
+      "다른 독자의 독립 수행시험"
+    ],
+    "preserve": [
+      "v0.22 본문과 79쪽 한 면 결정문",
+      "이전 판과 원자료 및 감사 기록",
+      "출처와 글꼴 등 이용 조건 고지",
+      "비공개 GitHub 설정"
+    ],
+    "boundaries": [
+      "외부 공유와 독자 모집 및 유료 의뢰를 자동으로 진행하지 않음",
+      "Git 저장이나 자동 검사를 실제 독자시험 및 현장 효용 입증으로 표시하지 않음",
+      "기존에 차단된 PDF 인용 전수 대조와 전권 contact sheet 생성을 재승인한 것이 아님",
+      "tool/과 영상 작업은 별도 작업 범위로 유지"
+    ]
+  },
+  "publication_review": {
+    "active": false,
+    "kind": "과거 AI 편집 검토 보존. 출판 계획과 판매 준비는 중단함.",
+    "assessment": "AI 출판 편집 검토 완료. 편집 검토용 투고 가능 의견이며 판매용 최종 승인은 아님.",
+    "development_scope": "본문 개발 종료. 검수 오류와 구체적인 읽기 장애만 최소 수정.",
+    "report": "e-book/review/publication_v22/PUBLICATION_REVIEW.md",
+    "next_steps": "e-book/review/publication_v22/NEXT_STEPS.md",
+    "gates": "e-book/review/publication_v22/PUBLICATION_GATES.md",
+    "submission_route": null,
+    "human_review_completed": false,
+    "actual_reader_test_completed": false,
+    "publication_approved": false,
+    "superseded_by": "e-book/maintenance/TASKS.json"
   },
   "synthetic_data": {
     "original": "e-book/virtual-data/v03/README.md",

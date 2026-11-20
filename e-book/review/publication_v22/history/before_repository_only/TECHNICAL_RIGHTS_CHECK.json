@@ -1,0 +1,1269 @@
+{
+  "checked_at_seoul": "2026-11-20T13:16:49.581066+09:00",
+  "baseline_hashes": {
+    "e-book/exports/v22/ebook_review_v22.md": "b88e6af12491703f4bd9509bcb47605f1385cccd3d261a77da23fd85396b2c6e",
+    "e-book/exports/v22/ebook_review_v22.pdf": "b73b26e180f21b23226a1d60752b129578824082b8ca04124ce6af60372542fe",
+    "e-book/exports/v22/ebook_review_v22.html": "7c701b171a83ccd21c5ac7fbd33c890d5b53a8df350dcc3b30ac561ae11897e7",
+    "e-book/exports/v22/MINIMUM_RECORD.html": "54ee9165f74e1846a9640470f176ca023e18d58795d731e8de566941515e865c",
+    "e-book/packages/JH_CRM_ebook_reader_v22.zip": "7e5fcc7207e95ac87461ac3238603497479ba4e620485665f011f330d3e1e5f7"
+  },
+  "pdf": {
+    "pages": 97,
+    "page_size_mm": [
+      190.16,
+      269.92
+    ],
+    "metadata": {
+      "format": "PDF 1.4",
+      "title": "그래서, 이 캠페인 계속할까요?",
+      "author": "허재혁",
+      "subject": "TRI-V 시각 편집 저자 검토본0.22",
+      "keywords": "CRM,A/B,TRI-V,JH Motors",
+      "creator": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+      "producer": "Skia/PDF m158",
+      "creationDate": "D:20261120015143+00'00'",
+      "modDate": "D:20261120015143+00'00'",
+      "trapped": "",
+      "encryption": null
+    },
+    "toc_entries": 66,
+    "internal_and_external_link_count": 545,
+    "fonts": [
+      {
+        "xref": 4,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 6,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 5,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 5,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 6,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 3,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 7,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 2,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 8,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 6,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 9,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 7,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 10,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 4,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 11,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 5,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 13,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 3,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 14,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 4,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 15,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 5,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 16,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 2,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 17,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 3,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 18,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 3,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 19,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 2,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 20,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 8,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 21,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 5,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 22,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 9,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 23,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 9,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 24,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 5,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 25,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 2,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 26,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 5,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 27,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 2,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 28,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 4,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 29,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 5,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 30,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 4,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 31,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 4,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 32,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 4,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 33,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 4,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 34,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 4,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 37,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 11,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 38,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 127,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 39,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 154,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 40,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 83,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 41,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 89,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 42,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 23,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 43,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 49,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 65,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 20,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 66,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 255,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 67,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 132,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 68,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 248,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 69,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 105,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 74,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 25,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 78,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 9,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 79,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 14,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 80,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 9,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 84,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 39,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 85,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 32,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 86,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 26,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 87,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 29,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 88,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 55,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 89,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 78,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 94,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 8,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 95,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 6,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 96,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 4,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 97,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 5,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 98,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 7,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 99,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 14,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 100,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 7,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 101,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 11,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 102,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 2,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 105,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 2,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 108,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 16,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 109,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 16,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 110,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 7,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 111,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 5,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 113,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 5,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 114,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 13,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 115,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 9,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 116,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 52,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 117,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 40,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 118,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 20,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 119,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 12,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 120,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 14,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 121,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 7,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 122,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 8,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 123,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 23,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 124,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 27,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 125,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 10,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 126,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 17,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 129,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 39,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 130,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 60,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 135,
+        "extension": "ttf",
+        "type": "Type0",
+        "basefont": "BBAAAA+Consolas",
+        "embedded_font_bytes": 28504
+      },
+      {
+        "xref": 166,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 3,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 167,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 7,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 176,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 3,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 177,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 3,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 178,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 2,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 179,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 18,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 184,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 10,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 185,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 8,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 204,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 6,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 205,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 29,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 206,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 8,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 207,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 19,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 208,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 13,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 209,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 34,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 210,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 17,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 211,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 25,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 212,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 26,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 213,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 11,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 214,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 4,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 215,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 2,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 216,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 6,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 217,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 2,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 218,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 8,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 219,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 9,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 220,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 6,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 221,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 7,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 222,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 22,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 223,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 15,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 224,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 17,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 226,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 15,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 227,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 20,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 228,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 13,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 231,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 24,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 240,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 5,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 241,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 6,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 242,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 7,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 243,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 10,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 244,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 14,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 265,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 7,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 266,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 6,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 267,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 7,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 270,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 3,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 271,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 3,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 272,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 5,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 273,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 2,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 327,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 5,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 328,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 7,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 329,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 4,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 330,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 9,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 331,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 5,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 332,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 9,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 333,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 18,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 334,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 5,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 335,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 7,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 336,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 9,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 337,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 4,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 338,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 4,
+        "glyph_programs_nonempty": true
+      },
+      {
+        "xref": 339,
+        "extension": "n/a",
+        "type": "Type3",
+        "basefont": "",
+        "glyph_program_count": 11,
+        "glyph_programs_nonempty": true
+      }
+    ]
+  },
+  "web_font_metadata": [
+    {
+      "family": "sans",
+      "name_records": {
+        "0": [
+          "© 2014-2021 Adobe (http://www.adobe.com/), with Reserved Font Name 'Source'."
+        ],
+        "1": [
+          "Noto Sans KR"
+        ],
+        "6": [
+          "NotoSansKR-Thin"
+        ],
+        "13": [
+          "This Font Software is licensed under the SIL Open Font License, Version 1.1. This Font Software is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the SIL Open Font License for the specific language, permissions and limitations governing your use of this Font Software."
+        ],
+        "14": [
+          "http://scripts.sil.org/OFL"
+        ]
+      },
+      "license_file": "assets/LICENSE-sans.txt",
+      "license_first_line": "Copyright 2014-2021 Adobe (http://www.adobe.com/), with Reserved Font Name 'Source'"
+    },
+    {
+      "family": "serif",
+      "name_records": {
+        "0": [
+          "© 2017-2023 Adobe (http://www.adobe.com/)."
+        ],
+        "1": [
+          "Noto Serif KR"
+        ],
+        "6": [
+          "NotoSerifKR-ExtraLight"
+        ],
+        "13": [
+          "This Font Software is licensed under the SIL Open Font License, Version 1.1. This Font Software is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the SIL Open Font License for the specific language, permissions and limitations governing your use of this Font Software."
+        ],
+        "14": [
+          "http://scripts.sil.org/OFL"
+        ]
+      },
+      "license_file": "assets/LICENSE-serif.txt",
+      "license_first_line": "Copyright 2012 Google Inc. All Rights Reserved."
+    }
+  ],
+  "reader_zip": {
+    "entries": [
+      "DEVELOPMENT.md",
+      "FIGURE_DATA.json",
+      "FIGURE_DATA_V22.json",
+      "FOOTNOTES.json",
+      "LOOKUP.json",
+      "MANUSCRIPT_CHANGES.json",
+      "MINIMUM_RECORD.html",
+      "MINIMUM_RECORD.md",
+      "MINIMUM_RECORD.pdf",
+      "MINIMUM_RECORD_WORKED.md",
+      "PRINT_VALIDATION.json",
+      "REVIEW.md",
+      "START_HERE.md",
+      "UI_VALIDATION.json",
+      "assets/LICENSE-pagedjs.md",
+      "assets/LICENSE-sans.txt",
+      "assets/LICENSE-serif.txt",
+      "assets/fonts_manifest.json",
+      "assets/reader-sans.woff2",
+      "assets/reader-serif.woff2",
+      "build_manifest_v22.json",
+      "campaign_path_v08.svg",
+      "capacity_v06.svg",
+      "chapter12_sql_validation_v22.json",
+      "cover_A.svg",
+      "decision_record_v22.svg",
+      "development/CORRECTION_NOTES.md",
+      "development/PROOF_CORRECTIONS.json",
+      "ebook_review_v22.html",
+      "ebook_review_v22.md",
+      "ebook_review_v22.pdf",
+      "guardrail_effect.svg",
+      "integration_validation_v22.json",
+      "measurement_v06.svg",
+      "numeric_text_validation_v22.json",
+      "observation_maturity_v22.svg",
+      "segments_v06.svg",
+      "three_judgments_v22.svg",
+      "tri_v_easy_comparison.svg",
+      "tri_v_easy_decision.svg",
+      "tri_v_easy_population.svg",
+      "tri_v_workflow_v22.svg",
+      "validation_v22.json",
+      "visual_geometry_v22.json",
+      "winner_effect.svg"
+    ],
+    "entry_count": 45,
+    "license_files": [
+      "assets/LICENSE-pagedjs.md",
+      "assets/LICENSE-sans.txt",
+      "assets/LICENSE-serif.txt"
+    ],
+    "third_party_cover_copies": [],
+    "databases": []
+  },
+  "limits": [
+    "Not a full citation-to-PDF audit",
+    "Not legal clearance or publisher acceptance",
+    "No manuscript or PDF edits; no publication or external sharing"
+  ]
+}

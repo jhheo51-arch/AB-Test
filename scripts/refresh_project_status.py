@@ -47,11 +47,25 @@ assert integration['status'] == package['status'] == ui['status'] == printing['s
 assert layout['pdf_pages'] == 97
 assert [u['page'] for u in layout['atomic_layout_units'] if 'worked-record' in u['cls']] == [79]
 
+review_folder = ROOT / 'e-book/review/publication_v22'
+next_steps = json.loads((review_folder / 'NEXT_STEPS.json').read_text(encoding='utf-8'))
+assert next_steps['edition'] == 'v0.22'
+assert len({task['id'] for task in next_steps['tasks']}) == len(next_steps['tasks'])
+for name in ['PUBLICATION_REVIEW.md', 'PUBLICATION_GATES.md', 'NEXT_STEPS.md']:
+    assert (review_folder / name).is_file(), name
+assert next_steps['active'] is False
+maintenance = json.loads((ROOT / 'e-book/maintenance/TASKS.json').read_text(encoding='utf-8'))
+assert maintenance['goal'] == 'private_github_learning_reference'
+assert maintenance['publication_intent'] is False
+assert len({t['id'] for t in maintenance['tasks']}) == len(maintenance['tasks'])
+for name in ['repository_check.json', 'regression_check.json']:
+    assert json.loads((ROOT / 'e-book/maintenance/checks' / name).read_text(encoding='utf-8'))['status'] == 'passed'
+
 status = {
     "checked_at_seoul": datetime.now(timezone(timedelta(hours=9))).isoformat(),
     "latest_reading_edition": "v0.22",
     "book_title": "그래서, 이 캠페인 계속할까요?",
-    "publication_status": "저자 검토본",
+    "publication_status": "출판하지 않음. 비공개 GitHub 참고 자료",
     "book": {
         "pdf": pdf.relative_to(ROOT).as_posix(),
         "html": (EDITION / "ebook_review_v22.html").relative_to(ROOT).as_posix(),
@@ -69,6 +83,21 @@ status = {
         "read_only_sql_ledger_match": sql["ledger_match"],
         "actual_reader_test": integration["actual_reader_test"],
         "human_approved": integration["human_approval"],
+    },
+    "repository_maintenance": maintenance,
+    "publication_review": {
+        "active": False,
+        "kind": "과거 AI 편집 검토 보존. 출판 계획과 판매 준비는 중단함.",
+        "assessment": next_steps['current_assessment'],
+        "development_scope": next_steps['scope'],
+        "report": 'e-book/review/publication_v22/PUBLICATION_REVIEW.md',
+        "next_steps": 'e-book/review/publication_v22/NEXT_STEPS.md',
+        "gates": 'e-book/review/publication_v22/PUBLICATION_GATES.md',
+        "submission_route": next_steps['submission_route'],
+        "human_review_completed": next_steps['human_review_completed'],
+        "actual_reader_test_completed": next_steps['actual_reader_test_completed'],
+        "publication_approved": next_steps['publication_approved'],
+        "superseded_by": "e-book/maintenance/TASKS.json",
     },
     "synthetic_data": {
         "original": "e-book/virtual-data/v03/README.md",
