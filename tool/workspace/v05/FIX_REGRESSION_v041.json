@@ -1,0 +1,97 @@
+{
+  "status": "PASS",
+  "count": 22,
+  "checks": [
+    {
+      "name": "approved report prepares current print snapshot",
+      "pass": true
+    },
+    {
+      "name": "W02 input invalidation discards old print DOM",
+      "pass": true
+    },
+    {
+      "name": "afterprint clears temporary print DOM",
+      "pass": true
+    },
+    {
+      "name": "decision change revokes print approval and DOM",
+      "pass": true
+    },
+    {
+      "name": "group share change revokes print snapshot",
+      "pass": true
+    },
+    {
+      "name": "W03 editing during real hash allows retry",
+      "pass": true
+    },
+    {
+      "name": "old hash finally cannot unlock newer job",
+      "pass": true
+    },
+    {
+      "name": "new hash resolves with latest counts",
+      "pass": true
+    },
+    {
+      "name": "pending file immediately blocks analysis/save",
+      "pass": true
+    },
+    {
+      "name": "W01 older file cannot overwrite latest typed table",
+      "pass": true
+    },
+    {
+      "name": "latest typed table remains analyzable",
+      "pass": true
+    },
+    {
+      "name": "newer file wins over earlier pending file",
+      "pass": true
+    },
+    {
+      "name": "format change cancels pending earlier file",
+      "pass": true
+    },
+    {
+      "name": "pending older restore cannot overwrite newer typed table",
+      "pass": true
+    },
+    {
+      "name": "newer restore wins over earlier pending file",
+      "pass": true
+    },
+    {
+      "name": "W04 long_group saved/restored counts preserved",
+      "pass": true
+    },
+    {
+      "name": "W04 fourteen_cells saved/restored counts preserved",
+      "pass": true
+    },
+    {
+      "name": "fourteen_cells restore does not relax inference gates",
+      "pass": true
+    },
+    {
+      "name": "W04 above_inference_cap saved/restored counts preserved",
+      "pass": true
+    },
+    {
+      "name": "above_inference_cap restore does not relax inference gates",
+      "pass": true
+    },
+    {
+      "name": "malformed restore preserves valid current result",
+      "pass": true
+    },
+    {
+      "name": "worker load error permits a fresh successful retry",
+      "pass": true
+    }
+  ],
+  "scope": "synthetic controlled timing; actual hashes/files; no model calls",
+  "original_audit": "AB_Test_Workspace_v04_Audit/AUDIT_REVIEW.md",
+  "pdf_proof": "validated separately with actual PDF extraction"
+}

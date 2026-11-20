@@ -82,3 +82,9 @@ tool/workspace/v041/** -text whitespace=cr-at-eol
 tool/reviews/v04_audit/** -text whitespace=cr-at-eol
 tool/reviews/v03_personas/** -text whitespace=cr-at-eol
 tool/workspace/v041/fonts/LICENSE.txt -text whitespace=-blank-at-eol,cr-at-eol
+
+# Preserve v0.5 source, validation and immutable release bytes.
+tool/workspace/v05/** -text whitespace=cr-at-eol
+tool/releases/v05/** -text whitespace=cr-at-eol
+tool/reviews/v041_reevaluation/** -text whitespace=cr-at-eol
+tool/workspace/v05/fonts/LICENSE.txt -text whitespace=-blank-at-eol,cr-at-eol

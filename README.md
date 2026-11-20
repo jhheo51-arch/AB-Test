@@ -8,7 +8,7 @@ CRM A/B 테스트의 설계, 결과 해석, 적용 결정을 연습하는 비공
 | 전자책 편집과 검수 | [반영 내역](e-book/design/v22/DEVELOPMENT.md), [개정 검토](e-book/design/v22/REVIEW.md), [자동 확인 상태](PROJECT_STATUS.json) |
 | 합성 데이터와 실습 | [데이터와 실습 안내](e-book/README.md), [표본 설계 예제](e-book/learning-materials/sample-and-data/sample_and_data_chapter_v03.pdf), [워크북](e-book/learning-materials/workbook-and-cards/workbook_v04.pdf) |
 | A/B 실험노트 영상 제작 | [대본부터 렌더링까지](video-production/README.md), [11화 추가 예제](video-production/README.md#새-회차-만들기-예시-11화) |
-| CRM A/B 테스트 작업실 v0.4.1 | [실행법·지원 범위·검증](tool/workspace/v041/README.md), [PRD와 합의](tool/prd/v01/README.md) |
+| CRM A/B 테스트 작업실 v0.5 | [실행법·지원 범위·검증](tool/workspace/v05/README.md), [PRD와 합의](tool/prd/v01/README.md), [남은 과제](tool/ROADMAP.md), [ZIP](tool/releases/v05/README.md) |
 
 ## 폴더 구조
 
@@ -19,7 +19,7 @@ CRM A/B 테스트의 설계, 결과 해석, 적용 결정을 연습하는 비공
 - `e-book/virtual-data/`와 `e-book/analysis/`에는 교육용 합성 데이터와 결과 계산 근거가 있습니다.
 - `scripts/`에는 전자책과 데이터의 생성 및 검증 코드가 있습니다. [현재 실행 순서](scripts/README.md)
 - `video-production/`에는 영상의 대본, 도표와 렌더링 코드가 있습니다. 완성 영상은 기존 비공개 Drive에서 관리합니다.
-- `tool/`에는 제품 기획, 실행 가능한 로컬 작업실 v0.4.1, 가상 페르소나 검토와 감사·수정 검증 기록이 있습니다.
+- `tool/`에는 제품 기획, 실행 가능한 로컬 작업실 v0.5, 가상 페르소나 검토와 감사·수정 검증 기록이 있습니다.
 
 ## 이전 판과 현재 상태
 

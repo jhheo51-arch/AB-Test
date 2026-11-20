@@ -1,0 +1,123 @@
+{
+  "status": "PASS_TARGETED_V05_WORKFLOW",
+  "checked_at": "2026-11-20T13:23:12.765405+09:00",
+  "timezone": "Asia/Seoul",
+  "features": [
+    "explicit local column mapping",
+    "neutral comparison and summary-first results",
+    "guided non-approval judgment writing"
+  ],
+  "browser_counts": {
+    "WORKFLOW_VERIFICATION_v05.json": 37,
+    "BROWSER_VERIFICATION.json": 43,
+    "FIX_REGRESSION_v041.json": 22,
+    "DECISION_VERIFICATION_v04.json": 19
+  },
+  "actual_llm_in_baseline": true,
+  "unit_groups": {
+    "column_mapping_smoke.cjs": 12,
+    "project_schema_smoke.cjs": 27,
+    "engine_smoke.cjs": 19,
+    "narrative_smoke.cjs": 18
+  },
+  "numeric_reference_summary": {
+    "cases": {
+      "total": 224,
+      "passed": 224,
+      "failed": 0
+    },
+    "interaction_cases": {
+      "total": 11,
+      "passed": 11,
+      "failed": 0
+    },
+    "holm_independent_only": {
+      "total": 8,
+      "passed": 8,
+      "failed": 0
+    },
+    "interaction_numeric": {
+      "total": 5,
+      "passed": 5,
+      "failed": 0
+    },
+    "interaction_information_gates": {
+      "total": 5,
+      "passed": 5,
+      "failed": 0
+    },
+    "interaction_api_boundary": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0
+    },
+    "actual_engine_family": {
+      "m1": 224,
+      "m4": 10
+    },
+    "failed_checks": 0
+  },
+  "pdf": {
+    "status": "PASS",
+    "pages": 3,
+    "minimum_actual_font_pt": 12.0,
+    "excluded_group_detail_checked": true,
+    "rendered_all_pages": true,
+    "scope": "synthetic default report; not all possible user-content pagination"
+  },
+  "guided_pdf": {
+    "status": "PASS",
+    "pages": 2,
+    "minimum_actual_font_pt": 12.0,
+    "guided_judgment_and_review_conditions_present": true,
+    "raw_omitted_columns_absent": true
+  },
+  "relevant_contrast": {
+    "body_on_white": 14.3,
+    "muted_on_white": 5.78,
+    "muted_on_paper": 5.39,
+    "white_on_action": 5.64,
+    "AA_body_pass": true
+  },
+  "engine_worker_narrative_unchanged": {
+    "engine.js": true,
+    "worker.js": true,
+    "narrative.js": true
+  },
+  "project_versions": {
+    "write": 4,
+    "read": [
+      2,
+      3,
+      4
+    ]
+  },
+  "source_sha256": {
+    "app.js": "e9c0dc450ad0c173975cd8f4ae899aa8f38209ad63864481e9c2169eb9a8a2f3",
+    "column-mapping.js": "d1d3b0c7a2e3aeb520c9c831d3583cf5e2d889c6ea079837a7814868ab361a68",
+    "decision-v04.css": "e75a39ddceb74b433ab3a4fb30a41ce0e7a5ed4fa5d82cc940bf4219b39b4edf",
+    "engine.js": "f40cc1fbd3e87dde4050cb0155673c2f368b2e88274a30fa03aeb09dbcde05f7",
+    "index.html": "6732742092290c1c2185ccfed0c0678426b28145dfe4e40988251da6c12f969b",
+    "launch.py": "b9831e925dcfefdc634d82337e9995b61921cb56838b9d16f2aee1b816da2834",
+    "narrative.js": "0cdf5942f55de8364a250d66dcfd2bc246bb64e2ebf5ac55cbf9e708b0f42c4c",
+    "project-schema.js": "eb8381605aa567430c7f7976660397bc08a47ba61b4087cec9e447cdc5fd4d54",
+    "server.py": "f6ae28523e68d0f02d0a34081dafcf3570d0c446925f18a1772d176715e00d2f",
+    "styles.css": "0869f2c9d558ad908dc67c07ad06d58af0ae6acdc09d80eb66bd0bf397e8a153",
+    "theme-v03.css": "c432ea5680f4bea18f9bf2815315238fc80101d5870f4e152904851b35cb3059",
+    "worker.js": "6f30bd381c13bbad95dcd6d6570dff14a23df9f5ad5b0a5d4d05bfe6078d7179",
+    "workflow-v05.css": "7d1b1dcf2876027d66e8b0d51d546af3a2bf2074e814699d55a3b31229da13de",
+    "workflow-v05.js": "f5ea4d75572f334b12bee12a6bbcd5ec26bbb01106a67130fb06c2c197979c28"
+  },
+  "limits": [
+    "Synthetic automation, not actual CRM user testing or full security/accessibility certification.",
+    "No new statistical method or larger inference limits.",
+    "Full freeform planning conversation remains unimplemented.",
+    "100 input columns max for mapping; no automatic semantic certification.",
+    "GitHub has not been updated in this change."
+  ],
+  "test_changes": [
+    "Context tests open the new disclosure before asserting visible metadata; version4 is expected while legacy2/3 migration is tested.",
+    "Initial extra-natural-prose regression failed; minimum-header validation now rejects it explicitly.",
+    "Immaturity assertion verifies the actual engine IMMATURE_OBSERVATION code after explicit ID/outcome connection."
+  ]
+}

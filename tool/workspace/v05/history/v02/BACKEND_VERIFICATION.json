@@ -1,0 +1,88 @@
+{
+  "status": "PASS",
+  "count": 16,
+  "checks": [
+    {
+      "name": "GET /server.py",
+      "status": 404,
+      "pass": true
+    },
+    {
+      "name": "GET /README.md",
+      "status": 404,
+      "pass": true
+    },
+    {
+      "name": "GET /LLM_PROBE.json",
+      "status": 404,
+      "pass": true
+    },
+    {
+      "name": "GET /%2e%2e/server.py",
+      "status": 404,
+      "pass": true
+    },
+    {
+      "name": "GET /api/upload",
+      "status": 404,
+      "pass": true
+    },
+    {
+      "name": "wrong host",
+      "status": 403,
+      "pass": true
+    },
+    {
+      "name": "missing origin",
+      "status": 403,
+      "pass": true
+    },
+    {
+      "name": "cross origin",
+      "status": 403,
+      "pass": true
+    },
+    {
+      "name": "wrong content type",
+      "status": 415,
+      "pass": true
+    },
+    {
+      "name": "explicit confirmation missing",
+      "status": 400,
+      "pass": true
+    },
+    {
+      "name": "raw field rejected",
+      "status": 400,
+      "pass": true
+    },
+    {
+      "name": "real endpoint with CLI unavailable",
+      "status": 503,
+      "pass": true
+    },
+    {
+      "name": "numeric prose",
+      "pass": true,
+      "status": "validation_rejected"
+    },
+    {
+      "name": "unsafe markup",
+      "pass": true,
+      "status": "validation_rejected"
+    },
+    {
+      "name": "unknown reference",
+      "pass": true,
+      "status": "validation_rejected"
+    },
+    {
+      "name": "missing next steps",
+      "pass": true,
+      "status": "validation_rejected"
+    }
+  ],
+  "llm_calls_in_this_test": 0,
+  "scope": "selected loopback/origin/schema/output guards; not production security certification"
+}

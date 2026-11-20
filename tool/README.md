@@ -2,19 +2,24 @@
 
 ## 현재 진입점
 
-- **[실행 가능한 작업실 v0.4.1](workspace/v041/README.md)** — 실행법, 지원 범위, 네 최신성·저장 문제 수정, 검증과 남은 일.
-- [제품 기획 기준안](prd/v01/PRD_BASELINE_v02.md), [문답/위임 기록](prd/v01/INTERVIEW.md), [합의](prd/v01/DECISIONS.md).
-- [v0.3 가상 페르소나 검토](reviews/v03_personas/PERSONA_REVIEW.md).
-- [v0.4 추가 감사](reviews/v04_audit/AUDIT_REVIEW.md), [v0.4.1 수정 회귀](workspace/v041/FIX_REGRESSION_v041.json).
+- **[작업실 v0.5 실행법·지원 범위](workspace/v05/README.md)** — 열 연결 → 결과 요약 → 판단 작성.
+- **[앞으로 남은 과제](ROADMAP.md)** — 제안 우선순위, 근거, 완료 기준과 제외 범위.
+- [검증된 ZIP](releases/v05/README.md), [v0.5 검증 요약](workspace/v05/VERIFICATION_v05.json).
+- [제품 기획 기준안](prd/v01/PRD_BASELINE_v02.md), [문답](prd/v01/INTERVIEW.md), [합의](prd/v01/DECISIONS.md).
 
-CRM 전체 관리·발송기가 아니라 **CRM A/B 테스트 설계·분석·판단 전문 도구**입니다. 외부에서 실험하고 로컬에서 입력·계산·판단 기록을 연결합니다. 고객 원자료를 GitHub나 설명 서버로 올리는 도구가 아닙니다.
+CRM 전체 관리·발송기가 아니라 **CRM A/B 테스트 설계·분석·판단 전문 도구**입니다. 외부에서 실험하고 기기 안에서 입력·계산·판단 기록을 연결합니다. 고객 원자료를 GitHub나 설명 서버에 올리는 도구가 아닙니다.
 
-## 구현과 목표를 구분합니다
+## 현재 구현과 목표
 
-CSV/표 입력, 실제 이항 계산, 결과/집단 설명, 계획·집계 저장/복원, HTML/PDF 공유와 동의 후 실제 LLM 설명을 구현·검사했습니다. 자유로운 상황 설명 → 목적 → 후보 → 계획 추천의 전체 대화는 제품 목표이며 현재는 규칙 기반 안내입니다. 모든 세그먼트 수·설계·지표를 지원하지 않습니다. 실제 사용자의 효용·전체 보안·통계 전 범위의 검증 완료가 아닙니다.
+직접 열 연결·명시적 A/B 값 변환, 검증된 이항 계산, 요약 우선 결과와 중립 카드, 판단 작성 발판, 계획·집계 저장/복원, HTML/PDF 공유와 동의 후 실제 LLM 설명을 구현했습니다. 자유로운 상황 설명 → 목적 → 후보 → 계획 추천의 전체 설계 대화는 목표이며 현재는 규칙 기반 안내입니다.
 
-현재 검증은 전체 브라우저 43개, 수정 회귀 22개, 스키마 22개 그룹과 별도 수치 기준·PDF를 포함합니다. 정확한 범위와 최초 실패·미완료는 작업실 README와 결과 JSON을 보세요. 원 감사의 실패 기록을 수정판의 현재 실패로 오인하거나, 수정판 PASS를 모든 문제 해결로 확대하지 않습니다.
+v0.5의 새 흐름 37개, 기존 흐름 43개(실제 모델 포함), 이전 네 문제 회귀 22개, 맥락 19개, 열 연결 모듈 12개, 스키마 27개 그룹을 통과했습니다. 새 ZIP도 별도 추출해 새 흐름 37개를 재실행했습니다. 서로 관련된 검사를 독립 사용자 수로 합산하지 않습니다. 실제 실무자의 사용성·성과, 전체 접근성·보안 인증을 뜻하지 않습니다.
 
-## 이전 방향성 기록
+## 보존한 이력
 
-[FRAMEWORK_v02.md](FRAMEWORK_v02.md), [DIRECTION.md](DIRECTION.md), [PERSONA_REVIEW.md](PERSONA_REVIEW.md), [BENCHMARK.md](BENCHMARK.md), [SOURCES.md](SOURCES.md)는 초기 방향·평가 자료입니다. 그 문서의 ‘미구현/미확정’은 작성 당시 상태입니다. 현재 실행 상태는 위 v0.4.1을 우선합니다. 기존 초안과 전자책은 삭제·덮어쓰지 않았습니다.
+- [v0.4.1 실행 스냅샷](workspace/v041/README.md) — 수정 전 기준 보존.
+- [v0.4.1 재평가](reviews/v041_reevaluation/REVIEW.md) — v0.5 개선의 근거. 당시 문제와 현재 상태를 구분하세요.
+- [v0.4 추가 감사](reviews/v04_audit/AUDIT_REVIEW.md), [v0.5에서도 실행한 최신성 회귀](workspace/v05/FIX_REGRESSION_v041.json).
+- [v0.3 가상 페르소나](reviews/v03_personas/PERSONA_REVIEW.md).
+
+FRAMEWORK_v02·DIRECTION·PERSONA_REVIEW·BENCHMARK·SOURCES는 초기 방향/평가입니다. 그 안의 미구현·미확정은 작성 당시 상태이며 현재 실행 상태는 v0.5 문서를 우선합니다. 초기 초안, 이전 버전, 전자책·영상 원본은 보존합니다. 공개 배포·Pages는 켜지 않습니다.

@@ -1,0 +1,1043 @@
+{
+  "status": "PASS",
+  "count": 43,
+  "checks": [
+    {
+      "name": "empty entry starts at real input without forced plan wizard",
+      "pass": true
+    },
+    {
+      "name": "planning guide explicitly rule based",
+      "pass": true
+    },
+    {
+      "name": "plan can be saved before data exists",
+      "pass": true
+    },
+    {
+      "name": "synthetic four cells actually sum to 130/1000 and 150/1000",
+      "pass": true
+    },
+    {
+      "name": "nominal intervals and Holm-adjusted hold not conflated",
+      "pass": true
+    },
+    {
+      "name": "planned Holm is not claimed applied when inference was not run",
+      "pass": true
+    },
+    {
+      "name": "group names map locally while LLM gets G labels",
+      "pass": true
+    },
+    {
+      "name": "no LLM POST without explicit consent",
+      "pass": true
+    },
+    {
+      "name": "explanation button disabled before consent",
+      "pass": true
+    },
+    {
+      "name": "actual engine to actual LLM to rendered explanation",
+      "pass": true
+    },
+    {
+      "name": "LLM payload contains statuses only and no counts/names/source",
+      "pass": true
+    },
+    {
+      "name": "LLM explanation does not replace original numeric result",
+      "pass": true
+    },
+    {
+      "name": "390px results page has no global horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "report export disabled until share review",
+      "pass": true
+    },
+    {
+      "name": "report excludes group names by default",
+      "pass": true
+    },
+    {
+      "name": "explicit group share includes local group names",
+      "pass": true
+    },
+    {
+      "name": "downloaded HTML is script-free and excludes raw IDs and LLM",
+      "pass": true
+    },
+    {
+      "name": "print control populates dedicated report and invokes print",
+      "pass": true
+    },
+    {
+      "name": "source edits invalidate results and previous synthetic assumptions",
+      "pass": true
+    },
+    {
+      "name": "unconfirmed conditions show descriptive not p/CI/winner",
+      "pass": true
+    },
+    {
+      "name": "confirmed positive effect produces engine B decision",
+      "pass": true
+    },
+    {
+      "name": "simulated LLM failure is visible and preserves calculations",
+      "pass": true
+    },
+    {
+      "name": "individual rows aggregate with no ID in result UI",
+      "pass": true
+    },
+    {
+      "name": "project has only plan and aggregates, no individual IDs/raw rows/LLM",
+      "pass": true
+    },
+    {
+      "name": "saved aggregates restore and preserve synthetic provenance",
+      "pass": true
+    },
+    {
+      "name": "fixed natural sentence parses explicit counts",
+      "pass": true
+    },
+    {
+      "name": "extra natural prose is rejected rather than silently ignored",
+      "pass": true
+    },
+    {
+      "name": "invalid counts show row and column and cannot analyze",
+      "pass": true
+    },
+    {
+      "name": "invalid rows cannot be dropped through project save",
+      "pass": true
+    },
+    {
+      "name": "new CSV clears old synthetic design assumptions",
+      "pass": true
+    },
+    {
+      "name": "actual file input follows validated engine path",
+      "pass": true
+    },
+    {
+      "name": "oversize file is rejected without reading into table",
+      "pass": true
+    },
+    {
+      "name": "duplicate individual IDs block analysis and are not echoed",
+      "pass": true
+    },
+    {
+      "name": "immature outcomes are not silently treated as failure",
+      "pass": true
+    },
+    {
+      "name": "post-hoc segments have no confirmatory winner",
+      "pass": true
+    },
+    {
+      "name": "missing segment remains overall but blocks segment inference",
+      "pass": true
+    },
+    {
+      "name": "untrusted segment text is escaped in result and report",
+      "pass": true
+    },
+    {
+      "name": "non UTF-8 files are rejected rather than silently recoded",
+      "pass": true
+    },
+    {
+      "name": "50000 individual rows complete local UI path",
+      "pass": true
+    },
+    {
+      "name": "50001 individual rows are blocked in UI",
+      "pass": true
+    },
+    {
+      "name": "390px input page has no global horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "no remote browser requests and no raw file/ID transmitted",
+      "pass": true
+    },
+    {
+      "name": "no uncaught page JavaScript errors",
+      "pass": true
+    }
+  ],
+  "live_llm_requested": true,
+  "live_llm_response": {
+    "source": "actual_llm_via_existing_hermes_profile",
+    "profile": "mira",
+    "answer": {
+      "summary": "전체와 각 집단의 판정은 모두 보류이며, 집단 간 효과 차이도 입증되지 않았습니다. 보호 지표는 평가되지 않아 실제 적용 판단은 별도로 검토해야 합니다.",
+      "cautions": [
+        "보류는 차이 없음이나 동등함, 안전함이 증명되었다는 뜻이 아닙니다.",
+        "집단 간 효과 차이가 뒷받침되지 않았다는 결과는 집단 효과가 같다는 증명도 아닙니다.",
+        "보호 지표 미평가는 통계적 판정을 취소하는 것이 아니라 실제 적용 판단에 필요한 확인이 남아 있음을 뜻합니다.",
+        "분석 상태는 유효로 표시되어 있지만, 설계 조건은 사용자가 확인한 것이며 독립적으로 인증된 것은 아닙니다.",
+        "홀름 보정이 적용되었다는 상태만으로 이익이나 실제 적용의 적절성을 확정할 수 없습니다.",
+        "보고된 이슈가 없다는 사실은 모든 한계나 위험이 없다는 보장이 아닙니다."
+      ],
+      "next_steps": [
+        "보호 지표를 평가하고 실제 적용 기준의 충족 여부를 별도로 확인하세요.",
+        "선택한 분석 방법과 사용자가 확인한 설계 조건이 적용 목적에 맞는지 검토하세요.",
+        "집단별 적용을 고려한다면 현재 결과로 집단 간 효과 차이를 주장하지 말고 추가 검증의 필요성을 검토하세요."
+      ],
+      "evidence_refs": [
+        "overall",
+        "segments",
+        "interaction",
+        "issues"
+      ]
+    },
+    "elapsed_seconds": 19.34,
+    "validation": "JSON schema, allowed evidence keys, no numeric restatement; not a proof of semantic correctness",
+    "sent_fields": [
+      "analysis_status",
+      "overall_decision",
+      "segments",
+      "interaction",
+      "guardrail",
+      "design_user_confirmed",
+      "adjustment",
+      "issues"
+    ],
+    "raw_data_sent": false
+  },
+  "failure_test": "explicit simulated HTTP 503; not counted as a live success",
+  "javascript_errors": [],
+  "browser_network": [
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/theme-v03.css",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/decision-v04.css",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/narrative.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/app.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/worker.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/api/status",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/fonts/PretendardVariable.woff2",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/engine.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/theme-v03.css",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/decision-v04.css",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/narrative.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/app.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/fonts/PretendardVariable.woff2",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/api/status",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/worker.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/engine.js",
+      "body": null
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:9693/api/explain",
+      "body": "{\"confirmed\":true,\"facts\":{\"analysis_status\":\"valid\",\"overall_decision\":\"hold\",\"segments\":[{\"id\":\"G1\",\"decision\":\"hold\"},{\"id\":\"G2\",\"decision\":\"hold\"}],\"interaction\":\"not_supported\",\"guardrail\":\"not_assessed\",\"design_user_confirmed\":true,\"adjustment\":\"holm\",\"issues\":[]}}"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:9693/api/explain",
+      "body": "{\"confirmed\":true,\"facts\":{\"analysis_status\":\"valid\",\"overall_decision\":\"B\",\"segments\":[],\"interaction\":\"not_tested\",\"guardrail\":\"not_assessed\",\"design_user_confirmed\":true,\"adjustment\":\"none\",\"issues\":[]}}"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/theme-v03.css",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/decision-v04.css",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/narrative.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/app.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/fonts/PretendardVariable.woff2",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/api/status",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/worker.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/engine.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/theme-v03.css",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/decision-v04.css",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/narrative.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/app.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/fonts/PretendardVariable.woff2",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/api/status",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/worker.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/engine.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/theme-v03.css",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/decision-v04.css",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/narrative.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/app.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/fonts/PretendardVariable.woff2",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/api/status",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/worker.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/engine.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/theme-v03.css",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/decision-v04.css",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/narrative.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/app.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/fonts/PretendardVariable.woff2",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/api/status",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/worker.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/engine.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/theme-v03.css",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/decision-v04.css",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/narrative.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/app.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/worker.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/api/status",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/fonts/PretendardVariable.woff2",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/engine.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/theme-v03.css",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/decision-v04.css",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/narrative.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/app.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/fonts/PretendardVariable.woff2",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/api/status",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/worker.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/engine.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/theme-v03.css",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/decision-v04.css",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/narrative.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/app.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/fonts/PretendardVariable.woff2",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/api/status",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/worker.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/engine.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/theme-v03.css",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/decision-v04.css",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/narrative.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/app.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/fonts/PretendardVariable.woff2",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/api/status",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/worker.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/engine.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/theme-v03.css",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/decision-v04.css",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/narrative.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/app.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/fonts/PretendardVariable.woff2",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/api/status",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/worker.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/engine.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/theme-v03.css",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/decision-v04.css",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/narrative.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/app.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/fonts/PretendardVariable.woff2",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/api/status",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/worker.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/engine.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/theme-v03.css",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/decision-v04.css",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/narrative.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/app.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/fonts/PretendardVariable.woff2",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/api/status",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/worker.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/engine.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/theme-v03.css",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/decision-v04.css",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/narrative.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/app.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/fonts/PretendardVariable.woff2",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/api/status",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/worker.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/engine.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/theme-v03.css",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/decision-v04.css",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/narrative.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/app.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/fonts/PretendardVariable.woff2",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/api/status",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/worker.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/engine.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/theme-v03.css",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/decision-v04.css",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/narrative.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/app.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/api/status",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/worker.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/fonts/PretendardVariable.woff2",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/engine.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/theme-v03.css",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/decision-v04.css",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/narrative.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/app.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/fonts/PretendardVariable.woff2",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/api/status",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/worker.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/engine.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/theme-v03.css",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/decision-v04.css",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/narrative.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/app.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/fonts/PretendardVariable.woff2",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/api/status",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/worker.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:9693/engine.js",
+      "body": null
+    }
+  ],
+  "scope": "automated synthetic-data regression, not human usability or production security certification"
+}
