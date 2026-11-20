@@ -46,7 +46,7 @@ with ZipFile(P/'PUBLICATION_REVIEW_v22.zip') as z:
  assert z.testzip() is None
  for n in z.namelist():assert z.read(n)==(H/n).read_bytes(),n
 links=0;target=C/'repository_check.json'
-for p in [R/'README.md',R/'PROJECT_SUMMARY.md',R/'e-book/README.md',R/'scripts/README.md']+list(M.glob('*.md'))+list(P.glob('*.md')):
+for p in [R/'README.md',R/'PROJECT_SUMMARY.md',R/'e-book/README.md',R/'scripts/README.md']+list(M.rglob('*.md'))+list(P.glob('*.md')):
  for name in re.findall(r'\]\(([^)\n]+)\)',p.read_text(encoding='utf-8')):
   if urlsplit(name).scheme or name.startswith('#'):continue
   dest=p.parent/unquote(name.split('#')[0]);assert dest.exists() or dest.resolve()==target.resolve(),(p.name,name);links+=1

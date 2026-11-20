@@ -10,8 +10,8 @@
 |---|---|
 | R1 저장소와 파일의 무결성 | [실행 결과](checks/repository_check.json). 원고와 PDF 및 ZIP, 기존 동결 입력과 로컬 링크를 확인한다. |
 | R2 기존 동작 회귀 검사 | [실행 결과](checks/regression_check.json). 확대와 복귀, 복사와 저장, 긴 기록 인쇄를 기존 검사로 재확인한다. |
-| R3 저자 직접 읽기와 작성 | [직접 확인 안내](AUTHOR_CHECK.md)와 [빈 관찰 기록](AUTHOR_OBSERVATIONS.csv). 실제 수행을 대신 만들지 않는다. |
-| R4 확인된 오류만 관리 | [오류 기록](ISSUES.csv). 문제의 위치와 실제 증상, 최소 수정과 재검사 근거를 남긴다. |
+| R3 저자 직접 읽기와 작성 | [직접 확인 안내](AUTHOR_CHECK.md)와 [빈 관찰 기록](AUTHOR_OBSERVATIONS.csv). 별도로 요청받은 [AI 대행 수행](ai_walkthrough/README.md)은 완료했으며 저자 실제 수행 완료와 구분한다. |
+| R4 확인된 오류만 관리 | [오류 기록](ISSUES.csv). [이번 점검 회차](ai_walkthrough/CHECK.json)에서 확정한 새 본문 오류는 없어 본문은 유지했다. 향후 실제 문제의 위치와 증상, 최소 수정과 재검사 근거를 남긴다. |
 
 ## 다시 확인하는 명령
 

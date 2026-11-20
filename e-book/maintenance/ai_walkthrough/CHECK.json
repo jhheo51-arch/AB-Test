@@ -1,0 +1,97 @@
+{
+  "status": "passed",
+  "checked_at_seoul": "2026-11-20T15:28:21.509789+09:00",
+  "kind": "AI proxy walkthrough with answer keys already seen",
+  "chapters": [
+    2,
+    3,
+    4,
+    8,
+    9,
+    10,
+    12
+  ],
+  "six_field_records": 9,
+  "child_record_sets_verified": 8,
+  "quoted_markdown_locations_checked": 8,
+  "completion_display_checks": [
+    {
+      "condition": "가",
+      "interval_pp": [
+        1.750669394644235,
+        4.250830785215366
+      ],
+      "rounded_display_matches": true
+    },
+    {
+      "condition": "나",
+      "interval_pp": [
+        3.4694559424744225,
+        6.536577040300292
+      ],
+      "rounded_display_matches": true
+    },
+    {
+      "condition": "다",
+      "interval_pp": [
+        -0.39728669070968825,
+        1.9978769938028342
+      ],
+      "rounded_display_matches": true
+    },
+    {
+      "condition": "라",
+      "interval_pp": [
+        1.750669394644235,
+        4.250830785215366
+      ],
+      "rounded_display_matches": true
+    },
+    {
+      "condition": "나의 다른 집단",
+      "interval_pp": [
+        -2.2958617274671864,
+        2.2958617274671864
+      ],
+      "rounded_display_matches": true
+    }
+  ],
+  "guardrail_display_checks": [
+    {
+      "condition": "가",
+      "upper_pp": 0.22213840607068377,
+      "rounded_display_matches": true
+    },
+    {
+      "condition": "나",
+      "upper_pp": 0.33304216754567767,
+      "rounded_display_matches": true
+    },
+    {
+      "condition": "다",
+      "upper_pp": 0.22213840607068377,
+      "rounded_display_matches": true
+    },
+    {
+      "condition": "라",
+      "upper_pp": 1.6244492304369036,
+      "rounded_display_matches": true
+    }
+  ],
+  "independent_probability_example_percent": 63.396765872677086,
+  "chapter12_form_export_matches": true,
+  "chapter12_read_only_sql_matches_ledger": true,
+  "confirmed_new_manuscript_errors": 0,
+  "concrete_new_reading_obstacle_candidates": 0,
+  "manuscript_edits": 0,
+  "human_observation_rows": 0,
+  "issue_rows": 0,
+  "actual_reader_test_completed": false,
+  "independent_human_review_completed": false,
+  "frozen_v22_unchanged": true,
+  "limits": [
+    "Not a blind reader test",
+    "Limited displayed-value checks, not a full statistical audit",
+    "No PDF citation sweep or contact sheet"
+  ]
+}

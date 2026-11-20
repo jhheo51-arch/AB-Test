@@ -1,5 +1,5 @@
 {
-  "checked_at_seoul": "2026-11-20T15:04:30.277583+09:00",
+  "checked_at_seoul": "2026-11-20T15:28:22.127671+09:00",
   "latest_reading_edition": "v0.22",
   "book_title": "그래서, 이 캠페인 계속할까요?",
   "publication_status": "출판하지 않음. 비공개 GitHub 참고 자료",
@@ -89,7 +89,11 @@
         "owner": "허재혁",
         "status": "ready_for_author",
         "evidence": "e-book/maintenance/AUTHOR_CHECK.md",
-        "completion": "기존 과제의 실제 작성물과 막힌 위치, 도움받은 범위를 기록. 자기점검과 다른 독자의 독립 수행을 구분"
+        "completion": "기존 과제의 실제 작성물과 막힌 위치, 도움받은 범위를 기록. 자기점검과 다른 독자의 독립 수행을 구분",
+        "ai_proxy_status": "completed",
+        "ai_proxy_evidence": "e-book/maintenance/ai_walkthrough/README.md",
+        "human_task_completed": false,
+        "note": "저자 직접 수행의 기준은 바꾸지 않음. 이번 위임 요청에서 AI가 수행한 답안과 검사 결과는 별도 완료 기록으로 보존."
       },
       {
         "id": "R4",
@@ -97,7 +101,15 @@
         "owner": "저자와 미라(AI)",
         "status": "ongoing",
         "evidence": "e-book/maintenance/ISSUES.csv",
-        "completion": "실제로 발견한 문제만 기록하고 수정 또는 유지 이유와 영향을 받은 검사 결과를 남김. 새로운 문제를 억지로 만들지 않음"
+        "completion": "실제로 발견한 문제만 기록하고 수정 또는 유지 이유와 영향을 받은 검사 결과를 남김. 새로운 문제를 억지로 만들지 않음",
+        "latest_pass": {
+          "status": "completed_no_new_confirmed_errors",
+          "evidence": "e-book/maintenance/ai_walkthrough/CHECK.json",
+          "confirmed_new_errors": 0,
+          "concrete_new_reading_obstacle_candidates": 0,
+          "manuscript_edits": 0
+        },
+        "note": "이번 점검 회차 완료. 향후 실제 오류가 보고되면 최소 수정한다는 유지 규칙은 계속 유효."
       }
     ],
     "cancelled_work": [
