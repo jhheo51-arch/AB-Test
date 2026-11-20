@@ -90,3 +90,9 @@ tool/workspace/v05/** -text whitespace=cr-at-eol
 tool/releases/v05/** -text whitespace=cr-at-eol
 tool/reviews/v041_reevaluation/** -text whitespace=cr-at-eol
 tool/workspace/v05/fonts/LICENSE.txt -text whitespace=-blank-at-eol,cr-at-eol
+
+# Preserve v0.5.1 source, validation, synthetic review kit and release bytes.
+tool/workspace/v051/** -text whitespace=cr-at-eol
+tool/releases/v051/** -text whitespace=cr-at-eol
+tool/user-review/v051/** -text whitespace=cr-at-eol
+tool/workspace/v051/fonts/LICENSE.txt -text whitespace=-blank-at-eol,cr-at-eol

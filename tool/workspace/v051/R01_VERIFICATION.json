@@ -1,0 +1,1624 @@
+{
+  "requirement": "R01",
+  "real_model_calls": 0,
+  "network_scope": "ephemeral 127.0.0.1 HTTP only; proxy disabled",
+  "credential_access": "none",
+  "cases": [
+    {
+      "case": "engine_version_mismatch",
+      "rejected": true,
+      "message": "Engine version requires explicit issue-code allowlist review."
+    },
+    {
+      "case": "missing_engine_version",
+      "rejected": true,
+      "message": "Engine version requires explicit issue-code allowlist review."
+    },
+    {
+      "case": "allowlist_version_mismatch",
+      "rejected": true,
+      "message": "Issue-code allowlist version mismatch."
+    },
+    {
+      "case": "allowlist_extra_key",
+      "rejected": true,
+      "message": "Invalid issue-code allowlist schema."
+    },
+    {
+      "case": "allowlist_duplicate_code",
+      "rejected": true,
+      "message": "Invalid issue-code allowlist entries."
+    },
+    {
+      "case": "allowlist_nonstring_code",
+      "rejected": true,
+      "message": "Invalid issue-code allowlist entries."
+    },
+    {
+      "case": "allowlist_boolean_schema",
+      "rejected": true,
+      "message": "Issue-code allowlist version mismatch."
+    },
+    {
+      "mode": "hermes_none",
+      "case": "unknown_code",
+      "http_status": 400,
+      "response": {
+        "error": "PAYLOAD_REJECTED",
+        "message": "현재 엔진 버전의 허용 목록에 있는 오류 코드만 전송할 수 있습니다."
+      },
+      "cli_calls_delta": 0
+    },
+    {
+      "mode": "hermes_none",
+      "case": "identifier_like_code",
+      "http_status": 400,
+      "response": {
+        "error": "PAYLOAD_REJECTED",
+        "message": "현재 엔진 버전의 허용 목록에 있는 오류 코드만 전송할 수 있습니다."
+      },
+      "cli_calls_delta": 0
+    },
+    {
+      "mode": "hermes_none",
+      "case": "mixed_known_unknown",
+      "http_status": 400,
+      "response": {
+        "error": "PAYLOAD_REJECTED",
+        "message": "현재 엔진 버전의 허용 목록에 있는 오류 코드만 전송할 수 있습니다."
+      },
+      "cli_calls_delta": 0
+    },
+    {
+      "mode": "hermes_none",
+      "case": "code_with_email",
+      "http_status": 400,
+      "response": {
+        "error": "PAYLOAD_REJECTED",
+        "message": "현재 엔진 버전의 허용 목록에 있는 오류 코드만 전송할 수 있습니다."
+      },
+      "cli_calls_delta": 0
+    },
+    {
+      "mode": "hermes_none",
+      "case": "lowercase_code",
+      "http_status": 400,
+      "response": {
+        "error": "PAYLOAD_REJECTED",
+        "message": "현재 엔진 버전의 허용 목록에 있는 오류 코드만 전송할 수 있습니다."
+      },
+      "cli_calls_delta": 0
+    },
+    {
+      "mode": "hermes_none",
+      "case": "whitespace_code",
+      "http_status": 400,
+      "response": {
+        "error": "PAYLOAD_REJECTED",
+        "message": "현재 엔진 버전의 허용 목록에 있는 오류 코드만 전송할 수 있습니다."
+      },
+      "cli_calls_delta": 0
+    },
+    {
+      "mode": "hermes_none",
+      "case": "newline_code",
+      "http_status": 400,
+      "response": {
+        "error": "PAYLOAD_REJECTED",
+        "message": "현재 엔진 버전의 허용 목록에 있는 오류 코드만 전송할 수 있습니다."
+      },
+      "cli_calls_delta": 0
+    },
+    {
+      "mode": "hermes_none",
+      "case": "empty_code",
+      "http_status": 400,
+      "response": {
+        "error": "PAYLOAD_REJECTED",
+        "message": "현재 엔진 버전의 허용 목록에 있는 오류 코드만 전송할 수 있습니다."
+      },
+      "cli_calls_delta": 0
+    },
+    {
+      "mode": "hermes_none",
+      "case": "object_code",
+      "http_status": 400,
+      "response": {
+        "error": "PAYLOAD_REJECTED",
+        "message": "현재 엔진 버전의 허용 목록에 있는 오류 코드만 전송할 수 있습니다."
+      },
+      "cli_calls_delta": 0
+    },
+    {
+      "mode": "hermes_none",
+      "case": "list_code",
+      "http_status": 400,
+      "response": {
+        "error": "PAYLOAD_REJECTED",
+        "message": "현재 엔진 버전의 허용 목록에 있는 오류 코드만 전송할 수 있습니다."
+      },
+      "cli_calls_delta": 0
+    },
+    {
+      "mode": "hermes_none",
+      "case": "numeric_code",
+      "http_status": 400,
+      "response": {
+        "error": "PAYLOAD_REJECTED",
+        "message": "현재 엔진 버전의 허용 목록에 있는 오류 코드만 전송할 수 있습니다."
+      },
+      "cli_calls_delta": 0
+    },
+    {
+      "mode": "hermes_none",
+      "case": "null_code",
+      "http_status": 400,
+      "response": {
+        "error": "PAYLOAD_REJECTED",
+        "message": "현재 엔진 버전의 허용 목록에 있는 오류 코드만 전송할 수 있습니다."
+      },
+      "cli_calls_delta": 0
+    },
+    {
+      "mode": "hermes_none",
+      "case": "boolean_code",
+      "http_status": 400,
+      "response": {
+        "error": "PAYLOAD_REJECTED",
+        "message": "현재 엔진 버전의 허용 목록에 있는 오류 코드만 전송할 수 있습니다."
+      },
+      "cli_calls_delta": 0
+    },
+    {
+      "mode": "hermes_none",
+      "case": "issues_not_list",
+      "http_status": 400,
+      "response": {
+        "error": "PAYLOAD_REJECTED",
+        "message": "현재 엔진 버전의 허용 목록에 있는 오류 코드만 전송할 수 있습니다."
+      },
+      "cli_calls_delta": 0
+    },
+    {
+      "mode": "hermes_none",
+      "case": "too_many_issues",
+      "http_status": 400,
+      "response": {
+        "error": "PAYLOAD_REJECTED",
+        "message": "현재 엔진 버전의 허용 목록에 있는 오류 코드만 전송할 수 있습니다."
+      },
+      "cli_calls_delta": 0
+    },
+    {
+      "mode": "hermes_none",
+      "case": "extra_facts_key",
+      "http_status": 400,
+      "response": {
+        "error": "PAYLOAD_REJECTED",
+        "message": "허용된 판정 상태 필드만 전송할 수 있습니다."
+      },
+      "cli_calls_delta": 0
+    },
+    {
+      "mode": "hermes_none",
+      "case": "missing_facts_key",
+      "http_status": 400,
+      "response": {
+        "error": "PAYLOAD_REJECTED",
+        "message": "허용된 판정 상태 필드만 전송할 수 있습니다."
+      },
+      "cli_calls_delta": 0
+    },
+    {
+      "mode": "hermes_none",
+      "case": "identifier_segment",
+      "http_status": 400,
+      "response": {
+        "error": "PAYLOAD_REJECTED",
+        "message": "집단 이름이나 원자료는 보낼 수 없습니다."
+      },
+      "cli_calls_delta": 0
+    },
+    {
+      "mode": "hermes_none",
+      "case": "extra_segment_key",
+      "http_status": 400,
+      "response": {
+        "error": "PAYLOAD_REJECTED",
+        "message": "집단 이름이나 원자료는 보낼 수 없습니다."
+      },
+      "cli_calls_delta": 0
+    },
+    {
+      "mode": "hermes_none",
+      "case": "wrong_state",
+      "http_status": 400,
+      "response": {
+        "error": "PAYLOAD_REJECTED",
+        "message": "판정 상태가 유효하지 않습니다."
+      },
+      "cli_calls_delta": 0
+    },
+    {
+      "mode": "hermes_none",
+      "case": "malformed_state_type",
+      "http_status": 400,
+      "response": {
+        "error": "PAYLOAD_REJECTED",
+        "message": "cannot use 'list' as a set element (unhashable type: 'list')"
+      },
+      "cli_calls_delta": 0
+    },
+    {
+      "mode": "hermes_none",
+      "case": "nonboolean_confirmation",
+      "http_status": 400,
+      "response": {
+        "error": "PAYLOAD_REJECTED",
+        "message": "설계 상태가 유효하지 않습니다."
+      },
+      "cli_calls_delta": 0
+    },
+    {
+      "mode": "hermes_none",
+      "case": "extra_envelope_key",
+      "http_status": 400,
+      "response": {
+        "error": "PAYLOAD_REJECTED",
+        "message": "전송 미리보기 확인이 필요합니다."
+      },
+      "cli_calls_delta": 0
+    },
+    {
+      "mode": "hermes_none",
+      "case": "missing_envelope_key",
+      "http_status": 400,
+      "response": {
+        "error": "PAYLOAD_REJECTED",
+        "message": "전송 미리보기 확인이 필요합니다."
+      },
+      "cli_calls_delta": 0
+    },
+    {
+      "mode": "hermes_none",
+      "case": "unconfirmed_envelope",
+      "http_status": 400,
+      "response": {
+        "error": "PAYLOAD_REJECTED",
+        "message": "전송 미리보기 확인이 필요합니다."
+      },
+      "cli_calls_delta": 0
+    },
+    {
+      "mode": "hermes_none",
+      "case": "valid_code",
+      "code": null,
+      "http_status": 503,
+      "response": {
+        "error": "LLM_UNAVAILABLE",
+        "message": "Hermes CLI를 찾지 못했습니다. 계산 결과와 규칙 설명은 계속 사용할 수 있습니다."
+      },
+      "validation_accepted": true,
+      "cli_calls_delta": 0
+    },
+    {
+      "mode": "hermes_none",
+      "case": "valid_code",
+      "code": "ARM_LIMIT",
+      "http_status": 503,
+      "response": {
+        "error": "LLM_UNAVAILABLE",
+        "message": "Hermes CLI를 찾지 못했습니다. 계산 결과와 규칙 설명은 계속 사용할 수 있습니다."
+      },
+      "validation_accepted": true,
+      "cli_calls_delta": 0
+    },
+    {
+      "mode": "hermes_none",
+      "case": "valid_code",
+      "code": "ASSUMPTIONS_UNCONFIRMED",
+      "http_status": 503,
+      "response": {
+        "error": "LLM_UNAVAILABLE",
+        "message": "Hermes CLI를 찾지 못했습니다. 계산 결과와 규칙 설명은 계속 사용할 수 있습니다."
+      },
+      "validation_accepted": true,
+      "cli_calls_delta": 0
+    },
+    {
+      "mode": "hermes_none",
+      "case": "valid_code",
+      "code": "COLUMN_COUNT",
+      "http_status": 503,
+      "response": {
+        "error": "LLM_UNAVAILABLE",
+        "message": "Hermes CLI를 찾지 못했습니다. 계산 결과와 규칙 설명은 계속 사용할 수 있습니다."
+      },
+      "validation_accepted": true,
+      "cli_calls_delta": 0
+    },
+    {
+      "mode": "hermes_none",
+      "case": "valid_code",
+      "code": "CSV_AFTER_QUOTE",
+      "http_status": 503,
+      "response": {
+        "error": "LLM_UNAVAILABLE",
+        "message": "Hermes CLI를 찾지 못했습니다. 계산 결과와 규칙 설명은 계속 사용할 수 있습니다."
+      },
+      "validation_accepted": true,
+      "cli_calls_delta": 0
+    },
+    {
+      "mode": "hermes_none",
+      "case": "valid_code",
+      "code": "CSV_QUOTE",
+      "http_status": 503,
+      "response": {
+        "error": "LLM_UNAVAILABLE",
+        "message": "Hermes CLI를 찾지 못했습니다. 계산 결과와 규칙 설명은 계속 사용할 수 있습니다."
+      },
+      "validation_accepted": true,
+      "cli_calls_delta": 0
+    },
+    {
+      "mode": "hermes_none",
+      "case": "valid_code",
+      "code": "CSV_UNCLOSED_QUOTE",
+      "http_status": 503,
+      "response": {
+        "error": "LLM_UNAVAILABLE",
+        "message": "Hermes CLI를 찾지 못했습니다. 계산 결과와 규칙 설명은 계속 사용할 수 있습니다."
+      },
+      "validation_accepted": true,
+      "cli_calls_delta": 0
+    },
+    {
+      "mode": "hermes_none",
+      "case": "valid_code",
+      "code": "DUPLICATE_CELL",
+      "http_status": 503,
+      "response": {
+        "error": "LLM_UNAVAILABLE",
+        "message": "Hermes CLI를 찾지 못했습니다. 계산 결과와 규칙 설명은 계속 사용할 수 있습니다."
+      },
+      "validation_accepted": true,
+      "cli_calls_delta": 0
+    },
+    {
+      "mode": "hermes_none",
+      "case": "valid_code",
+      "code": "DUPLICATE_HEADER",
+      "http_status": 503,
+      "response": {
+        "error": "LLM_UNAVAILABLE",
+        "message": "Hermes CLI를 찾지 못했습니다. 계산 결과와 규칙 설명은 계속 사용할 수 있습니다."
+      },
+      "validation_accepted": true,
+      "cli_calls_delta": 0
+    },
+    {
+      "mode": "hermes_none",
+      "case": "valid_code",
+      "code": "DUPLICATE_ID",
+      "http_status": 503,
+      "response": {
+        "error": "LLM_UNAVAILABLE",
+        "message": "Hermes CLI를 찾지 못했습니다. 계산 결과와 규칙 설명은 계속 사용할 수 있습니다."
+      },
+      "validation_accepted": true,
+      "cli_calls_delta": 0
+    },
+    {
+      "mode": "hermes_none",
+      "case": "valid_code",
+      "code": "EMPTY_ARM",
+      "http_status": 503,
+      "response": {
+        "error": "LLM_UNAVAILABLE",
+        "message": "Hermes CLI를 찾지 못했습니다. 계산 결과와 규칙 설명은 계속 사용할 수 있습니다."
+      },
+      "validation_accepted": true,
+      "cli_calls_delta": 0
+    },
+    {
+      "mode": "hermes_none",
+      "case": "valid_code",
+      "code": "EMPTY_INPUT",
+      "http_status": 503,
+      "response": {
+        "error": "LLM_UNAVAILABLE",
+        "message": "Hermes CLI를 찾지 못했습니다. 계산 결과와 규칙 설명은 계속 사용할 수 있습니다."
+      },
+      "validation_accepted": true,
+      "cli_calls_delta": 0
+    },
+    {
+      "mode": "hermes_none",
+      "case": "valid_code",
+      "code": "EMPTY_SEGMENT_ARM",
+      "http_status": 503,
+      "response": {
+        "error": "LLM_UNAVAILABLE",
+        "message": "Hermes CLI를 찾지 못했습니다. 계산 결과와 규칙 설명은 계속 사용할 수 있습니다."
+      },
+      "validation_accepted": true,
+      "cli_calls_delta": 0
+    },
+    {
+      "mode": "hermes_none",
+      "case": "valid_code",
+      "code": "FILE_TOO_LARGE",
+      "http_status": 503,
+      "response": {
+        "error": "LLM_UNAVAILABLE",
+        "message": "Hermes CLI를 찾지 못했습니다. 계산 결과와 규칙 설명은 계속 사용할 수 있습니다."
+      },
+      "validation_accepted": true,
+      "cli_calls_delta": 0
+    },
+    {
+      "mode": "hermes_none",
+      "case": "valid_code",
+      "code": "FORMAT",
+      "http_status": 503,
+      "response": {
+        "error": "LLM_UNAVAILABLE",
+        "message": "Hermes CLI를 찾지 못했습니다. 계산 결과와 규칙 설명은 계속 사용할 수 있습니다."
+      },
+      "validation_accepted": true,
+      "cli_calls_delta": 0
+    },
+    {
+      "mode": "hermes_none",
+      "case": "valid_code",
+      "code": "IMMATURE_OBSERVATION",
+      "http_status": 503,
+      "response": {
+        "error": "LLM_UNAVAILABLE",
+        "message": "Hermes CLI를 찾지 못했습니다. 계산 결과와 규칙 설명은 계속 사용할 수 있습니다."
+      },
+      "validation_accepted": true,
+      "cli_calls_delta": 0
+    },
+    {
+      "mode": "hermes_none",
+      "case": "valid_code",
+      "code": "INPUT_TYPE",
+      "http_status": 503,
+      "response": {
+        "error": "LLM_UNAVAILABLE",
+        "message": "Hermes CLI를 찾지 못했습니다. 계산 결과와 규칙 설명은 계속 사용할 수 있습니다."
+      },
+      "validation_accepted": true,
+      "cli_calls_delta": 0
+    },
+    {
+      "mode": "hermes_none",
+      "case": "valid_code",
+      "code": "INTEGER_OVERFLOW",
+      "http_status": 503,
+      "response": {
+        "error": "LLM_UNAVAILABLE",
+        "message": "Hermes CLI를 찾지 못했습니다. 계산 결과와 규칙 설명은 계속 사용할 수 있습니다."
+      },
+      "validation_accepted": true,
+      "cli_calls_delta": 0
+    },
+    {
+      "mode": "hermes_none",
+      "case": "valid_code",
+      "code": "INTERACTION_UNSUPPORTED",
+      "http_status": 503,
+      "response": {
+        "error": "LLM_UNAVAILABLE",
+        "message": "Hermes CLI를 찾지 못했습니다. 계산 결과와 규칙 설명은 계속 사용할 수 있습니다."
+      },
+      "validation_accepted": true,
+      "cli_calls_delta": 0
+    },
+    {
+      "mode": "hermes_none",
+      "case": "valid_code",
+      "code": "INVALID_ARM",
+      "http_status": 503,
+      "response": {
+        "error": "LLM_UNAVAILABLE",
+        "message": "Hermes CLI를 찾지 못했습니다. 계산 결과와 규칙 설명은 계속 사용할 수 있습니다."
+      },
+      "validation_accepted": true,
+      "cli_calls_delta": 0
+    },
+    {
+      "mode": "hermes_none",
+      "case": "valid_code",
+      "code": "INVALID_CELL",
+      "http_status": 503,
+      "response": {
+        "error": "LLM_UNAVAILABLE",
+        "message": "Hermes CLI를 찾지 못했습니다. 계산 결과와 규칙 설명은 계속 사용할 수 있습니다."
+      },
+      "validation_accepted": true,
+      "cli_calls_delta": 0
+    },
+    {
+      "mode": "hermes_none",
+      "case": "valid_code",
+      "code": "INVALID_INTEGER",
+      "http_status": 503,
+      "response": {
+        "error": "LLM_UNAVAILABLE",
+        "message": "Hermes CLI를 찾지 못했습니다. 계산 결과와 규칙 설명은 계속 사용할 수 있습니다."
+      },
+      "validation_accepted": true,
+      "cli_calls_delta": 0
+    },
+    {
+      "mode": "hermes_none",
+      "case": "valid_code",
+      "code": "INVALID_OUTCOME",
+      "http_status": 503,
+      "response": {
+        "error": "LLM_UNAVAILABLE",
+        "message": "Hermes CLI를 찾지 못했습니다. 계산 결과와 규칙 설명은 계속 사용할 수 있습니다."
+      },
+      "validation_accepted": true,
+      "cli_calls_delta": 0
+    },
+    {
+      "mode": "hermes_none",
+      "case": "valid_code",
+      "code": "INVALID_PREPARED",
+      "http_status": 503,
+      "response": {
+        "error": "LLM_UNAVAILABLE",
+        "message": "Hermes CLI를 찾지 못했습니다. 계산 결과와 규칙 설명은 계속 사용할 수 있습니다."
+      },
+      "validation_accepted": true,
+      "cli_calls_delta": 0
+    },
+    {
+      "mode": "hermes_none",
+      "case": "valid_code",
+      "code": "MISSING_HEADER",
+      "http_status": 503,
+      "response": {
+        "error": "LLM_UNAVAILABLE",
+        "message": "Hermes CLI를 찾지 못했습니다. 계산 결과와 규칙 설명은 계속 사용할 수 있습니다."
+      },
+      "validation_accepted": true,
+      "cli_calls_delta": 0
+    },
+    {
+      "mode": "hermes_none",
+      "case": "valid_code",
+      "code": "MISSING_ID",
+      "http_status": 503,
+      "response": {
+        "error": "LLM_UNAVAILABLE",
+        "message": "Hermes CLI를 찾지 못했습니다. 계산 결과와 규칙 설명은 계속 사용할 수 있습니다."
+      },
+      "validation_accepted": true,
+      "cli_calls_delta": 0
+    },
+    {
+      "mode": "hermes_none",
+      "case": "valid_code",
+      "code": "MISSING_OUTCOME",
+      "http_status": 503,
+      "response": {
+        "error": "LLM_UNAVAILABLE",
+        "message": "Hermes CLI를 찾지 못했습니다. 계산 결과와 규칙 설명은 계속 사용할 수 있습니다."
+      },
+      "validation_accepted": true,
+      "cli_calls_delta": 0
+    },
+    {
+      "mode": "hermes_none",
+      "case": "valid_code",
+      "code": "MISSING_SEGMENT",
+      "http_status": 503,
+      "response": {
+        "error": "LLM_UNAVAILABLE",
+        "message": "Hermes CLI를 찾지 못했습니다. 계산 결과와 규칙 설명은 계속 사용할 수 있습니다."
+      },
+      "validation_accepted": true,
+      "cli_calls_delta": 0
+    },
+    {
+      "mode": "hermes_none",
+      "case": "valid_code",
+      "code": "NO_DATA",
+      "http_status": 503,
+      "response": {
+        "error": "LLM_UNAVAILABLE",
+        "message": "Hermes CLI를 찾지 못했습니다. 계산 결과와 규칙 설명은 계속 사용할 수 있습니다."
+      },
+      "validation_accepted": true,
+      "cli_calls_delta": 0
+    },
+    {
+      "mode": "hermes_none",
+      "case": "valid_code",
+      "code": "PARSE_ERROR",
+      "http_status": 503,
+      "response": {
+        "error": "LLM_UNAVAILABLE",
+        "message": "Hermes CLI를 찾지 못했습니다. 계산 결과와 규칙 설명은 계속 사용할 수 있습니다."
+      },
+      "validation_accepted": true,
+      "cli_calls_delta": 0
+    },
+    {
+      "mode": "hermes_none",
+      "case": "valid_code",
+      "code": "POSTHOC_SEGMENTS",
+      "http_status": 503,
+      "response": {
+        "error": "LLM_UNAVAILABLE",
+        "message": "Hermes CLI를 찾지 못했습니다. 계산 결과와 규칙 설명은 계속 사용할 수 있습니다."
+      },
+      "validation_accepted": true,
+      "cli_calls_delta": 0
+    },
+    {
+      "mode": "hermes_none",
+      "case": "valid_code",
+      "code": "SEGMENT_COUNT_UNSUPPORTED",
+      "http_status": 503,
+      "response": {
+        "error": "LLM_UNAVAILABLE",
+        "message": "Hermes CLI를 찾지 못했습니다. 계산 결과와 규칙 설명은 계속 사용할 수 있습니다."
+      },
+      "validation_accepted": true,
+      "cli_calls_delta": 0
+    },
+    {
+      "mode": "hermes_none",
+      "case": "valid_code",
+      "code": "SEGMENT_INFERENCE_BLOCKED",
+      "http_status": 503,
+      "response": {
+        "error": "LLM_UNAVAILABLE",
+        "message": "Hermes CLI를 찾지 못했습니다. 계산 결과와 규칙 설명은 계속 사용할 수 있습니다."
+      },
+      "validation_accepted": true,
+      "cli_calls_delta": 0
+    },
+    {
+      "mode": "hermes_none",
+      "case": "valid_code",
+      "code": "SUCCESS_GT_TOTAL",
+      "http_status": 503,
+      "response": {
+        "error": "LLM_UNAVAILABLE",
+        "message": "Hermes CLI를 찾지 못했습니다. 계산 결과와 규칙 설명은 계속 사용할 수 있습니다."
+      },
+      "validation_accepted": true,
+      "cli_calls_delta": 0
+    },
+    {
+      "mode": "hermes_none",
+      "case": "valid_code",
+      "code": "TOO_MANY_ROWS",
+      "http_status": 503,
+      "response": {
+        "error": "LLM_UNAVAILABLE",
+        "message": "Hermes CLI를 찾지 못했습니다. 계산 결과와 규칙 설명은 계속 사용할 수 있습니다."
+      },
+      "validation_accepted": true,
+      "cli_calls_delta": 0
+    },
+    {
+      "mode": "hermes_none",
+      "case": "valid_code",
+      "code": "TOO_MANY_SEGMENTS",
+      "http_status": 503,
+      "response": {
+        "error": "LLM_UNAVAILABLE",
+        "message": "Hermes CLI를 찾지 못했습니다. 계산 결과와 규칙 설명은 계속 사용할 수 있습니다."
+      },
+      "validation_accepted": true,
+      "cli_calls_delta": 0
+    },
+    {
+      "mode": "hermes_none",
+      "case": "valid_code",
+      "code": "UNKNOWN_HEADER",
+      "http_status": 503,
+      "response": {
+        "error": "LLM_UNAVAILABLE",
+        "message": "Hermes CLI를 찾지 못했습니다. 계산 결과와 규칙 설명은 계속 사용할 수 있습니다."
+      },
+      "validation_accepted": true,
+      "cli_calls_delta": 0
+    },
+    {
+      "mode": "hermes_none",
+      "case": "valid_code",
+      "code": "UNSUPPORTED_ALPHA",
+      "http_status": 503,
+      "response": {
+        "error": "LLM_UNAVAILABLE",
+        "message": "Hermes CLI를 찾지 못했습니다. 계산 결과와 규칙 설명은 계속 사용할 수 있습니다."
+      },
+      "validation_accepted": true,
+      "cli_calls_delta": 0
+    },
+    {
+      "mode": "hermes_none",
+      "case": "valid_code",
+      "code": "UNSUPPORTED_DESIGN",
+      "http_status": 503,
+      "response": {
+        "error": "LLM_UNAVAILABLE",
+        "message": "Hermes CLI를 찾지 못했습니다. 계산 결과와 규칙 설명은 계속 사용할 수 있습니다."
+      },
+      "validation_accepted": true,
+      "cli_calls_delta": 0
+    },
+    {
+      "mode": "cli_sentinel",
+      "case": "unknown_code",
+      "http_status": 400,
+      "response": {
+        "error": "PAYLOAD_REJECTED",
+        "message": "현재 엔진 버전의 허용 목록에 있는 오류 코드만 전송할 수 있습니다."
+      },
+      "cli_calls_delta": 0
+    },
+    {
+      "mode": "cli_sentinel",
+      "case": "identifier_like_code",
+      "http_status": 400,
+      "response": {
+        "error": "PAYLOAD_REJECTED",
+        "message": "현재 엔진 버전의 허용 목록에 있는 오류 코드만 전송할 수 있습니다."
+      },
+      "cli_calls_delta": 0
+    },
+    {
+      "mode": "cli_sentinel",
+      "case": "mixed_known_unknown",
+      "http_status": 400,
+      "response": {
+        "error": "PAYLOAD_REJECTED",
+        "message": "현재 엔진 버전의 허용 목록에 있는 오류 코드만 전송할 수 있습니다."
+      },
+      "cli_calls_delta": 0
+    },
+    {
+      "mode": "cli_sentinel",
+      "case": "code_with_email",
+      "http_status": 400,
+      "response": {
+        "error": "PAYLOAD_REJECTED",
+        "message": "현재 엔진 버전의 허용 목록에 있는 오류 코드만 전송할 수 있습니다."
+      },
+      "cli_calls_delta": 0
+    },
+    {
+      "mode": "cli_sentinel",
+      "case": "lowercase_code",
+      "http_status": 400,
+      "response": {
+        "error": "PAYLOAD_REJECTED",
+        "message": "현재 엔진 버전의 허용 목록에 있는 오류 코드만 전송할 수 있습니다."
+      },
+      "cli_calls_delta": 0
+    },
+    {
+      "mode": "cli_sentinel",
+      "case": "whitespace_code",
+      "http_status": 400,
+      "response": {
+        "error": "PAYLOAD_REJECTED",
+        "message": "현재 엔진 버전의 허용 목록에 있는 오류 코드만 전송할 수 있습니다."
+      },
+      "cli_calls_delta": 0
+    },
+    {
+      "mode": "cli_sentinel",
+      "case": "newline_code",
+      "http_status": 400,
+      "response": {
+        "error": "PAYLOAD_REJECTED",
+        "message": "현재 엔진 버전의 허용 목록에 있는 오류 코드만 전송할 수 있습니다."
+      },
+      "cli_calls_delta": 0
+    },
+    {
+      "mode": "cli_sentinel",
+      "case": "empty_code",
+      "http_status": 400,
+      "response": {
+        "error": "PAYLOAD_REJECTED",
+        "message": "현재 엔진 버전의 허용 목록에 있는 오류 코드만 전송할 수 있습니다."
+      },
+      "cli_calls_delta": 0
+    },
+    {
+      "mode": "cli_sentinel",
+      "case": "object_code",
+      "http_status": 400,
+      "response": {
+        "error": "PAYLOAD_REJECTED",
+        "message": "현재 엔진 버전의 허용 목록에 있는 오류 코드만 전송할 수 있습니다."
+      },
+      "cli_calls_delta": 0
+    },
+    {
+      "mode": "cli_sentinel",
+      "case": "list_code",
+      "http_status": 400,
+      "response": {
+        "error": "PAYLOAD_REJECTED",
+        "message": "현재 엔진 버전의 허용 목록에 있는 오류 코드만 전송할 수 있습니다."
+      },
+      "cli_calls_delta": 0
+    },
+    {
+      "mode": "cli_sentinel",
+      "case": "numeric_code",
+      "http_status": 400,
+      "response": {
+        "error": "PAYLOAD_REJECTED",
+        "message": "현재 엔진 버전의 허용 목록에 있는 오류 코드만 전송할 수 있습니다."
+      },
+      "cli_calls_delta": 0
+    },
+    {
+      "mode": "cli_sentinel",
+      "case": "null_code",
+      "http_status": 400,
+      "response": {
+        "error": "PAYLOAD_REJECTED",
+        "message": "현재 엔진 버전의 허용 목록에 있는 오류 코드만 전송할 수 있습니다."
+      },
+      "cli_calls_delta": 0
+    },
+    {
+      "mode": "cli_sentinel",
+      "case": "boolean_code",
+      "http_status": 400,
+      "response": {
+        "error": "PAYLOAD_REJECTED",
+        "message": "현재 엔진 버전의 허용 목록에 있는 오류 코드만 전송할 수 있습니다."
+      },
+      "cli_calls_delta": 0
+    },
+    {
+      "mode": "cli_sentinel",
+      "case": "issues_not_list",
+      "http_status": 400,
+      "response": {
+        "error": "PAYLOAD_REJECTED",
+        "message": "현재 엔진 버전의 허용 목록에 있는 오류 코드만 전송할 수 있습니다."
+      },
+      "cli_calls_delta": 0
+    },
+    {
+      "mode": "cli_sentinel",
+      "case": "too_many_issues",
+      "http_status": 400,
+      "response": {
+        "error": "PAYLOAD_REJECTED",
+        "message": "현재 엔진 버전의 허용 목록에 있는 오류 코드만 전송할 수 있습니다."
+      },
+      "cli_calls_delta": 0
+    },
+    {
+      "mode": "cli_sentinel",
+      "case": "extra_facts_key",
+      "http_status": 400,
+      "response": {
+        "error": "PAYLOAD_REJECTED",
+        "message": "허용된 판정 상태 필드만 전송할 수 있습니다."
+      },
+      "cli_calls_delta": 0
+    },
+    {
+      "mode": "cli_sentinel",
+      "case": "missing_facts_key",
+      "http_status": 400,
+      "response": {
+        "error": "PAYLOAD_REJECTED",
+        "message": "허용된 판정 상태 필드만 전송할 수 있습니다."
+      },
+      "cli_calls_delta": 0
+    },
+    {
+      "mode": "cli_sentinel",
+      "case": "identifier_segment",
+      "http_status": 400,
+      "response": {
+        "error": "PAYLOAD_REJECTED",
+        "message": "집단 이름이나 원자료는 보낼 수 없습니다."
+      },
+      "cli_calls_delta": 0
+    },
+    {
+      "mode": "cli_sentinel",
+      "case": "extra_segment_key",
+      "http_status": 400,
+      "response": {
+        "error": "PAYLOAD_REJECTED",
+        "message": "집단 이름이나 원자료는 보낼 수 없습니다."
+      },
+      "cli_calls_delta": 0
+    },
+    {
+      "mode": "cli_sentinel",
+      "case": "wrong_state",
+      "http_status": 400,
+      "response": {
+        "error": "PAYLOAD_REJECTED",
+        "message": "판정 상태가 유효하지 않습니다."
+      },
+      "cli_calls_delta": 0
+    },
+    {
+      "mode": "cli_sentinel",
+      "case": "malformed_state_type",
+      "http_status": 400,
+      "response": {
+        "error": "PAYLOAD_REJECTED",
+        "message": "cannot use 'list' as a set element (unhashable type: 'list')"
+      },
+      "cli_calls_delta": 0
+    },
+    {
+      "mode": "cli_sentinel",
+      "case": "nonboolean_confirmation",
+      "http_status": 400,
+      "response": {
+        "error": "PAYLOAD_REJECTED",
+        "message": "설계 상태가 유효하지 않습니다."
+      },
+      "cli_calls_delta": 0
+    },
+    {
+      "mode": "cli_sentinel",
+      "case": "extra_envelope_key",
+      "http_status": 400,
+      "response": {
+        "error": "PAYLOAD_REJECTED",
+        "message": "전송 미리보기 확인이 필요합니다."
+      },
+      "cli_calls_delta": 0
+    },
+    {
+      "mode": "cli_sentinel",
+      "case": "missing_envelope_key",
+      "http_status": 400,
+      "response": {
+        "error": "PAYLOAD_REJECTED",
+        "message": "전송 미리보기 확인이 필요합니다."
+      },
+      "cli_calls_delta": 0
+    },
+    {
+      "mode": "cli_sentinel",
+      "case": "unconfirmed_envelope",
+      "http_status": 400,
+      "response": {
+        "error": "PAYLOAD_REJECTED",
+        "message": "전송 미리보기 확인이 필요합니다."
+      },
+      "cli_calls_delta": 0
+    },
+    {
+      "mode": "cli_sentinel",
+      "case": "valid_code",
+      "code": null,
+      "http_status": 502,
+      "response": {
+        "error": "LLM_RESPONSE_REJECTED",
+        "message": "R01_TEST_CLI_SENTINEL: no subprocess executed"
+      },
+      "validation_accepted": true,
+      "cli_calls_delta": 1
+    },
+    {
+      "mode": "cli_sentinel",
+      "case": "valid_code",
+      "code": "ARM_LIMIT",
+      "http_status": 502,
+      "response": {
+        "error": "LLM_RESPONSE_REJECTED",
+        "message": "R01_TEST_CLI_SENTINEL: no subprocess executed"
+      },
+      "validation_accepted": true,
+      "cli_calls_delta": 1
+    },
+    {
+      "mode": "cli_sentinel",
+      "case": "valid_code",
+      "code": "ASSUMPTIONS_UNCONFIRMED",
+      "http_status": 502,
+      "response": {
+        "error": "LLM_RESPONSE_REJECTED",
+        "message": "R01_TEST_CLI_SENTINEL: no subprocess executed"
+      },
+      "validation_accepted": true,
+      "cli_calls_delta": 1
+    },
+    {
+      "mode": "cli_sentinel",
+      "case": "valid_code",
+      "code": "COLUMN_COUNT",
+      "http_status": 502,
+      "response": {
+        "error": "LLM_RESPONSE_REJECTED",
+        "message": "R01_TEST_CLI_SENTINEL: no subprocess executed"
+      },
+      "validation_accepted": true,
+      "cli_calls_delta": 1
+    },
+    {
+      "mode": "cli_sentinel",
+      "case": "valid_code",
+      "code": "CSV_AFTER_QUOTE",
+      "http_status": 502,
+      "response": {
+        "error": "LLM_RESPONSE_REJECTED",
+        "message": "R01_TEST_CLI_SENTINEL: no subprocess executed"
+      },
+      "validation_accepted": true,
+      "cli_calls_delta": 1
+    },
+    {
+      "mode": "cli_sentinel",
+      "case": "valid_code",
+      "code": "CSV_QUOTE",
+      "http_status": 502,
+      "response": {
+        "error": "LLM_RESPONSE_REJECTED",
+        "message": "R01_TEST_CLI_SENTINEL: no subprocess executed"
+      },
+      "validation_accepted": true,
+      "cli_calls_delta": 1
+    },
+    {
+      "mode": "cli_sentinel",
+      "case": "valid_code",
+      "code": "CSV_UNCLOSED_QUOTE",
+      "http_status": 502,
+      "response": {
+        "error": "LLM_RESPONSE_REJECTED",
+        "message": "R01_TEST_CLI_SENTINEL: no subprocess executed"
+      },
+      "validation_accepted": true,
+      "cli_calls_delta": 1
+    },
+    {
+      "mode": "cli_sentinel",
+      "case": "valid_code",
+      "code": "DUPLICATE_CELL",
+      "http_status": 502,
+      "response": {
+        "error": "LLM_RESPONSE_REJECTED",
+        "message": "R01_TEST_CLI_SENTINEL: no subprocess executed"
+      },
+      "validation_accepted": true,
+      "cli_calls_delta": 1
+    },
+    {
+      "mode": "cli_sentinel",
+      "case": "valid_code",
+      "code": "DUPLICATE_HEADER",
+      "http_status": 502,
+      "response": {
+        "error": "LLM_RESPONSE_REJECTED",
+        "message": "R01_TEST_CLI_SENTINEL: no subprocess executed"
+      },
+      "validation_accepted": true,
+      "cli_calls_delta": 1
+    },
+    {
+      "mode": "cli_sentinel",
+      "case": "valid_code",
+      "code": "DUPLICATE_ID",
+      "http_status": 502,
+      "response": {
+        "error": "LLM_RESPONSE_REJECTED",
+        "message": "R01_TEST_CLI_SENTINEL: no subprocess executed"
+      },
+      "validation_accepted": true,
+      "cli_calls_delta": 1
+    },
+    {
+      "mode": "cli_sentinel",
+      "case": "valid_code",
+      "code": "EMPTY_ARM",
+      "http_status": 502,
+      "response": {
+        "error": "LLM_RESPONSE_REJECTED",
+        "message": "R01_TEST_CLI_SENTINEL: no subprocess executed"
+      },
+      "validation_accepted": true,
+      "cli_calls_delta": 1
+    },
+    {
+      "mode": "cli_sentinel",
+      "case": "valid_code",
+      "code": "EMPTY_INPUT",
+      "http_status": 502,
+      "response": {
+        "error": "LLM_RESPONSE_REJECTED",
+        "message": "R01_TEST_CLI_SENTINEL: no subprocess executed"
+      },
+      "validation_accepted": true,
+      "cli_calls_delta": 1
+    },
+    {
+      "mode": "cli_sentinel",
+      "case": "valid_code",
+      "code": "EMPTY_SEGMENT_ARM",
+      "http_status": 502,
+      "response": {
+        "error": "LLM_RESPONSE_REJECTED",
+        "message": "R01_TEST_CLI_SENTINEL: no subprocess executed"
+      },
+      "validation_accepted": true,
+      "cli_calls_delta": 1
+    },
+    {
+      "mode": "cli_sentinel",
+      "case": "valid_code",
+      "code": "FILE_TOO_LARGE",
+      "http_status": 502,
+      "response": {
+        "error": "LLM_RESPONSE_REJECTED",
+        "message": "R01_TEST_CLI_SENTINEL: no subprocess executed"
+      },
+      "validation_accepted": true,
+      "cli_calls_delta": 1
+    },
+    {
+      "mode": "cli_sentinel",
+      "case": "valid_code",
+      "code": "FORMAT",
+      "http_status": 502,
+      "response": {
+        "error": "LLM_RESPONSE_REJECTED",
+        "message": "R01_TEST_CLI_SENTINEL: no subprocess executed"
+      },
+      "validation_accepted": true,
+      "cli_calls_delta": 1
+    },
+    {
+      "mode": "cli_sentinel",
+      "case": "valid_code",
+      "code": "IMMATURE_OBSERVATION",
+      "http_status": 502,
+      "response": {
+        "error": "LLM_RESPONSE_REJECTED",
+        "message": "R01_TEST_CLI_SENTINEL: no subprocess executed"
+      },
+      "validation_accepted": true,
+      "cli_calls_delta": 1
+    },
+    {
+      "mode": "cli_sentinel",
+      "case": "valid_code",
+      "code": "INPUT_TYPE",
+      "http_status": 502,
+      "response": {
+        "error": "LLM_RESPONSE_REJECTED",
+        "message": "R01_TEST_CLI_SENTINEL: no subprocess executed"
+      },
+      "validation_accepted": true,
+      "cli_calls_delta": 1
+    },
+    {
+      "mode": "cli_sentinel",
+      "case": "valid_code",
+      "code": "INTEGER_OVERFLOW",
+      "http_status": 502,
+      "response": {
+        "error": "LLM_RESPONSE_REJECTED",
+        "message": "R01_TEST_CLI_SENTINEL: no subprocess executed"
+      },
+      "validation_accepted": true,
+      "cli_calls_delta": 1
+    },
+    {
+      "mode": "cli_sentinel",
+      "case": "valid_code",
+      "code": "INTERACTION_UNSUPPORTED",
+      "http_status": 502,
+      "response": {
+        "error": "LLM_RESPONSE_REJECTED",
+        "message": "R01_TEST_CLI_SENTINEL: no subprocess executed"
+      },
+      "validation_accepted": true,
+      "cli_calls_delta": 1
+    },
+    {
+      "mode": "cli_sentinel",
+      "case": "valid_code",
+      "code": "INVALID_ARM",
+      "http_status": 502,
+      "response": {
+        "error": "LLM_RESPONSE_REJECTED",
+        "message": "R01_TEST_CLI_SENTINEL: no subprocess executed"
+      },
+      "validation_accepted": true,
+      "cli_calls_delta": 1
+    },
+    {
+      "mode": "cli_sentinel",
+      "case": "valid_code",
+      "code": "INVALID_CELL",
+      "http_status": 502,
+      "response": {
+        "error": "LLM_RESPONSE_REJECTED",
+        "message": "R01_TEST_CLI_SENTINEL: no subprocess executed"
+      },
+      "validation_accepted": true,
+      "cli_calls_delta": 1
+    },
+    {
+      "mode": "cli_sentinel",
+      "case": "valid_code",
+      "code": "INVALID_INTEGER",
+      "http_status": 502,
+      "response": {
+        "error": "LLM_RESPONSE_REJECTED",
+        "message": "R01_TEST_CLI_SENTINEL: no subprocess executed"
+      },
+      "validation_accepted": true,
+      "cli_calls_delta": 1
+    },
+    {
+      "mode": "cli_sentinel",
+      "case": "valid_code",
+      "code": "INVALID_OUTCOME",
+      "http_status": 502,
+      "response": {
+        "error": "LLM_RESPONSE_REJECTED",
+        "message": "R01_TEST_CLI_SENTINEL: no subprocess executed"
+      },
+      "validation_accepted": true,
+      "cli_calls_delta": 1
+    },
+    {
+      "mode": "cli_sentinel",
+      "case": "valid_code",
+      "code": "INVALID_PREPARED",
+      "http_status": 502,
+      "response": {
+        "error": "LLM_RESPONSE_REJECTED",
+        "message": "R01_TEST_CLI_SENTINEL: no subprocess executed"
+      },
+      "validation_accepted": true,
+      "cli_calls_delta": 1
+    },
+    {
+      "mode": "cli_sentinel",
+      "case": "valid_code",
+      "code": "MISSING_HEADER",
+      "http_status": 502,
+      "response": {
+        "error": "LLM_RESPONSE_REJECTED",
+        "message": "R01_TEST_CLI_SENTINEL: no subprocess executed"
+      },
+      "validation_accepted": true,
+      "cli_calls_delta": 1
+    },
+    {
+      "mode": "cli_sentinel",
+      "case": "valid_code",
+      "code": "MISSING_ID",
+      "http_status": 502,
+      "response": {
+        "error": "LLM_RESPONSE_REJECTED",
+        "message": "R01_TEST_CLI_SENTINEL: no subprocess executed"
+      },
+      "validation_accepted": true,
+      "cli_calls_delta": 1
+    },
+    {
+      "mode": "cli_sentinel",
+      "case": "valid_code",
+      "code": "MISSING_OUTCOME",
+      "http_status": 502,
+      "response": {
+        "error": "LLM_RESPONSE_REJECTED",
+        "message": "R01_TEST_CLI_SENTINEL: no subprocess executed"
+      },
+      "validation_accepted": true,
+      "cli_calls_delta": 1
+    },
+    {
+      "mode": "cli_sentinel",
+      "case": "valid_code",
+      "code": "MISSING_SEGMENT",
+      "http_status": 502,
+      "response": {
+        "error": "LLM_RESPONSE_REJECTED",
+        "message": "R01_TEST_CLI_SENTINEL: no subprocess executed"
+      },
+      "validation_accepted": true,
+      "cli_calls_delta": 1
+    },
+    {
+      "mode": "cli_sentinel",
+      "case": "valid_code",
+      "code": "NO_DATA",
+      "http_status": 502,
+      "response": {
+        "error": "LLM_RESPONSE_REJECTED",
+        "message": "R01_TEST_CLI_SENTINEL: no subprocess executed"
+      },
+      "validation_accepted": true,
+      "cli_calls_delta": 1
+    },
+    {
+      "mode": "cli_sentinel",
+      "case": "valid_code",
+      "code": "PARSE_ERROR",
+      "http_status": 502,
+      "response": {
+        "error": "LLM_RESPONSE_REJECTED",
+        "message": "R01_TEST_CLI_SENTINEL: no subprocess executed"
+      },
+      "validation_accepted": true,
+      "cli_calls_delta": 1
+    },
+    {
+      "mode": "cli_sentinel",
+      "case": "valid_code",
+      "code": "POSTHOC_SEGMENTS",
+      "http_status": 502,
+      "response": {
+        "error": "LLM_RESPONSE_REJECTED",
+        "message": "R01_TEST_CLI_SENTINEL: no subprocess executed"
+      },
+      "validation_accepted": true,
+      "cli_calls_delta": 1
+    },
+    {
+      "mode": "cli_sentinel",
+      "case": "valid_code",
+      "code": "SEGMENT_COUNT_UNSUPPORTED",
+      "http_status": 502,
+      "response": {
+        "error": "LLM_RESPONSE_REJECTED",
+        "message": "R01_TEST_CLI_SENTINEL: no subprocess executed"
+      },
+      "validation_accepted": true,
+      "cli_calls_delta": 1
+    },
+    {
+      "mode": "cli_sentinel",
+      "case": "valid_code",
+      "code": "SEGMENT_INFERENCE_BLOCKED",
+      "http_status": 502,
+      "response": {
+        "error": "LLM_RESPONSE_REJECTED",
+        "message": "R01_TEST_CLI_SENTINEL: no subprocess executed"
+      },
+      "validation_accepted": true,
+      "cli_calls_delta": 1
+    },
+    {
+      "mode": "cli_sentinel",
+      "case": "valid_code",
+      "code": "SUCCESS_GT_TOTAL",
+      "http_status": 502,
+      "response": {
+        "error": "LLM_RESPONSE_REJECTED",
+        "message": "R01_TEST_CLI_SENTINEL: no subprocess executed"
+      },
+      "validation_accepted": true,
+      "cli_calls_delta": 1
+    },
+    {
+      "mode": "cli_sentinel",
+      "case": "valid_code",
+      "code": "TOO_MANY_ROWS",
+      "http_status": 502,
+      "response": {
+        "error": "LLM_RESPONSE_REJECTED",
+        "message": "R01_TEST_CLI_SENTINEL: no subprocess executed"
+      },
+      "validation_accepted": true,
+      "cli_calls_delta": 1
+    },
+    {
+      "mode": "cli_sentinel",
+      "case": "valid_code",
+      "code": "TOO_MANY_SEGMENTS",
+      "http_status": 502,
+      "response": {
+        "error": "LLM_RESPONSE_REJECTED",
+        "message": "R01_TEST_CLI_SENTINEL: no subprocess executed"
+      },
+      "validation_accepted": true,
+      "cli_calls_delta": 1
+    },
+    {
+      "mode": "cli_sentinel",
+      "case": "valid_code",
+      "code": "UNKNOWN_HEADER",
+      "http_status": 502,
+      "response": {
+        "error": "LLM_RESPONSE_REJECTED",
+        "message": "R01_TEST_CLI_SENTINEL: no subprocess executed"
+      },
+      "validation_accepted": true,
+      "cli_calls_delta": 1
+    },
+    {
+      "mode": "cli_sentinel",
+      "case": "valid_code",
+      "code": "UNSUPPORTED_ALPHA",
+      "http_status": 502,
+      "response": {
+        "error": "LLM_RESPONSE_REJECTED",
+        "message": "R01_TEST_CLI_SENTINEL: no subprocess executed"
+      },
+      "validation_accepted": true,
+      "cli_calls_delta": 1
+    },
+    {
+      "mode": "cli_sentinel",
+      "case": "valid_code",
+      "code": "UNSUPPORTED_DESIGN",
+      "http_status": 502,
+      "response": {
+        "error": "LLM_RESPONSE_REJECTED",
+        "message": "R01_TEST_CLI_SENTINEL: no subprocess executed"
+      },
+      "validation_accepted": true,
+      "cli_calls_delta": 1
+    },
+    {
+      "mode": "explicit_cli_response_fixture",
+      "case": "success_response_metadata",
+      "http_status": 200,
+      "fixture_not_actual_model_output": true,
+      "response": {
+        "source": "actual_llm_via_existing_hermes_profile",
+        "profile": "test-no-credentials",
+        "answer": {
+          "summary": "검증용 고정 문장입니다.",
+          "cautions": [
+            "실제 모델 출력이 아닙니다."
+          ],
+          "next_steps": [
+            "원래 판정을 확인하세요."
+          ],
+          "evidence_refs": [
+            "overall",
+            "issues"
+          ]
+        },
+        "elapsed_seconds": 0.0,
+        "validation": "JSON schema, allowed evidence keys, no numeric restatement; not a proof of semantic correctness",
+        "sent_fields": [
+          "analysis_status",
+          "overall_decision",
+          "segments",
+          "interaction",
+          "guardrail",
+          "design_user_confirmed",
+          "adjustment",
+          "issues"
+        ],
+        "facts_validation": {
+          "checked_fields": [
+            "adjustment",
+            "analysis_status",
+            "design_user_confirmed",
+            "guardrail",
+            "interaction",
+            "issues",
+            "overall_decision",
+            "segments"
+          ],
+          "checks": [
+            "exact field sets",
+            "fixed status enums",
+            "boolean design confirmation",
+            "positional segment aliases G1/G2",
+            "issue-code allowlist membership"
+          ],
+          "issue_code_engine_version": "0.2.0",
+          "issue_code_allowlist_count": 38,
+          "scope": "Request structure and allowed values only; not engine provenance, factual correctness, or arbitrary payload anonymity.",
+          "normal_generator_scope": "The normal UI facts generator selects decision states, positional group aliases and issue codes, not CSV rows, counts or original labels. This is not an anonymity certification for arbitrary requests."
+        }
+      },
+      "cli_calls_delta": 1
+    }
+  ],
+  "allowlist": {
+    "schema_version": 1,
+    "engine_version": "0.2.0",
+    "codes": [
+      "ARM_LIMIT",
+      "ASSUMPTIONS_UNCONFIRMED",
+      "COLUMN_COUNT",
+      "CSV_AFTER_QUOTE",
+      "CSV_QUOTE",
+      "CSV_UNCLOSED_QUOTE",
+      "DUPLICATE_CELL",
+      "DUPLICATE_HEADER",
+      "DUPLICATE_ID",
+      "EMPTY_ARM",
+      "EMPTY_INPUT",
+      "EMPTY_SEGMENT_ARM",
+      "FILE_TOO_LARGE",
+      "FORMAT",
+      "IMMATURE_OBSERVATION",
+      "INPUT_TYPE",
+      "INTEGER_OVERFLOW",
+      "INTERACTION_UNSUPPORTED",
+      "INVALID_ARM",
+      "INVALID_CELL",
+      "INVALID_INTEGER",
+      "INVALID_OUTCOME",
+      "INVALID_PREPARED",
+      "MISSING_HEADER",
+      "MISSING_ID",
+      "MISSING_OUTCOME",
+      "MISSING_SEGMENT",
+      "NO_DATA",
+      "PARSE_ERROR",
+      "POSTHOC_SEGMENTS",
+      "SEGMENT_COUNT_UNSUPPORTED",
+      "SEGMENT_INFERENCE_BLOCKED",
+      "SUCCESS_GT_TOTAL",
+      "TOO_MANY_ROWS",
+      "TOO_MANY_SEGMENTS",
+      "UNKNOWN_HEADER",
+      "UNSUPPORTED_ALPHA",
+      "UNSUPPORTED_DESIGN"
+    ]
+  },
+  "allowlist_count": 38,
+  "constructor_audit": {
+    "literal_code_count": 37,
+    "nonliteral_first_arguments": [
+      "code",
+      "code",
+      "e.code || 'PARSE_ERROR'",
+      "e.code"
+    ],
+    "review": [
+      "issue(code) and fail(code) are constructor declarations, not additional constants.",
+      "prepare catches parseTable fail codes via e.code, with PARSE_ERROR fallback.",
+      "analyze copies prepared.issues e.code: arbitrary caller-supplied values are possible; server rejects any value outside this allowlist, not silently filters."
+    ]
+  },
+  "response_metadata": {
+    "checked_fields": [
+      "adjustment",
+      "analysis_status",
+      "design_user_confirmed",
+      "guardrail",
+      "interaction",
+      "issues",
+      "overall_decision",
+      "segments"
+    ],
+    "checks": [
+      "exact field sets",
+      "fixed status enums",
+      "boolean design confirmation",
+      "positional segment aliases G1/G2",
+      "issue-code allowlist membership"
+    ],
+    "issue_code_engine_version": "0.2.0",
+    "issue_code_allowlist_count": 38,
+    "scope": "Request structure and allowed values only; not engine provenance, factual correctness, or arbitrary payload anonymity.",
+    "normal_generator_scope": "The normal UI facts generator selects decision states, positional group aliases and issue codes, not CSV rows, counts or original labels. This is not an anonymity certification for arbitrary requests."
+  },
+  "cli_sentinel_invocations": 40,
+  "cli_sentinel_behavior": "Raises OSError for validation-path probes; one explicitly labelled fixed response fixture exercises success metadata. No child process or real model is executed.",
+  "case_count": 136,
+  "passed": true
+}

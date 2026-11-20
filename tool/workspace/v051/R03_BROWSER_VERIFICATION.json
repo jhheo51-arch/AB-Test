@@ -1,0 +1,63 @@
+{
+  "status": "PASS",
+  "count": 14,
+  "checks": [
+    {
+      "name": "original digest hashes actual input text",
+      "pass": true
+    },
+    {
+      "name": "analysis digest hashes actual converted CSV",
+      "pass": true
+    },
+    {
+      "name": "schema5 stores typed lineage and matching compatibility alias",
+      "pass": true
+    },
+    {
+      "name": "restore preserves origin and immediate prior calculation record",
+      "pass": true
+    },
+    {
+      "name": "restored input gets actual aggregate kind not original claim",
+      "pass": true
+    },
+    {
+      "name": "second restore retains origin and labels latest parent",
+      "pass": true
+    },
+    {
+      "name": "report labels origin previous current and limits",
+      "pass": true
+    },
+    {
+      "name": "typed lineage is excluded from explanation payload",
+      "pass": true
+    },
+    {
+      "name": "legacy hash is retained literally with unknown target type",
+      "pass": true
+    },
+    {
+      "name": "edited source starts fresh lineage instead of false inherited origin",
+      "pass": true
+    },
+    {
+      "name": "invalid restore preserves previous valid lineage",
+      "pass": true
+    },
+    {
+      "name": "canonical hash delay is real pending work",
+      "pass": true
+    },
+    {
+      "name": "older canonical hash cannot attach stale lineage",
+      "pass": true
+    },
+    {
+      "name": "no uncaught primary page errors",
+      "pass": true
+    }
+  ],
+  "scope": "synthetic controlled timing; real SHA-256, file downloads and PDF; no model requests"
+}

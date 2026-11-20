@@ -2,9 +2,9 @@
 
 ## 현재 진입점
 
-- **[작업실 v0.5 실행법·지원 범위](workspace/v05/README.md)** — 열 연결 → 결과 요약 → 판단 작성.
+- **[작업실 v0.5.1 실행법·지원 범위](workspace/v051/README.md)** — 열 연결 → 결과 요약 → 판단 작성.
 - **[앞으로 남은 과제](ROADMAP.md)** — 제안 우선순위, 근거, 완료 기준과 제외 범위.
-- [검증된 ZIP](releases/v05/README.md), [v0.5 검증 요약](workspace/v05/VERIFICATION_v05.json).
+- [검증된 ZIP](releases/v051/README.md), [v0.5.1 검증 요약](workspace/v051/VERIFICATION_v051.json).
 - [제품 기획 기준안](prd/v01/PRD_BASELINE_v02.md), [문답](prd/v01/INTERVIEW.md), [합의](prd/v01/DECISIONS.md).
 
 CRM 전체 관리·발송기가 아니라 **CRM A/B 테스트 설계·분석·판단 전문 도구**입니다. 외부에서 실험하고 기기 안에서 입력·계산·판단 기록을 연결합니다. 고객 원자료를 GitHub나 설명 서버에 올리는 도구가 아닙니다.
@@ -22,4 +22,8 @@ v0.5의 새 흐름 37개, 기존 흐름 43개(실제 모델 포함), 이전 네 
 - [v0.4 추가 감사](reviews/v04_audit/AUDIT_REVIEW.md), [v0.5에서도 실행한 최신성 회귀](workspace/v05/FIX_REGRESSION_v041.json).
 - [v0.3 가상 페르소나](reviews/v03_personas/PERSONA_REVIEW.md).
 
-FRAMEWORK_v02·DIRECTION·PERSONA_REVIEW·BENCHMARK·SOURCES는 초기 방향/평가입니다. 그 안의 미구현·미확정은 작성 당시 상태이며 현재 실행 상태는 v0.5 문서를 우선합니다. 초기 초안, 이전 버전, 전자책·영상 원본은 보존합니다. 공개 배포·Pages는 켜지 않습니다.
+FRAMEWORK_v02·DIRECTION·PERSONA_REVIEW·BENCHMARK·SOURCES는 초기 방향/평가입니다. 그 안의 미구현·미확정은 작성 당시 상태이며 현재 실행 상태는 v0.5.1 문서를 우선합니다. 초기 초안, 이전 버전, 전자책·영상 원본은 보존합니다. 공개 배포·Pages는 켜지 않습니다.
+
+## 안정화와 다음 단계
+
+R01~R03은 [v0.5.1](workspace/v051/README.md)에서 구현·회귀 확인했습니다. [실제 사용자 과업 자료](user-review/v051/README.md)는 준비됐지만 참여자·관찰은 아직 없습니다. [진행 상태](REVIEW_STATUS.json)를 확인하세요. 설계 진입은 실제 관찰 후 구현하며 AI 모의 응답으로 검토를 완료하지 않습니다. [v0.5 원본](workspace/v05/README.md)은 그대로 보존합니다.

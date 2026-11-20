@@ -1,0 +1,81 @@
+{
+  "status": "not_started",
+  "participant_code": null,
+  "review_type": null,
+  "consent": {
+    "observation": false,
+    "recording": false,
+    "share_anonymized_notes": false
+  },
+  "participants": [],
+  "observations": [],
+  "tasks": [
+    {
+      "id": "T01",
+      "kind": "current_function_task",
+      "status": "not_started",
+      "elapsed_seconds": null,
+      "observed_actions": [],
+      "participant_quotes": [],
+      "assistance": [],
+      "interpretation": null,
+      "design_entry_needs": []
+    },
+    {
+      "id": "T02",
+      "kind": "current_function_task",
+      "status": "not_started",
+      "elapsed_seconds": null,
+      "observed_actions": [],
+      "participant_quotes": [],
+      "assistance": [],
+      "interpretation": null,
+      "design_entry_needs": []
+    },
+    {
+      "id": "T03",
+      "kind": "current_function_task",
+      "status": "not_started",
+      "elapsed_seconds": null,
+      "observed_actions": [],
+      "participant_quotes": [],
+      "assistance": [],
+      "interpretation": null,
+      "design_entry_needs": []
+    },
+    {
+      "id": "T04",
+      "kind": "current_function_task",
+      "status": "not_started",
+      "elapsed_seconds": null,
+      "observed_actions": [],
+      "participant_quotes": [],
+      "assistance": [],
+      "interpretation": null,
+      "design_entry_needs": []
+    },
+    {
+      "id": "T05",
+      "kind": "current_function_task",
+      "status": "not_started",
+      "elapsed_seconds": null,
+      "observed_actions": [],
+      "participant_quotes": [],
+      "assistance": [],
+      "interpretation": null,
+      "design_entry_needs": []
+    },
+    {
+      "id": "T06",
+      "kind": "interview",
+      "status": "not_started",
+      "elapsed_seconds": null,
+      "observed_actions": [],
+      "participant_quotes": [],
+      "assistance": [],
+      "interpretation": null,
+      "design_entry_needs": []
+    }
+  ],
+  "summary": null
+}

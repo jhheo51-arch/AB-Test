@@ -1,0 +1,221 @@
+{
+  "engine_version": "0.2.0",
+  "plan": {
+    "randomized": true,
+    "independent": true,
+    "mature": true,
+    "fixedStop": true,
+    "includeSegments": true,
+    "segmentPrespecified": true,
+    "alpha": 0.05
+  },
+  "prepared": {
+    "cells": [
+      {
+        "arm": "A",
+        "segment": "new",
+        "success": 50,
+        "total": 500
+      },
+      {
+        "arm": "B",
+        "segment": "new",
+        "success": 75,
+        "total": 500
+      },
+      {
+        "arm": "A",
+        "segment": "existing",
+        "success": 80,
+        "total": 500
+      },
+      {
+        "arm": "B",
+        "segment": "existing",
+        "success": 75,
+        "total": 500
+      }
+    ],
+    "issues": [],
+    "format": "aggregate",
+    "sourceRowCount": 4
+  },
+  "result": {
+    "version": "0.2.0",
+    "status": "ok",
+    "inference_allowed": true,
+    "overall": {
+      "A": {
+        "success": 130,
+        "total": 1000,
+        "rate": 0.13,
+        "ci": [
+          0.11056377462484193,
+          0.1522680266544689
+        ]
+      },
+      "B": {
+        "success": 150,
+        "total": 1000,
+        "rate": 0.15,
+        "ci": [
+          0.1292100725130883,
+          0.17346865842680032
+        ]
+      },
+      "diff": 0.01999999999999999,
+      "relative_change": 0.15384615384615377,
+      "ci": [
+        -0.010464505510432695,
+        0.05047203283648407
+      ],
+      "p_raw": 0.2207487698031054,
+      "p_adjusted": 0.4414975396062108,
+      "winner": "hold",
+      "inference_allowed": true,
+      "status": "tested"
+    },
+    "segments": [
+      {
+        "A": {
+          "success": 50,
+          "total": 500,
+          "rate": 0.1,
+          "ci": [
+            0.07667756273730172,
+            0.1294219096319401
+          ]
+        },
+        "B": {
+          "success": 75,
+          "total": 500,
+          "rate": 0.15,
+          "ci": [
+            0.12137595769138819,
+            0.18396108063169836
+          ]
+        },
+        "diff": 0.04999999999999999,
+        "relative_change": 0.4999999999999999,
+        "ci": [
+          0.008951436511428934,
+          0.0911981926490133
+        ],
+        "p_raw": 0.02145348733663987,
+        "p_adjusted": 0.08581394934655948,
+        "winner": "hold",
+        "inference_allowed": true,
+        "status": "tested",
+        "label": "G1",
+        "exploratory": false
+      },
+      {
+        "A": {
+          "success": 80,
+          "total": 500,
+          "rate": 0.16,
+          "ci": [
+            0.13047637235016407,
+            0.19470817916369149
+          ]
+        },
+        "B": {
+          "success": 75,
+          "total": 500,
+          "rate": 0.15,
+          "ci": [
+            0.12137595769138819,
+            0.18396108063169836
+          ]
+        },
+        "diff": -0.010000000000000009,
+        "relative_change": -0.06250000000000006,
+        "ci": [
+          -0.05498881526495343,
+          0.03499999541420948
+        ],
+        "p_raw": 0.7267928801601934,
+        "p_adjusted": 0.7267928801601934,
+        "winner": "hold",
+        "inference_allowed": true,
+        "status": "tested",
+        "label": "G2",
+        "exploratory": false
+      }
+    ],
+    "interaction": {
+      "diff": 0.06,
+      "ci": [
+        -0.0006892965627508935,
+        0.12068929656275089
+      ],
+      "p_raw": 0.05265945353814151,
+      "p_adjusted": 0.15797836061442455,
+      "winner": "hold",
+      "status": "tested"
+    },
+    "family": {
+      "m": 4,
+      "method": "Holm",
+      "alpha": 0.05,
+      "hypotheses": [
+        {
+          "key": "overall",
+          "supported": true,
+          "p_raw": 0.2207487698031054,
+          "p_adjusted": 0.4414975396062108,
+          "included": true
+        },
+        {
+          "key": "G1",
+          "supported": true,
+          "p_raw": 0.02145348733663987,
+          "p_adjusted": 0.08581394934655948,
+          "included": true
+        },
+        {
+          "key": "G2",
+          "supported": true,
+          "p_raw": 0.7267928801601934,
+          "p_adjusted": 0.7267928801601934,
+          "included": true
+        },
+        {
+          "key": "interaction",
+          "supported": true,
+          "p_raw": 0.05265945353814151,
+          "p_adjusted": 0.15797836061442455,
+          "included": true
+        }
+      ]
+    },
+    "issues": [],
+    "interval_note": "Nominal 95% Wilson / Newcombe intervals; not Holm simultaneous intervals and not dual to Fisher exact tests.",
+    "assumptions": {
+      "randomized": true,
+      "independent": true,
+      "mature": true,
+      "fixedStop": true,
+      "basis": "user_confirmed"
+    },
+    "segmentPrespecified": true
+  },
+  "immature_issues": [
+    {
+      "code": "IMMATURE_OBSERVATION",
+      "row": 2,
+      "column": "observed",
+      "message": "Every observed value must be 1 in this fixed observation path.",
+      "severity": "error"
+    }
+  ],
+  "provenance": {
+    "scope": "synthetic scenario, actually computed; not participant response",
+    "engine_sha256": "f40cc1fbd3e87dde4050cb0155673c2f368b2e88274a30fa03aeb09dbcde05f7",
+    "fixture_sha256": {
+      "SYNTHETIC_CRM_CUSTOM.csv": "d391858b25425e3ad1cd1473abeae25260cece049041fbeca43c342296a74f1b",
+      "SYNTHETIC_CRM_STANDARD.csv": "edcdb899df1096b9487e1a542629b0cccf7067abc242eca6825eccc384e83e70",
+      "SYNTHETIC_IMMATURE.csv": "cc3183f4b1275fa7cb3f929d34d9dd75cf838473775bfed6ea082a796bb631fc"
+    }
+  }
+}

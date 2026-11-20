@@ -1,0 +1,5 @@
+variant,converted,participants,cohort
+control,50,500,new
+treatment,75,500,new
+control,80,500,existing
+treatment,75,500,existing
