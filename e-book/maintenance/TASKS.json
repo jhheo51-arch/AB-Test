@@ -6,6 +6,18 @@
   "scope": "본문 개발 종료. 오류와 구체적인 읽기 장애만 최소 수정. 출판과 판매 준비는 진행하지 않음.",
   "human_review_completed": false,
   "actual_reader_test_completed": false,
+  "statistical_review": {
+    "mode": "AI_and_bots",
+    "status": "completed_with_disclosed_historical_byte_mismatch",
+    "user_direction": "사람 검수자가 없으므로 미라 또는 봇이 검수를 진행하도록 요청함.",
+    "human_reviewer_required_to_continue": false,
+    "independent_human_review_completed": false,
+    "report": "e-book/maintenance/ai_stat_review/README.md",
+    "verification": "e-book/maintenance/ai_stat_review/VERIFICATION.json",
+    "new_confirmed_manuscript_errors": 0,
+    "historical_byte_provenance_issue_count": 1,
+    "manuscript_edits": false
+  },
   "tasks": [
     {
       "id": "R1",

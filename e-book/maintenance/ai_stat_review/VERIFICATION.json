@@ -1,0 +1,56 @@
+{
+  "status": "completed_with_disclosed_historical_byte_mismatch",
+  "verified_at_seoul": "2026-11-22T22:33:58.320766+09:00",
+  "review_mode": "AI and bots; separate implementations, not independent humans",
+  "numeric_check_summary": {
+    "total": 154,
+    "passed": 152,
+    "failed": 2
+  },
+  "all_strict_numeric_review_checks_passed": false,
+  "all_nonprovenance_numeric_checks_passed": true,
+  "provenance_issue_count": 1,
+  "known_provenance_issue": {
+    "current_plan_sha256": "4bcd06f0b5f6a8259f27022f3df8db6285d141091c984f3ee7581044f7e86a56",
+    "historical_plan_sha256": "f1226b7743ed4705f0e79a03f53fca2f057c7500e5e97f70131d4a5a7fe721f7",
+    "crlf_representation_sha256": "f1226b7743ed4705f0e79a03f53fca2f057c7500e5e97f70131d4a5a7fe721f7",
+    "database_manifest_matches_crlf": true,
+    "already_disclosed_at_manuscript_line": 1400,
+    "source_not_rewritten": true
+  },
+  "assigned_customers": 65559,
+  "parent_scalar_checks": 52,
+  "peer_scalar_cross_checks": 49,
+  "sample_plan_grid_rows": 12,
+  "scenario_scalar_checks": 150,
+  "scenario_operations_rows": 108000,
+  "new_confirmed_manuscript_errors": 0,
+  "new_actionable_conditional_defects": 0,
+  "nondefect_reservations": 3,
+  "human_review_completed": false,
+  "human_reviewer_required_to_continue": false,
+  "manuscript_edits": false,
+  "baseline_unchanged": true,
+  "input_hashes": {
+    "README.md": "f72905ba441f7dcd24e666f9a0bd6b4177505dd52662671d6af5e8614fa25286",
+    "VERIFY.py": "4b32df4151c9ef760fb02a6566b001c634e7fe2d18703339656bf94588210807",
+    "method/FINDINGS.json": "5509fc3a70862d2c7f8d12bcee6a05773ae67ecc3516e9b6505fba496587f592",
+    "method/REVIEW.md": "b685bd5025728ab722bb536382169991deb885a9c0199e0eb970dc7d9f99678d",
+    "numeric/CODE.py": "ac6b6bd7e946ad963deff1e7d6df069c49c43c54b9a0a870b1b5a61ebf069dd4",
+    "numeric/RESULTS.json": "0a1bf6d8798e9734216a75332375760eb255362afb4ab098e6eb5904ff25114b",
+    "numeric/REVIEW.md": "0945529be89957e83abe0f0b08ccaf6b4d7b577be166b236e60fc202888851ee",
+    "parent/CROSSCHECK.py": "fee948f34371dc8977f1cfcd643418f7c0d17a5b3f6da5dbd2f205e2a31e2f3b",
+    "parent/POWER_CHECK.py": "a04b3c1391433ab9b4b476dc54ac2d1257c0676e19052b79e25186eb5904eca9",
+    "parent/POWER_RESULTS.json": "34b6a7477557449cf69bb110a610e30778957cef6ab08671ba353d98ffe959e2",
+    "parent/RESULTS.json": "752ed72832ee37eb07b32d8c75f02dabb3cc87b38dc20adadf182a0b3c83e19f",
+    "parent/SCENARIO_CHECK.py": "a46c6732e6b3ba0d9235754171b450ab4da3f3ccc6b9e018d3615ea8c374c76b",
+    "parent/SCENARIO_RESULTS.json": "9bef7849661f37a48484595347beada913a31d506b9195673b4e5dfab9fbf972"
+  },
+  "limits": [
+    "No independent human certification or human reading test",
+    "No proof of external historical preregistration time",
+    "No real OEM accounting or field-performance validation",
+    "Approximation calculations are not a global exact coverage/FWER proof",
+    "No full PDF citation sweep or contact sheet"
+  ]
+}

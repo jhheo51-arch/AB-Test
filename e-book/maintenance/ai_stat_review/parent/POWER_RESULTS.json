@@ -1,0 +1,150 @@
+{
+  "status": "passed",
+  "checked_at_seoul": "2026-11-22T21:51:10.811857+09:00",
+  "plan_grid_rows": 12,
+  "rows": [
+    {
+      "scenario": "click_large",
+      "family_comparisons": 1,
+      "n_each": 3841,
+      "plan_numeric_n_matches": true,
+      "power_at_n": 0.8000165286163742,
+      "power_at_n_minus_1": 0.7999143736058019,
+      "library_power": 0.8000165286163737,
+      "closed_form_approx_n": 3841,
+      "closed_form_approx_is_not_numeric_minimum": false
+    },
+    {
+      "scenario": "click_large",
+      "family_comparisons": 3,
+      "n_each": 5124,
+      "plan_numeric_n_matches": true,
+      "power_at_n": 0.8000646051529905,
+      "power_at_n_minus_1": 0.7999761741656697,
+      "library_power": 0.8000646051529907,
+      "closed_form_approx_n": 5124,
+      "closed_form_approx_is_not_numeric_minimum": false
+    },
+    {
+      "scenario": "drive_primary",
+      "family_comparisons": 1,
+      "n_each": 13495,
+      "plan_numeric_n_matches": true,
+      "power_at_n": 0.8000018382665086,
+      "power_at_n_minus_1": 0.7999727737510551,
+      "library_power": 0.8000018382665083,
+      "closed_form_approx_n": 13495,
+      "closed_form_approx_is_not_numeric_minimum": false
+    },
+    {
+      "scenario": "drive_primary",
+      "family_comparisons": 3,
+      "n_each": 18001,
+      "plan_numeric_n_matches": true,
+      "power_at_n": 0.8000181279995016,
+      "power_at_n_minus_1": 0.7999929638975938,
+      "library_power": 0.8000181279995017,
+      "closed_form_approx_n": 18001,
+      "closed_form_approx_is_not_numeric_minimum": false
+    },
+    {
+      "scenario": "contract_rare",
+      "family_comparisons": 1,
+      "n_each": 42693,
+      "plan_numeric_n_matches": true,
+      "power_at_n": 0.8000027752187064,
+      "power_at_n_minus_1": 0.7999935891457052,
+      "library_power": 0.8000027752187063,
+      "closed_form_approx_n": 42693,
+      "closed_form_approx_is_not_numeric_minimum": false
+    },
+    {
+      "scenario": "contract_rare",
+      "family_comparisons": 3,
+      "n_each": 56946,
+      "plan_numeric_n_matches": true,
+      "power_at_n": 0.8000049064914434,
+      "power_at_n_minus_1": 0.799996952622138,
+      "library_power": 0.8000049064914435,
+      "closed_form_approx_n": 56946,
+      "closed_form_approx_is_not_numeric_minimum": false
+    },
+    {
+      "scenario": "optout_risk",
+      "family_comparisons": 1,
+      "n_each": 35001,
+      "plan_numeric_n_matches": true,
+      "power_at_n": 0.8000020775780332,
+      "power_at_n_minus_1": 0.7999908725851607,
+      "library_power": 0.800002077578033,
+      "closed_form_approx_n": 35001,
+      "closed_form_approx_is_not_numeric_minimum": false
+    },
+    {
+      "scenario": "optout_risk",
+      "family_comparisons": 3,
+      "n_each": 46686,
+      "plan_numeric_n_matches": true,
+      "power_at_n": 0.8000033805115543,
+      "power_at_n_minus_1": 0.7999936785159107,
+      "library_power": 0.8000033805115547,
+      "closed_form_approx_n": 46686,
+      "closed_form_approx_is_not_numeric_minimum": false
+    },
+    {
+      "scenario": "complaint_rare",
+      "family_comparisons": 1,
+      "n_each": 431212,
+      "plan_numeric_n_matches": true,
+      "power_at_n": 0.8000006428753206,
+      "power_at_n_minus_1": 0.7999997334290432,
+      "library_power": 0.8000006428753204,
+      "closed_form_approx_n": 431213,
+      "closed_form_approx_is_not_numeric_minimum": true
+    },
+    {
+      "scenario": "complaint_rare",
+      "family_comparisons": 3,
+      "n_each": 575167,
+      "plan_numeric_n_matches": true,
+      "power_at_n": 0.8000003794366457,
+      "power_at_n_minus_1": 0.7999995919707558,
+      "library_power": 0.8000003794366459,
+      "closed_form_approx_n": 575167,
+      "closed_form_approx_is_not_numeric_minimum": false
+    },
+    {
+      "scenario": "drive_tiny",
+      "family_comparisons": 1,
+      "n_each": 1594361,
+      "plan_numeric_n_matches": true,
+      "power_at_n": 0.8000002226361678,
+      "power_at_n_minus_1": 0.7999999766674284,
+      "library_power": 0.8000002226361678,
+      "closed_form_approx_n": 1594364,
+      "closed_form_approx_is_not_numeric_minimum": true
+    },
+    {
+      "scenario": "drive_tiny",
+      "family_comparisons": 3,
+      "n_each": 2126620,
+      "plan_numeric_n_matches": true,
+      "power_at_n": 0.8000001288664792,
+      "power_at_n_minus_1": 0.7999999158886261,
+      "library_power": 0.8000001288664794,
+      "closed_form_approx_n": 2126620,
+      "closed_form_approx_is_not_numeric_minimum": false
+    }
+  ],
+  "chapter6": {
+    "power_at_10000_each": 0.6742514668534767,
+    "library_power": 0.6742514668534754,
+    "n_each_for_80pct": 13495,
+    "power_at_n_minus_1": 0.7999727737510551,
+    "mde_pp": 1.1661930556879447
+  },
+  "limits": [
+    "Equal allocation independent binary normal-approximation planning, not safety noninferiority or realized future power",
+    "Closed-form approximate and numeric minimum N are distinct fields; differences do not automatically imply errors"
+  ]
+}

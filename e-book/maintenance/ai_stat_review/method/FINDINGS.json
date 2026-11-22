@@ -1,0 +1,136 @@
+{
+  "edition": "v0.22",
+  "review_type": "AI adversarial statistical reading; not independent human review",
+  "purpose": "private GitHub reference; demonstrated-error-only maintenance",
+  "manuscript": "e-book/exports/v22/ebook_review_v22.md",
+  "manuscript_sha256_before": "b88e6af12491703f4bd9509bcb47605f1385cccd3d261a77da23fd85396b2c6e",
+  "manuscript_sha256_after_computation": "b88e6af12491703f4bd9509bcb47605f1385cccd3d261a77da23fd85396b2c6e",
+  "read_ranges": [
+    {"section": "5장", "start": 243, "end": 302},
+    {"section": "6장", "start": 303, "end": 415},
+    {"section": "8장", "start": 654, "end": 715},
+    {"section": "11장", "start": 838, "end": 874},
+    {"section": "12장", "start": 875, "end": 989},
+    {"section": "부록 A", "start": 1313, "end": 1429}
+  ],
+  "full_json_reads": [
+    "e-book/virtual-data/v03/experiment_plan.json",
+    "e-book/analysis/winner_v04/core_results.json",
+    "e-book/analysis/winner_v04/scenario_results.json"
+  ],
+  "confirmed_errors": [],
+  "new_actionable_conditional_defects": [],
+  "taste_only_suggestions": [],
+  "decision": "No new confirmed statistical manuscript defect in the explicitly read scope; retain manuscript unchanged.",
+  "reservations_not_manuscript_defects": [
+    {
+      "id": "R01",
+      "classification": "조건부: 역사적 증거의 한계, 새 결함 아님",
+      "severity": "정보",
+      "line": 893,
+      "quote": "외부 기관의 시각 인증을 받은 사전등록도, 실제 현장에서 실행한 실험도 아니다.",
+      "related_lines": [335, 982, 1400],
+      "reason": "현재 파일과 장부의 정합성은 과거 생성 전에 로컬 동결했다는 시간적 선행성의 새로운 독립 증명이 아니다. 현재 계획과 역사적 source_plan_sha256의 차이도 LF/CRLF 이력이 공개돼 있어 그 자체로 위조나 내용 변경을 입증하지 않는다. 원고는 이미 외부 사전등록을 부인한다.",
+      "minimal_fix_candidate": "현재 수정 없음. 로컬 동결을 외부 시각 인증 또는 역사적 정확 바이트 보존으로 확대하는 표현이 추가될 경우에만 해당 표현을 되돌림.",
+      "action_required": false
+    },
+    {
+      "id": "R02",
+      "classification": "조건부: 근사 추론 검증 범위, 새 결함 아님",
+      "severity": "정보",
+      "line": 287,
+      "quote": "서로 다른 근사 절차이므로 모든 경계에서 정확히 같은 판단을 준다고 보장하지 않는다.",
+      "related_lines": [260, 1327, 1339, 1388],
+      "reason": "내부 카운트에서 pooled z, Newcombe와 MN score를 재계산한 일은 모든 모수 및 경계 카운트에서의 정확 커버리지나 공동 FWER를 증명하지 않는다. Bonferroni의 논리는 유효하나 실제 근사 개별 절차의 유한표본 성질까지 자동 확정하지 않는다. 원고는 근사 및 가정을 밝히며 일반적 정확 보장을 주장하지 않는다.",
+      "minimal_fix_candidate": "현재 수정 없음. '정확한 공동 오류 보장'으로 범위를 확대하지 않고 기존 근사·가정 표현을 유지.",
+      "action_required": false
+    },
+    {
+      "id": "R03",
+      "classification": "조건부: 현장·경제·학습 효과 미입증, 새 결함 아님",
+      "severity": "정보",
+      "line": 869,
+      "quote": "실제 독자 시험과 독립적인 사람 검수는 아직 남아 있다.",
+      "related_lines": [270, 871, 936, 950, 952, 954, 960, 988],
+      "reason": "합성 세계의 계산 정합성과 읽기 전용 DB 집계는 현장 비간섭·측정 완전성·실현 이익·학습 효용을 입증하지 않는다. 원고가 이미 미검증 원가와 공유 용량, 사람 검수의 부재를 명시했다. 역할별 미도착 회신은 창작하거나 원고 결함으로 바꾸지 않았다.",
+      "minimal_fix_candidate": "현재 수정 없음. 현장 성과 보장이나 실제 승인으로 읽는 새로운 문장이 생길 때만 최소 정정.",
+      "action_required": false
+    }
+  ],
+  "executed_checks": {
+    "method": "Fresh in-memory Python standard-library calculations; no production scripts executed; scipy/statsmodels absent and not installed",
+    "primary_B_minus_A": {
+      "diff_pp": 0.9341928700687119,
+      "p_raw": 0.0009133083961252945,
+      "ci_pp": [0.2597990453563094, 1.6084954426550537],
+      "ledger_agrees": true
+    },
+    "other_primary_contrasts": "A-H and B-H effects, pooled-z p and Wilson-Newcombe intervals recomputed and agreed with core_results",
+    "withdrawal_B_minus_A": {
+      "diff_pp": 0.08065123878607197,
+      "p_raw": 0.3662127252724378,
+      "ci95_pp": [-0.09494866033497797, 0.25645972540227113],
+      "ledger_agrees": true
+    },
+    "current_n_plan_power": {
+      "completion": 0.8787814753233558,
+      "contract": 0.5169964247668491,
+      "withdrawal": 0.5993620732317441,
+      "actual_n_A": 21637,
+      "actual_n_B": 22024,
+      "note": "completion alpha=.05/3; contract and withdrawal alpha=.05; plan effects, not observed effects"
+    },
+    "followup_n_10000_each": {
+      "power_1pp": 0.6742514668534764,
+      "mde_pp_at_power_80pct": 1.166193055687946
+    },
+    "chapter8_completion": "Four distinct input configurations recomputed; displayed intervals agree, including other group's null difference interval",
+    "chapter8_MN_score_upper_pp": {
+      "ga_da": 0.22213840607068377,
+      "na": 0.33304216754567767,
+      "ra": 1.6244492304369036,
+      "method": "Constrained binomial likelihood derivative solved by bisection, MN N/(N-1) variance correction, one-sided normal score inversion",
+      "corrected_ledger_agrees": true
+    },
+    "financial_means_krw": {
+      "A": 16915.57332347368,
+      "B": 22801.4674900109,
+      "H": 20181.295095442507,
+      "method": "Recomputed from arm counts and frozen economics assumptions; not full Welch reconstruction"
+    },
+    "readonly_v13_db": {
+      "connection": "SQLite mode=ro; PRAGMA query_only=ON",
+      "sql": "SELECT arm,COUNT(*),SUM(completed_28),SUM(withdrawn_28),SUM(contracted_180) FROM outcomes GROUP BY arm ORDER BY arm",
+      "rows": [["A",21637,1971,181,198],["B",22024,2212,202,268],["H",21898,1338,25,231]],
+      "ledger_and_manuscript_agree": true
+    }
+  },
+  "rejected_error_candidates": [
+    {"lines": [250, 895, 907], "candidate": "Unequal arm sizes or delivery failure invalidate assigned-denominator comparison", "resolution": "Bernoulli allocation permits unequal realized n; policy-level ITT already subsumes non-delivery; conditioned-on-delivery comparison and double multiplication explicitly excluded"},
+    {"lines": [349, 353, 909], "candidate": "All enrolled customers at day 28 treated as having 28 mature follow-up days", "resolution": "Enrolled 58000 versus mature 2000 distinguished; no final-failure claim for immature results"},
+    {"lines": [934, 1353], "candidate": "Original v03 view lower-bound bug remains a new v22 defect", "resolution": "v13 derived view correction already disclosed; not re-registered"},
+    {"lines": [279, 281, 940, 952], "candidate": "Completion family adjustment extends to opt-out and economics", "resolution": "Families and exploratory endpoints explicitly separated"},
+    {"lines": [684, 686, 697, 708], "candidate": "Two jointly required success and protection conditions necessarily require another alpha split within each subgroup", "resolution": "Eligibility is an intersection-union claim; false eligibility requires passing a false component. Two subgroup eligibility claims already use Bonferroni .025 each. No blanket simultaneous guarantee for all individual components inferred"},
+    {"lines": [291, 297, 333, 343, 373, 911], "candidate": "MDE, minimum business effect and NI margin are interchangeable or retrospectively preregistered", "resolution": "The distinct questions, retrospective thresholds and per-contrast power are explicitly identified"},
+    {"lines": [950, 952, 954], "candidate": "Contract counts or exploratory B-A economics establish actual B-H delivered profit", "resolution": "Frozen conditional costs, exploratory intervals, contrast and omitted real accounting items disclosed"},
+    {"lines": [956, 958, 1335, 1388], "candidate": "Separate heterogeneous scenario generalized as subgroup discovery in the large original experiment", "resolution": "Separate datasets, standardized strata estimand and nominal interaction limitations stated"},
+    {"lines": [380, 402, 410, 964], "candidate": "Ordinary fixed-sample p authorizes early stop or post-hoc extension", "resolution": "Rejected explicitly; safety action, accrual stopping and result maturation separated"}
+  ],
+  "not_performed": [
+    "Full-PDF citation comparison or contact sheet",
+    "Full manuscript review outside listed line ranges",
+    "Full raw event reconciliation, time-boundary contamination rerun or historical RNG replay",
+    "Full Welch interval reconstruction from customer-level joint outcomes",
+    "All sample-size grid rows and 5000-replicate simulation rerun",
+    "Global finite-sample coverage or FWER proof",
+    "External source citation audit, recruitment, outside referral or human review"
+  ],
+  "allowed_outputs_only": [
+    "e-book/maintenance/ai_stat_review/method/REVIEW.md",
+    "e-book/maintenance/ai_stat_review/method/FINDINGS.json"
+  ],
+  "source_edits": false,
+  "database_writes": false,
+  "git_actions": false,
+  "existing_ledger_or_task_state_edits": false
+}
