@@ -6,7 +6,7 @@ CRM A/B 테스트의 설계·분석·판단을 돕는 공개 프로젝트입니�
 | --- | --- |
 | 전자책 최신본 | [안내](e-book/README.md), [PDF 97쪽](e-book/ebook.pdf), [웹 읽기본](e-book/ebook.html), [원고](e-book/ebook.md) |
 | 판단 기록 | [웹 양식](e-book/record.html), [작성 예시](e-book/record-example.md) |
-| CRM A/B 테스트 도구 | [현재 앱](tool/app/README.md), [최신 다운로드](tool/downloads/README.md), [시연 영상](tool/app/help/walkthrough.mp4), [제품 합의](tool/prd/README.md), [남은 과제](tool/ROADMAP.md) |
+| CRM A/B 테스트 도구 | [공유 보고서 예시](tool/app/examples/ROUTINE_SERVICE_ROLLOUT_REPORT.md), [현재 앱](tool/app/README.md), [최신 다운로드](tool/downloads/README.md), [시연 영상](tool/app/help/walkthrough.mp4), [제품 합의](tool/prd/README.md), [남은 과제](tool/ROADMAP.md) |
 | A/B 실험노트 영상 | [제작 안내](video-production/README.md) |
 
 ## 전자책 소개
@@ -37,6 +37,8 @@ TRI-V는 저자가 기존 통계 원칙과 실무 판단을 연결하기 위해 
 **실험 결과를 가져와 차이와 한계를 확인하고, 자신의 판단 근거를 남기는 로컬 분석 앱**입니다. CRM 발송이나 고객 관리를 대신하는 플랫폼이 아니라, 외부에서 수행한 A/B 테스트 한 건의 검토에 집중합니다.
 
 CSV나 표를 가지고 있지만 열 연결, 통계 결과 해석, 판단 기록과 공유 과정이 끊겨 있는 실무자를 대상으로 합니다.
+
+가상 정기점검 사례에서 두 군의 입력값, 확대 기준, 보류 이유 네 가지를 바로 볼 수 있습니다. [공유 보고서 예시 보기](tool/app/examples/ROUTINE_SERVICE_ROLLOUT_REPORT.md)
 
 **현재 할 수 있는 작업**
 
