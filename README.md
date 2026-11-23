@@ -40,6 +40,16 @@ CSV나 표를 가지고 있지만 열 연결, 통계 결과 해석, 판단 기�
 
 가상 정기점검 사례에서 두 군의 입력값, 확대 기준, 보류 이유 네 가지를 바로 볼 수 있습니다. [공유 보고서 예시 보기](tool/app/examples/ROUTINE_SERVICE_ROLLOUT_REPORT.md)
 
+#### 가상 정기점검 프로젝트 JSON
+
+방문 완료율 개선폭의 신뢰구간 하한은 **+0.500%p 이상**, 수신 철회율 증가의 신뢰구간 상한은 **+0.200%p 이하**여야 합니다. 아래 파일을 내려받아 도구의 **프로젝트 복원**에서 열면 입력값과 판단 근거를 확인할 수 있습니다.
+
+| 사례 JSON 다운로드 | 방문 하한 / 철회 상한 | 센터 수용량 / 비용 | 자동 판정과 이유 |
+| --- | --- | --- | --- |
+| [원래 사례](https://github.com/jhheo51-arch/AB-Test/releases/download/tool-rollout-report-20261123/routine-service-original-hold.json) | +0.286%p / +0.265%p, 둘 다 미충족 | 미확인 / 미확인 | **확대 보류.** 방문 하한은 최소값 미만이고 철회 상한은 허용값을 초과했습니다. |
+| [수치 충족, 운영 미확인](https://github.com/jhheo51-arch/AB-Test/releases/download/tool-rollout-report-20261123/routine-service-metrics-met-hold.json) | +0.808%p / +0.135%p, 둘 다 충족 | 미확인 / 미확인 | **확대 보류.** 수치 기준을 충족했지만 수용량과 비용 확인이 필요합니다. |
+| [수치와 운영 조건 충족](https://github.com/jhheo51-arch/AB-Test/releases/download/tool-rollout-report-20261123/routine-service-edited-review.json) | +0.808%p / +0.135%p, 둘 다 충족 | 충족 확인 / 충족 확인 | **확대 검토 가능.** 수치 기준과 운영 조건이 모두 충족된 가상 입력입니다. |
+
 **현재 할 수 있는 작업**
 
 1. **자료 확인:** CSV·표 입력, 열 역할과 원본 A/B 값 연결, 입력 오류 확인.
