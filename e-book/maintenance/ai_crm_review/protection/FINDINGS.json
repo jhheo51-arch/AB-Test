@@ -1,0 +1,107 @@
+{
+  "role": "고객 보호",
+  "review_type": "AI role review; not field validation",
+  "baseline_head_user_supplied": "b00cfce82d7c7c059cbfc60c9a5bc6e62bdd49d9",
+  "baseline_head_verified": false,
+  "scope": {
+    "manuscript": "e-book/exports/v22/ebook_review_v22.md",
+    "purpose": "사용자 승인 1회 AI 고객 보호 역할 검토",
+    "exclusions": ["실제 법률심사와 규제 적합성 판정", "실존 기업 준수 상태와 실제 고객 피해 평가", "사람의 독해시험 및 현장 검증", "원고 수정과 새 장 및 사례", "통계 재검수", "외부 모집과 법률 인증", "PDF 인용 전수 확인과 contact sheet", "모든 Git 작업"],
+    "search_scope": "원고 전체 관련 어휘 검색을 보조로 사용. 연속 독해는 read_ranges에 한정하며 전권 정독으로 표시하지 않음."
+  },
+  "read_ranges": [{"start": 40, "end": 138}, {"start": 215, "end": 242}, {"start": 654, "end": 989}],
+  "supporting_reads": [
+    {"path": "e-book/exports/v22/MINIMUM_RECORD.md", "start": 1, "end": 27},
+    {"path": "e-book/virtual-data/v03/experiment_plan.json", "start": 1, "end": 277}
+  ],
+  "items": [
+    {
+      "id": "PROT-01", "topic": "접촉 직전 동의 및 철회 반영", "classification": "covered",
+      "evidence": [{"line": 891, "quote": "실제 운영에서는 발송 직전 권한과 철회 반영을 다시 확인해야 하며"}],
+      "reason": "기준 시점 SMS 동의와 이후 발송 직전 재확인 및 철회 반영을 구분한다. 단일 접촉 합성 자료가 지속적 동의 관리까지 검증하지 않았다는 한계도 명시돼 있다.",
+      "minimal_change": "원고 수정 없음.", "field_data_needed": []
+    },
+    {
+      "id": "PROT-02", "topic": "필수 안내 H 금지", "classification": "covered",
+      "evidence": [{"line": 820, "quote": "고객의 권리 행사에 필요한 정보를 성과 측정을 위해 일부러 숨겨서는 안 된다."}, {"line": 891, "quote": "리콜과 안전 고지, 법적 의무 안내를 H에 보류하는 설계로 바꾸어서는 안 된다."}],
+      "reason": "H는 해당 선택적 안내의 미발송이며 필수 안전 서비스 보류나 전사 접촉 중단이 아니다. 모두에게 필요한 정보를 제공한 뒤 안전한 표현 및 접근성 비교의 여지도 구분한다.",
+      "minimal_change": "원고 수정 없음.", "field_data_needed": []
+    },
+    {
+      "id": "PROT-03", "topic": "권리 침해와 성과 상쇄 금지", "classification": "covered",
+      "evidence": [{"line": 227, "quote": "중대한 안전이나 동의의 문제를 이익과 상쇄하는 점수표도 만들지 않는다."}, {"line": 972, "quote": "수익 점수로 권리 침해를 상쇄하거나 확인 하나로 나머지 책임을 지우지 않는다."}],
+      "reason": "완료 및 이익은 동의 자격이나 권리를 사는 점수가 아니다. 114행의 선택 불변에 따른 추가 확인 생략에도 동의, 안전 및 권리 대응의 예외가 이미 있다.",
+      "minimal_change": "원고 수정 없음.", "field_data_needed": []
+    },
+    {
+      "id": "PROT-04", "topic": "비유의, 안전 및 확정 위해 구분", "classification": "covered",
+      "evidence": [{"line": 946, "quote": "이 양측 탐색 구간으로 정식 안전 통과나 실패를 판정하지 않고, 의미 있는 악화를 배제할 증거가 부족하다고 적는다."}, {"line": 710, "quote": "비열등성을 확인하지 못한 모든 경우가 확정 위해라는 뜻은 아니며"}],
+      "reason": "철회 p 약 0.3662를 안전 확률로 사용하지 않으며 NI 미확인을 실제 피해 확정으로도 바꾸지 않는다. 기존 수치의 해석 경계만 읽었고 재계산하지 않았다.",
+      "minimal_change": "원고 수정 없음.", "field_data_needed": []
+    },
+    {
+      "id": "PROT-05", "topic": "보호 NI 설계 부재", "classification": "covered",
+      "evidence": [{"line": 131, "quote": "보호 관측이 곧 안전 비열등성 설계는 아니다."}, {"line": 911, "quote": "그 0.2pp 차이를 안전 비열등성의 허용 한계로 정했다는 뜻은 아니다."}, {"line": 946, "quote": "원 계획에는 비열등성 한계와 대응 분석 설계가 없다."}],
+      "reason": "실제 읽은 원 계획 32행 roles.opt_out은 guardrail, descriptive uncertainty; no safety non-inferiority design이다. 악화 탐지 질문과 NI 설계를 혼동하지 않도록 이미 설명한다. 합성 계획의 명시적 한계이지 책이 숨긴 누락은 아니다.",
+      "minimal_change": "원고 수정 없음. 사후 +0.2pp를 사전 기준으로 소급하지 않음.", "field_data_needed": []
+    },
+    {
+      "id": "PROT-06", "topic": "통계 종료와 보호 중단", "classification": "covered",
+      "evidence": [{"line": 116, "quote": "피해 대응을 분석 완료 때까지 늦추지 않는다."}, {"line": 122, "quote": "새로운 피해를 발견했으면 계획에 없었다는 이유로 보호 조치를 미룰 필요도 없다."}, {"line": 964, "quote": "안전상 중지와 성과상 조기 종료를 나눈다."}],
+      "reason": "추가 분석 중단, 사전 통계 종료 및 보호 운영 중단이 구분돼 있다. 고정 분석을 유의해질 때까지 연장하지 않는 원칙이 보호 대응 지연을 허용하지 않는다.",
+      "minimal_change": "원고 수정 없음.", "field_data_needed": []
+    },
+    {
+      "id": "PROT-07", "topic": "역할 회신과 실제 승인", "classification": "covered",
+      "evidence": [{"line": 112, "quote": "발송과 운영을 승인했다는 뜻이 아니다."}, {"line": 780, "quote": "답을 제공할 역할과 실제 실행을 승인할 역할을 혼동하지 않고"}, {"line": 966, "quote": "답의 첨부를 실행 승인으로 바꾸지 않는다."}],
+      "reason": "774행의 안전 선언은 즉시 교육용 고의 오류로 명시되고 776행에서 수정된다. 미도착 역할 답, 실제 승인 주체와 기한의 미정은 보존한다. MINIMUM_RECORD 5, 14, 23~27행에서도 실제 승인과 의무를 구분한다.",
+      "minimal_change": "원고 수정 없음.", "field_data_needed": []
+    },
+    {
+      "id": "PROT-08", "topic": "최소 개인정보 범위", "classification": "covered",
+      "evidence": [{"line": 822, "quote": "개인 식별 정보에 대한 접근과 보존은 최소화한다."}, {"line": 822, "quote": "원자료 접근 권한과 요약 보고서의 공개 범위를 구분한다."}],
+      "reason": "재사용할 판단 지식과 상세 고객 이력을 구분한다. 최소 기록도 기존 계획과 결과 링크를 재사용하고 고객 연락처를 필수 입력으로 요구하지 않는다. 조직별 구체 보존기간과 접근 통제의 적법성은 인증하지 않는다.",
+      "minimal_change": "원고 수정 없음.", "field_data_needed": []
+    },
+    {
+      "id": "PROT-09", "topic": "현장 동의 처리와 실제 피해 증거", "classification": "needs_field_data",
+      "evidence": [{"line": 891, "quote": "이 단일 접촉 합성 자료가 지속적인 동의 관리 체계까지 검증한 것으로 해석하지 않는다."}, {"line": 936, "quote": "현장 동의가 실제로 적법했는지"}, {"line": 948, "quote": "민원과 장기 이탈은 생성하지 않았으므로"}],
+      "reason": "미검증 경계는 이미 쓰여 있다. 현장 작동 및 실제 피해의 발생 또는 부재는 합성 자료에서 알 수 없다. 원고 누락이나 실제 피해 발견이 아니며 규제 적합성은 판단범위 밖이다.",
+      "minimal_change": "원고 수정 없음. 현장 적용 검토 때 필요한 증거와 미확인을 구분함.",
+      "field_data_needed": ["동의 범위와 최신 상태의 근거 및 발송 직전 권한 확인 기록", "철회 접수부터 발송 제외까지 처리 경로의 대사 근거", "목적에 필요한 민원 및 피해 기록과 관련 접촉 노출 정보. 권한 통제 환경에서 최소 범위로 확인하며 개인정보의 보고서 복사나 외부 제공은 요구하지 않음"]
+    },
+    {
+      "id": "PROT-10", "topic": "후속 보호 평가와 실행 조건", "classification": "needs_field_data",
+      "evidence": [{"line": 948, "quote": "후속 계획에는 신규 적용에 필요한 보호 비교와 허용 한계를 명시한다."}, {"line": 962, "quote": "조건 승인 뒤 제한 범위를 계획하더라도 그 안전과 수익을 현재 자료로 검증한 것은 아니다."}, {"line": 988, "quote": "조건이 갖춰질 때에만 되돌릴 수 있는 제한 적용이나 새 실험의 승인을 요청하고"}],
+      "reason": "후속 설계 준비와 실제 실행은 다르다. 사후 한계나 8장의 별도 교육 설정으로 후속 보호 평가를 대신할 수 없다. 값과 승인 회신의 부재는 이미 명시한 미확인 실행 조건이며 책의 누락이 아니다.",
+      "minimal_change": "원고 수정 없음. 실제 적용 조건을 이번 원고 교정의 필수 백로그로 만들지 않음.",
+      "field_data_needed": ["후속 적용 대상 및 비교에 맞는 보호 지표와 허용 한계의 정당화 근거", "그에 맞는 평가 방법, 정보량, 관측 창 및 사전 종료 규칙", "보호 중단 및 복구 책임과 실제 승인 경로. 현재 개인, 기한, 회신 및 승인은 미확인"]
+    }
+  ],
+  "example_decision": {
+    "context": "9장 수정 회신과 12장 해설 및 완성 결정문을 읽은 뒤 쓴 AI 보호 역할 답안. 눈가림 독해시험이나 실제 역할 회신이 아님.",
+    "current_judgment": "B의 완료 우위는 정한 합성 완료 비교 범위에서 유지한다. 철회 안전 통과와 확정 위해는 어느 쪽도 판정하지 않는다. B는 후속 검토 후보이며 전면 적용 보류, 실제 실행 미승인이다.",
+    "allowed_now": ["기존 여섯 항목에 완료 근거와 보호 미확인을 구분해 기록", "동의 처리 확인, 후속 보호 비교와 평가 설계 및 승인 요청에 필요한 준비만 수행. 실제 모집이나 발송 및 제한 적용은 실행하지 않음", "중요한 동의 위반이나 피해가 실제 확인되면 성과 유의성과 무관하게 보호 절차를 따른다는 조건 유지. 확인 및 조치 완료를 주장하지 않음"],
+    "prohibited_now": ["철회 비유의를 안전으로 처리해 확대", "사후 +0.2pp를 원 계획 기준으로 소급하거나 양측 탐색 구간으로 정식 NI 판정", "필수 안내의 H 보류, 비동의 고객 포함 및 이후 철회 무시", "역할 회신을 승인으로 변경하거나 미승인 제한 적용 및 전면 발송 실행", "성과로 권리 침해 상쇄 또는 B-A 보호 결과를 발송-H와 모든 관계 손상으로 일반화"],
+    "one_field_answer_needed": {
+      "request_to_role": "고객 보호 담당 역할. 실제 개인 및 회신 기한은 미정이며 이 검토에서 정하지 않음.",
+      "question": "이번 후속 적용 대상과 비교 정책에 대해 발송 직전 동의 권한과 철회 반영을 어떻게 확인하며, 어떤 보호 비교, 허용 위험 및 평가 근거를 충족해야 승인 검토에 넘길 수 있습니까? 확인된 근거와 미확인 부분을 구분해 같은 여섯 항목에 연결해 주세요.",
+      "reply_status": "실제 회신 없음. 분기는 가능한 답에 따른 조건이지 받은 답이 아님.",
+      "if_sufficient": "다른 미확인 사업, 비용 및 운영 조건과 함께 재검토하고 제한 적용 또는 새 실험의 승인 요청 여부만 정함. 자동 승인하지 않음.",
+      "if_insufficient": "보류 유지. 빠진 동의 처리, 보호 비교 또는 평가 설계를 재요청하고 정보량 부족 시 확대보다 설계 확인 우선.",
+      "if_violation_or_serious_harm_confirmed": "실제 확인 시 성과 통계 종료를 기다리지 않고 보호 절차 우선. 발생 사실을 가정하지 않음."
+    },
+    "preserved_unknowns": ["실제 사업 기준과 비용 및 운영 수용 범위", "보호 한계, 평가 설계와 정보량", "담당자, 기한, 승인 주체 및 승인 상태", "실제 현장 안전과 준법 및 피해 발생 여부"]
+  },
+  "confirmed_omissions": [],
+  "source_integrity": {
+    "algorithm": "SHA-256",
+    "manuscript_before": "b88e6af12491703f4bd9509bcb47605f1385cccd3d261a77da23fd85396b2c6e",
+    "manuscript_after": "b88e6af12491703f4bd9509bcb47605f1385cccd3d261a77da23fd85396b2c6e",
+    "unchanged_verified": true,
+    "evidence_quotes_checked": 24,
+    "evidence_quotes_exact_substrings": true,
+    "classification_counts": {"covered": 8, "needs_field_data": 2, "confirmed_omission": 0},
+    "note": "원본 읽기 전용. 별도 읽기 전용 검증으로 원고 전후 SHA-256 일치와 원고 인용 24개의 해당 행 정확 부분 문자열 일치를 확인함. 보조 입력의 전후 해시 비교 또는 저장소 전체 무변경을 주장하지 않음."
+  }
+}

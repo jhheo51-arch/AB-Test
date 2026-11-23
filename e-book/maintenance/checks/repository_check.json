@@ -1,11 +1,11 @@
 {
   "status": "passed",
-  "checked_at_seoul": "2026-11-22T22:33:58.710859+09:00",
+  "checked_at_seoul": "2026-11-23T09:08:07.777324+09:00",
   "goal": "private_github_learning_reference",
   "publication_intent": false,
   "protected_v22_files": 5,
   "preserved_input_checks": 191,
-  "local_links_checked": 106,
+  "local_links_checked": 118,
   "reader_zip_entries": 45,
   "original_review_zip_preserved": true,
   "record_rows": {

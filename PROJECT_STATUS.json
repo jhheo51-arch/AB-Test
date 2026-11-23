@@ -1,5 +1,5 @@
 {
-  "checked_at_seoul": "2026-11-22T22:33:58.936770+09:00",
+  "checked_at_seoul": "2026-11-23T09:08:08.074067+09:00",
   "latest_reading_edition": "v0.22",
   "book_title": "그래서, 이 캠페인 계속할까요?",
   "publication_status": "출판하지 않음. 비공개 GitHub 참고 자료",
@@ -62,6 +62,23 @@
     "edition": "v0.22",
     "goal": "private_github_learning_reference",
     "publication_intent": false,
+    "management_mode": "reported_errors_only",
+    "additional_mandatory_reviews_planned": false,
+    "crm_applicability_review": {
+      "mode": "AI_role_review",
+      "status": "completed_no_confirmed_omissions",
+      "report": "e-book/maintenance/ai_crm_review/README.md",
+      "verification": "e-book/maintenance/ai_crm_review/VERIFICATION.json",
+      "classification_counts": {
+        "covered": 23,
+        "needs_field_data": 7,
+        "confirmed_omission": 0
+      },
+      "actual_practitioner_review_completed": false,
+      "field_validation_completed": false,
+      "human_reviewer_required_to_continue": false,
+      "manuscript_edits": false
+    },
     "visibility_policy": "keep_private",
     "scope": "본문 개발 종료. 오류와 구체적인 읽기 장애만 최소 수정. 출판과 판매 준비는 진행하지 않음.",
     "human_review_completed": false,
@@ -105,6 +122,7 @@
         "ai_proxy_status": "completed",
         "ai_proxy_evidence": "e-book/maintenance/ai_walkthrough/README.md",
         "human_task_completed": false,
+        "blocking_repository_management": false,
         "note": "저자 직접 수행의 기준은 바꾸지 않음. 이번 위임 요청에서 AI가 수행한 답안과 검사 결과는 별도 완료 기록으로 보존."
       },
       {
