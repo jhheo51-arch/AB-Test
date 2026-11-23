@@ -1,5 +1,6 @@
-http://127.0.0.1:10476
+http://127.0.0.1:12942
 column_mapping_smoke PASS
+column_profile_smoke PASS
 compare_reference PASS
 conditions_smoke PASS
 design_smoke PASS
@@ -8,6 +9,7 @@ lineage_smoke PASS
 narrative_smoke PASS
 project_schema_smoke PASS
 semantic_edges PASS
+verify_column_profiles PASS
 verify_semantic_edges PASS
 verify_conditions PASS
 verify_design PASS
@@ -24,4 +26,4 @@ verify_design_pdf PASS
 verify_pdf PASS
 verify_guided_pdf PASS
 verify_lineage_pdf PASS
-PASS summary: 25 executed scripts; 145 unit groups; 1029 separate semantic cases; 410 browser checks
+PASS summary: 27 executed scripts; 158 unit groups; 1029 separate semantic cases; 469 browser checks

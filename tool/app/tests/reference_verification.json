@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "generated_at": "2026-11-23T08:26:36.001Z",
+  "generated_at": "2026-11-23T08:57:02.336Z",
   "command": "node tests/compare_reference.cjs",
   "node_version": "v24.19.0",
   "engine_version": "0.2.0",

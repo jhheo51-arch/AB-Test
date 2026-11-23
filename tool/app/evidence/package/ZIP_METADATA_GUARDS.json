@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "negative_guards": 8,
+  "negative_guards": 14,
   "checks": [
     {
       "guard": "omit_source",
@@ -32,6 +32,30 @@
     },
     {
       "guard": "stale_caption",
+      "rejected": true
+    },
+    {
+      "guard": "profile_omitted_source",
+      "rejected": true
+    },
+    {
+      "guard": "profile_stale_source",
+      "rejected": true
+    },
+    {
+      "guard": "profile_privacy_flag",
+      "rejected": true
+    },
+    {
+      "guard": "profile_tutorial_claim",
+      "rejected": true
+    },
+    {
+      "guard": "profile_fixture_hash",
+      "rejected": true
+    },
+    {
+      "guard": "profile_missing_preserved",
       "rejected": true
     }
   ],

@@ -14,7 +14,7 @@ def verify(root):
  assert all(sha(n)==h for n,h in s['source_sha256'].items()),'stale runtime SHA-256'
  assert s['baseline']==baseline,'historical baseline changed/rewritten in aggregate'
  changed=s['intentional_baseline_control_changes'];preserved=s['preserved_baseline_bytes']
- assert set(changed)=={'design-ui.js','help/walkthrough.mp4'} and set(preserved)==set(baseline['controls'])-set(changed)
+ assert set(changed)=={'column-mapping.js','workflow.js','design-ui.js','help/walkthrough.mp4'} and set(preserved)==set(baseline['controls'])-set(changed)
  assert all(v and sha(n)==baseline['controls'][n]['sha256'] for n,v in preserved.items())
  assert all(v['current_sha256']==sha(n) and v['historical_sha256']==baseline['controls'][n]['sha256'] and v['reason'] for n,v in changed.items())
  from validate_walkthrough_media import EXPECTED
@@ -35,6 +35,15 @@ def verify(root):
  match=re.search(r'^RESULT (\d+) semantic assertions passed \((\d+) engine gate cases;',text,re.M);assert match
  assert tuple(map(int,match.groups()))==(semantic['cases'],semantic['engine_gate_cases_included'])
  assert len(re.findall(r'^PASS ',text,re.M))==semantic['cases']
+ profile=s['column_profile']
+ assert {k:v for k,v in profile.items() if k not in {'fixture_sha256','baseline_commit','preserved_sha256'}}=={'format':'ab-column-profile','version':1,'max_bytes':8192,'raw_headers_stored':False,'raw_rows_stored':False,'arm_values_stored':False,'automatic_persistence':False,'conditions_inherited':False,'project_schema':7,'tutorial_covers_profiles':False,'browser_record':'column_profile_verification.json','node_log':'evidence/integration/column_profile_smoke.log'}
+ assert profile['fixture_sha256']==sha('examples/SYNTHETIC_CRM_MAPPING.csv')
+ pb=load('profile-evidence/BASELINE.json');assert profile['baseline_commit']==pb['commit']=='ce355644e9a58165494b13f8192aee13dd09ef2e'
+ pc={'engine.js','worker.js','project-schema.js','design.js','design-ui.js','conditions.js','help/walkthrough.mp4','help/walkthrough.ko.srt','help/walkthrough.timeline.json','tests/semantic_edges.cjs'}
+ assert set(profile['preserved_sha256'])==pc
+ assert all(h==sha(n)==pb['files']['app/'+n]['sha256'] for n,h in profile['preserved_sha256'].items())
+ assert load(profile['browser_record'])['status']=='PASS' and any(r['test']=='verify_column_profiles' for r in run['checks'])
+ assert any(r['test']=='column_profile_smoke' for r in run['checks'])
  return {'status':'PASS','runtime_hashes_checked':len(s['source_sha256']),'historical_baseline_sha256':sha('conditions-evidence/BASELINE_CONTROLS.json'),'scripts':len(run['checks']),'unit_groups':s['unit_group_total'],'separate_semantic_cases':semantic['cases'],'engine_gate_cases_included':semantic['engine_gate_cases_included'],'browser_checks':s['browser_check_total'],'preserved_control_count':len(preserved),'intentional_changed_controls':list(changed),'scope':'actual metadata/file hashes and retained execution logs; no invented execution or remote readback'}
 if __name__=='__main__':
  a=argparse.ArgumentParser();a.add_argument('--root',default=str(Path(__file__).resolve().parents[1]));a.add_argument('--output');args=a.parse_args();result=verify(args.root)

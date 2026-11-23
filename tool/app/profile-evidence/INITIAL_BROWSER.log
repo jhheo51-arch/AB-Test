@@ -1,0 +1,59 @@
+PASS actual secure localhost WebCrypto
+PASS no template export without explicit metadata consent
+PASS actual local download only role fingerprints exact SHA256
+PASS profile excludes headers arm values cohorts raw rows filename
+PASS download consent consumed; no local/session persistence
+PASS fresh page reordered CSV candidate roles matched by current names
+PASS fresh raw arm confirmation required no inferred defaults
+PASS profile does not inherit conditions or evidence
+PASS candidate without confirmation never prepares
+PASS confirmed candidate with no arm values still blocked
+PASS all rows retained counts 2000 and 280 source 4
+PASS unknown source conditions continue to restrict inference
+PASS actual engine result not hardcoded winner
+PASS profile hashes not data hash lineage
+PASS project7 report and LLM payload exclude profile and selected headers
+PASS invalid template 0 atomic unchanged state
+PASS invalid template 1 atomic unchanged state
+PASS invalid template 2 atomic unchanged state
+PASS invalid template 3 atomic unchanged state
+PASS invalid template 4 atomic unchanged state
+PASS invalid template 5 atomic unchanged state
+PASS invalid template 6 atomic unchanged state
+PASS invalid template 7 atomic unchanged state
+PASS invalid template 8 atomic unchanged state
+PASS invalid template 9 atomic unchanged state
+PASS successful candidate invalidates prepared result input sharing print
+PASS successful reuse resets all conditions no inherited evidence
+PASS missing header template fails with existing state intact
+PASS duplicate header template fails with existing state intact
+PASS extra arm 'H' rejected no rows filtered
+PASS extra arm 'C' rejected no rows filtered
+PASS extra arm 'control ' rejected no rows filtered
+PASS static synthetic file exact bytes and does not modify current input
+PASS XSS selected headers come from current CSV safely escaped
+PASS new controls mobile no page overflow
+PASS individual profile no IDs/rows exported
+PASS profile cannot bypass immature observation or switch format
+PASS observed alias cannot be dropped
+PASS profile null observation cannot omit current observation
+PASS pending real digest gates 4
+PASS stale profile digest edit cannot apply
+PASS pending real digest gates 4
+PASS stale profile digest newfile cannot apply
+PASS pending real digest gates 4
+PASS stale profile digest mode cannot apply
+PASS pending real digest gates 4
+PASS pending real digest gates 8
+PASS old finally cannot unlock newer import
+PASS stale profile file read cannot replace edited input
+PASS pending real digest gates 4
+PASS pending export edit prevents stale download
+PASS pending real digest gates 4
+PASS pending export consent prevents stale download
+PASS WebCrypto failure preserves current state and unlocks
+PASS GET denied /examples/not-shipped.csv
+PASS GET denied /profile-evidence/BASELINE.json
+PASS GET denied /column_profile_verification.json
+PASS no JS errors in original actual download flow
+RESULT 58 column profile browser checks passed

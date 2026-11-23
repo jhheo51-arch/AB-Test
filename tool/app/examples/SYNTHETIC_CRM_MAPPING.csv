@@ -1,0 +1,5 @@
+test_group,conversion_count,recipient_count,cohort
+control,50,500,SYNTHETIC_new
+treatment,75,500,SYNTHETIC_new
+control,80,500,SYNTHETIC_existing
+treatment,75,500,SYNTHETIC_existing

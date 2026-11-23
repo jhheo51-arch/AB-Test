@@ -1,14 +1,16 @@
 {
   "status": "PASS",
-  "runtime_hashes_checked": 21,
+  "runtime_hashes_checked": 23,
   "historical_baseline_sha256": "1226659fc698ecf759298eed23b8535f5cf2ceca59113339554588c4c7d1a918",
-  "scripts": 25,
-  "unit_groups": 145,
+  "scripts": 27,
+  "unit_groups": 158,
   "separate_semantic_cases": 1029,
   "engine_gate_cases_included": 972,
-  "browser_checks": 410,
-  "preserved_control_count": 11,
+  "browser_checks": 469,
+  "preserved_control_count": 9,
   "intentional_changed_controls": [
+    "column-mapping.js",
+    "workflow.js",
     "help/walkthrough.mp4",
     "design-ui.js"
   ],

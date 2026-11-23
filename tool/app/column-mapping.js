@@ -15,11 +15,11 @@
   const MAX_BYTES = 2 * 1024 * 1024, MAX_ROWS = 50000;
   const own = function (o, key) { return Object.prototype.hasOwnProperty.call(o, key); };
   const aliases = {
-    arm: ['arm', 'variant', 'group', '실험군', '그룹', '군', '실험그룹', '배정군'],
-    success: ['success', 'converted', 'conversions', '전환수', '전환 수', '성공수', '성공 수'],
-    total: ['total', 'participants', '전체수', '전체 수', '참여자수', '참여자 수', '대상자수', '대상자 수'],
+    arm: ['arm', 'variant', 'group', '실험군', '그룹', '군', '실험그룹', '배정군', 'test_group', 'variant_name'],
+    success: ['success', 'converted', 'conversions', '전환수', '전환 수', '성공수', '성공 수', 'conversion_count'],
+    total: ['total', 'participants', '전체수', '전체 수', '참여자수', '참여자 수', '대상자수', '대상자 수', 'recipient_count'],
     segment: ['segment', 'cohort', '세그먼트', '코호트', '고객군'],
-    subject_id: ['subject_id', 'user_id', 'customer_id', '사용자id', '사용자_id', '고객id', '고객_id', '대상자id', '사용자 식별자', '고객 식별자'],
+    subject_id: ['subject_id', 'user_id', 'customer_id', '사용자id', '사용자_id', '고객id', '고객_id', '대상자id', '사용자 식별자', '고객 식별자', 'subscriber_key', 'contact_key'],
     outcome: ['outcome', 'converted', 'conversion', '전환', '전환여부', '전환 여부', '결과'],
     observed: ['observed', '관측', '관측여부', '관측 여부']
   };
@@ -96,7 +96,7 @@
       if (mapping[target] !== null && typeof mapping[target] !== 'string') fail('INVALID_HEADER', 1, target, 'Source selection must be an exact header string or null.');
     });
     const headers = table.headers;
-    if (format === 'individual' && headers.indexOf('observed') >= 0 && (!own(mapping, 'observed') || mapping.observed !== 'observed')) fail('OBSERVED_MAPPING_REQUIRED', 1, 'observed', 'Original observed must remain mapped.');
+    if (format === 'individual' && headers.some(h => aliases.observed.includes(h.trim().toLowerCase()) && mapping.observed !== h)) fail('OBSERVED_MAPPING_REQUIRED', 1, 'observed', 'Original observed must remain mapped.');
     if (new Set(headers).size !== headers.length) fail('DUPLICATE_HEADER', 1, null, 'Source headers must be unique.');
     const targets = [], indices = [], used = new Set();
     allowed.forEach(function (target) {

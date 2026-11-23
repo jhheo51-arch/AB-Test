@@ -170,1717 +170,1897 @@
   "browser_network": [
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/",
+      "url": "http://127.0.0.1:2982/",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/theme.css",
+      "url": "http://127.0.0.1:2982/theme.css",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/context.css",
+      "url": "http://127.0.0.1:2982/context.css",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/workflow.css",
+      "url": "http://127.0.0.1:2982/workflow.css",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/design.css",
+      "url": "http://127.0.0.1:2982/design.css",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/lineage.js",
+      "url": "http://127.0.0.1:2982/lineage.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/design.js",
+      "url": "http://127.0.0.1:2982/design.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/conditions.js",
+      "url": "http://127.0.0.1:2982/conditions.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/project-schema.js",
+      "url": "http://127.0.0.1:2982/project-schema.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/narrative.js",
+      "url": "http://127.0.0.1:2982/narrative.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/engine.js",
+      "url": "http://127.0.0.1:2982/engine.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/column-mapping.js",
+      "url": "http://127.0.0.1:2982/column-mapping.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/workflow.js",
+      "url": "http://127.0.0.1:2982/column-profile.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/design-ui.js",
+      "url": "http://127.0.0.1:2982/profile-ui.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/app.js",
+      "url": "http://127.0.0.1:2982/workflow.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/worker.js",
+      "url": "http://127.0.0.1:2982/design-ui.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/api/status",
+      "url": "http://127.0.0.1:2982/app.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/fonts/PretendardVariable.woff2",
+      "url": "http://127.0.0.1:2982/worker.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/engine.js",
+      "url": "http://127.0.0.1:2982/api/status",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/",
+      "url": "http://127.0.0.1:2982/fonts/PretendardVariable.woff2",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/theme.css",
+      "url": "http://127.0.0.1:2982/engine.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/context.css",
+      "url": "http://127.0.0.1:2982/",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/workflow.css",
+      "url": "http://127.0.0.1:2982/theme.css",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/design.css",
+      "url": "http://127.0.0.1:2982/context.css",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/lineage.js",
+      "url": "http://127.0.0.1:2982/workflow.css",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/design.js",
+      "url": "http://127.0.0.1:2982/design.css",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/conditions.js",
+      "url": "http://127.0.0.1:2982/lineage.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/project-schema.js",
+      "url": "http://127.0.0.1:2982/design.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/narrative.js",
+      "url": "http://127.0.0.1:2982/conditions.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/engine.js",
+      "url": "http://127.0.0.1:2982/project-schema.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/column-mapping.js",
+      "url": "http://127.0.0.1:2982/narrative.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/workflow.js",
+      "url": "http://127.0.0.1:2982/engine.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/design-ui.js",
+      "url": "http://127.0.0.1:2982/column-mapping.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/app.js",
+      "url": "http://127.0.0.1:2982/column-profile.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/worker.js",
+      "url": "http://127.0.0.1:2982/profile-ui.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/api/status",
+      "url": "http://127.0.0.1:2982/workflow.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/fonts/PretendardVariable.woff2",
+      "url": "http://127.0.0.1:2982/design-ui.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/engine.js",
+      "url": "http://127.0.0.1:2982/app.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:2982/fonts/PretendardVariable.woff2",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:2982/api/status",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:2982/worker.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:2982/engine.js",
       "body": null
     },
     {
       "method": "POST",
-      "url": "http://127.0.0.1:10995/api/explain",
+      "url": "http://127.0.0.1:2982/api/explain",
       "body": "{\"confirmed\":true,\"facts\":{\"analysis_status\":\"valid\",\"overall_decision\":\"B\",\"segments\":[],\"interaction\":\"not_tested\",\"guardrail\":\"not_assessed\",\"design_user_confirmed\":true,\"adjustment\":\"none\",\"issues\":[]}}"
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/",
+      "url": "http://127.0.0.1:2982/",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/theme.css",
+      "url": "http://127.0.0.1:2982/theme.css",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/context.css",
+      "url": "http://127.0.0.1:2982/context.css",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/workflow.css",
+      "url": "http://127.0.0.1:2982/workflow.css",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/design.css",
+      "url": "http://127.0.0.1:2982/design.css",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/lineage.js",
+      "url": "http://127.0.0.1:2982/lineage.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/design.js",
+      "url": "http://127.0.0.1:2982/design.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/conditions.js",
+      "url": "http://127.0.0.1:2982/conditions.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/project-schema.js",
+      "url": "http://127.0.0.1:2982/project-schema.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/narrative.js",
+      "url": "http://127.0.0.1:2982/narrative.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/engine.js",
+      "url": "http://127.0.0.1:2982/engine.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/column-mapping.js",
+      "url": "http://127.0.0.1:2982/column-mapping.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/workflow.js",
+      "url": "http://127.0.0.1:2982/column-profile.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/design-ui.js",
+      "url": "http://127.0.0.1:2982/profile-ui.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/app.js",
+      "url": "http://127.0.0.1:2982/workflow.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/fonts/PretendardVariable.woff2",
+      "url": "http://127.0.0.1:2982/design-ui.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/api/status",
+      "url": "http://127.0.0.1:2982/app.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/worker.js",
+      "url": "http://127.0.0.1:2982/fonts/PretendardVariable.woff2",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/engine.js",
+      "url": "http://127.0.0.1:2982/api/status",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/",
+      "url": "http://127.0.0.1:2982/worker.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/theme.css",
+      "url": "http://127.0.0.1:2982/engine.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/context.css",
+      "url": "http://127.0.0.1:2982/",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/workflow.css",
+      "url": "http://127.0.0.1:2982/theme.css",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/design.css",
+      "url": "http://127.0.0.1:2982/context.css",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/lineage.js",
+      "url": "http://127.0.0.1:2982/workflow.css",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/design.js",
+      "url": "http://127.0.0.1:2982/design.css",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/conditions.js",
+      "url": "http://127.0.0.1:2982/lineage.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/project-schema.js",
+      "url": "http://127.0.0.1:2982/design.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/narrative.js",
+      "url": "http://127.0.0.1:2982/conditions.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/engine.js",
+      "url": "http://127.0.0.1:2982/project-schema.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/column-mapping.js",
+      "url": "http://127.0.0.1:2982/narrative.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/workflow.js",
+      "url": "http://127.0.0.1:2982/engine.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/design-ui.js",
+      "url": "http://127.0.0.1:2982/column-mapping.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/app.js",
+      "url": "http://127.0.0.1:2982/column-profile.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/fonts/PretendardVariable.woff2",
+      "url": "http://127.0.0.1:2982/profile-ui.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/api/status",
+      "url": "http://127.0.0.1:2982/workflow.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/worker.js",
+      "url": "http://127.0.0.1:2982/design-ui.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/engine.js",
+      "url": "http://127.0.0.1:2982/app.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/",
+      "url": "http://127.0.0.1:2982/fonts/PretendardVariable.woff2",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/theme.css",
+      "url": "http://127.0.0.1:2982/api/status",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/context.css",
+      "url": "http://127.0.0.1:2982/worker.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/workflow.css",
+      "url": "http://127.0.0.1:2982/engine.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/design.css",
+      "url": "http://127.0.0.1:2982/",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/lineage.js",
+      "url": "http://127.0.0.1:2982/theme.css",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/design.js",
+      "url": "http://127.0.0.1:2982/context.css",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/conditions.js",
+      "url": "http://127.0.0.1:2982/workflow.css",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/project-schema.js",
+      "url": "http://127.0.0.1:2982/design.css",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/narrative.js",
+      "url": "http://127.0.0.1:2982/lineage.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/engine.js",
+      "url": "http://127.0.0.1:2982/design.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/column-mapping.js",
+      "url": "http://127.0.0.1:2982/conditions.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/workflow.js",
+      "url": "http://127.0.0.1:2982/project-schema.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/design-ui.js",
+      "url": "http://127.0.0.1:2982/narrative.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/app.js",
+      "url": "http://127.0.0.1:2982/engine.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/fonts/PretendardVariable.woff2",
+      "url": "http://127.0.0.1:2982/column-mapping.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/api/status",
+      "url": "http://127.0.0.1:2982/column-profile.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/worker.js",
+      "url": "http://127.0.0.1:2982/profile-ui.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/engine.js",
+      "url": "http://127.0.0.1:2982/workflow.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/",
+      "url": "http://127.0.0.1:2982/design-ui.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/theme.css",
+      "url": "http://127.0.0.1:2982/app.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/context.css",
+      "url": "http://127.0.0.1:2982/fonts/PretendardVariable.woff2",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/workflow.css",
+      "url": "http://127.0.0.1:2982/api/status",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/design.css",
+      "url": "http://127.0.0.1:2982/worker.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/lineage.js",
+      "url": "http://127.0.0.1:2982/engine.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/design.js",
+      "url": "http://127.0.0.1:2982/",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/conditions.js",
+      "url": "http://127.0.0.1:2982/theme.css",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/project-schema.js",
+      "url": "http://127.0.0.1:2982/context.css",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/narrative.js",
+      "url": "http://127.0.0.1:2982/workflow.css",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/engine.js",
+      "url": "http://127.0.0.1:2982/design.css",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/column-mapping.js",
+      "url": "http://127.0.0.1:2982/lineage.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/workflow.js",
+      "url": "http://127.0.0.1:2982/design.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/design-ui.js",
+      "url": "http://127.0.0.1:2982/conditions.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/app.js",
+      "url": "http://127.0.0.1:2982/project-schema.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/api/status",
+      "url": "http://127.0.0.1:2982/narrative.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/worker.js",
+      "url": "http://127.0.0.1:2982/engine.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/fonts/PretendardVariable.woff2",
+      "url": "http://127.0.0.1:2982/column-mapping.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/engine.js",
+      "url": "http://127.0.0.1:2982/column-profile.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/",
+      "url": "http://127.0.0.1:2982/profile-ui.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/theme.css",
+      "url": "http://127.0.0.1:2982/workflow.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/context.css",
+      "url": "http://127.0.0.1:2982/design-ui.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/workflow.css",
+      "url": "http://127.0.0.1:2982/app.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/design.css",
+      "url": "http://127.0.0.1:2982/worker.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/lineage.js",
+      "url": "http://127.0.0.1:2982/api/status",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/design.js",
+      "url": "http://127.0.0.1:2982/fonts/PretendardVariable.woff2",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/conditions.js",
+      "url": "http://127.0.0.1:2982/engine.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/project-schema.js",
+      "url": "http://127.0.0.1:2982/",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/narrative.js",
+      "url": "http://127.0.0.1:2982/theme.css",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/engine.js",
+      "url": "http://127.0.0.1:2982/context.css",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/column-mapping.js",
+      "url": "http://127.0.0.1:2982/workflow.css",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/workflow.js",
+      "url": "http://127.0.0.1:2982/design.css",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/design-ui.js",
+      "url": "http://127.0.0.1:2982/lineage.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/app.js",
+      "url": "http://127.0.0.1:2982/design.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/worker.js",
+      "url": "http://127.0.0.1:2982/conditions.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/api/status",
+      "url": "http://127.0.0.1:2982/project-schema.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/fonts/PretendardVariable.woff2",
+      "url": "http://127.0.0.1:2982/narrative.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/engine.js",
+      "url": "http://127.0.0.1:2982/engine.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/",
+      "url": "http://127.0.0.1:2982/column-mapping.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/theme.css",
+      "url": "http://127.0.0.1:2982/column-profile.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/context.css",
+      "url": "http://127.0.0.1:2982/profile-ui.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/workflow.css",
+      "url": "http://127.0.0.1:2982/workflow.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/design.css",
+      "url": "http://127.0.0.1:2982/design-ui.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/lineage.js",
+      "url": "http://127.0.0.1:2982/app.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/design.js",
+      "url": "http://127.0.0.1:2982/worker.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/conditions.js",
+      "url": "http://127.0.0.1:2982/api/status",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/project-schema.js",
+      "url": "http://127.0.0.1:2982/fonts/PretendardVariable.woff2",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/narrative.js",
+      "url": "http://127.0.0.1:2982/engine.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/engine.js",
+      "url": "http://127.0.0.1:2982/",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/column-mapping.js",
+      "url": "http://127.0.0.1:2982/theme.css",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/workflow.js",
+      "url": "http://127.0.0.1:2982/context.css",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/design-ui.js",
+      "url": "http://127.0.0.1:2982/workflow.css",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/app.js",
+      "url": "http://127.0.0.1:2982/design.css",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/worker.js",
+      "url": "http://127.0.0.1:2982/lineage.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/api/status",
+      "url": "http://127.0.0.1:2982/design.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/fonts/PretendardVariable.woff2",
+      "url": "http://127.0.0.1:2982/conditions.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/engine.js",
+      "url": "http://127.0.0.1:2982/project-schema.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/",
+      "url": "http://127.0.0.1:2982/narrative.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/theme.css",
+      "url": "http://127.0.0.1:2982/engine.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/context.css",
+      "url": "http://127.0.0.1:2982/column-mapping.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/workflow.css",
+      "url": "http://127.0.0.1:2982/column-profile.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/design.css",
+      "url": "http://127.0.0.1:2982/profile-ui.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/lineage.js",
+      "url": "http://127.0.0.1:2982/workflow.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/design.js",
+      "url": "http://127.0.0.1:2982/design-ui.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/conditions.js",
+      "url": "http://127.0.0.1:2982/app.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/project-schema.js",
+      "url": "http://127.0.0.1:2982/fonts/PretendardVariable.woff2",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/narrative.js",
+      "url": "http://127.0.0.1:2982/api/status",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/engine.js",
+      "url": "http://127.0.0.1:2982/worker.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/column-mapping.js",
+      "url": "http://127.0.0.1:2982/engine.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/workflow.js",
+      "url": "http://127.0.0.1:2982/",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/design-ui.js",
+      "url": "http://127.0.0.1:2982/theme.css",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/app.js",
+      "url": "http://127.0.0.1:2982/context.css",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/fonts/PretendardVariable.woff2",
+      "url": "http://127.0.0.1:2982/workflow.css",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/api/status",
+      "url": "http://127.0.0.1:2982/design.css",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/worker.js",
+      "url": "http://127.0.0.1:2982/lineage.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/engine.js",
+      "url": "http://127.0.0.1:2982/design.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/",
+      "url": "http://127.0.0.1:2982/conditions.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/theme.css",
+      "url": "http://127.0.0.1:2982/project-schema.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/context.css",
+      "url": "http://127.0.0.1:2982/narrative.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/workflow.css",
+      "url": "http://127.0.0.1:2982/engine.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/design.css",
+      "url": "http://127.0.0.1:2982/column-mapping.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/lineage.js",
+      "url": "http://127.0.0.1:2982/column-profile.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/design.js",
+      "url": "http://127.0.0.1:2982/profile-ui.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/conditions.js",
+      "url": "http://127.0.0.1:2982/workflow.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/project-schema.js",
+      "url": "http://127.0.0.1:2982/design-ui.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/narrative.js",
+      "url": "http://127.0.0.1:2982/app.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/engine.js",
+      "url": "http://127.0.0.1:2982/fonts/PretendardVariable.woff2",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/column-mapping.js",
+      "url": "http://127.0.0.1:2982/api/status",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/workflow.js",
+      "url": "http://127.0.0.1:2982/worker.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/design-ui.js",
+      "url": "http://127.0.0.1:2982/engine.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/app.js",
+      "url": "http://127.0.0.1:2982/",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/fonts/PretendardVariable.woff2",
+      "url": "http://127.0.0.1:2982/theme.css",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/api/status",
+      "url": "http://127.0.0.1:2982/context.css",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/worker.js",
+      "url": "http://127.0.0.1:2982/workflow.css",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/engine.js",
+      "url": "http://127.0.0.1:2982/design.css",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/",
+      "url": "http://127.0.0.1:2982/lineage.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/theme.css",
+      "url": "http://127.0.0.1:2982/design.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/context.css",
+      "url": "http://127.0.0.1:2982/conditions.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/workflow.css",
+      "url": "http://127.0.0.1:2982/project-schema.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/design.css",
+      "url": "http://127.0.0.1:2982/narrative.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/lineage.js",
+      "url": "http://127.0.0.1:2982/engine.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/design.js",
+      "url": "http://127.0.0.1:2982/column-mapping.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/conditions.js",
+      "url": "http://127.0.0.1:2982/column-profile.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/project-schema.js",
+      "url": "http://127.0.0.1:2982/profile-ui.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/narrative.js",
+      "url": "http://127.0.0.1:2982/workflow.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/engine.js",
+      "url": "http://127.0.0.1:2982/design-ui.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/column-mapping.js",
+      "url": "http://127.0.0.1:2982/app.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/workflow.js",
+      "url": "http://127.0.0.1:2982/worker.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/design-ui.js",
+      "url": "http://127.0.0.1:2982/api/status",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/app.js",
+      "url": "http://127.0.0.1:2982/fonts/PretendardVariable.woff2",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/fonts/PretendardVariable.woff2",
+      "url": "http://127.0.0.1:2982/engine.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/api/status",
+      "url": "http://127.0.0.1:2982/",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/worker.js",
+      "url": "http://127.0.0.1:2982/theme.css",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/engine.js",
+      "url": "http://127.0.0.1:2982/context.css",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/",
+      "url": "http://127.0.0.1:2982/workflow.css",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/theme.css",
+      "url": "http://127.0.0.1:2982/design.css",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/context.css",
+      "url": "http://127.0.0.1:2982/lineage.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/workflow.css",
+      "url": "http://127.0.0.1:2982/design.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/design.css",
+      "url": "http://127.0.0.1:2982/conditions.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/lineage.js",
+      "url": "http://127.0.0.1:2982/project-schema.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/design.js",
+      "url": "http://127.0.0.1:2982/narrative.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/conditions.js",
+      "url": "http://127.0.0.1:2982/engine.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/project-schema.js",
+      "url": "http://127.0.0.1:2982/column-mapping.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/narrative.js",
+      "url": "http://127.0.0.1:2982/column-profile.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/engine.js",
+      "url": "http://127.0.0.1:2982/profile-ui.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/column-mapping.js",
+      "url": "http://127.0.0.1:2982/workflow.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/workflow.js",
+      "url": "http://127.0.0.1:2982/design-ui.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/design-ui.js",
+      "url": "http://127.0.0.1:2982/app.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/app.js",
+      "url": "http://127.0.0.1:2982/fonts/PretendardVariable.woff2",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/worker.js",
+      "url": "http://127.0.0.1:2982/worker.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/api/status",
+      "url": "http://127.0.0.1:2982/api/status",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/fonts/PretendardVariable.woff2",
+      "url": "http://127.0.0.1:2982/engine.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/engine.js",
+      "url": "http://127.0.0.1:2982/",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/",
+      "url": "http://127.0.0.1:2982/theme.css",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/theme.css",
+      "url": "http://127.0.0.1:2982/context.css",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/context.css",
+      "url": "http://127.0.0.1:2982/workflow.css",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/workflow.css",
+      "url": "http://127.0.0.1:2982/design.css",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/design.css",
+      "url": "http://127.0.0.1:2982/lineage.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/lineage.js",
+      "url": "http://127.0.0.1:2982/design.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/design.js",
+      "url": "http://127.0.0.1:2982/conditions.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/conditions.js",
+      "url": "http://127.0.0.1:2982/project-schema.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/project-schema.js",
+      "url": "http://127.0.0.1:2982/narrative.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/narrative.js",
+      "url": "http://127.0.0.1:2982/engine.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/engine.js",
+      "url": "http://127.0.0.1:2982/column-mapping.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/column-mapping.js",
+      "url": "http://127.0.0.1:2982/column-profile.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/workflow.js",
+      "url": "http://127.0.0.1:2982/profile-ui.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/design-ui.js",
+      "url": "http://127.0.0.1:2982/workflow.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/app.js",
+      "url": "http://127.0.0.1:2982/design-ui.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/fonts/PretendardVariable.woff2",
+      "url": "http://127.0.0.1:2982/app.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/api/status",
+      "url": "http://127.0.0.1:2982/fonts/PretendardVariable.woff2",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/worker.js",
+      "url": "http://127.0.0.1:2982/api/status",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/engine.js",
+      "url": "http://127.0.0.1:2982/worker.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/",
+      "url": "http://127.0.0.1:2982/engine.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/theme.css",
+      "url": "http://127.0.0.1:2982/",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/context.css",
+      "url": "http://127.0.0.1:2982/theme.css",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/workflow.css",
+      "url": "http://127.0.0.1:2982/context.css",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/design.css",
+      "url": "http://127.0.0.1:2982/workflow.css",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/lineage.js",
+      "url": "http://127.0.0.1:2982/design.css",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/design.js",
+      "url": "http://127.0.0.1:2982/lineage.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/conditions.js",
+      "url": "http://127.0.0.1:2982/design.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/project-schema.js",
+      "url": "http://127.0.0.1:2982/conditions.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/narrative.js",
+      "url": "http://127.0.0.1:2982/project-schema.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/engine.js",
+      "url": "http://127.0.0.1:2982/narrative.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/column-mapping.js",
+      "url": "http://127.0.0.1:2982/engine.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/workflow.js",
+      "url": "http://127.0.0.1:2982/column-mapping.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/design-ui.js",
+      "url": "http://127.0.0.1:2982/column-profile.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/app.js",
+      "url": "http://127.0.0.1:2982/profile-ui.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/fonts/PretendardVariable.woff2",
+      "url": "http://127.0.0.1:2982/workflow.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/api/status",
+      "url": "http://127.0.0.1:2982/design-ui.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/worker.js",
+      "url": "http://127.0.0.1:2982/app.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/engine.js",
+      "url": "http://127.0.0.1:2982/fonts/PretendardVariable.woff2",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/",
+      "url": "http://127.0.0.1:2982/api/status",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/theme.css",
+      "url": "http://127.0.0.1:2982/worker.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/context.css",
+      "url": "http://127.0.0.1:2982/engine.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/workflow.css",
+      "url": "http://127.0.0.1:2982/",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/design.css",
+      "url": "http://127.0.0.1:2982/theme.css",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/lineage.js",
+      "url": "http://127.0.0.1:2982/context.css",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/design.js",
+      "url": "http://127.0.0.1:2982/workflow.css",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/conditions.js",
+      "url": "http://127.0.0.1:2982/design.css",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/project-schema.js",
+      "url": "http://127.0.0.1:2982/lineage.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/narrative.js",
+      "url": "http://127.0.0.1:2982/design.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/engine.js",
+      "url": "http://127.0.0.1:2982/conditions.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/column-mapping.js",
+      "url": "http://127.0.0.1:2982/project-schema.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/workflow.js",
+      "url": "http://127.0.0.1:2982/narrative.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/design-ui.js",
+      "url": "http://127.0.0.1:2982/engine.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/app.js",
+      "url": "http://127.0.0.1:2982/column-mapping.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/fonts/PretendardVariable.woff2",
+      "url": "http://127.0.0.1:2982/column-profile.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/api/status",
+      "url": "http://127.0.0.1:2982/profile-ui.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/worker.js",
+      "url": "http://127.0.0.1:2982/workflow.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/engine.js",
+      "url": "http://127.0.0.1:2982/design-ui.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/",
+      "url": "http://127.0.0.1:2982/app.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/theme.css",
+      "url": "http://127.0.0.1:2982/fonts/PretendardVariable.woff2",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/context.css",
+      "url": "http://127.0.0.1:2982/api/status",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/workflow.css",
+      "url": "http://127.0.0.1:2982/worker.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/design.css",
+      "url": "http://127.0.0.1:2982/engine.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/lineage.js",
+      "url": "http://127.0.0.1:2982/",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/design.js",
+      "url": "http://127.0.0.1:2982/theme.css",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/conditions.js",
+      "url": "http://127.0.0.1:2982/context.css",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/project-schema.js",
+      "url": "http://127.0.0.1:2982/workflow.css",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/narrative.js",
+      "url": "http://127.0.0.1:2982/design.css",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/engine.js",
+      "url": "http://127.0.0.1:2982/lineage.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/column-mapping.js",
+      "url": "http://127.0.0.1:2982/design.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/workflow.js",
+      "url": "http://127.0.0.1:2982/conditions.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/design-ui.js",
+      "url": "http://127.0.0.1:2982/project-schema.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/app.js",
+      "url": "http://127.0.0.1:2982/narrative.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/worker.js",
+      "url": "http://127.0.0.1:2982/engine.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/api/status",
+      "url": "http://127.0.0.1:2982/column-mapping.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/fonts/PretendardVariable.woff2",
+      "url": "http://127.0.0.1:2982/column-profile.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/engine.js",
+      "url": "http://127.0.0.1:2982/profile-ui.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/",
+      "url": "http://127.0.0.1:2982/workflow.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/theme.css",
+      "url": "http://127.0.0.1:2982/design-ui.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/context.css",
+      "url": "http://127.0.0.1:2982/app.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/workflow.css",
+      "url": "http://127.0.0.1:2982/worker.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/design.css",
+      "url": "http://127.0.0.1:2982/api/status",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/lineage.js",
+      "url": "http://127.0.0.1:2982/fonts/PretendardVariable.woff2",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/design.js",
+      "url": "http://127.0.0.1:2982/engine.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/conditions.js",
+      "url": "http://127.0.0.1:2982/",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/project-schema.js",
+      "url": "http://127.0.0.1:2982/theme.css",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/narrative.js",
+      "url": "http://127.0.0.1:2982/context.css",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/engine.js",
+      "url": "http://127.0.0.1:2982/workflow.css",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/column-mapping.js",
+      "url": "http://127.0.0.1:2982/design.css",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/workflow.js",
+      "url": "http://127.0.0.1:2982/lineage.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/design-ui.js",
+      "url": "http://127.0.0.1:2982/design.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/app.js",
+      "url": "http://127.0.0.1:2982/conditions.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/fonts/PretendardVariable.woff2",
+      "url": "http://127.0.0.1:2982/project-schema.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/api/status",
+      "url": "http://127.0.0.1:2982/narrative.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/worker.js",
+      "url": "http://127.0.0.1:2982/engine.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/engine.js",
+      "url": "http://127.0.0.1:2982/column-mapping.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/",
+      "url": "http://127.0.0.1:2982/column-profile.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/theme.css",
+      "url": "http://127.0.0.1:2982/profile-ui.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/context.css",
+      "url": "http://127.0.0.1:2982/workflow.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/workflow.css",
+      "url": "http://127.0.0.1:2982/design-ui.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/design.css",
+      "url": "http://127.0.0.1:2982/app.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/lineage.js",
+      "url": "http://127.0.0.1:2982/fonts/PretendardVariable.woff2",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/design.js",
+      "url": "http://127.0.0.1:2982/api/status",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/conditions.js",
+      "url": "http://127.0.0.1:2982/worker.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/project-schema.js",
+      "url": "http://127.0.0.1:2982/engine.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/narrative.js",
+      "url": "http://127.0.0.1:2982/",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/engine.js",
+      "url": "http://127.0.0.1:2982/theme.css",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/column-mapping.js",
+      "url": "http://127.0.0.1:2982/context.css",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/workflow.js",
+      "url": "http://127.0.0.1:2982/workflow.css",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/design-ui.js",
+      "url": "http://127.0.0.1:2982/design.css",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/app.js",
+      "url": "http://127.0.0.1:2982/lineage.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/fonts/PretendardVariable.woff2",
+      "url": "http://127.0.0.1:2982/design.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/api/status",
+      "url": "http://127.0.0.1:2982/conditions.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/worker.js",
+      "url": "http://127.0.0.1:2982/project-schema.js",
       "body": null
     },
     {
       "method": "GET",
-      "url": "http://127.0.0.1:10995/engine.js",
+      "url": "http://127.0.0.1:2982/narrative.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:2982/engine.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:2982/column-mapping.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:2982/column-profile.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:2982/profile-ui.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:2982/workflow.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:2982/design-ui.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:2982/app.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:2982/worker.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:2982/api/status",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:2982/fonts/PretendardVariable.woff2",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:2982/engine.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:2982/",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:2982/theme.css",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:2982/context.css",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:2982/workflow.css",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:2982/design.css",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:2982/lineage.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:2982/design.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:2982/conditions.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:2982/project-schema.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:2982/narrative.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:2982/engine.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:2982/column-mapping.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:2982/column-profile.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:2982/profile-ui.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:2982/workflow.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:2982/design-ui.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:2982/app.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:2982/fonts/PretendardVariable.woff2",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:2982/api/status",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:2982/worker.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:2982/engine.js",
       "body": null
     }
   ],

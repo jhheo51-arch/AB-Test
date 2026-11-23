@@ -8,6 +8,12 @@
       "log": "evidence/integration/column_mapping_smoke.log"
     },
     {
+      "script": "column_profile_smoke.cjs",
+      "groups": 13,
+      "exit_code": 0,
+      "log": "evidence/integration/column_profile_smoke.log"
+    },
+    {
       "script": "conditions_smoke.cjs",
       "groups": 29,
       "exit_code": 0,
@@ -44,7 +50,7 @@
       "log": "evidence/integration/project_schema_smoke.log"
     }
   ],
-  "unit_group_total": 145,
+  "unit_group_total": 158,
   "semantic_regressions": {
     "script": "semantic_edges.cjs",
     "cases": 1029,
@@ -53,6 +59,6 @@
     "log": "evidence/integration/semantic_edges.log",
     "counting": "Separate from smoke unit groups; engine gate cases are included, not additional. A case may contain several assertions."
   },
-  "timestamp_utc": "2026-11-23T08:31:05.672761+00:00",
+  "timestamp_utc": "2026-11-23T09:01:22.439426+00:00",
   "scope": "real smoke groups and semantic cases counted separately"
 }

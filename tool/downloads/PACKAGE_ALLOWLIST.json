@@ -10,8 +10,8 @@
     {
       "member": "AB_Test_Workspace/INPUT_CONTRACT.md",
       "source": "app/INPUT_CONTRACT.md",
-      "bytes": 9879,
-      "sha256": "0f3b3a006bde3dbaff11a542b4179536a3fe81e77630b38f0f36e12495e814d9"
+      "bytes": 11632,
+      "sha256": "3f329ebf1c7a1a52da10c1700b32f497e25f138b957e5f1e06ee4390bdba86e6"
     },
     {
       "member": "AB_Test_Workspace/R03_browser_verification.json",
@@ -22,8 +22,8 @@
     {
       "member": "AB_Test_Workspace/README.md",
       "source": "app/README.md",
-      "bytes": 13850,
-      "sha256": "ae91592adab9f2aff7a7f99e49858b87ad5940a8b5f0cf0254f78dcdb8f34cff"
+      "bytes": 16675,
+      "sha256": "767c672e7c8aa4dfddbe131f8b4b87612db8f3842208c561faf974b59c95696c"
     },
     {
       "member": "AB_Test_Workspace/app.js",
@@ -34,14 +34,26 @@
     {
       "member": "AB_Test_Workspace/browser_verification.json",
       "source": "app/browser_verification.json",
-      "bytes": 43001,
-      "sha256": "ffab03703daefc2b2fbd7f479b5ed865c33765426aa0d82ab6082a904054bd51"
+      "bytes": 46762,
+      "sha256": "1689c3483ef9218edd07a180430ab334c30074fcd40e3ea05ec686dbf96be64f"
     },
     {
       "member": "AB_Test_Workspace/column-mapping.js",
       "source": "app/column-mapping.js",
-      "bytes": 9190,
-      "sha256": "d1d3b0c7a2e3aeb520c9c831d3583cf5e2d889c6ea079837a7814868ab361a68"
+      "bytes": 9288,
+      "sha256": "e11e7c6e6b517fc0fde03d90aff5a69b6271bf0cfb443f0a11f1311fba03ffd1"
+    },
+    {
+      "member": "AB_Test_Workspace/column-profile.js",
+      "source": "app/column-profile.js",
+      "bytes": 4756,
+      "sha256": "b74a1cf411191c11931dcb137b5f14a78b90572fd038017151078c178980a365"
+    },
+    {
+      "member": "AB_Test_Workspace/column_profile_verification.json",
+      "source": "app/column_profile_verification.json",
+      "bytes": 6135,
+      "sha256": "1cedb490dc72e122313f259c97763f3fe9ebd7d10f7579624804558f9dea9cfd"
     },
     {
       "member": "AB_Test_Workspace/conditions-evidence/BASELINE_CONTROLS.json",
@@ -71,7 +83,7 @@
       "member": "AB_Test_Workspace/conditions-evidence/CONDITIONS_REPORT.pdf",
       "source": "app/conditions-evidence/CONDITIONS_REPORT.pdf",
       "bytes": 537769,
-      "sha256": "e68bcfffcb2d731293d3f37e77f818ec5c35073247eb8426ad05d56dbdfe52b1"
+      "sha256": "87cb268b8f8d94b5dd275e6721be3f0cf699038ecb38cf2efa5d73d4f74040b5"
     },
     {
       "member": "AB_Test_Workspace/conditions-evidence/CONDITIONS_RESTORED.json",
@@ -142,14 +154,14 @@
     {
       "member": "AB_Test_Workspace/conditions-evidence/conditions-desktop.png",
       "source": "app/conditions-evidence/conditions-desktop.png",
-      "bytes": 433795,
-      "sha256": "281b074279fa5503a2c1f9a0a02f4ea118d46a709851af8d84b4fdb4c2301106"
+      "bytes": 440974,
+      "sha256": "813a62e53fb5d9ea8a5dea7e591745b92a92678a0818bc7a17f1f9d59a2f9fcd"
     },
     {
       "member": "AB_Test_Workspace/conditions-evidence/conditions-mobile.png",
       "source": "app/conditions-evidence/conditions-mobile.png",
-      "bytes": 368849,
-      "sha256": "6f4b072e9dc84cc2ed140815e1923ff04f9997c463efd36003ce5366e01a85ed"
+      "bytes": 375603,
+      "sha256": "8cbbe486d924258ba526debc2886b7c8e00aec97a6027151745d2fafad88ab21"
     },
     {
       "member": "AB_Test_Workspace/conditions.js",
@@ -197,7 +209,7 @@
       "member": "AB_Test_Workspace/design-evidence/INVALIDATED_REPORT.pdf",
       "source": "app/design-evidence/INVALIDATED_REPORT.pdf",
       "bytes": 45333,
-      "sha256": "896bc655a0b1401de711f216f0890a2165cdc34db250cbf90c453f2127ce3efd"
+      "sha256": "598ccdeded775e68ff6d8d0f02488592bed32e57c51f5309449244987ab6dc40"
     },
     {
       "member": "AB_Test_Workspace/design-evidence/PDF_TEXT_VERIFICATION.json",
@@ -239,19 +251,19 @@
       "member": "AB_Test_Workspace/design-evidence/RESULT_REPORT.pdf",
       "source": "app/design-evidence/RESULT_REPORT.pdf",
       "bytes": 601441,
-      "sha256": "0a61af5d95349b0f8945c4276b7bcb06a1ad7bbb6ac2007944a04291d68f03b6"
+      "sha256": "60f4fdb3c64f79bacbe63e6a474d77a189c4ed85e4ebffa1422b31d7e03e47b8"
     },
     {
       "member": "AB_Test_Workspace/design-evidence/plan-desktop.png",
       "source": "app/design-evidence/plan-desktop.png",
       "bytes": 382508,
-      "sha256": "d930da98b95c66ba64609e90fd1a06523e50261e9070e9f5b2f47124d73d8014"
+      "sha256": "b86f2a65a5882a6fe7f6f2630193972e23f677e4df639712fabda5096654afc5"
     },
     {
       "member": "AB_Test_Workspace/design-evidence/plan-mobile.png",
       "source": "app/design-evidence/plan-mobile.png",
-      "bytes": 387386,
-      "sha256": "f63b8ee5d737d147c27360c2605125e1f16ee893b80ed15ccd1f7b0f831b2def"
+      "bytes": 387722,
+      "sha256": "5c70ae29d48168990bfa5d3164084548edd3ed3022686016251531570285aa47"
     },
     {
       "member": "AB_Test_Workspace/design-ui.js",
@@ -288,6 +300,12 @@
       "source": "app/evidence/integration/column_mapping_smoke.log",
       "bytes": 920,
       "sha256": "bfa23cf66cb001cdda4b3d2fcc53dd05e63951e72094f1d192315c27723eb50b"
+    },
+    {
+      "member": "AB_Test_Workspace/evidence/integration/column_profile_smoke.log",
+      "source": "app/evidence/integration/column_profile_smoke.log",
+      "bytes": 3236,
+      "sha256": "4cd325fbda9679734b75a21b1e20efe7c5baf0f2c43760c0ba97cfe5e5b14c97"
     },
     {
       "member": "AB_Test_Workspace/evidence/integration/compare_reference.log",
@@ -341,7 +359,13 @@
       "member": "AB_Test_Workspace/evidence/integration/verify_browser.log",
       "source": "app/evidence/integration/verify_browser.log",
       "bytes": 2407,
-      "sha256": "9280ee05cd24e1b09fd08faaf3152f7582e54c93784d0eedb87639b7be56ffb9"
+      "sha256": "93cc69311da5fda5f43aced93ced85d550edc0c4a5b3e5ea5335821f1c73a28e"
+    },
+    {
+      "member": "AB_Test_Workspace/evidence/integration/verify_column_profiles.log",
+      "source": "app/evidence/integration/verify_column_profiles.log",
+      "bytes": 3099,
+      "sha256": "e33d105e44b568fe9facdf00671f364cf18b4398ebe6ce7979fd17107b3592bd"
     },
     {
       "member": "AB_Test_Workspace/evidence/integration/verify_conditions.log",
@@ -394,8 +418,8 @@
     {
       "member": "AB_Test_Workspace/evidence/integration/verify_issue_allowlist.log",
       "source": "app/evidence/integration/verify_issue_allowlist.log",
-      "bytes": 264,
-      "sha256": "6103a03ad8ace8308c7d5bc46d698a1c43fe7897092296819aac9800baf6409d"
+      "bytes": 259,
+      "sha256": "bb80e96dae536eaf0b1137f2c4ace07b92dfac936afdaa6e3dc4008b1ac1d19f"
     },
     {
       "member": "AB_Test_Workspace/evidence/integration/verify_lineage_browser.log",
@@ -407,7 +431,7 @@
       "member": "AB_Test_Workspace/evidence/integration/verify_lineage_pdf.log",
       "source": "app/evidence/integration/verify_lineage_pdf.log",
       "bytes": 260,
-      "sha256": "a16b2fbaa5ef5c89e0622b808d28298541cbee03af9483b5f44c9a0d2619abc6"
+      "sha256": "26fdd8950eaa01df5340dcbe3567417ea4612ec04a3e4d95fca8aeafd0539c14"
     },
     {
       "member": "AB_Test_Workspace/evidence/integration/verify_pdf.log",
@@ -437,7 +461,13 @@
       "member": "AB_Test_Workspace/evidence/tutorial_media_validation.json",
       "source": "app/evidence/tutorial_media_validation.json",
       "bytes": 550,
-      "sha256": "3cdd1d04cff4de782faa997fba80a649a229457b870d4ccb6c5bb9cb283025a1"
+      "sha256": "09622e56e1531a7546e166bd22d37c8d97561289f0106a2c40f320f1031d43fb"
+    },
+    {
+      "member": "AB_Test_Workspace/examples/SYNTHETIC_CRM_MAPPING.csv",
+      "source": "app/examples/SYNTHETIC_CRM_MAPPING.csv",
+      "bytes": 181,
+      "sha256": "683379c56f793d073cbff58730112b0773f78cb36c1b9c91816efb1cd13f5ca9"
     },
     {
       "member": "AB_Test_Workspace/examples/SYNTHETIC_aggregate.csv",
@@ -484,20 +514,20 @@
     {
       "member": "AB_Test_Workspace/index.html",
       "source": "app/index.html",
-      "bytes": 23063,
-      "sha256": "72212baad036586e1d8b9c56b4aba9db9e3a2459588b25dcb01d80ffcf63a25a"
+      "bytes": 24736,
+      "sha256": "eafffac37da784f2396bfcad476513f698cdb00f3c7955fe4fd033f413e93c2f"
     },
     {
       "member": "AB_Test_Workspace/integration_verification.json",
       "source": "app/integration_verification.json",
-      "bytes": 10809,
-      "sha256": "1c4fc7315c329cb5c1aac5518e638d6ebfdf7a8724e8c8a0870b455dc81116d5"
+      "bytes": 11500,
+      "sha256": "03828eb4f15a6ffb67f6eea28b094330603e88cf7ca41b05c5cab137fdd6de44"
     },
     {
       "member": "AB_Test_Workspace/interface_verification.json",
       "source": "app/interface_verification.json",
-      "bytes": 13275,
-      "sha256": "d00f797fdada850110262a47b9d602032dd113dbf786810c8d1dc5e23c90820f"
+      "bytes": 13269,
+      "sha256": "1d30b9d80cc6e296f34f9ac0167352135306ae3a26f9aea10e13944927a3a8e9"
     },
     {
       "member": "AB_Test_Workspace/issue_allowlist_verification.json",
@@ -527,7 +557,7 @@
       "member": "AB_Test_Workspace/lineage_evidence/LINEAGE_PDF_PROOF.json",
       "source": "app/lineage_evidence/LINEAGE_PDF_PROOF.json",
       "bytes": 279,
-      "sha256": "129171f3647961d1659b7f7f8f497accbec308b9ed972a7eed2b6b5a397c1ef6"
+      "sha256": "5e09e7a8772cb837974509cc7798c4dbba19d4b3ce3a687ce11249d37892e149"
     },
     {
       "member": "AB_Test_Workspace/narrative.js",
@@ -546,6 +576,24 @@
       "source": "app/pdf_verification.json",
       "bytes": 229,
       "sha256": "c40de3acbfa6eaef736e0b61c433158ce211e1b8fd84fbadb55662a77e2f410c"
+    },
+    {
+      "member": "AB_Test_Workspace/profile-evidence/BASELINE.json",
+      "source": "app/profile-evidence/BASELINE.json",
+      "bytes": 52362,
+      "sha256": "8ba76692f64fc6dd90f94d4c43e1dc951a6d98289882883b92e6ea85bd65a95c"
+    },
+    {
+      "member": "AB_Test_Workspace/profile-evidence/IMPLEMENTATION_NOTES.md",
+      "source": "app/profile-evidence/IMPLEMENTATION_NOTES.md",
+      "bytes": 3178,
+      "sha256": "657af408bb626ec4430e1db0902d9ba3edfbc9348329ff3fc1300644081bc458"
+    },
+    {
+      "member": "AB_Test_Workspace/profile-ui.js",
+      "source": "app/profile-ui.js",
+      "bytes": 4555,
+      "sha256": "f11066b21b8c57b62cf38b5cc60c59c5b3f26ed964a462d599cde4ba38aec418"
     },
     {
       "member": "AB_Test_Workspace/project-schema.js",
@@ -616,8 +664,8 @@
     {
       "member": "AB_Test_Workspace/server.py",
       "source": "app/server.py",
-      "bytes": 13607,
-      "sha256": "5f7d72b0bada9333a242bc2fc584733121d907921d344e24f41fa8b9f625ca72"
+      "bytes": 13673,
+      "sha256": "288b2ee4a30cc12674a133fc0d2541621984191969f663ec49b4f973df2b498a"
     },
     {
       "member": "AB_Test_Workspace/styles.css",
@@ -636,6 +684,12 @@
       "source": "app/tests/column_mapping_smoke.cjs",
       "bytes": 9222,
       "sha256": "b360a4c52184796e21c4e57762081d86218ed28da2e60c345ac434cd331af688"
+    },
+    {
+      "member": "AB_Test_Workspace/tests/column_profile_smoke.cjs",
+      "source": "app/tests/column_profile_smoke.cjs",
+      "bytes": 5542,
+      "sha256": "e030beaaaaada07c222cb64d62e2c2befd0295cefd1a145c10d469e7083c1cba"
     },
     {
       "member": "AB_Test_Workspace/tests/compare_reference.cjs",
@@ -670,8 +724,8 @@
     {
       "member": "AB_Test_Workspace/tests/finalize_verification.py",
       "source": "app/tests/finalize_verification.py",
-      "bytes": 6586,
-      "sha256": "fa61a53ce896796994ff580decae82169159317c1bab60a9b710019fdfa4379b"
+      "bytes": 7945,
+      "sha256": "05e45caf79e3393471c726a20a92fc35d299c5a0ebe090b2cb1acf6de8cb2e84"
     },
     {
       "member": "AB_Test_Workspace/tests/generate_reference.py",
@@ -707,13 +761,13 @@
       "member": "AB_Test_Workspace/tests/reference_verification.json",
       "source": "app/tests/reference_verification.json",
       "bytes": 1634139,
-      "sha256": "f552e4f5c5fa4641237493af4248abdded687f34efd757e954e77eb22bf4afb4"
+      "sha256": "342cfb06978b5ef6ba53a81db30b162b17be862deb31fd264ac9bb9a3432088c"
     },
     {
       "member": "AB_Test_Workspace/tests/run_integration.py",
       "source": "app/tests/run_integration.py",
-      "bytes": 2614,
-      "sha256": "cf2fecdfd4e5ed5167d06d37ca47b00d6ccb82832a1f4205cc462fac20bdfbf4"
+      "bytes": 2639,
+      "sha256": "8169dd4ad2e8405d8f571bbf8e3975f8643b8d77b167723ae4599205b1244fd2"
     },
     {
       "member": "AB_Test_Workspace/tests/semantic_edges.cjs",
@@ -724,14 +778,14 @@
     {
       "member": "AB_Test_Workspace/tests/unit_verification.json",
       "source": "app/tests/unit_verification.json",
-      "bytes": 1642,
-      "sha256": "9bc54830391c69a5ceed3e634bfd2af9f011e3074c15debe700d94b872c46b77"
+      "bytes": 1808,
+      "sha256": "474d22b365601ea1ee83337d291966e6cdb18250a2f8acc1123fc29b287fc651"
     },
     {
       "member": "AB_Test_Workspace/tests/validate_release_metadata.py",
       "source": "app/tests/validate_release_metadata.py",
-      "bytes": 2159,
-      "sha256": "6ee417564ab53c49223e3453c65344e34a0a8f3bfd10f2de68527c4ea4f21e27"
+      "bytes": 2825,
+      "sha256": "f9bcafd017c6e4ec1309e242fae432f167b6c26f3fd01d8ba4cd10394ad49be9"
     },
     {
       "member": "AB_Test_Workspace/tests/validate_walkthrough_media.py",
@@ -744,6 +798,12 @@
       "source": "app/tests/verify_browser.py",
       "bytes": 16824,
       "sha256": "2235589b38da90dc81188178cbed97454c1b100d1c61487db9c131150cd85cd3"
+    },
+    {
+      "member": "AB_Test_Workspace/tests/verify_column_profiles.py",
+      "source": "app/tests/verify_column_profiles.py",
+      "bytes": 14698,
+      "sha256": "a14969c87676d959810eb3fe286bb4ac820f96ccfe3a7542aed9874f363f4754"
     },
     {
       "member": "AB_Test_Workspace/tests/verify_conditions.py",
@@ -832,8 +892,8 @@
     {
       "member": "AB_Test_Workspace/tests/verify_release_metadata.py",
       "source": "app/tests/verify_release_metadata.py",
-      "bytes": 3931,
-      "sha256": "a8541b014241c4ac600ee4d8bda519571d1a6b63cabfc9710b5daec566a01d90"
+      "bytes": 5221,
+      "sha256": "f4bce87873c13adfde3ee41e96375dd6e638ec9a4938b80276d5055770a540ca"
     },
     {
       "member": "AB_Test_Workspace/tests/verify_semantic_edges.py",
@@ -856,8 +916,8 @@
     {
       "member": "AB_Test_Workspace/verification.json",
       "source": "app/verification.json",
-      "bytes": 13898,
-      "sha256": "c0ba697014656a317d1981db44d5f3ee0441366617813cd977d02d28659498fd"
+      "bytes": 16667,
+      "sha256": "1b9a22bbc66fb93814f6be8b9b984c1f1a38cb4875c5e84a0ba743f64c3cac87"
     },
     {
       "member": "AB_Test_Workspace/worker.js",
@@ -874,8 +934,8 @@
     {
       "member": "AB_Test_Workspace/workflow.js",
       "source": "app/workflow.js",
-      "bytes": 8316,
-      "sha256": "f70e3989f4f5432210ab4141f6dd83f86799248b82c59c1ff0b9fd7fdaad5478"
+      "bytes": 8393,
+      "sha256": "ecaf337a71603f6a470654572c70f2d57b28e886c496f1b48d99f08870f2fdcb"
     },
     {
       "member": "AB_Test_Workspace/workflow_evidence/GUIDED_PDF_PROOF.json",

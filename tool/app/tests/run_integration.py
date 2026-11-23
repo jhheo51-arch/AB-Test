@@ -16,7 +16,7 @@ if __name__=='__main__':
   url=server.stdout.readline().strip().split('=',1)[1];print(url,flush=True)
   assert urllib.request.urlopen(url).status==200
   jobs=[(f.stem,['node',str(f)]) for f in sorted((R/'tests').glob('*.cjs'))]
-  jobs += [(n,[sys.executable,str(R/'tests'/(n+'.py')),'--url',url]+(['--browser-path','C:/Program Files/Google/Chrome/Application/chrome.exe'] if n=='verify_current_interface' else [])) for n in ['verify_semantic_edges','verify_conditions','verify_design','verify_design_boundaries','verify_browser','verify_regressions','verify_current_interface','verify_design_style','verify_lineage_browser','verify_workflow','verify_context']]
+  jobs += [(n,[sys.executable,str(R/'tests'/(n+'.py')),'--url',url]+(['--browser-path','C:/Program Files/Google/Chrome/Application/chrome.exe'] if n=='verify_current_interface' else [])) for n in ['verify_column_profiles','verify_semantic_edges','verify_conditions','verify_design','verify_design_boundaries','verify_browser','verify_regressions','verify_current_interface','verify_design_style','verify_lineage_browser','verify_workflow','verify_context']]
   jobs += [(n,[sys.executable,str(R/'tests'/(n+'.py'))]) for n in ['verify_issue_allowlist','verify_design_pdf','verify_pdf','verify_guided_pdf','verify_lineage_pdf']]
   # Run serially for bounded worker-start timing; each owns separate browser state.
   with concurrent.futures.ThreadPoolExecutor(max_workers=1) as pool:rows=list(pool.map(lambda j:run(*j),jobs))

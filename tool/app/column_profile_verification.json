@@ -1,0 +1,245 @@
+{
+  "status": "PASS",
+  "count": 59,
+  "checks": [
+    {
+      "name": "actual secure localhost WebCrypto",
+      "pass": true
+    },
+    {
+      "name": "no template export without explicit metadata consent",
+      "pass": true
+    },
+    {
+      "name": "actual local download only role fingerprints exact SHA256",
+      "pass": true
+    },
+    {
+      "name": "profile excludes headers arm values cohorts raw rows filename",
+      "pass": true
+    },
+    {
+      "name": "download consent consumed; no local/session persistence",
+      "pass": true
+    },
+    {
+      "name": "fresh page reordered CSV candidate roles matched by current names",
+      "pass": true
+    },
+    {
+      "name": "fresh raw arm confirmation required no inferred defaults",
+      "pass": true
+    },
+    {
+      "name": "profile does not inherit conditions or evidence",
+      "pass": true
+    },
+    {
+      "name": "candidate without confirmation never prepares",
+      "pass": true
+    },
+    {
+      "name": "confirmed candidate with no arm values still blocked",
+      "pass": true
+    },
+    {
+      "name": "all rows retained counts 2000 and 280 source 4",
+      "pass": true
+    },
+    {
+      "name": "unknown source conditions continue to restrict inference",
+      "pass": true
+    },
+    {
+      "name": "actual engine result not hardcoded winner",
+      "pass": true
+    },
+    {
+      "name": "profile hashes not data hash lineage",
+      "pass": true
+    },
+    {
+      "name": "project7 report and LLM payload exclude profile and selected headers",
+      "pass": true
+    },
+    {
+      "name": "invalid template 0 atomic unchanged state",
+      "pass": true
+    },
+    {
+      "name": "invalid template 1 atomic unchanged state",
+      "pass": true
+    },
+    {
+      "name": "invalid template 2 atomic unchanged state",
+      "pass": true
+    },
+    {
+      "name": "invalid template 3 atomic unchanged state",
+      "pass": true
+    },
+    {
+      "name": "invalid template 4 atomic unchanged state",
+      "pass": true
+    },
+    {
+      "name": "invalid template 5 atomic unchanged state",
+      "pass": true
+    },
+    {
+      "name": "invalid template 6 atomic unchanged state",
+      "pass": true
+    },
+    {
+      "name": "invalid template 7 atomic unchanged state",
+      "pass": true
+    },
+    {
+      "name": "invalid template 8 atomic unchanged state",
+      "pass": true
+    },
+    {
+      "name": "invalid template 9 atomic unchanged state",
+      "pass": true
+    },
+    {
+      "name": "browser exact 8KiB valid template accepted",
+      "pass": true
+    },
+    {
+      "name": "successful candidate invalidates prepared result input sharing print",
+      "pass": true
+    },
+    {
+      "name": "successful reuse resets all conditions no inherited evidence",
+      "pass": true
+    },
+    {
+      "name": "missing header template fails with existing state intact",
+      "pass": true
+    },
+    {
+      "name": "duplicate header template fails with existing state intact",
+      "pass": true
+    },
+    {
+      "name": "extra arm 'H' rejected no rows filtered",
+      "pass": true
+    },
+    {
+      "name": "extra arm 'C' rejected no rows filtered",
+      "pass": true
+    },
+    {
+      "name": "extra arm 'control ' rejected no rows filtered",
+      "pass": true
+    },
+    {
+      "name": "static synthetic file exact bytes and does not modify current input",
+      "pass": true
+    },
+    {
+      "name": "XSS selected headers come from current CSV safely escaped",
+      "pass": true
+    },
+    {
+      "name": "new controls mobile no page overflow",
+      "pass": true
+    },
+    {
+      "name": "individual profile no IDs/rows exported",
+      "pass": true
+    },
+    {
+      "name": "profile cannot bypass immature observation or switch format",
+      "pass": true
+    },
+    {
+      "name": "observed alias cannot be dropped",
+      "pass": true
+    },
+    {
+      "name": "profile null observation cannot omit current observation",
+      "pass": true
+    },
+    {
+      "name": "pending real digest gates 4",
+      "pass": true
+    },
+    {
+      "name": "stale profile digest edit cannot apply",
+      "pass": true
+    },
+    {
+      "name": "pending real digest gates 4",
+      "pass": true
+    },
+    {
+      "name": "stale profile digest newfile cannot apply",
+      "pass": true
+    },
+    {
+      "name": "pending real digest gates 4",
+      "pass": true
+    },
+    {
+      "name": "stale profile digest mode cannot apply",
+      "pass": true
+    },
+    {
+      "name": "pending real digest gates 4",
+      "pass": true
+    },
+    {
+      "name": "pending real digest gates 8",
+      "pass": true
+    },
+    {
+      "name": "old finally cannot unlock newer import",
+      "pass": true
+    },
+    {
+      "name": "stale profile file read cannot replace edited input",
+      "pass": true
+    },
+    {
+      "name": "pending real digest gates 4",
+      "pass": true
+    },
+    {
+      "name": "pending export edit prevents stale download",
+      "pass": true
+    },
+    {
+      "name": "pending real digest gates 4",
+      "pass": true
+    },
+    {
+      "name": "pending export consent prevents stale download",
+      "pass": true
+    },
+    {
+      "name": "WebCrypto failure preserves current state and unlocks",
+      "pass": true
+    },
+    {
+      "name": "GET denied /examples/not-shipped.csv",
+      "pass": true
+    },
+    {
+      "name": "GET denied /profile-evidence/BASELINE.json",
+      "pass": true
+    },
+    {
+      "name": "GET denied /column_profile_verification.json",
+      "pass": true
+    },
+    {
+      "name": "no JS errors in original actual download flow",
+      "pass": true
+    }
+  ],
+  "actual_llm_calls": 0,
+  "human_observations": 0,
+  "scope": "Synthetic actual Chrome download/new-page/reordered import/engine/privacy/XSS/strict metadata/stale real SHA256 and file read timing; not a human usability or security certification"
+}

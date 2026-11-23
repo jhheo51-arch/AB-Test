@@ -1,14 +1,15 @@
 {
   "status": "PASS",
-  "timestamp_utc": "2026-11-23T08:31:05.672761+00:00",
+  "timestamp_utc": "2026-11-23T09:01:22.439426+00:00",
   "deployment": "single canonical current app; latest-only; no visible product version labels",
   "integration_suite": {
-    "scripts": 25,
+    "scripts": 27,
     "all_exit_zero": true,
     "record": "integration_verification.json",
     "server_stopped": true
   },
   "browser_checks": {
+    "column_profile_verification.json": 59,
     "conditions_verification.json": 44,
     "browser_verification.json": 40,
     "context_verification.json": 19,
@@ -26,6 +27,12 @@
       "groups": 12,
       "exit_code": 0,
       "log": "evidence/integration/column_mapping_smoke.log"
+    },
+    {
+      "script": "column_profile_smoke.cjs",
+      "groups": 13,
+      "exit_code": 0,
+      "log": "evidence/integration/column_profile_smoke.log"
     },
     {
       "script": "conditions_smoke.cjs",
@@ -64,7 +71,7 @@
       "log": "evidence/integration/project_schema_smoke.log"
     }
   ],
-  "unit_group_total": 145,
+  "unit_group_total": 158,
   "numeric_reference": {
     "record": "tests/reference_verification.json",
     "status": "PASS",
@@ -116,7 +123,8 @@
   ],
   "source_sha256": {
     "app.js": "762988e7d9645f2fcdf50acf3f4e0dc4cb67226a903519b137b9cc1ee2963450",
-    "column-mapping.js": "d1d3b0c7a2e3aeb520c9c831d3583cf5e2d889c6ea079837a7814868ab361a68",
+    "column-mapping.js": "e11e7c6e6b517fc0fde03d90aff5a69b6271bf0cfb443f0a11f1311fba03ffd1",
+    "column-profile.js": "b74a1cf411191c11931dcb137b5f14a78b90572fd038017151078c178980a365",
     "conditions.js": "ba43452438ed54ad4c42f5ffb7fb61c981247f5fa92e3019c711170b9820b0c5",
     "context.css": "e75a39ddceb74b433ab3a4fb30a41ce0e7a5ed4fa5d82cc940bf4219b39b4edf",
     "design-ui.js": "ceea7d89b668d43e5c4a4ded4ec95dc4a174cb702c7e96c406d8e6c91253e609",
@@ -124,26 +132,25 @@
     "design.js": "c2928c37c92a053534682baf0da82fbbe98fdf249ef7180604cd05cdc5ddda22",
     "engine-issue-codes.json": "b12c04facf9e5aa576174176040077c43aa8e7325a6368f4f28c1767e6a33c4e",
     "engine.js": "f40cc1fbd3e87dde4050cb0155673c2f368b2e88274a30fa03aeb09dbcde05f7",
-    "index.html": "72212baad036586e1d8b9c56b4aba9db9e3a2459588b25dcb01d80ffcf63a25a",
+    "index.html": "eafffac37da784f2396bfcad476513f698cdb00f3c7955fe4fd033f413e93c2f",
     "launch.cmd": "341927114a537ad03818be3f60ccb948e118c8e660dc3e0976e93b7dda31a9e0",
     "launch.py": "8456b3f589dd918032d73dcfd2eecc5d46b70e57a40dbdc8a64dc865d35df62d",
     "lineage.js": "6fbe55b5ba392e6bb64ff3dcaa5702936301aceac4f6599a55b99bad6bed84ba",
     "narrative.js": "570af0c9cb1e10063bf0842e2393bf7561938ca3327e23f71c485c79abce1f4a",
+    "profile-ui.js": "f11066b21b8c57b62cf38b5cc60c59c5b3f26ed964a462d599cde4ba38aec418",
     "project-schema.js": "62a1f452094533af856f5674c6b3a82c97ad913713c9faf6503fae5393c68391",
-    "server.py": "5f7d72b0bada9333a242bc2fc584733121d907921d344e24f41fa8b9f625ca72",
+    "server.py": "288b2ee4a30cc12674a133fc0d2541621984191969f663ec49b4f973df2b498a",
     "styles.css": "0869f2c9d558ad908dc67c07ad06d58af0ae6acdc09d80eb66bd0bf397e8a153",
     "theme.css": "32af93deee832077377efcb2b83be4aeafe16fb3cd06e705ecc1e2a4038efd13",
     "worker.js": "6f30bd381c13bbad95dcd6d6570dff14a23df9f5ad5b0a5d4d05bfe6078d7179",
     "workflow.css": "98254b477975d83aad6ce4b8667776f21c772a1e2974d7d667682294de82abfa",
-    "workflow.js": "f70e3989f4f5432210ab4141f6dd83f86799248b82c59c1ff0b9fd7fdaad5478"
+    "workflow.js": "ecaf337a71603f6a470654572c70f2d57b28e886c496f1b48d99f08870f2fdcb"
   },
   "preserved_baseline_bytes": {
     "engine.js": true,
     "worker.js": true,
     "narrative.js": true,
     "lineage.js": true,
-    "column-mapping.js": true,
-    "workflow.js": true,
     "design.js": true,
     "theme.css": true,
     "context.css": true,
@@ -151,6 +158,16 @@
     "styles.css": true
   },
   "intentional_baseline_control_changes": {
+    "column-mapping.js": {
+      "reason": "Intentional bounded CRM alias additions and stricter observation-alias no-drop guard; statistical engine unchanged.",
+      "historical_sha256": "d1d3b0c7a2e3aeb520c9c831d3583cf5e2d889c6ea079837a7814868ab361a68",
+      "current_sha256": "e11e7c6e6b517fc0fde03d90aff5a69b6271bf0cfb443f0a11f1311fba03ffd1"
+    },
+    "workflow.js": {
+      "reason": "Intentional optional local profile initialization and current raw-arm guidance; existing confirm/apply and tutorial behavior retained.",
+      "historical_sha256": "f70e3989f4f5432210ab4141f6dd83f86799248b82c59c1ff0b9fd7fdaad5478",
+      "current_sha256": "ecaf337a71603f6a470654572c70f2d57b28e886c496f1b48d99f08870f2fdcb"
+    },
     "help/walkthrough.mp4": {
       "reason": "Intentional actual-Chrome R05/R06 tutorial replacement; old video bytes are NOT preserved.",
       "historical_sha256": "137d7ebc52570b2e1368755a87efb95bb3420cf77f84c0069b9dd68cc69d0492",
@@ -263,21 +280,21 @@
         "width": 1280,
         "height": 900,
         "duration": 160.16,
-        "readyState": 1
+        "readyState": 4
       },
       {
         "case": "share with both consents Escape close",
         "width": 1280,
         "height": 900,
         "duration": 160.16,
-        "readyState": 4
+        "readyState": 1
       },
       {
         "case": "imported raw CRLF notes and selected unknown conditions button close",
         "width": 1280,
         "height": 900,
         "duration": 160.16,
-        "readyState": 1
+        "readyState": 4
       },
       {
         "case": "mobile imported raw notes Escape close",
@@ -291,7 +308,7 @@
         "width": 1280,
         "height": 900,
         "duration": 160.16,
-        "readyState": 4
+        "readyState": 1
       },
       {
         "case": "mapping error Escape close",
@@ -319,7 +336,7 @@
     "conditions_tutorial_added": true,
     "full_decode": {
       "status": "PASS",
-      "timestamp_utc": "2026-11-23T08:30:03.957309+00:00",
+      "timestamp_utc": "2026-11-23T09:00:03.911137+00:00",
       "sha256": "ffe7cd998e4a875b44ef45130e12a4d931b12d542c06b0276abfe5aa0978eabd",
       "duration_seconds": 160.16,
       "cue_count": 26,
@@ -360,11 +377,11 @@
     "No actual AI semantic design; local fixed questions and proposals",
     "No new statistical support or automatic application approval",
     "Actual-app design and conditions tutorial replaces prior analysis-only video; synthetic assumptions are not experiment certification",
-    "Actual-app synthetic tutorial added; R07 not implemented; no human study or live LLM",
+    "Actual-app synthetic R05/R06 tutorial preserved byte-for-byte; optional local column-profile slice added, not yet covered by the tutorial; no human study or live LLM",
     "Smoke groups, semantic cases and browser checks are separate counts; source/extracted repetitions are not additional unique coverage."
   ],
-  "metadata_generated_utc": "2026-11-23T08:35:47.572621+00:00",
-  "browser_check_total": 410,
+  "metadata_generated_utc": "2026-11-23T09:01:22.978812+00:00",
+  "browser_check_total": 469,
   "semantic_regressions": {
     "script": "semantic_edges.cjs",
     "cases": 1029,
@@ -374,5 +391,33 @@
     "counting": "Separate from smoke unit groups; engine gate cases are included, not additional. A case may contain several assertions."
   },
   "historical_initial_run": "evidence/r06-initial/result.json",
-  "historical_initial_issues": "R06 initial failures are preserved; test-only adaptation from checkbox actions and schema6 expectations to visible selects/schema7; see conditions-evidence/IMPLEMENTATION_NOTES.md; previous R05 initial failures are historical and not rerun"
+  "historical_initial_issues": "R06 initial failures are preserved; test-only adaptation from checkbox actions and schema6 expectations to visible selects/schema7; see conditions-evidence/IMPLEMENTATION_NOTES.md; previous R05 initial failures are historical and not rerun",
+  "column_profile": {
+    "format": "ab-column-profile",
+    "version": 1,
+    "max_bytes": 8192,
+    "raw_headers_stored": false,
+    "raw_rows_stored": false,
+    "arm_values_stored": false,
+    "automatic_persistence": false,
+    "conditions_inherited": false,
+    "project_schema": 7,
+    "tutorial_covers_profiles": false,
+    "browser_record": "column_profile_verification.json",
+    "node_log": "evidence/integration/column_profile_smoke.log",
+    "fixture_sha256": "683379c56f793d073cbff58730112b0773f78cb36c1b9c91816efb1cd13f5ca9",
+    "baseline_commit": "ce355644e9a58165494b13f8192aee13dd09ef2e",
+    "preserved_sha256": {
+      "engine.js": "f40cc1fbd3e87dde4050cb0155673c2f368b2e88274a30fa03aeb09dbcde05f7",
+      "worker.js": "6f30bd381c13bbad95dcd6d6570dff14a23df9f5ad5b0a5d4d05bfe6078d7179",
+      "project-schema.js": "62a1f452094533af856f5674c6b3a82c97ad913713c9faf6503fae5393c68391",
+      "design.js": "c2928c37c92a053534682baf0da82fbbe98fdf249ef7180604cd05cdc5ddda22",
+      "design-ui.js": "ceea7d89b668d43e5c4a4ded4ec95dc4a174cb702c7e96c406d8e6c91253e609",
+      "conditions.js": "ba43452438ed54ad4c42f5ffb7fb61c981247f5fa92e3019c711170b9820b0c5",
+      "help/walkthrough.mp4": "ffe7cd998e4a875b44ef45130e12a4d931b12d542c06b0276abfe5aa0978eabd",
+      "help/walkthrough.ko.srt": "c7d2737520af3cad339aff6c9fc566f248caad743b2ded172507fa2365e2dede",
+      "help/walkthrough.timeline.json": "2f8f4b47822f24b77a857f3aaf0414c285d1105ac267598801a12067a7e7d9a7",
+      "tests/semantic_edges.cjs": "27c49fae53d9b0a3e390da93b3c7f9fe1d274da7e7f99aa328a3bb828c707397"
+    }
+  }
 }

@@ -9,7 +9,7 @@ function renderMapping(info,raw,force=false){
  const targets=mappingDraft.format==='individual'?['arm','subject_id','outcome','segment','observed']:['arm','success','total','segment'];
  $('#mapping-fields').innerHTML=targets.map(k=>'<div><label for="map-'+k+'">'+esc(labels[k])+'</label><select data-map-target="'+k+'" id="map-'+k+'"><option value="">연결하지 않음</option>'+info.headers.map(h=>'<option value="'+esc(h)+'"'+(info.suggestions?.[k]===h?' selected':'')+'>'+esc(h)+'</option>').join('')+'</select></div>').join('');
  $('#mapping-preview').innerHTML='<p>원본 '+info.rowCount+'행 · 처음 5행 미리보기. 긴 값은 표시만 줄이며 처리 값은 바꾸지 않아요.</p><div class="table-wrap"><table><thead><tr>'+info.headers.map(h=>'<th>'+esc(h)+'</th>').join('')+'</tr></thead><tbody>'+info.rowsPreview.map(row=>'<tr>'+row.map(v=>'<td>'+esc(String(v).slice(0,160))+(String(v).length>160?'…':'')+'</td>').join('')+'</tr>').join('')+'</tbody></table></div>';
- $('#mapping-confirm').checked=false;$('#mapping-error').textContent='';$('#arm-value-a').value='A';$('#arm-value-b').value='B';$('#mapping-panel').hidden=false;
+ $('#mapping-confirm').checked=false;$('#mapping-error').textContent='';$('#arm-value-a').value='A';$('#arm-value-b').value='B';$('#mapping-panel').hidden=false;updateArmGuidance();
 }
 function resolveInput(text){
  let info;
@@ -41,12 +41,13 @@ function initWorkflow(){
  demo.addEventListener('cancel',()=>video.pause());
  demo.addEventListener('close',()=>{video.pause();if(demoScroll)window.scrollTo(demoScroll.x,demoScroll.y);});
 
+ initProfiles();
  $('#apply-mapping').onclick=prepare;
  $('#open-mapping').onclick=()=>{const text=normalizeSimpleSentence($('#data-text').value);const ticket=startInput('mapping');try{if(!text.trim())throw Error('표를 먼저 넣어 주세요.');renderMapping(ABColumnMapping.inspect(text,$('#format').value),text,true);$('#prepare-state').textContent='열 연결과 A/B 값을 직접 확인해 주세요.';}catch(e){notify(e.message);}finally{finishInput(ticket);}};
  function mappingChanged(){markChanged(true);$('#mapping-confirm').checked=false;$('#mapping-error').textContent='연결을 바꿨습니다. 역할과 제외되는 열을 다시 확인해 주세요.';}
- $('#mapping-fields').addEventListener('change',mappingChanged);
+ $('#mapping-fields').addEventListener('change',()=>{mappingChanged();updateArmGuidance();});
  for(const id of ['arm-value-a','arm-value-b'])$('#'+id).addEventListener('input',mappingChanged);
- $('#mapping-confirm').onchange=()=>{if(state.prepared){markChanged(true);}syncInputControls();};
+ $('#mapping-confirm').onchange=()=>{if(state.prepared||inputTask){markChanged(true);}syncInputControls();};
  for(const id of ['decision-direction','decision-checks'])$('#'+id).addEventListener(id==='decision-direction'?'change':'input',()=>{clearShare();renderReport();});
 }
 

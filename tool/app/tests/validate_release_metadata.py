@@ -17,8 +17,14 @@ def run(root):
         def rewrite_baseline(s): s['baseline']['controls']['worker.js']['sha256']='0'*64
         def old_video(s): s['video']['sha256']=s['baseline']['controls']['help/walkthrough.mp4']['sha256']
         def stale_caption(s): s['video']['asset_sha256']['help/walkthrough.ko.srt']='0'*64
+        def profile_omitted_source(s): s['source_sha256'].pop('column-profile.js')
+        def profile_stale_source(s): s['source_sha256']['profile-ui.js']='0'*64
+        def profile_privacy_flag(s): s['column_profile']['raw_headers_stored']=True
+        def profile_tutorial_claim(s): s['column_profile']['tutorial_covers_profiles']=True
+        def profile_fixture_hash(s): s['column_profile']['fixture_sha256']='0'*64
+        def profile_missing_preserved(s): s['column_profile']['preserved_sha256'].pop('help/walkthrough.mp4')
         rows=[]
-        for mutation in [omit_source,stale_source,wrong_script_count,wrong_semantic_count,skip_control,rewrite_baseline,old_video,stale_caption]:
+        for mutation in [omit_source,stale_source,wrong_script_count,wrong_semantic_count,skip_control,rewrite_baseline,old_video,stale_caption,profile_omitted_source,profile_stale_source,profile_privacy_flag,profile_tutorial_claim,profile_fixture_hash,profile_missing_preserved]:
             data=copy.deepcopy(original);mutation(data)
             (target/'verification.json').write_text(json.dumps(data),encoding='utf-8')
             try: verify(target)
