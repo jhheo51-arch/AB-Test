@@ -29,7 +29,7 @@ status = {
     'actual_reader_test_completed': False,
     'independent_human_review_completed': False,
     'tool_roadmap': 'tool/ROADMAP.md',
-    'tool_prd': 'tool/prd/v01/README.md',
+    'tool_prd': 'tool/prd/README.md',
     'video_workflow': 'video-production/README.md',
 }
 (ROOT / 'PROJECT_STATUS.json').write_text(json.dumps(status, ensure_ascii=False, indent=2) + '\n', encoding='utf-8', newline='\n')

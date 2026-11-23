@@ -1,0 +1,17 @@
+{
+  "app": "tool/app",
+  "distribution": "tool/downloads/AB_Test_Workspace.zip",
+  "demo": "tool/app/help/walkthrough.mp4",
+  "policy": "single_current_copy_on_GitHub_local_history_only",
+  "stabilization": {
+    "R01": "verified",
+    "R02": "verified",
+    "R03": "verified"
+  },
+  "human_review": {
+    "materials": "tool/review",
+    "independent_study_completed": false,
+    "personal_feedback": "local_only_not_published"
+  },
+  "design_entry": "not_implemented"
+}

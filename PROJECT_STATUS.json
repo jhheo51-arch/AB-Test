@@ -33,6 +33,6 @@
   "actual_reader_test_completed": false,
   "independent_human_review_completed": false,
   "tool_roadmap": "tool/ROADMAP.md",
-  "tool_prd": "tool/prd/v01/README.md",
+  "tool_prd": "tool/prd/README.md",
   "video_workflow": "video-production/README.md"
 }

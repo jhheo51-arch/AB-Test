@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-11-23T10:33:18.473872+09:00",
+  "file": "AB_Test_Workspace.zip",
+  "sha256": "139e2f4bef2e6b7069e570a468704f29353b1e0c73935ae5c473e1fc3005c838",
+  "bytes": 3685247,
+  "members": 63,
+  "duplicate_members": false,
+  "CRC": "PASS",
+  "all_member_bytes_match_source": true,
+  "separate_extracted_server": "http://127.0.0.1:10297",
+  "unpacked_browser": [
+    {
+      "script": "verify_current_interface.py",
+      "exit_code": 0,
+      "result": "RESULT PASS: 84/84 recorded checks"
+    },
+    {
+      "script": "verify_workflow.py",
+      "exit_code": 0,
+      "result": "RESULT 37 workflow checks passed"
+    }
+  ],
+  "actual_model_calls_in_extraction_tests": 0,
+  "scope": "Current build, actual playback/state preservation and mapped analysis in a separate extraction; not independent participant evidence"
+}

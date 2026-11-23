@@ -1,8 +1,0 @@
-{
-  "status": "PASS",
-  "pages": 3,
-  "minimum_actual_font_pt": 12.0,
-  "excluded_group_detail_checked": true,
-  "rendered_all_pages": true,
-  "scope": "synthetic default report; not all possible user-content pagination"
-}

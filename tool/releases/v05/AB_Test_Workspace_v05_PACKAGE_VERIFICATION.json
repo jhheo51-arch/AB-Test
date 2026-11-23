@@ -1,7 +1,0 @@
-{
-  "status": "PASS",
-  "extracted_workflow_checks": 37,
-  "source": "separate extracted ZIP launched on OS-assigned loopback port",
-  "zip_sha256": "945e5958adb495d9033a8b08781ffb1ead9ab1290c80f9eaaad978d3d8832416",
-  "no_actual_llm_request_in_package_test": true
-}

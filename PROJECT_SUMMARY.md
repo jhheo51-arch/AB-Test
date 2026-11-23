@@ -6,7 +6,7 @@
 | --- | --- |
 | 전자책 | 허재혁의 『그래서, 이 캠페인 계속할까요?』. [최신 PDF 97쪽](e-book/ebook.pdf), [웹 읽기본](e-book/ebook.html) |
 | TRI-V | 저자 제안의 세 축과 여섯 기록을 CRM 합성 사례에 적용. [판단 기록 양식](e-book/record.md) |
-| 도구 | 기존 결과 분석 작업실과 설계 진입 기능의 후속 개발. [현재 로드맵](tool/ROADMAP.md), [제품 합의](tool/prd/v01/README.md) |
+| 도구 | 열 연결·분석·요약·판단 기록과 입력을 유지하는 시연 도움말. [현재 앱](tool/app/README.md), [다운로드](tool/downloads/README.md), [제품 합의](tool/prd/README.md), [남은 과제](tool/ROADMAP.md). 자유 설계 대화는 후속입니다. |
 | 영상 | A/B 테스트 교육 자료의 제작 코드. [안내](video-production/README.md) |
 
 GitHub 전자책은 버전 표시 없는 최신 한 세트만 관리합니다. 이전 판, 원자료와 감사 기록 및 제작 입력은 로컬에 보존합니다. 과거 Git 이력을 재작성하지 않았고 도구와 영상 자료는 이번 전자책 정리 범위로 삭제하지 않습니다.

@@ -1,0 +1,1062 @@
+{
+  "task": "R02",
+  "generated_at": "2026-11-23T01:16:10.074Z",
+  "runtime": "v24.19.0",
+  "command": "node tests/narrative_smoke.cjs --evidence",
+  "status": "passed",
+  "passed": 26,
+  "failed": 0,
+  "tests": [
+    "whole hold reason from actual results",
+    "B superior remains statistical not application approval",
+    "A superior is not biased to B",
+    "Holm reversal explained from actual raw and adjusted p",
+    "unconfirmed assumptions do not create an inference",
+    "arm cap is unsupported not a winner",
+    "posthoc descriptive group is labelled exploratory",
+    "missing segment blocks group inference not overall counts",
+    "empty group arm has separate explanation",
+    "insufficient interaction information does not imply equality",
+    "actual interaction hold is not proof of no difference",
+    "supported direct difference is not an A or B treatment winner",
+    "unrequested interaction stays unrequested",
+    "invalid input produces no invented comparison",
+    "context missing values never infer audience",
+    "all free context values HTML escaped",
+    "explanation card escapes arbitrary text",
+    "zero overall denominator is not falsely called unknown design",
+    "R02 N01 posthoc and missing segment constraints both remain explicit",
+    "R02 N02 exact empty segment arm A",
+    "R02 N02 exact empty segment arm B",
+    "R02 N02 exact empty segment arm A_B",
+    "R02 N03 invalid counts requires input correction not descriptive statistics",
+    "R02 N03 invalid header requires input correction not descriptive statistics",
+    "R02 N03 invalid parse requires input correction not descriptive statistics",
+    "R02 valid unconfirmed assumptions retain descriptive-statistics guidance"
+  ],
+  "actual_engine_cases": [
+    {
+      "id": "N01_missing_posthoc",
+      "input": "arm,success,total,segment\nA,10,100,x\nB,20,100,x\nA,10,100,y\nB,20,100,y\nA,1,10,",
+      "plan": {
+        "randomized": true,
+        "independent": true,
+        "mature": true,
+        "fixedStop": true,
+        "includeSegments": true,
+        "segmentPrespecified": false,
+        "alpha": 0.05
+      },
+      "engine_result": {
+        "version": "0.2.0",
+        "status": "limited",
+        "inference_allowed": true,
+        "overall": {
+          "A": {
+            "success": 21,
+            "total": 210,
+            "rate": 0.1,
+            "ci": [
+              0.06633959592575667,
+              0.14803164468166993
+            ]
+          },
+          "B": {
+            "success": 40,
+            "total": 200,
+            "rate": 0.2,
+            "ci": [
+              0.15045200926098115,
+              0.2608551865653788
+            ]
+          },
+          "diff": 0.1,
+          "relative_change": 1,
+          "ci": [
+            0.030992447680706067,
+            0.16954406181945658
+          ],
+          "p_raw": 0.005311459995653059,
+          "p_adjusted": 0.005311459995653059,
+          "winner": "B",
+          "inference_allowed": true,
+          "status": "tested"
+        },
+        "segments": [
+          {
+            "A": {
+              "success": 10,
+              "total": 100,
+              "rate": 0.1
+            },
+            "B": {
+              "success": 20,
+              "total": 100,
+              "rate": 0.2
+            },
+            "diff": 0.1,
+            "relative_change": 1,
+            "ci": null,
+            "p_raw": null,
+            "p_adjusted": null,
+            "winner": "not_tested",
+            "inference_allowed": false,
+            "status": "descriptive",
+            "label": "G1",
+            "exploratory": true
+          },
+          {
+            "A": {
+              "success": 10,
+              "total": 100,
+              "rate": 0.1
+            },
+            "B": {
+              "success": 20,
+              "total": 100,
+              "rate": 0.2
+            },
+            "diff": 0.1,
+            "relative_change": 1,
+            "ci": null,
+            "p_raw": null,
+            "p_adjusted": null,
+            "winner": "not_tested",
+            "inference_allowed": false,
+            "status": "descriptive",
+            "label": "G2",
+            "exploratory": true
+          }
+        ],
+        "interaction": {
+          "diff": null,
+          "ci": null,
+          "p_raw": null,
+          "p_adjusted": null,
+          "winner": "not_tested",
+          "status": "not_requested"
+        },
+        "family": {
+          "m": 1,
+          "method": "Holm",
+          "alpha": 0.05,
+          "hypotheses": [
+            {
+              "key": "overall",
+              "supported": true,
+              "p_raw": 0.005311459995653059,
+              "p_adjusted": 0.005311459995653059,
+              "included": true
+            }
+          ]
+        },
+        "issues": [
+          {
+            "code": "MISSING_SEGMENT",
+            "row": 6,
+            "column": "segment",
+            "message": "Missing segment remains in overall totals; segment inference is blocked.",
+            "severity": "warning"
+          },
+          {
+            "code": "POSTHOC_SEGMENTS",
+            "row": null,
+            "column": "segment",
+            "message": "Post-hoc segment results are descriptive only; only the overall planned comparison uses m=1.",
+            "severity": "warning"
+          },
+          {
+            "code": "SEGMENT_INFERENCE_BLOCKED",
+            "row": null,
+            "column": "segment",
+            "message": "Missing segment values are included overall but block segment inference.",
+            "severity": "warning"
+          }
+        ],
+        "interval_note": "Nominal 95% Wilson / Newcombe intervals; not Holm simultaneous intervals and not dual to Fisher exact tests.",
+        "assumptions": {
+          "randomized": true,
+          "independent": true,
+          "mature": true,
+          "fixedStop": true,
+          "basis": "user_confirmed"
+        },
+        "segmentPrespecified": false
+      },
+      "explanations": [
+        {
+          "code": "EXPLORATORY",
+          "headline": "탐색 집단이며 집단 결측 제한도 있어요",
+          "body": "B의 성공 비율이 더 높게 관측됐어요. 집단 기준의 사전성이 확인되지 않아 확증 승패를 내리지 않았어요. 또한 집단 정보가 누락된 참여자는 전체에 포함했지만 집단별 검정은 제한했어요.",
+          "next": "기존 사전 계획과 누락된 집단 정보의 의미를 각각 확인해 주세요. 사전 계획이 확인되어도 결측 제한은 남아요. 사후 기준은 탐색으로 유지하고, 유리한 결과를 만들려고 참여자를 제외하지 마세요."
+        },
+        {
+          "code": "EXPLORATORY",
+          "headline": "탐색 집단이며 집단 결측 제한도 있어요",
+          "body": "B의 성공 비율이 더 높게 관측됐어요. 집단 기준의 사전성이 확인되지 않아 확증 승패를 내리지 않았어요. 또한 집단 정보가 누락된 참여자는 전체에 포함했지만 집단별 검정은 제한했어요.",
+          "next": "기존 사전 계획과 누락된 집단 정보의 의미를 각각 확인해 주세요. 사전 계획이 확인되어도 결측 제한은 남아요. 사후 기준은 탐색으로 유지하고, 유리한 결과를 만들려고 참여자를 제외하지 마세요."
+        }
+      ],
+      "result_unchanged": true
+    },
+    {
+      "id": "N02_empty_A",
+      "input": "arm,success,total,segment\nA,0,0,x\nB,10,100,x\nA,10,100,y\nB,10,100,y",
+      "plan": {
+        "randomized": true,
+        "independent": true,
+        "mature": true,
+        "fixedStop": true,
+        "includeSegments": true,
+        "segmentPrespecified": true,
+        "alpha": 0.05
+      },
+      "engine_result": {
+        "version": "0.2.0",
+        "status": "limited",
+        "inference_allowed": true,
+        "overall": {
+          "A": {
+            "success": 10,
+            "total": 100,
+            "rate": 0.1,
+            "ci": [
+              0.0552291370606751,
+              0.17436566150491345
+            ]
+          },
+          "B": {
+            "success": 20,
+            "total": 200,
+            "rate": 0.1,
+            "ci": [
+              0.06567044866909588,
+              0.1494058124327174
+            ]
+          },
+          "diff": 0,
+          "relative_change": 0,
+          "ci": [
+            -0.08190707970404357,
+            0.06667356650479009
+          ],
+          "p_raw": 1,
+          "p_adjusted": 1,
+          "winner": "hold",
+          "inference_allowed": true,
+          "status": "tested"
+        },
+        "segments": [
+          {
+            "A": {
+              "success": 0,
+              "total": 0,
+              "rate": null
+            },
+            "B": {
+              "success": 10,
+              "total": 100,
+              "rate": 0.1
+            },
+            "diff": null,
+            "relative_change": null,
+            "ci": null,
+            "p_raw": null,
+            "p_adjusted": null,
+            "winner": "not_tested",
+            "inference_allowed": false,
+            "status": "unsupported",
+            "label": "G1",
+            "exploratory": false
+          },
+          {
+            "A": {
+              "success": 10,
+              "total": 100,
+              "rate": 0.1,
+              "ci": [
+                0.0552291370606751,
+                0.17436566150491345
+              ]
+            },
+            "B": {
+              "success": 10,
+              "total": 100,
+              "rate": 0.1,
+              "ci": [
+                0.0552291370606751,
+                0.17436566150491345
+              ]
+            },
+            "diff": 0,
+            "relative_change": 0,
+            "ci": [
+              -0.08680254477488078,
+              0.08680254477488078
+            ],
+            "p_raw": 1,
+            "p_adjusted": 1,
+            "winner": "hold",
+            "inference_allowed": true,
+            "status": "tested",
+            "label": "G2",
+            "exploratory": false
+          }
+        ],
+        "interaction": {
+          "diff": null,
+          "ci": null,
+          "p_raw": null,
+          "p_adjusted": null,
+          "winner": "not_tested",
+          "status": "unsupported"
+        },
+        "family": {
+          "m": 4,
+          "method": "Holm",
+          "alpha": 0.05,
+          "hypotheses": [
+            {
+              "key": "overall",
+              "supported": true,
+              "p_raw": 1,
+              "p_adjusted": 1,
+              "included": true
+            },
+            {
+              "key": "G1",
+              "supported": false,
+              "p_raw": null,
+              "p_adjusted": null,
+              "included": true
+            },
+            {
+              "key": "G2",
+              "supported": true,
+              "p_raw": 1,
+              "p_adjusted": 1,
+              "included": true
+            },
+            {
+              "key": "interaction",
+              "supported": false,
+              "p_raw": null,
+              "p_adjusted": null,
+              "included": true
+            }
+          ]
+        },
+        "issues": [
+          {
+            "code": "EMPTY_SEGMENT_ARM",
+            "row": null,
+            "column": "G1",
+            "message": "Both segment denominators must be positive.",
+            "severity": "warning"
+          },
+          {
+            "code": "INTERACTION_UNSUPPORTED",
+            "row": null,
+            "column": null,
+            "message": "Direct risk-difference inference requires complete prespecified groups and at least five successes and failures in each of four cells.",
+            "severity": "warning"
+          }
+        ],
+        "interval_note": "Nominal 95% Wilson / Newcombe intervals; not Holm simultaneous intervals and not dual to Fisher exact tests.",
+        "assumptions": {
+          "randomized": true,
+          "independent": true,
+          "mature": true,
+          "fixedStop": true,
+          "basis": "user_confirmed"
+        },
+        "segmentPrespecified": true
+      },
+      "explanations": [
+        {
+          "code": "GROUP_UNSUPPORTED",
+          "headline": "이 집단의 A 분모가 0이에요",
+          "body": "이 집단의 A 분모가 0이라 해당 안의 성공 비율은 정의되지 않아요. 양쪽 안의 분모가 모두 양수여야 이 집단을 검정할 수 있어요.",
+          "next": "이 집단의 A/B 배정 집계와 누락 여부를 확인해 주세요. 관측되지 않은 사람을 실패로 채우거나 없는 자료를 만들어 넣지 마세요."
+        },
+        {
+          "code": "HOLD",
+          "headline": "우열을 정할 근거가 아직 충분하지 않아요",
+          "body": "두 안의 관측 성공 비율은 같아요. 관측 차이만으로 통계적 승패를 확정할 수는 없어요. 보류는 효과가 없거나 두 안이 동등·안전하다는 증명이 아니에요.",
+          "next": "정한 관측·표본 계획을 충족했는지, 남은 불확실성이 실제 선택을 바꾸는지 검토하세요. 유의할 때까지 임의로 연장하지 마세요."
+        }
+      ],
+      "result_unchanged": true
+    },
+    {
+      "id": "N02_empty_B",
+      "input": "arm,success,total,segment\nA,10,100,x\nB,0,0,x\nA,10,100,y\nB,10,100,y",
+      "plan": {
+        "randomized": true,
+        "independent": true,
+        "mature": true,
+        "fixedStop": true,
+        "includeSegments": true,
+        "segmentPrespecified": true,
+        "alpha": 0.05
+      },
+      "engine_result": {
+        "version": "0.2.0",
+        "status": "limited",
+        "inference_allowed": true,
+        "overall": {
+          "A": {
+            "success": 20,
+            "total": 200,
+            "rate": 0.1,
+            "ci": [
+              0.06567044866909588,
+              0.1494058124327174
+            ]
+          },
+          "B": {
+            "success": 10,
+            "total": 100,
+            "rate": 0.1,
+            "ci": [
+              0.0552291370606751,
+              0.17436566150491345
+            ]
+          },
+          "diff": 0,
+          "relative_change": 0,
+          "ci": [
+            -0.06667356650479009,
+            0.08190707970404357
+          ],
+          "p_raw": 1,
+          "p_adjusted": 1,
+          "winner": "hold",
+          "inference_allowed": true,
+          "status": "tested"
+        },
+        "segments": [
+          {
+            "A": {
+              "success": 10,
+              "total": 100,
+              "rate": 0.1
+            },
+            "B": {
+              "success": 0,
+              "total": 0,
+              "rate": null
+            },
+            "diff": null,
+            "relative_change": null,
+            "ci": null,
+            "p_raw": null,
+            "p_adjusted": null,
+            "winner": "not_tested",
+            "inference_allowed": false,
+            "status": "unsupported",
+            "label": "G1",
+            "exploratory": false
+          },
+          {
+            "A": {
+              "success": 10,
+              "total": 100,
+              "rate": 0.1,
+              "ci": [
+                0.0552291370606751,
+                0.17436566150491345
+              ]
+            },
+            "B": {
+              "success": 10,
+              "total": 100,
+              "rate": 0.1,
+              "ci": [
+                0.0552291370606751,
+                0.17436566150491345
+              ]
+            },
+            "diff": 0,
+            "relative_change": 0,
+            "ci": [
+              -0.08680254477488078,
+              0.08680254477488078
+            ],
+            "p_raw": 1,
+            "p_adjusted": 1,
+            "winner": "hold",
+            "inference_allowed": true,
+            "status": "tested",
+            "label": "G2",
+            "exploratory": false
+          }
+        ],
+        "interaction": {
+          "diff": null,
+          "ci": null,
+          "p_raw": null,
+          "p_adjusted": null,
+          "winner": "not_tested",
+          "status": "unsupported"
+        },
+        "family": {
+          "m": 4,
+          "method": "Holm",
+          "alpha": 0.05,
+          "hypotheses": [
+            {
+              "key": "overall",
+              "supported": true,
+              "p_raw": 1,
+              "p_adjusted": 1,
+              "included": true
+            },
+            {
+              "key": "G1",
+              "supported": false,
+              "p_raw": null,
+              "p_adjusted": null,
+              "included": true
+            },
+            {
+              "key": "G2",
+              "supported": true,
+              "p_raw": 1,
+              "p_adjusted": 1,
+              "included": true
+            },
+            {
+              "key": "interaction",
+              "supported": false,
+              "p_raw": null,
+              "p_adjusted": null,
+              "included": true
+            }
+          ]
+        },
+        "issues": [
+          {
+            "code": "EMPTY_SEGMENT_ARM",
+            "row": null,
+            "column": "G1",
+            "message": "Both segment denominators must be positive.",
+            "severity": "warning"
+          },
+          {
+            "code": "INTERACTION_UNSUPPORTED",
+            "row": null,
+            "column": null,
+            "message": "Direct risk-difference inference requires complete prespecified groups and at least five successes and failures in each of four cells.",
+            "severity": "warning"
+          }
+        ],
+        "interval_note": "Nominal 95% Wilson / Newcombe intervals; not Holm simultaneous intervals and not dual to Fisher exact tests.",
+        "assumptions": {
+          "randomized": true,
+          "independent": true,
+          "mature": true,
+          "fixedStop": true,
+          "basis": "user_confirmed"
+        },
+        "segmentPrespecified": true
+      },
+      "explanations": [
+        {
+          "code": "GROUP_UNSUPPORTED",
+          "headline": "이 집단의 B 분모가 0이에요",
+          "body": "이 집단의 B 분모가 0이라 해당 안의 성공 비율은 정의되지 않아요. 양쪽 안의 분모가 모두 양수여야 이 집단을 검정할 수 있어요.",
+          "next": "이 집단의 A/B 배정 집계와 누락 여부를 확인해 주세요. 관측되지 않은 사람을 실패로 채우거나 없는 자료를 만들어 넣지 마세요."
+        },
+        {
+          "code": "HOLD",
+          "headline": "우열을 정할 근거가 아직 충분하지 않아요",
+          "body": "두 안의 관측 성공 비율은 같아요. 관측 차이만으로 통계적 승패를 확정할 수는 없어요. 보류는 효과가 없거나 두 안이 동등·안전하다는 증명이 아니에요.",
+          "next": "정한 관측·표본 계획을 충족했는지, 남은 불확실성이 실제 선택을 바꾸는지 검토하세요. 유의할 때까지 임의로 연장하지 마세요."
+        }
+      ],
+      "result_unchanged": true
+    },
+    {
+      "id": "N02_empty_A_B",
+      "input": "arm,success,total,segment\nA,0,0,x\nB,0,0,x\nA,10,100,y\nB,10,100,y",
+      "plan": {
+        "randomized": true,
+        "independent": true,
+        "mature": true,
+        "fixedStop": true,
+        "includeSegments": true,
+        "segmentPrespecified": true,
+        "alpha": 0.05
+      },
+      "engine_result": {
+        "version": "0.2.0",
+        "status": "limited",
+        "inference_allowed": true,
+        "overall": {
+          "A": {
+            "success": 10,
+            "total": 100,
+            "rate": 0.1,
+            "ci": [
+              0.0552291370606751,
+              0.17436566150491345
+            ]
+          },
+          "B": {
+            "success": 10,
+            "total": 100,
+            "rate": 0.1,
+            "ci": [
+              0.0552291370606751,
+              0.17436566150491345
+            ]
+          },
+          "diff": 0,
+          "relative_change": 0,
+          "ci": [
+            -0.08680254477488078,
+            0.08680254477488078
+          ],
+          "p_raw": 1,
+          "p_adjusted": 1,
+          "winner": "hold",
+          "inference_allowed": true,
+          "status": "tested"
+        },
+        "segments": [
+          {
+            "A": {
+              "success": 0,
+              "total": 0,
+              "rate": null
+            },
+            "B": {
+              "success": 0,
+              "total": 0,
+              "rate": null
+            },
+            "diff": null,
+            "relative_change": null,
+            "ci": null,
+            "p_raw": null,
+            "p_adjusted": null,
+            "winner": "not_tested",
+            "inference_allowed": false,
+            "status": "unsupported",
+            "label": "G1",
+            "exploratory": false
+          },
+          {
+            "A": {
+              "success": 10,
+              "total": 100,
+              "rate": 0.1,
+              "ci": [
+                0.0552291370606751,
+                0.17436566150491345
+              ]
+            },
+            "B": {
+              "success": 10,
+              "total": 100,
+              "rate": 0.1,
+              "ci": [
+                0.0552291370606751,
+                0.17436566150491345
+              ]
+            },
+            "diff": 0,
+            "relative_change": 0,
+            "ci": [
+              -0.08680254477488078,
+              0.08680254477488078
+            ],
+            "p_raw": 1,
+            "p_adjusted": 1,
+            "winner": "hold",
+            "inference_allowed": true,
+            "status": "tested",
+            "label": "G2",
+            "exploratory": false
+          }
+        ],
+        "interaction": {
+          "diff": null,
+          "ci": null,
+          "p_raw": null,
+          "p_adjusted": null,
+          "winner": "not_tested",
+          "status": "unsupported"
+        },
+        "family": {
+          "m": 4,
+          "method": "Holm",
+          "alpha": 0.05,
+          "hypotheses": [
+            {
+              "key": "overall",
+              "supported": true,
+              "p_raw": 1,
+              "p_adjusted": 1,
+              "included": true
+            },
+            {
+              "key": "G1",
+              "supported": false,
+              "p_raw": null,
+              "p_adjusted": null,
+              "included": true
+            },
+            {
+              "key": "G2",
+              "supported": true,
+              "p_raw": 1,
+              "p_adjusted": 1,
+              "included": true
+            },
+            {
+              "key": "interaction",
+              "supported": false,
+              "p_raw": null,
+              "p_adjusted": null,
+              "included": true
+            }
+          ]
+        },
+        "issues": [
+          {
+            "code": "EMPTY_SEGMENT_ARM",
+            "row": null,
+            "column": "G1",
+            "message": "Both segment denominators must be positive.",
+            "severity": "warning"
+          },
+          {
+            "code": "INTERACTION_UNSUPPORTED",
+            "row": null,
+            "column": null,
+            "message": "Direct risk-difference inference requires complete prespecified groups and at least five successes and failures in each of four cells.",
+            "severity": "warning"
+          }
+        ],
+        "interval_note": "Nominal 95% Wilson / Newcombe intervals; not Holm simultaneous intervals and not dual to Fisher exact tests.",
+        "assumptions": {
+          "randomized": true,
+          "independent": true,
+          "mature": true,
+          "fixedStop": true,
+          "basis": "user_confirmed"
+        },
+        "segmentPrespecified": true
+      },
+      "explanations": [
+        {
+          "code": "GROUP_UNSUPPORTED",
+          "headline": "이 집단의 A·B 분모가 0이에요",
+          "body": "이 집단의 A 분모가 0, B 분모가 0이라 해당 안의 성공 비율은 정의되지 않아요. 양쪽 안의 분모가 모두 양수여야 이 집단을 검정할 수 있어요.",
+          "next": "이 집단의 A/B 배정 집계와 누락 여부를 확인해 주세요. 관측되지 않은 사람을 실패로 채우거나 없는 자료를 만들어 넣지 마세요."
+        },
+        {
+          "code": "HOLD",
+          "headline": "우열을 정할 근거가 아직 충분하지 않아요",
+          "body": "두 안의 관측 성공 비율은 같아요. 관측 차이만으로 통계적 승패를 확정할 수는 없어요. 보류는 효과가 없거나 두 안이 동등·안전하다는 증명이 아니에요.",
+          "next": "정한 관측·표본 계획을 충족했는지, 남은 불확실성이 실제 선택을 바꾸는지 검토하세요. 유의할 때까지 임의로 연장하지 마세요."
+        }
+      ],
+      "result_unchanged": true
+    },
+    {
+      "id": "N03_invalid_counts",
+      "input": "arm,success,total\nA,11,10\nB,1,10",
+      "plan": {
+        "randomized": true,
+        "independent": true,
+        "mature": true,
+        "fixedStop": true,
+        "includeSegments": false,
+        "segmentPrespecified": true,
+        "alpha": 0.05
+      },
+      "engine_result": {
+        "version": "0.2.0",
+        "status": "invalid",
+        "inference_allowed": false,
+        "overall": null,
+        "segments": [],
+        "interaction": {
+          "diff": null,
+          "ci": null,
+          "p_raw": null,
+          "p_adjusted": null,
+          "winner": "not_tested",
+          "status": "not_requested"
+        },
+        "family": {
+          "m": 0,
+          "method": "Holm",
+          "alpha": 0.05,
+          "hypotheses": []
+        },
+        "issues": [
+          {
+            "code": "SUCCESS_GT_TOTAL",
+            "row": 2,
+            "column": "success",
+            "message": "Success exceeds total.",
+            "severity": "error"
+          }
+        ],
+        "interval_note": "Nominal 95% Wilson / Newcombe intervals; not Holm simultaneous intervals and not dual to Fisher exact tests.",
+        "assumptions": {
+          "randomized": true,
+          "independent": true,
+          "mature": true,
+          "fixedStop": true,
+          "basis": "user_confirmed"
+        },
+        "segmentPrespecified": true
+      },
+      "explanations": [
+        {
+          "code": "INTERACTION_BLOCKED",
+          "headline": "입력을 먼저 확인해 주세요",
+          "body": "유효한 수치 결과가 없어 전체 비교와 집단 간 직접 차이에 사용할 수치가 없어요.",
+          "next": "오류가 표시된 행과 열을 먼저 고친 뒤 다시 분석해 주세요. 수정 전 결과의 수치를 판단에 사용하지 마세요."
+        },
+        {
+          "code": "INVALID",
+          "headline": "입력을 먼저 확인해 주세요",
+          "body": "유효한 비교 결과가 없어 판정 이유를 만들지 않았어요.",
+          "next": "오류가 표시된 행과 열을 고친 뒤 다시 확인해 주세요."
+        }
+      ],
+      "result_unchanged": true
+    },
+    {
+      "id": "N03_invalid_header",
+      "input": "arm,success\nA,1\nB,1",
+      "plan": {
+        "randomized": true,
+        "independent": true,
+        "mature": true,
+        "fixedStop": true,
+        "includeSegments": false,
+        "segmentPrespecified": true,
+        "alpha": 0.05
+      },
+      "engine_result": {
+        "version": "0.2.0",
+        "status": "invalid",
+        "inference_allowed": false,
+        "overall": null,
+        "segments": [],
+        "interaction": {
+          "diff": null,
+          "ci": null,
+          "p_raw": null,
+          "p_adjusted": null,
+          "winner": "not_tested",
+          "status": "not_requested"
+        },
+        "family": {
+          "m": 0,
+          "method": "Holm",
+          "alpha": 0.05,
+          "hypotheses": []
+        },
+        "issues": [
+          {
+            "code": "MISSING_HEADER",
+            "row": 1,
+            "column": "total",
+            "message": "Required header is missing.",
+            "severity": "error"
+          }
+        ],
+        "interval_note": "Nominal 95% Wilson / Newcombe intervals; not Holm simultaneous intervals and not dual to Fisher exact tests.",
+        "assumptions": {
+          "randomized": true,
+          "independent": true,
+          "mature": true,
+          "fixedStop": true,
+          "basis": "user_confirmed"
+        },
+        "segmentPrespecified": true
+      },
+      "explanations": [
+        {
+          "code": "INTERACTION_BLOCKED",
+          "headline": "입력을 먼저 확인해 주세요",
+          "body": "유효한 수치 결과가 없어 전체 비교와 집단 간 직접 차이에 사용할 수치가 없어요.",
+          "next": "오류가 표시된 행과 열을 먼저 고친 뒤 다시 분석해 주세요. 수정 전 결과의 수치를 판단에 사용하지 마세요."
+        },
+        {
+          "code": "INVALID",
+          "headline": "입력을 먼저 확인해 주세요",
+          "body": "유효한 비교 결과가 없어 판정 이유를 만들지 않았어요.",
+          "next": "오류가 표시된 행과 열을 고친 뒤 다시 확인해 주세요."
+        }
+      ],
+      "result_unchanged": true
+    },
+    {
+      "id": "N03_invalid_parse",
+      "input": "arm,success,total\nA,\"1,10",
+      "plan": {
+        "randomized": true,
+        "independent": true,
+        "mature": true,
+        "fixedStop": true,
+        "includeSegments": false,
+        "segmentPrespecified": true,
+        "alpha": 0.05
+      },
+      "engine_result": {
+        "version": "0.2.0",
+        "status": "invalid",
+        "inference_allowed": false,
+        "overall": null,
+        "segments": [],
+        "interaction": {
+          "diff": null,
+          "ci": null,
+          "p_raw": null,
+          "p_adjusted": null,
+          "winner": "not_tested",
+          "status": "not_requested"
+        },
+        "family": {
+          "m": 0,
+          "method": "Holm",
+          "alpha": 0.05,
+          "hypotheses": []
+        },
+        "issues": [
+          {
+            "code": "CSV_UNCLOSED_QUOTE",
+            "row": 2,
+            "column": 2,
+            "message": "Quoted field is not closed.",
+            "severity": "error"
+          }
+        ],
+        "interval_note": "Nominal 95% Wilson / Newcombe intervals; not Holm simultaneous intervals and not dual to Fisher exact tests.",
+        "assumptions": {
+          "randomized": true,
+          "independent": true,
+          "mature": true,
+          "fixedStop": true,
+          "basis": "user_confirmed"
+        },
+        "segmentPrespecified": true
+      },
+      "explanations": [
+        {
+          "code": "INTERACTION_BLOCKED",
+          "headline": "입력을 먼저 확인해 주세요",
+          "body": "유효한 수치 결과가 없어 전체 비교와 집단 간 직접 차이에 사용할 수치가 없어요.",
+          "next": "오류가 표시된 행과 열을 먼저 고친 뒤 다시 분석해 주세요. 수정 전 결과의 수치를 판단에 사용하지 마세요."
+        },
+        {
+          "code": "INVALID",
+          "headline": "입력을 먼저 확인해 주세요",
+          "body": "유효한 비교 결과가 없어 판정 이유를 만들지 않았어요.",
+          "next": "오류가 표시된 행과 열을 고친 뒤 다시 확인해 주세요."
+        }
+      ],
+      "result_unchanged": true
+    },
+    {
+      "id": "N03_valid_assumptions_control",
+      "input": "arm,success,total\nA,10,100\nB,30,100",
+      "plan": {
+        "randomized": false,
+        "independent": true,
+        "mature": true,
+        "fixedStop": true,
+        "includeSegments": false,
+        "segmentPrespecified": true,
+        "alpha": 0.05
+      },
+      "engine_result": {
+        "version": "0.2.0",
+        "status": "descriptive",
+        "inference_allowed": false,
+        "overall": {
+          "A": {
+            "success": 10,
+            "total": 100,
+            "rate": 0.1
+          },
+          "B": {
+            "success": 30,
+            "total": 100,
+            "rate": 0.3
+          },
+          "diff": 0.19999999999999998,
+          "relative_change": 1.9999999999999998,
+          "ci": null,
+          "p_raw": null,
+          "p_adjusted": null,
+          "winner": "not_tested",
+          "inference_allowed": false,
+          "status": "descriptive"
+        },
+        "segments": [],
+        "interaction": {
+          "diff": null,
+          "ci": null,
+          "p_raw": null,
+          "p_adjusted": null,
+          "winner": "not_tested",
+          "status": "not_requested"
+        },
+        "family": {
+          "m": 1,
+          "method": "Holm",
+          "alpha": 0.05,
+          "hypotheses": []
+        },
+        "issues": [
+          {
+            "code": "ASSUMPTIONS_UNCONFIRMED",
+            "row": null,
+            "column": null,
+            "message": "All four inference assumptions require explicit boolean true.",
+            "severity": "warning"
+          }
+        ],
+        "interval_note": "Nominal 95% Wilson / Newcombe intervals; not Holm simultaneous intervals and not dual to Fisher exact tests.",
+        "assumptions": {
+          "randomized": false,
+          "independent": true,
+          "mature": true,
+          "fixedStop": true,
+          "basis": "user_confirmed"
+        },
+        "segmentPrespecified": true
+      },
+      "explanations": [
+        {
+          "code": "INTERACTION_BLOCKED",
+          "headline": "직접 차이도 추론하지 않았어요",
+          "body": "전체 추론의 입력·설계 조건이나 지원 범위를 먼저 확인해야 해요.",
+          "next": "제한 코드와 배정·관측 기록을 확인하고, 조건 미확인 상태에서는 기술 통계만 사용해 주세요."
+        }
+      ],
+      "result_unchanged": true
+    }
+  ],
+  "source_sha256": {
+    "narrative.js": "570af0c9cb1e10063bf0842e2393bf7561938ca3327e23f71c485c79abce1f4a",
+    "engine.js": "f40cc1fbd3e87dde4050cb0155673c2f368b2e88274a30fa03aeb09dbcde05f7",
+    "tests/narrative_smoke.cjs": "4dfa9abb97842cb1bd7140447217fcd6b983ff317beb2e676c02842fe36be0df"
+  },
+  "reason_code_compatibility": {
+    "N01": "EXPLORATORY preserved; compound body adds missing-segment restriction.",
+    "N02": "GROUP_UNSUPPORTED preserved; exact zero-denominator arm comes only from g.A.total/g.B.total.",
+    "N03": "INTERACTION_BLOCKED preserved; invalid/no-overall input gets correction-first wording."
+  },
+  "scope_note": "Actual local prepare/analyze results only; no new statistics in narrative. No browser or independent statistical audit claimed."
+}

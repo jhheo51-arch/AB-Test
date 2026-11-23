@@ -1,0 +1,101 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-11-23T10:26:40.541450+09:00",
+  "timezone": "Asia/Seoul",
+  "deployment": "one_current_copy; local_history_only",
+  "visible_product_version_labels": false,
+  "embedded_help": {
+    "checks": 84,
+    "actual_playback": true,
+    "close_and_Escape_pause": true,
+    "state_and_confirmations_preserved": true,
+    "mobile_width": 390
+  },
+  "browser_counts": {
+    "interface_verification.json": 84,
+    "browser_verification.json": 43,
+    "workflow_verification.json": 37,
+    "regression_verification.json": 22,
+    "context_verification.json": 19,
+    "R03_browser_verification.json": 14
+  },
+  "actual_llm_baseline": true,
+  "unit_groups": [
+    {
+      "script": "lineage_smoke.cjs",
+      "groups": 16,
+      "exit_code": 0
+    },
+    {
+      "script": "project_schema_smoke.cjs",
+      "groups": 27,
+      "exit_code": 0
+    },
+    {
+      "script": "column_mapping_smoke.cjs",
+      "groups": 12,
+      "exit_code": 0
+    },
+    {
+      "script": "engine_smoke.cjs",
+      "groups": 19,
+      "exit_code": 0
+    },
+    {
+      "script": "narrative_smoke.cjs",
+      "groups": 26,
+      "exit_code": 0
+    }
+  ],
+  "numeric_core_unchanged": {
+    "engine.js": true,
+    "worker.js": true,
+    "narrative.js": true,
+    "project-schema.js": true,
+    "lineage.js": true,
+    "column-mapping.js": true
+  },
+  "required_internal_schema_identifiers_retained": true,
+  "video": {
+    "sha256": "137d7ebc52570b2e1368755a87efb95bb3420cf77f84c0069b9dd68cc69d0492",
+    "duration_seconds": 77.68,
+    "full_decode_checked": true,
+    "scope": "real app interactions in separate synthetic browser, not participant outcome"
+  },
+  "pdf": {
+    "status": "PASS",
+    "pages": 3,
+    "minimum_actual_font_pt": 12.0,
+    "excluded_group_detail_checked": true,
+    "rendered_all_pages": true,
+    "scope": "synthetic default report; not all possible user-content pagination"
+  },
+  "test_notes": [
+    "Global help is accessible in result view; contextual input shortcuts remain.",
+    "Pause is synchronous before close/cancel; close event also cleans up.",
+    "Read-only local /api/status permitted by help test guard; model POSTs remain blocked.",
+    "Large-file source display exceeded original 5-second harness wait; bounded 30-second wait and unchanged analytic predicates pass. Performance not guaranteed."
+  ],
+  "source_sha256": {
+    "app.js": "e04b9a73df0c46039205097907f910bf8da93d4eb6b6ac87956494b056e1a7e8",
+    "column-mapping.js": "d1d3b0c7a2e3aeb520c9c831d3583cf5e2d889c6ea079837a7814868ab361a68",
+    "context.css": "e75a39ddceb74b433ab3a4fb30a41ce0e7a5ed4fa5d82cc940bf4219b39b4edf",
+    "engine.js": "f40cc1fbd3e87dde4050cb0155673c2f368b2e88274a30fa03aeb09dbcde05f7",
+    "index.html": "007815fa1f1dc7d6008a12b0b6ced9de7935306f46de3113d0f1f70ca89b1f1e",
+    "launch.py": "8456b3f589dd918032d73dcfd2eecc5d46b70e57a40dbdc8a64dc865d35df62d",
+    "lineage.js": "6fbe55b5ba392e6bb64ff3dcaa5702936301aceac4f6599a55b99bad6bed84ba",
+    "narrative.js": "570af0c9cb1e10063bf0842e2393bf7561938ca3327e23f71c485c79abce1f4a",
+    "project-schema.js": "ff5d74a90ee4b2f3a1a6cc5de385db86607c990b8ab00fd5e0fa10df9929fafd",
+    "server.py": "3744feb95fb8c92e2a9f7951f82ed54386967f36f0b449e3fa3218aaadce119a",
+    "styles.css": "0869f2c9d558ad908dc67c07ad06d58af0ae6acdc09d80eb66bd0bf397e8a153",
+    "theme.css": "32af93deee832077377efcb2b83be4aeafe16fb3cd06e705ecc1e2a4038efd13",
+    "worker.js": "6f30bd381c13bbad95dcd6d6570dff14a23df9f5ad5b0a5d4d05bfe6078d7179",
+    "workflow.css": "98254b477975d83aad6ce4b8667776f21c772a1e2974d7d667682294de82abfa",
+    "workflow.js": "f70e3989f4f5432210ab4141f6dd83f86799248b82c59c1ff0b9fd7fdaad5478"
+  },
+  "scope_limits": [
+    "Synthetic checks, not independent user study or full security/accessibility certification",
+    "No change to statistical support limits",
+    "No live personal feedback published"
+  ]
+}

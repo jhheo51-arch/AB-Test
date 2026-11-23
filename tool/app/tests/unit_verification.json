@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "runs": [
+    {
+      "script": "lineage_smoke.cjs",
+      "groups": 16,
+      "exit_code": 0
+    },
+    {
+      "script": "project_schema_smoke.cjs",
+      "groups": 27,
+      "exit_code": 0
+    },
+    {
+      "script": "column_mapping_smoke.cjs",
+      "groups": 12,
+      "exit_code": 0
+    },
+    {
+      "script": "engine_smoke.cjs",
+      "groups": 19,
+      "exit_code": 0
+    },
+    {
+      "script": "narrative_smoke.cjs",
+      "groups": 26,
+      "exit_code": 0
+    }
+  ]
+}

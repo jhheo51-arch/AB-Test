@@ -3,24 +3,15 @@ scripts/*v20*.py -text whitespace=cr-at-eol
 scripts/*v21*.py -text whitespace=cr-at-eol
 scripts/*v22*.py -text whitespace=cr-at-eol
 
-# Preserve local app, fixed-input audits and result evidence byte-for-byte.
-tool/workspace/v041/** -text whitespace=cr-at-eol
-tool/reviews/v04_audit/** -text whitespace=cr-at-eol
-tool/reviews/v03_personas/** -text whitespace=cr-at-eol
-tool/workspace/v041/fonts/LICENSE.txt -text whitespace=-blank-at-eol,cr-at-eol
 
-# Preserve v0.5 source, validation and immutable release bytes.
-tool/workspace/v05/** -text whitespace=cr-at-eol
-tool/releases/v05/** -text whitespace=cr-at-eol
-tool/reviews/v041_reevaluation/** -text whitespace=cr-at-eol
-tool/workspace/v05/fonts/LICENSE.txt -text whitespace=-blank-at-eol,cr-at-eol
 
-# Preserve v0.5.1 source, validation, synthetic review kit and release bytes.
-tool/workspace/v051/** -text whitespace=cr-at-eol
-tool/releases/v051/** -text whitespace=cr-at-eol
-tool/user-review/v051/** -text whitespace=cr-at-eol
-tool/workspace/v051/fonts/LICENSE.txt -text whitespace=-blank-at-eol,cr-at-eol
 
 # Current reader: preserve canonical bytes; edition archives are local-only.
 e-book/** -text whitespace=cr-at-eol
 e-book/assets/LICENSE-* -text whitespace=-blank-at-eol,cr-at-eol
+
+# Preserve exact current app, fixtures, evidence and packaged distribution bytes.
+tool/app/** -text whitespace=cr-at-eol
+tool/review/** -text whitespace=cr-at-eol
+tool/downloads/** -text whitespace=cr-at-eol
+tool/app/fonts/LICENSE.txt -text whitespace=-blank-at-eol,cr-at-eol
