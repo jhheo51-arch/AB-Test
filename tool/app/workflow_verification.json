@@ -35,7 +35,7 @@
       "pass": true
     },
     {
-      "name": "v5 stores judgment but no original headers/rows",
+      "name": "current schema stores judgment but no original headers/rows",
       "pass": true
     },
     {

@@ -1,101 +1,242 @@
 {
   "status": "PASS",
-  "checked_at": "2026-11-23T10:26:40.541450+09:00",
-  "timezone": "Asia/Seoul",
-  "deployment": "one_current_copy; local_history_only",
-  "visible_product_version_labels": false,
-  "embedded_help": {
-    "checks": 84,
-    "actual_playback": true,
-    "close_and_Escape_pause": true,
-    "state_and_confirmations_preserved": true,
-    "mobile_width": 390
+  "timestamp_utc": "2026-11-23T02:40:02.071489+00:00",
+  "deployment": "single canonical current app; latest-only; no visible product version labels",
+  "integration_suite": {
+    "scripts": 21,
+    "all_exit_zero": true,
+    "record": "integration_verification.json",
+    "server_stopped": true
   },
-  "browser_counts": {
+  "browser_checks": {
+    "browser_verification.json": 40,
+    "context_verification.json": 19,
     "interface_verification.json": 84,
-    "browser_verification.json": 43,
     "workflow_verification.json": 37,
     "regression_verification.json": 22,
-    "context_verification.json": 19,
-    "R03_browser_verification.json": 14
+    "R03_browser_verification.json": 14,
+    "design-evidence/BROWSER_VERIFICATION.json": 21,
+    "design-evidence/BOUNDARY_VERIFICATION.json": 13
   },
-  "actual_llm_baseline": true,
   "unit_groups": [
-    {
-      "script": "lineage_smoke.cjs",
-      "groups": 16,
-      "exit_code": 0
-    },
-    {
-      "script": "project_schema_smoke.cjs",
-      "groups": 27,
-      "exit_code": 0
-    },
     {
       "script": "column_mapping_smoke.cjs",
       "groups": 12,
-      "exit_code": 0
+      "exit_code": 0,
+      "log": "evidence/integration/column_mapping_smoke.log"
+    },
+    {
+      "script": "design_smoke.cjs",
+      "groups": 16,
+      "exit_code": 0,
+      "log": "evidence/integration/design_smoke.log"
     },
     {
       "script": "engine_smoke.cjs",
       "groups": 19,
-      "exit_code": 0
+      "exit_code": 0,
+      "log": "evidence/integration/engine_smoke.log"
+    },
+    {
+      "script": "lineage_smoke.cjs",
+      "groups": 16,
+      "exit_code": 0,
+      "log": "evidence/integration/lineage_smoke.log"
     },
     {
       "script": "narrative_smoke.cjs",
       "groups": 26,
-      "exit_code": 0
+      "exit_code": 0,
+      "log": "evidence/integration/narrative_smoke.log"
+    },
+    {
+      "script": "project_schema_smoke.cjs",
+      "groups": 27,
+      "exit_code": 0,
+      "log": "evidence/integration/project_schema_smoke.log"
     }
   ],
-  "numeric_core_unchanged": {
+  "unit_group_total": 116,
+  "numeric_reference": {
+    "record": "tests/reference_verification.json",
+    "status": "PASS",
+    "summary": {
+      "cases": {
+        "total": 224,
+        "passed": 224,
+        "failed": 0
+      },
+      "interaction_cases": {
+        "total": 11,
+        "passed": 11,
+        "failed": 0
+      },
+      "holm_independent_only": {
+        "total": 8,
+        "passed": 8,
+        "failed": 0
+      },
+      "interaction_numeric": {
+        "total": 5,
+        "passed": 5,
+        "failed": 0
+      },
+      "interaction_information_gates": {
+        "total": 5,
+        "passed": 5,
+        "failed": 0
+      },
+      "interaction_api_boundary": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0
+      },
+      "actual_engine_family": {
+        "m1": 224,
+        "m4": 10
+      },
+      "failed_checks": 0
+    }
+  },
+  "current_pdf_records": [
+    "pdf_verification.json",
+    "design-evidence/PDF_TEXT_VERIFICATION.json",
+    "workflow_evidence/GUIDED_PDF_PROOF.json",
+    "lineage_evidence/LINEAGE_PDF_PROOF.json"
+  ],
+  "source_sha256": {
+    "app.js": "36e060594c53fe4742316fc25a51a3feb279721a5c37d29688584e59f28ed74c",
+    "index.html": "baf4e74723e3c74bb1423aa6afa01747a949103ca79a424456807275f1fa6c8d",
+    "server.py": "56839c1f8849aa059eb8ba4bc4f41f6ec1f4a66d20f2ef18e2d033357d5b5662",
+    "project-schema.js": "6512eba3c1e0c1facf246633f2542a078ba61c6d9a46c0550fee14be3fcc5700",
+    "design.js": "c2928c37c92a053534682baf0da82fbbe98fdf249ef7180604cd05cdc5ddda22",
+    "design-ui.js": "2e5e46fa1584f6061078ee60036114f5465062caa65c2d9fee743a8d4aef0087",
+    "design.css": "9722b6a31ce307e27646a2ea7a08a7248fa04fc40e41b692eb2913b9bb3b6ccb",
+    "workflow.js": "f70e3989f4f5432210ab4141f6dd83f86799248b82c59c1ff0b9fd7fdaad5478",
+    "engine.js": "f40cc1fbd3e87dde4050cb0155673c2f368b2e88274a30fa03aeb09dbcde05f7",
+    "worker.js": "6f30bd381c13bbad95dcd6d6570dff14a23df9f5ad5b0a5d4d05bfe6078d7179",
+    "narrative.js": "570af0c9cb1e10063bf0842e2393bf7561938ca3327e23f71c485c79abce1f4a",
+    "lineage.js": "6fbe55b5ba392e6bb64ff3dcaa5702936301aceac4f6599a55b99bad6bed84ba",
+    "column-mapping.js": "d1d3b0c7a2e3aeb520c9c831d3583cf5e2d889c6ea079837a7814868ab361a68",
+    "theme.css": "32af93deee832077377efcb2b83be4aeafe16fb3cd06e705ecc1e2a4038efd13",
+    "context.css": "e75a39ddceb74b433ab3a4fb30a41ce0e7a5ed4fa5d82cc940bf4219b39b4edf",
+    "workflow.css": "98254b477975d83aad6ce4b8667776f21c772a1e2974d7d667682294de82abfa",
+    "styles.css": "0869f2c9d558ad908dc67c07ad06d58af0ae6acdc09d80eb66bd0bf397e8a153"
+  },
+  "preserved_current_remote_bytes": {
     "engine.js": true,
     "worker.js": true,
     "narrative.js": true,
-    "project-schema.js": true,
     "lineage.js": true,
-    "column-mapping.js": true
+    "column-mapping.js": true,
+    "workflow.js": true,
+    "theme.css": true,
+    "context.css": true,
+    "workflow.css": true,
+    "styles.css": true,
+    "help/walkthrough.mp4": true
   },
-  "required_internal_schema_identifiers_retained": true,
   "video": {
     "sha256": "137d7ebc52570b2e1368755a87efb95bb3420cf77f84c0069b9dd68cc69d0492",
-    "duration_seconds": 77.68,
-    "full_decode_checked": true,
-    "scope": "real app interactions in separate synthetic browser, not participant outcome"
+    "current_metadata": [
+      {
+        "case": "initial button close",
+        "width": 1280,
+        "height": 900,
+        "duration": 77.68,
+        "readyState": 1
+      },
+      {
+        "case": "initial Escape close",
+        "width": 1280,
+        "height": 900,
+        "duration": 77.68,
+        "readyState": 1
+      },
+      {
+        "case": "prepared input button close",
+        "width": 1280,
+        "height": 900,
+        "duration": 77.68,
+        "readyState": 1
+      },
+      {
+        "case": "analyzed result Escape close",
+        "width": 1280,
+        "height": 900,
+        "duration": 77.68,
+        "readyState": 1
+      },
+      {
+        "case": "share with both consents button close",
+        "width": 1280,
+        "height": 900,
+        "duration": 77.68,
+        "readyState": 4
+      },
+      {
+        "case": "share with both consents Escape close",
+        "width": 1280,
+        "height": 900,
+        "duration": 77.68,
+        "readyState": 1
+      },
+      {
+        "case": "mapping error button close",
+        "width": 1280,
+        "height": 900,
+        "duration": 77.68,
+        "readyState": 4
+      },
+      {
+        "case": "mapping error Escape close",
+        "width": 1280,
+        "height": 900,
+        "duration": 77.68,
+        "readyState": 4
+      },
+      {
+        "case": "390px error button close",
+        "width": 1280,
+        "height": 900,
+        "duration": 77.68,
+        "readyState": 1
+      },
+      {
+        "case": "390px error Escape close",
+        "width": 1280,
+        "height": 900,
+        "duration": 77.68,
+        "readyState": 4
+      }
+    ],
+    "design_feature_tutorial_added": false,
+    "full_decode": "historical baseline; not rerun in this integration; actual Chrome playback rerun"
   },
-  "pdf": {
-    "status": "PASS",
-    "pages": 3,
-    "minimum_actual_font_pt": 12.0,
-    "excluded_group_detail_checked": true,
-    "rendered_all_pages": true,
-    "scope": "synthetic default report; not all possible user-content pagination"
+  "storage": {
+    "schema": 6,
+    "legacy_imports": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "same_save_parse_normalization": true,
+    "audience_guided_maxlength": 300
   },
-  "test_notes": [
-    "Global help is accessible in result view; contextual input shortcuts remain.",
-    "Pause is synchronous before close/cancel; close event also cleans up.",
-    "Read-only local /api/status permitted by help test guard; model POSTs remain blocked.",
-    "Large-file source display exceeded original 5-second harness wait; bounded 30-second wait and unchanged analytic predicates pass. Performance not guaranteed."
+  "actual_model_calls_this_integration": 0,
+  "human_observations": 0,
+  "historical_baselines_not_rerun": [
+    "narrative_verification.json (original summary; current smoke rerun recorded separately)",
+    "prior actual model connection; no model called in current integration",
+    "prior video full-decode certification; exact bytes preserved"
   ],
-  "source_sha256": {
-    "app.js": "e04b9a73df0c46039205097907f910bf8da93d4eb6b6ac87956494b056e1a7e8",
-    "column-mapping.js": "d1d3b0c7a2e3aeb520c9c831d3583cf5e2d889c6ea079837a7814868ab361a68",
-    "context.css": "e75a39ddceb74b433ab3a4fb30a41ce0e7a5ed4fa5d82cc940bf4219b39b4edf",
-    "engine.js": "f40cc1fbd3e87dde4050cb0155673c2f368b2e88274a30fa03aeb09dbcde05f7",
-    "index.html": "007815fa1f1dc7d6008a12b0b6ced9de7935306f46de3113d0f1f70ca89b1f1e",
-    "launch.py": "8456b3f589dd918032d73dcfd2eecc5d46b70e57a40dbdc8a64dc865d35df62d",
-    "lineage.js": "6fbe55b5ba392e6bb64ff3dcaa5702936301aceac4f6599a55b99bad6bed84ba",
-    "narrative.js": "570af0c9cb1e10063bf0842e2393bf7561938ca3327e23f71c485c79abce1f4a",
-    "project-schema.js": "ff5d74a90ee4b2f3a1a6cc5de385db86607c990b8ab00fd5e0fa10df9929fafd",
-    "server.py": "3744feb95fb8c92e2a9f7951f82ed54386967f36f0b449e3fa3218aaadce119a",
-    "styles.css": "0869f2c9d558ad908dc67c07ad06d58af0ae6acdc09d80eb66bd0bf397e8a153",
-    "theme.css": "32af93deee832077377efcb2b83be4aeafe16fb3cd06e705ecc1e2a4038efd13",
-    "worker.js": "6f30bd381c13bbad95dcd6d6570dff14a23df9f5ad5b0a5d4d05bfe6078d7179",
-    "workflow.css": "98254b477975d83aad6ce4b8667776f21c772a1e2974d7d667682294de82abfa",
-    "workflow.js": "f70e3989f4f5432210ab4141f6dd83f86799248b82c59c1ff0b9fd7fdaad5478"
-  },
-  "scope_limits": [
-    "Synthetic checks, not independent user study or full security/accessibility certification",
-    "No change to statistical support limits",
-    "No live personal feedback published"
+  "initial_run": "evidence/integration-initial/result.json",
+  "initial_issues": "design navigation wiring and old-schema test expectations corrected; initial parallel worker readiness timeout not reproduced serially; general cause not established",
+  "limits": [
+    "Synthetic automation, not participant study",
+    "No actual AI semantic design; local fixed questions and proposals",
+    "No new statistical support or automatic application approval",
+    "No design tutorial added to existing analysis video"
   ]
 }

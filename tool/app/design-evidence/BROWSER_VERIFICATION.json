@@ -1,0 +1,93 @@
+{
+  "status": "PASS",
+  "count": 21,
+  "checks": [
+    {
+      "name": "one-question flow retains six answers",
+      "pass": true
+    },
+    {
+      "name": "candidate produces proposals not confirmations",
+      "pass": true
+    },
+    {
+      "name": "unknown window and analysis/application segments not invented",
+      "pass": true
+    },
+    {
+      "name": "editing revokes dependent confirmations",
+      "pass": true
+    },
+    {
+      "name": "plan confirmation never certifies analysis assumptions",
+      "pass": true
+    },
+    {
+      "name": "download is schema6 with no cells/result/fake counts",
+      "pass": true
+    },
+    {
+      "name": "three segment roles and explicit status survive save",
+      "pass": true
+    },
+    {
+      "name": "mobile design has no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "plan-only restore and reexport preserve design exactly",
+      "pass": true
+    },
+    {
+      "name": "transition preserves context without fabricating data",
+      "pass": true
+    },
+    {
+      "name": "CSV retains design and requires separate observation checks",
+      "pass": true
+    },
+    {
+      "name": "real engine analysis linked to same experiment",
+      "pass": true
+    },
+    {
+      "name": "new free text excluded from LLM facts",
+      "pass": true
+    },
+    {
+      "name": "resultSeen and real aggregate counts persist",
+      "pass": true
+    },
+    {
+      "name": "HTML preserves context but not private design situation",
+      "pass": true
+    },
+    {
+      "name": "post-result plan edit invalidates result/share/print",
+      "pass": true
+    },
+    {
+      "name": "post-result provenance not backdated",
+      "pass": true
+    },
+    {
+      "name": "aggregate restore reanalysis preserves actual counts and typed lineage",
+      "pass": true
+    },
+    {
+      "name": "invalid design restore leaves current result untouched",
+      "pass": true
+    },
+    {
+      "name": "no external model/free-text POST calls",
+      "pass": true
+    },
+    {
+      "name": "no page JavaScript errors",
+      "pass": true
+    }
+  ],
+  "posts": [],
+  "page_errors": [],
+  "scope": "synthetic real Chrome via loopback; no human observations; no live LLM"
+}

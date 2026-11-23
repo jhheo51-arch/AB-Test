@@ -11,7 +11,7 @@
       "pass": true
     },
     {
-      "name": "schema5 stores typed lineage and matching compatibility alias",
+      "name": "current schema stores typed lineage and matching compatibility alias",
       "pass": true
     },
     {

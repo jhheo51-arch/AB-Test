@@ -34,7 +34,7 @@ with sync_playwright() as pw:
     p.evaluate('window.print=()=>{}');p.click('#print-report');p.emulate_media(media='print');p.pdf(path=str(ROOT/'screenshots/CONTEXT_REPORT.pdf'),format='A4',print_background=True);p.emulate_media(media='screen')
     p.check('#share-groups');check('explicit group inclusion adds group and direct explanations',p.locator('#report-preview [data-reason=HOLM_HOLD]').count()==1 and p.locator('#report-preview [data-reason=INTERACTION_HOLD]').count()==1)
     with p.expect_download() as d:p.click('#save-project')
-    saved=json.loads(Path(d.value.path()).read_text(encoding='utf-8'));check('v5 project preserves audience',saved['version']==5 and saved['plan']['audience']==metadata['audience'])
+    saved=json.loads(Path(d.value.path()).read_text(encoding='utf-8'));check('current project preserves audience',saved['version']==6 and saved['plan']['audience']==metadata['audience'])
     fresh(p);p.set_input_files('#project-file',{'name':'saved-v5.json','mimeType':'application/json','buffer':json.dumps(saved).encode()});expect(p.locator('#audience')).to_have_value(metadata['audience']);p.click('#prepare');p.wait_for_selector('#analysis-options:not([hidden])');analyze(p)
     check('v5 restore reanalysis preserves policy and audience',all(v in p.locator('#experiment-context').inner_text() for v in metadata.values()))
     p.click('nav [data-view=input]');p.fill('#audience','SYNTHETIC_CHANGED_AUDIENCE');check('audience edits invalidate previous result',p.locator('nav [data-view=results]').is_disabled());analyze(p)

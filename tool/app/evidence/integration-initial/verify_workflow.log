@@ -1,0 +1,16 @@
+PASS custom headers propose mapping but do not analyze
+PASS unconfirmed mapping cannot be applied
+PASS confirmed mapping preserves counts and raw input
+PASS editing mapping revokes prior prepared input
+PASS duplicate source columns rejected
+PASS result excludes ignored raw column and values
+PASS guided judgment appears in share preview
+PASS judgment checks edit revokes approval and print DOM
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\hermes\profiles\mira\cache\scratch\ab_tool_remote_integration\tool\app\tests\verify_workflow.py", line 31, in <module>
+    saved=Path(d.value.path()).read_text(encoding='utf-8');obj=json.loads(saved);check('v5 stores judgment but no original headers/rows',obj['version']==5 and obj['judgment']=={'direction':'defer','checks':'SYNTHETIC_NEW_CHECKS'} and 'PRIVATE_' not in saved and 'variant' not in saved)
+                                                                                 ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\AppData\Local\hermes\profiles\mira\cache\scratch\ab_tool_remote_integration\tool\app\tests\verify_workflow.py", line 7, in check
+    assert v,n
+           ^
+AssertionError: v5 stores judgment but no original headers/rows

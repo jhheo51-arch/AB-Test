@@ -1,0 +1,48 @@
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\hermes\profiles\mira\cache\scratch\ab_tool_remote_integration\tool\app\tests\verify_design_style.py", line 9, in <module>
+    p.goto(url,wait_until='networkidle');p.click('nav [data-view=design]');p.click('#begin-design')
+                                                                           ~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\sync_api\_generated.py", line 16267, in click
+    self._sync(
+    ~~~~~~~~~~^
+        self._impl_obj.click(
+        ^^^^^^^^^^^^^^^^^^^^^
+    ...<12 lines>...
+        )
+        ^
+    )
+    ^
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_sync_base.py", line 111, in _sync
+    return task.result()
+           ~~~~~~~~~~~^^
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 891, in click
+    return await self._main_frame._click(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 598, in _click
+    await self._channel.send("click", self._timeout, locals_to_params(locals()))
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 78, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 636, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Page.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("#begin-design")
+    - locator resolved to <button class="primary" id="begin-design">상황만 있어요 / 기존 계획 정리</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not visible
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not visible
+    - retrying click action
+      - waiting 100ms
+    58 × waiting for element to be visible, enabled and stable
+       - element is not visible
+     - retrying click action
+       - waiting 500ms
+

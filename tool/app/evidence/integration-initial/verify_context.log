@@ -1,0 +1,17 @@
+PASS all context fields appear in result
+PASS policy names tied to actual A and B rate cards
+PASS overall hold has specific local explanation
+PASS segment Holm hold differs from ordinary hold
+PASS direct difference is not inferred from one significant group
+PASS all context fields transfer to default report
+PASS excluded group explanation absent from actual report DOM
+PASS downloaded HTML has policy audience and embedded reason style
+PASS explicit group inclusion adds group and direct explanations
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\hermes\profiles\mira\cache\scratch\ab_tool_remote_integration\tool\app\tests\verify_context.py", line 37, in <module>
+    saved=json.loads(Path(d.value.path()).read_text(encoding='utf-8'));check('v5 project preserves audience',saved['version']==5 and saved['plan']['audience']==metadata['audience'])
+                                                                       ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\AppData\Local\hermes\profiles\mira\cache\scratch\ab_tool_remote_integration\tool\app\tests\verify_context.py", line 8, in check
+    assert condition,name
+           ^^^^^^^^^
+AssertionError: v5 project preserves audience

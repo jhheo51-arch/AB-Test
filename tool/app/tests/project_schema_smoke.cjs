@@ -3,7 +3,7 @@ const assert=require('node:assert/strict'),S=require('../project-schema.js'),E=r
 let count=0;const test=(n,f)=>{f();count++;console.log('PASS '+n);};
 const seed=()=>({format:'ab-local-project',version:5,lineage:require('../lineage.js').empty(),judgment:{direction:'',checks:''},source_kind:'synthetic',synthetic:true,source_digest:null,plan:{randomized:true,independent:true,mature:true,fixedStop:true,includeSegments:true,segmentPrespecified:true,alpha:.05,purpose:'합성',metric:'성공',window:'완료',policyA:'A 설명',policyB:'B 설명',audience:'합성 대상'},cells:[{arm:'A',segment:'x',success:10,total:100},{arm:'B',segment:'x',success:20,total:100}],decision:'',revisit:'',engine_version:null});
 const round=x=>S.parse(S.stringify(x));
-test('ordinary exact count and metadata roundtrip',()=>{const x=seed();assert.deepEqual(round(x),x);});
+test('ordinary exact count and metadata roundtrip',()=>{const x=seed();assert.deepEqual(round(x),{...x,version:6,design:null});});
 test('v3 legacy defaults judgment without invented direction',()=>{const x=seed();x.version=3;delete x.judgment;assert.deepEqual(round(x).judgment,{direction:'',checks:''});});
 test('v5 judgment exact roundtrip',()=>{const x=seed();x.judgment={direction:'defer',checks:'보호 조건 미확인'};assert.deepEqual(round(x).judgment,x.judgment);});
 test('unknown direction rejected',()=>{const x=seed();x.judgment.direction='approved';assert.throws(()=>round(x));});

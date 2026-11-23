@@ -1,0 +1,22 @@
+PASS one-question flow retains six answers
+PASS candidate produces proposals not confirmations
+PASS unknown window and analysis/application segments not invented
+PASS editing revokes dependent confirmations
+PASS plan confirmation never certifies analysis assumptions
+PASS download is schema6 with no cells/result/fake counts
+PASS three segment roles and explicit status survive save
+PASS mobile design has no horizontal overflow
+PASS plan-only restore and reexport preserve design exactly
+PASS transition preserves context without fabricating data
+PASS CSV retains design and requires separate observation checks
+PASS real engine analysis linked to same experiment
+PASS new free text excluded from LLM facts
+PASS resultSeen and real aggregate counts persist
+PASS HTML preserves context but not private design situation
+PASS post-result plan edit invalidates result/share/print
+PASS post-result provenance not backdated
+PASS aggregate restore reanalysis preserves actual counts and typed lineage
+PASS invalid design restore leaves current result untouched
+PASS no external model/free-text POST calls
+PASS no page JavaScript errors
+RESULT 21 R05 checks passed

@@ -1,0 +1,74 @@
+PASS exact version-free document title
+PASS header has no visible product version
+PASS engine status hides numeric version
+PASS revision uses input edit count
+PASS initial button close: native modal is open
+PASS initial button close: local embedded video source
+PASS initial button close: real video metadata
+PASS initial button close: video really starts
+PASS initial button close: close pauses video
+PASS initial button close: exact state/input/prepared/result/consent preserved
+PASS initial Escape close: native modal is open
+PASS initial Escape close: local embedded video source
+PASS initial Escape close: real video metadata
+PASS initial Escape close: video really starts
+PASS initial Escape close: close pauses video
+PASS initial Escape close: exact state/input/prepared/result/consent preserved
+PASS custom CSV roles default correctly
+PASS mapping preserves original synthetic notes and produces correct cells
+PASS prepared input button close: native modal is open
+PASS prepared input button close: local embedded video source
+PASS prepared input button close: real video metadata
+PASS prepared input button close: video really starts
+PASS prepared input button close: close pauses video
+PASS prepared input button close: exact state/input/prepared/result/consent preserved
+PASS confirmed conditions allow real inference
+PASS analyzed result Escape close: native modal is open
+PASS analyzed result Escape close: local embedded video source
+PASS analyzed result Escape close: real video metadata
+PASS analyzed result Escape close: video really starts
+PASS analyzed result Escape close: close pauses video
+PASS analyzed result Escape close: exact state/input/prepared/result/consent preserved
+PASS share with both consents button close: native modal is open
+PASS share with both consents button close: local embedded video source
+PASS share with both consents button close: real video metadata
+PASS share with both consents button close: video really starts
+PASS share with both consents button close: close pauses video
+PASS share with both consents button close: exact state/input/prepared/result/consent preserved
+PASS share with both consents Escape close: native modal is open
+PASS share with both consents Escape close: local embedded video source
+PASS share with both consents Escape close: real video metadata
+PASS share with both consents Escape close: video really starts
+PASS share with both consents Escape close: close pauses video
+PASS share with both consents Escape close: exact state/input/prepared/result/consent preserved
+PASS native project JSON retains schema 6 and engine compatibility
+PASS native project JSON retains transformation version
+PASS exported report has no engine/revision/transformation version labels
+PASS report still includes result and method
+PASS invalid native JSON rejected without changing analysis
+PASS valid native JSON restores counts
+PASS functional inference guard remains active without conditions
+PASS mapping error blocks stale analysis and keeps synthetic usernotes
+PASS mapping error button close: native modal is open
+PASS mapping error button close: local embedded video source
+PASS mapping error button close: real video metadata
+PASS mapping error button close: video really starts
+PASS mapping error button close: close pauses video
+PASS mapping error button close: exact state/input/prepared/result/consent preserved
+PASS mapping error Escape close: native modal is open
+PASS mapping error Escape close: local embedded video source
+PASS mapping error Escape close: real video metadata
+PASS mapping error Escape close: video really starts
+PASS mapping error Escape close: close pauses video
+PASS mapping error Escape close: exact state/input/prepared/result/consent preserved
+PASS 390px mapping-error page has no horizontal overflow
+PASS 390px error button close: native modal is open
+PASS 390px error button close: local embedded video source
+PASS 390px error button close: real video metadata
+PASS 390px error button close: video really starts
+PASS 390px error button close: modal fits 390px
+PASS 390px error button close: close pauses video
+PASS 390px error button close: exact state/input/prepared/result/consent preserved
+PASS 390px error button close: body scrolling unlocked
+FAIL AssertionError: 390px error button close: page remains scrollable
+RESULT FAIL: 72/73 recorded checks

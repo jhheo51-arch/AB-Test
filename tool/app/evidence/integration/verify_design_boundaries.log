@@ -1,0 +1,13 @@
+PASS audience guided question enforces 300 chars
+PASS 300-character audience remains exact in context
+PASS design and confirmations unchanged by help False
+PASS design and confirmations unchanged by help True
+PASS save guard rejects overlong audience
+PASS save guard rejects conflicting duplicate context
+PASS cancel synthetic switch preserves original plan
+PASS accepted synthetic switch explicitly clears unrelated design
+PASS legacy schema 2 restores, analyzes and migrates without fabricated design
+PASS legacy schema 3 restores, analyzes and migrates without fabricated design
+PASS legacy schema 4 restores, analyzes and migrates without fabricated design
+PASS legacy schema 5 restores, analyzes and migrates without fabricated design
+PASS no model or other POST attempted

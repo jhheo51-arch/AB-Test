@@ -1,0 +1,11 @@
+FAIL AssertionError: Locator expected not to contain text '확인 중'
+Actual value: 계산 엔진 확인 중 
+Call log:
+  - Expect "not_to_contain_text" locator("#engine-status") with timeout 5000ms
+  - waiting for locator("#engine-status")
+    13 × locator resolved to <span id="engine-status">계산 엔진 확인 중</span>
+       - unexpected value "계산 엔진 확인 중"
+
+Aria snapshot:
+- text: 계산 엔진 확인 중
+RESULT FAIL: 0/0 recorded checks

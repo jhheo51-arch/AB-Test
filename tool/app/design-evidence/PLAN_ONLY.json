@@ -1,0 +1,134 @@
+{
+  "format": "ab-local-project",
+  "version": 6,
+  "source_kind": "none",
+  "synthetic": false,
+  "source_digest": null,
+  "plan": {
+    "randomized": false,
+    "independent": false,
+    "mature": false,
+    "fixedStop": false,
+    "includeSegments": true,
+    "segmentPrespecified": false,
+    "purpose": "시승 예약 완료를 늘리기",
+    "metric": "배정 후 예약 완료 여부",
+    "window": "개인별 배정 후 14일 / 관측 가능성 확인 필요",
+    "policyA": "현재 안내 문구",
+    "policyB": "같은 혜택·채널에서 행동 방법을 분명히 쓴 문구",
+    "audience": "수신 동의한 안내 대상 / 최근 예약자는 제외",
+    "alpha": 0.05
+  },
+  "cells": [],
+  "decision": "",
+  "revisit": "",
+  "engine_version": null,
+  "judgment": {
+    "direction": "",
+    "checks": ""
+  },
+  "lineage": {
+    "version": 1,
+    "algorithm": "SHA-256",
+    "origin": {
+      "kind": "unknown",
+      "digest": null
+    },
+    "previous": null,
+    "current": null,
+    "transformation": {
+      "name": "none",
+      "version": "0.5.1"
+    }
+  },
+  "design": {
+    "version": 1,
+    "revision": 24,
+    "step": 6,
+    "candidate": "message",
+    "resultSeen": false,
+    "changedAfterResult": false,
+    "fields": {
+      "situation": {
+        "value": "SYNTHETIC_SITUATION: 시승 안내 후 예약이 적음",
+        "status": "proposed"
+      },
+      "purpose": {
+        "value": "시승 예약 완료를 늘리기",
+        "status": "confirmed"
+      },
+      "audience": {
+        "value": "수신 동의한 안내 대상 / 최근 예약자는 제외",
+        "status": "proposed"
+      },
+      "analysisSegments": {
+        "value": "배정 전 신규 / 기존 두 비중첩 집단; 보유 여부 확인 필요",
+        "status": "proposed"
+      },
+      "applicationSegments": {
+        "value": "적격 대상 안에서 비용·보호 조건 확인 후 검토",
+        "status": "proposed"
+      },
+      "measurement": {
+        "value": "배정 후 예약 완료 여부",
+        "status": "proposed"
+      },
+      "risk": {
+        "value": "수신 거부와 불만 증가를 확인",
+        "status": "proposed"
+      },
+      "constraints": {
+        "value": "혜택과 채널은 같게 / 발송 비용 확인 필요",
+        "status": "proposed"
+      },
+      "policyA": {
+        "value": "현재 안내 문구",
+        "status": "proposed"
+      },
+      "policyB": {
+        "value": "같은 혜택·채널에서 행동 방법을 분명히 쓴 문구",
+        "status": "proposed"
+      },
+      "metric": {
+        "value": "배정 후 예약 완료 여부",
+        "status": "proposed"
+      },
+      "denominator": {
+        "value": "사전 적격 조건을 충족해 A/B에 배정된 고객 전체. 누락·미성숙은 실패로 채우지 않기",
+        "status": "proposed"
+      },
+      "window": {
+        "value": "개인별 배정 후 14일 / 관측 가능성 확인 필요",
+        "status": "proposed"
+      },
+      "assignment": {
+        "value": "고객 1명 단위 무작위 1:1 배정 제안. 반복·가구·지점 영향과 비용 차이는 별도 확인",
+        "status": "proposed"
+      },
+      "heldConstant": {
+        "value": "선택한 변경 요인 외 혜택·채널·대상·관측 기회를 같게 유지할 수 있는지 확인",
+        "status": "proposed"
+      },
+      "stop": {
+        "value": "결과를 보기 전에 종료 시점·모든 고객의 관측 완료 규칙 정하기. 유의할 때까지 연장하지 않기",
+        "status": "proposed"
+      },
+      "decisionRule": {
+        "value": "지원 범위: 독립 두 군 이항·고정 종료. 양측 Fisher, alpha 0.05. 사전 두 집단과 직접 차이는 Holm 가족 보정. 사업·보호는 별도 검토",
+        "status": "proposed"
+      },
+      "business": {
+        "value": "",
+        "status": "unknown"
+      },
+      "guardrail": {
+        "value": "수신 거부·불만 증가",
+        "status": "proposed"
+      },
+      "segmentTiming": {
+        "value": "결과 열람 전 기준을 별도로 기록. 이 계획 확인만으로 사전성을 인증하지 않음",
+        "status": "proposed"
+      }
+    }
+  }
+}

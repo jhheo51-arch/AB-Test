@@ -1,31 +1,44 @@
 {
   "status": "PASS",
-  "checked_at": "2026-11-23T11:29:04.115870+09:00",
+  "checked_at_utc": "2026-11-23T02:42:00.953705+00:00",
   "file": "AB_Test_Workspace.zip",
-  "sha256": "9c94d79fc1feeb6be59d94ac96a886658621ace7f55ab550a47c26459e66974e",
-  "bytes": 3689697,
-  "members": 63,
+  "sha256": "896b639ecf13144451585af0d155564a7baacbe77adf58fcd706784b7092b0a7",
+  "bytes": 4719943,
+  "members": 110,
   "duplicate_members": false,
   "CRC": "PASS",
   "all_member_bytes_match_source": true,
-  "actual_model_calls_in_extraction_tests": 0,
-  "scope": "Documentation-only repackage. CRC and all member/source bytes checked. Only README.md changed; all executable, asset and fixture bytes match prior tested package. Browser tests were not rerun.",
-  "prior_runtime_verification": {
-    "checked_at": "2026-11-23T10:33:18.473872+09:00",
-    "sha256": "139e2f4bef2e6b7069e570a468704f29353b1e0c73935ae5c473e1fc3005c838",
-    "unpacked_browser": [
-      {
-        "script": "verify_current_interface.py",
-        "exit_code": 0,
-        "result": "RESULT PASS: 84/84 recorded checks"
-      },
-      {
-        "script": "verify_workflow.py",
-        "exit_code": 0,
-        "result": "RESULT 37 workflow checks passed"
-      }
-    ],
-    "separate_extracted_server": "http://127.0.0.1:10297"
-  },
-  "browser_tests_rerun": false
+  "allowlist": "PACKAGE_ALLOWLIST.json",
+  "separate_extracted_server": "http://127.0.0.1:10907",
+  "extraction": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_current_package_gc0oqv64",
+  "server_stopped": true,
+  "unpacked_browser": [
+    {
+      "script": "verify_design.py",
+      "exit_code": 0,
+      "output": "PASS one-question flow retains six answers\nPASS candidate produces proposals not confirmations\nPASS unknown window and analysis/application segments not invented\nPASS editing revokes dependent confirmations\nPASS plan confirmation never certifies analysis assumptions\nPASS download is schema6 with no cells/result/fake counts\nPASS three segment roles and explicit status survive save\nPASS mobile design has no horizontal overflow\nPASS plan-only restore and reexport preserve design exactly\nPASS transition preserves context without fabricating data\nPASS CSV retains design and requires separate observation checks\nPASS real engine analysis linked to same experiment\nPASS new free text excluded from LLM facts\nPASS resultSeen and real aggregate counts persist\nPASS HTML preserves context but not private design situation\nPASS post-result plan edit invalidates result/share/print\nPASS post-result provenance not backdated\nPASS aggregate restore reanalysis preserves actual counts and typed lineage\nPASS invalid design restore leaves current result untouched\nPASS no external model/free-text POST calls\nPASS no page JavaScript errors\nRESULT 21 R05 checks passed\n",
+      "stderr": ""
+    },
+    {
+      "script": "verify_design_boundaries.py",
+      "exit_code": 0,
+      "output": "PASS audience guided question enforces 300 chars\nPASS 300-character audience remains exact in context\nPASS design and confirmations unchanged by help False\nPASS design and confirmations unchanged by help True\nPASS save guard rejects overlong audience\nPASS save guard rejects conflicting duplicate context\nPASS cancel synthetic switch preserves original plan\nPASS accepted synthetic switch explicitly clears unrelated design\nPASS legacy schema 2 restores, analyzes and migrates without fabricated design\nPASS legacy schema 3 restores, analyzes and migrates without fabricated design\nPASS legacy schema 4 restores, analyzes and migrates without fabricated design\nPASS legacy schema 5 restores, analyzes and migrates without fabricated design\nPASS no model or other POST attempted\n",
+      "stderr": ""
+    },
+    {
+      "script": "verify_current_interface.py",
+      "exit_code": 0,
+      "output": "PASS exact version-free document title\nPASS header has no visible product version\nPASS engine status hides numeric version\nPASS revision uses input edit count\nPASS initial button close: native modal is open\nPASS initial button close: local embedded video source\nPASS initial button close: real video metadata\nPASS initial button close: video really starts\nPASS initial button close: close pauses video\nPASS initial button close: exact state/input/prepared/result/consent preserved\nPASS initial Escape close: native modal is open\nPASS initial Escape close: local embedded video source\nPASS initial Escape close: real video metadata\nPASS initial Escape close: video really starts\nPASS initial Escape close: close pauses video\nPASS initial Escape close: exact state/input/prepared/result/consent preserved\nPASS custom CSV roles default correctly\nPASS mapping preserves original synthetic notes and produces correct cells\nPASS prepared input button close: native modal is open\nPASS prepared input button close: local embedded video source\nPASS prepared input button close: real video metadata\nPASS prepared input button close: video really starts\nPASS prepared input button close: close pauses video\nPASS prepared input button close: exact state/input/prepared/result/consent preserved\nPASS confirmed conditions allow real inference\nPASS analyzed result Escape close: native modal is open\nPASS analyzed result Escape close: local embedded video source\nPASS analyzed result Escape close: real video metadata\nPASS analyzed result Escape close: video really starts\nPASS analyzed result Escape close: close pauses video\nPASS analyzed result Escape close: exact state/input/prepared/result/consent preserved\nPASS share with both consents button close: native modal is open\nPASS share with both consents button close: local embedded video source\nPASS share with both consents button close: real video metadata\nPASS share with both consents button close: video really starts\nPASS share with both consents button close: close pauses video\nPASS share with both consents button close: exact state/input/prepared/result/consent preserved\nPASS share with both consents Escape close: native modal is open\nPASS share with both consents Escape close: local embedded video source\nPASS share with both consents Escape close: real video metadata\nPASS share with both consents Escape close: video really starts\nPASS share with both consents Escape close: close pauses video\nPASS share with both consents Escape close: exact state/input/prepared/result/consent preserved\nPASS native project JSON retains schema 6 and engine compatibility\nPASS native project JSON retains transformation version\nPASS exported report has no engine/revision/transformation version labels\nPASS report still includes result and method\nPASS invalid native JSON rejected without changing analysis\nPASS valid native JSON restores counts\nPASS functional inference guard remains active without conditions\nPASS mapping error blocks stale analysis and keeps synthetic usernotes\nPASS mapping error button close: native modal is open\nPASS mapping error button close: local embedded video source\nPASS mapping error button close: real video metadata\nPASS mapping error button close: video really starts\nPASS mapping error button close: close pauses video\nPASS mapping error button close: exact state/input/prepared/result/consent preserved\nPASS mapping error Escape close: native modal is open\nPASS mapping error Escape close: local embedded video source\nPASS mapping error Escape close: real video metadata\nPASS mapping error Escape close: video really starts\nPASS mapping error Escape close: close pauses video\nPASS mapping error Escape close: exact state/input/prepared/result/consent preserved\nPASS 390px mapping-error page has no horizontal overflow\nPASS 390px error button close: native modal is open\nPASS 390px error button close: local embedded video source\nPASS 390px error button close: real video metadata\nPASS 390px error button close: video really starts\nPASS 390px error button close: modal fits 390px\nPASS 390px error button close: close pauses video\nPASS 390px error button close: exact state/input/prepared/result/consent preserved\nPASS 390px error button close: body scrolling unlocked\nPASS 390px error button close: page remains scrollable\nPASS 390px error Escape close: native modal is open\nPASS 390px error Escape close: local embedded video source\nPASS 390px error Escape close: real video metadata\nPASS 390px error Escape close: video really starts\nPASS 390px error Escape close: modal fits 390px\nPASS 390px error Escape close: close pauses video\nPASS 390px error Escape close: exact state/input/prepared/result/consent preserved\nPASS 390px error Escape close: body scrolling unlocked\nPASS 390px error Escape close: page remains scrollable\nPASS no uncaught JavaScript errors\nPASS no remote/model/credential requests attempted\nRESULT PASS: 84/84 recorded checks\n",
+      "stderr": ""
+    },
+    {
+      "script": "verify_workflow.py",
+      "exit_code": 0,
+      "output": "PASS custom headers propose mapping but do not analyze\nPASS unconfirmed mapping cannot be applied\nPASS confirmed mapping preserves counts and raw input\nPASS editing mapping revokes prior prepared input\nPASS duplicate source columns rejected\nPASS result excludes ignored raw column and values\nPASS guided judgment appears in share preview\nPASS judgment checks edit revokes approval and print DOM\nPASS current schema stores judgment but no original headers/rows\nPASS HTML includes judgment and expanded calculation, no raw data\nPASS new judgment is excluded from LLM payload\nPASS v5 restores judgment and canonical aggregates\nPASS restored judgment survives reanalysis\nPASS explicit arm values map control/treatment without changing counts\nPASS unknown arm is rejected, no rows silently dropped\nPASS known observed column cannot be dropped\nPASS mapped immature observation remains blocked\nPASS canonical headers also permit explicit arm conversion\nPASS arm label edit discards prior prepared counts\nPASS raw input replacement discards old mapping panel\nPASS actual uploaded file supports confirmed custom mapping\nPASS untrusted source header is escaped in mapping UI\nPASS A result state uses engine verdict\nPASS A cards neutral and summary first\nPASS A details are progressive disclosure\nPASS contrary direction gets warning not automatic approval\nPASS B result state uses engine verdict\nPASS B cards neutral and summary first\nPASS B details are progressive disclosure\nPASS 390px summary has no page overflow\nPASS hold result state uses engine verdict\nPASS hold cards neutral and summary first\nPASS hold details are progressive disclosure\nPASS unconfirmed result state uses engine verdict\nPASS unconfirmed cards neutral and summary first\nPASS unconfirmed details are progressive disclosure\nPASS no page JavaScript errors in primary mapping flow\nRESULT 37 workflow checks passed\n",
+      "stderr": ""
+    }
+  ],
+  "actual_model_calls": 0,
+  "human_observations": 0,
+  "scope": "current ZIP; synthetic real Chrome design, saved plans, legacy migration, mapped analysis and actual help playback/state preservation"
 }

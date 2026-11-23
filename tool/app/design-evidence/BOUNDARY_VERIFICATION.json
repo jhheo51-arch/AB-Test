@@ -1,0 +1,60 @@
+{
+  "status": "PASS",
+  "count": 13,
+  "checks": [
+    {
+      "name": "audience guided question enforces 300 chars",
+      "pass": true
+    },
+    {
+      "name": "300-character audience remains exact in context",
+      "pass": true
+    },
+    {
+      "name": "design and confirmations unchanged by help False",
+      "pass": true
+    },
+    {
+      "name": "design and confirmations unchanged by help True",
+      "pass": true
+    },
+    {
+      "name": "save guard rejects overlong audience",
+      "pass": true
+    },
+    {
+      "name": "save guard rejects conflicting duplicate context",
+      "pass": true
+    },
+    {
+      "name": "cancel synthetic switch preserves original plan",
+      "pass": true
+    },
+    {
+      "name": "accepted synthetic switch explicitly clears unrelated design",
+      "pass": true
+    },
+    {
+      "name": "legacy schema 2 restores, analyzes and migrates without fabricated design",
+      "pass": true
+    },
+    {
+      "name": "legacy schema 3 restores, analyzes and migrates without fabricated design",
+      "pass": true
+    },
+    {
+      "name": "legacy schema 4 restores, analyzes and migrates without fabricated design",
+      "pass": true
+    },
+    {
+      "name": "legacy schema 5 restores, analyzes and migrates without fabricated design",
+      "pass": true
+    },
+    {
+      "name": "no model or other POST attempted",
+      "pass": true
+    }
+  ],
+  "human_observations": 0,
+  "actual_model_calls": 0
+}

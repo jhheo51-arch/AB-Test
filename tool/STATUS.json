@@ -13,5 +13,8 @@
     "independent_study_completed": false,
     "personal_feedback": "local_only_not_published"
   },
-  "design_entry": "not_implemented"
+  "design_entry": "implemented_local_fixed_questions_and_candidates_not_semantic_AI",
+  "human_observations": 0,
+  "design_tutorial_added_to_analysis_video": false,
+  "verification": "tool/app/integration_verification.json"
 }

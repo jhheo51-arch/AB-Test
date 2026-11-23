@@ -28,7 +28,7 @@ with sync_playwright() as w:
  check('guided judgment appears in share preview',all(s in p.locator('#report-preview').inner_text() for s in ['판단 유보','SYNTHETIC_REASON','SYNTHETIC_CHECKS','SYNTHETIC_REVISIT']))
  p.check('#share-confirm');p.evaluate('window.print=()=>{}');p.click('#print-report');p.fill('#decision-checks','SYNTHETIC_NEW_CHECKS');check('judgment checks edit revokes approval and print DOM',not p.locator('#share-confirm').is_checked() and p.locator('#print-area').inner_text()=='')
  with p.expect_download() as d:p.click('#save-project')
- saved=Path(d.value.path()).read_text(encoding='utf-8');obj=json.loads(saved);check('v5 stores judgment but no original headers/rows',obj['version']==5 and obj['judgment']=={'direction':'defer','checks':'SYNTHETIC_NEW_CHECKS'} and 'PRIVATE_' not in saved and 'variant' not in saved)
+ saved=Path(d.value.path()).read_text(encoding='utf-8');obj=json.loads(saved);check('current schema stores judgment but no original headers/rows',obj['version']==6 and obj['judgment']=={'direction':'defer','checks':'SYNTHETIC_NEW_CHECKS'} and 'PRIVATE_' not in saved and 'variant' not in saved)
  p.check('#share-confirm')
  with p.expect_download() as d:p.click('#export-report')
  html=Path(d.value.path()).read_text(encoding='utf-8');check('HTML includes judgment and expanded calculation, no raw data','SYNTHETIC_NEW_CHECKS' in html and 'PRIVATE_' not in html and '<script' not in html and 'calc-details' in html)

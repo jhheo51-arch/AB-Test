@@ -1,0 +1,44 @@
+{
+  "status": "PASS",
+  "computed_colors": [
+    {
+      "selector": "#design-view .heading p",
+      "foreground": "rgb(88, 103, 121)",
+      "background": "rgb(245, 247, 250)",
+      "fontSize": "15px"
+    },
+    {
+      "selector": "#design-view .note",
+      "foreground": "rgb(88, 103, 121)",
+      "background": "rgb(245, 247, 250)",
+      "fontSize": "13px"
+    },
+    {
+      "selector": "#design-fields label",
+      "foreground": "rgb(32, 43, 58)",
+      "background": "rgb(245, 247, 250)",
+      "fontSize": "14px"
+    },
+    {
+      "selector": "#design-situation",
+      "foreground": "rgb(32, 43, 58)",
+      "background": "rgb(255, 255, 255)",
+      "fontSize": "15px"
+    },
+    {
+      "selector": "#design-fields select",
+      "foreground": "rgb(32, 43, 58)",
+      "background": "rgb(255, 255, 255)",
+      "fontSize": "15px"
+    },
+    {
+      "selector": "#begin-design",
+      "foreground": "rgb(255, 255, 255)",
+      "background": "rgb(31, 98, 209)",
+      "fontSize": "14px"
+    }
+  ],
+  "http_errors": [],
+  "remote_requests": [],
+  "escaped_text": true
+}

@@ -106,6 +106,9 @@ def run(args):
             check(label + ': modal fits 390px', dialog.evaluate(
                 'e => { const r=e.getBoundingClientRect(); return r.left>=-1 && r.right<=innerWidth+1 && e.scrollWidth<=e.clientWidth+1; }'))
             page.screenshot(path=str(evidence / 'current_interface.png'), full_page=True)
+        # Observe the native close event after the production scroll-restoration handler.
+        # Keep the immediate pause assertion below: waiting first would mask a pause regression.
+        dialog.evaluate('e => { e.__testCloseObserved = false; e.addEventListener("close", () => { e.__testCloseObserved = true; }, {once:true}); }')
         if escape:
             page.keyboard.press('Escape')
         else:
@@ -114,6 +117,7 @@ def run(args):
         check(label + ': close pauses video', video.evaluate('e => e.paused'))
         check(label + ': exact state/input/prepared/result/consent preserved', snapshot() == before)
         if mobile:
+            poll_locator(dialog, 'e => e.__testCloseObserved === true')
             check(label + ': body scrolling unlocked', page.evaluate(
                 'getComputedStyle(document.body).overflow !== "hidden" && getComputedStyle(document.documentElement).overflow !== "hidden"'))
             page.evaluate('window.scrollTo(0, document.documentElement.scrollHeight)')
@@ -200,8 +204,8 @@ def run(args):
             help_cycle('share with both consents button close')
             help_cycle('share with both consents Escape close', escape=True)
             saved = download_json()
-            check('native project JSON retains schema 5 and engine compatibility',
-                  saved['version'] == 5 and saved['format'] == 'ab-local-project'
+            check('native project JSON retains schema 6 and engine compatibility',
+                  saved['version'] == 6 and saved['format'] == 'ab-local-project'
                   and saved['engine_version'] == page.evaluate('state.result.version')
                   and bool(re.fullmatch(r'\d+\.\d+\.\d+', saved['engine_version'])))
             check('native project JSON retains transformation version',

@@ -1,0 +1,10 @@
+PASS original digest hashes actual input text
+PASS analysis digest hashes actual converted CSV
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\hermes\profiles\mira\cache\scratch\ab_tool_remote_integration\tool\app\tests\verify_lineage_browser.py", line 24, in <module>
+    x=save(p);check('schema5 stores typed lineage and matching compatibility alias',x['version']==5 and x['lineage']==l and x['source_digest']==l['current']['digest'])
+              ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\AppData\Local\hermes\profiles\mira\cache\scratch\ab_tool_remote_integration\tool\app\tests\verify_lineage_browser.py", line 8, in check
+    assert v,n
+           ^
+AssertionError: schema5 stores typed lineage and matching compatibility alias

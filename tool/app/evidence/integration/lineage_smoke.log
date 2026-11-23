@@ -1,0 +1,17 @@
+PASS empty typed record roundtrip
+PASS mapped input separates original from analysis digest
+PASS restore keeps original and identifies previous record
+PASS repeated restore preserves origin but only immediate previous
+PASS legacy digest type not invented or case-normalized
+PASS missing old digest stays unknown
+PASS malformed digest rejected
+PASS unknown origin cannot have digest
+PASS unrecognized algorithm rejected
+PASS private extra fields rejected
+PASS current requires matching transformation
+PASS schema5 exact lineage roundtrip
+PASS schema5 deprecated alias mismatch rejected
+PASS schema5 requires lineage, never reconstructs it from alias
+PASS schema4 migration preserves judgment and old digest scope
+PASS legacy2 defaults unknown lineage and empty new judgment
+RESULT 16 lineage groups passed
