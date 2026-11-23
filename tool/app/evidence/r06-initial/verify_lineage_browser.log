@@ -1,0 +1,15 @@
+PASS original digest hashes actual input text
+PASS analysis digest hashes actual converted CSV
+PASS current schema stores typed lineage and matching compatibility alias
+PASS restore preserves origin and immediate prior calculation record
+PASS restored input gets actual aggregate kind not original claim
+PASS second restore retains origin and labels latest parent
+PASS report labels origin previous current and limits
+PASS typed lineage is excluded from explanation payload
+PASS legacy hash is retained literally with unknown target type
+PASS edited source starts fresh lineage instead of false inherited origin
+PASS invalid restore preserves previous valid lineage
+PASS canonical hash delay is real pending work
+PASS older canonical hash cannot attach stale lineage
+PASS no uncaught primary page errors
+RESULT 14 R03 browser checks passed

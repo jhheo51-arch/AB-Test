@@ -6,7 +6,8 @@
   "stabilization": {
     "R01": "verified",
     "R02": "verified",
-    "R03": "verified"
+    "R03": "verified",
+    "R06": "implemented_tristate_optional_user_evidence_not_independent_validation"
   },
   "human_review": {
     "materials": "tool/review",
@@ -16,5 +17,14 @@
   "design_entry": "implemented_local_fixed_questions_and_candidates_not_semantic_AI",
   "human_observations": 0,
   "design_tutorial_added_to_analysis_video": false,
-  "verification": "tool/app/integration_verification.json"
+  "verification": "tool/app/integration_verification.json",
+  "conditions": {
+    "core_unknown_or_no": "descriptive_only",
+    "segment_unknown_or_no": "exploratory_segments_overall_gate_separate",
+    "evidence": "local_JSON_and_local_method_only_excluded_from_public_HTML_PDF_and_LLM",
+    "storage_schema": 7,
+    "legacy_true": "retained_explicit_legacy_user_confirmation_no_evidence",
+    "legacy_false": "unknown_not_known_denial",
+    "tutorial_added": false
+  }
 }

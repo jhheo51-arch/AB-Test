@@ -4,14 +4,14 @@
     {
       "member": "AB_Test_Workspace/CONTEXT_CONTRACT.md",
       "source": "app/CONTEXT_CONTRACT.md",
-      "bytes": 2307,
-      "sha256": "9bc0e73b937e85b289be644288516deebb48b02a84c443bf6c1a15c825449395"
+      "bytes": 5754,
+      "sha256": "8d4ffd648cdc966461309c5421bbad5b51304a5dc0170676270a650f9445b0a4"
     },
     {
       "member": "AB_Test_Workspace/INPUT_CONTRACT.md",
       "source": "app/INPUT_CONTRACT.md",
-      "bytes": 4930,
-      "sha256": "ebb5e39810d16bbceb3da52c7d7b24ea32014634748be4e31c5cb6c52d9f1a81"
+      "bytes": 8377,
+      "sha256": "1c51c2e1c351afce569e5377819c261fe4b63fd20a917b678d2cafb1d528b437"
     },
     {
       "member": "AB_Test_Workspace/R03_browser_verification.json",
@@ -22,26 +22,146 @@
     {
       "member": "AB_Test_Workspace/README.md",
       "source": "app/README.md",
-      "bytes": 9720,
-      "sha256": "3abc188191f181f9373621bab5d48c0f9cc961384a584e90a02038bf84166f26"
+      "bytes": 11084,
+      "sha256": "c5dbc80937ec187dbf72e529522264df3782567f56a0860a521469d37d5bc1b5"
     },
     {
       "member": "AB_Test_Workspace/app.js",
       "source": "app/app.js",
-      "bytes": 33895,
-      "sha256": "36e060594c53fe4742316fc25a51a3feb279721a5c37d29688584e59f28ed74c"
+      "bytes": 35348,
+      "sha256": "c4a2e4d407ab3563c562d865ca93059537e7b4b0ed1b605f7c8776403dea1b43"
     },
     {
       "member": "AB_Test_Workspace/browser_verification.json",
       "source": "app/browser_verification.json",
-      "bytes": 40642,
-      "sha256": "510ba7f5d4b36abbf96f015118f2555301f9ab53f8afa6e7520a43f622796667"
+      "bytes": 43001,
+      "sha256": "e81cfad33488d933d1fa89da5798c17ec20c3640c341e812e8db5fb20d39e2ad"
     },
     {
       "member": "AB_Test_Workspace/column-mapping.js",
       "source": "app/column-mapping.js",
       "bytes": 9190,
       "sha256": "d1d3b0c7a2e3aeb520c9c831d3583cf5e2d889c6ea079837a7814868ab361a68"
+    },
+    {
+      "member": "AB_Test_Workspace/conditions-evidence/BASELINE_CONTROLS.json",
+      "source": "app/conditions-evidence/BASELINE_CONTROLS.json",
+      "bytes": 2095,
+      "sha256": "1226659fc698ecf759298eed23b8535f5cf2ceca59113339554588c4c7d1a918"
+    },
+    {
+      "member": "AB_Test_Workspace/conditions-evidence/CONDITIONS_MIXED.json",
+      "source": "app/conditions-evidence/CONDITIONS_MIXED.json",
+      "bytes": 2841,
+      "sha256": "83108c5254603e8a1ff8b20cd04d3bfea52c4fd455c370191055de6a83e33f15"
+    },
+    {
+      "member": "AB_Test_Workspace/conditions-evidence/CONDITIONS_MIXED_RESTORED.json",
+      "source": "app/conditions-evidence/CONDITIONS_MIXED_RESTORED.json",
+      "bytes": 2851,
+      "sha256": "27258bea6d95e7b40a2a76f801ffdccfc594564c5d8823520d1fa9389bd9cede"
+    },
+    {
+      "member": "AB_Test_Workspace/conditions-evidence/CONDITIONS_REPORT.html",
+      "source": "app/conditions-evidence/CONDITIONS_REPORT.html",
+      "bytes": 8231,
+      "sha256": "0b58630afcdb7c3c3732318cd751e21031a85e75475ab5cc5aa4d09d64018dcc"
+    },
+    {
+      "member": "AB_Test_Workspace/conditions-evidence/CONDITIONS_REPORT.pdf",
+      "source": "app/conditions-evidence/CONDITIONS_REPORT.pdf",
+      "bytes": 537769,
+      "sha256": "c34eac13638b13db93e9cf9619591174326b92141cabd8dff767d8b3be3d17eb"
+    },
+    {
+      "member": "AB_Test_Workspace/conditions-evidence/CONDITIONS_RESTORED.json",
+      "source": "app/conditions-evidence/CONDITIONS_RESTORED.json",
+      "bytes": 2836,
+      "sha256": "b06205ba52a994f6a03707047fd2d62f25a4055b2102c3ed1e24c6d3921569b0"
+    },
+    {
+      "member": "AB_Test_Workspace/conditions-evidence/CONDITIONS_SAVED.json",
+      "source": "app/conditions-evidence/CONDITIONS_SAVED.json",
+      "bytes": 2692,
+      "sha256": "9fdb702370e5d39294322297097e9954bbef44c619f174bef4a8c409e5d2abb0"
+    },
+    {
+      "member": "AB_Test_Workspace/conditions-evidence/ENGINE_GATE_CASES.json",
+      "source": "app/conditions-evidence/ENGINE_GATE_CASES.json",
+      "bytes": 21643,
+      "sha256": "35eb7c6ec942139d88c71537f033f852429742eb544a7781ab892e5ff3149394"
+    },
+    {
+      "member": "AB_Test_Workspace/conditions-evidence/EVIDENCE_CAP.json",
+      "source": "app/conditions-evidence/EVIDENCE_CAP.json",
+      "bytes": 5756,
+      "sha256": "690eb9246a5ed18a45cdcb931955ea07fe677bff54f17b045ae0720ccfa57a80"
+    },
+    {
+      "member": "AB_Test_Workspace/conditions-evidence/IMPLEMENTATION_NOTES.md",
+      "source": "app/conditions-evidence/IMPLEMENTATION_NOTES.md",
+      "bytes": 4754,
+      "sha256": "a9b47e3e927c877ac7c5066c9f992ac279fc660ea38a86d140821b0e19213dc3"
+    },
+    {
+      "member": "AB_Test_Workspace/conditions-evidence/LEGACY_2.json",
+      "source": "app/conditions-evidence/LEGACY_2.json",
+      "bytes": 2313,
+      "sha256": "2ea6210913a133696837fa98f87509169197853a56f2c77f9ceca0a1ab06856f"
+    },
+    {
+      "member": "AB_Test_Workspace/conditions-evidence/LEGACY_3.json",
+      "source": "app/conditions-evidence/LEGACY_3.json",
+      "bytes": 2313,
+      "sha256": "2ea6210913a133696837fa98f87509169197853a56f2c77f9ceca0a1ab06856f"
+    },
+    {
+      "member": "AB_Test_Workspace/conditions-evidence/LEGACY_4.json",
+      "source": "app/conditions-evidence/LEGACY_4.json",
+      "bytes": 2313,
+      "sha256": "2ea6210913a133696837fa98f87509169197853a56f2c77f9ceca0a1ab06856f"
+    },
+    {
+      "member": "AB_Test_Workspace/conditions-evidence/LEGACY_5.json",
+      "source": "app/conditions-evidence/LEGACY_5.json",
+      "bytes": 2435,
+      "sha256": "5bcb815ce9b8d805a979ce880f9196f6ae821d3d8d1e0efc55226de3d908a4fd"
+    },
+    {
+      "member": "AB_Test_Workspace/conditions-evidence/LEGACY_6.json",
+      "source": "app/conditions-evidence/LEGACY_6.json",
+      "bytes": 2435,
+      "sha256": "5bcb815ce9b8d805a979ce880f9196f6ae821d3d8d1e0efc55226de3d908a4fd"
+    },
+    {
+      "member": "AB_Test_Workspace/conditions-evidence/STYLE_CONTRAST.json",
+      "source": "app/conditions-evidence/STYLE_CONTRAST.json",
+      "bytes": 763,
+      "sha256": "b59f92d8c687f985f10e689a540210b9ded5ed19a7c40aebdb8a6380c020abba"
+    },
+    {
+      "member": "AB_Test_Workspace/conditions-evidence/conditions-desktop.png",
+      "source": "app/conditions-evidence/conditions-desktop.png",
+      "bytes": 433628,
+      "sha256": "7f88674787854e0f5565123103c1857aa3eeefeb2f56ebfec837874193ed0830"
+    },
+    {
+      "member": "AB_Test_Workspace/conditions-evidence/conditions-mobile.png",
+      "source": "app/conditions-evidence/conditions-mobile.png",
+      "bytes": 367187,
+      "sha256": "3e3ad82fb50c68eebaa5c176236b4c6c6dadf713d49d7da854889e36246d8a3b"
+    },
+    {
+      "member": "AB_Test_Workspace/conditions.js",
+      "source": "app/conditions.js",
+      "bytes": 2235,
+      "sha256": "ba43452438ed54ad4c42f5ffb7fb61c981247f5fa92e3019c711170b9820b0c5"
+    },
+    {
+      "member": "AB_Test_Workspace/conditions_verification.json",
+      "source": "app/conditions_verification.json",
+      "bytes": 4693,
+      "sha256": "409968477dfa85af203f0df2d916fee0f40780b5de85585a8aa268dd0a5187fd"
     },
     {
       "member": "AB_Test_Workspace/context.css",
@@ -71,67 +191,67 @@
       "member": "AB_Test_Workspace/design-evidence/BROWSER_VERIFICATION.json",
       "source": "app/design-evidence/BROWSER_VERIFICATION.json",
       "bytes": 2322,
-      "sha256": "771a30db74ab0dd1b8162ea10481c6b1a9bbf9bc7f83045b04e9aef69c3902d2"
+      "sha256": "2cd0950faa5400af5432056f720dfe54b63e261afb5bb154fd0bee24281fc1a6"
     },
     {
       "member": "AB_Test_Workspace/design-evidence/INVALIDATED_REPORT.pdf",
       "source": "app/design-evidence/INVALIDATED_REPORT.pdf",
       "bytes": 45333,
-      "sha256": "8cd627a4d5781a93a97b1a5d3b3d9711787635dd6b47930d64a3cea9404262b9"
+      "sha256": "e66fbaf1d1e4df617bb5a1d7d165be919d5a92cdb170d53cb04f5b060b1868ea"
     },
     {
       "member": "AB_Test_Workspace/design-evidence/PDF_TEXT_VERIFICATION.json",
       "source": "app/design-evidence/PDF_TEXT_VERIFICATION.json",
-      "bytes": 3489,
-      "sha256": "3e979cc4a74c01026f4823ca13215a64111476b72adac2b299e55346bce30e21"
+      "bytes": 4095,
+      "sha256": "4f8862310ffec4e626ff13c68a7b80954432c89abc296aa5ca85e8be9b84e717"
     },
     {
       "member": "AB_Test_Workspace/design-evidence/PLAN_ONLY.json",
       "source": "app/design-evidence/PLAN_ONLY.json",
-      "bytes": 4222,
-      "sha256": "5763e686950b211aef4538b6ad8eeeac84cbf15b41d08910217d5dfd3e5f78fb"
+      "bytes": 4794,
+      "sha256": "56d6267eae3dec454f8ce6d2852d3d7ee9f2a31af9995b5b3c69e046814854bc"
     },
     {
       "member": "AB_Test_Workspace/design-evidence/PLAN_RESTORED.json",
       "source": "app/design-evidence/PLAN_RESTORED.json",
-      "bytes": 4230,
-      "sha256": "50adf6294247bc3aecadd967a7eb79a2c72a18986cee44e1c6989dbdfff24fd4"
+      "bytes": 4802,
+      "sha256": "4d65384feaf6f3f9638532eb6ae0ee06e244f2fa4c2b6f76cb6733c5bb29c093"
     },
     {
       "member": "AB_Test_Workspace/design-evidence/PLAN_WITH_AGGREGATES.json",
       "source": "app/design-evidence/PLAN_WITH_AGGREGATES.json",
-      "bytes": 4867,
-      "sha256": "d393a36616d9070f3b5bd8a14c536ad288583b1f546a17bfe58bea39b0888d8a"
+      "bytes": 5419,
+      "sha256": "87fa4320288b7473710a41b42d18255cc49219e5d2ed262359db3a78d38ae388"
     },
     {
       "member": "AB_Test_Workspace/design-evidence/POST_RESULT_EDIT.json",
       "source": "app/design-evidence/POST_RESULT_EDIT.json",
-      "bytes": 4864,
-      "sha256": "72f1f68c5d862ae26f85a0932623476cfb7a77e1e800592d1d7bacb5cde8ff50"
+      "bytes": 5416,
+      "sha256": "b937c2bc277a984bcbe10fde5e90e5ae3459527c6aba2ba2301fbfa18428ce0e"
     },
     {
       "member": "AB_Test_Workspace/design-evidence/RESULT_REPORT.html",
       "source": "app/design-evidence/RESULT_REPORT.html",
-      "bytes": 7491,
-      "sha256": "d68ed90dc502b76bc77501f9874bf73f95bc6ea4b3f5ec7a1ce133548c487c6c"
+      "bytes": 8201,
+      "sha256": "558416e8e57eb4c5a26bff5161662cee1f2a712fb2eccd4efa7569151ff69e68"
     },
     {
       "member": "AB_Test_Workspace/design-evidence/RESULT_REPORT.pdf",
       "source": "app/design-evidence/RESULT_REPORT.pdf",
-      "bytes": 566243,
-      "sha256": "a5c8396d4ad6a7fa3d03c6d2b7dca13db089df63ac67c0a9c3309b007641663a"
+      "bytes": 601441,
+      "sha256": "f4836ad5ed49fef84fad6872892af8dcf3f820eea21e9c90fb7bb526951518f1"
     },
     {
       "member": "AB_Test_Workspace/design-evidence/plan-desktop.png",
       "source": "app/design-evidence/plan-desktop.png",
-      "bytes": 382483,
-      "sha256": "8ea257c51b78e4057a0c00049acfc15af4576e8f22197c29deef2bd32c69a5de"
+      "bytes": 382481,
+      "sha256": "a86ae23804a851509b7fcf4b539ae40a806ea9bbfb41e37d9c0ae7ca9e29a399"
     },
     {
       "member": "AB_Test_Workspace/design-evidence/plan-mobile.png",
       "source": "app/design-evidence/plan-mobile.png",
-      "bytes": 387618,
-      "sha256": "dcb8bf4e973665d97691ffe760ab884cd0b024fcddef7ccc6b8a0f0d621c9626"
+      "bytes": 387738,
+      "sha256": "1f38effd8925b6f4687f83fad63037df3375fa4fd0002725383f393d3343dc25"
     },
     {
       "member": "AB_Test_Workspace/design-ui.js",
@@ -142,8 +262,8 @@
     {
       "member": "AB_Test_Workspace/design.css",
       "source": "app/design.css",
-      "bytes": 349,
-      "sha256": "9722b6a31ce307e27646a2ea7a08a7248fa04fc40e41b692eb2913b9bb3b6ccb"
+      "bytes": 865,
+      "sha256": "26f0756ca833c6c4060da7f6f421a6591822ef3a845f74608ff68e0f66760cd3"
     },
     {
       "member": "AB_Test_Workspace/design.js",
@@ -174,6 +294,12 @@
       "source": "app/evidence/integration/compare_reference.log",
       "bytes": 747,
       "sha256": "226344e077a285aeb90302804e2846304b7b3c11ecc0cca5909d14ff540ce448"
+    },
+    {
+      "member": "AB_Test_Workspace/evidence/integration/conditions_smoke.log",
+      "source": "app/evidence/integration/conditions_smoke.log",
+      "bytes": 1684,
+      "sha256": "6f1a85afb85b1814513ea72a9b5a5a4d6eca566acc634382b408728d5cd30ebe"
     },
     {
       "member": "AB_Test_Workspace/evidence/integration/design_smoke.log",
@@ -209,7 +335,13 @@
       "member": "AB_Test_Workspace/evidence/integration/verify_browser.log",
       "source": "app/evidence/integration/verify_browser.log",
       "bytes": 2407,
-      "sha256": "f74a1d4985abcb97e8e26e29c9bd2ce54f949fb56eb0435d0e6d7bd5c30418d2"
+      "sha256": "cfbfe60a4c237616fadec884bb5319c3880e6201cffc339cb29b4de760304be2"
+    },
+    {
+      "member": "AB_Test_Workspace/evidence/integration/verify_conditions.log",
+      "source": "app/evidence/integration/verify_conditions.log",
+      "bytes": 2448,
+      "sha256": "5305f4bb375d62be681951a0999ed01b570b1f5a592b31df745e375cc9fa3ff8"
     },
     {
       "member": "AB_Test_Workspace/evidence/integration/verify_context.log",
@@ -227,7 +359,7 @@
       "member": "AB_Test_Workspace/evidence/integration/verify_design.log",
       "source": "app/evidence/integration/verify_design.log",
       "bytes": 1180,
-      "sha256": "941500514cb94d68313d6e5240ded8ed36dfdc9ce123b7ca18cb80bef0e532e4"
+      "sha256": "699617cb88d7d71869fc5d4f5d5addf1e6cd012781f5018ca660fd12d0c37bc1"
     },
     {
       "member": "AB_Test_Workspace/evidence/integration/verify_design_boundaries.log",
@@ -256,8 +388,8 @@
     {
       "member": "AB_Test_Workspace/evidence/integration/verify_issue_allowlist.log",
       "source": "app/evidence/integration/verify_issue_allowlist.log",
-      "bytes": 262,
-      "sha256": "c8de57048f42c1a72c33f720a9c173c1d7fb6e2f7bde4eb2f0f09d5fd6820290"
+      "bytes": 259,
+      "sha256": "dccdd5dfc405cfe01edc111dd2836fe6e121cc691c876424d87f4d7d5603ecb4"
     },
     {
       "member": "AB_Test_Workspace/evidence/integration/verify_lineage_browser.log",
@@ -269,13 +401,13 @@
       "member": "AB_Test_Workspace/evidence/integration/verify_lineage_pdf.log",
       "source": "app/evidence/integration/verify_lineage_pdf.log",
       "bytes": 260,
-      "sha256": "a8c3054a5579a7b9d5956abb1bb1aa4a6b5fb160b5ba9db71814f2c02a6f55a7"
+      "sha256": "3f969d846955c8537bcf44cddc5f5bfd9a61ea52130582c78abedf7a5763e3c2"
     },
     {
       "member": "AB_Test_Workspace/evidence/integration/verify_pdf.log",
       "source": "app/evidence/integration/verify_pdf.log",
       "bytes": 210,
-      "sha256": "d9bdc86721b8e7ab2a77a1f947dceb7d6c7fe030b1b66de27b36fd6154959a5f"
+      "sha256": "68104dfb94899aac805eda22fd834518862a5c91758d1eb87fc4e5dd38db1eb8"
     },
     {
       "member": "AB_Test_Workspace/evidence/integration/verify_regressions.log",
@@ -316,26 +448,26 @@
     {
       "member": "AB_Test_Workspace/index.html",
       "source": "app/index.html",
-      "bytes": 18161,
-      "sha256": "baf4e74723e3c74bb1423aa6afa01747a949103ca79a424456807275f1fa6c8d"
+      "bytes": 22779,
+      "sha256": "2fd9122d247f7d8cb5bd3564ed1c313b297840b40e7838aa6c4b1bdab5065432"
     },
     {
       "member": "AB_Test_Workspace/integration_verification.json",
       "source": "app/integration_verification.json",
-      "bytes": 9323,
-      "sha256": "1cfa279c422a7f51c9e4f832edc550f666a70b773115b059acc0b68ed8230ab1"
+      "bytes": 9876,
+      "sha256": "0b5d0da3fd43f37bb0e2e651a5bf53479014b82e12e3efa441cef05c7c999ea6"
     },
     {
       "member": "AB_Test_Workspace/interface_verification.json",
       "source": "app/interface_verification.json",
-      "bytes": 10940,
-      "sha256": "bb5a04bc152ca9754ac38efef64bc3e795bf98d9820101d1a27cc07b6ec5f397"
+      "bytes": 10938,
+      "sha256": "9b87c9593bdc86cf4bc0c909c732fd92a5c21eb7b360892a98f032a5dc3f9647"
     },
     {
       "member": "AB_Test_Workspace/issue_allowlist_verification.json",
       "source": "app/issue_allowlist_verification.json",
-      "bytes": 49982,
-      "sha256": "ebe6a6320ce1fe88aabfc6e915c66ff86714201cf4b4e6513670fd079530eaed"
+      "bytes": 50056,
+      "sha256": "3279fc48a21b2aa2ff04124b1bed9798fec6951fd7d8a30ddcb07efd8bd5f596"
     },
     {
       "member": "AB_Test_Workspace/launch.cmd",
@@ -359,7 +491,7 @@
       "member": "AB_Test_Workspace/lineage_evidence/LINEAGE_PDF_PROOF.json",
       "source": "app/lineage_evidence/LINEAGE_PDF_PROOF.json",
       "bytes": 279,
-      "sha256": "50821f9f5965dab3c28b281777feb07b09466039851c65b71e5cc5033e6eecde"
+      "sha256": "98b435153019f057b88d36e2f425c726be288193fcdb5008ff3c9ba8dd82b42f"
     },
     {
       "member": "AB_Test_Workspace/narrative.js",
@@ -377,13 +509,13 @@
       "member": "AB_Test_Workspace/pdf_verification.json",
       "source": "app/pdf_verification.json",
       "bytes": 229,
-      "sha256": "0267adbcee1eb01f1e620bb69d951ab719e9c4436c7623552d4652036ddc1830"
+      "sha256": "c40de3acbfa6eaef736e0b61c433158ce211e1b8fd84fbadb55662a77e2f410c"
     },
     {
       "member": "AB_Test_Workspace/project-schema.js",
       "source": "app/project-schema.js",
-      "bytes": 5354,
-      "sha256": "6512eba3c1e0c1facf246633f2542a078ba61c6d9a46c0550fee14be3fcc5700"
+      "bytes": 5742,
+      "sha256": "76af16f3c9e02531ae645f43e75eb03fd3df9412fab1db8db39b930e6eb36a65"
     },
     {
       "member": "AB_Test_Workspace/regression_verification.json",
@@ -448,8 +580,8 @@
     {
       "member": "AB_Test_Workspace/server.py",
       "source": "app/server.py",
-      "bytes": 13532,
-      "sha256": "56839c1f8849aa059eb8ba4bc4f41f6ec1f4a66d20f2ef18e2d033357d5b5662"
+      "bytes": 13548,
+      "sha256": "0a43fa86eadb1d4ad11c2c6d501eaca3ecd201397dc8ea772a2325d79aa5f738"
     },
     {
       "member": "AB_Test_Workspace/styles.css",
@@ -476,10 +608,22 @@
       "sha256": "833ba16f78c55fcb0a1132954b46748f4e5a4fac8502b631178bffe396687ccc"
     },
     {
+      "member": "AB_Test_Workspace/tests/condition_controls.py",
+      "source": "app/tests/condition_controls.py",
+      "bytes": 596,
+      "sha256": "0cdb852979ec141dad3f30742f3a0a42c18a0b9ebd8657455a8c69a7613b3de3"
+    },
+    {
+      "member": "AB_Test_Workspace/tests/conditions_smoke.cjs",
+      "source": "app/tests/conditions_smoke.cjs",
+      "bytes": 4984,
+      "sha256": "600726ca3d12b29f872075034248db546338161b962c27b4756e4a9daec8dd11"
+    },
+    {
       "member": "AB_Test_Workspace/tests/design_smoke.cjs",
       "source": "app/tests/design_smoke.cjs",
-      "bytes": 3808,
-      "sha256": "e10ec4c9ae534ab1ce686d3175835f59a0e0cc4c8ee43aa0363dee88f52405dd"
+      "bytes": 3877,
+      "sha256": "dc8ecc39d1f49b504db6e938c386c4a6cb04d4d6b9967fccc075189581c5c2bf"
     },
     {
       "member": "AB_Test_Workspace/tests/engine_smoke.cjs",
@@ -502,8 +646,8 @@
     {
       "member": "AB_Test_Workspace/tests/lineage_smoke.cjs",
       "source": "app/tests/lineage_smoke.cjs",
-      "bytes": 4291,
-      "sha256": "41795ef28ec230f4868ae6e695a8f71894da573f1ee44fdc68b608c8d23b51c7"
+      "bytes": 4345,
+      "sha256": "92d21d8178574a5d4b0b75b4e8ec0a14be80e662228204e993be7646f63a32b0"
     },
     {
       "member": "AB_Test_Workspace/tests/narrative_smoke.cjs",
@@ -514,56 +658,62 @@
     {
       "member": "AB_Test_Workspace/tests/project_schema_smoke.cjs",
       "source": "app/tests/project_schema_smoke.cjs",
-      "bytes": 5189,
-      "sha256": "4d3a05bb3568d01713e6635fa6035c7cb163f0f9d2ecc771866fef30fc520715"
+      "bytes": 5243,
+      "sha256": "0dfdcfd4219f6c2723b4e8ab10503d83a45d1e3b95531731509b943e77397ca7"
     },
     {
       "member": "AB_Test_Workspace/tests/reference_verification.json",
       "source": "app/tests/reference_verification.json",
       "bytes": 1634139,
-      "sha256": "863cc1f75afdac10aad49b4278f0995431b43b4a6595a672c32c84c454cd5167"
+      "sha256": "921cca7011d7405d3d8bbc59c97e6eecd706059cded82336572f525c47fe839e"
     },
     {
       "member": "AB_Test_Workspace/tests/run_integration.py",
       "source": "app/tests/run_integration.py",
-      "bytes": 2451,
-      "sha256": "88946ac71fa4cd0a6f3594587e7ba03c7306e368c79cd5155f6628aa35e7c42d"
+      "bytes": 2471,
+      "sha256": "08426a209768b2417fb1a55de33f78c3eaf7f9948b319b8289bf06792525062a"
     },
     {
       "member": "AB_Test_Workspace/tests/unit_verification.json",
       "source": "app/tests/unit_verification.json",
-      "bytes": 1106,
-      "sha256": "d1b7cfc6b683b4497aaad787d792d1586675df63237c5e9fef955bb70c54c622"
+      "bytes": 1264,
+      "sha256": "3f2676e9a3f9e1e2a069a466cd1a9821f9b356baeeeb7ac4c31130341ad1bb15"
     },
     {
       "member": "AB_Test_Workspace/tests/verify_browser.py",
       "source": "app/tests/verify_browser.py",
-      "bytes": 16660,
-      "sha256": "c88f6d94be55e8dccf195b2ffc0a4918182a779b03fac80d6174f7018f80c954"
+      "bytes": 16824,
+      "sha256": "2235589b38da90dc81188178cbed97454c1b100d1c61487db9c131150cd85cd3"
+    },
+    {
+      "member": "AB_Test_Workspace/tests/verify_conditions.py",
+      "source": "app/tests/verify_conditions.py",
+      "bytes": 11508,
+      "sha256": "68e05735aa14c79bbc96699afd1ec8d484c5cd92cf0fbcc9b4126bd6102270f2"
     },
     {
       "member": "AB_Test_Workspace/tests/verify_context.py",
       "source": "app/tests/verify_context.py",
-      "bytes": 6852,
-      "sha256": "55e274dd7f321401764a28ef8a98536825ebdb806091fe47522dcae83c613e6f"
+      "bytes": 6935,
+      "sha256": "f7b73b2bcd3fabc187d81e4eb3f3ef35f427e452e7bfde3ba9d6f27ca49d3b28"
     },
     {
       "member": "AB_Test_Workspace/tests/verify_current_interface.py",
       "source": "app/tests/verify_current_interface.py",
-      "bytes": 16662,
-      "sha256": "a59261b2446906de2bfc73c8bc65706d0c7e0e5761a89264460acfca1cf4f5c0"
+      "bytes": 16783,
+      "sha256": "45aeb0175a33f811dc3246314d5c1c5ffe5f691bdc9e43b34946b5f92a23edaa"
     },
     {
       "member": "AB_Test_Workspace/tests/verify_design.py",
       "source": "app/tests/verify_design.py",
-      "bytes": 8534,
-      "sha256": "9cf51014cdc769c2860673a511547c8a9bf94394c0ec0410b7bd251bc1688867"
+      "bytes": 8610,
+      "sha256": "b86fc0c8bbdbf5447d0d914a2579f62113b603827dceaf2c9912ce9d83db6270"
     },
     {
       "member": "AB_Test_Workspace/tests/verify_design_boundaries.py",
       "source": "app/tests/verify_design_boundaries.py",
-      "bytes": 4339,
-      "sha256": "423cf12d45c880b44c8bfcef78d380eaf0a1408b41ff0e330c71a444747b8ab5"
+      "bytes": 4401,
+      "sha256": "74314fdedd0f08ce7d65677d1ce3ed068b57b687fe560c1ec13dd0bbdb59759b"
     },
     {
       "member": "AB_Test_Workspace/tests/verify_design_pdf.py",
@@ -592,8 +742,8 @@
     {
       "member": "AB_Test_Workspace/tests/verify_lineage_browser.py",
       "source": "app/tests/verify_lineage_browser.py",
-      "bytes": 5882,
-      "sha256": "932cc8cbe56d2697cee1b82f7d18978a88fc8165186bcdb9944938943bf32243"
+      "bytes": 5974,
+      "sha256": "bcf47018c4903d096cb784a7073935a1317efdc97dc41abdfc428095408c21a6"
     },
     {
       "member": "AB_Test_Workspace/tests/verify_lineage_pdf.py",
@@ -610,14 +760,14 @@
     {
       "member": "AB_Test_Workspace/tests/verify_regressions.py",
       "source": "app/tests/verify_regressions.py",
-      "bytes": 10590,
-      "sha256": "cc3f336989416e0a77a25a9c1987be40825a1c4264ad9d606f3f0092e487e129"
+      "bytes": 10702,
+      "sha256": "dff5d0817cd8ec95a0945634a6b2a61b890692783fdea9feb6c7f98b9be07f74"
     },
     {
       "member": "AB_Test_Workspace/tests/verify_workflow.py",
       "source": "app/tests/verify_workflow.py",
-      "bytes": 9410,
-      "sha256": "52605ea28ee87ce3af7e35ee6ebad651204396e48629d21a697e424d7dd47470"
+      "bytes": 9498,
+      "sha256": "eb592ff56b2a891e7215a2f525ca030dc90800b792dcc364fc7150ae4c927430"
     },
     {
       "member": "AB_Test_Workspace/theme.css",
@@ -628,8 +778,8 @@
     {
       "member": "AB_Test_Workspace/verification.json",
       "source": "app/verification.json",
-      "bytes": 7696,
-      "sha256": "608f83eab308aacab79c92ddf441df55a6d9e0dc8204c9c26013caefc6e6f250"
+      "bytes": 10377,
+      "sha256": "aecbe6594b6b4b34c421adc00dd2940f13f15d6aced108f0f9ce1047516bb689"
     },
     {
       "member": "AB_Test_Workspace/worker.js",

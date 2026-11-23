@@ -1,6 +1,33 @@
 {
   "format": "ab-local-project",
-  "version": 6,
+  "version": 7,
+  "conditions": {
+    "randomized": {
+      "status": "yes",
+      "evidence": "",
+      "origin": "user_statement"
+    },
+    "independent": {
+      "status": "yes",
+      "evidence": "",
+      "origin": "user_statement"
+    },
+    "mature": {
+      "status": "yes",
+      "evidence": "",
+      "origin": "user_statement"
+    },
+    "fixedStop": {
+      "status": "yes",
+      "evidence": "",
+      "origin": "user_statement"
+    },
+    "segmentPrespecified": {
+      "status": "yes",
+      "evidence": "",
+      "origin": "user_statement"
+    }
+  },
   "source_kind": "csv",
   "synthetic": false,
   "source_digest": "eeaf764a6d6a8c6fcb56b06a0e1903979fd0ebfbad7920adb3014bd6e33877bc",

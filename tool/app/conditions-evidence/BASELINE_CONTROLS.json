@@ -1,0 +1,59 @@
+{
+  "base_commit": "9fb9873aeafa342425857f202134296f1eca98a8",
+  "full_initial_manifest_sha256": "7072cccd97acdc23ec2b4795830dd2fc964fdfdcc626da53f643019b674a1454",
+  "method": "SHA-256 and bytes of initial clean worktree before R06 changes; parent separately preserves pinned git blobs",
+  "controls": {
+    "engine.js": {
+      "sha256": "f40cc1fbd3e87dde4050cb0155673c2f368b2e88274a30fa03aeb09dbcde05f7",
+      "bytes": 19662
+    },
+    "worker.js": {
+      "sha256": "6f30bd381c13bbad95dcd6d6570dff14a23df9f5ad5b0a5d4d05bfe6078d7179",
+      "bytes": 724
+    },
+    "narrative.js": {
+      "sha256": "570af0c9cb1e10063bf0842e2393bf7561938ca3327e23f71c485c79abce1f4a",
+      "bytes": 9319
+    },
+    "lineage.js": {
+      "sha256": "6fbe55b5ba392e6bb64ff3dcaa5702936301aceac4f6599a55b99bad6bed84ba",
+      "bytes": 2938
+    },
+    "column-mapping.js": {
+      "sha256": "d1d3b0c7a2e3aeb520c9c831d3583cf5e2d889c6ea079837a7814868ab361a68",
+      "bytes": 9190
+    },
+    "workflow.js": {
+      "sha256": "f70e3989f4f5432210ab4141f6dd83f86799248b82c59c1ff0b9fd7fdaad5478",
+      "bytes": 8316
+    },
+    "design.js": {
+      "sha256": "c2928c37c92a053534682baf0da82fbbe98fdf249ef7180604cd05cdc5ddda22",
+      "bytes": 4326
+    },
+    "design-ui.js": {
+      "sha256": "2e5e46fa1584f6061078ee60036114f5465062caa65c2d9fee743a8d4aef0087",
+      "bytes": 4694
+    },
+    "theme.css": {
+      "sha256": "32af93deee832077377efcb2b83be4aeafe16fb3cd06e705ecc1e2a4038efd13",
+      "bytes": 14881
+    },
+    "context.css": {
+      "sha256": "e75a39ddceb74b433ab3a4fb30a41ce0e7a5ed4fa5d82cc940bf4219b39b4edf",
+      "bytes": 2280
+    },
+    "workflow.css": {
+      "sha256": "98254b477975d83aad6ce4b8667776f21c772a1e2974d7d667682294de82abfa",
+      "bytes": 2827
+    },
+    "styles.css": {
+      "sha256": "0869f2c9d558ad908dc67c07ad06d58af0ae6acdc09d80eb66bd0bf397e8a153",
+      "bytes": 9544
+    },
+    "help/walkthrough.mp4": {
+      "sha256": "137d7ebc52570b2e1368755a87efb95bb3420cf77f84c0069b9dd68cc69d0492",
+      "bytes": 1499871
+    }
+  }
+}

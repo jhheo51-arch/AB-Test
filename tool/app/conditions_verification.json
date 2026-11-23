@@ -1,0 +1,187 @@
+{
+  "status": "PASS",
+  "count": 44,
+  "checks": [
+    {
+      "name": "five selects only; no checkbox aliases",
+      "pass": true
+    },
+    {
+      "name": "fresh page unknown and empty evidence",
+      "pass": true
+    },
+    {
+      "name": "demo assumptions honestly identified not proof",
+      "pass": true
+    },
+    {
+      "name": "actual CSV resets all conditions and evidence",
+      "pass": true
+    },
+    {
+      "name": "all unknown actual engine descriptive null inference",
+      "pass": true
+    },
+    {
+      "name": "all no actual engine descriptive null inference",
+      "pass": true
+    },
+    {
+      "name": "all yes actual engine p and counts",
+      "pass": true
+    },
+    {
+      "name": "randomized no blocks actual engine",
+      "pass": true
+    },
+    {
+      "name": "randomized unknown blocks actual engine",
+      "pass": true
+    },
+    {
+      "name": "independent no blocks actual engine",
+      "pass": true
+    },
+    {
+      "name": "independent unknown blocks actual engine",
+      "pass": true
+    },
+    {
+      "name": "mature no blocks actual engine",
+      "pass": true
+    },
+    {
+      "name": "mature unknown blocks actual engine",
+      "pass": true
+    },
+    {
+      "name": "fixed-stop no blocks actual engine",
+      "pass": true
+    },
+    {
+      "name": "fixed-stop unknown blocks actual engine",
+      "pass": true
+    },
+    {
+      "name": "segment unknown keeps overall valid, segments exploratory",
+      "pass": true
+    },
+    {
+      "name": "segment no keeps overall valid, segments exploratory",
+      "pass": true
+    },
+    {
+      "name": "free text never changes state to independent validation",
+      "pass": true
+    },
+    {
+      "name": "schema7 exact evidence and canonical projection saved",
+      "pass": true
+    },
+    {
+      "name": "fresh page save restore exact all status evidence origin",
+      "pass": true
+    },
+    {
+      "name": "mobile no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "user text escaped in local method details",
+      "pass": true
+    },
+    {
+      "name": "minimal model facts exclude evidence and all free text",
+      "pass": true
+    },
+    {
+      "name": "public HTML states included evidence excluded",
+      "pass": true
+    },
+    {
+      "name": "actual PDF states included evidence excluded",
+      "pass": true
+    },
+    {
+      "name": "fresh page mixed yes no unknown and all evidence exact",
+      "pass": true
+    },
+    {
+      "name": "help button immediate pause",
+      "pass": true
+    },
+    {
+      "name": "help button exact tri-state evidence state URL preserved",
+      "pass": true
+    },
+    {
+      "name": "help Escape immediate pause",
+      "pass": true
+    },
+    {
+      "name": "help Escape exact tri-state evidence state URL preserved",
+      "pass": true
+    },
+    {
+      "name": "approved print populated -evidence",
+      "pass": true
+    },
+    {
+      "name": "condition edit revokes result share input LLM print -evidence",
+      "pass": true
+    },
+    {
+      "name": "approved print populated ",
+      "pass": true
+    },
+    {
+      "name": "condition edit revokes result share input LLM print ",
+      "pass": true
+    },
+    {
+      "name": "invalid conflict restore preserves current result and records",
+      "pass": true
+    },
+    {
+      "name": "invalid oversize restore preserves current result and records",
+      "pass": true
+    },
+    {
+      "name": "invalid invalid restore preserves current result and records",
+      "pass": true
+    },
+    {
+      "name": "visible evidence cap matches schema",
+      "pass": true
+    },
+    {
+      "name": "legacy 2 honest false unknown true assertion empty evidence",
+      "pass": true
+    },
+    {
+      "name": "legacy 3 honest false unknown true assertion empty evidence",
+      "pass": true
+    },
+    {
+      "name": "legacy 4 honest false unknown true assertion empty evidence",
+      "pass": true
+    },
+    {
+      "name": "legacy 5 honest false unknown true assertion empty evidence",
+      "pass": true
+    },
+    {
+      "name": "legacy 6 honest false unknown true assertion empty evidence",
+      "pass": true
+    },
+    {
+      "name": "no model POST or page errors",
+      "pass": true
+    }
+  ],
+  "posts": [],
+  "page_errors": [],
+  "human_observations": 0,
+  "actual_model_calls": 0,
+  "scope": "synthetic actual Chrome; visible controls, engine gates, JSON freshpage migration, PDF and actual video; not independent experiment verification"
+}

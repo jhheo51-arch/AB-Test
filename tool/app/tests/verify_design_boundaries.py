@@ -1,3 +1,4 @@
+from condition_controls import set_checked, is_checked
 """Additional design boundaries through actual Chrome; synthetic only, no model calls."""
 from pathlib import Path
 import argparse,json
@@ -41,9 +42,9 @@ with sync_playwright() as w:
   if version<4:x.pop('judgment',None)
   if version==2:x['plan'].pop('audience',None)
   p.goto(u,wait_until='networkidle');p.set_input_files('#project-file',{'name':'legacy.json','mimeType':'application/json','buffer':json.dumps(x).encode()});expect(p.locator('#data-text')).not_to_have_value('')
-  p.click('#prepare');expect(p.locator('#analysis-options')).to_be_visible();p.check('#confirm-input');p.click('#analyze');expect(p.locator('#results-view')).to_be_visible()
+  p.click('#prepare');expect(p.locator('#analysis-options')).to_be_visible();set_checked(p, '#confirm-input');p.click('#analyze');expect(p.locator('#results-view')).to_be_visible()
   with p.expect_download() as d:p.click('#save-project')
   migrated=json.loads(Path(d.value.path()).read_text(encoding='utf-8'))
-  check('legacy schema '+str(version)+' restores, analyzes and migrates without fabricated design',migrated['version']==6 and migrated['design'] is None and len(migrated['cells'])==4 and p.evaluate('state.result.overall.B.success===150'))
+  check('legacy schema '+str(version)+' restores, analyzes and migrates without fabricated design',migrated['version']==7 and migrated['design'] is None and len(migrated['cells'])==4 and p.evaluate('state.result.overall.B.success===150'))
  check('no model or other POST attempted',posts==[]);b.close()
 (E/'BOUNDARY_VERIFICATION.json').write_text(json.dumps({'status':'PASS','count':len(checks),'checks':checks,'human_observations':0,'actual_model_calls':0},ensure_ascii=False,indent=2),encoding='utf-8')

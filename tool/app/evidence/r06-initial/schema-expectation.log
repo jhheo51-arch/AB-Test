@@ -1,0 +1,175 @@
+node:assert:152
+  throw new AssertionError(obj);
+  ^
+
+AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
++ actual - expected
+... Skipped lines
+
+  {
+    cells: [
+      {
+        arm: 'A',
+        segment: 'x',
+...
+    ],
++   conditions: {
++     fixedStop: {
++       evidence: '',
++       origin: 'legacy_user_confirmation',
++       status: 'yes'
++     },
++     independent: {
++       evidence: '',
++       origin: 'legacy_user_confirmation',
++       status: 'yes'
++     },
++     mature: {
++       evidence: '',
++       origin: 'legacy_user_confirmation',
++       status: 'yes'
++     },
++     randomized: {
++       evidence: '',
++       origin: 'legacy_user_confirmation',
++       status: 'yes'
++     },
++     segmentPrespecified: {
++       evidence: '',
++       origin: 'legacy_user_confirmation',
++       status: 'yes'
++     }
++   },
+    decision: '',
+    design: null,
+    engine_version: null,
+    format: 'ab-local-project',
+    judgment: {
+...
+    synthetic: true,
++   version: 7
+-   version: 6
+  }
+
+    at C:\Users\Administrator\AppData\Local\hermes\profiles\mira\cache\scratch\ab_tool_r06_integration\tool\app\tests\project_schema_smoke.cjs:6:79
+    at test (C:\Users\Administrator\AppData\Local\hermes\profiles\mira\cache\scratch\ab_tool_r06_integration\tool\app\tests\project_schema_smoke.cjs:3:32)
+    at Object.<anonymous> (C:\Users\Administrator\AppData\Local\hermes\profiles\mira\cache\scratch\ab_tool_r06_integration\tool\app\tests\project_schema_smoke.cjs:6:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47 {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: {
+    format: 'ab-local-project',
+    version: 7,
+    conditions: {
+      randomized: {
+        status: 'yes',
+        evidence: '',
+        origin: 'legacy_user_confirmation'
+      },
+      independent: {
+        status: 'yes',
+        evidence: '',
+        origin: 'legacy_user_confirmation'
+      },
+      mature: {
+        status: 'yes',
+        evidence: '',
+        origin: 'legacy_user_confirmation'
+      },
+      fixedStop: {
+        status: 'yes',
+        evidence: '',
+        origin: 'legacy_user_confirmation'
+      },
+      segmentPrespecified: {
+        status: 'yes',
+        evidence: '',
+        origin: 'legacy_user_confirmation'
+      }
+    },
+    source_kind: 'synthetic',
+    synthetic: true,
+    source_digest: null,
+    plan: {
+      randomized: true,
+      independent: true,
+      mature: true,
+      fixedStop: true,
+      includeSegments: true,
+      segmentPrespecified: true,
+      purpose: '합성',
+      metric: '성공',
+      window: '완료',
+      policyA: 'A 설명',
+      policyB: 'B 설명',
+      audience: '합성 대상',
+      alpha: 0.05
+    },
+    cells: [
+      { arm: 'A', segment: 'x', success: 10, total: 100 },
+      { arm: 'B', segment: 'x', success: 20, total: 100 }
+    ],
+    decision: '',
+    revisit: '',
+    engine_version: null,
+    judgment: { direction: '', checks: '' },
+    lineage: {
+      version: 1,
+      algorithm: 'SHA-256',
+      origin: { kind: 'unknown', digest: null },
+      previous: null,
+      current: null,
+      transformation: { name: 'none', version: '0.5.1' }
+    },
+    design: null
+  },
+  expected: {
+    format: 'ab-local-project',
+    version: 6,
+    lineage: {
+      version: 1,
+      algorithm: 'SHA-256',
+      origin: { kind: 'unknown', digest: null },
+      previous: null,
+      current: null,
+      transformation: { name: 'none', version: '0.5.1' }
+    },
+    judgment: { direction: '', checks: '' },
+    source_kind: 'synthetic',
+    synthetic: true,
+    source_digest: null,
+    plan: {
+      randomized: true,
+      independent: true,
+      mature: true,
+      fixedStop: true,
+      includeSegments: true,
+      segmentPrespecified: true,
+      alpha: 0.05,
+      purpose: '합성',
+      metric: '성공',
+      window: '완료',
+      policyA: 'A 설명',
+      policyB: 'B 설명',
+      audience: '합성 대상'
+    },
+    cells: [
+      { arm: 'A', segment: 'x', success: 10, total: 100 },
+      { arm: 'B', segment: 'x', success: 20, total: 100 }
+    ],
+    decision: '',
+    revisit: '',
+    engine_version: null,
+    design: null
+  },
+  operator: 'deepStrictEqual',
+  diff: 'simple'
+}
+
+Node.js v24.19.0

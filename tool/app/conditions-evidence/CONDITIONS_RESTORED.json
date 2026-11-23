@@ -1,0 +1,103 @@
+{
+  "format": "ab-local-project",
+  "version": 7,
+  "conditions": {
+    "randomized": {
+      "status": "yes",
+      "evidence": "<img src=x onerror=\"window.R06_XSS=1\"> 사용자 메모 & 기록\nEVIDENCE_PRIVATE_R06 0",
+      "origin": "user_statement"
+    },
+    "independent": {
+      "status": "yes",
+      "evidence": "<img src=x onerror=\"window.R06_XSS=1\"> 사용자 메모 & 기록\nEVIDENCE_PRIVATE_R06 1",
+      "origin": "user_statement"
+    },
+    "mature": {
+      "status": "yes",
+      "evidence": "<img src=x onerror=\"window.R06_XSS=1\"> 사용자 메모 & 기록\nEVIDENCE_PRIVATE_R06 2",
+      "origin": "user_statement"
+    },
+    "fixedStop": {
+      "status": "yes",
+      "evidence": "<img src=x onerror=\"window.R06_XSS=1\"> 사용자 메모 & 기록\nEVIDENCE_PRIVATE_R06 3",
+      "origin": "user_statement"
+    },
+    "segmentPrespecified": {
+      "status": "yes",
+      "evidence": "<img src=x onerror=\"window.R06_XSS=1\"> 사용자 메모 & 기록\nEVIDENCE_PRIVATE_R06 4",
+      "origin": "user_statement"
+    }
+  },
+  "source_kind": "project",
+  "synthetic": false,
+  "source_digest": "aa0e4a9990f58fd5f03ebbc3d88cc8625ef019fff5c04e74d6b16c3ddd32889c",
+  "plan": {
+    "randomized": true,
+    "independent": true,
+    "mature": true,
+    "fixedStop": true,
+    "includeSegments": true,
+    "segmentPrespecified": true,
+    "purpose": "시승 안내 결과와 고객군 차이를 이해하기",
+    "metric": "합성 예시의 시승 완료 여부",
+    "window": "예시 가정: 개인별 관측 완료",
+    "policyA": "가치 안내",
+    "policyB": "편의 안내",
+    "audience": "합성 예시: 이번 실험에 배정된 신규·기존 고객",
+    "alpha": 0.05
+  },
+  "cells": [
+    {
+      "arm": "A",
+      "segment": "new",
+      "success": 50,
+      "total": 500
+    },
+    {
+      "arm": "B",
+      "segment": "new",
+      "success": 75,
+      "total": 500
+    },
+    {
+      "arm": "A",
+      "segment": "old",
+      "success": 80,
+      "total": 500
+    },
+    {
+      "arm": "B",
+      "segment": "old",
+      "success": 75,
+      "total": 500
+    }
+  ],
+  "decision": "",
+  "revisit": "",
+  "engine_version": null,
+  "judgment": {
+    "direction": "",
+    "checks": ""
+  },
+  "lineage": {
+    "version": 1,
+    "algorithm": "SHA-256",
+    "origin": {
+      "kind": "input_text_utf8",
+      "digest": "aa0e4a9990f58fd5f03ebbc3d88cc8625ef019fff5c04e74d6b16c3ddd32889c"
+    },
+    "previous": {
+      "kind": "analysis_csv_utf8",
+      "digest": "aa0e4a9990f58fd5f03ebbc3d88cc8625ef019fff5c04e74d6b16c3ddd32889c"
+    },
+    "current": {
+      "kind": "restored_aggregate_csv_utf8",
+      "digest": "aa0e4a9990f58fd5f03ebbc3d88cc8625ef019fff5c04e74d6b16c3ddd32889c"
+    },
+    "transformation": {
+      "name": "aggregate_restore",
+      "version": "0.5.1"
+    }
+  },
+  "design": null
+}

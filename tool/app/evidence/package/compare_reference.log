@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "summary": {
+    "cases": {
+      "total": 224,
+      "passed": 224,
+      "failed": 0
+    },
+    "interaction_cases": {
+      "total": 11,
+      "passed": 11,
+      "failed": 0
+    },
+    "holm_independent_only": {
+      "total": 8,
+      "passed": 8,
+      "failed": 0
+    },
+    "interaction_numeric": {
+      "total": 5,
+      "passed": 5,
+      "failed": 0
+    },
+    "interaction_information_gates": {
+      "total": 5,
+      "passed": 5,
+      "failed": 0
+    },
+    "interaction_api_boundary": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0
+    },
+    "actual_engine_family": {
+      "m1": 224,
+      "m4": 10
+    },
+    "failed_checks": 0
+  },
+  "failures": []
+}

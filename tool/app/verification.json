@@ -1,14 +1,15 @@
 {
   "status": "PASS",
-  "timestamp_utc": "2026-11-23T02:40:02.071489+00:00",
+  "timestamp_utc": "2026-11-23T03:47:05.029463+00:00",
   "deployment": "single canonical current app; latest-only; no visible product version labels",
   "integration_suite": {
-    "scripts": 21,
+    "scripts": 23,
     "all_exit_zero": true,
     "record": "integration_verification.json",
     "server_stopped": true
   },
   "browser_checks": {
+    "conditions_verification.json": 44,
     "browser_verification.json": 40,
     "context_verification.json": 19,
     "interface_verification.json": 84,
@@ -24,6 +25,12 @@
       "groups": 12,
       "exit_code": 0,
       "log": "evidence/integration/column_mapping_smoke.log"
+    },
+    {
+      "script": "conditions_smoke.cjs",
+      "groups": 29,
+      "exit_code": 0,
+      "log": "evidence/integration/conditions_smoke.log"
     },
     {
       "script": "design_smoke.cjs",
@@ -56,7 +63,7 @@
       "log": "evidence/integration/project_schema_smoke.log"
     }
   ],
-  "unit_group_total": 116,
+  "unit_group_total": 145,
   "numeric_reference": {
     "record": "tests/reference_verification.json",
     "status": "PASS",
@@ -99,19 +106,21 @@
     }
   },
   "current_pdf_records": [
+    "conditions_verification.json",
     "pdf_verification.json",
     "design-evidence/PDF_TEXT_VERIFICATION.json",
     "workflow_evidence/GUIDED_PDF_PROOF.json",
     "lineage_evidence/LINEAGE_PDF_PROOF.json"
   ],
   "source_sha256": {
-    "app.js": "36e060594c53fe4742316fc25a51a3feb279721a5c37d29688584e59f28ed74c",
-    "index.html": "baf4e74723e3c74bb1423aa6afa01747a949103ca79a424456807275f1fa6c8d",
-    "server.py": "56839c1f8849aa059eb8ba4bc4f41f6ec1f4a66d20f2ef18e2d033357d5b5662",
-    "project-schema.js": "6512eba3c1e0c1facf246633f2542a078ba61c6d9a46c0550fee14be3fcc5700",
+    "conditions.js": "ba43452438ed54ad4c42f5ffb7fb61c981247f5fa92e3019c711170b9820b0c5",
+    "app.js": "c4a2e4d407ab3563c562d865ca93059537e7b4b0ed1b605f7c8776403dea1b43",
+    "index.html": "2fd9122d247f7d8cb5bd3564ed1c313b297840b40e7838aa6c4b1bdab5065432",
+    "server.py": "0a43fa86eadb1d4ad11c2c6d501eaca3ecd201397dc8ea772a2325d79aa5f738",
+    "project-schema.js": "76af16f3c9e02531ae645f43e75eb03fd3df9412fab1db8db39b930e6eb36a65",
     "design.js": "c2928c37c92a053534682baf0da82fbbe98fdf249ef7180604cd05cdc5ddda22",
     "design-ui.js": "2e5e46fa1584f6061078ee60036114f5465062caa65c2d9fee743a8d4aef0087",
-    "design.css": "9722b6a31ce307e27646a2ea7a08a7248fa04fc40e41b692eb2913b9bb3b6ccb",
+    "design.css": "26f0756ca833c6c4060da7f6f421a6591822ef3a845f74608ff68e0f66760cd3",
     "workflow.js": "f70e3989f4f5432210ab4141f6dd83f86799248b82c59c1ff0b9fd7fdaad5478",
     "engine.js": "f40cc1fbd3e87dde4050cb0155673c2f368b2e88274a30fa03aeb09dbcde05f7",
     "worker.js": "6f30bd381c13bbad95dcd6d6570dff14a23df9f5ad5b0a5d4d05bfe6078d7179",
@@ -130,11 +139,72 @@
     "lineage.js": true,
     "column-mapping.js": true,
     "workflow.js": true,
+    "design.js": true,
+    "design-ui.js": true,
     "theme.css": true,
     "context.css": true,
     "workflow.css": true,
     "styles.css": true,
     "help/walkthrough.mp4": true
+  },
+  "baseline": {
+    "base_commit": "9fb9873aeafa342425857f202134296f1eca98a8",
+    "full_initial_manifest_sha256": "7072cccd97acdc23ec2b4795830dd2fc964fdfdcc626da53f643019b674a1454",
+    "method": "SHA-256 and bytes of initial clean worktree before R06 changes; parent separately preserves pinned git blobs",
+    "controls": {
+      "engine.js": {
+        "sha256": "f40cc1fbd3e87dde4050cb0155673c2f368b2e88274a30fa03aeb09dbcde05f7",
+        "bytes": 19662
+      },
+      "worker.js": {
+        "sha256": "6f30bd381c13bbad95dcd6d6570dff14a23df9f5ad5b0a5d4d05bfe6078d7179",
+        "bytes": 724
+      },
+      "narrative.js": {
+        "sha256": "570af0c9cb1e10063bf0842e2393bf7561938ca3327e23f71c485c79abce1f4a",
+        "bytes": 9319
+      },
+      "lineage.js": {
+        "sha256": "6fbe55b5ba392e6bb64ff3dcaa5702936301aceac4f6599a55b99bad6bed84ba",
+        "bytes": 2938
+      },
+      "column-mapping.js": {
+        "sha256": "d1d3b0c7a2e3aeb520c9c831d3583cf5e2d889c6ea079837a7814868ab361a68",
+        "bytes": 9190
+      },
+      "workflow.js": {
+        "sha256": "f70e3989f4f5432210ab4141f6dd83f86799248b82c59c1ff0b9fd7fdaad5478",
+        "bytes": 8316
+      },
+      "design.js": {
+        "sha256": "c2928c37c92a053534682baf0da82fbbe98fdf249ef7180604cd05cdc5ddda22",
+        "bytes": 4326
+      },
+      "design-ui.js": {
+        "sha256": "2e5e46fa1584f6061078ee60036114f5465062caa65c2d9fee743a8d4aef0087",
+        "bytes": 4694
+      },
+      "theme.css": {
+        "sha256": "32af93deee832077377efcb2b83be4aeafe16fb3cd06e705ecc1e2a4038efd13",
+        "bytes": 14881
+      },
+      "context.css": {
+        "sha256": "e75a39ddceb74b433ab3a4fb30a41ce0e7a5ed4fa5d82cc940bf4219b39b4edf",
+        "bytes": 2280
+      },
+      "workflow.css": {
+        "sha256": "98254b477975d83aad6ce4b8667776f21c772a1e2974d7d667682294de82abfa",
+        "bytes": 2827
+      },
+      "styles.css": {
+        "sha256": "0869f2c9d558ad908dc67c07ad06d58af0ae6acdc09d80eb66bd0bf397e8a153",
+        "bytes": 9544
+      },
+      "help/walkthrough.mp4": {
+        "sha256": "137d7ebc52570b2e1368755a87efb95bb3420cf77f84c0069b9dd68cc69d0492",
+        "bytes": 1499871
+      }
+    }
   },
   "video": {
     "sha256": "137d7ebc52570b2e1368755a87efb95bb3420cf77f84c0069b9dd68cc69d0492",
@@ -151,21 +221,21 @@
         "width": 1280,
         "height": 900,
         "duration": 77.68,
-        "readyState": 1
+        "readyState": 4
       },
       {
         "case": "prepared input button close",
         "width": 1280,
         "height": 900,
         "duration": 77.68,
-        "readyState": 1
+        "readyState": 4
       },
       {
         "case": "analyzed result Escape close",
         "width": 1280,
         "height": 900,
         "duration": 77.68,
-        "readyState": 1
+        "readyState": 4
       },
       {
         "case": "share with both consents button close",
@@ -186,7 +256,7 @@
         "width": 1280,
         "height": 900,
         "duration": 77.68,
-        "readyState": 4
+        "readyState": 1
       },
       {
         "case": "mapping error Escape close",
@@ -214,12 +284,13 @@
     "full_decode": "historical baseline; not rerun in this integration; actual Chrome playback rerun"
   },
   "storage": {
-    "schema": 6,
+    "schema": 7,
     "legacy_imports": [
       2,
       3,
       4,
-      5
+      5,
+      6
     ],
     "same_save_parse_normalization": true,
     "audience_guided_maxlength": 300
@@ -231,8 +302,8 @@
     "prior actual model connection; no model called in current integration",
     "prior video full-decode certification; exact bytes preserved"
   ],
-  "initial_run": "evidence/integration-initial/result.json",
-  "initial_issues": "design navigation wiring and old-schema test expectations corrected; initial parallel worker readiness timeout not reproduced serially; general cause not established",
+  "initial_run": "evidence/r06-initial/result.json",
+  "initial_issues": "R06 initial failures are preserved; test-only adaptation from checkbox actions and schema6 expectations to visible selects/schema7; see conditions-evidence/IMPLEMENTATION_NOTES.md; previous R05 initial failures are historical and not rerun",
   "limits": [
     "Synthetic automation, not participant study",
     "No actual AI semantic design; local fixed questions and proposals",

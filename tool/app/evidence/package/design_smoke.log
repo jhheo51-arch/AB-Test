@@ -1,0 +1,17 @@
+PASS blank draft has unknown fields and no counts
+PASS all three segment roles are separate fields
+PASS each candidate produces distinct editable policies
+PASS proposal does not invent baseline sample period or segment data
+PASS change invalidates every confirmed dependency
+PASS post-result changes remain sticky through normalization
+PASS empty confirmed field rejected
+PASS unknown status rejected
+PASS unknown candidate rejected
+PASS missing field rejected without partial restore
+PASS long audience rejected and free text not silently truncated
+PASS HTML-like text retained as data not executed
+PASS schema6 plan-only exact roundtrip
+PASS schema2 through 5 never invent design record
+PASS schema excludes unexpected raw field in design
+PASS conflicting design and result context rejected
+RESULT 16 design unit groups passed

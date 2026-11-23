@@ -1,3 +1,4 @@
+from condition_controls import set_checked, is_checked
 """R05 real loopback Chrome workflow. Synthetic inputs, no model requests or human observations."""
 from pathlib import Path
 import argparse,json
@@ -31,7 +32,7 @@ with sync_playwright() as w:
  p.select_option('#status-purpose','confirmed')
  check('plan confirmation never certifies analysis assumptions',p.evaluate("!plan().randomized&&!plan().independent&&!plan().mature&&!plan().fixedStop"))
  x=save(p,'PLAN_ONLY.json')
- check('download is schema6 with no cells/result/fake counts',x['version']==6 and x['cells']==[] and x['engine_version'] is None and 'result' not in x and x['source_digest'] is None)
+ check('download is schema7 with no cells/result/fake counts',x['version']==7 and x['cells']==[] and x['engine_version'] is None and 'result' not in x and x['source_digest'] is None)
  check('three segment roles and explicit status survive save',x['design']['fields']['audience']['value']==answers[2] and x['design']['fields']['analysisSegments']['value'] and x['design']['fields']['applicationSegments']['value'] and x['design']['fields']['purpose']['status']=='confirmed')
  p.screenshot(path=str(E/'plan-desktop.png'),full_page=True)
  p.set_viewport_size({'width':390,'height':844});check('mobile design has no horizontal overflow',p.evaluate('document.documentElement.scrollWidth<=innerWidth'));p.screenshot(path=str(E/'plan-mobile.png'),full_page=True);p.set_viewport_size({'width':1440,'height':1000})
@@ -44,23 +45,23 @@ with sync_playwright() as w:
  raw='arm,success,total,segment\nA,10,100,new\nB,20,100,new\nA,15,100,existing\nB,18,100,existing'
  p.set_input_files('#csv-file',{'name':'SYNTHETIC_FOLLOWUP.csv','mimeType':'text/csv','buffer':raw.encode()});expect(p.locator('#source-badge')).to_contain_text('사용자 CSV')
  p.click('#prepare');expect(p.locator('#analysis-options')).to_be_visible()
- check('CSV retains design and requires separate observation checks',p.locator('#purpose').input_value()==answers[1] and not p.locator('#randomized').is_checked() and not p.locator('#segment-prespecified').is_checked())
- for k in ['randomized','independent','mature','fixed-stop','segment-prespecified','confirm-input']:p.check('#'+k)
+ check('CSV retains design and requires separate observation checks',p.locator('#purpose').input_value()==answers[1] and not is_checked(p.locator('#randomized')) and not is_checked(p.locator('#segment-prespecified')))
+ for k in ['randomized','independent','mature','fixed-stop','segment-prespecified','confirm-input']:set_checked(p, '#' + k)
  p.click('#analyze');expect(p.locator('#results-view')).to_be_visible()
  check('real engine analysis linked to same experiment',p.evaluate('state.result.overall.A.total===200&&state.result.overall.B.success===38&&design.resultSeen') and answers[1] in p.locator('#experiment-context').text_content())
  check('new free text excluded from LLM facts',all(token not in p.evaluate('JSON.stringify(explanationFacts())') for token in ['SYNTHETIC_SITUATION',answers[1],answers[2]]))
  z=save(p,'PLAN_WITH_AGGREGATES.json');check('resultSeen and real aggregate counts persist',z['design']['resultSeen'] and len(z['cells'])==4 and z['lineage']['current']['digest'])
- p.click('nav [data-view=share]');p.check('#share-confirm')
+ p.click('nav [data-view=share]');set_checked(p, '#share-confirm')
  with p.expect_download() as d:p.click('#export-report')
  d.value.save_as(str(E/'RESULT_REPORT.html'));html=(E/'RESULT_REPORT.html').read_text(encoding='utf-8')
  check('HTML preserves context but not private design situation',answers[1] in html and 'SYNTHETIC_SITUATION' not in html)
  p.emulate_media(media='print');p.pdf(path=str(E/'RESULT_REPORT.pdf'),format='A4',print_background=True);p.emulate_media(media='screen')
  p.click('nav [data-view=design]');p.fill('#design-purpose','결과 열람 후 수정한 목적')
- check('post-result plan edit invalidates result/share/print',p.evaluate('state.result===null&&design.changedAfterResult') and not p.locator('#share-confirm').is_checked() and p.locator('#print-area').inner_text()=='')
+ check('post-result plan edit invalidates result/share/print',p.evaluate('state.result===null&&design.changedAfterResult') and not is_checked(p.locator('#share-confirm')) and p.locator('#print-area').inner_text()=='')
  p.emulate_media(media='print');p.pdf(path=str(E/'INVALIDATED_REPORT.pdf'),format='A4');p.emulate_media(media='screen')
  changed=save(p,'POST_RESULT_EDIT.json');check('post-result provenance not backdated',changed['design']['resultSeen'] and changed['design']['changedAfterResult'])
  p.goto(url,wait_until='networkidle');p.set_input_files('#project-file',str(E/'PLAN_WITH_AGGREGATES.json'));expect(p.locator('#data-text')).to_have_value(raw)
- p.click('#prepare');expect(p.locator('#analysis-options')).to_be_visible();p.check('#confirm-input');p.click('#analyze');expect(p.locator('#results-view')).to_be_visible()
+ p.click('#prepare');expect(p.locator('#analysis-options')).to_be_visible();set_checked(p, '#confirm-input');p.click('#analyze');expect(p.locator('#results-view')).to_be_visible()
  check('aggregate restore reanalysis preserves actual counts and typed lineage',p.evaluate("state.result.overall.B.success===38&&state.lineage.current.kind==='restored_aggregate_csv_utf8'&&design.resultSeen"))
  # Invalid file must preserve current data and design.
  bad=json.loads(json.dumps(z));bad['design']['fields']['purpose']['status']='approved'

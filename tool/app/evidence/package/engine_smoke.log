@@ -1,0 +1,21 @@
+PASS UMD browser global / Node API
+PASS CSV BOM, CRLF, quotes, escaped quotes and quoted newline
+PASS TSV with quoted tabs and embedded newline
+PASS coded parser exceptions and prepare conversion
+PASS headers exact, missing, duplicate, unknown; invalid format
+PASS strict integer validation and every invalid row retained as issues
+PASS aggregate 2 and 4 cells, duplicate cell rejection
+PASS individual aggregation, ID/raw rows never returned
+PASS four assumptions must each be boolean true
+PASS unsupported design, alpha, arm cap and positive denominators
+  independent exact-combination comparisons: 1936
+PASS Fisher known 2x2 golden and small exhaustive combinatorial oracle
+PASS Wilson and B minus A Newcombe intervals, relative-change boundary
+PASS zero events, all successes, extreme and maximum arm bounds
+PASS Holm m=4 and Wald direct difference / accurate normal tail
+PASS unsupported planned hypotheses stay in Holm as internal p=1 only
+PASS post-hoc segment exploration: m=1 overall only
+PASS missing segment stays overall and blocks all segment inference
+PASS three segments forbid inference; zero segment arm is limited
+PASS limits: 2 MiB and 50000 rows; large invalid set retains all issues
+RESULT: 19 smoke groups passed.

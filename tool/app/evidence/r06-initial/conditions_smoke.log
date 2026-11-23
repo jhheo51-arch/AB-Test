@@ -1,0 +1,28 @@
+PASS default all unknown empty evidence
+PASS all unknown blocks inference
+PASS randomized unknown blocks actual engine inference
+PASS randomized no blocks actual engine inference
+PASS independent unknown blocks actual engine inference
+PASS independent no blocks actual engine inference
+PASS mature unknown blocks actual engine inference
+PASS mature no blocks actual engine inference
+PASS fixedStop unknown blocks actual engine inference
+PASS fixedStop no blocks actual engine inference
+PASS all yes permits unchanged real engine
+PASS segment unknown preserves overall inference
+PASS segment no preserves overall inference
+PASS schema7 exact conditions including evidence roundtrip
+PASS evidence at cap roundtrips; cap plus one rejected
+PASS evidence never coerces unknown into yes
+PASS legacy 2 true retained as user assertion false unknown not denial
+PASS legacy 3 true retained as user assertion false unknown not denial
+PASS legacy 4 true retained as user assertion false unknown not denial
+PASS legacy 5 true retained as user assertion false unknown not denial
+PASS legacy 6 true retained as user assertion false unknown not denial
+PASS randomized conflicting alias rejected both read/write
+PASS independent conflicting alias rejected both read/write
+PASS mature conflicting alias rejected both read/write
+PASS fixedStop conflicting alias rejected both read/write
+PASS segmentPrespecified conflicting alias rejected both read/write
+PASS invalid enum missing fields nonstring evidence and fabricated legacy record rejected
+RESULT 27 conditions unit groups passed

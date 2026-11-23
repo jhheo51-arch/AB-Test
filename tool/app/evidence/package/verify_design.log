@@ -3,7 +3,7 @@ PASS candidate produces proposals not confirmations
 PASS unknown window and analysis/application segments not invented
 PASS editing revokes dependent confirmations
 PASS plan confirmation never certifies analysis assumptions
-PASS download is schema6 with no cells/result/fake counts
+PASS download is schema7 with no cells/result/fake counts
 PASS three segment roles and explicit status survive save
 PASS mobile design has no horizontal overflow
 PASS plan-only restore and reexport preserve design exactly

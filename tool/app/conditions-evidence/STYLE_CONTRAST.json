@@ -1,0 +1,11 @@
+{
+  "tool": "mira_contrast_matrix",
+  "scope": "Existing computed palette reused for condition cards; not a full accessibility certification",
+  "pairs": [
+    {"foreground":"#202B3A","background":"#F5F7FA","ratio":13.33,"normalAA":true},
+    {"foreground":"#202B3A","background":"#FFFFFF","ratio":14.3,"normalAA":true},
+    {"foreground":"#586779","background":"#F5F7FA","ratio":5.39,"normalAA":true},
+    {"foreground":"#586779","background":"#FFFFFF","ratio":5.78,"normalAA":true}
+  ],
+  "visual_review": "Actual 390px screenshot and original-resolution crop inspected: labels and selects fit; evidence remains escaped text, cards do not overlap. First screenshot had transient save toast; later capture waits for toast dismissal. No new colors introduced."
+}

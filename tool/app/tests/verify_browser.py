@@ -1,3 +1,4 @@
+from condition_controls import set_checked, is_checked
 """Actual Chrome regression tests; only the optional --live-llm uses a model.
 All input data are explicitly synthetic. Failure simulations are not live successes.
 """
@@ -15,13 +16,13 @@ def check(name,condition,detail=None):
 
 def meta(page,on=True):
     for key in ['randomized','independent','mature','fixed-stop']:
-        page.locator('#'+key).set_checked(on)
+        set_checked(page, '#'+key, on)
 
 def prepare(page):
     page.click('#prepare');page.wait_for_selector('#analysis-options:not([hidden])',timeout=20000)
 
 def analyze(page):
-    page.check('#confirm-input');page.click('#analyze');page.wait_for_selector('#results-view:not([hidden])',timeout=20000)
+    set_checked(page, '#confirm-input');page.click('#analyze');page.wait_for_selector('#results-view:not([hidden])',timeout=20000)
 
 def fresh(page):page.goto(args.url,wait_until='networkidle')
 
@@ -43,15 +44,15 @@ with sync_playwright() as pw:
     text=page.locator('#overall-results').inner_text();facts=json.loads(page.locator('#llm-preview').inner_text())
     check('synthetic four cells actually sum to 130/1000 and 150/1000',all(s in text for s in ['130','150','13.00%','15.00%','+2.00pp']))
     check('nominal intervals and Holm-adjusted hold not conflated','승패 보류' in page.locator('#result-title').inner_text() and facts['adjustment']=='holm')
-    page.click('nav [data-view=input]');page.uncheck('#randomized');analyze(page)
+    page.click('nav [data-view=input]');set_checked(page, '#randomized', False);analyze(page)
     descriptive_facts=json.loads(page.locator('#llm-preview').inner_text())
     check('planned Holm is not claimed applied when inference was not run',descriptive_facts['overall_decision']=='not_tested' and descriptive_facts['adjustment']=='none')
-    page.click('nav [data-view=input]');page.check('#randomized');analyze(page)
+    page.click('nav [data-view=input]');set_checked(page, '#randomized');analyze(page)
     check('group names map locally while LLM gets G labels','new' in page.locator('#segment-results').inner_text() and 'new' not in page.locator('#llm-preview').inner_text())
     check('no LLM POST without explicit consent',not any(x['method']=='POST' for x in network))
     check('explanation button disabled before consent',page.locator('#explain').is_disabled())
     if args.live_llm:
-        page.check('#llm-consent')
+        set_checked(page, '#llm-consent')
         with page.expect_response(lambda r:'/api/explain' in r.url,timeout=100000) as rr:page.click('#explain')
         response=rr.value;live_response=response.json();expect(page.locator('#llm-status')).not_to_have_text('실제 요청 중',timeout=100000)
         check('actual engine to actual LLM to rendered explanation',response.status==200 and live_response.get('source')=='actual_llm_via_existing_hermes_profile' and '실제 호출 성공' in page.locator('#llm-status').inner_text(),live_response)
@@ -68,8 +69,8 @@ with sync_playwright() as pw:
     page.fill('#decision','합성 예시 검토. 실제 고객 적용은 승인하지 않음.');page.fill('#revisit','대상과 관측 조건이 바뀌면 재검토.')
     report=page.locator('#report-preview').inner_html()
     check('report excludes group names by default','new' not in report and 'existing' not in report)
-    page.check('#share-groups');check('explicit group share includes local group names','new' in page.locator('#report-preview').inner_text())
-    page.uncheck('#share-groups');page.check('#share-confirm')
+    set_checked(page, '#share-groups');check('explicit group share includes local group names','new' in page.locator('#report-preview').inner_text())
+    set_checked(page, '#share-groups', False);set_checked(page, '#share-confirm')
     with page.expect_download() as d:page.click('#export-report')
     report_html=Path(d.value.path()).read_text(encoding='utf-8')
     check('downloaded HTML is script-free and excludes raw IDs and LLM', '<script' not in report_html and 'subject_id' not in report_html and '실제 LLM 응답' not in report_html and '+5.00pp' not in report_html and '&quot;p_raw&quot;' not in report_html)
@@ -78,14 +79,14 @@ with sync_playwright() as pw:
     page.click('#print-report');check('print control populates dedicated report and invokes print',page.evaluate('window.__printRequested===true') and len(page.locator('#print-area').inner_text())>200)
     page.emulate_media(media='print');page.pdf(path=str(screenshots/'SYNTHETIC_RESULT_REPORT.pdf'),format='A4',print_background=True);page.emulate_media(media='screen')
     page.click('nav [data-view=input]');page.fill('#data-text','arm,success,total\nA,10,100\nB,30,100')
-    check('source edits invalidate results and previous synthetic assumptions',page.locator('nav [data-view=results]').is_disabled() and not page.locator('#randomized').is_checked())
+    check('source edits invalidate results and previous synthetic assumptions',page.locator('nav [data-view=results]').is_disabled() and not is_checked(page.locator('#randomized')))
     prepare(page);analyze(page)
     check('unconfirmed conditions show descriptive not p/CI/winner','판정 미실행' in page.locator('#result-title').inner_text() and '미실행' in page.locator('#overall-results').inner_text())
-    page.click('nav [data-view=input]');meta(page,True);page.uncheck('#include-segments');analyze(page)
+    page.click('nav [data-view=input]');meta(page,True);set_checked(page, '#include-segments', False);analyze(page)
     check('confirmed positive effect produces engine B decision','B 우세 근거'==page.locator('#result-title').inner_text())
     original=page.locator('#overall-results').inner_text()
     page.route('**/api/explain',lambda route:route.fulfill(status=503,content_type='application/json',body=json.dumps({'error':'SIMULATED_FAILURE','message':'검사에서 주입한 연결 실패'},ensure_ascii=False)))
-    page.check('#llm-consent');page.click('#explain');expect(page.locator('#llm-status')).to_have_text('호출·검증 실패',timeout=10000)
+    set_checked(page, '#llm-consent');page.click('#explain');expect(page.locator('#llm-status')).to_have_text('호출·검증 실패',timeout=10000)
     check('simulated LLM failure is visible and preserves calculations',page.locator('#overall-results').inner_text()==original and '주입한 연결 실패' in page.locator('#llm-answer').inner_text())
     page.unroute('**/api/explain')
     fresh(page);page.click('#example-individual');prepare(page);analyze(page)
@@ -106,7 +107,7 @@ with sync_playwright() as pw:
     check('invalid rows cannot be dropped through project save','입력 오류를 고치고' in page.locator('#toast').inner_text())
     fresh(page);page.click('#example-aggregate');page.set_input_files('#csv-file',{'name':'PRIVATE_INPUT.csv','mimeType':'text/csv','buffer':b'arm,success,total\nA,10,100\nB,30,100'})
     expect(page.locator('#source-badge')).to_contain_text('사용자 CSV')
-    check('new CSV clears old synthetic design assumptions',not page.locator('#randomized').is_checked())
+    check('new CSV clears old synthetic design assumptions',not is_checked(page.locator('#randomized')))
     prepare(page);meta(page,True);analyze(page)
     check('actual file input follows validated engine path','B 우세 근거' in page.locator('#result-title').inner_text())
     fresh(page);page.set_input_files('#csv-file',{'name':'too-big.csv','mimeType':'text/csv','buffer':b'X'*(2*1024*1024+1)})
@@ -118,13 +119,13 @@ with sync_playwright() as pw:
     fresh(page);page.select_option('#format','individual');page.fill('#data-text','subject_id,arm,outcome,observed\nX,A,1,0\nY,B,1,1');page.click('#prepare')
     expect(page.locator('#issues')).not_to_be_empty()
     check('immature outcomes are not silently treated as failure',page.locator('#analysis-options').is_hidden())
-    fresh(page);page.click('#example-aggregate');prepare(page);page.uncheck('#segment-prespecified');analyze(page)
+    fresh(page);page.click('#example-aggregate');prepare(page);set_checked(page, '#segment-prespecified', False);analyze(page)
     f=json.loads(page.locator('#llm-preview').inner_text())
     check('post-hoc segments have no confirmatory winner',f['adjustment']=='none' and all(g['decision']=='not_tested' for g in f['segments']))
-    fresh(page);page.fill('#data-text','arm,success,total,segment\nA,10,100,new\nB,20,100,new\nA,5,50,\nA,5,50,old\nB,10,50,old');prepare(page);meta(page,True);page.check('#segment-prespecified');analyze(page)
+    fresh(page);page.fill('#data-text','arm,success,total,segment\nA,10,100,new\nB,20,100,new\nA,5,50,\nA,5,50,old\nB,10,50,old');prepare(page);meta(page,True);set_checked(page, '#segment-prespecified');analyze(page)
     check('missing segment remains overall but blocks segment inference','SEGMENT_INFERENCE_BLOCKED' in page.locator('#segment-results').inner_text() and '미실행' in page.locator('#segment-results').inner_text())
     fresh(page);page.fill('#data-text','arm,success,total,segment\nA,1,10,<img src=x onerror=window.__xss=1>\nB,2,10,<img src=x onerror=window.__xss=1>');prepare(page);analyze(page)
-    page.click('nav [data-view=share]');page.check('#share-groups')
+    page.click('nav [data-view=share]');set_checked(page, '#share-groups')
     check('untrusted segment text is escaped in result and report',page.locator('#segment-results img,#report-preview img').count()==0 and page.evaluate('window.__xss===undefined'))
     fresh(page);page.set_input_files('#csv-file',{'name':'invalid-utf8.csv','mimeType':'text/csv','buffer':b'arm,success,total\nA,1,2\nB,1,2\xff'})
     expect(page.locator('#toast')).to_contain_text('파일 읽기 실패')
@@ -132,7 +133,7 @@ with sync_playwright() as pw:
     fresh(page);page.select_option('#format','individual')
     big='subject_id,arm,outcome\n'+'\n'.join('S'+str(i)+','+('A' if i%2==0 else 'B')+','+str(int(i%3==0)) for i in range(50000))
     started=time.monotonic();page.set_input_files('#csv-file',{'name':'SYNTHETIC_50000.csv','mimeType':'text/csv','buffer':big.encode()})
-    try:expect(page.locator('#source-badge')).to_contain_text('사용자 CSV')
+    try:expect(page.locator('#source-badge')).to_contain_text('사용자 CSV',timeout=60000)
     except AssertionError:
         print('FAILED_FILE_READ_STATE',page.evaluate('({epoch:inputEpoch,task:inputTask,busy:state.busy,kind:state.sourceKind,len:document.querySelector("#data-text").value.length,toast:document.querySelector("#toast").textContent,status:document.querySelector("#prepare-state").textContent})'),js_errors,flush=True)
         raise

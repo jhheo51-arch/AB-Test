@@ -1,3 +1,4 @@
+from condition_controls import set_checked, is_checked
 """Regression for W01-W04. Real APIs are delayed, not replaced with fake data/hash."""
 from pathlib import Path
 import argparse,json,time
@@ -16,13 +17,13 @@ def open_page(b,init=None):
     p=b.new_page(viewport={'width':1440,'height':1060},accept_downloads=True)
     if init:p.add_init_script(init)
     p.goto(a.url,wait_until='networkidle');return p
-def analyze(p):p.check('#confirm-input');p.click('#analyze');p.wait_for_selector('#results-view:not([hidden])')
+def analyze(p):set_checked(p, '#confirm-input');p.click('#analyze');p.wait_for_selector('#results-view:not([hidden])')
 def sample(p):p.click('#example-aggregate');p.click('#prepare');p.wait_for_selector('#analysis-options:not([hidden])');analyze(p)
 with sync_playwright() as pw:
     b=pw.chromium.launch(executable_path='C:/Program Files/Google/Chrome/Application/chrome.exe',headless=True)
-    p=open_page(b);sample(p);p.click('nav [data-view=input]');p.fill('#audience','SYNTHETIC_OLD_PRINT_AUDIENCE');analyze(p);p.click('.result-heading>button[data-view=share]');p.check('#share-confirm');p.evaluate('window.print=()=>{}');p.click('#print-report');check('approved report prepares current print snapshot','SYNTHETIC_OLD_PRINT_AUDIENCE' in p.locator('#print-area').text_content())
+    p=open_page(b);sample(p);p.click('nav [data-view=input]');p.fill('#audience','SYNTHETIC_OLD_PRINT_AUDIENCE');analyze(p);p.click('.result-heading>button[data-view=share]');set_checked(p, '#share-confirm');p.evaluate('window.print=()=>{}');p.click('#print-report');check('approved report prepares current print snapshot','SYNTHETIC_OLD_PRINT_AUDIENCE' in p.locator('#print-area').text_content())
     p.click('nav [data-view=input]');p.fill('#audience','SYNTHETIC_NEW_UNAPPROVED_AUDIENCE');check('W02 input invalidation discards old print DOM',p.locator('#print-area').text_content()=='');p.emulate_media(media='print');p.pdf(path=str(out/'native_print_after_invalidation.pdf'),format='A4',print_background=True);p.emulate_media(media='screen');check('afterprint clears temporary print DOM',p.locator('#print-area').text_content()=='')
-    analyze(p);p.click('.result-heading>button[data-view=share]');p.check('#share-confirm');p.click('#print-report');p.fill('#decision','SYNTHETIC_NEW_DECISION');check('decision change revokes print approval and DOM',not p.locator('#share-confirm').is_checked() and p.locator('#print-area').text_content()=='');p.check('#share-confirm');p.click('#print-report');p.check('#share-groups');check('group share change revokes print snapshot',p.locator('#print-area').text_content()=='' and p.locator('#print-report').is_disabled());p.check('#share-confirm');p.click('#print-report');p.emulate_media(media='print');p.pdf(path=str(out/'native_print_current_approved.pdf'),format='A4',print_background=True);p.close()
+    analyze(p);p.click('.result-heading>button[data-view=share]');set_checked(p, '#share-confirm');p.click('#print-report');p.fill('#decision','SYNTHETIC_NEW_DECISION');check('decision change revokes print approval and DOM',not is_checked(p.locator('#share-confirm')) and p.locator('#print-area').text_content()=='');set_checked(p, '#share-confirm');p.click('#print-report');set_checked(p, '#share-groups');check('group share change revokes print snapshot',p.locator('#print-area').text_content()=='' and p.locator('#print-report').is_disabled());set_checked(p, '#share-confirm');p.click('#print-report');p.emulate_media(media='print');p.pdf(path=str(out/'native_print_current_approved.pdf'),format='A4',print_background=True);p.close()
     init="const digest=crypto.subtle.digest.bind(crypto.subtle);window.auditDigestReleases=[];crypto.subtle.digest=(...args)=>digest(...args).then(hash=>new Promise(resolve=>{window.auditDigestReleases.push(()=>resolve(hash))}));"
     p=open_page(b,init);p.fill('#data-text','arm,success,total\nA,1,10\nB,2,10');p.click('#prepare');wait(p,'window.auditDigestReleases.length===1');p.fill('#data-text','arm,success,total\nA,10,100\nB,30,100');check('W03 editing during real hash allows retry',not p.locator('#prepare').is_disabled());p.click('#prepare');wait(p,'window.auditDigestReleases.length===2');p.evaluate('window.auditDigestReleases[0]()');p.wait_for_timeout(60);check('old hash finally cannot unlock newer job',p.locator('#prepare').is_disabled());p.evaluate('window.auditDigestReleases[1]()');p.wait_for_selector('#analysis-options:not([hidden])');check('new hash resolves with latest counts',p.evaluate("state.prepared.cells.find(c=>c.arm==='B').success===30") and not p.locator('#prepare').is_disabled());p.close()
     init="const read=Blob.prototype.arrayBuffer;Blob.prototype.arrayBuffer=function(...args){const slow=['AUDIT_SLOW.csv','AUDIT_SLOW.json'].includes(this.name);return read.apply(this,args).then(bytes=>slow?new Promise(resolve=>window.releaseAuditFile=()=>resolve(bytes)):bytes)};"
@@ -38,8 +39,8 @@ with sync_playwright() as pw:
         p=open_page(b);p.fill('#data-text',csv);p.click('#prepare');p.wait_for_selector('#analysis-options:not([hidden])');expected=p.evaluate('state.prepared.cells')
         with p.expect_download() as d:p.click('#save-project')
         text=Path(d.value.path()).read_text(encoding='utf-8');p.goto(a.url,wait_until='networkidle');p.set_input_files('#project-file',{'name':name+'.json','mimeType':'application/json','buffer':text.encode()});expect(p.locator('#source-badge')).to_contain_text('집계 복원');p.click('#prepare');p.wait_for_selector('#analysis-options:not([hidden])');check('W04 '+name+' saved/restored counts preserved',p.evaluate('state.prepared.cells')==expected)
-        for key in ['randomized','independent','mature','fixed-stop']:p.check('#'+key)
-        if name!='above_inference_cap':p.check('#segment-prespecified')
+        for key in ['randomized','independent','mature','fixed-stop']:set_checked(p, '#' + key)
+        if name!='above_inference_cap':set_checked(p, '#segment-prespecified')
         analyze(p)
         if unsupported:check(name+' restore does not relax inference gates',p.evaluate('state.result.inference_allowed===false && state.result.overall.p_raw===null'))
         p.close()

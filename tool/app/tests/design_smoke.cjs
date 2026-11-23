@@ -13,7 +13,7 @@ test('unknown candidate rejected',()=>assert.throws(()=>D.propose(D.empty(),'fak
 test('missing field rejected without partial restore',()=>{const d=D.empty();delete d.fields.risk;assert.throws(()=>D.normalize(d));});
 test('long audience rejected and free text not silently truncated',()=>{const d=D.empty();d.fields.audience={value:'x'.repeat(301),status:'proposed'};assert.throws(()=>D.normalize(d));d.fields.audience.value='x'.repeat(300);assert.equal(D.normalize(d).fields.audience.value.length,300);});
 test('HTML-like text retained as data not executed',()=>{const d=D.empty();D.edit(d,'purpose','<script>alert(1)</script>');assert.equal(D.normalize(d).fields.purpose.value,'<script>alert(1)</script>');});
-test('schema6 plan-only exact roundtrip',()=>{const x=project();D.edit(x.design,'risk','확인 필요');assert.deepEqual(S.parse(S.stringify(x)),x);});
+test('schema6 plan-only exact roundtrip',()=>{const x=project();D.edit(x.design,'risk','확인 필요');assert.deepEqual(S.parse(S.stringify(x)),{...x,version:7,conditions:require('../conditions.js').legacy(x.plan)});});
 test('schema2 through 5 never invent design record',()=>{for(const version of [2,3,4,5]){const x=project();x.version=version;delete x.design;assert.equal(S.parse(S.stringify(x)).design,null);}});
 test('schema excludes unexpected raw field in design',()=>{const x=project();x.design.privateRows=['ID_PRIVATE'];assert(!S.stringify(x).includes('ID_PRIVATE'));});
 test('conflicting design and result context rejected',()=>{const x=project();x.plan.purpose='different';assert.throws(()=>S.stringify(x),/일치/);});

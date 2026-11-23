@@ -1,0 +1,77 @@
+PASS empty entry starts at real input without forced plan wizard
+PASS planning guide explicitly rule based
+PASS plan can be saved before data exists
+PASS synthetic four cells actually sum to 130/1000 and 150/1000
+PASS nominal intervals and Holm-adjusted hold not conflated
+PASS planned Holm is not claimed applied when inference was not run
+PASS group names map locally while LLM gets G labels
+PASS no LLM POST without explicit consent
+PASS explanation button disabled before consent
+PASS 390px results page has no global horizontal overflow
+PASS report export disabled until share review
+PASS report excludes group names by default
+PASS explicit group share includes local group names
+PASS downloaded HTML is script-free and excludes raw IDs and LLM
+PASS print control populates dedicated report and invokes print
+PASS source edits invalidate results and previous synthetic assumptions
+PASS unconfirmed conditions show descriptive not p/CI/winner
+PASS confirmed positive effect produces engine B decision
+PASS simulated LLM failure is visible and preserves calculations
+PASS individual rows aggregate with no ID in result UI
+PASS project has only plan and aggregates, no individual IDs/raw rows/LLM
+PASS saved aggregates restore and preserve synthetic provenance
+PASS fixed natural sentence parses explicit counts
+PASS extra natural prose is rejected rather than silently ignored
+PASS invalid counts show row and column and cannot analyze
+PASS invalid rows cannot be dropped through project save
+PASS new CSV clears old synthetic design assumptions
+PASS actual file input follows validated engine path
+PASS oversize file is rejected without reading into table
+PASS duplicate individual IDs block analysis and are not echoed
+PASS immature outcomes are not silently treated as failure
+PASS post-hoc segments have no confirmatory winner
+PASS missing segment remains overall but blocks segment inference
+PASS untrusted segment text is escaped in result and report
+PASS non UTF-8 files are rejected rather than silently recoded
+FAILED_FILE_READ_STATE {'epoch': 2, 'task': None, 'busy': False, 'kind': 'csv', 'len': 538912, 'toast': '', 'status': '파일을 읽었습니다. 데이터 확인하기를 눌러 주세요.'} []
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\hermes\profiles\mira\cache\scratch\ab_tool_r06_integration\tool\app\tests\verify_browser.py", line 136, in <module>
+    try:expect(page.locator('#source-badge')).to_contain_text('사용자 CSV')
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\sync_api\_generated.py", line 14961, in to_contain_text
+    self._sync(
+    ~~~~~~~~~~^
+        self._impl_obj.to_contain_text(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        )
+        ^
+    )
+    ^
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_sync_base.py", line 111, in _sync
+    return task.result()
+           ~~~~~~~~~~~^^
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_assertions.py", line 303, in to_contain_text
+    await self._expect_impl(
+    ...<9 lines>...
+    )
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_assertions.py", line 128, in _expect_impl
+    _record_soft_or_raise(
+    ~~~~~~~~~~~~~~~~~~~~~^
+        AssertionError(
+        ^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        self._is_soft,
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_assertions.py", line 60, in _record_soft_or_raise
+    raise error
+AssertionError: Locator expected to contain text '사용자 CSV'
+Actual value: 입력 전 
+Call log:
+  - Expect "to_contain_text" locator("#source-badge") with timeout 5000ms
+  - waiting for locator("#source-badge")
+
+Aria snapshot:
+- text: 입력 전

@@ -1,1 +1,4 @@
 #design-fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.design-field{min-width:0;padding:16px;background:var(--paper,#F5F7FA);border-radius:12px}.design-field textarea{min-height:100px}#design-view .toolbar{flex-wrap:wrap}#design-view h2{margin-top:24px}@media(max-width:700px){#design-fields{grid-template-columns:1fr}}
+
+/* Existing palette only; no new foreground/background combinations. */
+.condition-grid{display:grid;gap:16px;margin:20px 0}.condition-card{padding:20px;border:1px solid var(--line);border-radius:14px;background:var(--paper);min-width:0}.condition-card h4{margin:0 0 12px;font-size:17px}.condition-card label{display:block}.condition-card textarea{min-height:80px;resize:vertical}.condition-card select{width:100%}.condition-card .small{overflow-wrap:anywhere}@media(max-width:600px){.condition-card{padding:16px}}

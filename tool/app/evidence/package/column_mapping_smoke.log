@@ -1,0 +1,13 @@
+PASS exact schema, canonical identity, header-only detection
+PASS explicit English aliases and Korean suggestions, no automatic confirmation
+PASS quoted commas, quotes, CRLF, tabs and newlines preserve every selected value
+PASS explicit selection alone may omit extras; outcomes and whitespace never recoded
+PASS missing, invalid, duplicate selections and duplicate source headers rejected
+PASS exact explicit arm mapping, unknown and missing arms rejected
+PASS parser errors propagate unchanged; format validation
+PASS preview is only first five rows; no full individual ID list or data logging
+PASS 50000-row boundary accepted, 50001 rejected before conversion
+PASS 2 MiB UTF-8 input boundary and post-conversion expansion limit
+PASS browser UMD executes with CSP-style no eval/Function and UTF-8 fallback
+PASS header cap and mandatory original observed preservation
+column_mapping_smoke: 12 tests passed

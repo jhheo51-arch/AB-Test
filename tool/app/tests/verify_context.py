@@ -1,3 +1,4 @@
+from condition_controls import set_checked, is_checked
 """Context/reason regression using synthetic data. No actual LLM call here."""
 from pathlib import Path
 import argparse,json
@@ -8,7 +9,7 @@ def check(name,condition):
     assert condition,name
     checks.append({'name':name,'pass':True});print('PASS',name,flush=True)
 def analyze(p):
-    p.check('#confirm-input');p.click('#analyze');p.wait_for_selector('#results-view:not([hidden])');p.locator('.context-panel > summary').click() if not p.locator('.context-panel').evaluate('e=>e.open') else None
+    set_checked(p, '#confirm-input');p.click('#analyze');p.wait_for_selector('#results-view:not([hidden])');p.locator('.context-panel > summary').click() if not p.locator('.context-panel').evaluate('e=>e.open') else None
 def fresh(p):p.goto(args.url,wait_until='networkidle')
 with sync_playwright() as pw:
     b=pw.chromium.launch(executable_path='C:/Program Files/Google/Chrome/Application/chrome.exe',headless=True)
@@ -27,20 +28,20 @@ with sync_playwright() as pw:
     p.click('.result-heading>button[data-view=share]')
     body=p.locator('#report-preview').inner_text();check('all context fields transfer to default report',all(v in body for v in metadata.values()))
     check('excluded group explanation absent from actual report DOM',p.locator('#report-preview [data-reason=HOLM_HOLD]').count()==0 and p.locator('#report-preview [data-reason=INTERACTION_HOLD]').count()==0)
-    p.check('#share-confirm')
+    set_checked(p, '#share-confirm')
     with p.expect_download() as d:p.click('#export-report')
     html=Path(d.value.path()).read_text(encoding='utf-8')
     check('downloaded HTML has policy audience and embedded reason style',all(v in html for v in metadata.values()) and '.decision-reason' in html)
     p.evaluate('window.print=()=>{}');p.click('#print-report');p.emulate_media(media='print');p.pdf(path=str(ROOT/'screenshots/CONTEXT_REPORT.pdf'),format='A4',print_background=True);p.emulate_media(media='screen')
-    p.check('#share-groups');check('explicit group inclusion adds group and direct explanations',p.locator('#report-preview [data-reason=HOLM_HOLD]').count()==1 and p.locator('#report-preview [data-reason=INTERACTION_HOLD]').count()==1)
+    set_checked(p, '#share-groups');check('explicit group inclusion adds group and direct explanations',p.locator('#report-preview [data-reason=HOLM_HOLD]').count()==1 and p.locator('#report-preview [data-reason=INTERACTION_HOLD]').count()==1)
     with p.expect_download() as d:p.click('#save-project')
-    saved=json.loads(Path(d.value.path()).read_text(encoding='utf-8'));check('current project preserves audience',saved['version']==6 and saved['plan']['audience']==metadata['audience'])
+    saved=json.loads(Path(d.value.path()).read_text(encoding='utf-8'));check('current project preserves audience',saved['version']==7 and saved['plan']['audience']==metadata['audience'])
     fresh(p);p.set_input_files('#project-file',{'name':'saved-v5.json','mimeType':'application/json','buffer':json.dumps(saved).encode()});expect(p.locator('#audience')).to_have_value(metadata['audience']);p.click('#prepare');p.wait_for_selector('#analysis-options:not([hidden])');analyze(p)
     check('v5 restore reanalysis preserves policy and audience',all(v in p.locator('#experiment-context').inner_text() for v in metadata.values()))
     p.click('nav [data-view=input]');p.fill('#audience','SYNTHETIC_CHANGED_AUDIENCE');check('audience edits invalidate previous result',p.locator('nav [data-view=results]').is_disabled());analyze(p)
     check('reanalyzed context no longer shows stale audience','SYNTHETIC_CHANGED_AUDIENCE' in p.locator('#experiment-context').inner_text() and metadata['audience'] not in p.locator('#experiment-context').inner_text())
     p.route('**/api/explain',lambda route:route.fulfill(status=503,content_type='application/json',body='{"error":"SIMULATED_TEST_FAILURE","message":"test failure"}'))
-    p.check('#llm-consent');p.click('#explain');expect(p.locator('#llm-status')).to_have_text('호출·검증 실패')
+    set_checked(p, '#llm-consent');p.click('#explain');expect(p.locator('#llm-status')).to_have_text('호출·검증 실패')
     posts=[json.loads(r['body']) for r in requests if r['method']=='POST']
     check('new metadata and local explanation never enter model payload',len(posts)==1 and not any(v in json.dumps(posts,ensure_ascii=False) for v in [*metadata.values(),'SYNTHETIC_CHANGED_AUDIENCE','policyA','audience']))
     p.unroute('**/api/explain')

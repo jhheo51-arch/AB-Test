@@ -1,6 +1,33 @@
 {
   "format": "ab-local-project",
-  "version": 6,
+  "version": 7,
+  "conditions": {
+    "randomized": {
+      "status": "unknown",
+      "evidence": "",
+      "origin": "user_statement"
+    },
+    "independent": {
+      "status": "unknown",
+      "evidence": "",
+      "origin": "user_statement"
+    },
+    "mature": {
+      "status": "unknown",
+      "evidence": "",
+      "origin": "user_statement"
+    },
+    "fixedStop": {
+      "status": "unknown",
+      "evidence": "",
+      "origin": "user_statement"
+    },
+    "segmentPrespecified": {
+      "status": "unknown",
+      "evidence": "",
+      "origin": "user_statement"
+    }
+  },
   "source_kind": "none",
   "synthetic": false,
   "source_digest": null,

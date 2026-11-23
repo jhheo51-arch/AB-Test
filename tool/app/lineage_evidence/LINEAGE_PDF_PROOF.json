@@ -1,8 +1,8 @@
 {
   "status": "PASS",
-  "pages": 3,
+  "pages": 4,
   "minimum_actual_font_pt": 12.0,
   "computed_origin_and_current_sha256_present": true,
   "typed_labels_and_no_raw_revalidation_warning_present": true,
-  "pdf_sha256": "6c32e3f5ad2c60ba345a741a51133bb76780d2f2721906ca6bac862cefb5672b"
+  "pdf_sha256": "febf8f0f638bf5a2d4bfe7025cbf7f9113b10197c1ea40b629fb469de92668e3"
 }

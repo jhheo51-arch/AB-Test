@@ -1,3 +1,4 @@
+from condition_controls import set_checked, is_checked
 """Version-free UI and embedded-help regression, using synthetic inputs only.
 
 Run explicitly against a server you started yourself:
@@ -131,8 +132,8 @@ def run(args):
 
     def analyze():
         for field in ('randomized', 'independent', 'mature', 'fixed-stop'):
-            page.locator('#' + field).check()
-        page.locator('#confirm-input').check()
+            set_checked(page.locator('#' + field), )
+        set_checked(page.locator('#confirm-input'), )
         page.locator('#analyze').click()
         expect(page.locator('#results-view')).to_be_visible()
 
@@ -185,7 +186,7 @@ def run(args):
                 for key, value in {'arm': 'variant', 'success': 'converted', 'total': 'participants', 'segment': ''}.items()))
             page.locator('#arm-value-a').fill('control')
             page.locator('#arm-value-b').fill('treatment')
-            page.locator('#mapping-confirm').check()
+            set_checked(page.locator('#mapping-confirm'), )
             page.locator('#apply-mapping').click()
             expect(page.locator('#analysis-options')).to_be_visible()
             check('mapping preserves original synthetic notes and produces correct cells',
@@ -195,17 +196,17 @@ def run(args):
             help_cycle('prepared input button close')
             analyze()
             check('confirmed conditions allow real inference', page.evaluate('state.result.inference_allowed === true'))
-            page.locator('#llm-consent').check()
+            set_checked(page.locator('#llm-consent'), )
             help_cycle('analyzed result Escape close', escape=True)
             page.locator('nav [data-view=share]').click()
             page.locator('#decision').fill('SYNTHETIC_USERNOTE_DECISION: no real approval')
-            page.locator('#share-groups').check()
-            page.locator('#share-confirm').check()
+            set_checked(page.locator('#share-groups'), )
+            set_checked(page.locator('#share-confirm'), )
             help_cycle('share with both consents button close')
             help_cycle('share with both consents Escape close', escape=True)
             saved = download_json()
             check('native project JSON retains schema 6 and engine compatibility',
-                  saved['version'] == 6 and saved['format'] == 'ab-local-project'
+                  saved['version'] == 7 and saved['format'] == 'ab-local-project'
                   and saved['engine_version'] == page.evaluate('state.result.version')
                   and bool(re.fullmatch(r'\d+\.\d+\.\d+', saved['engine_version'])))
             check('native project JSON retains transformation version',
@@ -237,8 +238,8 @@ def run(args):
             check('valid native JSON restores counts', page.evaluate(
                 'state.prepared.cells.some(c=>c.arm==="B" && c.success===20 && c.total===100)'))
             for field in ('randomized', 'independent', 'mature', 'fixed-stop'):
-                page.locator('#' + field).uncheck()
-            page.locator('#confirm-input').check()
+                set_checked(page.locator('#' + field), False)
+            set_checked(page.locator('#confirm-input'), )
             page.locator('#analyze').click()
             expect(page.locator('#results-view')).to_be_visible()
             check('functional inference guard remains active without conditions', page.evaluate(
@@ -251,7 +252,7 @@ def run(args):
             # Deliberately keep the default A/B labels: control/treatment cannot match.
             page.locator('#arm-value-a').fill('A')
             page.locator('#arm-value-b').fill('B')
-            page.locator('#mapping-confirm').check()
+            set_checked(page.locator('#mapping-confirm'), )
             page.locator('#apply-mapping').click()
             expect(page.locator('#mapping-error')).not_to_be_empty()
             check('mapping error blocks stale analysis and keeps synthetic usernotes',

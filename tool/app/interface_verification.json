@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "url": "http://127.0.0.1:4212",
+  "url": "http://127.0.0.1:12428",
   "checks": [
     {
       "name": "exact version-free document title",
@@ -354,21 +354,21 @@
       "width": 1280,
       "height": 900,
       "duration": 77.68,
-      "readyState": 1
+      "readyState": 4
     },
     {
       "case": "prepared input button close",
       "width": 1280,
       "height": 900,
       "duration": 77.68,
-      "readyState": 1
+      "readyState": 4
     },
     {
       "case": "analyzed result Escape close",
       "width": 1280,
       "height": 900,
       "duration": 77.68,
-      "readyState": 1
+      "readyState": 4
     },
     {
       "case": "share with both consents button close",
@@ -389,7 +389,7 @@
       "width": 1280,
       "height": 900,
       "duration": 77.68,
-      "readyState": 4
+      "readyState": 1
     },
     {
       "case": "mapping error Escape close",
@@ -418,5 +418,5 @@
   "count": 84,
   "passed_count": 84,
   "failed_count": 0,
-  "screenshot": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_remote_integration\\tool\\app\\evidence\\current_interface.png"
+  "screenshot": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r06_integration\\tool\\app\\evidence\\current_interface.png"
 }

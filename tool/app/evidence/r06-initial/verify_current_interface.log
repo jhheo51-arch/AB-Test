@@ -1,0 +1,4 @@
+  File "C:\Users\Administrator\AppData\Local\hermes\profiles\mira\cache\scratch\ab_tool_r06_integration\tool\app\tests\verify_current_interface.py", line 241
+    set_checked(page.locator('#' + field), , False)
+                                           ^
+SyntaxError: invalid syntax

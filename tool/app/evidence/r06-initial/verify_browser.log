@@ -1,0 +1,59 @@
+PASS empty entry starts at real input without forced plan wizard
+PASS planning guide explicitly rule based
+PASS plan can be saved before data exists
+PASS synthetic four cells actually sum to 130/1000 and 150/1000
+PASS nominal intervals and Holm-adjusted hold not conflated
+PASS planned Holm is not claimed applied when inference was not run
+PASS group names map locally while LLM gets G labels
+PASS no LLM POST without explicit consent
+PASS explanation button disabled before consent
+PASS 390px results page has no global horizontal overflow
+PASS report export disabled until share review
+PASS report excludes group names by default
+PASS explicit group share includes local group names
+PASS downloaded HTML is script-free and excludes raw IDs and LLM
+PASS print control populates dedicated report and invokes print
+PASS source edits invalidate results and previous synthetic assumptions
+PASS unconfirmed conditions show descriptive not p/CI/winner
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\hermes\profiles\mira\cache\scratch\ab_tool_r06_integration\tool\app\tests\verify_browser.py", line 85, in <module>
+    page.click('nav [data-view=input]');meta(page,True);set_checked(page, '#include-segments', False);analyze(page)
+                                        ~~~~^^^^^^^^^^^
+  File "C:\Users\Administrator\AppData\Local\hermes\profiles\mira\cache\scratch\ab_tool_r06_integration\tool\app\tests\verify_browser.py", line 19, in meta
+    page.locator('#'+key).set_checked(on)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\sync_api\_generated.py", line 13274, in set_checked
+    self._sync(
+    ~~~~~~~~~~^
+        self._impl_obj.set_checked(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+        )
+        ^
+    )
+    ^
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_sync_base.py", line 111, in _sync
+    return task.result()
+           ~~~~~~~~~~~^^
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_locator.py", line 800, in set_checked
+    await self.check(
+    ...<5 lines>...
+    )
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_locator.py", line 157, in check
+    return await self._frame.check(self._selector, strict=True, **params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 913, in check
+    await self._channel.send("check", self._timeout, locals_to_params(locals()))
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 78, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 636, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.Error: Locator.set_checked: Error: Not a checkbox or radio button
+Call log:
+  - waiting for locator("#randomized")
+    - locator resolved to <select id="randomized" aria-describedby="randomized-hint randomized-origin">…</select>
+

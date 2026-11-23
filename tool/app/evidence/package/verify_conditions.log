@@ -1,0 +1,46 @@
+PASS five selects only; no checkbox aliases
+PASS fresh page unknown and empty evidence
+PASS demo assumptions honestly identified not proof
+PASS actual CSV resets all conditions and evidence
+PASS all unknown actual engine descriptive null inference
+PASS all no actual engine descriptive null inference
+PASS all yes actual engine p and counts
+PASS randomized no blocks actual engine
+PASS randomized unknown blocks actual engine
+PASS independent no blocks actual engine
+PASS independent unknown blocks actual engine
+PASS mature no blocks actual engine
+PASS mature unknown blocks actual engine
+PASS fixed-stop no blocks actual engine
+PASS fixed-stop unknown blocks actual engine
+PASS segment unknown keeps overall valid, segments exploratory
+PASS segment no keeps overall valid, segments exploratory
+PASS free text never changes state to independent validation
+PASS schema7 exact evidence and canonical projection saved
+PASS fresh page save restore exact all status evidence origin
+PASS mobile no horizontal overflow
+PASS user text escaped in local method details
+PASS minimal model facts exclude evidence and all free text
+PASS public HTML states included evidence excluded
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+PASS actual PDF states included evidence excluded
+PASS fresh page mixed yes no unknown and all evidence exact
+PASS help button immediate pause
+PASS help button exact tri-state evidence state URL preserved
+PASS help Escape immediate pause
+PASS help Escape exact tri-state evidence state URL preserved
+PASS approved print populated -evidence
+PASS condition edit revokes result share input LLM print -evidence
+PASS approved print populated 
+PASS condition edit revokes result share input LLM print 
+PASS invalid conflict restore preserves current result and records
+PASS invalid oversize restore preserves current result and records
+PASS invalid invalid restore preserves current result and records
+PASS visible evidence cap matches schema
+PASS legacy 2 honest false unknown true assertion empty evidence
+PASS legacy 3 honest false unknown true assertion empty evidence
+PASS legacy 4 honest false unknown true assertion empty evidence
+PASS legacy 5 honest false unknown true assertion empty evidence
+PASS legacy 6 honest false unknown true assertion empty evidence
+PASS no model POST or page errors
+RESULT 44 R06 browser checks passed

@@ -1,0 +1,240 @@
+{
+  "status": "FAIL",
+  "timestamp_utc": "2026-11-23T03:39:43.562756+00:00",
+  "checks": [
+    {
+      "test": "column_mapping_smoke",
+      "command": [
+        "node",
+        "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r06_integration\\tool\\app\\tests\\column_mapping_smoke.cjs"
+      ],
+      "exit_code": 0,
+      "log": "evidence/integration/column_mapping_smoke.log"
+    },
+    {
+      "test": "compare_reference",
+      "command": [
+        "node",
+        "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r06_integration\\tool\\app\\tests\\compare_reference.cjs"
+      ],
+      "exit_code": 0,
+      "log": "evidence/integration/compare_reference.log"
+    },
+    {
+      "test": "conditions_smoke",
+      "command": [
+        "node",
+        "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r06_integration\\tool\\app\\tests\\conditions_smoke.cjs"
+      ],
+      "exit_code": 0,
+      "log": "evidence/integration/conditions_smoke.log"
+    },
+    {
+      "test": "design_smoke",
+      "command": [
+        "node",
+        "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r06_integration\\tool\\app\\tests\\design_smoke.cjs"
+      ],
+      "exit_code": 0,
+      "log": "evidence/integration/design_smoke.log"
+    },
+    {
+      "test": "engine_smoke",
+      "command": [
+        "node",
+        "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r06_integration\\tool\\app\\tests\\engine_smoke.cjs"
+      ],
+      "exit_code": 0,
+      "log": "evidence/integration/engine_smoke.log"
+    },
+    {
+      "test": "lineage_smoke",
+      "command": [
+        "node",
+        "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r06_integration\\tool\\app\\tests\\lineage_smoke.cjs"
+      ],
+      "exit_code": 0,
+      "log": "evidence/integration/lineage_smoke.log"
+    },
+    {
+      "test": "narrative_smoke",
+      "command": [
+        "node",
+        "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r06_integration\\tool\\app\\tests\\narrative_smoke.cjs"
+      ],
+      "exit_code": 0,
+      "log": "evidence/integration/narrative_smoke.log"
+    },
+    {
+      "test": "project_schema_smoke",
+      "command": [
+        "node",
+        "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r06_integration\\tool\\app\\tests\\project_schema_smoke.cjs"
+      ],
+      "exit_code": 0,
+      "log": "evidence/integration/project_schema_smoke.log"
+    },
+    {
+      "test": "verify_conditions",
+      "command": [
+        "C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r06_integration\\tool\\app\\tests\\verify_conditions.py",
+        "--url",
+        "http://127.0.0.1:9359"
+      ],
+      "exit_code": 0,
+      "log": "evidence/integration/verify_conditions.log"
+    },
+    {
+      "test": "verify_design",
+      "command": [
+        "C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r06_integration\\tool\\app\\tests\\verify_design.py",
+        "--url",
+        "http://127.0.0.1:9359"
+      ],
+      "exit_code": 0,
+      "log": "evidence/integration/verify_design.log"
+    },
+    {
+      "test": "verify_design_boundaries",
+      "command": [
+        "C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r06_integration\\tool\\app\\tests\\verify_design_boundaries.py",
+        "--url",
+        "http://127.0.0.1:9359"
+      ],
+      "exit_code": 0,
+      "log": "evidence/integration/verify_design_boundaries.log"
+    },
+    {
+      "test": "verify_browser",
+      "command": [
+        "C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r06_integration\\tool\\app\\tests\\verify_browser.py",
+        "--url",
+        "http://127.0.0.1:9359"
+      ],
+      "exit_code": 1,
+      "log": "evidence/integration/verify_browser.log"
+    },
+    {
+      "test": "verify_regressions",
+      "command": [
+        "C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r06_integration\\tool\\app\\tests\\verify_regressions.py",
+        "--url",
+        "http://127.0.0.1:9359"
+      ],
+      "exit_code": 0,
+      "log": "evidence/integration/verify_regressions.log"
+    },
+    {
+      "test": "verify_current_interface",
+      "command": [
+        "C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r06_integration\\tool\\app\\tests\\verify_current_interface.py",
+        "--url",
+        "http://127.0.0.1:9359",
+        "--browser-path",
+        "C:/Program Files/Google/Chrome/Application/chrome.exe"
+      ],
+      "exit_code": 0,
+      "log": "evidence/integration/verify_current_interface.log"
+    },
+    {
+      "test": "verify_design_style",
+      "command": [
+        "C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r06_integration\\tool\\app\\tests\\verify_design_style.py",
+        "--url",
+        "http://127.0.0.1:9359"
+      ],
+      "exit_code": 0,
+      "log": "evidence/integration/verify_design_style.log"
+    },
+    {
+      "test": "verify_lineage_browser",
+      "command": [
+        "C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r06_integration\\tool\\app\\tests\\verify_lineage_browser.py",
+        "--url",
+        "http://127.0.0.1:9359"
+      ],
+      "exit_code": 0,
+      "log": "evidence/integration/verify_lineage_browser.log"
+    },
+    {
+      "test": "verify_workflow",
+      "command": [
+        "C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r06_integration\\tool\\app\\tests\\verify_workflow.py",
+        "--url",
+        "http://127.0.0.1:9359"
+      ],
+      "exit_code": 0,
+      "log": "evidence/integration/verify_workflow.log"
+    },
+    {
+      "test": "verify_context",
+      "command": [
+        "C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r06_integration\\tool\\app\\tests\\verify_context.py",
+        "--url",
+        "http://127.0.0.1:9359"
+      ],
+      "exit_code": 0,
+      "log": "evidence/integration/verify_context.log"
+    },
+    {
+      "test": "verify_issue_allowlist",
+      "command": [
+        "C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r06_integration\\tool\\app\\tests\\verify_issue_allowlist.py"
+      ],
+      "exit_code": 0,
+      "log": "evidence/integration/verify_issue_allowlist.log"
+    },
+    {
+      "test": "verify_design_pdf",
+      "command": [
+        "C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r06_integration\\tool\\app\\tests\\verify_design_pdf.py"
+      ],
+      "exit_code": 0,
+      "log": "evidence/integration/verify_design_pdf.log"
+    },
+    {
+      "test": "verify_pdf",
+      "command": [
+        "C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r06_integration\\tool\\app\\tests\\verify_pdf.py"
+      ],
+      "exit_code": 0,
+      "log": "evidence/integration/verify_pdf.log"
+    },
+    {
+      "test": "verify_guided_pdf",
+      "command": [
+        "C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r06_integration\\tool\\app\\tests\\verify_guided_pdf.py"
+      ],
+      "exit_code": 0,
+      "log": "evidence/integration/verify_guided_pdf.log"
+    },
+    {
+      "test": "verify_lineage_pdf",
+      "command": [
+        "C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r06_integration\\tool\\app\\tests\\verify_lineage_pdf.py"
+      ],
+      "exit_code": 0,
+      "log": "evidence/integration/verify_lineage_pdf.log"
+    }
+  ],
+  "human_observations": 0,
+  "actual_llm_calls": 0,
+  "server_stopped": true,
+  "url_during_tests": "http://127.0.0.1:9359",
+  "scope": "current canonical app; synthetic automated Node and actual Chrome; logs are exact subprocess output"
+}

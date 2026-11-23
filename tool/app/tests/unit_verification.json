@@ -8,6 +8,12 @@
       "log": "evidence/integration/column_mapping_smoke.log"
     },
     {
+      "script": "conditions_smoke.cjs",
+      "groups": 29,
+      "exit_code": 0,
+      "log": "evidence/integration/conditions_smoke.log"
+    },
+    {
       "script": "design_smoke.cjs",
       "groups": 16,
       "exit_code": 0,
@@ -38,6 +44,6 @@
       "log": "evidence/integration/project_schema_smoke.log"
     }
   ],
-  "timestamp_utc": "2026-11-23T02:40:02.071489+00:00",
+  "timestamp_utc": "2026-11-23T03:47:05.029463+00:00",
   "scope": "current subprocess output; not historical test count"
 }
