@@ -15,6 +15,23 @@ test('200001 saved but inference cap still enforced',()=>{const x=seed();x.cells
 test('CSV quoted comma quote newline survives engine preparation',()=>{const x=seed();x.cells.forEach(c=>c.segment='x,"quoted"\nsecond');const p=E.prepare(S.csv(round(x).cells),'aggregate');assert(!p.issues.some(i=>i.severity==='error'));assert.equal(p.cells[0].segment,x.cells[0].segment);});
 test('old version2 gets explicit empty audience',()=>{const x=seed();x.version=2;delete x.plan.audience;assert.equal(round(x).plan.audience,'');});
 test('empty plan-only project survives',()=>{const x=seed();x.cells=[];assert.equal(round(x).cells.length,0);assert.equal(S.csv([]),'');});
+test('v8 preserves rollout input and recomputes the stored decision and reasons',()=>{
+  const x=round(seed());
+  x.version=8;
+  x.rollout={source:'synthetic',decision:'review',reasons:[{reason:'edited saved message'}],input:{
+    'total-a':15482,'visit-a':1416,'optout-a':129,'total-b':15603,'visit-b':1597,'optout-b':139,
+    'visit-min':0.5,'optout-max':0.2,comparison:'three',capacity:'unknown',cost:'unknown','design-confirmed':true
+  }};
+  const restored=round(x);
+  assert.equal(restored.rollout.decision,'hold');
+  assert.deepEqual(restored.rollout.input,x.rollout.input);
+  assert.equal(restored.rollout.reasons.length,4);
+  assert.match(restored.rollout.reasons[0].reason,/\+0\.286%p/);
+  x.rollout.input['visit-b']=1680;
+  assert.equal(round(x).rollout.source,'synthetic_edited');
+  x.rollout.input['visit-b']=15604;
+  assert.throws(()=>round(x),/배정 인원/);
+});
 test('duplicates rejected at storage boundary',()=>{const x=seed();x.cells.push({...x.cells[0]});assert.throws(()=>S.stringify(x),/중복/);});
 test('invalid success rejected on write and read',()=>{const x=seed();x.cells[0].success=101;assert.throws(()=>S.stringify(x));assert.throws(()=>S.parse(JSON.stringify(x)));});
 test('negative counts rejected',()=>{const x=seed();x.cells[0].total=-1;assert.throws(()=>S.stringify(x));});

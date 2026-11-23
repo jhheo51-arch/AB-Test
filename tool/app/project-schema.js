@@ -1,17 +1,17 @@
 /* Shared storage contract. Storage limits never relax statistical inference gates. */
-(function(root,factory){if(typeof module==='object'&&module.exports)module.exports=factory(require('./lineage.js'),require('./design.js'),require('./conditions.js'));else root.ABProject=factory(root.ABLineage,root.ABDesign,root.ABConditions);})(typeof globalThis!=='undefined'?globalThis:this,function(Lineage,Design,Conditions){
+(function(root,factory){if(typeof module==='object'&&module.exports)module.exports=factory(require('./lineage.js'),require('./design.js'),require('./conditions.js'),require('./rollout.js'));else root.ABProject=factory(root.ABLineage,root.ABDesign,root.ABConditions,root.ABRollout);})(typeof globalThis!=='undefined'?globalThis:this,function(Lineage,Design,Conditions,Rollout){
 'use strict';
 const MAX_BYTES=8*1024*1024,MAX_CSV_BYTES=2*1024*1024,MAX_CELLS=50000;
 const bytes=x=>new TextEncoder().encode(x).length;
 const cell=x=>{const s=String(x??'');return /[",\r\n\t]/.test(s)?'"'+s.replace(/"/g,'""')+'"':s;};
 function csv(cells){if(!cells.length)return '';const segmented=cells.some(c=>c.segment!==null&&c.segment!==undefined);return 'arm,success,total'+(segmented?',segment':'')+'\n'+cells.map(c=>[c.arm,c.success,c.total,...(segmented?[c.segment??'']:[])].map(cell).join(',')).join('\n');}
 function normalize(x){
- if(!x||typeof x!=='object'||x.format!=='ab-local-project'||![2,3,4,5,6,7].includes(x.version)||!Array.isArray(x.cells)||x.cells.length>MAX_CELLS||!x.plan||typeof x.plan!=='object'||Array.isArray(x.plan))throw Error('이 버전의 프로젝트 파일이 아닙니다.');
+ if(!x||typeof x!=='object'||x.format!=='ab-local-project'||![2,3,4,5,6,7,8].includes(x.version)||!Array.isArray(x.cells)||x.cells.length>MAX_CELLS||!x.plan||typeof x.plan!=='object'||Array.isArray(x.plan))throw Error('이 버전의 프로젝트 파일이 아닙니다.');
  const p={},bools=['randomized','independent','mature','fixedStop','includeSegments','segmentPrespecified'];
  for(const k of bools){if(typeof x.plan[k]!=='boolean')throw Error('설계 상태가 유효하지 않습니다.');p[k]=x.plan[k];}
- const conditions=x.version===7?Conditions.normalize(x.conditions):Conditions.legacy(p);
+ const conditions=x.version>=7?Conditions.normalize(x.conditions):Conditions.legacy(p);
  const projected=Conditions.booleans(conditions);
- if(x.version===7)for(const k of Conditions.KEYS)if(p[k]!==projected[k])throw Error('조건 기록과 분석 계획이 일치하지 않습니다: '+k);
+ if(x.version>=7)for(const k of Conditions.KEYS)if(p[k]!==projected[k])throw Error('조건 기록과 분석 계획이 일치하지 않습니다: '+k);
  Object.assign(p,projected);
  for(const k of ['purpose','metric','window','policyA','policyB','audience']){
   const v=k==='audience'&&x.version===2&&x.plan[k]===undefined?'':x.plan[k];
@@ -29,7 +29,7 @@ function normalize(x){
  });
  const table=csv(cells);if(bytes(table)>MAX_CSV_BYTES)throw Error('복원할 집계 표가 2MiB를 넘습니다. 내용을 자르지 않고 저장을 중단합니다.');
  const kind=x.source_kind??'project';if(typeof kind!=='string'||kind.length>80)throw Error('자료 출처 표기가 유효하지 않습니다.');if(x.source_digest!=null&&(typeof x.source_digest!=='string'||!/^([a-fA-F0-9]{64})$/.test(x.source_digest)))throw Error('원천 해시 형식이 유효하지 않습니다.');
- const result={format:'ab-local-project',version:7,conditions,source_kind:kind,synthetic:x.synthetic===true||String(x.source_kind||'').startsWith('synthetic'),source_digest:typeof x.source_digest==='string'?x.source_digest:null,plan:p,cells,decision:'',revisit:'',engine_version:typeof x.engine_version==='string'?x.engine_version:null};
+ const result={format:'ab-local-project',version:x.version===8?8:7,conditions,source_kind:kind,synthetic:x.synthetic===true||String(x.source_kind||'').startsWith('synthetic'),source_digest:typeof x.source_digest==='string'?x.source_digest:null,plan:p,cells,decision:'',revisit:'',engine_version:typeof x.engine_version==='string'?x.engine_version:null};
  const j=x.version>=4?x.judgment:{direction:'',checks:''};
  if(!j||typeof j!=='object'||Array.isArray(j)||!['','review_a','review_b','keep','defer','more_data'].includes(j.direction)||typeof j.checks!=='string'||j.checks.length>1500)throw Error('판단 방향·확인 조건이 유효하지 않습니다.');
  result.judgment={direction:j.direction,checks:j.checks};
@@ -39,9 +39,10 @@ function normalize(x){
  for(const k of ['decision','revisit']){if(x[k]!==undefined&&(typeof x[k]!=='string'||x[k].length>1500))throw Error('판단 기록이 유효하지 않습니다.');result[k]=x[k]??'';}
  result.design=x.version>=6?Design.normalize(x.design):null;
   if(result.design)for(const k of ['purpose','metric','window','policyA','policyB','audience'])if(result.design.fields[k].value!==p[k])throw Error('설계 기록과 분석 맥락이 일치하지 않습니다: '+k);
+  if(x.version===8)result.rollout=Rollout.normalize(x.rollout);
   return result;
 }
 function stringify(x){const text=JSON.stringify(normalize(x),null,2);if(bytes(text)>MAX_BYTES)throw Error('저장 파일이 8MiB를 넘습니다. 내용을 자르지 않고 저장을 중단합니다.');return text;}
 function parse(text){if(typeof text!=='string'||bytes(text)>MAX_BYTES)throw Error('프로젝트 파일은 UTF-8 8MiB 이하여야 합니다.');const result=normalize(JSON.parse(text));if(bytes(JSON.stringify(result))>MAX_BYTES)throw Error('프로젝트 파일이 너무 큽니다.');return result;}
-return {VERSION:'0.7',MAX_BYTES,MAX_CSV_BYTES,MAX_CELLS,normalize,stringify,parse,csv};
+return {VERSION:'0.8',MAX_BYTES,MAX_CSV_BYTES,MAX_CELLS,normalize,stringify,parse,csv};
 });
