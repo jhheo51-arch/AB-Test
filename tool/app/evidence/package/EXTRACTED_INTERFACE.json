@@ -1,0 +1,422 @@
+{
+  "status": "PASS",
+  "url": "http://127.0.0.1:1759",
+  "checks": [
+    {
+      "name": "exact version-free document title",
+      "pass": true
+    },
+    {
+      "name": "header has no visible product version",
+      "pass": true
+    },
+    {
+      "name": "engine status hides numeric version",
+      "pass": true
+    },
+    {
+      "name": "revision uses input edit count",
+      "pass": true
+    },
+    {
+      "name": "initial button close: native modal is open",
+      "pass": true
+    },
+    {
+      "name": "initial button close: local embedded video source",
+      "pass": true
+    },
+    {
+      "name": "initial button close: real video metadata",
+      "pass": true
+    },
+    {
+      "name": "initial button close: video really starts",
+      "pass": true
+    },
+    {
+      "name": "initial button close: close pauses video",
+      "pass": true
+    },
+    {
+      "name": "initial button close: exact state/input/prepared/result/consent preserved",
+      "pass": true
+    },
+    {
+      "name": "initial Escape close: native modal is open",
+      "pass": true
+    },
+    {
+      "name": "initial Escape close: local embedded video source",
+      "pass": true
+    },
+    {
+      "name": "initial Escape close: real video metadata",
+      "pass": true
+    },
+    {
+      "name": "initial Escape close: video really starts",
+      "pass": true
+    },
+    {
+      "name": "initial Escape close: close pauses video",
+      "pass": true
+    },
+    {
+      "name": "initial Escape close: exact state/input/prepared/result/consent preserved",
+      "pass": true
+    },
+    {
+      "name": "custom CSV roles default correctly",
+      "pass": true
+    },
+    {
+      "name": "mapping preserves original synthetic notes and produces correct cells",
+      "pass": true
+    },
+    {
+      "name": "prepared input button close: native modal is open",
+      "pass": true
+    },
+    {
+      "name": "prepared input button close: local embedded video source",
+      "pass": true
+    },
+    {
+      "name": "prepared input button close: real video metadata",
+      "pass": true
+    },
+    {
+      "name": "prepared input button close: video really starts",
+      "pass": true
+    },
+    {
+      "name": "prepared input button close: close pauses video",
+      "pass": true
+    },
+    {
+      "name": "prepared input button close: exact state/input/prepared/result/consent preserved",
+      "pass": true
+    },
+    {
+      "name": "confirmed conditions allow real inference",
+      "pass": true
+    },
+    {
+      "name": "analyzed result Escape close: native modal is open",
+      "pass": true
+    },
+    {
+      "name": "analyzed result Escape close: local embedded video source",
+      "pass": true
+    },
+    {
+      "name": "analyzed result Escape close: real video metadata",
+      "pass": true
+    },
+    {
+      "name": "analyzed result Escape close: video really starts",
+      "pass": true
+    },
+    {
+      "name": "analyzed result Escape close: close pauses video",
+      "pass": true
+    },
+    {
+      "name": "analyzed result Escape close: exact state/input/prepared/result/consent preserved",
+      "pass": true
+    },
+    {
+      "name": "share with both consents button close: native modal is open",
+      "pass": true
+    },
+    {
+      "name": "share with both consents button close: local embedded video source",
+      "pass": true
+    },
+    {
+      "name": "share with both consents button close: real video metadata",
+      "pass": true
+    },
+    {
+      "name": "share with both consents button close: video really starts",
+      "pass": true
+    },
+    {
+      "name": "share with both consents button close: close pauses video",
+      "pass": true
+    },
+    {
+      "name": "share with both consents button close: exact state/input/prepared/result/consent preserved",
+      "pass": true
+    },
+    {
+      "name": "share with both consents Escape close: native modal is open",
+      "pass": true
+    },
+    {
+      "name": "share with both consents Escape close: local embedded video source",
+      "pass": true
+    },
+    {
+      "name": "share with both consents Escape close: real video metadata",
+      "pass": true
+    },
+    {
+      "name": "share with both consents Escape close: video really starts",
+      "pass": true
+    },
+    {
+      "name": "share with both consents Escape close: close pauses video",
+      "pass": true
+    },
+    {
+      "name": "share with both consents Escape close: exact state/input/prepared/result/consent preserved",
+      "pass": true
+    },
+    {
+      "name": "native project JSON retains schema 6 and engine compatibility",
+      "pass": true
+    },
+    {
+      "name": "native project JSON retains transformation version",
+      "pass": true
+    },
+    {
+      "name": "exported report has no engine/revision/transformation version labels",
+      "pass": true
+    },
+    {
+      "name": "report still includes result and method",
+      "pass": true
+    },
+    {
+      "name": "invalid native JSON rejected without changing analysis",
+      "pass": true
+    },
+    {
+      "name": "valid native JSON restores counts",
+      "pass": true
+    },
+    {
+      "name": "functional inference guard remains active without conditions",
+      "pass": true
+    },
+    {
+      "name": "mapping error blocks stale analysis and keeps synthetic usernotes",
+      "pass": true
+    },
+    {
+      "name": "mapping error button close: native modal is open",
+      "pass": true
+    },
+    {
+      "name": "mapping error button close: local embedded video source",
+      "pass": true
+    },
+    {
+      "name": "mapping error button close: real video metadata",
+      "pass": true
+    },
+    {
+      "name": "mapping error button close: video really starts",
+      "pass": true
+    },
+    {
+      "name": "mapping error button close: close pauses video",
+      "pass": true
+    },
+    {
+      "name": "mapping error button close: exact state/input/prepared/result/consent preserved",
+      "pass": true
+    },
+    {
+      "name": "mapping error Escape close: native modal is open",
+      "pass": true
+    },
+    {
+      "name": "mapping error Escape close: local embedded video source",
+      "pass": true
+    },
+    {
+      "name": "mapping error Escape close: real video metadata",
+      "pass": true
+    },
+    {
+      "name": "mapping error Escape close: video really starts",
+      "pass": true
+    },
+    {
+      "name": "mapping error Escape close: close pauses video",
+      "pass": true
+    },
+    {
+      "name": "mapping error Escape close: exact state/input/prepared/result/consent preserved",
+      "pass": true
+    },
+    {
+      "name": "390px mapping-error page has no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "390px error button close: native modal is open",
+      "pass": true
+    },
+    {
+      "name": "390px error button close: local embedded video source",
+      "pass": true
+    },
+    {
+      "name": "390px error button close: real video metadata",
+      "pass": true
+    },
+    {
+      "name": "390px error button close: video really starts",
+      "pass": true
+    },
+    {
+      "name": "390px error button close: modal fits 390px",
+      "pass": true
+    },
+    {
+      "name": "390px error button close: close pauses video",
+      "pass": true
+    },
+    {
+      "name": "390px error button close: exact state/input/prepared/result/consent preserved",
+      "pass": true
+    },
+    {
+      "name": "390px error button close: body scrolling unlocked",
+      "pass": true
+    },
+    {
+      "name": "390px error button close: page remains scrollable",
+      "pass": true
+    },
+    {
+      "name": "390px error Escape close: native modal is open",
+      "pass": true
+    },
+    {
+      "name": "390px error Escape close: local embedded video source",
+      "pass": true
+    },
+    {
+      "name": "390px error Escape close: real video metadata",
+      "pass": true
+    },
+    {
+      "name": "390px error Escape close: video really starts",
+      "pass": true
+    },
+    {
+      "name": "390px error Escape close: modal fits 390px",
+      "pass": true
+    },
+    {
+      "name": "390px error Escape close: close pauses video",
+      "pass": true
+    },
+    {
+      "name": "390px error Escape close: exact state/input/prepared/result/consent preserved",
+      "pass": true
+    },
+    {
+      "name": "390px error Escape close: body scrolling unlocked",
+      "pass": true
+    },
+    {
+      "name": "390px error Escape close: page remains scrollable",
+      "pass": true
+    },
+    {
+      "name": "no uncaught JavaScript errors",
+      "pass": true
+    },
+    {
+      "name": "no remote/model/credential requests attempted",
+      "pass": true
+    }
+  ],
+  "javascript_errors": [],
+  "blocked_requests": [],
+  "video_metadata": [
+    {
+      "case": "initial button close",
+      "width": 1280,
+      "height": 900,
+      "duration": 77.68,
+      "readyState": 1
+    },
+    {
+      "case": "initial Escape close",
+      "width": 1280,
+      "height": 900,
+      "duration": 77.68,
+      "readyState": 4
+    },
+    {
+      "case": "prepared input button close",
+      "width": 1280,
+      "height": 900,
+      "duration": 77.68,
+      "readyState": 4
+    },
+    {
+      "case": "analyzed result Escape close",
+      "width": 1280,
+      "height": 900,
+      "duration": 77.68,
+      "readyState": 4
+    },
+    {
+      "case": "share with both consents button close",
+      "width": 1280,
+      "height": 900,
+      "duration": 77.68,
+      "readyState": 4
+    },
+    {
+      "case": "share with both consents Escape close",
+      "width": 1280,
+      "height": 900,
+      "duration": 77.68,
+      "readyState": 4
+    },
+    {
+      "case": "mapping error button close",
+      "width": 1280,
+      "height": 900,
+      "duration": 77.68,
+      "readyState": 4
+    },
+    {
+      "case": "mapping error Escape close",
+      "width": 1280,
+      "height": 900,
+      "duration": 77.68,
+      "readyState": 4
+    },
+    {
+      "case": "390px error button close",
+      "width": 1280,
+      "height": 900,
+      "duration": 77.68,
+      "readyState": 1
+    },
+    {
+      "case": "390px error Escape close",
+      "width": 1280,
+      "height": 900,
+      "duration": 77.68,
+      "readyState": 1
+    }
+  ],
+  "scope": "synthetic local browser regression",
+  "no_actual_llm_call": true,
+  "count": 84,
+  "passed_count": 84,
+  "failed_count": 0,
+  "screenshot": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_current_package_u_zbtzqv\\AB_Test_Workspace\\evidence\\current_interface.png"
+}

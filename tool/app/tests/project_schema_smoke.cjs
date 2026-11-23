@@ -28,6 +28,6 @@ test('audience boundary 300 preserved 301 rejected',()=>{const x=seed();x.plan.a
 test('oversize canonical CSV rejected before saving',()=>{const x=seed();x.cells.forEach(c=>c.segment='x'.repeat(1048576));assert.throws(()=>S.stringify(x),/2MiB/);});
 test('document size cap symmetric',()=>{assert.throws(()=>S.parse(' '.repeat(S.MAX_BYTES+1)),/8MiB/);});
 test('malformed JSON rejected',()=>assert.throws(()=>S.parse('{bad')));
-test('source identifier preserved or rejected never repaired',()=>{const x=seed();x.source_digest='A'.repeat(64);assert.equal(round(x).source_digest,x.source_digest);x.source_digest='not-a-hash';assert.throws(()=>S.stringify(x));});
+test('source identifier preserved or rejected never repaired',()=>{const x=seed();x.source_digest='A'.repeat(64);assert.throws(()=>round(x),/중복/);x.lineage=require('../lineage.js').build(x.source_digest,x.source_digest,'identity');assert.equal(round(x).source_digest,x.source_digest);x.source_digest='not-a-hash';assert.throws(()=>S.stringify(x));});
 test('no raw extra keys survive normalization',()=>{const x=seed();x.raw_rows=['SYNTHETIC_PRIVATE_ID'];assert(!S.stringify(x).includes('SYNTHETIC_PRIVATE_ID'));});
 console.log('RESULT '+count+' schema groups passed.');

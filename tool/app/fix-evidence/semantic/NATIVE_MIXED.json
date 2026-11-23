@@ -1,0 +1,161 @@
+{
+  "format": "ab-local-project",
+  "version": 7,
+  "conditions": {
+    "randomized": {
+      "status": "unknown",
+      "evidence": "",
+      "origin": "user_statement"
+    },
+    "independent": {
+      "status": "unknown",
+      "evidence": "",
+      "origin": "user_statement"
+    },
+    "mature": {
+      "status": "unknown",
+      "evidence": "",
+      "origin": "user_statement"
+    },
+    "fixedStop": {
+      "status": "unknown",
+      "evidence": "",
+      "origin": "user_statement"
+    },
+    "segmentPrespecified": {
+      "status": "unknown",
+      "evidence": "",
+      "origin": "user_statement"
+    }
+  },
+  "source_kind": "none",
+  "synthetic": false,
+  "source_digest": null,
+  "plan": {
+    "randomized": false,
+    "independent": false,
+    "mature": false,
+    "fixedStop": false,
+    "includeSegments": true,
+    "segmentPrespecified": false,
+    "purpose": "첫째\n둘째\n셋째\n넷째",
+    "metric": "첫째\n둘째\n셋째\n넷째",
+    "window": "첫째\n둘째\n셋째\n넷째",
+    "policyA": "첫째\n둘째\n셋째\n넷째",
+    "policyB": "첫째\n둘째\n셋째\n넷째",
+    "audience": "첫째\n둘째\n셋째\n넷째",
+    "alpha": 0.05
+  },
+  "cells": [],
+  "decision": "",
+  "revisit": "",
+  "engine_version": null,
+  "judgment": {
+    "direction": "",
+    "checks": ""
+  },
+  "lineage": {
+    "version": 1,
+    "algorithm": "SHA-256",
+    "origin": {
+      "kind": "unknown",
+      "digest": null
+    },
+    "previous": null,
+    "current": null,
+    "transformation": {
+      "name": "none",
+      "version": "0.5.1"
+    }
+  },
+  "design": {
+    "version": 1,
+    "revision": 7,
+    "step": 0,
+    "candidate": "",
+    "resultSeen": false,
+    "changedAfterResult": false,
+    "fields": {
+      "situation": {
+        "value": "",
+        "status": "unknown"
+      },
+      "purpose": {
+        "value": "첫째\n둘째\n셋째\n넷째",
+        "status": "proposed"
+      },
+      "audience": {
+        "value": "첫째\n둘째\n셋째\n넷째",
+        "status": "proposed"
+      },
+      "analysisSegments": {
+        "value": "",
+        "status": "unknown"
+      },
+      "applicationSegments": {
+        "value": "",
+        "status": "unknown"
+      },
+      "measurement": {
+        "value": "",
+        "status": "unknown"
+      },
+      "risk": {
+        "value": "",
+        "status": "unknown"
+      },
+      "constraints": {
+        "value": "",
+        "status": "unknown"
+      },
+      "policyA": {
+        "value": "첫째\n둘째\n셋째\n넷째",
+        "status": "proposed"
+      },
+      "policyB": {
+        "value": "첫째\n둘째\n셋째\n넷째",
+        "status": "proposed"
+      },
+      "metric": {
+        "value": "첫째\n둘째\n셋째\n넷째",
+        "status": "proposed"
+      },
+      "denominator": {
+        "value": "",
+        "status": "unknown"
+      },
+      "window": {
+        "value": "첫째\n둘째\n셋째\n넷째",
+        "status": "proposed"
+      },
+      "assignment": {
+        "value": "",
+        "status": "unknown"
+      },
+      "heldConstant": {
+        "value": "",
+        "status": "unknown"
+      },
+      "stop": {
+        "value": "",
+        "status": "unknown"
+      },
+      "decisionRule": {
+        "value": "",
+        "status": "unknown"
+      },
+      "business": {
+        "value": "",
+        "status": "unknown"
+      },
+      "guardrail": {
+        "value": "",
+        "status": "unknown"
+      },
+      "segmentTiming": {
+        "value": "",
+        "status": "unknown"
+      }
+    }
+  }
+}

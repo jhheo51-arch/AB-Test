@@ -1,0 +1,28 @@
+PASS ordinary exact count and metadata roundtrip
+PASS v3 legacy defaults judgment without invented direction
+PASS v5 judgment exact roundtrip
+PASS unknown direction rejected
+PASS v5 missing judgment rejected not invented
+PASS oversize judgment checks rejected
+PASS 201-character group name survives
+PASS seven groups fourteen cells survive
+PASS 200001 saved but inference cap still enforced
+PASS CSV quoted comma quote newline survives engine preparation
+PASS old version2 gets explicit empty audience
+PASS empty plan-only project survives
+PASS duplicates rejected at storage boundary
+PASS invalid success rejected on write and read
+PASS negative counts rejected
+PASS noninteger rejected
+PASS unsafe integer rejected
+PASS unsafe combined arm total rejected
+PASS unknown alpha not silently normalized
+PASS unsupported design declaration not silently dropped
+PASS boolean string not treated as confirmation
+PASS audience boundary 300 preserved 301 rejected
+PASS oversize canonical CSV rejected before saving
+PASS document size cap symmetric
+PASS malformed JSON rejected
+PASS source identifier preserved or rejected never repaired
+PASS no raw extra keys survive normalization
+RESULT 27 schema groups passed.

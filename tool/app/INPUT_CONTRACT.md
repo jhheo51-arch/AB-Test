@@ -29,6 +29,14 @@ winner는 방향과 조정 p 기준을 사용해 A/B/hold/not_tested로 구분�
 
 해시는 최초 입력 텍스트 UTF-8, 직전 기록, 이번 계산 CSV를 구분합니다. 복원은 기록 계승이지 원자료 재검증이나 진위·익명성 인증이 아닙니다. 모든 중간 이력을 보관하지 않으며 구형의 대상 미분류 값과 없는 값은 추정하지 않습니다.
 
+## 저장의 직렬화 일관성
+
+같은 군의 집단 `null`과 빈 문자열은 CSV에서 같은 빈 집단이므로, 둘이 별개 셀로 함께 있으면 저장·복원 정규화에서 중복으로 거절합니다. 행을 합산하거나 버리지 않습니다. 각 군에 하나씩만 있는 정상 결측/전체 집계는 그대로 지원하며 기존 전체/집단 추론 제한은 변하지 않습니다.
+
+내부 형식 5 이상에서 `source_digest`는 `lineage.current.digest`의 정확한 중복입니다. current가 없으면 source_digest도 null이어야 하고, 대소문자까지 다른 기록이나 current 없는 non-null 해시는 적용 전에 거절합니다. 내부 형식 2–4의 해시는 `origin.kind=legacy_untyped`로 원문 그대로 옮기고 source_digest/current를 null로 두며, 원본이나 계산 대상의 종류를 만들어 붙이지 않습니다. 재집계 이후에도 미분류 origin을 보존합니다.
+
+가져온 근거와 중복 맥락의 CRLF/CR/혼합 줄바꿈은 실제 해당 필드의 편집 전까지 원문을 보관합니다. 화면 textarea 표시의 LF 정규화는 편집이 아닙니다. 직접 편집한 값은 브라우저 LF 계약을 따릅니다. 상한·공유 제외·원문 민감정보 경고는 동일합니다. 자세한 내용은 [맥락 계약](CONTEXT_CONTRACT.md)을 확인하세요.
+
 ## 계산·설명 경계
 
 ABEngine.parseTable은 원시 표를 반환하므로 저장/외부 전송에 쓰지 않습니다. prepare는 cells/issues/format/sourceRowCount, analyze는 상태·전체·집단·직접 차이·가족·issues를 반환합니다. status는 ok/descriptive/limited/unsupported/invalid, CI는 [하한,상한], 집단은 G1/G2입니다. 원래 이름은 기기 안에서 대응합니다.

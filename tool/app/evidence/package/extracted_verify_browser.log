@@ -1,0 +1,42 @@
+PASS empty entry starts at real input without forced plan wizard
+PASS planning guide explicitly rule based
+PASS plan can be saved before data exists
+PASS synthetic four cells actually sum to 130/1000 and 150/1000
+PASS nominal intervals and Holm-adjusted hold not conflated
+PASS planned Holm is not claimed applied when inference was not run
+PASS group names map locally while LLM gets G labels
+PASS no LLM POST without explicit consent
+PASS explanation button disabled before consent
+PASS 390px results page has no global horizontal overflow
+PASS report export disabled until share review
+PASS report excludes group names by default
+PASS explicit group share includes local group names
+PASS downloaded HTML is script-free and excludes raw IDs and LLM
+PASS print control populates dedicated report and invokes print
+PASS source edits invalidate results and previous synthetic assumptions
+PASS unconfirmed conditions show descriptive not p/CI/winner
+PASS confirmed positive effect produces engine B decision
+PASS simulated LLM failure is visible and preserves calculations
+PASS individual rows aggregate with no ID in result UI
+PASS project has only plan and aggregates, no individual IDs/raw rows/LLM
+PASS saved aggregates restore and preserve synthetic provenance
+PASS fixed natural sentence parses explicit counts
+PASS extra natural prose is rejected rather than silently ignored
+PASS invalid counts show row and column and cannot analyze
+PASS invalid rows cannot be dropped through project save
+PASS new CSV clears old synthetic design assumptions
+PASS actual file input follows validated engine path
+PASS oversize file is rejected without reading into table
+PASS duplicate individual IDs block analysis and are not echoed
+PASS immature outcomes are not silently treated as failure
+PASS post-hoc segments have no confirmatory winner
+PASS missing segment remains overall but blocks segment inference
+PASS untrusted segment text is escaped in result and report
+PASS non UTF-8 files are rejected rather than silently recoded
+PASS 50000 individual rows complete local UI path
+BOUNDARY_50000_ELAPSED_SECONDS 25.456
+PASS 50001 individual rows are blocked in UI
+PASS 390px input page has no global horizontal overflow
+PASS no remote browser requests and no raw file/ID transmitted
+PASS no uncaught page JavaScript errors
+RESULT 40 browser checks passed; live_llm= False

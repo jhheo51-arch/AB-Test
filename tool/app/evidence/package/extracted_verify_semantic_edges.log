@@ -1,0 +1,103 @@
+PASS S01 native multiline purpose
+PASS S01 native multiline metric
+PASS S01 native multiline window
+PASS S01 native multiline policyA
+PASS S01 native multiline policyB
+PASS S01 native multiline audience
+PASS S01 native plan fresh exact
+PASS S01 CSV linked all metadata exact
+PASS S01 escaped output
+PASS S01 native CRLF all duplicate fields
+PASS S01 native CR all duplicate fields
+PASS S01 native MIXED all duplicate fields
+PASS raw DOM display and navigation not edits LF
+PASS S01 imported LF purpose
+PASS S01 imported LF metric
+PASS S01 imported LF window
+PASS S01 imported LF policyA
+PASS S01 imported LF policyB
+PASS S01 imported LF audience
+PASS S02 imported LF randomized
+PASS S02 imported LF independent
+PASS S02 imported LF mature
+PASS S02 imported LF fixedStop
+PASS S02 imported LF segmentPrespecified
+PASS S01 S02 second new page LF
+PASS raw DOM display and navigation not edits CRLF
+PASS S01 imported CRLF purpose
+PASS S01 imported CRLF metric
+PASS S01 imported CRLF window
+PASS S01 imported CRLF policyA
+PASS S01 imported CRLF policyB
+PASS S01 imported CRLF audience
+PASS S02 imported CRLF randomized
+PASS S02 imported CRLF independent
+PASS S02 imported CRLF mature
+PASS S02 imported CRLF fixedStop
+PASS S02 imported CRLF segmentPrespecified
+PASS S01 S02 second new page CRLF
+PASS raw DOM display and navigation not edits CR
+PASS S01 imported CR purpose
+PASS S01 imported CR metric
+PASS S01 imported CR window
+PASS S01 imported CR policyA
+PASS S01 imported CR policyB
+PASS S01 imported CR audience
+PASS S02 imported CR randomized
+PASS S02 imported CR independent
+PASS S02 imported CR mature
+PASS S02 imported CR fixedStop
+PASS S02 imported CR segmentPrespecified
+PASS S01 S02 second new page CR
+PASS raw DOM display and navigation not edits MIXED
+PASS S01 imported MIXED purpose
+PASS S01 imported MIXED metric
+PASS S01 imported MIXED window
+PASS S01 imported MIXED policyA
+PASS S01 imported MIXED policyB
+PASS S01 imported MIXED audience
+PASS S02 imported MIXED randomized
+PASS S02 imported MIXED independent
+PASS S02 imported MIXED mature
+PASS S02 imported MIXED fixedStop
+PASS S02 imported MIXED segmentPrespecified
+PASS S01 S02 second new page MIXED
+PASS S02 status-only retains raw
+PASS S02 actual edit invalidates result and confirmations
+PASS S02 edit replaces only own raw evidence
+PASS S01 input edit replaces both duplicate metadata
+PASS raw DOM display and navigation not edits NONBMP
+PASS S01 imported NONBMP purpose
+PASS S01 imported NONBMP metric
+PASS S01 imported NONBMP window
+PASS S01 imported NONBMP policyA
+PASS S01 imported NONBMP policyB
+PASS S01 imported NONBMP audience
+PASS S02 imported NONBMP randomized
+PASS S02 imported NONBMP independent
+PASS S02 imported NONBMP mature
+PASS S02 imported NONBMP fixedStop
+PASS S02 imported NONBMP segmentPrespecified
+PASS S01 S02 second new page NONBMP
+PASS atomic collision schema 2
+PASS atomic collision schema 3
+PASS atomic collision schema 4
+PASS atomic collision schema 5
+PASS atomic dangling schema 5
+PASS atomic collision schema 6
+PASS atomic dangling schema 6
+PASS atomic collision schema 7
+PASS atomic dangling schema 7
+PASS S02 UTF16 overflow atomic 1001
+PASS S02 UTF16 overflow atomic 501
+PASS S04 legacy hash retained 2
+PASS S04 legacy hash retained 3
+PASS S04 legacy hash retained 4
+PASS S02 raw private evidence excluded from facts
+PASS S02 raw private evidence excluded from HTML
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+PASS S02 raw private evidence excluded from PDF
+PASS S02 actual evidence edit cancels async restore ownership
+PASS S02 released stale actual file cannot overwrite raw edit
+PASS no model external requests or page errors
+RESULT 101 semantic browser checks passed

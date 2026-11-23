@@ -18,6 +18,10 @@
   "human_observations": 0,
   "design_tutorial_added_to_analysis_video": false,
   "verification": "tool/app/integration_verification.json",
+  "release_metadata": "tool/app/verification.json",
+  "current_verified_counts": {"scripts": 25, "smoke_unit_groups": 145, "separate_semantic_cases": 1029, "engine_gate_cases_included_in_semantic": 972, "browser_checks": 395},
+  "audit_fixes": {"S01": "multiline_metadata_and_lossless_unedited_import", "S02": "raw_evidence_preserved_until_input", "S03": "canonical_CSV_collisions_rejected_before_apply", "S04": "contradictory_digest_rejected_legacy_untyped_origin_retained", "S05": "portable_review_links_all_local_Markdown_links_checked"},
+  "metadata_policy": "Current runtime hashes and log-derived counts; historical baseline remains unchanged, intentionally modified design-ui excluded from preserved controls.",
   "conditions": {
     "core_unknown_or_no": "descriptive_only",
     "segment_unknown_or_no": "exploratory_segments_overall_gate_separate",

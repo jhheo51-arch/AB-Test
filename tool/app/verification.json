@@ -1,9 +1,9 @@
 {
   "status": "PASS",
-  "timestamp_utc": "2026-11-23T03:47:05.029463+00:00",
+  "timestamp_utc": "2026-11-23T07:30:11.518289+00:00",
   "deployment": "single canonical current app; latest-only; no visible product version labels",
   "integration_suite": {
-    "scripts": 23,
+    "scripts": 25,
     "all_exit_zero": true,
     "record": "integration_verification.json",
     "server_stopped": true
@@ -17,7 +17,8 @@
     "regression_verification.json": 22,
     "R03_browser_verification.json": 14,
     "design-evidence/BROWSER_VERIFICATION.json": 21,
-    "design-evidence/BOUNDARY_VERIFICATION.json": 13
+    "design-evidence/BOUNDARY_VERIFICATION.json": 13,
+    "fix-evidence/semantic/BROWSER_VERIFICATION.json": 101
   },
   "unit_groups": [
     {
@@ -110,29 +111,33 @@
     "pdf_verification.json",
     "design-evidence/PDF_TEXT_VERIFICATION.json",
     "workflow_evidence/GUIDED_PDF_PROOF.json",
-    "lineage_evidence/LINEAGE_PDF_PROOF.json"
+    "lineage_evidence/LINEAGE_PDF_PROOF.json",
+    "fix-evidence/semantic/BROWSER_VERIFICATION.json"
   ],
   "source_sha256": {
-    "conditions.js": "ba43452438ed54ad4c42f5ffb7fb61c981247f5fa92e3019c711170b9820b0c5",
-    "app.js": "c4a2e4d407ab3563c562d865ca93059537e7b4b0ed1b605f7c8776403dea1b43",
-    "index.html": "2fd9122d247f7d8cb5bd3564ed1c313b297840b40e7838aa6c4b1bdab5065432",
-    "server.py": "0a43fa86eadb1d4ad11c2c6d501eaca3ecd201397dc8ea772a2325d79aa5f738",
-    "project-schema.js": "76af16f3c9e02531ae645f43e75eb03fd3df9412fab1db8db39b930e6eb36a65",
-    "design.js": "c2928c37c92a053534682baf0da82fbbe98fdf249ef7180604cd05cdc5ddda22",
-    "design-ui.js": "2e5e46fa1584f6061078ee60036114f5465062caa65c2d9fee743a8d4aef0087",
-    "design.css": "26f0756ca833c6c4060da7f6f421a6591822ef3a845f74608ff68e0f66760cd3",
-    "workflow.js": "f70e3989f4f5432210ab4141f6dd83f86799248b82c59c1ff0b9fd7fdaad5478",
-    "engine.js": "f40cc1fbd3e87dde4050cb0155673c2f368b2e88274a30fa03aeb09dbcde05f7",
-    "worker.js": "6f30bd381c13bbad95dcd6d6570dff14a23df9f5ad5b0a5d4d05bfe6078d7179",
-    "narrative.js": "570af0c9cb1e10063bf0842e2393bf7561938ca3327e23f71c485c79abce1f4a",
-    "lineage.js": "6fbe55b5ba392e6bb64ff3dcaa5702936301aceac4f6599a55b99bad6bed84ba",
+    "app.js": "762988e7d9645f2fcdf50acf3f4e0dc4cb67226a903519b137b9cc1ee2963450",
     "column-mapping.js": "d1d3b0c7a2e3aeb520c9c831d3583cf5e2d889c6ea079837a7814868ab361a68",
-    "theme.css": "32af93deee832077377efcb2b83be4aeafe16fb3cd06e705ecc1e2a4038efd13",
+    "conditions.js": "ba43452438ed54ad4c42f5ffb7fb61c981247f5fa92e3019c711170b9820b0c5",
     "context.css": "e75a39ddceb74b433ab3a4fb30a41ce0e7a5ed4fa5d82cc940bf4219b39b4edf",
+    "design-ui.js": "ceea7d89b668d43e5c4a4ded4ec95dc4a174cb702c7e96c406d8e6c91253e609",
+    "design.css": "26f0756ca833c6c4060da7f6f421a6591822ef3a845f74608ff68e0f66760cd3",
+    "design.js": "c2928c37c92a053534682baf0da82fbbe98fdf249ef7180604cd05cdc5ddda22",
+    "engine-issue-codes.json": "b12c04facf9e5aa576174176040077c43aa8e7325a6368f4f28c1767e6a33c4e",
+    "engine.js": "f40cc1fbd3e87dde4050cb0155673c2f368b2e88274a30fa03aeb09dbcde05f7",
+    "index.html": "ec196f8eb4537c0af489257dfd1df2e0606617252dfb35ba5fa7e019219800e3",
+    "launch.cmd": "341927114a537ad03818be3f60ccb948e118c8e660dc3e0976e93b7dda31a9e0",
+    "launch.py": "8456b3f589dd918032d73dcfd2eecc5d46b70e57a40dbdc8a64dc865d35df62d",
+    "lineage.js": "6fbe55b5ba392e6bb64ff3dcaa5702936301aceac4f6599a55b99bad6bed84ba",
+    "narrative.js": "570af0c9cb1e10063bf0842e2393bf7561938ca3327e23f71c485c79abce1f4a",
+    "project-schema.js": "62a1f452094533af856f5674c6b3a82c97ad913713c9faf6503fae5393c68391",
+    "server.py": "0a43fa86eadb1d4ad11c2c6d501eaca3ecd201397dc8ea772a2325d79aa5f738",
+    "styles.css": "0869f2c9d558ad908dc67c07ad06d58af0ae6acdc09d80eb66bd0bf397e8a153",
+    "theme.css": "32af93deee832077377efcb2b83be4aeafe16fb3cd06e705ecc1e2a4038efd13",
+    "worker.js": "6f30bd381c13bbad95dcd6d6570dff14a23df9f5ad5b0a5d4d05bfe6078d7179",
     "workflow.css": "98254b477975d83aad6ce4b8667776f21c772a1e2974d7d667682294de82abfa",
-    "styles.css": "0869f2c9d558ad908dc67c07ad06d58af0ae6acdc09d80eb66bd0bf397e8a153"
+    "workflow.js": "f70e3989f4f5432210ab4141f6dd83f86799248b82c59c1ff0b9fd7fdaad5478"
   },
-  "preserved_current_remote_bytes": {
+  "preserved_baseline_bytes": {
     "engine.js": true,
     "worker.js": true,
     "narrative.js": true,
@@ -140,12 +145,18 @@
     "column-mapping.js": true,
     "workflow.js": true,
     "design.js": true,
-    "design-ui.js": true,
     "theme.css": true,
     "context.css": true,
     "workflow.css": true,
     "styles.css": true,
     "help/walkthrough.mp4": true
+  },
+  "intentional_baseline_control_changes": {
+    "design-ui.js": {
+      "reason": "S01 shared lossless metadata getter/setter and unedited question navigation; intentionally modified, not a preserved control.",
+      "historical_sha256": "2e5e46fa1584f6061078ee60036114f5465062caa65c2d9fee743a8d4aef0087",
+      "current_sha256": "ceea7d89b668d43e5c4a4ded4ec95dc4a174cb702c7e96c406d8e6c91253e609"
+    }
   },
   "baseline": {
     "base_commit": "9fb9873aeafa342425857f202134296f1eca98a8",
@@ -206,6 +217,7 @@
       }
     }
   },
+  "baseline_role": "Historical pre-R06 record unchanged; preserved subset is explicit above. No current remote readback claimed.",
   "video": {
     "sha256": "137d7ebc52570b2e1368755a87efb95bb3420cf77f84c0069b9dd68cc69d0492",
     "current_metadata": [
@@ -235,7 +247,7 @@
         "width": 1280,
         "height": 900,
         "duration": 77.68,
-        "readyState": 4
+        "readyState": 1
       },
       {
         "case": "share with both consents button close",
@@ -249,14 +261,14 @@
         "width": 1280,
         "height": 900,
         "duration": 77.68,
-        "readyState": 1
+        "readyState": 4
       },
       {
         "case": "mapping error button close",
         "width": 1280,
         "height": 900,
         "duration": 77.68,
-        "readyState": 1
+        "readyState": 4
       },
       {
         "case": "mapping error Escape close",
@@ -270,7 +282,7 @@
         "width": 1280,
         "height": 900,
         "duration": 77.68,
-        "readyState": 1
+        "readyState": 4
       },
       {
         "case": "390px error Escape close",
@@ -302,12 +314,24 @@
     "prior actual model connection; no model called in current integration",
     "prior video full-decode certification; exact bytes preserved"
   ],
-  "initial_run": "evidence/r06-initial/result.json",
-  "initial_issues": "R06 initial failures are preserved; test-only adaptation from checkbox actions and schema6 expectations to visible selects/schema7; see conditions-evidence/IMPLEMENTATION_NOTES.md; previous R05 initial failures are historical and not rerun",
   "limits": [
     "Synthetic automation, not participant study",
     "No actual AI semantic design; local fixed questions and proposals",
     "No new statistical support or automatic application approval",
-    "No design tutorial added to existing analysis video"
-  ]
+    "No design tutorial added to existing analysis video",
+    "No new tutorial or R07 added",
+    "Smoke groups, semantic cases and browser checks are separate counts; source/extracted repetitions are not additional unique coverage."
+  ],
+  "metadata_generated_utc": "2026-11-23T07:43:21.087805+00:00",
+  "browser_check_total": 395,
+  "semantic_regressions": {
+    "script": "semantic_edges.cjs",
+    "cases": 1029,
+    "engine_gate_cases_included": 972,
+    "exit_code": 0,
+    "log": "evidence/integration/semantic_edges.log",
+    "counting": "Separate from smoke unit groups; engine gate cases are included, not additional. A case may contain several assertions."
+  },
+  "historical_initial_run": "evidence/r06-initial/result.json",
+  "historical_initial_issues": "R06 initial failures are preserved; test-only adaptation from checkbox actions and schema6 expectations to visible selects/schema7; see conditions-evidence/IMPLEMENTATION_NOTES.md; previous R05 initial failures are historical and not rerun"
 }

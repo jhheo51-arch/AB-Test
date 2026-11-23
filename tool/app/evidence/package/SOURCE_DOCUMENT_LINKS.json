@@ -1,0 +1,243 @@
+{
+  "status": "PASS",
+  "markdown_documents": 17,
+  "local_links_checked": 39,
+  "broken_links": [],
+  "links": [
+    {
+      "source": "app/INPUT_CONTRACT.md",
+      "reference": "CONTEXT_CONTRACT.md",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_audit_fixes\\tool\\app\\CONTEXT_CONTRACT.md",
+      "exists": true
+    },
+    {
+      "source": "app/README.md",
+      "reference": "help/walkthrough.mp4",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_audit_fixes\\tool\\app\\help\\walkthrough.mp4",
+      "exists": true
+    },
+    {
+      "source": "app/README.md",
+      "reference": "INPUT_CONTRACT.md",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_audit_fixes\\tool\\app\\INPUT_CONTRACT.md",
+      "exists": true
+    },
+    {
+      "source": "app/README.md",
+      "reference": "fix-evidence/semantic/BROWSER_VERIFICATION.json",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_audit_fixes\\tool\\app\\fix-evidence\\semantic\\BROWSER_VERIFICATION.json",
+      "exists": true
+    },
+    {
+      "source": "app/README.md",
+      "reference": "INPUT_CONTRACT.md",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_audit_fixes\\tool\\app\\INPUT_CONTRACT.md",
+      "exists": true
+    },
+    {
+      "source": "downloads/README.md",
+      "reference": "AB_Test_Workspace.zip",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_audit_fixes\\tool\\downloads\\AB_Test_Workspace.zip",
+      "exists": true
+    },
+    {
+      "source": "downloads/README.md",
+      "reference": "../app/README.md",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_audit_fixes\\tool\\app\\README.md",
+      "exists": true
+    },
+    {
+      "source": "downloads/README.md",
+      "reference": "../app/help/walkthrough.mp4",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_audit_fixes\\tool\\app\\help\\walkthrough.mp4",
+      "exists": true
+    },
+    {
+      "source": "downloads/README.md",
+      "reference": "PACKAGE_ALLOWLIST.json",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_audit_fixes\\tool\\downloads\\PACKAGE_ALLOWLIST.json",
+      "exists": true
+    },
+    {
+      "source": "downloads/README.md",
+      "reference": "package_verification.json",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_audit_fixes\\tool\\downloads\\package_verification.json",
+      "exists": true
+    },
+    {
+      "source": "prd/README.md",
+      "reference": "BASELINE.md",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_audit_fixes\\tool\\prd\\BASELINE.md",
+      "exists": true
+    },
+    {
+      "source": "prd/README.md",
+      "reference": "DECISIONS.md",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_audit_fixes\\tool\\prd\\DECISIONS.md",
+      "exists": true
+    },
+    {
+      "source": "prd/README.md",
+      "reference": "INTERVIEW.md",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_audit_fixes\\tool\\prd\\INTERVIEW.md",
+      "exists": true
+    },
+    {
+      "source": "prd/README.md",
+      "reference": "../README.md",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_audit_fixes\\tool\\README.md",
+      "exists": true
+    },
+    {
+      "source": "prd/README.md",
+      "reference": "../app/README.md",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_audit_fixes\\tool\\app\\README.md",
+      "exists": true
+    },
+    {
+      "source": "prd/README.md",
+      "reference": "../ROADMAP.md",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_audit_fixes\\tool\\ROADMAP.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "reference": "app/README.md",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_audit_fixes\\tool\\app\\README.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "reference": "downloads/AB_Test_Workspace.zip",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_audit_fixes\\tool\\downloads\\AB_Test_Workspace.zip",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "reference": "app/help/walkthrough.mp4",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_audit_fixes\\tool\\app\\help\\walkthrough.mp4",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "reference": "ROADMAP.md",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_audit_fixes\\tool\\ROADMAP.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "reference": "app/",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_audit_fixes\\tool\\app",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "reference": "app/README.md",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_audit_fixes\\tool\\app\\README.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "reference": "app/verification.json",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_audit_fixes\\tool\\app\\verification.json",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "reference": "prd/README.md",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_audit_fixes\\tool\\prd\\README.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "reference": "ROADMAP.md",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_audit_fixes\\tool\\ROADMAP.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "reference": "review/README.md",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_audit_fixes\\tool\\review\\README.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "reference": "app/integration_verification.json",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_audit_fixes\\tool\\app\\integration_verification.json",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "reference": "review/REVIEW_STATUS.md",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_audit_fixes\\tool\\review\\REVIEW_STATUS.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "reference": "app/fix-evidence/semantic/BROWSER_VERIFICATION.json",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_audit_fixes\\tool\\app\\fix-evidence\\semantic\\BROWSER_VERIFICATION.json",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "reference": "app/INPUT_CONTRACT.md",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_audit_fixes\\tool\\app\\INPUT_CONTRACT.md",
+      "exists": true
+    },
+    {
+      "source": "review/README.md",
+      "reference": "REVIEW_STATUS.md",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_audit_fixes\\tool\\review\\REVIEW_STATUS.md",
+      "exists": true
+    },
+    {
+      "source": "ROADMAP.md",
+      "reference": "app/README.md",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_audit_fixes\\tool\\app\\README.md",
+      "exists": true
+    },
+    {
+      "source": "ROADMAP.md",
+      "reference": "README.md",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_audit_fixes\\tool\\README.md",
+      "exists": true
+    },
+    {
+      "source": "ROADMAP.md",
+      "reference": "app/verification.json",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_audit_fixes\\tool\\app\\verification.json",
+      "exists": true
+    },
+    {
+      "source": "ROADMAP.md",
+      "reference": "app/fix-evidence/semantic/BROWSER_VERIFICATION.json",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_audit_fixes\\tool\\app\\fix-evidence\\semantic\\BROWSER_VERIFICATION.json",
+      "exists": true
+    },
+    {
+      "source": "ROADMAP.md",
+      "reference": "app/integration_verification.json",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_audit_fixes\\tool\\app\\integration_verification.json",
+      "exists": true
+    },
+    {
+      "source": "ROADMAP.md",
+      "reference": "prd/BASELINE.md",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_audit_fixes\\tool\\prd\\BASELINE.md",
+      "exists": true
+    },
+    {
+      "source": "ROADMAP.md",
+      "reference": "app/INPUT_CONTRACT.md",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_audit_fixes\\tool\\app\\INPUT_CONTRACT.md",
+      "exists": true
+    },
+    {
+      "source": "ROADMAP.md",
+      "reference": "app/CONTEXT_CONTRACT.md",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_audit_fixes\\tool\\app\\CONTEXT_CONTRACT.md",
+      "exists": true
+    }
+  ],
+  "scope": "all Markdown local path links, reference links and glob targets; URLs/anchor semantics not verified"
+}

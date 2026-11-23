@@ -44,6 +44,15 @@
       "log": "evidence/integration/project_schema_smoke.log"
     }
   ],
-  "timestamp_utc": "2026-11-23T03:47:05.029463+00:00",
-  "scope": "current subprocess output; not historical test count"
+  "unit_group_total": 145,
+  "semantic_regressions": {
+    "script": "semantic_edges.cjs",
+    "cases": 1029,
+    "engine_gate_cases_included": 972,
+    "exit_code": 0,
+    "log": "evidence/integration/semantic_edges.log",
+    "counting": "Separate from smoke unit groups; engine gate cases are included, not additional. A case may contain several assertions."
+  },
+  "timestamp_utc": "2026-11-23T07:30:11.518289+00:00",
+  "scope": "real smoke groups and semantic cases counted separately"
 }

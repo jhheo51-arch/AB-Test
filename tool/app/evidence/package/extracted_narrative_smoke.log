@@ -1,0 +1,27 @@
+PASS whole hold reason from actual results
+PASS B superior remains statistical not application approval
+PASS A superior is not biased to B
+PASS Holm reversal explained from actual raw and adjusted p
+PASS unconfirmed assumptions do not create an inference
+PASS arm cap is unsupported not a winner
+PASS posthoc descriptive group is labelled exploratory
+PASS missing segment blocks group inference not overall counts
+PASS empty group arm has separate explanation
+PASS insufficient interaction information does not imply equality
+PASS actual interaction hold is not proof of no difference
+PASS supported direct difference is not an A or B treatment winner
+PASS unrequested interaction stays unrequested
+PASS invalid input produces no invented comparison
+PASS context missing values never infer audience
+PASS all free context values HTML escaped
+PASS explanation card escapes arbitrary text
+PASS zero overall denominator is not falsely called unknown design
+PASS R02 N01 posthoc and missing segment constraints both remain explicit
+PASS R02 N02 exact empty segment arm A
+PASS R02 N02 exact empty segment arm B
+PASS R02 N02 exact empty segment arm A_B
+PASS R02 N03 invalid counts requires input correction not descriptive statistics
+PASS R02 N03 invalid header requires input correction not descriptive statistics
+PASS R02 N03 invalid parse requires input correction not descriptive statistics
+PASS R02 valid unconfirmed assumptions retain descriptive-statistics guidance
+RESULT 26 narrative groups passed.

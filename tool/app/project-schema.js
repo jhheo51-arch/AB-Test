@@ -23,7 +23,7 @@ function normalize(x){
  const seen=new Set(),sums={A:0,B:0};
  const cells=x.cells.map(c=>{
   if(!c||!['A','B'].includes(c.arm)||!Number.isSafeInteger(c.success)||!Number.isSafeInteger(c.total)||c.success<0||c.total<c.success||c.segment!=null&&typeof c.segment!=='string')throw Error('저장된 집계가 유효하지 않습니다.');
-  const segment=c.segment??null,key=JSON.stringify([c.arm,segment]);if(seen.has(key))throw Error('중복된 군·집단 집계입니다.');seen.add(key);sums[c.arm]+=c.total;
+  const segment=c.segment??null,key=JSON.stringify([c.arm,(segment??'').trim()]);if(seen.has(key))throw Error('중복된 군·집단 집계입니다.');seen.add(key);sums[c.arm]+=c.total;
   if(!Number.isSafeInteger(sums[c.arm]))throw Error('군별 합계가 안전한 정수 저장 범위를 벗어났습니다.');
   return {arm:c.arm,segment,success:c.success,total:c.total};
  });
@@ -34,7 +34,8 @@ function normalize(x){
  if(!j||typeof j!=='object'||Array.isArray(j)||!['','review_a','review_b','keep','defer','more_data'].includes(j.direction)||typeof j.checks!=='string'||j.checks.length>1500)throw Error('판단 방향·확인 조건이 유효하지 않습니다.');
  result.judgment={direction:j.direction,checks:j.checks};
  result.lineage=x.version>=5?Lineage.normalize(x.lineage):Lineage.legacy(x.source_digest);
- if(x.version>=5&&result.lineage.current&&result.source_digest!==result.lineage.current.digest)throw Error('현재 입력 해시의 중복 기록이 일치하지 않습니다.');
+ if(x.version>=5&&result.source_digest!==(result.lineage.current?.digest??null))throw Error('현재 입력 해시의 중복 기록이 일치하지 않습니다.');
+ if(x.version<5)result.source_digest=null; // Untyped legacy digest survives only in origin, never as an invented current input.
  for(const k of ['decision','revisit']){if(x[k]!==undefined&&(typeof x[k]!=='string'||x[k].length>1500))throw Error('판단 기록이 유효하지 않습니다.');result[k]=x[k]??'';}
  result.design=x.version>=6?Design.normalize(x.design):null;
   if(result.design)for(const k of ['purpose','metric','window','policyA','policyB','audience'])if(result.design.fields[k].value!==p[k])throw Error('설계 기록과 분석 맥락이 일치하지 않습니다: '+k);

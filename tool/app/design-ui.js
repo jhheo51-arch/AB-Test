@@ -9,12 +9,12 @@ function designRender(){
  for(const k of Object.keys(ABDesign.fields))$('#status-'+k).value=design.fields[k].status;
  $('#design-candidate-state').textContent=design.candidate?'선택한 초안: '+ABDesign.candidates.find(c=>c.id===design.candidate).label:'아직 후보를 고르지 않았습니다.';
 }
-function designApply(){if(!design)return;for(const [k,id]of Object.entries(designMeta))$('#'+id).value=design.fields[k].value;}
+function designApply(){if(!design)return;for(const [k,id]of Object.entries(designMeta))setMeta(id,design.fields[k].value);}
 function designChange(k,value){ABDesign.edit(design,k,value);markChanged(false);designApply();}
-function designOpen(){if(!design){design=ABDesign.empty();for(const [k,id]of Object.entries(designMeta)){const v=$('#'+id).value;if(v)ABDesign.edit(design,k,v);}if(state.result)design.resultSeen=true;}designRender();go('design');}
+function designOpen(){if(!design){design=ABDesign.empty();for(const [k,id]of Object.entries(designMeta)){const v=getMeta(id);if(v)ABDesign.edit(design,k,v);}if(state.result)design.resultSeen=true;}designRender();go('design');}
 function initDesign(){
  $('#begin-design').onclick=designOpen;
- $('#design-next').onclick=()=>{const k=ABDesign.questions[design.step];designChange(k,$('#design-answer').value);design.step++;designRender();};
+ $('#design-next').onclick=()=>{design.step++;designRender();};
  $('#design-back').onclick=()=>{if(design.step>0){design.step--;designRender();}};
  $('#design-answer').oninput=()=>{const k=ABDesign.questions[design.step];if(k){designChange(k,$('#design-answer').value);$('#design-'+k).value=design.fields[k].value;for(const key of Object.keys(ABDesign.fields))$('#status-'+key).value=design.fields[key].status;}};
  $('#design-fields').oninput=e=>{const k=e.target.dataset.designKey;if(!k)return;designChange(k,e.target.value);if(ABDesign.questions[design.step]===k)$('#design-answer').value=e.target.value;for(const key of Object.keys(ABDesign.fields))$('#status-'+key).value=design.fields[key].status;$('#design-state').textContent='계획 수정 '+design.revision+'회'+' / 수정됨 — 영향받는 확인 해제'+(design.changedAfterResult?' / 결과 열람 후 수정':'');};

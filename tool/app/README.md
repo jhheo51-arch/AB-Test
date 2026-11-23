@@ -60,9 +60,17 @@ LLM은 별도 동의와 버튼 요청 후 기존 Hermes `mira` 연결로 최소 
 
 자유 서술은 자동 익명화되지 않습니다. 공유 전에 개인정보·기밀·소집단 정보를 확인하세요. CRM 발송/관리와 시간·금액·순차·군집 분석은 제공하지 않습니다.
 
+## 줄바꿈·복원 경계
+
+설계와 입력의 목적·성공 사건·기간·A/B 정책·대상은 여러 줄을 지원합니다. 직접 작성한 textarea는 LF를 사용하고, 가져온 CRLF·단독 CR·혼합 줄바꿈 맥락과 조건 근거는 해당 항목을 실제로 편집하기 전까지 원문을 보관합니다. DOM 표시만으로 편집 처리하지 않습니다. 편집하면 해당 항목을 새 화면 값으로 바꾸고 기존 결과·확인을 무효화합니다. 메모는 여전히 JSON에 민감한 원문으로 남으며 공개 HTML/PDF·모델 정보에서는 제외합니다.
+
+CSV에서 겹치는 같은 군의 null/빈 집단(앞뒤 공백을 제거하면 같은 집단인 경우 포함)은 합산·삭제 없이 복원 전에 거절합니다. 현재 계보 없는 중복 해시도 거절하고, 구형 미분류 해시는 원래 범위로 유지합니다. [입력 계약](INPUT_CONTRACT.md)과 [경계 회귀](fix-evidence/semantic/BROWSER_VERIFICATION.json)를 참조하세요. 검토 문서는 공개 소스 링크와 ZIP 오프라인 기록의 실제 위치를 구분합니다. 새 튜토리얼·R07은 아직 하지 않았습니다.
+
 ## 검사와 다음 단계
 
 현재 조건 검사는 `conditions_verification.json`과 `conditions-evidence/`에, 전체 검사 결과는 `verification.json`, `integration_verification.json`, `design-evidence/`, `tests/`, `evidence/`에 있습니다. 기존 화면·PDF 예시는 [GitHub 저장소의 검증 자료](https://github.com/jhheo51-arch/AB-Test/tree/main/tool/evidence)에 보존하며, 이 별도 예시 폴더는 ZIP에 포함하지 않습니다. ZIP의 정확한 포함 항목은 다운로드 허용목록을 따릅니다.
+
+현재 통합 로그는 25개 스크립트, 단위 145그룹, 별도 의미 회귀 1,029케이스(972 게이트 포함), 브라우저 395검사를 기록합니다. `verification.json`은 이 로그와 현재 런타임 SHA-256으로 생성하며, 과거 기준 기록은 수정하지 않고 의도적으로 바뀐 설계 UI는 보존 대조군에서 제외합니다. ZIP 제작은 소스·포장 직후·추출 실행 후 메타데이터/실제 파일 해시를 대조합니다.
 
 `python tests/run_integration.py`는 임시 loopback 서버에서 Node와 실제 Chrome 합성 회귀를 실행하고 서버를 종료합니다. Playwright·Chrome, PDF 검사용 PyMuPDF와 Node는 개발 검사 의존성이며 일반 앱 사용에는 필요하지 않습니다. 실제 모델을 호출하지 않습니다. 기존 모델 연결 실증은 과거 기준 기록이며 이번 통합의 재호출이 아닙니다. 합성 자동화는 실제 CRM 사용성·현장 효과·전체 접근성·보안 인증이 아닙니다.
 

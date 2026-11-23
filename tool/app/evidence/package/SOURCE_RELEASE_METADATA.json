@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "runtime_hashes_checked": 21,
+  "historical_baseline_sha256": "1226659fc698ecf759298eed23b8535f5cf2ceca59113339554588c4c7d1a918",
+  "scripts": 25,
+  "unit_groups": 145,
+  "separate_semantic_cases": 1029,
+  "engine_gate_cases_included": 972,
+  "browser_checks": 395,
+  "preserved_control_count": 12,
+  "intentional_changed_controls": [
+    "design-ui.js"
+  ],
+  "scope": "actual metadata/file hashes and retained execution logs; no invented execution or remote readback"
+}

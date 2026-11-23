@@ -1,0 +1,415 @@
+{
+  "status": "PASS",
+  "count": 101,
+  "checks": [
+    {
+      "name": "S01 native multiline purpose",
+      "pass": true
+    },
+    {
+      "name": "S01 native multiline metric",
+      "pass": true
+    },
+    {
+      "name": "S01 native multiline window",
+      "pass": true
+    },
+    {
+      "name": "S01 native multiline policyA",
+      "pass": true
+    },
+    {
+      "name": "S01 native multiline policyB",
+      "pass": true
+    },
+    {
+      "name": "S01 native multiline audience",
+      "pass": true
+    },
+    {
+      "name": "S01 native plan fresh exact",
+      "pass": true
+    },
+    {
+      "name": "S01 CSV linked all metadata exact",
+      "pass": true
+    },
+    {
+      "name": "S01 escaped output",
+      "pass": true
+    },
+    {
+      "name": "S01 native CRLF all duplicate fields",
+      "pass": true
+    },
+    {
+      "name": "S01 native CR all duplicate fields",
+      "pass": true
+    },
+    {
+      "name": "S01 native MIXED all duplicate fields",
+      "pass": true
+    },
+    {
+      "name": "raw DOM display and navigation not edits LF",
+      "pass": true
+    },
+    {
+      "name": "S01 imported LF purpose",
+      "pass": true
+    },
+    {
+      "name": "S01 imported LF metric",
+      "pass": true
+    },
+    {
+      "name": "S01 imported LF window",
+      "pass": true
+    },
+    {
+      "name": "S01 imported LF policyA",
+      "pass": true
+    },
+    {
+      "name": "S01 imported LF policyB",
+      "pass": true
+    },
+    {
+      "name": "S01 imported LF audience",
+      "pass": true
+    },
+    {
+      "name": "S02 imported LF randomized",
+      "pass": true
+    },
+    {
+      "name": "S02 imported LF independent",
+      "pass": true
+    },
+    {
+      "name": "S02 imported LF mature",
+      "pass": true
+    },
+    {
+      "name": "S02 imported LF fixedStop",
+      "pass": true
+    },
+    {
+      "name": "S02 imported LF segmentPrespecified",
+      "pass": true
+    },
+    {
+      "name": "S01 S02 second new page LF",
+      "pass": true
+    },
+    {
+      "name": "raw DOM display and navigation not edits CRLF",
+      "pass": true
+    },
+    {
+      "name": "S01 imported CRLF purpose",
+      "pass": true
+    },
+    {
+      "name": "S01 imported CRLF metric",
+      "pass": true
+    },
+    {
+      "name": "S01 imported CRLF window",
+      "pass": true
+    },
+    {
+      "name": "S01 imported CRLF policyA",
+      "pass": true
+    },
+    {
+      "name": "S01 imported CRLF policyB",
+      "pass": true
+    },
+    {
+      "name": "S01 imported CRLF audience",
+      "pass": true
+    },
+    {
+      "name": "S02 imported CRLF randomized",
+      "pass": true
+    },
+    {
+      "name": "S02 imported CRLF independent",
+      "pass": true
+    },
+    {
+      "name": "S02 imported CRLF mature",
+      "pass": true
+    },
+    {
+      "name": "S02 imported CRLF fixedStop",
+      "pass": true
+    },
+    {
+      "name": "S02 imported CRLF segmentPrespecified",
+      "pass": true
+    },
+    {
+      "name": "S01 S02 second new page CRLF",
+      "pass": true
+    },
+    {
+      "name": "raw DOM display and navigation not edits CR",
+      "pass": true
+    },
+    {
+      "name": "S01 imported CR purpose",
+      "pass": true
+    },
+    {
+      "name": "S01 imported CR metric",
+      "pass": true
+    },
+    {
+      "name": "S01 imported CR window",
+      "pass": true
+    },
+    {
+      "name": "S01 imported CR policyA",
+      "pass": true
+    },
+    {
+      "name": "S01 imported CR policyB",
+      "pass": true
+    },
+    {
+      "name": "S01 imported CR audience",
+      "pass": true
+    },
+    {
+      "name": "S02 imported CR randomized",
+      "pass": true
+    },
+    {
+      "name": "S02 imported CR independent",
+      "pass": true
+    },
+    {
+      "name": "S02 imported CR mature",
+      "pass": true
+    },
+    {
+      "name": "S02 imported CR fixedStop",
+      "pass": true
+    },
+    {
+      "name": "S02 imported CR segmentPrespecified",
+      "pass": true
+    },
+    {
+      "name": "S01 S02 second new page CR",
+      "pass": true
+    },
+    {
+      "name": "raw DOM display and navigation not edits MIXED",
+      "pass": true
+    },
+    {
+      "name": "S01 imported MIXED purpose",
+      "pass": true
+    },
+    {
+      "name": "S01 imported MIXED metric",
+      "pass": true
+    },
+    {
+      "name": "S01 imported MIXED window",
+      "pass": true
+    },
+    {
+      "name": "S01 imported MIXED policyA",
+      "pass": true
+    },
+    {
+      "name": "S01 imported MIXED policyB",
+      "pass": true
+    },
+    {
+      "name": "S01 imported MIXED audience",
+      "pass": true
+    },
+    {
+      "name": "S02 imported MIXED randomized",
+      "pass": true
+    },
+    {
+      "name": "S02 imported MIXED independent",
+      "pass": true
+    },
+    {
+      "name": "S02 imported MIXED mature",
+      "pass": true
+    },
+    {
+      "name": "S02 imported MIXED fixedStop",
+      "pass": true
+    },
+    {
+      "name": "S02 imported MIXED segmentPrespecified",
+      "pass": true
+    },
+    {
+      "name": "S01 S02 second new page MIXED",
+      "pass": true
+    },
+    {
+      "name": "S02 status-only retains raw",
+      "pass": true
+    },
+    {
+      "name": "S02 actual edit invalidates result and confirmations",
+      "pass": true
+    },
+    {
+      "name": "S02 edit replaces only own raw evidence",
+      "pass": true
+    },
+    {
+      "name": "S01 input edit replaces both duplicate metadata",
+      "pass": true
+    },
+    {
+      "name": "raw DOM display and navigation not edits NONBMP",
+      "pass": true
+    },
+    {
+      "name": "S01 imported NONBMP purpose",
+      "pass": true
+    },
+    {
+      "name": "S01 imported NONBMP metric",
+      "pass": true
+    },
+    {
+      "name": "S01 imported NONBMP window",
+      "pass": true
+    },
+    {
+      "name": "S01 imported NONBMP policyA",
+      "pass": true
+    },
+    {
+      "name": "S01 imported NONBMP policyB",
+      "pass": true
+    },
+    {
+      "name": "S01 imported NONBMP audience",
+      "pass": true
+    },
+    {
+      "name": "S02 imported NONBMP randomized",
+      "pass": true
+    },
+    {
+      "name": "S02 imported NONBMP independent",
+      "pass": true
+    },
+    {
+      "name": "S02 imported NONBMP mature",
+      "pass": true
+    },
+    {
+      "name": "S02 imported NONBMP fixedStop",
+      "pass": true
+    },
+    {
+      "name": "S02 imported NONBMP segmentPrespecified",
+      "pass": true
+    },
+    {
+      "name": "S01 S02 second new page NONBMP",
+      "pass": true
+    },
+    {
+      "name": "atomic collision schema 2",
+      "pass": true
+    },
+    {
+      "name": "atomic collision schema 3",
+      "pass": true
+    },
+    {
+      "name": "atomic collision schema 4",
+      "pass": true
+    },
+    {
+      "name": "atomic collision schema 5",
+      "pass": true
+    },
+    {
+      "name": "atomic dangling schema 5",
+      "pass": true
+    },
+    {
+      "name": "atomic collision schema 6",
+      "pass": true
+    },
+    {
+      "name": "atomic dangling schema 6",
+      "pass": true
+    },
+    {
+      "name": "atomic collision schema 7",
+      "pass": true
+    },
+    {
+      "name": "atomic dangling schema 7",
+      "pass": true
+    },
+    {
+      "name": "S02 UTF16 overflow atomic 1001",
+      "pass": true
+    },
+    {
+      "name": "S02 UTF16 overflow atomic 501",
+      "pass": true
+    },
+    {
+      "name": "S04 legacy hash retained 2",
+      "pass": true
+    },
+    {
+      "name": "S04 legacy hash retained 3",
+      "pass": true
+    },
+    {
+      "name": "S04 legacy hash retained 4",
+      "pass": true
+    },
+    {
+      "name": "S02 raw private evidence excluded from facts",
+      "pass": true
+    },
+    {
+      "name": "S02 raw private evidence excluded from HTML",
+      "pass": true
+    },
+    {
+      "name": "S02 raw private evidence excluded from PDF",
+      "pass": true
+    },
+    {
+      "name": "S02 actual evidence edit cancels async restore ownership",
+      "pass": true
+    },
+    {
+      "name": "S02 released stale actual file cannot overwrite raw edit",
+      "pass": true
+    },
+    {
+      "name": "no model external requests or page errors",
+      "pass": true
+    }
+  ],
+  "blocked_requests": [],
+  "page_errors": [],
+  "actual_model_calls": 0,
+  "human_observations": 0,
+  "scope": "synthetic actual Chrome; native edit, exact raw CR/LF import at UTF-16 cap, freshpage download, atomic invalid restore, raw-evidence HTML/PDF/minimum-facts exclusion, delayed actual file ownership; not human observation or experiment validity certification"
+}
