@@ -1,26 +1,31 @@
 {
   "status": "PASS",
-  "checked_at": "2026-11-23T10:33:18.473872+09:00",
+  "checked_at": "2026-11-23T11:29:04.115870+09:00",
   "file": "AB_Test_Workspace.zip",
-  "sha256": "139e2f4bef2e6b7069e570a468704f29353b1e0c73935ae5c473e1fc3005c838",
-  "bytes": 3685247,
+  "sha256": "9c94d79fc1feeb6be59d94ac96a886658621ace7f55ab550a47c26459e66974e",
+  "bytes": 3689697,
   "members": 63,
   "duplicate_members": false,
   "CRC": "PASS",
   "all_member_bytes_match_source": true,
-  "separate_extracted_server": "http://127.0.0.1:10297",
-  "unpacked_browser": [
-    {
-      "script": "verify_current_interface.py",
-      "exit_code": 0,
-      "result": "RESULT PASS: 84/84 recorded checks"
-    },
-    {
-      "script": "verify_workflow.py",
-      "exit_code": 0,
-      "result": "RESULT 37 workflow checks passed"
-    }
-  ],
   "actual_model_calls_in_extraction_tests": 0,
-  "scope": "Current build, actual playback/state preservation and mapped analysis in a separate extraction; not independent participant evidence"
+  "scope": "Documentation-only repackage. CRC and all member/source bytes checked. Only README.md changed; all executable, asset and fixture bytes match prior tested package. Browser tests were not rerun.",
+  "prior_runtime_verification": {
+    "checked_at": "2026-11-23T10:33:18.473872+09:00",
+    "sha256": "139e2f4bef2e6b7069e570a468704f29353b1e0c73935ae5c473e1fc3005c838",
+    "unpacked_browser": [
+      {
+        "script": "verify_current_interface.py",
+        "exit_code": 0,
+        "result": "RESULT PASS: 84/84 recorded checks"
+      },
+      {
+        "script": "verify_workflow.py",
+        "exit_code": 0,
+        "result": "RESULT 37 workflow checks passed"
+      }
+    ],
+    "separate_extracted_server": "http://127.0.0.1:10297"
+  },
+  "browser_tests_rerun": false
 }
