@@ -1,3 +1,0 @@
-design_fixture.json -text
-customer_fixture.csv -text whitespace=cr-at-eol
-calculated_results.json -text whitespace=cr-at-eol

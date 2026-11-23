@@ -1,9 +1,17 @@
-# 전자책 자료 안내
+# 그래서, 이 캠페인 계속할까요?
 
-- [현재 읽기본과 작성 양식](exports/v22) 및 [다운로드 ZIP](packages/JH_CRM_ebook_reader_v22.zip)
-- [최신 편집 및 검수 기록](design/v22)
-- [v0.3 합성 데이터와 분석 안내](virtual-data/v03/README.md) 및 [v0.13 교정 자료](virtual-data/v13/README.md)
-- [표본과 데이터 설계 실습 장](learning-materials/sample-and-data/sample_and_data_chapter_v03.pdf), [워크북](learning-materials/workbook-and-cards/workbook_v04.pdf), [진단 카드](learning-materials/workbook-and-cards/diagnostic_cards_reference_v04.pdf)
-- [동결 빌드 입력](build-inputs/) 및 [재생성 순서](../scripts/README.md)
+저자 허재혁. CRM A/B 테스트 실무와 TRI-V를 다루는 최신 확정본입니다. 출판과 판매는 진행하지 않으며 비공개 참고 자료로 관리합니다.
 
-버전 번호가 낮은 워크북과 실습 장은 본책과 목적이 다른 독립 실습 자료입니다. v0.3 원자료와 v0.13 교정 사본은 대응 관계를 보존합니다. 다른 시나리오의 데이터는 설계가 달라 한 표본으로 합치지 않습니다.
+| 자료 | 열기 |
+| --- | --- |
+| 본책 97쪽 | [PDF](ebook.pdf), [웹 읽기본](ebook.html), [원고](ebook.md) |
+| 판단 기록 양식 | [웹 양식](record.html), [PDF](record.pdf), [원고](record.md) |
+| 작성 예시 | [완성 기록](record-example.md) |
+
+GitHub 현재 트리에는 버전 번호 없는 최신 한 세트만 보관합니다. 이전 판, 원자료, 제작 입력과 감사 기록은 로컬 보관 대상이며 삭제하지 않습니다. Git의 기존 커밋 이력은 재작성하지 않았습니다. 본문에 나오는 실험 계획과 데이터의 버전 표기는 근거 식별자이므로 유지했습니다.
+
+HTML을 내려받아 읽을 때는 assets 폴더도 같은 상대 위치에 둡니다. Markdown 그림은 figures 폴더를 사용합니다. 글꼴과 라이브러리의 이용 조건 고지는 assets에 보존합니다.
+
+본문 개발은 종료했습니다. 확인된 오류와 구체적인 읽기 장애만 최소 수정합니다. 사례의 고객과 성과는 교육용 합성 자료이며 실제 독자시험, 독립된 사람의 감수 및 현장 효용 입증을 완료한 것은 아닙니다. 기존에 공개한 계획 파일의 줄바꿈에 따른 역사 해시 차이도 해결된 것으로 바꾸지 않았습니다.
+
+파일 무결성은 저장소 루트에서 `python scripts/check_latest_ebook.py`로 확인합니다. 이 검사는 본문의 통계 재감수나 실제 독자시험이 아닙니다.

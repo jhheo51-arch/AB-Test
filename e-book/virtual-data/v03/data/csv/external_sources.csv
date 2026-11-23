@@ -1,4 +1,0 @@
-﻿source_id,url,grain,allowed_analytic_role,restriction
-hyundai_sales,https://www.hyundai.com/worldwide/en/company/ir/ir-resources/sales-results,model/month aggregate,business context only,"Not CRM conversions, assignments, campaign effects or individual customer mix"
-kia_sales,https://worldwide.kia.com/en/company/investor-relations/library/performance-and-plans,monthly sales library,public context and proposed experiments,Individual download contents not checked in this version
-toyota_service,https://global.toyota/pages/global_toyota/sustainability/report/sdb/sdb25_en.pdf,service/survey aggregates,service workflow and response bias questions,Not a randomized CRM dataset; no customer-level linkage

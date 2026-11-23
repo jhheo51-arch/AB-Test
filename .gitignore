@@ -27,3 +27,19 @@ e-book/exports/v07/content_control_A4_*
 e-book/review/cover_positioning_v19/reference_*.png
 e-book/review/cover_positioning_v19/BENCHMARK.html
 e-book/review/cover_positioning_v19/POSITIONING_REVIEW.html
+
+# Only the canonical latest reader is tracked; old editions remain on disk.
+/e-book/*
+!/e-book/README.md
+!/e-book/ebook.pdf
+!/e-book/ebook.html
+!/e-book/ebook.md
+!/e-book/record.pdf
+!/e-book/record.html
+!/e-book/record.md
+!/e-book/record-example.md
+!/e-book/manifest.json
+!/e-book/assets/
+!/e-book/assets/**
+!/e-book/figures/
+!/e-book/figures/**

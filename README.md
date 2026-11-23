@@ -1,29 +1,27 @@
 # A/B Test
 
-CRM A/B 테스트의 설계, 결과 해석, 적용 결정을 연습하는 비공개 프로젝트입니다. 전자책 저자는 허재혁입니다.
+CRM A/B 테스트를 설계하고 분석하며 적용 범위와 다음 행동을 판단하는 비공개 프로젝트입니다. 전자책 저자는 허재혁입니다.
 
-| 작업 | 현재 자료 |
+| 작업 | 진입점 |
 | --- | --- |
-| 전자책 v0.22 | [PDF 97쪽](e-book/exports/v22/ebook_review_v22.pdf), [웹 읽기본](e-book/exports/v22/ebook_review_v22.html), [다운로드 ZIP](e-book/packages/JH_CRM_ebook_reader_v22.zip) |
-| 전자책 편집과 검수 | [반영 내역](e-book/design/v22/DEVELOPMENT.md), [개정 검토](e-book/design/v22/REVIEW.md), [자동 확인 상태](PROJECT_STATUS.json) |
-| GitHub 자료 관리 | [현재 과제와 검사](e-book/maintenance/README.md), [저자 직접 확인](e-book/maintenance/AUTHOR_CHECK.md), [과거 검토 기록](e-book/review/publication_v22/PUBLICATION_REVIEW.md) |
-| 합성 데이터와 실습 | [데이터와 실습 안내](e-book/README.md), [표본 설계 예제](e-book/learning-materials/sample-and-data/sample_and_data_chapter_v03.pdf), [워크북](e-book/learning-materials/workbook-and-cards/workbook_v04.pdf) |
-| A/B 실험노트 영상 제작 | [대본부터 렌더링까지](video-production/README.md), [11화 추가 예제](video-production/README.md#새-회차-만들기-예시-11화) |
-| CRM A/B 테스트 작업실 v0.5.1 | [실행법·지원 범위·검증](tool/workspace/v051/README.md), [PRD와 합의](tool/prd/v01/README.md), [남은 과제](tool/ROADMAP.md), [ZIP](tool/releases/v051/README.md) |
+| 전자책 최신본 | [안내](e-book/README.md), [PDF 97쪽](e-book/ebook.pdf), [웹 읽기본](e-book/ebook.html), [원고](e-book/ebook.md) |
+| 판단 기록 | [웹 양식](e-book/record.html), [작성 예시](e-book/record-example.md) |
+| CRM A/B 테스트 도구 | [현재 기능과 다음 작업](tool/ROADMAP.md), [기존 작업실 실행 안내](tool/workspace/v051/README.md), [PRD와 합의](tool/prd/v01/README.md) |
+| A/B 실험노트 영상 | [제작 안내](video-production/README.md) |
 
-## 폴더 구조
+## 보관 원칙
 
-- `e-book/exports/v22/`에는 현재 읽기본, 원고, 작성 양식과 검증 기록이 있습니다.
-- `e-book/packages/`에는 현재 읽기본 ZIP이 있습니다.
-- `e-book/build-inputs/`에는 현재 읽기본 생성과 변경 검증에 쓰는 동결 입력이 있습니다.
-- `e-book/learning-materials/`에는 독립 실습 장, 워크북과 진단 카드가 있습니다.
-- `e-book/virtual-data/`와 `e-book/analysis/`에는 교육용 합성 데이터와 결과 계산 근거가 있습니다.
-- `scripts/`에는 전자책과 데이터의 생성 및 검증 코드가 있습니다. [현재 실행 순서](scripts/README.md)
-- `video-production/`에는 영상의 대본, 도표와 렌더링 코드가 있습니다. 완성 영상은 기존 비공개 Drive에서 관리합니다.
-- `tool/`에는 제품 기획, 실행 가능한 로컬 작업실 v0.5.1, 가상 페르소나 검토와 감사·수정 검증 기록이 있습니다.
+- 전자책은 GitHub 현재 트리에 버전 표시 없는 최신본 한 세트만 둡니다.
+- 이전 판과 제작 입력, 원자료 및 감사 기록은 로컬에 보존하고 Git 추적에서 제외합니다. 기존 Git 커밋 이력은 지우거나 재작성하지 않습니다.
+- 본문은 재개발하지 않고 실제 오류와 읽기 장애만 최소 수정합니다. 출판과 판매는 진행하지 않습니다.
+- 전자책 사례는 교육용 합성 자료입니다. AI 검수 및 자동 검사와 실제 독자시험 또는 현장 효용은 다릅니다.
+- 도구는 실험 한 건의 설계와 분석을 다룹니다. 고객 DB 관리나 실제 발송 및 범용 CRM 플랫폼으로 확장하지 않습니다.
 
-## 이전 판과 현재 상태
+## 확인 명령
 
-이전 판의 배포본, 검수 이미지와 당시 실행 코드는 [정리 직전 Git 기록](https://github.com/jhheo51-arch/AB-Test/tree/c8cd72253f4b11131f71405e0ab4d26b3f0b46b0)에서 열 수 있습니다. 재생성에 필요한 이전 원고와 그림은 `build-inputs/`에 보존합니다.
+```bash
+python scripts/check_latest_ebook.py
+python scripts/refresh_project_status.py
+```
 
-v0.22는 출판하거나 판매하지 않고 비공개 GitHub에서 학습과 실무 참고 자료로 관리합니다. 본문 개발은 종료했고 확인된 오류와 읽기 장애만 최소 수정합니다. 사람 감수와 실제 독자 수행시험을 완료한 자료는 아닙니다. [프로젝트 요약](PROJECT_SUMMARY.md)
+첫 명령은 최신본 해시와 상대 링크를 검사하고 두 번째는 그 결과로 [현재 상태](PROJECT_STATUS.json)를 갱신합니다. 이전 제작 스크립트는 로컬 보관 입력이 필요하므로 새 clone에서 바로 재생성할 수 있다고 가정하지 않습니다. [실행 범위](scripts/README.md), [프로젝트 요약](PROJECT_SUMMARY.md)
