@@ -130,10 +130,21 @@
     result.cells = Array.from(cells.values());
     return result;
   }
-  function wilson(s, n) {
-    const p = s/n, zz = Z*Z, den = 1+zz/n;
-    const center = (p+zz/(2*n))/den, half = Z*Math.sqrt(p*(1-p)/n+zz/(4*n*n))/den;
+  function wilson(s, n, z = Z) {
+    const p = s/n, zz = z*z, den = 1+zz/n;
+    const center = (p+zz/(2*n))/den, half = z*Math.sqrt(p*(1-p)/n+zz/(4*n*n))/den;
     return [Math.max(0, center-half), Math.min(1, center+half)];
+  }
+  function differenceInterval(a, b, z = Z) {
+    const rateA = a.success/a.total, rateB = b.success/b.total;
+    const diff = rateB-rateA;
+    const rateIntervalA = wilson(a.success, a.total, z);
+    const rateIntervalB = wilson(b.success, b.total, z);
+    const ci = [
+      Math.max(-1, diff-Math.hypot(rateB-rateIntervalB[0], rateIntervalA[1]-rateA)),
+      Math.min(1, diff+Math.hypot(rateIntervalB[1]-rateB, rateA-rateIntervalA[0]))
+    ];
+    return {diff, ci, rateIntervalA, rateIntervalB};
   }
   // Hypergeometric probabilities relative to the mode: recurrence avoids factorial
   // cancellation, overflow, and underflow near the mode, even at n=200000/arm.
@@ -184,9 +195,9 @@
     return g;
   }
   function infer(g) {
-    const a = g.A, b = g.B, wa = wilson(a.success,a.total), wb = wilson(b.success,b.total);
-    a.ci = wa; b.ci = wb;
-    g.ci = [Math.max(-1,g.diff-Math.hypot(b.rate-wb[0],wa[1]-a.rate)), Math.min(1,g.diff+Math.hypot(wb[1]-b.rate,a.rate-wa[0]))];
+    const a = g.A, b = g.B, intervals = differenceInterval(a, b);
+    a.ci = intervals.rateIntervalA; b.ci = intervals.rateIntervalB;
+    g.ci = intervals.ci;
     g.p_raw = fisher(a.success,a.total,b.success,b.total);
     g.inference_allowed = true; g.status = 'tested';
   }
@@ -278,5 +289,5 @@
     out.family.hypotheses = hs.map(function (h) { return {key: h.key, supported: h.target.p_raw !== null, p_raw: h.target.p_raw, p_adjusted: h.target.p_adjusted, included: true}; });
     return out;
   }
-  return {VERSION: VERSION, parseTable: parseTable, prepare: prepare, analyze: analyze};
+  return {VERSION: VERSION, parseTable: parseTable, prepare: prepare, analyze: analyze, differenceInterval};
 }));

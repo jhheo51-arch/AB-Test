@@ -21,7 +21,7 @@ def find_hermes():
 
 if __name__=='__main__':
     parser=argparse.ArgumentParser();parser.add_argument('--no-browser',action='store_true');parser.add_argument('--port',type=int,default=0);parser.add_argument('--profile',default='mira');args=parser.parse_args()
-    missing=[n for n in ['index.html','styles.css','app.js','engine.js','worker.js','narrative.js','project-schema.js','lineage.js','engine-issue-codes.json','column-mapping.js','workflow.js','workflow.css','context.css','help/walkthrough.mp4'] if not (ROOT/n).is_file()]
+    missing=[n for n in ['index.html','styles.css','app.js','engine.js','worker.js','narrative.js','project-schema.js','lineage.js','engine-issue-codes.json','column-mapping.js','workflow.js','rollout.js','workflow.css','context.css','help/walkthrough.mp4'] if not (ROOT/n).is_file()]
     if missing:raise SystemExit('Missing app files: '+', '.join(missing))
     hermes=find_hermes()
     with AppServer(('127.0.0.1',args.port),Handler,hermes,args.profile) as server:
