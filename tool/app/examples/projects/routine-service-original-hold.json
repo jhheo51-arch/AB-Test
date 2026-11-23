@@ -1,0 +1,108 @@
+{
+  "format": "ab-local-project",
+  "version": 8,
+  "conditions": {
+    "randomized": {
+      "status": "unknown",
+      "evidence": "",
+      "origin": "user_statement"
+    },
+    "independent": {
+      "status": "unknown",
+      "evidence": "",
+      "origin": "user_statement"
+    },
+    "mature": {
+      "status": "unknown",
+      "evidence": "",
+      "origin": "user_statement"
+    },
+    "fixedStop": {
+      "status": "unknown",
+      "evidence": "",
+      "origin": "user_statement"
+    },
+    "segmentPrespecified": {
+      "status": "unknown",
+      "evidence": "",
+      "origin": "user_statement"
+    }
+  },
+  "source_kind": "none",
+  "synthetic": false,
+  "source_digest": null,
+  "plan": {
+    "randomized": false,
+    "independent": false,
+    "mature": false,
+    "fixedStop": false,
+    "includeSegments": true,
+    "segmentPrespecified": false,
+    "purpose": "",
+    "metric": "",
+    "window": "",
+    "policyA": "",
+    "policyB": "",
+    "audience": "",
+    "alpha": 0.05
+  },
+  "cells": [],
+  "decision": "",
+  "revisit": "",
+  "engine_version": null,
+  "judgment": {
+    "direction": "",
+    "checks": ""
+  },
+  "lineage": {
+    "version": 1,
+    "algorithm": "SHA-256",
+    "origin": {
+      "kind": "unknown",
+      "digest": null
+    },
+    "previous": null,
+    "current": null,
+    "transformation": {
+      "name": "none",
+      "version": "0.5.1"
+    }
+  },
+  "design": null,
+  "rollout": {
+    "source": "synthetic",
+    "input": {
+      "total-a": 15482,
+      "visit-a": 1416,
+      "optout-a": 129,
+      "total-b": 15603,
+      "visit-b": 1597,
+      "optout-b": 139,
+      "visit-min": 0.5,
+      "optout-max": 0.2,
+      "comparison": "three",
+      "capacity": "unknown",
+      "cost": "unknown",
+      "design-confirmed": true
+    },
+    "decision": "hold",
+    "reasons": [
+      {
+        "passed": false,
+        "reason": "방문 완료율 차이 +1.089%p, 보정 하한 +0.286%p / 최소 개선폭 +0.500%p"
+      },
+      {
+        "passed": false,
+        "reason": "수신 철회율 차이 +0.058%p, 95% 신뢰구간 상한 +0.265%p / 허용 상한 +0.200%p"
+      },
+      {
+        "passed": false,
+        "reason": "센터 수용량 미확인"
+      },
+      {
+        "passed": false,
+        "reason": "비용 미확인"
+      }
+    ]
+  }
+}

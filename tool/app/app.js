@@ -4,7 +4,39 @@ const pct=x=>Number.isFinite(x)?(x*100).toFixed(2)+'%':'정의 불가',pp=x=>Num
 const MAX_BYTES=2*1024*1024,MAX_ROWS=50000;
 function segmentName(g,n){const names=[...new Set((state.prepared?.cells||[]).map(c=>c.segment).filter(Boolean))];return names[n]||g.label||'집단 '+(n+1);}
 let state={revision:1,view:'input',sourceKind:'none',syntheticOrigin:false,hash:null,lineage:null,prepared:null,result:null,llm:null,busy:false},worker=null,job=0,pending=null,inputEpoch=0,inputTask=null,toastTimer;
-const rollout=ABRollout.mount(()=>{clearShare();syncInputControls();renderReport();});
+const rolloutExampleStatus=$('#rollout-example-status');
+let rolloutExampleRequest=null;
+const rollout=ABRollout.mount(()=>{
+ cancelRolloutExample();
+ refreshRolloutShare();
+});
+function refreshRolloutShare(){clearShare();syncInputControls();renderReport();}
+function cancelRolloutExample(){
+ rolloutExampleRequest?.abort();
+ rolloutExampleRequest=null;
+ rolloutExampleStatus.textContent='';
+}
+async function loadRolloutExample(button){
+ cancelRolloutExample();
+ if(inputTask?.kind==='restore')cancelInput();
+ const request=new AbortController();
+ rolloutExampleRequest=request;
+ rolloutExampleStatus.textContent='사례를 불러오는 중입니다.';
+ try{
+  const response=await fetch('examples/projects/'+button.dataset.rolloutExample,{signal:request.signal});
+  if(!response.ok)throw Error('Example download failed');
+  const record=ABProject.parse(await response.text()).rollout;
+  if(rolloutExampleRequest!==request)return;
+  if(!record)throw Error('Rollout record missing');
+  rollout.restore(record);
+  refreshRolloutShare();
+  rolloutExampleStatus.textContent=button.textContent+' / '+$('#rollout-decision').textContent;
+ }catch{
+  if(rolloutExampleRequest===request)rolloutExampleStatus.textContent='사례를 불러오지 못했습니다. 실행 ZIP을 다시 풀거나 프로젝트 복원에서 JSON을 열어 주세요.';
+ }finally{
+  if(rolloutExampleRequest===request)rolloutExampleRequest=null;
+ }
+}
 // Raw imported metadata survives DOM newline normalization until its own input event.
 const rawMeta=new Map();
 function setMeta(id,value){rawMeta.set(id,value);$('#'+id).value=value;}
@@ -85,7 +117,7 @@ function download(name,text,type){const blob=new Blob([text],{type}),url=URL.cre
 const reportStyles="body{overflow-wrap:anywhere;font:16px/1.8 'Malgun Gothic',sans-serif;color:#202B3A;background:white;max-width:1000px;padding:24px;margin:auto}table{width:100%;border-collapse:collapse}td,th{padding:10px;border-bottom:1px solid #7F8C9F;text-align:left}.table-wrap{overflow:auto}.facts{display:grid;grid-template-columns:170px 1fr}.facts dt,.facts dd{margin:0;padding:10px;border-bottom:1px solid #E5E9F0}.badge{border:1px solid #7F8C9F;padding:8px}.rate-grid{display:flex;gap:30px}.rate-grid strong{font-size:24px;display:block}@media print{body{font-size:12pt;padding:0}}"+".context-panel{margin:0 0 24px}.experiment-context h2{font-size:20px}.experiment-context>.small{margin:6px 0 18px}.policy-pair{display:grid;grid-template-columns:1fr 1fr;gap:16px}.policy-pair>div{padding:17px 18px;border-radius:12px;background:var(--paper,#F5F7FA);min-width:0}.policy-pair>div:nth-child(2){background:var(--soft,#EDF3FF)}.policy-pair span{display:block;font-size:12px;color:var(--muted,#586779);margin-bottom:5px}.policy-pair strong{display:block;font-size:17px;line-height:1.65;font-weight:650;overflow-wrap:anywhere}.context-facts{display:grid;grid-template-columns:85px minmax(0,1fr) 85px minmax(0,1fr);gap:11px 15px;margin:22px 0 0}.context-facts dt,.context-facts dd{margin:0;font-size:13px;line-height:1.8;overflow-wrap:anywhere;min-width:0}.context-facts dt{color:var(--muted,#586779)}.policy-caption{margin-top:10px;font-size:13px!important;font-weight:600!important;color:var(--ink,#202B3A)!important;overflow-wrap:anywhere}.decision-reason{background:var(--paper,#F5F7FA);padding:18px 20px;border-radius:13px;margin:20px 0}.decision-reason h3{font-size:16px;margin:0 0 9px;line-height:1.65}.decision-reason p{font-size:14px;line-height:1.85;margin:8px 0;color:var(--ink,#202B3A)}.decision-reason .next-check{font-size:13px;color:var(--muted,#586779);margin-top:12px}.next-check strong{color:var(--ink,#202B3A);font-weight:650}.policy-inputs{padding-top:5px;margin-top:20px;border-top:1px solid var(--hair,#E5E9F0)}.report-preview .experiment-context{margin:24px 0}.report-preview .context-facts{grid-template-columns:85px minmax(0,1fr)}\n@media(max-width:760px){.context-panel{padding:23px 20px;margin-bottom:18px}.policy-pair{gap:10px}.policy-pair>div{padding:14px 12px}.policy-pair strong{font-size:15px}.context-facts{grid-template-columns:75px minmax(0,1fr);gap:10px 12px}.context-facts dt,.context-facts dd{font-size:13px}.decision-reason{padding:16px}.decision-reason h3{font-size:15px}.decision-reason p{font-size:13px}.policy-caption{font-size:12px!important}}\n@media print{.experiment-context{break-inside:avoid;margin:20px 0}.policy-pair{grid-template-columns:1fr 1fr}.context-facts{grid-template-columns:30mm minmax(0,1fr)}.decision-reason{break-inside:avoid}.experiment-context *,.decision-reason *,.policy-caption{font-size:12pt!important}}\n";
 function projectObject(){const rolloutRecord=rollout.snapshot();return {format:'ab-local-project',version:rolloutRecord?8:7,...(rolloutRecord?{rollout:rolloutRecord}:{}),conditions:readConditions(),design:design?ABDesign.normalize(design):null,lineage:state.lineage||lineageSeed?.lineage||ABLineage.empty(),judgment:judgmentObject(),source_kind:state.sourceKind,synthetic:isSynthetic(),source_digest:state.hash,plan:{...plan(),purpose:getMeta('purpose'),metric:getMeta('metric'),window:getMeta('window'),policyA:getMeta('policy-a'),policyB:getMeta('policy-b'),audience:getMeta('audience')},cells:state.prepared?.cells||[],decision:$('#decision').value,revisit:$('#revisit').value,engine_version:state.result?.version||null};}
 function csvCell(x){const s=String(x??'');return '"'+s.replace(/"/g,'""')+'"';}
-async function restoreProject(file){const ticket=startInput('restore',false);try{
+async function restoreProject(file){cancelRolloutExample();const ticket=startInput('restore',false);try{
  if(file.size>ABProject.MAX_BYTES)throw Error('프로젝트 파일은 8MiB 이하여야 합니다.');
  const text=new TextDecoder('utf-8',{fatal:true}).decode(await file.arrayBuffer());if(!ownsInput(ticket))return;
  const x=ABProject.parse(text);if(!ownsInput(ticket))return;resetMapping();
@@ -99,6 +131,9 @@ async function restoreProject(file){const ticket=startInput('restore',false);try
 
 function fillExample(kind){if(design&&!confirm('합성 예시는 현재 설계와 별개입니다. 현재 계획을 비우고 예시를 열까요?'))return;design=null;rawMeta.clear();designRender();lineageSeed=null;resetMapping();markChanged(true);state.sourceKind='synthetic';state.syntheticOrigin=true;$('#format').value=kind==='individual'?'individual':'aggregate';const aggregate='arm,success,total,segment\nA,50,500,new\nB,75,500,new\nA,80,500,existing\nB,75,500,existing';if(kind==='natural'){$('#data-text').value='A: 1000명 중 130명 성공\nB: 1000명 중 150명 성공';$('#include-segments').checked=false;}else if(kind==='aggregate'){$('#data-text').value=aggregate;$('#include-segments').checked=true;}else{const rows=['subject_id,arm,outcome,segment,observed'];for(const g of ['new','existing'])for(const arm of ['A','B']){const success=g==='new'?(arm==='A'?10:15):(arm==='A'?16:15);for(let i=0;i<100;i++)rows.push(['S_'+g+'_'+arm+'_'+i,arm,i<success?1:0,g,1].join(','));}$('#data-text').value=rows.join('\n');$('#include-segments').checked=true;}$('#purpose').value='시승 안내 결과와 고객군 차이를 이해하기';$('#metric').value='합성 예시의 시승 완료 여부';$('#window').value='예시 가정: 개인별 관측 완료';$('#audience').value='합성 예시: 이번 실험에 배정된 신규·기존 고객';$('#policy-a').value='가치 안내';$('#policy-b').value='편의 안내';conditions=ABConditions.empty();for(const k of ABConditions.KEYS)conditions[k]={status:'yes',evidence:'',origin:'synthetic_assumption'};renderConditions();$('#file-note').textContent='합성 예시입니다. 선택된 확인됨은 합성 가정이지 실제 실험 인증이 아닙니다.';updateTop();}
 document.addEventListener('click',e=>{const b=e.target.closest('button');if(b?.dataset.view&&!b.disabled)go(b.dataset.view);});
+document.querySelectorAll('[data-rollout-example]').forEach(button=>{
+ button.addEventListener('click',()=>loadRolloutExample(button));
+});
 $('#prepare').addEventListener('click',prepare);$('#analyze').addEventListener('click',analyze);$('#example-aggregate').onclick=()=>fillExample('aggregate');$('#example-individual').onclick=()=>fillExample('individual');$('#example-natural').onclick=()=>fillExample('natural');
 $('#data-text').addEventListener('input',()=>{state.sourceKind=isSynthetic()?'synthetic_edited':'pasted';clearAssumptions();markChanged(true);});$('#format').addEventListener('change',()=>{clearAssumptions();markChanged(true);});
 for(const id of ['purpose','metric','window','policy-a','policy-b','audience'])$('#'+id).addEventListener('input',()=>{rawMeta.delete(id);markChanged(false);});for(const id of metaIds)$('#'+id).addEventListener('change',()=>markChanged(false));

@@ -5,10 +5,19 @@
 <div class="layout"><aside class="sidebar"><div class="eyebrow">내 실험</div><h2>한 번의 실험, 명확한 판단</h2><nav aria-label="작업 영역"><button data-view="design">상황부터 설계</button><button data-view="input" aria-current="page"><span class="step-index" aria-hidden="true">1</span>데이터 입력</button><button data-view="results" disabled><span class="step-index" aria-hidden="true">2</span>결과 확인</button><button data-view="share" disabled><span class="step-index" aria-hidden="true">3</span>판단 정리</button></nav><div class="sidebar-bottom"><button id="save-project">프로젝트 저장</button><button id="restore-project">프로젝트 복원</button><button id="reset">새 실험</button><p>자동 영구 저장 없음.<br>저장 파일에 원자료·가명 ID·LLM 대화는 포함하지 않습니다.</p></div></aside>
 <main id="workspace"><div class="topline"><span id="source-badge" class="badge">입력 전</span><span id="revision">입력 수정 1회</span></div>
 <section id="design-view" hidden><div class="heading"><h1>데이터가 없어도<br>실험 질문부터 시작해요</h1><p>기기 안의 정해진 질문과 후보로 초안을 만듭니다. 실시간 AI가 문장을 이해하거나 승자를 예측하는 기능은 아닙니다.</p></div><div class="sheet"><p class="note">고객 이름·연락처·비밀값을 적지 마세요. 자유 서술은 프로젝트 파일에 저장되며 자동 익명화되지 않습니다. 자동 영구 저장과 외부 전송은 없습니다.</p><div id="design-start"><button id="begin-design" class="primary">상황만 있어요 / 기존 계획 정리</button></div><div id="design-work" hidden><p id="design-state" role="status"></p><h2 id="design-question"></h2><label for="design-answer">답변 / 모르면 비워 두고 계속할 수 있어요</label><textarea id="design-answer" maxlength="300"></textarea><div class="toolbar"><button id="design-back">이전 질문</button><button id="design-next">다음 질문</button></div><h2>검토할 A/B 후보</h2><p>목적과 제약에 맞는지 직접 고르세요. 문장의 의미를 자동 판단한 추천이 아닙니다. 후보를 고르면 구조화된 초안에 반영합니다.</p><div id="design-candidates" class="toolbar" hidden></div><p id="design-candidate-state"></p><h2>수정 가능한 실험 계획</h2><p>확인은 사용자 진술이며 실제 실행·수집·안전 인증이 아닙니다. 내용을 바꾸면 모든 항목의 확인을 보수적으로 해제합니다. 모르는 기간·표본 수는 계산하거나 만들어 채우지 않습니다.</p><div id="design-fields"></div><div class="toolbar"><button id="design-to-input" class="primary">같은 계획으로 CSV·결과 연결</button></div><p>왼쪽 프로젝트 저장으로 결과 없는 계획도 보관합니다. 대상·분석·적용 세그먼트는 서로 다른 기록입니다. 이 기록이 고객 속성의 존재나 집단 크기를 보증하지 않습니다. 세그먼트 기준·결과 열람 시점은 외부 기록과 대조하세요.</p><p>후속 결과 연결 시 목적·A/B·성공 사건·관측 기간·대상을 이어갑니다. 집단 실제 값과 사전성은 기존 열 연결·조건 확인에서 직접 검토합니다. 설계 자유 서술과 세그먼트 계획은 결과 HTML/PDF에 자동 추가하지 않습니다.</p></div></div></section><section id="input-view"><div class="heading"><div class="eyebrow">START WITH YOUR QUESTION</div><h1>실험 결과를<br>가져와 주세요</h1><p>표를 붙여넣거나 CSV 파일을 선택하면, 차이와 판단 근거를 함께 확인할 수 있어요.</p></div>
+<section class="sheet rollout-shortcuts" aria-labelledby="rollout-shortcuts-title">
+  <h2 id="rollout-shortcuts-title">가상 정기점검 사례 바로 열기</h2>
+  <p>사례를 선택하면 확대 판단의 입력값과 근거가 표시됩니다.</p>
+  <div class="rollout-shortcut-buttons">
+    <button type="button" id="rollout-example" data-rollout-example="routine-service-original-hold.json">원래 사례</button>
+    <button type="button" id="rollout-example-metrics" data-rollout-example="routine-service-metrics-met-hold.json">수치 충족, 운영 미확인</button>
+    <button type="button" id="rollout-example-review" data-rollout-example="routine-service-edited-review.json">수치와 운영 조건 충족</button>
+  </div>
+  <p id="rollout-example-status" role="status" aria-atomic="true"></p>
+</section>
 <details class="sheet rollout-panel" id="rollout">
   <summary>방문 완료율과 수신 철회 기준으로 확대 판단하기</summary>
   <p>같은 실험의 최초 배정 인원과 관측 완료 시점의 고객별 건수를 입력하세요.</p>
-  <button type="button" id="rollout-example">가상 정기점검 사례 불러오기</button>
   <button type="button" id="rollout-clear">확대 판단 입력 비우기</button>
   <form id="rollout-form" aria-describedby="rollout-method">
     <div class="rollout-grid">

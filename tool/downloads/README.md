@@ -1,6 +1,6 @@
 # A/B 테스트 작업실 다운로드
 
-**[새 실행 ZIP 받기](https://github.com/jhheo51-arch/AB-Test/releases/download/tool-rollout-report-20261123/AB_Test_Workspace_rollout_report_examples_20261123.zip)**
+**[새 실행 ZIP 받기](https://github.com/jhheo51-arch/AB-Test/releases/download/tool-rollout-report-20261123/AB_Test_Workspace_rollout_shortcuts_20261123.zip)**
 
 확대 판단 입력과 근거를 프로젝트에 저장하고 공유 보고서에 표시하는 실행본입니다. ZIP을 풀고 Windows에서 Python 3와 `launch.cmd`로 실행하세요. [실행과 사용 방법](../app/README.md)
 

@@ -8,6 +8,35 @@ import sys
 from playwright.sync_api import expect, sync_playwright
 
 
+def verify_shortcuts(page, url):
+    page.goto(url)
+    section = page.get_by_role("region", name="가상 정기점검 사례 바로 열기")
+    decision = page.locator("#rollout-decision")
+    status = page.locator("#rollout-example-status")
+    cases = [
+        ("원래 사례", "확대 보류", "1597", "139", "unknown"),
+        ("수치 충족, 운영 미확인", "확대 보류", "1680", "120", "unknown"),
+        ("수치와 운영 조건 충족", "확대 검토 가능", "1680", "120", "ready"),
+    ]
+    for label, *_ in cases:
+        expect(section.get_by_role("button", name=label, exact=True)).to_be_in_viewport()
+    assert not page.locator("#rollout").evaluate("(element) => element.open")
+    raw = "arm,success,total\nA,12,100\nB,20,100"
+    page.locator("#data-text").fill(raw)
+    for label, verdict, visits, optouts, operations in cases:
+        section.get_by_role("button", name=label, exact=True).click()
+        expect(status).to_have_text(f"{label} / {verdict}")
+        expect(decision).to_be_visible()
+        expect(decision).to_have_text(verdict)
+        expect(page.locator('[name="visit-b"]')).to_have_value(visits)
+        expect(page.locator('[name="optout-b"]')).to_have_value(optouts)
+        expect(page.locator('[name="capacity"]')).to_have_value(operations)
+        expect(page.locator('[name="cost"]')).to_have_value(operations)
+        expect(page.locator("#data-text")).to_have_value(raw)
+        expect(page.locator('nav [data-view="share"]')).to_be_enabled()
+    assert page.evaluate("document.documentElement.scrollWidth === innerWidth")
+
+
 def verify(page, url):
     response = page.goto(url)
     assert response.ok
@@ -73,6 +102,7 @@ def verify_saved_report(page, url):
     page.goto(url)
     page.locator("#rollout > summary").click()
     page.locator("#rollout-example").click()
+    expect(page.locator("#rollout-example-status")).to_have_text("원래 사례 / 확대 보류")
     original = page.locator("#rollout-reasons li").all_text_contents()
     with page.expect_download() as download:
         page.locator("#save-project").click()
@@ -167,6 +197,7 @@ if __name__ == "__main__":
                 browser = playwright.chromium.launch(executable_path=args.browser)
                 for width in (1440, 375):
                     page = browser.new_page(viewport={"width": width, "height": 900}, accept_downloads=True)
+                    verify_shortcuts(page, url)
                     verify(page, url)
                     verify_saved_report(page, url)
                     page.close()

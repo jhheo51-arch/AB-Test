@@ -149,10 +149,6 @@
       render();
     }
 
-    document.getElementById('rollout-example').addEventListener('click', () => {
-      restore({source: 'synthetic', input: example});
-      onChange();
-    });
     document.getElementById('rollout-clear').addEventListener('click', () => {
       restore(null);
       onChange();

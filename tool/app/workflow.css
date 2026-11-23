@@ -9,7 +9,13 @@
 
 .header-actions{display:flex;align-items:center;gap:6px;flex-shrink:0}.header-actions button{white-space:nowrap}@media(max-width:760px){.header-actions{gap:2px}.header-actions button{font-size:12px;padding:9px 5px}}
 
-.rollout-panel{margin:0 0 24px}
+.rollout-shortcuts,.rollout-panel{margin:0 0 24px}
+.rollout-shortcuts h2{margin-top:0}
+.rollout-shortcut-buttons{display:flex;flex-wrap:wrap;gap:8px}
+.rollout-shortcut-buttons button{min-height:44px;white-space:normal}
+#rollout-example-status{margin:12px 0 0;font-weight:600}
+#rollout-example-status:empty{margin:0}
+@media(max-width:520px){.rollout-shortcut-buttons button{width:100%;text-align:left}}
 .rollout-panel>summary{font-size:1.1rem;font-weight:700}
 .rollout-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 20px;margin-top:16px}
 .rollout-grid fieldset{min-width:0;margin:0;padding:4px 16px 12px;border:1px solid var(--line);border-radius:14px}
