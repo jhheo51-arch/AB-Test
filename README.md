@@ -9,6 +9,8 @@ CRM A/B 테스트의 설계·분석·판단을 돕는 공개 프로젝트입니�
 | CRM A/B 테스트 도구 | [현재 앱](tool/app/README.md), [최신 다운로드](tool/downloads/README.md), [시연 영상](tool/app/help/walkthrough.mp4), [제품 합의](tool/prd/README.md), [남은 과제](tool/ROADMAP.md) |
 | A/B 실험노트 영상 | [제작 안내](video-production/README.md) |
 
+CSV가 아직 없으면 도구의 **상황부터 설계**에서 시작할 수 있습니다. 정해진 질문에 답해 실험 초안을 만들고, 결과가 모이면 계획을 열어 데이터를 연결합니다. [설계 화면 사용법](tool/app/README.md)
+
 ## 전자책 소개
 
 ### 그래서, 이 캠페인 계속할까요?
