@@ -43,21 +43,21 @@ CSV나 표를 가지고 있지만 열 연결, 통계 결과 해석, 판단 기�
 1. **자료 확인:** CSV·표 입력, 열 역할과 원본 A/B 값 연결, 입력 오류 확인.
 2. **결과 분석:** 성공 여부·비율형 두 군 결과와 지원 조건을 충족한 집단별 비교.
 3. **해석과 판단:** 관측 차이와 통계적 판정을 구분해 읽고, 검토 방향·근거·확인 조건·재검토 시점 작성.
-4. **저장과 공유:** 집계와 판단 기록 저장·복원, 범위 확인 후 HTML/PDF 보고서 생성.
+4. **저장과 공유:** 방문 완료율과 수신 철회 기준으로 확대 여부를 판단하고, 수용량과 비용 확인 상태, 입력값과 보류 이유를 프로젝트와 HTML/PDF 보고서에 기록합니다.
 5. **선택적 설명:** 별도 설정과 동의 후 LLM에 최소 판정 상태를 전달해 설명 요청. 계산 자체는 LLM이 수행하지 않습니다.
 
 기본 계산은 브라우저 안에서 처리합니다. 시연 영상은 앱 안에서 열고 닫을 수 있어 입력하던 작업을 이어갈 수 있습니다. 자동 적용 승인을 내리거나 고객 목록을 만들어 발송하지 않습니다.
 
 **아직 지원하지 않는 것:** 자유로운 상황 설명에서 후보·실험 계획을 생성하는 전체 설계 대화, 시간·금액·순차·군집 분석, CRM 고객 관리·발송 운영. 책에서 설명하는 모든 방법이 앱에 구현된 것은 아닙니다.
 
-[도구 안내](tool/README.md) · [최신 ZIP](tool/downloads/AB_Test_Workspace.zip) · [시연 영상](tool/app/help/walkthrough.mp4) · [지원 범위와 실행 방법](tool/app/README.md)
+[도구 안내](tool/README.md) · [새 실행 ZIP](https://github.com/jhheo51-arch/AB-Test/releases/download/tool-rollout-report-20261123/AB_Test_Workspace_rollout_report_20261123.zip) · [시연 영상](tool/app/help/walkthrough.mp4) · [지원 범위와 실행 방법](tool/app/README.md)
 
 **책과 도구의 관계:** 책은 실험과 판단의 기준을 설명하고, 도구는 그중 현재 지원하는 입력·계산·기록 절차를 실행하도록 돕습니다. 계산 결과가 실제 적용 승인이나 현장 효과의 증명을 대신하지는 않습니다.
 
 ## 처음 방문하셨나요?
 
 - **책 읽기:** [전자책 PDF](e-book/ebook.pdf) 또는 [웹 읽기본 HTML](e-book/ebook.html)을 내려받으세요. HTML은 `e-book/assets/`도 함께 같은 상대 위치에 둡니다. GitHub 파일 페이지는 앱이나 HTML 실행 화면이 아닙니다.
-- **도구 사용하기:** [최신 ZIP](tool/downloads/AB_Test_Workspace.zip)을 내려받아 압축을 풀고 `launch.cmd`를 실행하세요. Windows와 Python 3가 필요합니다. 실행 창에 표시된 로컬 주소를 Chrome/Edge에서 엽니다. [실행 안내](tool/app/README.md)
+- **도구 사용하기:** [새 실행 ZIP](https://github.com/jhheo51-arch/AB-Test/releases/download/tool-rollout-report-20261123/AB_Test_Workspace_rollout_report_20261123.zip)을 내려받아 압축을 풀고 `launch.cmd`를 실행하세요. Windows와 Python 3가 필요합니다. 실행 창에 표시된 로컬 주소를 Chrome/Edge에서 엽니다. [실행 안내](tool/app/README.md)
 - **사용법 보기:** [시연 영상 MP4](tool/app/help/walkthrough.mp4)를 내려받거나, 실행한 앱의 **시연 영상 보기**를 누르세요. GitHub에서 바로 재생되지 않으면 파일 페이지의 다운로드 버튼을 이용하세요.
 
 기본 CSV 확인·통계 계산은 LLM 없이 사용할 수 있습니다. 선택 기능인 LLM 설명에는 별도의 Hermes 설치·프로필·모델 인증 설정이 필요하며, 연결 설정과 이용 비용은 사용자 환경에 따릅니다. 자유로운 자연어 설계 대화는 아직 제공하지 않습니다.
