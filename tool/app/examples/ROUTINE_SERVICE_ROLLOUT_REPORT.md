@@ -5,6 +5,7 @@
 ## 프로젝트 JSON 다운로드
 
 - [원래 사례 JSON 다운로드](https://github.com/jhheo51-arch/AB-Test/releases/download/tool-rollout-report-20261123/routine-service-original-hold.json) — 수치 기준 미달, 센터 수용량과 비용 미확인으로 **확대 보류**.
+- [수치 기준 충족, 운영 조건 미확인 사례 JSON 다운로드](https://github.com/jhheo51-arch/AB-Test/releases/download/tool-rollout-report-20261123/routine-service-metrics-met-hold.json) — 두 수치 기준을 충족했지만 센터 수용량과 비용이 모두 미확인이라 **확대 보류**.
 - [입력값을 바꾼 사례 JSON 다운로드](https://github.com/jhheo51-arch/AB-Test/releases/download/tool-rollout-report-20261123/routine-service-edited-review.json) — 두 수치 기준을 충족하고 센터 수용량과 비용도 충족으로 설정해 **확대 검토 가능**.
 
 [분석 도구](https://github.com/jhheo51-arch/AB-Test/releases/tag/tool-rollout-report-20261123)를 실행하고 **프로젝트 복원**에서 받은 JSON을 선택하면 해당 판정과 근거를 볼 수 있습니다.
