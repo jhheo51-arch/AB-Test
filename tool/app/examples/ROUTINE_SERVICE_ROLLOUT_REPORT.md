@@ -2,6 +2,13 @@
 
 **원래 입력의 자동 판단은 확대 보류입니다.** 정기점검 안내를 받은 두 군을 배정 후 28일 동안 관측하는 가상 사례입니다. 분석 도구가 내보낸 공유 보고서의 입력값과 판단을 옮겼습니다.
 
+## 프로젝트 JSON 다운로드
+
+- [원래 사례 JSON 다운로드](https://github.com/jhheo51-arch/AB-Test/releases/download/tool-rollout-report-20261123/routine-service-original-hold.json) — 수치 기준 미달, 센터 수용량과 비용 미확인으로 **확대 보류**.
+- [입력값을 바꾼 사례 JSON 다운로드](https://github.com/jhheo51-arch/AB-Test/releases/download/tool-rollout-report-20261123/routine-service-edited-review.json) — 두 수치 기준을 충족하고 센터 수용량과 비용도 충족으로 설정해 **확대 검토 가능**.
+
+[분석 도구](https://github.com/jhheo51-arch/AB-Test/releases/tag/tool-rollout-report-20261123)를 실행하고 **프로젝트 복원**에서 받은 JSON을 선택하면 해당 판정과 근거를 볼 수 있습니다.
+
 ## 판단에 쓴 입력값
 
 | 고객 수 | A군 관리 필요성 안내 | B군 예약 편의 안내 |
