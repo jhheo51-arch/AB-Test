@@ -1,0 +1,189 @@
+{
+  "format": "ab-local-project",
+  "version": 7,
+  "conditions": {
+    "randomized": {
+      "status": "yes",
+      "evidence": "합성 시연 가정: 무작위 배정을 충족했다고 놓음. 실제 실행 기록 확인 아님.",
+      "origin": "user_statement"
+    },
+    "independent": {
+      "status": "yes",
+      "evidence": "합성 시연 가정: 고객 단위 독립성을 충족했다고 놓음. 실제 실행 기록 확인 아님.",
+      "origin": "user_statement"
+    },
+    "mature": {
+      "status": "yes",
+      "evidence": "합성 시연 가정: 개인별 관측 완료을 충족했다고 놓음. 실제 실행 기록 확인 아님.",
+      "origin": "user_statement"
+    },
+    "fixedStop": {
+      "status": "yes",
+      "evidence": "합성 시연 가정: 고정 종료을 충족했다고 놓음. 실제 실행 기록 확인 아님.",
+      "origin": "user_statement"
+    },
+    "segmentPrespecified": {
+      "status": "unknown",
+      "evidence": "",
+      "origin": "user_statement"
+    }
+  },
+  "source_kind": "csv",
+  "synthetic": false,
+  "source_digest": "55e0c14d22dfd7774293b1086b3113e4e5f283dfb6205befa75631b6bdcb875a",
+  "plan": {
+    "randomized": true,
+    "independent": true,
+    "mature": true,
+    "fixedStop": true,
+    "includeSegments": true,
+    "segmentPrespecified": false,
+    "purpose": "시승 완료 비율과 신규·기존 고객의 차이를 이해하기",
+    "metric": "배정 후 28일 안에 시승 완료 여부",
+    "window": "합성 가정: 개인별 배정 후 28일",
+    "policyA": "합성 control: 현재 시승 안내 문구",
+    "policyB": "합성 treatment: 행동 방법을 분명히 쓴 시승 안내",
+    "audience": "합성 신규·기존 고객. 동의 및 사전 적격 조건을 충족한 배정 고객",
+    "alpha": 0.05
+  },
+  "cells": [
+    {
+      "arm": "A",
+      "segment": "new",
+      "success": 50,
+      "total": 500
+    },
+    {
+      "arm": "B",
+      "segment": "new",
+      "success": 75,
+      "total": 500
+    },
+    {
+      "arm": "A",
+      "segment": "existing",
+      "success": 80,
+      "total": 500
+    },
+    {
+      "arm": "B",
+      "segment": "existing",
+      "success": 75,
+      "total": 500
+    }
+  ],
+  "decision": "합성 자료의 관측 차이와 통계 판정을 분리해 검토. 사업·보호 조건이 없어 실제 적용 판단은 유보합니다.",
+  "revisit": "대상·정책·관측 조건이 바뀌면 재검토. 이 합성 시연은 실제 실행·성과의 증거가 아닙니다.",
+  "engine_version": "0.2.0",
+  "judgment": {
+    "direction": "defer",
+    "checks": "최소 관심 효과, 비용, 수신 거부 및 접촉 부담, 집단 기준의 사전성을 추가 확인합니다."
+  },
+  "lineage": {
+    "version": 1,
+    "algorithm": "SHA-256",
+    "origin": {
+      "kind": "input_text_utf8",
+      "digest": "d391858b25425e3ad1cd1473abeae25260cece049041fbeca43c342296a74f1b"
+    },
+    "previous": null,
+    "current": {
+      "kind": "analysis_csv_utf8",
+      "digest": "55e0c14d22dfd7774293b1086b3113e4e5f283dfb6205befa75631b6bdcb875a"
+    },
+    "transformation": {
+      "name": "column_mapping",
+      "version": "0.5.1"
+    }
+  },
+  "design": {
+    "version": 1,
+    "revision": 23,
+    "step": 6,
+    "candidate": "message",
+    "resultSeen": true,
+    "changedAfterResult": false,
+    "fields": {
+      "situation": {
+        "value": "합성 CRM 실습: 시승 안내 문구를 바꿀지 검토합니다.",
+        "status": "proposed"
+      },
+      "purpose": {
+        "value": "시승 완료 비율과 신규·기존 고객의 차이를 이해하기",
+        "status": "proposed"
+      },
+      "audience": {
+        "value": "합성 신규·기존 고객. 동의 및 사전 적격 조건을 충족한 배정 고객",
+        "status": "proposed"
+      },
+      "analysisSegments": {
+        "value": "배정 전 고객 유형 new / existing. 사전성은 미확인",
+        "status": "proposed"
+      },
+      "applicationSegments": {
+        "value": "전체 적용은 별도 판단. 고객군별 차이는 탐색",
+        "status": "proposed"
+      },
+      "measurement": {
+        "value": "배정 후 28일 안에 시승 완료 여부",
+        "status": "proposed"
+      },
+      "risk": {
+        "value": "수신 거부 증가와 불필요한 접촉. 이 CSV에는 보호 지표 없음",
+        "status": "proposed"
+      },
+      "constraints": {
+        "value": "동일 채널·혜택, 안내 1회. 실제 발송은 하지 않는 기능 시연",
+        "status": "proposed"
+      },
+      "policyA": {
+        "value": "합성 control: 현재 시승 안내 문구",
+        "status": "proposed"
+      },
+      "policyB": {
+        "value": "합성 treatment: 행동 방법을 분명히 쓴 시승 안내",
+        "status": "proposed"
+      },
+      "metric": {
+        "value": "배정 후 28일 안에 시승 완료 여부",
+        "status": "proposed"
+      },
+      "denominator": {
+        "value": "사전 적격 조건을 충족해 A/B에 배정된 고객 전체. 누락·미성숙은 실패로 채우지 않기",
+        "status": "proposed"
+      },
+      "window": {
+        "value": "합성 가정: 개인별 배정 후 28일",
+        "status": "proposed"
+      },
+      "assignment": {
+        "value": "고객 1명 단위 무작위 1:1 배정 제안. 반복·가구·지점 영향과 비용 차이는 별도 확인",
+        "status": "proposed"
+      },
+      "heldConstant": {
+        "value": "선택한 변경 요인 외 혜택·채널·대상·관측 기회를 같게 유지할 수 있는지 확인",
+        "status": "proposed"
+      },
+      "stop": {
+        "value": "결과를 보기 전에 종료 시점·모든 고객의 관측 완료 규칙 정하기. 유의할 때까지 연장하지 않기",
+        "status": "proposed"
+      },
+      "decisionRule": {
+        "value": "지원 범위: 독립 두 군 이항·고정 종료. 양측 Fisher, alpha 0.05. 사전 두 집단과 직접 차이는 Holm 가족 보정. 사업·보호는 별도 검토",
+        "status": "proposed"
+      },
+      "business": {
+        "value": "비용·최소 관심 효과 미확인",
+        "status": "proposed"
+      },
+      "guardrail": {
+        "value": "수신 거부 증가와 불필요한 접촉. 이 CSV에는 보호 지표 없음",
+        "status": "proposed"
+      },
+      "segmentTiming": {
+        "value": "결과 열람 전 기준을 별도로 기록. 이 계획 확인만으로 사전성을 인증하지 않음",
+        "status": "proposed"
+      }
+    }
+  }
+}

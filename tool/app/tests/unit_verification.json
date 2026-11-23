@@ -53,6 +53,6 @@
     "log": "evidence/integration/semantic_edges.log",
     "counting": "Separate from smoke unit groups; engine gate cases are included, not additional. A case may contain several assertions."
   },
-  "timestamp_utc": "2026-11-23T07:30:11.518289+00:00",
+  "timestamp_utc": "2026-11-23T08:31:05.672761+00:00",
   "scope": "real smoke groups and semantic cases counted separately"
 }

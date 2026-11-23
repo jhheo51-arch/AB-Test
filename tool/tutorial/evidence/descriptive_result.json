@@ -1,0 +1,110 @@
+{
+  "version": "0.2.0",
+  "status": "descriptive",
+  "inference_allowed": false,
+  "overall": {
+    "A": {
+      "success": 130,
+      "total": 1000,
+      "rate": 0.13
+    },
+    "B": {
+      "success": 150,
+      "total": 1000,
+      "rate": 0.15
+    },
+    "diff": 0.01999999999999999,
+    "relative_change": 0.15384615384615377,
+    "ci": null,
+    "p_raw": null,
+    "p_adjusted": null,
+    "winner": "not_tested",
+    "inference_allowed": false,
+    "status": "descriptive"
+  },
+  "segments": [
+    {
+      "A": {
+        "success": 50,
+        "total": 500,
+        "rate": 0.1
+      },
+      "B": {
+        "success": 75,
+        "total": 500,
+        "rate": 0.15
+      },
+      "diff": 0.04999999999999999,
+      "relative_change": 0.4999999999999999,
+      "ci": null,
+      "p_raw": null,
+      "p_adjusted": null,
+      "winner": "not_tested",
+      "inference_allowed": false,
+      "status": "descriptive",
+      "label": "G1",
+      "exploratory": true
+    },
+    {
+      "A": {
+        "success": 80,
+        "total": 500,
+        "rate": 0.16
+      },
+      "B": {
+        "success": 75,
+        "total": 500,
+        "rate": 0.15
+      },
+      "diff": -0.010000000000000009,
+      "relative_change": -0.06250000000000006,
+      "ci": null,
+      "p_raw": null,
+      "p_adjusted": null,
+      "winner": "not_tested",
+      "inference_allowed": false,
+      "status": "descriptive",
+      "label": "G2",
+      "exploratory": true
+    }
+  ],
+  "interaction": {
+    "diff": null,
+    "ci": null,
+    "p_raw": null,
+    "p_adjusted": null,
+    "winner": "not_tested",
+    "status": "not_requested"
+  },
+  "family": {
+    "m": 1,
+    "method": "Holm",
+    "alpha": 0.05,
+    "hypotheses": []
+  },
+  "issues": [
+    {
+      "code": "ASSUMPTIONS_UNCONFIRMED",
+      "row": null,
+      "column": null,
+      "message": "All four inference assumptions require explicit boolean true.",
+      "severity": "warning"
+    },
+    {
+      "code": "POSTHOC_SEGMENTS",
+      "row": null,
+      "column": "segment",
+      "message": "Post-hoc segment results are descriptive only; only the overall planned comparison uses m=1.",
+      "severity": "warning"
+    }
+  ],
+  "interval_note": "Nominal 95% Wilson / Newcombe intervals; not Holm simultaneous intervals and not dual to Fisher exact tests.",
+  "assumptions": {
+    "randomized": false,
+    "independent": false,
+    "mature": false,
+    "fixedStop": false,
+    "basis": "user_confirmed"
+  },
+  "segmentPrespecified": false
+}

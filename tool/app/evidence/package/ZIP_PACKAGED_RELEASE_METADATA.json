@@ -6,9 +6,10 @@
   "unit_groups": 145,
   "separate_semantic_cases": 1029,
   "engine_gate_cases_included": 972,
-  "browser_checks": 395,
-  "preserved_control_count": 12,
+  "browser_checks": 410,
+  "preserved_control_count": 11,
   "intentional_changed_controls": [
+    "help/walkthrough.mp4",
     "design-ui.js"
   ],
   "scope": "actual metadata/file hashes and retained execution logs; no invented execution or remote readback"

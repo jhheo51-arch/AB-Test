@@ -1,4 +1,4 @@
-http://127.0.0.1:1759
+http://127.0.0.1:10476
 column_mapping_smoke PASS
 compare_reference PASS
 conditions_smoke PASS
@@ -24,4 +24,4 @@ verify_design_pdf PASS
 verify_pdf PASS
 verify_guided_pdf PASS
 verify_lineage_pdf PASS
-PASS summary: 25 executed scripts; 145 unit groups; 1029 separate semantic cases; 395 browser checks
+PASS summary: 25 executed scripts; 145 unit groups; 1029 separate semantic cases; 410 browser checks

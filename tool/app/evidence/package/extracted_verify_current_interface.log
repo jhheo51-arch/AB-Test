@@ -48,6 +48,21 @@ PASS report still includes result and method
 PASS invalid native JSON rejected without changing analysis
 PASS valid native JSON restores counts
 PASS functional inference guard remains active without conditions
+PASS imported raw CRLF notes and selected unknown conditions button close: native modal is open
+PASS imported raw CRLF notes and selected unknown conditions button close: local embedded video source
+PASS imported raw CRLF notes and selected unknown conditions button close: real video metadata
+PASS imported raw CRLF notes and selected unknown conditions button close: video really starts
+PASS imported raw CRLF notes and selected unknown conditions button close: close pauses video
+PASS imported raw CRLF notes and selected unknown conditions button close: exact state/input/prepared/result/consent preserved
+PASS mobile imported raw notes Escape close: native modal is open
+PASS mobile imported raw notes Escape close: local embedded video source
+PASS mobile imported raw notes Escape close: real video metadata
+PASS mobile imported raw notes Escape close: video really starts
+PASS mobile imported raw notes Escape close: modal fits 390px
+PASS mobile imported raw notes Escape close: close pauses video
+PASS mobile imported raw notes Escape close: exact state/input/prepared/result/consent preserved
+PASS mobile imported raw notes Escape close: body scrolling unlocked
+PASS mobile imported raw notes Escape close: page remains scrollable
 PASS mapping error blocks stale analysis and keeps synthetic usernotes
 PASS mapping error button close: native modal is open
 PASS mapping error button close: local embedded video source
@@ -82,4 +97,4 @@ PASS 390px error Escape close: body scrolling unlocked
 PASS 390px error Escape close: page remains scrollable
 PASS no uncaught JavaScript errors
 PASS no remote/model/credential requests attempted
-RESULT PASS: 84/84 recorded checks
+RESULT PASS: 99/99 recorded checks

@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "negative_guards": 8,
+  "checks": [
+    {
+      "guard": "omit_source",
+      "rejected": true
+    },
+    {
+      "guard": "stale_source",
+      "rejected": true
+    },
+    {
+      "guard": "wrong_script_count",
+      "rejected": true
+    },
+    {
+      "guard": "wrong_semantic_count",
+      "rejected": true
+    },
+    {
+      "guard": "skip_control",
+      "rejected": true
+    },
+    {
+      "guard": "rewrite_baseline",
+      "rejected": true
+    },
+    {
+      "guard": "old_video",
+      "rejected": true
+    },
+    {
+      "guard": "stale_caption",
+      "rejected": true
+    }
+  ],
+  "source_untouched": true
+}

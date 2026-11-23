@@ -14,9 +14,17 @@ def verify(root):
  assert all(sha(n)==h for n,h in s['source_sha256'].items()),'stale runtime SHA-256'
  assert s['baseline']==baseline,'historical baseline changed/rewritten in aggregate'
  changed=s['intentional_baseline_control_changes'];preserved=s['preserved_baseline_bytes']
- assert set(changed)=={'design-ui.js'} and set(preserved)==set(baseline['controls'])-set(changed)
+ assert set(changed)=={'design-ui.js','help/walkthrough.mp4'} and set(preserved)==set(baseline['controls'])-set(changed)
  assert all(v and sha(n)==baseline['controls'][n]['sha256'] for n,v in preserved.items())
  assert all(v['current_sha256']==sha(n) and v['historical_sha256']==baseline['controls'][n]['sha256'] and v['reason'] for n,v in changed.items())
+ from validate_walkthrough_media import EXPECTED
+ video=s['video'];decode=load('evidence/tutorial_media_validation.json')
+ assert video['sha256']==sha('help/walkthrough.mp4')==EXPECTED
+ assert set(video['asset_sha256'])=={'help/walkthrough.mp4','help/walkthrough.ko.srt','help/walkthrough.timeline.json'}
+ assert all(sha(n)==h for n,h in video['asset_sha256'].items())
+ assert video['full_decode']==decode and decode['status']=='PASS' and decode['sha256']==EXPECTED and decode['full_decode_returncode']==0
+ assert video['design_feature_tutorial_added'] and video['conditions_tutorial_added']
+ assert all(abs(row['duration']-160.16)<.05 and row['width']==1280 and row['height']==900 for row in video['current_metadata'])
  units=[]
  for r in run['checks']:
   if r['test'].endswith('_smoke'):units.append(len(re.findall(r'^PASS ',(root/r['log']).read_text(encoding='utf-8'),re.M)))

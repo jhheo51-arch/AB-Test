@@ -1,0 +1,618 @@
+{
+  "created_utc": "2026-11-23T08:06:11.622428+00:00",
+  "scope": "tutorial_staging only; no main worktree edits, publishing, staging, Git, package or R07 work",
+  "recording_kind": "Actual Playwright-driven installed Chrome recording; no generated/reconstructed UI; separate Pillow caption band only",
+  "parent_reported_release_commit": "2071b74f1e8cc6284e998b3a964a757bd13d2a0f (context supplied by parent; not independently fetched here)",
+  "current_app_source_sha256": {
+    "app.js": "762988e7d9645f2fcdf50acf3f4e0dc4cb67226a903519b137b9cc1ee2963450",
+    "column-mapping.js": "d1d3b0c7a2e3aeb520c9c831d3583cf5e2d889c6ea079837a7814868ab361a68",
+    "conditions.js": "ba43452438ed54ad4c42f5ffb7fb61c981247f5fa92e3019c711170b9820b0c5",
+    "context.css": "e75a39ddceb74b433ab3a4fb30a41ce0e7a5ed4fa5d82cc940bf4219b39b4edf",
+    "design-ui.js": "ceea7d89b668d43e5c4a4ded4ec95dc4a174cb702c7e96c406d8e6c91253e609",
+    "design.css": "26f0756ca833c6c4060da7f6f421a6591822ef3a845f74608ff68e0f66760cd3",
+    "design.js": "c2928c37c92a053534682baf0da82fbbe98fdf249ef7180604cd05cdc5ddda22",
+    "engine-issue-codes.json": "b12c04facf9e5aa576174176040077c43aa8e7325a6368f4f28c1767e6a33c4e",
+    "engine.js": "f40cc1fbd3e87dde4050cb0155673c2f368b2e88274a30fa03aeb09dbcde05f7",
+    "index.html": "ec196f8eb4537c0af489257dfd1df2e0606617252dfb35ba5fa7e019219800e3",
+    "launch.py": "8456b3f589dd918032d73dcfd2eecc5d46b70e57a40dbdc8a64dc865d35df62d",
+    "lineage.js": "6fbe55b5ba392e6bb64ff3dcaa5702936301aceac4f6599a55b99bad6bed84ba",
+    "narrative.js": "570af0c9cb1e10063bf0842e2393bf7561938ca3327e23f71c485c79abce1f4a",
+    "project-schema.js": "62a1f452094533af856f5674c6b3a82c97ad913713c9faf6503fae5393c68391",
+    "server.py": "0a43fa86eadb1d4ad11c2c6d501eaca3ecd201397dc8ea772a2325d79aa5f738",
+    "styles.css": "0869f2c9d558ad908dc67c07ad06d58af0ae6acdc09d80eb66bd0bf397e8a153",
+    "theme.css": "32af93deee832077377efcb2b83be4aeafe16fb3cd06e705ecc1e2a4038efd13",
+    "worker.js": "6f30bd381c13bbad95dcd6d6570dff14a23df9f5ad5b0a5d4d05bfe6078d7179",
+    "workflow.css": "98254b477975d83aad6ce4b8667776f21c772a1e2974d7d667682294de82abfa",
+    "workflow.js": "f70e3989f4f5432210ab4141f6dd83f86799248b82c59c1ff0b9fd7fdaad5478",
+    "examples/SYNTHETIC_aggregate.csv": "edcdb899df1096b9487e1a542629b0cccf7067abc242eca6825eccc384e83e70",
+    "fonts/LICENSE.txt": "8a2aba6114145294edbbce5998eab74320e7e07ce39999cc9f95ae2967d2eb9e",
+    "fonts/PretendardVariable.woff2": "9599f12fd42fc0bce1cd50b47a0c022e108d7aa64dd0d1bb0ed44f3282d900b4"
+  },
+  "current_app_source_manifest_sha256": "bbd1088b02a2c6ab59f1cbf0a1e704567833f8d8933ade3683a94641f767f4a5",
+  "source_comparison": "All non-help application source/assets in own runtime compared byte-for-byte with five_fix_parent_check_final/runtime; unchanged",
+  "fixed_input": {
+    "path": "SYNTHETIC_CRM_CUSTOM.csv",
+    "sha256": "d391858b25425e3ad1cd1473abeae25260cece049041fbeca43c342296a74f1b",
+    "original_fixture_sha256": "d391858b25425e3ad1cd1473abeae25260cece049041fbeca43c342296a74f1b",
+    "synthetic": true
+  },
+  "video": {
+    "path": "runtime/help/walkthrough.mp4",
+    "sha256": "ffe7cd998e4a875b44ef45130e12a4d931b12d542c06b0276abfe5aa0978eabd",
+    "bytes": 4276616,
+    "duration_seconds": 160.16,
+    "codec": "h264",
+    "fps": "25/1",
+    "width": 1280,
+    "height": 900,
+    "audio_streams": 0
+  },
+  "captions": {
+    "srt": "runtime/help/walkthrough.ko.srt",
+    "timeline": "runtime/help/walkthrough.timeline.json",
+    "cue_count": 26,
+    "app_height": 800,
+    "dedicated_caption_height": 100,
+    "persistent_label": "합성 자료 기능 시연 / 실제 실험 인증 아님",
+    "foreground": "#FFFFFF",
+    "background": "#202B3A",
+    "computed_wcag_contrast": 14.3045566520547,
+    "all_caption_bounds_checked": true,
+    "font": "PretendardVariable converted from bundled OFL WOFF2; licensed_fonts/LICENSE.txt preserved",
+    "timing_limitation": "Scene-level real interaction clock, not frame-exact synchronization; final cue extended to actual encoded recording duration."
+  },
+  "browser_stats": {
+    "browser_version": "158.0.8127.36",
+    "recording_assertions": 16,
+    "recording_all_pass": true,
+    "recording_network_request_count": 38,
+    "recording_blocked_or_external_or_post_attempts": 0,
+    "recording_page_exception_count": 0,
+    "playback_pdf_privacy_source_assertions": 41,
+    "playback_all_pass": true,
+    "count_note": "Includes per-file source identity assertions; not this many distinct human tasks. These tutorial checks are not added to parent regression totals.",
+    "playback_page_exception_count": 0
+  },
+  "decode": {
+    "full_decode_returncode": 0,
+    "stderr_empty": true,
+    "proof": "evidence/full_decode.txt",
+    "metadata": "evidence/ffprobe.json"
+  },
+  "actual_engine_result": {
+    "version": "0.2.0",
+    "status": "limited",
+    "inference_allowed": true,
+    "overall": {
+      "A": {
+        "success": 130,
+        "total": 1000,
+        "rate": 0.13,
+        "ci": [
+          0.11056377462484193,
+          0.1522680266544689
+        ]
+      },
+      "B": {
+        "success": 150,
+        "total": 1000,
+        "rate": 0.15,
+        "ci": [
+          0.1292100725130883,
+          0.17346865842680032
+        ]
+      },
+      "diff": 0.01999999999999999,
+      "relative_change": 0.15384615384615377,
+      "ci": [
+        -0.010464505510432695,
+        0.05047203283648407
+      ],
+      "p_raw": 0.22074876980310534,
+      "p_adjusted": 0.22074876980310534,
+      "winner": "hold",
+      "inference_allowed": true,
+      "status": "tested"
+    },
+    "segments": [
+      {
+        "A": {
+          "success": 50,
+          "total": 500,
+          "rate": 0.1
+        },
+        "B": {
+          "success": 75,
+          "total": 500,
+          "rate": 0.15
+        },
+        "diff": 0.04999999999999999,
+        "relative_change": 0.4999999999999999,
+        "ci": null,
+        "p_raw": null,
+        "p_adjusted": null,
+        "winner": "not_tested",
+        "inference_allowed": false,
+        "status": "descriptive",
+        "label": "G1",
+        "exploratory": true
+      },
+      {
+        "A": {
+          "success": 80,
+          "total": 500,
+          "rate": 0.16
+        },
+        "B": {
+          "success": 75,
+          "total": 500,
+          "rate": 0.15
+        },
+        "diff": -0.010000000000000009,
+        "relative_change": -0.06250000000000006,
+        "ci": null,
+        "p_raw": null,
+        "p_adjusted": null,
+        "winner": "not_tested",
+        "inference_allowed": false,
+        "status": "descriptive",
+        "label": "G2",
+        "exploratory": true
+      }
+    ],
+    "interaction": {
+      "diff": null,
+      "ci": null,
+      "p_raw": null,
+      "p_adjusted": null,
+      "winner": "not_tested",
+      "status": "not_requested"
+    },
+    "family": {
+      "m": 1,
+      "method": "Holm",
+      "alpha": 0.05,
+      "hypotheses": [
+        {
+          "key": "overall",
+          "supported": true,
+          "p_raw": 0.22074876980310534,
+          "p_adjusted": 0.22074876980310534,
+          "included": true
+        }
+      ]
+    },
+    "issues": [
+      {
+        "code": "POSTHOC_SEGMENTS",
+        "row": null,
+        "column": "segment",
+        "message": "Post-hoc segment results are descriptive only; only the overall planned comparison uses m=1.",
+        "severity": "warning"
+      }
+    ],
+    "interval_note": "Nominal 95% Wilson / Newcombe intervals; not Holm simultaneous intervals and not dual to Fisher exact tests.",
+    "assumptions": {
+      "randomized": true,
+      "independent": true,
+      "mature": true,
+      "fixedStop": true,
+      "basis": "user_confirmed"
+    },
+    "segmentPrespecified": false
+  },
+  "actual_outputs": {
+    "plan_only": "evidence/PLAN_ONLY.json",
+    "plan_with_aggregates": "evidence/PLAN_AND_AGGREGATES.json",
+    "report_html": "evidence/AB_RESULT_REPORT.html",
+    "actual_chromium_pdf": "evidence/AB_RESULT_REPORT.pdf",
+    "pdf_pages": 3,
+    "private_condition_evidence_excluded_from_html_and_pdf": true
+  },
+  "visual_inspection": {
+    "method": "Assistant direct visual inspection of actual encoded frame PNGs and real browser screenshot; not an independent human review",
+    "reviewed": {
+      "evidence/frame_10.png": "Actual source columns and A=control/B=treatment visible; caption matches. No UI covered by 100px band.",
+      "evidence/frame_14.png": "Confirmed/user-statement select and synthetic-only assumption/evidence disclaimer legible. No caption clipping.",
+      "evidence/frame_18.png": "Actual +2.00pp, hold and unknown business/protection displayed distinctly; caption matches.",
+      "evidence/frame_19.png": "Expanded actual p=0.22075 and interval -1.05pp to +5.05pp visible after genuine scroll correction and rerecording.",
+      "evidence/frame_25.png": "Input confirmation unchecked and analysis button disabled visible in final scene; persistent synthetic label legible.",
+      "evidence/mobile_help.png": "Real playing video fitted within 390px viewport; close button fits without single-character wrapping. UI within scaled video is small; no mobile readability certification."
+    },
+    "caption_area_does_not_cover_app": true,
+    "sample_frame_files_available": [
+      "evidence/frame_00.png",
+      "evidence/frame_03.png",
+      "evidence/frame_08.png",
+      "evidence/frame_10.png",
+      "evidence/frame_11.png",
+      "evidence/frame_14.png",
+      "evidence/frame_18.png",
+      "evidence/frame_19.png",
+      "evidence/frame_21.png",
+      "evidence/frame_24.png",
+      "evidence/frame_25.png"
+    ]
+  },
+  "servers": {
+    "own_loopback_ports_confirmed_closed": {
+      "14336": true,
+      "1270": true
+    },
+    "final_verifier_server_shutdown": true
+  },
+  "known_issues_and_limits": [
+    "Current copied help title and old-UI disclaimer are stale; parent must update them during selective integration. README_TUTORIAL.md gives exact text to replace.",
+    "App file-upload source badge intentionally says user CSV/unverified; fixed input and captions explicitly identify synthetic content. No certification inferred from source label.",
+    "No external calls, live LLM, TTS, real humans, operational CRM data, real experiment certification or effectiveness evaluation.",
+    "Initial sample inspection found hidden p/CI values; actual scroll was corrected and recording rerun. Final frame_19.png shows the values.",
+    "Earlier local playback probe emitted nonfatal Python server WinError 10054 when Chrome cancelled streaming; final run had no such error.",
+    "Rendering required Brotli absent from system Python; installed into own staging/dependencies.",
+    "Final ZIP, allowlists, help copy updates and remote integration remain parent responsibilities."
+  ],
+  "reproduce": [
+    "python record_walkthrough.py --quick",
+    "python record_walkthrough.py",
+    "python render_walkthrough.py",
+    "python verify_walkthrough.py",
+    "python finalize_evidence.py"
+  ],
+  "environment": {
+    "python": "3.14.7 (tags/v3.14.7:823f032, Aug  5 2026, 10:51:32) [MSC v.1944 64 bit (AMD64)]",
+    "ffmpeg": "ffmpeg version 9.0.2-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers"
+  },
+  "all_input_output_sha256": {
+    "finalize_evidence.py": {
+      "bytes": 8640,
+      "sha256": "6697eea301911aeb94485780e7cb8b0b614fb718a9355dcdcc852740e4ff8f43"
+    },
+    "README_TUTORIAL.md": {
+      "bytes": 6719,
+      "sha256": "ec4ba1e74c43011d6cd70161af658402fac6fba5e1c7adf85ff44194c3404b28"
+    },
+    "record_walkthrough.py": {
+      "bytes": 13504,
+      "sha256": "968072367010c3cb6685bf32dc47e45019a649708dddd007e04bb7ebb6dda635"
+    },
+    "render_walkthrough.py": {
+      "bytes": 5041,
+      "sha256": "da32fbb802355d5b6bdb5bd528bb2a46f91f377bdc3e27e132c02f3e29614ccf"
+    },
+    "SYNTHETIC_CRM_CUSTOM.csv": {
+      "bytes": 128,
+      "sha256": "d391858b25425e3ad1cd1473abeae25260cece049041fbeca43c342296a74f1b"
+    },
+    "verify_walkthrough.py": {
+      "bytes": 6768,
+      "sha256": "79d47f820218bd8356ad620f4bfe145bf54e4c3ea86c53d5e6cfcab103610be9"
+    },
+    "evidence/AB_RESULT_REPORT.html": {
+      "bytes": 8636,
+      "sha256": "17b3d5632d76db20790118fca184b0f71113b031ff7ba27746124abfc1010f9a"
+    },
+    "evidence/AB_RESULT_REPORT.pdf": {
+      "bytes": 621548,
+      "sha256": "860c24ff9f0094c7814e08e6cfa91e207172fb1cb376dc87389052e4f863b1f7"
+    },
+    "evidence/actual_app_recording.webm": {
+      "bytes": 16378707,
+      "sha256": "b0f100701cc8a8fca20db99c199856c0fe9a2e7bf9a049e355bb838c80b25a3a"
+    },
+    "evidence/browser_evidence.json": {
+      "bytes": 6427,
+      "sha256": "8a276f31e05e4db702a1e13884503296954fe2f0866f4bbab409a6eb57833ec9"
+    },
+    "evidence/caption_00.png": {
+      "bytes": 20581,
+      "sha256": "d16e39caae87eaef81eda4b95c7c52cd18fbc03076dba0c3429702412152273c"
+    },
+    "evidence/caption_01.png": {
+      "bytes": 17255,
+      "sha256": "e23a60ad369a0961979fe8d685549f824d644b11d89ee4257d5b2a183c5bb6e2"
+    },
+    "evidence/caption_02.png": {
+      "bytes": 17255,
+      "sha256": "e23a60ad369a0961979fe8d685549f824d644b11d89ee4257d5b2a183c5bb6e2"
+    },
+    "evidence/caption_03.png": {
+      "bytes": 17177,
+      "sha256": "e83c76da5f664c1007a3dc1d4c4ebc56049aa7997774f68435b496fc7ca74e5b"
+    },
+    "evidence/caption_04.png": {
+      "bytes": 20166,
+      "sha256": "8fd83dfc22cd8b5b730bebbda9905f882dc558c13c5d4115693b260660ab8519"
+    },
+    "evidence/caption_05.png": {
+      "bytes": 19976,
+      "sha256": "57f7a1a130c9c9a066d8e5067265506372aa45e75052b922368d17e7b3fe41dc"
+    },
+    "evidence/caption_06.png": {
+      "bytes": 18763,
+      "sha256": "e80c9acdbef43914efd276704e8907c515d8e2785f6bf54c9cb865e9cd68e1e2"
+    },
+    "evidence/caption_07.png": {
+      "bytes": 20132,
+      "sha256": "a031c5ece68cbf27020998e6ad368aee2f0545e8e23488003d087a59ebd04c35"
+    },
+    "evidence/caption_08.png": {
+      "bytes": 20111,
+      "sha256": "38c954b33d1e9fa056347cbd712fcd1275c88708e20a38faa1d42e03429492cd"
+    },
+    "evidence/caption_09.png": {
+      "bytes": 16568,
+      "sha256": "6477cd5a53f8b364333341cf68c7985301e34691003a99122a4f33a7554197c0"
+    },
+    "evidence/caption_10.png": {
+      "bytes": 19032,
+      "sha256": "fdd709d2d25b2a11020ee2e37da0928be9cab5d0e2430affc4c4320031ea20bd"
+    },
+    "evidence/caption_11.png": {
+      "bytes": 17623,
+      "sha256": "8989393b074cabc58e101d152282463b6a9e9fbec590ade16c95d4f24aa1f07f"
+    },
+    "evidence/caption_12.png": {
+      "bytes": 18899,
+      "sha256": "32e2fe251cc67dc56e7166fd6009ef495651c9d101f543002986f2623953a4cc"
+    },
+    "evidence/caption_13.png": {
+      "bytes": 20198,
+      "sha256": "592cf71463f21105f0767d7d2431d4703a430d063663642ec799780c9f565424"
+    },
+    "evidence/caption_14.png": {
+      "bytes": 20749,
+      "sha256": "a37ce8cc8b48f789174aa6bcd5eedf57df24f1e802726f4fe332a3810a05b071"
+    },
+    "evidence/caption_15.png": {
+      "bytes": 21409,
+      "sha256": "3b973b17e110d3aea1d5ced23acc64bf9e0f53db30d9809431550a56a16caf1c"
+    },
+    "evidence/caption_16.png": {
+      "bytes": 20100,
+      "sha256": "7eaaca18aadc9377093ee1f4ba8f593073b84cdbe68cf5417222f638605cc381"
+    },
+    "evidence/caption_17.png": {
+      "bytes": 17389,
+      "sha256": "34b2162692eb4d9c933e5e9a8e12ddf062549c3e6bf1fefdc19db6bebc762408"
+    },
+    "evidence/caption_18.png": {
+      "bytes": 20469,
+      "sha256": "b7c50b68965b023d07451c0decd574d59dca25a27f928375bdefa516ea9a9dae"
+    },
+    "evidence/caption_19.png": {
+      "bytes": 18903,
+      "sha256": "8fdd49534f2ccc8fdc426e993cf840cb4e59affb1e2c5785ead3ed3d2101e432"
+    },
+    "evidence/caption_20.png": {
+      "bytes": 20750,
+      "sha256": "c8e68cd98f454e95d47f0ac0274ecf14a356f8f8389666f3aff8da7185475f18"
+    },
+    "evidence/caption_21.png": {
+      "bytes": 21181,
+      "sha256": "0637d20bbcfee683e093f92392cd11cf5ca67a1dc311133e90f9f62524e4d441"
+    },
+    "evidence/caption_22.png": {
+      "bytes": 21108,
+      "sha256": "a76316f6b5fd020d2d41bd003e75d8153652bdf6c659f25bf77c5d270c3f97f6"
+    },
+    "evidence/caption_23.png": {
+      "bytes": 21412,
+      "sha256": "b504d42d29805a3732af92b86f2a82d4ce83a7424205a395f75683946ce529fb"
+    },
+    "evidence/caption_24.png": {
+      "bytes": 19691,
+      "sha256": "79aed84e138a23283fe06e8b0c35c97d88f77d3e4e47a8f4a808e0d9b6854ee1"
+    },
+    "evidence/caption_25.png": {
+      "bytes": 20314,
+      "sha256": "40358a7c30f640600c6fb2f6cd6f35fadaeecbaeb59e7b6bb4c6ecca5feda643"
+    },
+    "evidence/caption_band.mp4": {
+      "bytes": 411449,
+      "sha256": "e439e98ea65f2618a1dae65ada5f5dc0326639165e9fd1013e5a35ca1c433db3"
+    },
+    "evidence/composition.json": {
+      "bytes": 6373,
+      "sha256": "539a2ef6d137e436ab9e8b23f61b4b3bb59fdeb13e2a1736b69f0642b75e7ba5"
+    },
+    "evidence/descriptive_result.json": {
+      "bytes": 2591,
+      "sha256": "64339e8a42755869ec3c0b897dc833a2ab68506b445b469bec9e0f4c17077fb6"
+    },
+    "evidence/ffprobe.json": {
+      "bytes": 2360,
+      "sha256": "d6fd6ce356dd617e34b024e99c4db300f77694d948f460ca36129fc1ec8de37d"
+    },
+    "evidence/final_ui.png": {
+      "bytes": 79830,
+      "sha256": "0e12138cd35db0f1d62ae96d17cac9228d0e4a91203a790fe9349b9fcbdf0eee"
+    },
+    "evidence/frame_00.png": {
+      "bytes": 329611,
+      "sha256": "e15a631ed8b52da2424b585221c11dbd1a73d114c7637317380478a86789924d"
+    },
+    "evidence/frame_03.png": {
+      "bytes": 347438,
+      "sha256": "a7e7322160c2df8228fc2ac90e6810745df7c82fa6cc28a8cc566a6da8d1e298"
+    },
+    "evidence/frame_08.png": {
+      "bytes": 340851,
+      "sha256": "e76a5242adf45a3f941ebca762b6cff9dc3954035f05bda314f88898b160c584"
+    },
+    "evidence/frame_10.png": {
+      "bytes": 257513,
+      "sha256": "17931d82d48e2994510083dc8571265ff044a7129806ed764f7d3dcb70d594f6"
+    },
+    "evidence/frame_11.png": {
+      "bytes": 240263,
+      "sha256": "70b1548990fc87ec23234004e75711598fcb464f867ac91f64d392885725c6e2"
+    },
+    "evidence/frame_14.png": {
+      "bytes": 259417,
+      "sha256": "cca58698494ec6e5ddd50d73ebbdbcc3c8c8ab400ab8c9af2a4fcd19e65479af"
+    },
+    "evidence/frame_18.png": {
+      "bytes": 278024,
+      "sha256": "403cfaa2f2d9e80a9346538e01d63cbcd7b033938476b3fba22aeaedd7161594"
+    },
+    "evidence/frame_19.png": {
+      "bytes": 290049,
+      "sha256": "4612623ef9e7aa749838cbef05df4bae5e8b2a85c36867c9220a680e38cd0f4a"
+    },
+    "evidence/frame_21.png": {
+      "bytes": 295215,
+      "sha256": "8083de88309c67f6d8b31e6c5b5a0dd70ab11b9c1a46ff9e7e1215cef91f8786"
+    },
+    "evidence/frame_24.png": {
+      "bytes": 277617,
+      "sha256": "d51ad3a72dc8ed5c325a08aff9aef795ef5d149a70a3a548262df4a478ed5167"
+    },
+    "evidence/frame_25.png": {
+      "bytes": 252105,
+      "sha256": "1a08bd57fb6a1ae5d01adef137a834c2cac91a15ef34987cf5dff0da6e1deac1"
+    },
+    "evidence/full_decode.txt": {
+      "bytes": 30,
+      "sha256": "220e7e68ad4f8311f940a47c523b118094efe08803e461f1acfea7cce5edac1e"
+    },
+    "evidence/inference_result.json": {
+      "bytes": 2803,
+      "sha256": "583e7b84d1e1f6344665e1f371465b825e74cf924daf29a96816b56652352166"
+    },
+    "evidence/mobile_help.png": {
+      "bytes": 91639,
+      "sha256": "92fc6d2dfd8360e11fe64f63b359149b335b149db5a328a256c3603578cb6bc5"
+    },
+    "evidence/pdf_text.txt": {
+      "bytes": 4152,
+      "sha256": "9dbfdadb184cf20c52570a772850327d32193885ee1c7092e8ae3ef23c016c55"
+    },
+    "evidence/PLAN_AND_AGGREGATES.json": {
+      "bytes": 6558,
+      "sha256": "3b6081600e80691717c2d2444e85d0a87ada0d54425ab039123b0c29e7b87db4"
+    },
+    "evidence/PLAN_ONLY.json": {
+      "bytes": 5122,
+      "sha256": "d688d4f984eb205cb9f052e618f67bd595a0433ac51b3468d3a951f83fb164db"
+    },
+    "evidence/playback_verification.json": {
+      "bytes": 4554,
+      "sha256": "930490c7c2c9004601b1d853b1ffb2a05b78021675229b7b2fefece0e1a00ec2"
+    },
+    "evidence/timeline.json": {
+      "bytes": 5343,
+      "sha256": "4d04ef68660d757c25a695feba8b25d7ea558ed64006551d405d5c22daa98d90"
+    },
+    "licensed_fonts/LICENSE.txt": {
+      "bytes": 4511,
+      "sha256": "8a2aba6114145294edbbce5998eab74320e7e07ce39999cc9f95ae2967d2eb9e"
+    },
+    "licensed_fonts/PretendardVariable.ttf": {
+      "bytes": 6739320,
+      "sha256": "2b79c06a8b68929c6a4ca78ca17a2439b8cc2333511bfb069029ff15f0f0da7b"
+    },
+    "runtime/app.js": {
+      "bytes": 35792,
+      "sha256": "762988e7d9645f2fcdf50acf3f4e0dc4cb67226a903519b137b9cc1ee2963450"
+    },
+    "runtime/column-mapping.js": {
+      "bytes": 9190,
+      "sha256": "d1d3b0c7a2e3aeb520c9c831d3583cf5e2d889c6ea079837a7814868ab361a68"
+    },
+    "runtime/conditions.js": {
+      "bytes": 2235,
+      "sha256": "ba43452438ed54ad4c42f5ffb7fb61c981247f5fa92e3019c711170b9820b0c5"
+    },
+    "runtime/context.css": {
+      "bytes": 2280,
+      "sha256": "e75a39ddceb74b433ab3a4fb30a41ce0e7a5ed4fa5d82cc940bf4219b39b4edf"
+    },
+    "runtime/design-ui.js": {
+      "bytes": 4604,
+      "sha256": "ceea7d89b668d43e5c4a4ded4ec95dc4a174cb702c7e96c406d8e6c91253e609"
+    },
+    "runtime/design.css": {
+      "bytes": 865,
+      "sha256": "26f0756ca833c6c4060da7f6f421a6591822ef3a845f74608ff68e0f66760cd3"
+    },
+    "runtime/design.js": {
+      "bytes": 4326,
+      "sha256": "c2928c37c92a053534682baf0da82fbbe98fdf249ef7180604cd05cdc5ddda22"
+    },
+    "runtime/engine-issue-codes.json": {
+      "bytes": 820,
+      "sha256": "b12c04facf9e5aa576174176040077c43aa8e7325a6368f4f28c1767e6a33c4e"
+    },
+    "runtime/engine.js": {
+      "bytes": 19662,
+      "sha256": "f40cc1fbd3e87dde4050cb0155673c2f368b2e88274a30fa03aeb09dbcde05f7"
+    },
+    "runtime/index.html": {
+      "bytes": 22898,
+      "sha256": "ec196f8eb4537c0af489257dfd1df2e0606617252dfb35ba5fa7e019219800e3"
+    },
+    "runtime/launch.py": {
+      "bytes": 2038,
+      "sha256": "8456b3f589dd918032d73dcfd2eecc5d46b70e57a40dbdc8a64dc865d35df62d"
+    },
+    "runtime/lineage.js": {
+      "bytes": 2938,
+      "sha256": "6fbe55b5ba392e6bb64ff3dcaa5702936301aceac4f6599a55b99bad6bed84ba"
+    },
+    "runtime/narrative.js": {
+      "bytes": 9319,
+      "sha256": "570af0c9cb1e10063bf0842e2393bf7561938ca3327e23f71c485c79abce1f4a"
+    },
+    "runtime/project-schema.js": {
+      "bytes": 5869,
+      "sha256": "62a1f452094533af856f5674c6b3a82c97ad913713c9faf6503fae5393c68391"
+    },
+    "runtime/server.py": {
+      "bytes": 13548,
+      "sha256": "0a43fa86eadb1d4ad11c2c6d501eaca3ecd201397dc8ea772a2325d79aa5f738"
+    },
+    "runtime/styles.css": {
+      "bytes": 9544,
+      "sha256": "0869f2c9d558ad908dc67c07ad06d58af0ae6acdc09d80eb66bd0bf397e8a153"
+    },
+    "runtime/theme.css": {
+      "bytes": 14881,
+      "sha256": "32af93deee832077377efcb2b83be4aeafe16fb3cd06e705ecc1e2a4038efd13"
+    },
+    "runtime/worker.js": {
+      "bytes": 724,
+      "sha256": "6f30bd381c13bbad95dcd6d6570dff14a23df9f5ad5b0a5d4d05bfe6078d7179"
+    },
+    "runtime/workflow.css": {
+      "bytes": 2827,
+      "sha256": "98254b477975d83aad6ce4b8667776f21c772a1e2974d7d667682294de82abfa"
+    },
+    "runtime/workflow.js": {
+      "bytes": 8316,
+      "sha256": "f70e3989f4f5432210ab4141f6dd83f86799248b82c59c1ff0b9fd7fdaad5478"
+    },
+    "runtime/examples/SYNTHETIC_aggregate.csv": {
+      "bytes": 88,
+      "sha256": "edcdb899df1096b9487e1a542629b0cccf7067abc242eca6825eccc384e83e70"
+    },
+    "runtime/fonts/LICENSE.txt": {
+      "bytes": 4511,
+      "sha256": "8a2aba6114145294edbbce5998eab74320e7e07ce39999cc9f95ae2967d2eb9e"
+    },
+    "runtime/fonts/PretendardVariable.woff2": {
+      "bytes": 2057688,
+      "sha256": "9599f12fd42fc0bce1cd50b47a0c022e108d7aa64dd0d1bb0ed44f3282d900b4"
+    },
+    "runtime/help/walkthrough.ko.srt": {
+      "bytes": 4549,
+      "sha256": "c7d2737520af3cad339aff6c9fc566f248caad743b2ded172507fa2365e2dede"
+    },
+    "runtime/help/walkthrough.mp4": {
+      "bytes": 4276616,
+      "sha256": "ffe7cd998e4a875b44ef45130e12a4d931b12d542c06b0276abfe5aa0978eabd"
+    },
+    "runtime/help/walkthrough.timeline.json": {
+      "bytes": 5340,
+      "sha256": "2f8f4b47822f24b77a857f3aaf0414c285d1105ac267598801a12067a7e7d9a7"
+    }
+  }
+}

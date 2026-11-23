@@ -1,0 +1,202 @@
+{
+  "requests": [
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:14336/"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:14336/theme.css"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:14336/context.css"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:14336/workflow.css"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:14336/design.css"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:14336/lineage.js"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:14336/design.js"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:14336/conditions.js"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:14336/project-schema.js"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:14336/narrative.js"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:14336/engine.js"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:14336/column-mapping.js"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:14336/workflow.js"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:14336/design-ui.js"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:14336/app.js"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:14336/fonts/PretendardVariable.woff2"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:14336/api/status"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:14336/worker.js"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:14336/engine.js"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:14336/"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:14336/theme.css"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:14336/context.css"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:14336/workflow.css"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:14336/design.css"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:14336/lineage.js"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:14336/design.js"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:14336/conditions.js"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:14336/project-schema.js"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:14336/narrative.js"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:14336/engine.js"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:14336/column-mapping.js"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:14336/workflow.js"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:14336/design-ui.js"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:14336/app.js"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:14336/fonts/PretendardVariable.woff2"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:14336/api/status"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:14336/worker.js"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:14336/engine.js"
+    }
+  ],
+  "blocked": [],
+  "page_errors": [],
+  "checks": {
+    "PLAN_ONLY.json downloaded": true,
+    "plan has no fabricated cells": true,
+    "fresh page restored full design": true,
+    "same plan preserved through upload": true,
+    "upload conditions unknown": true,
+    "unknown core blocks inference": true,
+    "core four allow overall inference": true,
+    "segment still unknown": true,
+    "PLAN_AND_AGGREGATES.json downloaded": true,
+    "aggregate save has four cells": true,
+    "AB_RESULT_REPORT.html downloaded": true,
+    "private condition evidence excluded from HTML": true,
+    "actual PDF produced": true,
+    "condition evidence edit invalidates result": true,
+    "no model or external requests": true,
+    "no browser exceptions": true
+  },
+  "source_sha256": {
+    "app.js": "762988e7d9645f2fcdf50acf3f4e0dc4cb67226a903519b137b9cc1ee2963450",
+    "column-mapping.js": "d1d3b0c7a2e3aeb520c9c831d3583cf5e2d889c6ea079837a7814868ab361a68",
+    "conditions.js": "ba43452438ed54ad4c42f5ffb7fb61c981247f5fa92e3019c711170b9820b0c5",
+    "context.css": "e75a39ddceb74b433ab3a4fb30a41ce0e7a5ed4fa5d82cc940bf4219b39b4edf",
+    "design-ui.js": "ceea7d89b668d43e5c4a4ded4ec95dc4a174cb702c7e96c406d8e6c91253e609",
+    "design.css": "26f0756ca833c6c4060da7f6f421a6591822ef3a845f74608ff68e0f66760cd3",
+    "design.js": "c2928c37c92a053534682baf0da82fbbe98fdf249ef7180604cd05cdc5ddda22",
+    "engine-issue-codes.json": "b12c04facf9e5aa576174176040077c43aa8e7325a6368f4f28c1767e6a33c4e",
+    "engine.js": "f40cc1fbd3e87dde4050cb0155673c2f368b2e88274a30fa03aeb09dbcde05f7",
+    "index.html": "ec196f8eb4537c0af489257dfd1df2e0606617252dfb35ba5fa7e019219800e3",
+    "launch.py": "8456b3f589dd918032d73dcfd2eecc5d46b70e57a40dbdc8a64dc865d35df62d",
+    "lineage.js": "6fbe55b5ba392e6bb64ff3dcaa5702936301aceac4f6599a55b99bad6bed84ba",
+    "narrative.js": "570af0c9cb1e10063bf0842e2393bf7561938ca3327e23f71c485c79abce1f4a",
+    "project-schema.js": "62a1f452094533af856f5674c6b3a82c97ad913713c9faf6503fae5393c68391",
+    "server.py": "0a43fa86eadb1d4ad11c2c6d501eaca3ecd201397dc8ea772a2325d79aa5f738",
+    "styles.css": "0869f2c9d558ad908dc67c07ad06d58af0ae6acdc09d80eb66bd0bf397e8a153",
+    "theme.css": "32af93deee832077377efcb2b83be4aeafe16fb3cd06e705ecc1e2a4038efd13",
+    "worker.js": "6f30bd381c13bbad95dcd6d6570dff14a23df9f5ad5b0a5d4d05bfe6078d7179",
+    "workflow.css": "98254b477975d83aad6ce4b8667776f21c772a1e2974d7d667682294de82abfa",
+    "workflow.js": "f70e3989f4f5432210ab4141f6dd83f86799248b82c59c1ff0b9fd7fdaad5478",
+    "fonts/LICENSE.txt": "8a2aba6114145294edbbce5998eab74320e7e07ce39999cc9f95ae2967d2eb9e",
+    "fonts/PretendardVariable.woff2": "9599f12fd42fc0bce1cd50b47a0c022e108d7aa64dd0d1bb0ed44f3282d900b4",
+    "help/walkthrough.timeline.json": "3fecbd92c7cb5bb584d5ceffa9019b8b42fec4318f9a6c86acd7d28eb0c1c1f5"
+  },
+  "input_sha256": "d391858b25425e3ad1cd1473abeae25260cece049041fbeca43c342296a74f1b"
+}

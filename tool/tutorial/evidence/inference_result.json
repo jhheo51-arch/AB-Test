@@ -1,0 +1,122 @@
+{
+  "version": "0.2.0",
+  "status": "limited",
+  "inference_allowed": true,
+  "overall": {
+    "A": {
+      "success": 130,
+      "total": 1000,
+      "rate": 0.13,
+      "ci": [
+        0.11056377462484193,
+        0.1522680266544689
+      ]
+    },
+    "B": {
+      "success": 150,
+      "total": 1000,
+      "rate": 0.15,
+      "ci": [
+        0.1292100725130883,
+        0.17346865842680032
+      ]
+    },
+    "diff": 0.01999999999999999,
+    "relative_change": 0.15384615384615377,
+    "ci": [
+      -0.010464505510432695,
+      0.05047203283648407
+    ],
+    "p_raw": 0.22074876980310534,
+    "p_adjusted": 0.22074876980310534,
+    "winner": "hold",
+    "inference_allowed": true,
+    "status": "tested"
+  },
+  "segments": [
+    {
+      "A": {
+        "success": 50,
+        "total": 500,
+        "rate": 0.1
+      },
+      "B": {
+        "success": 75,
+        "total": 500,
+        "rate": 0.15
+      },
+      "diff": 0.04999999999999999,
+      "relative_change": 0.4999999999999999,
+      "ci": null,
+      "p_raw": null,
+      "p_adjusted": null,
+      "winner": "not_tested",
+      "inference_allowed": false,
+      "status": "descriptive",
+      "label": "G1",
+      "exploratory": true
+    },
+    {
+      "A": {
+        "success": 80,
+        "total": 500,
+        "rate": 0.16
+      },
+      "B": {
+        "success": 75,
+        "total": 500,
+        "rate": 0.15
+      },
+      "diff": -0.010000000000000009,
+      "relative_change": -0.06250000000000006,
+      "ci": null,
+      "p_raw": null,
+      "p_adjusted": null,
+      "winner": "not_tested",
+      "inference_allowed": false,
+      "status": "descriptive",
+      "label": "G2",
+      "exploratory": true
+    }
+  ],
+  "interaction": {
+    "diff": null,
+    "ci": null,
+    "p_raw": null,
+    "p_adjusted": null,
+    "winner": "not_tested",
+    "status": "not_requested"
+  },
+  "family": {
+    "m": 1,
+    "method": "Holm",
+    "alpha": 0.05,
+    "hypotheses": [
+      {
+        "key": "overall",
+        "supported": true,
+        "p_raw": 0.22074876980310534,
+        "p_adjusted": 0.22074876980310534,
+        "included": true
+      }
+    ]
+  },
+  "issues": [
+    {
+      "code": "POSTHOC_SEGMENTS",
+      "row": null,
+      "column": "segment",
+      "message": "Post-hoc segment results are descriptive only; only the overall planned comparison uses m=1.",
+      "severity": "warning"
+    }
+  ],
+  "interval_note": "Nominal 95% Wilson / Newcombe intervals; not Holm simultaneous intervals and not dual to Fisher exact tests.",
+  "assumptions": {
+    "randomized": true,
+    "independent": true,
+    "mature": true,
+    "fixedStop": true,
+    "basis": "user_confirmed"
+  },
+  "segmentPrespecified": false
+}

@@ -26,7 +26,7 @@ RAW = (
     "treatment,20,100,SYNTHETIC_USERNOTE_TREATMENT"
 )
 SNAPSHOT = """() => ({
-    state: JSON.stringify(state),
+    state: JSON.stringify(state), rawConditions: readConditions(),
     forms: [...document.querySelectorAll('input,textarea,select')]
       .filter(e => !e.closest('#demo-dialog') && e.type !== 'file')
       .map(e => ({id:e.id,value:e.value,checked:e.checked,disabled:e.disabled})),
@@ -57,6 +57,8 @@ def run(args):
     # Deferred import keeps --help / missing --url side-effect free and portable.
     from playwright.sync_api import sync_playwright, expect
 
+    from validate_walkthrough_media import verify as verify_media
+    verify_media(ROOT)
     checks, page_errors, blocked, metadata = [], [], [], []
     evidence = ROOT / 'evidence'
     evidence.mkdir(exist_ok=True)
@@ -99,9 +101,10 @@ def run(args):
         poll_locator(video, 'e => e.readyState >= 1 && e.videoWidth > 0 && Number.isFinite(e.duration) && e.duration > 10')
         info = video.evaluate('e => ({width:e.videoWidth,height:e.videoHeight,duration:e.duration,readyState:e.readyState})')
         metadata.append({'case': label, **info})
-        check(label + ': real video metadata', info['width'] > 0 and info['duration'] > 10)
+        check(label + ': real video metadata', info['width'] == 1280 and info['height'] == 900 and abs(info['duration']-160.16)<.05)
         # Muted play is permitted without sending any request to an AI provider.
         video.evaluate('async e => { e.muted = true; await e.play(); }')
+        poll_locator(video, 'e => !e.paused && e.currentTime > 0.15')
         check(label + ': video really starts', not video.evaluate('e => e.paused'))
         if mobile:
             check(label + ': modal fits 390px', dialog.evaluate(
@@ -231,6 +234,7 @@ def run(args):
             select_file({}, 'synthetic-invalid.json')
             expect(page.locator('#toast')).to_contain_text('복원 실패')
             check('invalid native JSON rejected without changing analysis', snapshot() == before)
+            saved['conditions']['randomized']['evidence'] = 'SYNTHETIC raw\r\nimport\rnotes'
             select_file(saved, 'synthetic-valid.json')
             expect(page.locator('#source-badge')).to_contain_text('집계 복원')
             page.locator('#prepare').click()
@@ -244,6 +248,11 @@ def run(args):
             expect(page.locator('#results-view')).to_be_visible()
             check('functional inference guard remains active without conditions', page.evaluate(
                 'state.result.inference_allowed === false && state.result.overall.p_raw == null'))
+            assert page.evaluate('readConditions().randomized.evidence') == saved['conditions']['randomized']['evidence']
+            help_cycle('imported raw CRLF notes and selected unknown conditions button close')
+            page.set_viewport_size({'width':390,'height':844})
+            help_cycle('mobile imported raw notes Escape close', escape=True, mobile=True)
+            page.set_viewport_size({'width':1440,'height':1000})
 
             page.locator('nav [data-view=input]').click()
             page.locator('#data-text').fill(RAW)
