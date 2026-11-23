@@ -2,7 +2,15 @@
   "app": "tool/app",
   "distribution": "tool/downloads/AB_Test_Workspace.zip",
   "demo": "tool/app/help/walkthrough.mp4",
-  "tutorial": {"duration_seconds":160.16,"cue_count":26,"sha256":"ffe7cd998e4a875b44ef45130e12a4d931b12d542c06b0276abfe5aa0978eabd","actual_chrome_synthetic":true,"replaced_previous_video":true,"live_llm_calls":0,"notes":"tool/tutorial/README.md"},
+  "tutorial": {
+    "duration_seconds": 160.16,
+    "cue_count": 26,
+    "sha256": "ffe7cd998e4a875b44ef45130e12a4d931b12d542c06b0276abfe5aa0978eabd",
+    "actual_chrome_synthetic": true,
+    "replaced_previous_video": true,
+    "live_llm_calls": 0,
+    "notes": "tool/tutorial/README.md"
+  },
   "policy": "single_current_copy_on_GitHub_local_history_only",
   "stabilization": {
     "R01": "verified",
@@ -20,16 +28,39 @@
   "design_tutorial_added_to_analysis_video": true,
   "verification": "tool/app/integration_verification.json",
   "release_metadata": "tool/app/verification.json",
-  "current_verified_counts": {"scripts": 25, "smoke_unit_groups": 145, "separate_semantic_cases": 1029, "engine_gate_cases_included_in_semantic": 972, "browser_checks": 410},
-  "audit_fixes": {"S01": "multiline_metadata_and_lossless_unedited_import", "S02": "raw_evidence_preserved_until_input", "S03": "canonical_CSV_collisions_rejected_before_apply", "S04": "contradictory_digest_rejected_legacy_untyped_origin_retained", "S05": "portable_review_links_all_local_Markdown_links_checked"},
-  "metadata_policy": "Current runtime hashes and log-derived counts; historical baseline remains unchanged, only intentionally modified design-ui and replaced video excluded from preserved controls; original capture hashes describe pre-help-copy snapshot.",
+  "current_verified_counts": {
+    "scripts": 32,
+    "smoke_unit_groups": 159,
+    "separate_semantic_cases": 1029,
+    "engine_gate_cases_included_in_semantic": 972,
+    "browser_checks": 531
+  },
+  "audit_fixes": {
+    "S01": "multiline_metadata_and_lossless_unedited_import",
+    "S02": "raw_evidence_preserved_until_input",
+    "S03": "canonical_CSV_collisions_rejected_before_apply",
+    "S04": "contradictory_digest_rejected_legacy_untyped_origin_retained",
+    "S05": "portable_review_links_all_local_Markdown_links_checked"
+  },
+  "metadata_policy": "Current runtime SHA-256 and actual log-derived counts; immutable current-upstream controls checked separately from unchanged historical baselines; schema 8 rollout and schema 7 CSV/plan saves are explicit.",
   "conditions": {
     "core_unknown_or_no": "descriptive_only",
     "segment_unknown_or_no": "exploratory_segments_overall_gate_separate",
     "evidence": "local_JSON_and_local_method_only_excluded_from_public_HTML_PDF_and_LLM",
-    "storage_schema": 7,
+    "storage_schema": 8,
     "legacy_true": "retained_explicit_legacy_user_confirmation_no_evidence",
     "legacy_false": "unknown_not_known_denial",
-    "tutorial_added": true
-  }
+    "tutorial_added": true,
+    "csv_plan_storage_schema": 7,
+    "rollout_storage_schema": 8,
+    "legacy_storage_versions": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ]
+  },
+  "current_base_commit": "ff6d463adbafa5b5525204ab9bc3adb6a8f10465"
 }

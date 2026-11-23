@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "url": "http://127.0.0.1:12942",
+  "url": "http://127.0.0.1:1275",
   "checks": [
     {
       "name": "exact version-free document title",
@@ -407,14 +407,14 @@
       "width": 1280,
       "height": 900,
       "duration": 160.16,
-      "readyState": 1
+      "readyState": 4
     },
     {
       "case": "initial Escape close",
       "width": 1280,
       "height": 900,
       "duration": 160.16,
-      "readyState": 4
+      "readyState": 1
     },
     {
       "case": "prepared input button close",
@@ -428,7 +428,7 @@
       "width": 1280,
       "height": 900,
       "duration": 160.16,
-      "readyState": 4
+      "readyState": 1
     },
     {
       "case": "share with both consents button close",
@@ -456,7 +456,7 @@
       "width": 1280,
       "height": 900,
       "duration": 160.16,
-      "readyState": 4
+      "readyState": 1
     },
     {
       "case": "mapping error button close",
@@ -470,7 +470,7 @@
       "width": 1280,
       "height": 900,
       "duration": 160.16,
-      "readyState": 4
+      "readyState": 1
     },
     {
       "case": "390px error button close",
@@ -484,7 +484,7 @@
       "width": 1280,
       "height": 900,
       "duration": 160.16,
-      "readyState": 1
+      "readyState": 4
     }
   ],
   "scope": "synthetic local browser regression",
@@ -492,5 +492,5 @@
   "count": 99,
   "passed_count": 99,
   "failed_count": 0,
-  "screenshot": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_current_package_s0him8nf\\AB_Test_Workspace\\evidence\\current_interface.png"
+  "screenshot": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\한글 ZIP 실행 경로 vv4i7z1d\\AB_Test_Workspace\\evidence\\current_interface.png"
 }

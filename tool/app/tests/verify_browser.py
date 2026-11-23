@@ -141,11 +141,8 @@ with sync_playwright() as pw:
     check('50000 individual rows complete local UI path',page.locator('#overall-results').inner_text().count('분모 25000')==2)
     print('BOUNDARY_50000_ELAPSED_SECONDS',round(time.monotonic()-started,3),flush=True)
     fresh(page);page.select_option('#format','individual');page.set_input_files('#csv-file',{'name':'SYNTHETIC_50001.csv','mimeType':'text/csv','buffer':(big+'\nEXTRA,A,0').encode()})
-    try:expect(page.locator('#source-badge')).to_contain_text('사용자 CSV',timeout=30000)
-    except AssertionError:
-        print('LARGE_FILE_STATE',page.evaluate('({epoch:inputEpoch,task:inputTask,busy:state.busy,kind:state.sourceKind,len:document.querySelector("#data-text").value.length,status:document.querySelector("#prepare-state").textContent,body:document.body.innerText.slice(0,400)})'),js_errors,flush=True);raise
-    page.click('#prepare');expect(page.locator('#issues')).not_to_be_empty()
-    check('50001 individual rows are blocked in UI',page.locator('#analysis-options').is_hidden())
+    expect(page.locator('#toast')).to_contain_text('TOO_MANY_ROWS')
+    check('50001 individual file rows rejected before replacing current input',page.locator('#analysis-options').is_hidden() and page.locator('#data-text').input_value()=='')
     fresh(page);page.set_viewport_size({'width':390,'height':844});page.click('#example-aggregate');prepare(page)
     check('390px input page has no global horizontal overflow',page.evaluate('document.documentElement.scrollWidth<=innerWidth'))
     page.screenshot(path=str(screenshots/'input_mobile.png'),full_page=True)

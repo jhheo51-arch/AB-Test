@@ -1,0 +1,93 @@
+{
+  "status": "PASS",
+  "negative_guards": 19,
+  "status_safety_checks": 2,
+  "count": 21,
+  "checks": [
+    {
+      "guard": "omit_source",
+      "rejected": true
+    },
+    {
+      "guard": "stale_source",
+      "rejected": true
+    },
+    {
+      "guard": "wrong_script_count",
+      "rejected": true
+    },
+    {
+      "guard": "wrong_semantic_count",
+      "rejected": true
+    },
+    {
+      "guard": "skip_control",
+      "rejected": true
+    },
+    {
+      "guard": "rewrite_baseline",
+      "rejected": true
+    },
+    {
+      "guard": "old_video",
+      "rejected": true
+    },
+    {
+      "guard": "stale_caption",
+      "rejected": true
+    },
+    {
+      "guard": "profile_omitted_source",
+      "rejected": true
+    },
+    {
+      "guard": "profile_stale_source",
+      "rejected": true
+    },
+    {
+      "guard": "profile_privacy_flag",
+      "rejected": true
+    },
+    {
+      "guard": "profile_tutorial_claim",
+      "rejected": true
+    },
+    {
+      "guard": "profile_fixture_hash",
+      "rejected": true
+    },
+    {
+      "guard": "profile_missing_preserved",
+      "rejected": true
+    },
+    {
+      "guard": "stale_current_counts",
+      "rejected": true
+    },
+    {
+      "guard": "stale_native_schema",
+      "rejected": true
+    },
+    {
+      "guard": "stale_upstream_engine",
+      "rejected": true
+    },
+    {
+      "guard": "stale_STATUS",
+      "rejected": true
+    },
+    {
+      "guard": "stale_STATUS_storage_schema",
+      "rejected": true
+    },
+    {
+      "guard": "preserve_unrelated_STATUS_fields",
+      "pass": true
+    },
+    {
+      "guard": "absent_target_never_writes_arbitrary_parent",
+      "pass": true
+    }
+  ],
+  "source_untouched": true
+}

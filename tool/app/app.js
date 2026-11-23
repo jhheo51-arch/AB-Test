@@ -7,6 +7,7 @@ let state={revision:1,view:'input',sourceKind:'none',syntheticOrigin:false,hash:
 const rolloutExampleStatus=$('#rollout-example-status');
 let rolloutExampleRequest=null;
 const rollout=ABRollout.mount(()=>{
+ if(inputTask)cancelInput();
  cancelRolloutExample();
  refreshRolloutShare();
 });
@@ -18,7 +19,7 @@ function cancelRolloutExample(){
 }
 async function loadRolloutExample(button){
  cancelRolloutExample();
- if(inputTask?.kind==='restore')cancelInput();
+ const ticket=startInput('rollout-example',false);
  const request=new AbortController();
  rolloutExampleRequest=request;
  rolloutExampleStatus.textContent='사례를 불러오는 중입니다.';
@@ -26,7 +27,7 @@ async function loadRolloutExample(button){
   const response=await fetch('examples/projects/'+button.dataset.rolloutExample,{signal:request.signal});
   if(!response.ok)throw Error('Example download failed');
   const record=ABProject.parse(await response.text()).rollout;
-  if(rolloutExampleRequest!==request)return;
+  if(rolloutExampleRequest!==request||!ownsInput(ticket))return;
   if(!record)throw Error('Rollout record missing');
   rollout.restore(record);
   refreshRolloutShare();
@@ -35,6 +36,7 @@ async function loadRolloutExample(button){
   if(rolloutExampleRequest===request)rolloutExampleStatus.textContent='사례를 불러오지 못했습니다. 실행 ZIP을 다시 풀거나 프로젝트 복원에서 JSON을 열어 주세요.';
  }finally{
   if(rolloutExampleRequest===request)rolloutExampleRequest=null;
+  finishInput(ticket);
  }
 }
 // Raw imported metadata survives DOM newline normalization until its own input event.
@@ -66,7 +68,7 @@ function syncInputControls(){
 }
 function clearShare(){clearPrint();$('#share-confirm').checked=false;$('#export-report').disabled=true;$('#print-report').disabled=true;}
 function cancelInput(){
- inputEpoch++;inputTask=null;
+ cancelRolloutExample();inputEpoch++;inputTask=null;
  if(worker&&state.busy){const stopped=worker;worker=null;stopped.terminate();}
  state.busy=false;const cancelled=pending;pending=null;if(cancelled)cancelled.reject(Error('새 입력으로 작업을 취소했습니다.'));
  syncInputControls();
@@ -138,10 +140,11 @@ $('#prepare').addEventListener('click',prepare);$('#analyze').addEventListener('
 $('#data-text').addEventListener('input',()=>{state.sourceKind=isSynthetic()?'synthetic_edited':'pasted';clearAssumptions();markChanged(true);});$('#format').addEventListener('change',()=>{clearAssumptions();markChanged(true);});
 for(const id of ['purpose','metric','window','policy-a','policy-b','audience'])$('#'+id).addEventListener('input',()=>{rawMeta.delete(id);markChanged(false);});for(const id of metaIds)$('#'+id).addEventListener('change',()=>markChanged(false));
 $('#confirm-input').onchange=syncInputControls;
-$('#csv-file').addEventListener('change',async e=>{const f=e.target.files?.[0];if(!f)return;e.target.value='';lineageSeed=null;resetMapping();const ticket=startInput('file');clearAssumptions();$('#prepare-state').textContent='브라우저에서 파일을 읽는 중입니다.';try{
+$('#csv-file').addEventListener('change',async e=>{const f=e.target.files?.[0];if(!f)return;e.target.value='';const ticket=startInput('file',false);$('#prepare-state').textContent='브라우저에서 파일을 읽는 중입니다.';try{
  if(f.size>MAX_BYTES)throw Error('2MiB를 넘는 파일은 미지원입니다.');const buffer=await f.arrayBuffer();if(!ownsInput(ticket))return;
  const text=new TextDecoder('utf-8',{fatal:true}).decode(buffer);if(!ownsInput(ticket))return;
- $('#data-text').value=text;state.sourceKind='csv';state.syntheticOrigin=false;$('#file-note').textContent='파일을 브라우저에서 읽었습니다. 서버에 보내지 않았습니다. 열과 입력 구조를 확인해 주세요.';$('#prepare-state').textContent='파일을 읽었습니다. 데이터 확인하기를 눌러 주세요.';updateTop();
+ try{ABEngine.parseTable(text);}catch(error){throw Error((error.code?error.code+': ':'')+error.message);}if(!ownsInput(ticket))return;
+ lineageSeed=null;resetMapping();markChanged(true);clearAssumptions();rollout.restore(null);syncInputControls();renderReport();$('#data-text').value=text;state.sourceKind='csv';state.syntheticOrigin=false;$('#file-note').textContent='파일을 브라우저에서 읽었습니다. 서버에 보내지 않았습니다. 열과 입력 구조를 확인해 주세요.';$('#prepare-state').textContent='파일을 읽었습니다. 데이터 확인하기를 눌러 주세요.';updateTop();
  }catch(err){if(ownsInput(ticket)){$('#prepare-state').textContent='새 파일을 반영하지 못했습니다. 현재 텍스트를 확인해 주세요.';notify('파일 읽기 실패: '+err.message);}}finally{if(ownsInput(ticket)){e.target.value='';finishInput(ticket);}}});
 $('#guide').onclick=()=>{const node=$('#guide-answer');node.hidden=false;node.textContent='규칙 기반 설계 안내: 비교할 두 정책, 성공 사건과 전체 배정 분모, 각자에게 같은 관측 기회, 배정 전 집단, 고정 종료·보호 조건을 정하세요. 결과가 없으면 계획까지만 기록합니다. 문구·집단을 자동 생성한 LLM 응답은 아닙니다.';};
 $('#llm-consent').onchange=()=>$('#explain').disabled=!$('#llm-consent').checked||!state.result;$('#explain').onclick=explain;

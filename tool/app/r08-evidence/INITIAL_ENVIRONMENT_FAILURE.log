@@ -1,0 +1,96 @@
+PASS Python launcher Korean spaces no-browser loopback HTTP
+PASS all owned server ports closed
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\hermes\profiles\mira\cache\scratch\ab_tool_r08_integration\tool\app\tests\verify_r08_environment.py", line 43, in run
+    listening=[line.split()[1] for line in net.splitlines() if str(p.pid)==line.split()[-1] and len(line.split())>=5 and 'LISTENING' in line]
+                                                                           ~~~~~~~~~~~~^^^^
+IndexError: list index out of range
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python314\Lib\shutil.py", line 693, in _rmtree_unsafe
+    os.rmdir(fullname)
+    ~~~~~~~~^^^^^^^^^^
+PermissionError: [WinError 32] 다른 프로세스가 파일을 사용 중이기 때문에 프로세스가 액세스 할 수 없습니다: 'C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\한글 경로 공백 cvvfj7wa\\작업실 앱'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python314\Lib\tempfile.py", line 931, in onexc
+    _os.unlink(path)
+    ~~~~~~~~~~^^^^^^
+PermissionError: [WinError 5] 액세스가 거부되었습니다: 'C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\한글 경로 공백 cvvfj7wa\\작업실 앱'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python314\Lib\shutil.py", line 707, in _rmtree_unsafe
+    os.rmdir(path)
+    ~~~~~~~~^^^^^^
+PermissionError: [WinError 32] 다른 프로세스가 파일을 사용 중이기 때문에 프로세스가 액세스 할 수 없습니다: 'C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\한글 경로 공백 cvvfj7wa\\작업실 앱'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python314\Lib\tempfile.py", line 931, in onexc
+    _os.unlink(path)
+    ~~~~~~~~~~^^^^^^
+PermissionError: [WinError 5] 액세스가 거부되었습니다: 'C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\한글 경로 공백 cvvfj7wa\\작업실 앱'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\hermes\profiles\mira\cache\scratch\ab_tool_r08_integration\tool\app\tests\verify_r08_environment.py", line 81, in <module>
+    a=argparse.ArgumentParser();a.add_argument('--baseline',action='store_true');a.add_argument('--root',type=Path,default=R);args=a.parse_args();r=run(args.root,args.baseline);sys.exit(0 if args.baseline or r['status']=='PASS' else 1)
+                                                                                                                                                    ~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\AppData\Local\hermes\profiles\mira\cache\scratch\ab_tool_r08_integration\tool\app\tests\verify_r08_environment.py", line 38, in run
+    with tempfile.TemporaryDirectory(prefix='한글 경로 공백 ',dir=os.environ['TMPDIR']) as tmp:
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python314\Lib\tempfile.py", line 972, in __exit__
+    self.cleanup()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python314\Lib\tempfile.py", line 976, in cleanup
+    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python314\Lib\tempfile.py", line 956, in _rmtree
+    _shutil.rmtree(name, onexc=onexc)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python314\Lib\shutil.py", line 852, in rmtree
+    _rmtree_impl(path, dir_fd, onexc)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python314\Lib\shutil.py", line 697, in _rmtree_unsafe
+    onexc(os.rmdir, fullname, err)
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python314\Lib\tempfile.py", line 946, in onexc
+    cls._rmtree(path, ignore_errors=ignore_errors,
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                repeated=(path == name))
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python314\Lib\tempfile.py", line 956, in _rmtree
+    _shutil.rmtree(name, onexc=onexc)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python314\Lib\shutil.py", line 852, in rmtree
+    _rmtree_impl(path, dir_fd, onexc)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python314\Lib\shutil.py", line 711, in _rmtree_unsafe
+    onexc(os.rmdir, path, err)
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python314\Lib\tempfile.py", line 946, in onexc
+    cls._rmtree(path, ignore_errors=ignore_errors,
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                repeated=(path == name))
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python314\Lib\tempfile.py", line 956, in _rmtree
+    _shutil.rmtree(name, onexc=onexc)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python314\Lib\shutil.py", line 852, in rmtree
+    _rmtree_impl(path, dir_fd, onexc)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python314\Lib\shutil.py", line 711, in _rmtree_unsafe
+    onexc(os.rmdir, path, err)
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python314\Lib\shutil.py", line 707, in _rmtree_unsafe
+    os.rmdir(path)
+    ~~~~~~~~^^^^^^
+PermissionError: [WinError 32] 다른 프로세스가 파일을 사용 중이기 때문에 프로세스가 액세스 할 수 없습니다: 'C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\한글 경로 공백 cvvfj7wa\\작업실 앱'

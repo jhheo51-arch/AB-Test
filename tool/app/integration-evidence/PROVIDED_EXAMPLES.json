@@ -1,0 +1,20 @@
+[
+  {
+    "name": "routine-service-original-hold.json",
+    "url": "https://github.com/jhheo51-arch/AB-Test/releases/download/tool-rollout-report-20261123/routine-service-original-hold.json",
+    "sha256": "11539a86c37a3e30aebd33660a5a4131b9322eb49b4f9b84bc1d36fefda11efd",
+    "bytes": 2296
+  },
+  {
+    "name": "routine-service-metrics-met-hold.json",
+    "url": "https://github.com/jhheo51-arch/AB-Test/releases/download/tool-rollout-report-20261123/routine-service-metrics-met-hold.json",
+    "sha256": "9d55554fb9ed5f675f7d16a3a61e917f3ed52cb4f827da6ffcb81dac1ed1ad61",
+    "bytes": 2301
+  },
+  {
+    "name": "routine-service-edited-review.json",
+    "url": "https://github.com/jhheo51-arch/AB-Test/releases/download/tool-rollout-report-20261123/routine-service-edited-review.json",
+    "sha256": "1af0f2b1e7b3200a11ddbb64eea447049cfe3b2b800c3d0ccdaa68b856f48ac7",
+    "bytes": 2337
+  }
+]

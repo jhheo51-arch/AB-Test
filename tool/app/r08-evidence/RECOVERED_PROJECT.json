@@ -1,0 +1,88 @@
+{
+  "format": "ab-local-project",
+  "version": 7,
+  "conditions": {
+    "randomized": {
+      "status": "unknown",
+      "evidence": "",
+      "origin": "user_statement"
+    },
+    "independent": {
+      "status": "unknown",
+      "evidence": "",
+      "origin": "user_statement"
+    },
+    "mature": {
+      "status": "unknown",
+      "evidence": "",
+      "origin": "user_statement"
+    },
+    "fixedStop": {
+      "status": "unknown",
+      "evidence": "",
+      "origin": "user_statement"
+    },
+    "segmentPrespecified": {
+      "status": "unknown",
+      "evidence": "",
+      "origin": "user_statement"
+    }
+  },
+  "source_kind": "csv",
+  "synthetic": false,
+  "source_digest": "245fd49c7fcc2e89344c459c88629ba925290ae62526fe1e9bf51981aee00394",
+  "plan": {
+    "randomized": false,
+    "independent": false,
+    "mature": false,
+    "fixedStop": false,
+    "includeSegments": false,
+    "segmentPrespecified": false,
+    "purpose": "",
+    "metric": "",
+    "window": "",
+    "policyA": "",
+    "policyB": "",
+    "audience": "",
+    "alpha": 0.05
+  },
+  "cells": [
+    {
+      "arm": "A",
+      "segment": null,
+      "success": 10,
+      "total": 100
+    },
+    {
+      "arm": "B",
+      "segment": null,
+      "success": 20,
+      "total": 100
+    }
+  ],
+  "decision": "합성 키보드 검토",
+  "revisit": "",
+  "engine_version": "0.2.0",
+  "judgment": {
+    "direction": "",
+    "checks": ""
+  },
+  "lineage": {
+    "version": 1,
+    "algorithm": "SHA-256",
+    "origin": {
+      "kind": "input_text_utf8",
+      "digest": "245fd49c7fcc2e89344c459c88629ba925290ae62526fe1e9bf51981aee00394"
+    },
+    "previous": null,
+    "current": {
+      "kind": "analysis_csv_utf8",
+      "digest": "245fd49c7fcc2e89344c459c88629ba925290ae62526fe1e9bf51981aee00394"
+    },
+    "transformation": {
+      "name": "identity",
+      "version": "0.5.1"
+    }
+  },
+  "design": null
+}

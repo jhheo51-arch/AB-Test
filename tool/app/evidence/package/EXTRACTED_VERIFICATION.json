@@ -1,9 +1,9 @@
 {
   "status": "PASS",
-  "timestamp_utc": "2026-11-23T09:05:38.106691+00:00",
+  "timestamp_utc": "2026-11-23T14:28:10.668981+00:00",
   "deployment": "single canonical current app; latest-only; no visible product version labels",
   "integration_suite": {
-    "scripts": 27,
+    "scripts": 32,
     "all_exit_zero": true,
     "record": "integration_verification.json",
     "server_stopped": true
@@ -19,7 +19,11 @@
     "R03_browser_verification.json": 14,
     "design-evidence/BROWSER_VERIFICATION.json": 21,
     "design-evidence/BOUNDARY_VERIFICATION.json": 13,
-    "fix-evidence/semantic/BROWSER_VERIFICATION.json": 101
+    "fix-evidence/semantic/BROWSER_VERIFICATION.json": 101,
+    "r08-evidence/BROWSER_VERIFICATION.json": 37,
+    "startscreen-evidence/COMBINED_VERIFICATION.json": 15,
+    "startscreen-evidence/BROWSER_VERIFICATION.json": 8,
+    "rollout_verification.json": 2
   },
   "unit_groups": [
     {
@@ -66,12 +70,12 @@
     },
     {
       "script": "project_schema_smoke.cjs",
-      "groups": 27,
+      "groups": 28,
       "exit_code": 0,
       "log": "evidence/integration/project_schema_smoke.log"
     }
   ],
-  "unit_group_total": 158,
+  "unit_group_total": 159,
   "numeric_reference": {
     "record": "tests/reference_verification.json",
     "status": "PASS",
@@ -122,7 +126,7 @@
     "fix-evidence/semantic/BROWSER_VERIFICATION.json"
   ],
   "source_sha256": {
-    "app.js": "762988e7d9645f2fcdf50acf3f4e0dc4cb67226a903519b137b9cc1ee2963450",
+    "app.js": "66c55622f625df4c7fa114234a3838eeedd928b03f7c5fdd8a95e0f55542cea6",
     "column-mapping.js": "e11e7c6e6b517fc0fde03d90aff5a69b6271bf0cfb443f0a11f1311fba03ffd1",
     "column-profile.js": "b74a1cf411191c11931dcb137b5f14a78b90572fd038017151078c178980a365",
     "conditions.js": "ba43452438ed54ad4c42f5ffb7fb61c981247f5fa92e3019c711170b9820b0c5",
@@ -131,33 +135,42 @@
     "design.css": "26f0756ca833c6c4060da7f6f421a6591822ef3a845f74608ff68e0f66760cd3",
     "design.js": "c2928c37c92a053534682baf0da82fbbe98fdf249ef7180604cd05cdc5ddda22",
     "engine-issue-codes.json": "b12c04facf9e5aa576174176040077c43aa8e7325a6368f4f28c1767e6a33c4e",
-    "engine.js": "f40cc1fbd3e87dde4050cb0155673c2f368b2e88274a30fa03aeb09dbcde05f7",
-    "index.html": "eafffac37da784f2396bfcad476513f698cdb00f3c7955fe4fd033f413e93c2f",
-    "launch.cmd": "341927114a537ad03818be3f60ccb948e118c8e660dc3e0976e93b7dda31a9e0",
-    "launch.py": "8456b3f589dd918032d73dcfd2eecc5d46b70e57a40dbdc8a64dc865d35df62d",
+    "engine.js": "9511c4e82edf0fbf3affb554df2f45ea643f2c4f36d3a80b553de0e472861a37",
+    "index.html": "128b0bfd0b52fdae2b300a0c21f75dde3524016a533c8a4e85681c17df9c7655",
+    "launch.cmd": "002d6f63f7cb57146cc9dea4b1067ace169e6e4b40ce09ee25c902f13cd44728",
+    "launch.py": "2fb888c9f8f207f3af31e777670e2f96ec2daccdc3924fbbf6bd1b13cbc6e7f4",
     "lineage.js": "6fbe55b5ba392e6bb64ff3dcaa5702936301aceac4f6599a55b99bad6bed84ba",
     "narrative.js": "570af0c9cb1e10063bf0842e2393bf7561938ca3327e23f71c485c79abce1f4a",
     "profile-ui.js": "f11066b21b8c57b62cf38b5cc60c59c5b3f26ed964a462d599cde4ba38aec418",
-    "project-schema.js": "62a1f452094533af856f5674c6b3a82c97ad913713c9faf6503fae5393c68391",
-    "server.py": "288b2ee4a30cc12674a133fc0d2541621984191969f663ec49b4f973df2b498a",
+    "project-schema.js": "b7ec06b17d9198649c932fb5169fd0023617300cd59ae1d30dbd39b8603f8b3c",
+    "rollout.js": "731d110b0ea3654c78d95007945cdd3ab943390f087a6e142552c4d558c5f22e",
+    "server.py": "b980c4dedcba8da356ec8c6850856db2fe14434be1b2ad382db845ae2649476f",
     "styles.css": "0869f2c9d558ad908dc67c07ad06d58af0ae6acdc09d80eb66bd0bf397e8a153",
     "theme.css": "32af93deee832077377efcb2b83be4aeafe16fb3cd06e705ecc1e2a4038efd13",
     "worker.js": "6f30bd381c13bbad95dcd6d6570dff14a23df9f5ad5b0a5d4d05bfe6078d7179",
-    "workflow.css": "98254b477975d83aad6ce4b8667776f21c772a1e2974d7d667682294de82abfa",
+    "workflow.css": "bcd825a626265603b1c2e8222373762de20494d1502ae5162556cc9f68fe6d03",
     "workflow.js": "ecaf337a71603f6a470654572c70f2d57b28e886c496f1b48d99f08870f2fdcb"
   },
   "preserved_baseline_bytes": {
-    "engine.js": true,
     "worker.js": true,
     "narrative.js": true,
     "lineage.js": true,
     "design.js": true,
     "theme.css": true,
     "context.css": true,
-    "workflow.css": true,
     "styles.css": true
   },
   "intentional_baseline_control_changes": {
+    "engine.js": {
+      "reason": "Published upstream a0 rollout interval additions; unchanged from current upstream, not R08 math edits.",
+      "historical_sha256": "f40cc1fbd3e87dde4050cb0155673c2f368b2e88274a30fa03aeb09dbcde05f7",
+      "current_sha256": "9511c4e82edf0fbf3affb554df2f45ea643f2c4f36d3a80b553de0e472861a37"
+    },
+    "workflow.css": {
+      "reason": "Published upstream ff start-screen/rollout styles; unchanged from ff.",
+      "historical_sha256": "98254b477975d83aad6ce4b8667776f21c772a1e2974d7d667682294de82abfa",
+      "current_sha256": "bcd825a626265603b1c2e8222373762de20494d1502ae5162556cc9f68fe6d03"
+    },
     "column-mapping.js": {
       "reason": "Intentional bounded CRM alias additions and stricter observation-alias no-drop guard; statistical engine unchanged.",
       "historical_sha256": "d1d3b0c7a2e3aeb520c9c831d3583cf5e2d889c6ea079837a7814868ab361a68",
@@ -252,14 +265,14 @@
         "width": 1280,
         "height": 900,
         "duration": 160.16,
-        "readyState": 1
+        "readyState": 4
       },
       {
         "case": "initial Escape close",
         "width": 1280,
         "height": 900,
         "duration": 160.16,
-        "readyState": 4
+        "readyState": 1
       },
       {
         "case": "prepared input button close",
@@ -273,7 +286,7 @@
         "width": 1280,
         "height": 900,
         "duration": 160.16,
-        "readyState": 4
+        "readyState": 1
       },
       {
         "case": "share with both consents button close",
@@ -301,7 +314,7 @@
         "width": 1280,
         "height": 900,
         "duration": 160.16,
-        "readyState": 4
+        "readyState": 1
       },
       {
         "case": "mapping error button close",
@@ -315,7 +328,7 @@
         "width": 1280,
         "height": 900,
         "duration": 160.16,
-        "readyState": 4
+        "readyState": 1
       },
       {
         "case": "390px error button close",
@@ -329,14 +342,14 @@
         "width": 1280,
         "height": 900,
         "duration": 160.16,
-        "readyState": 1
+        "readyState": 4
       }
     ],
     "design_feature_tutorial_added": true,
     "conditions_tutorial_added": true,
     "full_decode": {
       "status": "PASS",
-      "timestamp_utc": "2026-11-23T09:04:37.115391+00:00",
+      "timestamp_utc": "2026-11-23T14:26:57.459706+00:00",
       "sha256": "ffe7cd998e4a875b44ef45130e12a4d931b12d542c06b0276abfe5aa0978eabd",
       "duration_seconds": 160.16,
       "cue_count": 26,
@@ -354,13 +367,16 @@
     "capture_source_note": "Original capture hashes describe the fixed pre-help-copy snapshot, not the current index/server hashes; current runtime hashes above and actual Chrome checks are rerun."
   },
   "storage": {
-    "schema": 7,
+    "schema": 8,
+    "csv_plan_schema": 7,
+    "rollout_schema": 8,
     "legacy_imports": [
       2,
       3,
       4,
       5,
-      6
+      6,
+      7
     ],
     "same_save_parse_normalization": true,
     "audience_guided_maxlength": 300
@@ -380,8 +396,8 @@
     "Actual-app synthetic R05/R06 tutorial preserved byte-for-byte; optional local column-profile slice added, not yet covered by the tutorial; no human study or live LLM",
     "Smoke groups, semantic cases and browser checks are separate counts; source/extracted repetitions are not additional unique coverage."
   ],
-  "metadata_generated_utc": "2026-11-23T09:05:38.407601+00:00",
-  "browser_check_total": 469,
+  "metadata_generated_utc": "2026-11-23T14:28:10.924421+00:00",
+  "browser_check_total": 531,
   "semantic_regressions": {
     "script": "semantic_edges.cjs",
     "cases": 1029,
@@ -401,16 +417,16 @@
     "arm_values_stored": false,
     "automatic_persistence": false,
     "conditions_inherited": false,
-    "project_schema": 7,
+    "project_schema": 8,
+    "csv_plan_schema": 7,
+    "rollout_schema": 8,
     "tutorial_covers_profiles": false,
     "browser_record": "column_profile_verification.json",
     "node_log": "evidence/integration/column_profile_smoke.log",
     "fixture_sha256": "683379c56f793d073cbff58730112b0773f78cb36c1b9c91816efb1cd13f5ca9",
     "baseline_commit": "ce355644e9a58165494b13f8192aee13dd09ef2e",
     "preserved_sha256": {
-      "engine.js": "f40cc1fbd3e87dde4050cb0155673c2f368b2e88274a30fa03aeb09dbcde05f7",
       "worker.js": "6f30bd381c13bbad95dcd6d6570dff14a23df9f5ad5b0a5d4d05bfe6078d7179",
-      "project-schema.js": "62a1f452094533af856f5674c6b3a82c97ad913713c9faf6503fae5393c68391",
       "design.js": "c2928c37c92a053534682baf0da82fbbe98fdf249ef7180604cd05cdc5ddda22",
       "design-ui.js": "ceea7d89b668d43e5c4a4ded4ec95dc4a174cb702c7e96c406d8e6c91253e609",
       "conditions.js": "ba43452438ed54ad4c42f5ffb7fb61c981247f5fa92e3019c711170b9820b0c5",
@@ -419,5 +435,54 @@
       "help/walkthrough.timeline.json": "2f8f4b47822f24b77a857f3aaf0414c285d1105ac267598801a12067a7e7d9a7",
       "tests/semantic_edges.cjs": "27c49fae53d9b0a3e390da93b3c7f9fe1d274da7e7f99aa328a3bb828c707397"
     }
+  },
+  "current_verified_counts": {
+    "scripts": 32,
+    "smoke_unit_groups": 159,
+    "separate_semantic_cases": 1029,
+    "engine_gate_cases_included_in_semantic": 972,
+    "browser_checks": 531
+  },
+  "r08": {
+    "browser_record": "r08-evidence/BROWSER_VERIFICATION.json",
+    "environment_record": "r08-evidence/ENVIRONMENT_VERIFICATION.json",
+    "human_observations": 0,
+    "actual_model_calls": 0
+  },
+  "upstream_integration": {
+    "base_commit": "ff6d463adbafa5b5525204ab9bc3adb6a8f10465",
+    "baseline_record": "startscreen-evidence/BASELINE.json",
+    "baseline_sha256": "f97e30f1df6ba222114947c8f66ae5bdc071397d9b7933b27d44cbf827ea1b53",
+    "preserved_bytes": {
+      "column-mapping.js": true,
+      "column-profile.js": true,
+      "conditions.js": true,
+      "context.css": true,
+      "design-ui.js": true,
+      "design.css": true,
+      "design.js": true,
+      "engine-issue-codes.json": true,
+      "engine.js": true,
+      "index.html": true,
+      "lineage.js": true,
+      "narrative.js": true,
+      "profile-ui.js": true,
+      "project-schema.js": true,
+      "rollout.js": true,
+      "styles.css": true,
+      "theme.css": true,
+      "worker.js": true,
+      "workflow.css": true,
+      "workflow.js": true,
+      "fonts/PretendardVariable.woff2": true,
+      "fonts/LICENSE.txt": true,
+      "help/walkthrough.mp4": true,
+      "help/walkthrough.ko.srt": true,
+      "help/walkthrough.timeline.json": true
+    },
+    "previous_R08_base": "a0b506c2e9e199a3d00832b0411a49da35c3302d",
+    "rollout_math_unchanged": true,
+    "combined_browser_record": "startscreen-evidence/COMBINED_VERIFICATION.json",
+    "provided_examples_record": "integration-evidence/PROVIDED_EXAMPLES.json"
   }
 }

@@ -1,0 +1,296 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "keyboard only paste and prepare",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "keyboard arrows Space Enter analyze actual engine",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "keyboard judgment and sharing confirmation",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "keyboard Escape pauses video immediately and exact RAW/form/template consent state",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "modal focus restored to named help trigger",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "accessible label data-text",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "accessible label format",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "accessible label randomized",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "accessible label mature-evidence",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "accessible label profile-consent",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "CSS layout zoom 2 width 1440 no page horizontal overflow",
+      "pass": true,
+      "detail": {
+        "inner": 1440,
+        "scroll": 1440,
+        "zoom": "2",
+        "body": 1440
+      }
+    },
+    {
+      "name": "CSS layout zoom 1 width 390 no page horizontal overflow",
+      "pass": true,
+      "detail": {
+        "inner": 390,
+        "scroll": 390,
+        "zoom": "1",
+        "body": 390
+      }
+    },
+    {
+      "name": "CSS layout zoom 1 width 320 no page horizontal overflow",
+      "pass": true,
+      "detail": {
+        "inner": 320,
+        "scroll": 320,
+        "zoom": "1",
+        "body": 320
+      }
+    },
+    {
+      "name": "actual Chrome 200% zoom not deviceScaleFactor or CSS zoom",
+      "pass": true,
+      "detail": {
+        "innerWidth": 711,
+        "outerWidth": 1440,
+        "dpr": 2,
+        "cssZoom": "1",
+        "scroll": 711
+      }
+    },
+    {
+      "name": "actual Chrome 200% responsive layout no page overflow",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "actual browser 200% core preparation and engine results usable",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact 2MiB 50000 rows prepared losslessly",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "large source quality gate no dropped IDs rows",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "large unknown conditions do not infer",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "large confirmed source passes actual inferential engine",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "over 2MiB rejected before actual file read compute and retains valid text",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "oversize invalid CSV import preserves valid result and conditions",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "50001 file rows rejected before Worker with existing valid result intact",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "50001 pasted rows blocked before analyze",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "malformed CSV gives actionable state without analysis",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "invalid import retains valid existing state #project-file",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "invalid import retains valid existing state #profile-file",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "malformed CSV syntax file preserves exact valid input and result",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "malformed UTF8 CSV preserves exact valid data result and RAW conditions",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "after errors valid new input analyze and actual project download",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "old file finally cannot unlock new file read",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "new owner file applied exact after old cancelled",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "old hash finally cannot unlock new prepare hash",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "cancel dispatched real Worker calculation discards old ownership",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "after Worker cancellation new Worker computes current input",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "after cancel valid report download",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "no JS errors model calls external requests",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "timings": {
+    "read_ui_seconds": 7.344706400006544,
+    "prepare_ui_seconds": 8.252494699991075,
+    "analyze_descriptive_ui_seconds": 5.063885699986713,
+    "analyze_confirmed_ui_seconds": 5.683556200005114,
+    "real_stage_ms": [
+      {
+        "type": "read",
+        "ms": 6.700000002980232,
+        "bytes": 2097152
+      },
+      {
+        "type": "prepare",
+        "ms": 247.59999999403954
+      },
+      {
+        "type": "analyze",
+        "ms": 19.899999991059303
+      },
+      {
+        "type": "analyze",
+        "ms": 44.5
+      }
+    ]
+  },
+  "blocked_requests": [],
+  "page_errors": [],
+  "human_observations": 0,
+  "actual_model_calls": 0,
+  "untested": [
+    "actual NVDA/Narrator/audio screenreader use",
+    "real human study",
+    "native OS file dialog",
+    "actual weak physical device",
+    "other operating systems",
+    "real system without Python"
+  ],
+  "scope": "synthetic automated actual Chrome; actual browser zoom 200% through disposable-profile settings plus separate CSS zoom stress (not deviceScaleFactor-only); AX tree inspection not assistive-technology use; actual read/hash/Worker with controlled completion gates",
+  "browser_version": "158.0.8127.36",
+  "layout_observations": [
+    {
+      "width": 1440,
+      "zoom": "2",
+      "inner": 1440,
+      "scroll": 1440,
+      "body": 1440
+    },
+    {
+      "width": 390,
+      "zoom": "1",
+      "inner": 390,
+      "scroll": 390,
+      "body": 390
+    },
+    {
+      "width": 320,
+      "zoom": "1",
+      "inner": 320,
+      "scroll": 320,
+      "body": 320
+    },
+    {
+      "width": 390,
+      "zoom": "2",
+      "inner": 390,
+      "scroll": 487,
+      "body": 390
+    },
+    {
+      "width": 320,
+      "zoom": "2",
+      "inner": 320,
+      "scroll": 487,
+      "body": 320
+    }
+  ],
+  "actual_browser_zoom": {
+    "factor": 2,
+    "innerWidth": 711,
+    "outerWidth": 1440,
+    "dpr": 2,
+    "cssZoom": "1",
+    "scroll": 711
+  },
+  "count": 37
+}

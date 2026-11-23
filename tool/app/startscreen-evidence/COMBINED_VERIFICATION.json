@@ -1,0 +1,69 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "provided input recalculates expected decision routine-service-original-hold.json",
+      "pass": true
+    },
+    {
+      "name": "provided schema8 exact input roundtrip routine-service-original-hold.json",
+      "pass": true
+    },
+    {
+      "name": "provided input recalculates expected decision routine-service-metrics-met-hold.json",
+      "pass": true
+    },
+    {
+      "name": "provided schema8 exact input roundtrip routine-service-metrics-met-hold.json",
+      "pass": true
+    },
+    {
+      "name": "metrics met does not invent operational approval",
+      "pass": true
+    },
+    {
+      "name": "provided input recalculates expected decision routine-service-edited-review.json",
+      "pass": true
+    },
+    {
+      "name": "provided schema8 exact input roundtrip routine-service-edited-review.json",
+      "pass": true
+    },
+    {
+      "name": "invalid CSV preserves rollout decision operational statements notes sharing print size",
+      "pass": true
+    },
+    {
+      "name": "invalid CSV preserves rollout decision operational statements notes sharing print utf8",
+      "pass": true
+    },
+    {
+      "name": "invalid CSV preserves rollout decision operational statements notes sharing print syntax",
+      "pass": true
+    },
+    {
+      "name": "invalid schema8 cannot replace current rollout state",
+      "pass": true
+    },
+    {
+      "name": "valid new CSV clears old rollout operational approval and derived decision",
+      "pass": true
+    },
+    {
+      "name": "valid new CSV discards sharing and print confirmation",
+      "pass": true
+    },
+    {
+      "name": "new rollout edit cancels old CSV ownership without stale overwrite",
+      "pass": true
+    },
+    {
+      "name": "schema7 restore explicitly clears prior rollout and accepts legacy conditions",
+      "pass": true
+    }
+  ],
+  "actual_model_calls": 0,
+  "human_observations": 0,
+  "scope": "supplied synthetic release JSON, real Chrome file automation (not native picker); existing rollout math unchanged",
+  "count": 15
+}

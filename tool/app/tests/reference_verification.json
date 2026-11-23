@@ -1,11 +1,11 @@
 {
   "status": "PASS",
-  "generated_at": "2026-11-23T08:57:02.336Z",
+  "generated_at": "2026-11-23T14:15:41.794Z",
   "command": "node tests/compare_reference.cjs",
   "node_version": "v24.19.0",
   "engine_version": "0.2.0",
   "provenance": {
-    "engine_sha256": "f40cc1fbd3e87dde4050cb0155673c2f368b2e88274a30fa03aeb09dbcde05f7",
+    "engine_sha256": "9511c4e82edf0fbf3affb554df2f45ea643f2c4f36d3a80b553de0e472861a37",
     "golden_reference_sha256": "e3a0f726d1f1c0b573d5074eed6f6fe17f3c88b6aac8fbf0da1abd14b06be89f"
   },
   "scope": {

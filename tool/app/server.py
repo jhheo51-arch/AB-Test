@@ -3,7 +3,7 @@ No raw CSV endpoint exists. No auth files or secret values are read by this app.
 """
 from http.server import ThreadingHTTPServer, BaseHTTPRequestHandler
 from pathlib import Path
-import argparse, json, mimetypes, os, re, shutil, subprocess, threading, time
+import argparse, json, mimetypes, os, re, shutil, socket, subprocess, threading, time
 
 ROOT=Path(__file__).resolve().parent
 PROJECT_EXAMPLES={
@@ -84,6 +84,11 @@ def validate_response(obj,facts):
 
 class AppServer(ThreadingHTTPServer):
     daemon_threads=True
+    # Windows SO_REUSEADDR can permit two listeners on one port. Never share it.
+    allow_reuse_address=os.name!='nt'
+    def server_bind(self):
+        if os.name=='nt':self.socket.setsockopt(socket.SOL_SOCKET,socket.SO_EXCLUSIVEADDRUSE,1)
+        super().server_bind()
     def __init__(self,address,handler,hermes,profile):
         super().__init__(address,handler)
         self.hermes=hermes;self.profile=profile;self.llm_successes=0;self.llm_failures=0

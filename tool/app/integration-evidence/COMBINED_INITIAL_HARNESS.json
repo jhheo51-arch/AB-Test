@@ -1,0 +1,39 @@
+{
+  "status": "FAIL",
+  "checks": [
+    {
+      "name": "provided input recalculates expected decision routine-service-original-hold.json",
+      "pass": true
+    },
+    {
+      "name": "provided schema8 exact input roundtrip routine-service-original-hold.json",
+      "pass": true
+    },
+    {
+      "name": "provided input recalculates expected decision routine-service-metrics-met-hold.json",
+      "pass": true
+    },
+    {
+      "name": "provided schema8 exact input roundtrip routine-service-metrics-met-hold.json",
+      "pass": true
+    },
+    {
+      "name": "metrics met does not invent operational approval",
+      "pass": true
+    },
+    {
+      "name": "provided input recalculates expected decision routine-service-edited-review.json",
+      "pass": true
+    },
+    {
+      "name": "provided schema8 exact input roundtrip routine-service-edited-review.json",
+      "pass": true
+    }
+  ],
+  "actual_model_calls": 0,
+  "human_observations": 0,
+  "scope": "supplied synthetic release JSON, real Chrome file automation (not native picker); existing rollout math unchanged",
+  "error": "Page.fill: Timeout 12000ms exceeded.\nCall log:\n  - waiting for locator(\"#decision\")\n    - locator resolved to <textarea id=\"decision\" maxlength=\"1500\" placeholder=\"예: 통계 결과를 검토했지만 보호 조건은 미확인이라 실제 적용은 별도 확인.\"></textarea>\n    - fill(\"COMBINED_RAW_NOTE\")\n  - attempting fill action\n    2 × waiting for element to be visible, enabled and editable\n      - element is not visible\n    - retrying fill action\n    - waiting 20ms\n    2 × waiting for element to be visible, enabled and editable\n      - element is not visible\n    - retrying fill action\n      - waiting 100ms\n    24 × waiting for element to be visible, enabled and editable\n       - element is not visible\n     - retrying fill action\n       - waiting 500ms\n",
+  "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r08_integration\\tool\\app\\tests\\verify_combined_rollout.py\", line 26, in <module>\n    good=json.loads((R/'examples/projects'/names[2]).read_text('utf-8'));p.click('nav [data-view=share]');p.fill('#decision','COMBINED_RAW_NOTE');p.fill('#revisit','REVIEW_ONLY_NOT_APPROVAL');p.check('#share-confirm');p.evaluate('preparePrint()');p.click('nav [data-view=input]');before=snapshot(p)\n                                                                                                          ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\playwright\\sync_api\\_generated.py\", line 17698, in fill\n    self._sync(\n    ~~~~~~~~~~^\n        self._impl_obj.fill(\n        ^^^^^^^^^^^^^^^^^^^^\n    ...<6 lines>...\n        )\n        ^\n    )\n    ^\n  File \"C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\playwright\\_impl\\_sync_base.py\", line 111, in _sync\n    return task.result()\n           ~~~~~~~~~~~^^\n  File \"C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\playwright\\_impl\\_page.py\", line 932, in fill\n    return await self._main_frame.fill(**locals_to_params(locals()))\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\playwright\\_impl\\_frame.py\", line 641, in fill\n    await self._fill(**locals_to_params(locals()))\n  File \"C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\playwright\\_impl\\_frame.py\", line 653, in _fill\n    await self._channel.send(\"fill\", self._timeout, locals_to_params(locals()))\n  File \"C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\playwright\\_impl\\_connection.py\", line 78, in send\n    return await self._connection.wrap_api_call(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    ...<3 lines>...\n    )\n    ^\n  File \"C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\playwright\\_impl\\_connection.py\", line 636, in wrap_api_call\n    raise rewrite_error(error, f\"{parsed_st['apiName']}: {error}\") from None\nplaywright._impl._errors.TimeoutError: Page.fill: Timeout 12000ms exceeded.\nCall log:\n  - waiting for locator(\"#decision\")\n    - locator resolved to <textarea id=\"decision\" maxlength=\"1500\" placeholder=\"예: 통계 결과를 검토했지만 보호 조건은 미확인이라 실제 적용은 별도 확인.\"></textarea>\n    - fill(\"COMBINED_RAW_NOTE\")\n  - attempting fill action\n    2 × waiting for element to be visible, enabled and editable\n      - element is not visible\n    - retrying fill action\n    - waiting 20ms\n    2 × waiting for element to be visible, enabled and editable\n      - element is not visible\n    - retrying fill action\n      - waiting 100ms\n    24 × waiting for element to be visible, enabled and editable\n       - element is not visible\n     - retrying fill action\n       - waiting 500ms\n\n",
+  "count": 7
+}

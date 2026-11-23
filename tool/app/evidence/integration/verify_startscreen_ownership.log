@@ -1,0 +1,9 @@
+PASS late fetched sample cannot overwrite newer CSV
+PASS late fetched sample cannot overwrite newer condition
+PASS late fetched sample cannot overwrite newer project
+PASS old sample finally cannot unlock newer CSV read
+PASS old sample cannot inject rollout while newer CSV owns input
+PASS new sample cancels older file read and preserves newer result
+PASS old sample cannot apply or unlock newer sample
+PASS new sample actual bytes applied with controls released
+{"status": "PASS", "count": 8, "error": null}

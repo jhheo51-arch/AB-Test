@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "url": "https://github.com/jhheo51-arch/AB-Test/releases/download/tool-rollout-report-20261123/AB_Test_Workspace_rollout_report_examples_20261123.zip",
+  "published_zip_sha256": "eab61a861c0dd1606812d408ea63df72d3caf2c5196850594beb901261fe3b57",
+  "published_zip_members": 40,
+  "examples": [
+    {
+      "member": "AB_Test_Workspace/examples/projects/routine-service-edited-review.json",
+      "sha256": "1af0f2b1e7b3200a11ddbb64eea447049cfe3b2b800c3d0ccdaa68b856f48ac7",
+      "matches_individual_provided_asset": true
+    },
+    {
+      "member": "AB_Test_Workspace/examples/projects/routine-service-metrics-met-hold.json",
+      "sha256": "9d55554fb9ed5f675f7d16a3a61e917f3ed52cb4f827da6ffcb81dac1ed1ad61",
+      "matches_individual_provided_asset": true
+    },
+    {
+      "member": "AB_Test_Workspace/examples/projects/routine-service-original-hold.json",
+      "sha256": "11539a86c37a3e30aebd33660a5a4131b9322eb49b4f9b84bc1d36fefda11efd",
+      "matches_individual_provided_asset": true
+    }
+  ]
+}

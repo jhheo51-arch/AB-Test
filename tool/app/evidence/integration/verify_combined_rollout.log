@@ -1,0 +1,16 @@
+PASS provided input recalculates expected decision routine-service-original-hold.json
+PASS provided schema8 exact input roundtrip routine-service-original-hold.json
+PASS provided input recalculates expected decision routine-service-metrics-met-hold.json
+PASS provided schema8 exact input roundtrip routine-service-metrics-met-hold.json
+PASS metrics met does not invent operational approval
+PASS provided input recalculates expected decision routine-service-edited-review.json
+PASS provided schema8 exact input roundtrip routine-service-edited-review.json
+PASS invalid CSV preserves rollout decision operational statements notes sharing print size
+PASS invalid CSV preserves rollout decision operational statements notes sharing print utf8
+PASS invalid CSV preserves rollout decision operational statements notes sharing print syntax
+PASS invalid schema8 cannot replace current rollout state
+PASS valid new CSV clears old rollout operational approval and derived decision
+PASS valid new CSV discards sharing and print confirmation
+PASS new rollout edit cancels old CSV ownership without stale overwrite
+PASS schema7 restore explicitly clears prior rollout and accepts legacy conditions
+{"status": "PASS", "count": 15, "error": null}

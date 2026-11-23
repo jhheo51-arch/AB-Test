@@ -21,10 +21,12 @@ def find_hermes():
 
 if __name__=='__main__':
     parser=argparse.ArgumentParser();parser.add_argument('--no-browser',action='store_true');parser.add_argument('--port',type=int,default=0);parser.add_argument('--profile',default='mira');args=parser.parse_args()
-    missing=[n for n in ['index.html','styles.css','app.js','engine.js','worker.js','narrative.js','project-schema.js','lineage.js','engine-issue-codes.json','column-mapping.js','workflow.js','rollout.js','workflow.css','context.css','help/walkthrough.mp4'] if not (ROOT/n).is_file()]
+    missing=[n for n in ['index.html','styles.css','theme.css','app.js','engine.js','worker.js','narrative.js','project-schema.js','lineage.js','engine-issue-codes.json','conditions.js','design.js','design-ui.js','design.css','column-mapping.js','column-profile.js','profile-ui.js','rollout.js','workflow.js','workflow.css','context.css','fonts/PretendardVariable.woff2','help/walkthrough.mp4','help/walkthrough.ko.srt','help/walkthrough.timeline.json'] if not (ROOT/n).is_file()]
     if missing:raise SystemExit('Missing app files: '+', '.join(missing))
     hermes=find_hermes()
-    with AppServer(('127.0.0.1',args.port),Handler,hermes,args.profile) as server:
+    try:server=AppServer(('127.0.0.1',args.port),Handler,hermes,args.profile)
+    except OSError as exc:raise SystemExit('Cannot start local port '+str(args.port)+': already in use or unavailable. Close the other app or choose --port 0. ('+str(exc)+')') from None
+    with server:
         url='http://127.0.0.1:'+str(server.server_port)
         print('AB_LOCAL_URL='+url,flush=True)
         print('LLM CLI found: '+str(bool(hermes))+'; real request still required to verify authentication.',flush=True)

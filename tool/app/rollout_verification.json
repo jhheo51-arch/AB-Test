@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "count": 2,
+  "checks": [
+    {
+      "name": "published rollout decision/persistence/report 1440px",
+      "pass": true
+    },
+    {
+      "name": "published rollout decision/persistence/report 375px",
+      "pass": true
+    }
+  ],
+  "counting": "two viewport flow groups, not individual assertion count",
+  "actual_model_calls": 0,
+  "human_observations": 0
+}

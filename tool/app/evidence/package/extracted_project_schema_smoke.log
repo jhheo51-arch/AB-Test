@@ -10,6 +10,7 @@ PASS 200001 saved but inference cap still enforced
 PASS CSV quoted comma quote newline survives engine preparation
 PASS old version2 gets explicit empty audience
 PASS empty plan-only project survives
+PASS v8 preserves rollout input and recomputes the stored decision and reasons
 PASS duplicates rejected at storage boundary
 PASS invalid success rejected on write and read
 PASS negative counts rejected
@@ -25,4 +26,4 @@ PASS document size cap symmetric
 PASS malformed JSON rejected
 PASS source identifier preserved or rejected never repaired
 PASS no raw extra keys survive normalization
-RESULT 27 schema groups passed.
+RESULT 28 schema groups passed.

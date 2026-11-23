@@ -1,0 +1,38 @@
+PASS keyboard only paste and prepare
+PASS keyboard arrows Space Enter analyze actual engine
+PASS keyboard judgment and sharing confirmation
+PASS keyboard Escape pauses video immediately and exact RAW/form/template consent state
+PASS modal focus restored to named help trigger
+PASS accessible label data-text
+PASS accessible label format
+PASS accessible label randomized
+PASS accessible label mature-evidence
+PASS accessible label profile-consent
+PASS CSS layout zoom 2 width 1440 no page horizontal overflow
+PASS CSS layout zoom 1 width 390 no page horizontal overflow
+PASS CSS layout zoom 1 width 320 no page horizontal overflow
+PASS actual Chrome 200% zoom not deviceScaleFactor or CSS zoom
+PASS actual Chrome 200% responsive layout no page overflow
+PASS actual browser 200% core preparation and engine results usable
+PASS exact 2MiB 50000 rows prepared losslessly
+PASS large source quality gate no dropped IDs rows
+PASS large unknown conditions do not infer
+PASS large confirmed source passes actual inferential engine
+PASS over 2MiB rejected before actual file read compute and retains valid text
+PASS oversize invalid CSV import preserves valid result and conditions
+PASS 50001 file rows rejected before Worker with existing valid result intact
+PASS 50001 pasted rows blocked before analyze
+PASS malformed CSV gives actionable state without analysis
+PASS invalid import retains valid existing state #project-file
+PASS invalid import retains valid existing state #profile-file
+PASS malformed CSV syntax file preserves exact valid input and result
+PASS malformed UTF8 CSV preserves exact valid data result and RAW conditions
+PASS after errors valid new input analyze and actual project download
+PASS old file finally cannot unlock new file read
+PASS new owner file applied exact after old cancelled
+PASS old hash finally cannot unlock new prepare hash
+PASS cancel dispatched real Worker calculation discards old ownership
+PASS after Worker cancellation new Worker computes current input
+PASS after cancel valid report download
+PASS no JS errors model calls external requests
+{"status": "PASS", "count": 37, "error": null, "timings": {"read_ui_seconds": 8.651261200007866, "prepare_ui_seconds": 3.8270211000053678, "analyze_descriptive_ui_seconds": 4.47127759999421, "analyze_confirmed_ui_seconds": 4.620279599999776, "real_stage_ms": [{"type": "read", "ms": 7, "bytes": 2097152}, {"type": "prepare", "ms": 327.79999999701977}, {"type": "analyze", "ms": 22.099999994039536}, {"type": "analyze", "ms": 42.5}]}}

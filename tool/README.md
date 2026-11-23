@@ -1,8 +1,10 @@
 # CRM A/B 테스트 작업실
 
-**[현재 앱](app/README.md) · [새 실행 ZIP](https://github.com/jhheo51-arch/AB-Test/releases/download/tool-rollout-report-20261123/AB_Test_Workspace_rollout_shortcuts_20261123.zip) · [시연 영상](app/help/walkthrough.mp4) · [남은 과제](ROADMAP.md)**
+**[현재 앱](app/README.md) · [최신 실행 ZIP](downloads/AB_Test_Workspace.zip) · [시연 영상](app/help/walkthrough.mp4) · [남은 과제](ROADMAP.md)**
 
 CRM 전체 운영이 아니라 A/B 테스트 설계·분석·판단을 돕습니다. 실제 실험은 외부에서 수행하고 기기 안에서 입력·계산·판단 기록을 연결합니다.
+
+공개된 시작 화면 바로가기 실행본의 원래 [Release ZIP](https://github.com/jhheo51-arch/AB-Test/releases/download/tool-rollout-report-20261123/AB_Test_Workspace_rollout_shortcuts_20261123.zip)도 유지합니다. 위 최신 실행 ZIP은 같은 세 버튼과 R08 수정을 결합해 검사한 파일입니다. [현재 ff6d463 기준 검증](app/startscreen-evidence/IMPLEMENTATION_NOTES.md).
 
 ## 처음 사용하기
 
@@ -27,6 +29,10 @@ CRM 전체 운영이 아니라 A/B 테스트 설계·분석·판단을 돕습니
 ## 입력·복원 경계 수정
 
 설계와 분석 맥락의 여섯 항목은 여러 줄을 지원하고, 가져온 CRLF/CR 근거·맥락은 해당 항목을 편집하기 전까지 원문을 보존합니다. 같은 군의 null/빈 집단이 CSV에서 겹치는 파일과 현재 계보 없는 중복 해시는 복원 전에 거절합니다. 구형 미분류 해시는 원래 범위를 유지합니다. ZIP 검토 문서는 공개 소스 링크와 실제 오프라인 기록 위치를 구분합니다. [회귀 결과](app/fix-evidence/semantic/BROWSER_VERIFICATION.json)를 참조하세요. 경계 수정 후 교체한 시연을 보존하고 선택적 로컬 열 연결 템플릿·원본 군 값 안내·고정 합성 CSV 다운로드를 추가했습니다. [재사용 절차와 개인정보 경계](app/README.md#같은-csv-형식의-열-연결을-다시-쓰기)를 확인하세요. 현재 영상은 새 템플릿 튜토리얼이 아닙니다.
+
+## 실행 환경과 오류 복구
+
+한글·공백 경로의 실행, 점유 포트의 명시적 거절, 두 인스턴스와 종료/재시작, 키보드 핵심 흐름, 별도 200% 확대·320/390px, 대용량 경계·취소·복구를 실제 Windows/Chrome에서 합성 자동화로 점검합니다. [환경·관측 결함·최소 수정·미실시 범위](app/r08-evidence/IMPLEMENTATION_NOTES.md)를 확인하세요. 상태 검사 수는 실제 실행 장부에서 자동 동기화합니다. 실제 스크린리더 음성이나 모든 약한 기기의 성능·사람 사용성 검증은 아니며 모바일에 200%를 함께 적용한 추가 초협폭 가로 넘침은 남아 있습니다.
 
 ## 배포 관리
 

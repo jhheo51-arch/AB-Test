@@ -185,6 +185,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
     with subprocess.Popen(
         [sys.executable, str(args.app.resolve() / "server.py")],
+        stdin=subprocess.DEVNULL,
         stdout=subprocess.PIPE,
         text=True,
         encoding="utf-8",
@@ -195,13 +196,17 @@ if __name__ == "__main__":
             url = startup.split("=", 1)[1]
             with sync_playwright() as playwright:
                 browser = playwright.chromium.launch(executable_path=args.browser)
+                checks=[]
                 for width in (1440, 375):
                     page = browser.new_page(viewport={"width": width, "height": 900}, accept_downloads=True)
                     verify_shortcuts(page, url)
                     verify(page, url)
                     verify_saved_report(page, url)
                     page.close()
+                    checks.append({"name":f"published rollout decision/persistence/report {width}px","pass":True})
                     print(f"PASS {width}px")
                 browser.close()
+                (args.app/"rollout_verification.json").write_text(json.dumps({"status":"PASS","count":len(checks),"checks":checks,"counting":"two viewport flow groups, not individual assertion count","actual_model_calls":0,"human_observations":0},ensure_ascii=False,indent=2),encoding="utf-8")
         finally:
             server.terminate()
+            server.wait(timeout=15)

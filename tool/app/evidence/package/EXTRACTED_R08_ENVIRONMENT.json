@@ -1,0 +1,141 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "Python launcher Korean spaces no-browser loopback HTTP",
+      "pass": true,
+      "detail": [
+        "AB_LOCAL_URL=http://127.0.0.1:6128\n"
+      ]
+    },
+    {
+      "name": "actual AppServer socket API bind address is IPv4 loopback",
+      "pass": true,
+      "detail": [
+        "127.0.0.1",
+        6130
+      ]
+    },
+    {
+      "name": "two simultaneous instances unique loopback ports",
+      "pass": true,
+      "detail": [
+        "AB_LOCAL_URL=http://127.0.0.1:6131\n"
+      ]
+    },
+    {
+      "name": "explicit occupied port exits usefully without alternate server",
+      "pass": true,
+      "detail": [
+        "Cannot start local port 6128: already in use or unavailable. Close the other app or choose --port 0. ([WinError 10048] 각 소켓 주소(프로토콜/네트워크 주소/포트)는 하나만 사용할 수 있습니다)\n"
+      ]
+    },
+    {
+      "name": "closed server port actually refuses connection",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "restart same explicit port succeeds",
+      "pass": true,
+      "detail": [
+        "AB_LOCAL_URL=http://127.0.0.1:6128\n"
+      ]
+    },
+    {
+      "name": "incomplete extraction missing conditions.js blocked at startup",
+      "pass": true,
+      "detail": [
+        "Missing app files: conditions.js\n"
+      ]
+    },
+    {
+      "name": "incomplete extraction missing design.js blocked at startup",
+      "pass": true,
+      "detail": [
+        "Missing app files: design.js\n"
+      ]
+    },
+    {
+      "name": "incomplete extraction missing design-ui.js blocked at startup",
+      "pass": true,
+      "detail": [
+        "Missing app files: design-ui.js\n"
+      ]
+    },
+    {
+      "name": "incomplete extraction missing column-profile.js blocked at startup",
+      "pass": true,
+      "detail": [
+        "Missing app files: column-profile.js\n"
+      ]
+    },
+    {
+      "name": "incomplete extraction missing profile-ui.js blocked at startup",
+      "pass": true,
+      "detail": [
+        "Missing app files: profile-ui.js\n"
+      ]
+    },
+    {
+      "name": "incomplete extraction missing rollout.js blocked at startup",
+      "pass": true,
+      "detail": [
+        "Missing app files: rollout.js\n"
+      ]
+    },
+    {
+      "name": "CMD forwards no-browser and explicit port arguments",
+      "pass": true,
+      "detail": "STUB_PYTHON launch.py --no-browser --port 12345\n"
+    },
+    {
+      "name": "isolated PATH Python missing actionable instruction",
+      "pass": true,
+      "detail": "Python 3 is required. Install from https://www.python.org/downloads/\nEnable Python in PATH or install the Python launcher, then reopen this window.\n"
+    },
+    {
+      "name": "actual launch.cmd starts Korean path HTTP with no-browser",
+      "pass": true,
+      "detail": [
+        "AB_LOCAL_URL=http://127.0.0.1:6133\n"
+      ]
+    },
+    {
+      "name": "real installed Python launcher available",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "real py -3 fallback help no server",
+      "pass": true,
+      "detail": "usage: launch.py [-h] [--no-browser] [--port PORT] [--profile PROFILE]\n\noptions:\n  -h, --help         show this help message and exit\n  --no-browser\n  --port PORT\n  --profile PROFILE\n"
+    },
+    {
+      "name": "all owned server ports closed",
+      "pass": true,
+      "detail": [
+        6128,
+        6131,
+        6128,
+        6133
+      ]
+    }
+  ],
+  "count": 18,
+  "observed_at_utc": "2026-11-23T14:27:55.195466+00:00",
+  "environment": {
+    "os": "Windows-11-10.0.26300-SP0",
+    "python": "3.14.7 (tags/v3.14.7:823f032, Aug  5 2026, 10:51:32) [MSC v.1944 64 bit (AMD64)]",
+    "cpu_logical": 12,
+    "processor": "13th Gen Intel(R) Core(TM) i5-1334U",
+    "memory_snapshot": {
+      "memory_load_percent": 79,
+      "physical_total_bytes": 16892362752,
+      "physical_available_bytes": 3382444032
+    }
+  },
+  "scope": "automated actual Windows launcher subprocesses; isolated PATH simulates missing Python, not a real uninstalled system; no live models or humans",
+  "actual_model_calls": 0,
+  "human_observations": 0
+}

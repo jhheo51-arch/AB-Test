@@ -1,307 +1,487 @@
 {
   "status": "PASS",
-  "markdown_documents": 19,
-  "local_links_checked": 50,
+  "markdown_documents": 23,
+  "local_links_checked": 80,
   "broken_links": [],
   "links": [
     {
+      "source": "app/examples/ROUTINE_SERVICE_ROLLOUT_REPORT.md",
+      "reference": "projects/routine-service-original-hold.json",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r08_integration\\tool\\app\\examples\\projects\\routine-service-original-hold.json",
+      "exists": true
+    },
+    {
+      "source": "app/examples/ROUTINE_SERVICE_ROLLOUT_REPORT.md",
+      "reference": "projects/routine-service-metrics-met-hold.json",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r08_integration\\tool\\app\\examples\\projects\\routine-service-metrics-met-hold.json",
+      "exists": true
+    },
+    {
+      "source": "app/examples/ROUTINE_SERVICE_ROLLOUT_REPORT.md",
+      "reference": "projects/routine-service-edited-review.json",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r08_integration\\tool\\app\\examples\\projects\\routine-service-edited-review.json",
+      "exists": true
+    },
+    {
+      "source": "app/examples/ROUTINE_SERVICE_ROLLOUT_REPORT.md",
+      "reference": "../README.md#방문-완료율과-수신-철회-기준으로-확대-판단",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r08_integration\\tool\\app\\README.md",
+      "exists": true
+    },
+    {
       "source": "app/INPUT_CONTRACT.md",
       "reference": "CONTEXT_CONTRACT.md",
-      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r07_integration\\tool\\app\\CONTEXT_CONTRACT.md",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r08_integration\\tool\\app\\CONTEXT_CONTRACT.md",
+      "exists": true
+    },
+    {
+      "source": "app/INPUT_CONTRACT.md",
+      "reference": "integration-evidence/IMPLEMENTATION_NOTES.md",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r08_integration\\tool\\app\\integration-evidence\\IMPLEMENTATION_NOTES.md",
+      "exists": true
+    },
+    {
+      "source": "app/integration-evidence/IMPLEMENTATION_NOTES.md",
+      "reference": "BASELINE.json",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r08_integration\\tool\\app\\integration-evidence\\BASELINE.json",
+      "exists": true
+    },
+    {
+      "source": "app/integration-evidence/IMPLEMENTATION_NOTES.md",
+      "reference": "COMBINED_BASELINE.json",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r08_integration\\tool\\app\\integration-evidence\\COMBINED_BASELINE.json",
+      "exists": true
+    },
+    {
+      "source": "app/integration-evidence/IMPLEMENTATION_NOTES.md",
+      "reference": "PROVIDED_EXAMPLES.json",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r08_integration\\tool\\app\\integration-evidence\\PROVIDED_EXAMPLES.json",
+      "exists": true
+    },
+    {
+      "source": "app/integration-evidence/IMPLEMENTATION_NOTES.md",
+      "reference": "BROWSER_VERIFICATION.json",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r08_integration\\tool\\app\\integration-evidence\\BROWSER_VERIFICATION.json",
       "exists": true
     },
     {
       "source": "app/profile-evidence/IMPLEMENTATION_NOTES.md",
       "reference": "BASELINE.json",
-      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r07_integration\\tool\\app\\profile-evidence\\BASELINE.json",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r08_integration\\tool\\app\\profile-evidence\\BASELINE.json",
+      "exists": true
+    },
+    {
+      "source": "app/r08-evidence/IMPLEMENTATION_NOTES.md",
+      "reference": "../integration-evidence/IMPLEMENTATION_NOTES.md",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r08_integration\\tool\\app\\integration-evidence\\IMPLEMENTATION_NOTES.md",
+      "exists": true
+    },
+    {
+      "source": "app/r08-evidence/IMPLEMENTATION_NOTES.md",
+      "reference": "BROWSER_VERIFICATION.json",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r08_integration\\tool\\app\\r08-evidence\\BROWSER_VERIFICATION.json",
+      "exists": true
+    },
+    {
+      "source": "app/r08-evidence/IMPLEMENTATION_NOTES.md",
+      "reference": "ENVIRONMENT_VERIFICATION.json",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r08_integration\\tool\\app\\r08-evidence\\ENVIRONMENT_VERIFICATION.json",
+      "exists": true
+    },
+    {
+      "source": "app/r08-evidence/IMPLEMENTATION_NOTES.md",
+      "reference": "PRE_FIX_BROWSER.json",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r08_integration\\tool\\app\\r08-evidence\\PRE_FIX_BROWSER.json",
+      "exists": true
+    },
+    {
+      "source": "app/r08-evidence/IMPLEMENTATION_NOTES.md",
+      "reference": "ENVIRONMENT_BASELINE.json",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r08_integration\\tool\\app\\r08-evidence\\ENVIRONMENT_BASELINE.json",
       "exists": true
     },
     {
       "source": "app/README.md",
       "reference": "help/walkthrough.mp4",
-      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r07_integration\\tool\\app\\help\\walkthrough.mp4",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r08_integration\\tool\\app\\help\\walkthrough.mp4",
       "exists": true
     },
     {
       "source": "app/README.md",
       "reference": "help/walkthrough.ko.srt",
-      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r07_integration\\tool\\app\\help\\walkthrough.ko.srt",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r08_integration\\tool\\app\\help\\walkthrough.ko.srt",
       "exists": true
     },
     {
       "source": "app/README.md",
       "reference": "help/walkthrough.timeline.json",
-      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r07_integration\\tool\\app\\help\\walkthrough.timeline.json",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r08_integration\\tool\\app\\help\\walkthrough.timeline.json",
       "exists": true
     },
     {
       "source": "app/README.md",
       "reference": "INPUT_CONTRACT.md",
-      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r07_integration\\tool\\app\\INPUT_CONTRACT.md",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r08_integration\\tool\\app\\INPUT_CONTRACT.md",
       "exists": true
     },
     {
       "source": "app/README.md",
       "reference": "fix-evidence/semantic/BROWSER_VERIFICATION.json",
-      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r07_integration\\tool\\app\\fix-evidence\\semantic\\BROWSER_VERIFICATION.json",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r08_integration\\tool\\app\\fix-evidence\\semantic\\BROWSER_VERIFICATION.json",
       "exists": true
     },
     {
       "source": "app/README.md",
       "reference": "examples/SYNTHETIC_CRM_MAPPING.csv",
-      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r07_integration\\tool\\app\\examples\\SYNTHETIC_CRM_MAPPING.csv",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r08_integration\\tool\\app\\examples\\SYNTHETIC_CRM_MAPPING.csv",
       "exists": true
     },
     {
       "source": "app/README.md",
       "reference": "profile-evidence/IMPLEMENTATION_NOTES.md",
-      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r07_integration\\tool\\app\\profile-evidence\\IMPLEMENTATION_NOTES.md",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r08_integration\\tool\\app\\profile-evidence\\IMPLEMENTATION_NOTES.md",
+      "exists": true
+    },
+    {
+      "source": "app/README.md",
+      "reference": "startscreen-evidence/IMPLEMENTATION_NOTES.md",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r08_integration\\tool\\app\\startscreen-evidence\\IMPLEMENTATION_NOTES.md",
+      "exists": true
+    },
+    {
+      "source": "app/README.md",
+      "reference": "integration-evidence/IMPLEMENTATION_NOTES.md",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r08_integration\\tool\\app\\integration-evidence\\IMPLEMENTATION_NOTES.md",
+      "exists": true
+    },
+    {
+      "source": "app/README.md",
+      "reference": "r08-evidence/IMPLEMENTATION_NOTES.md",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r08_integration\\tool\\app\\r08-evidence\\IMPLEMENTATION_NOTES.md",
       "exists": true
     },
     {
       "source": "app/README.md",
       "reference": "INPUT_CONTRACT.md",
-      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r07_integration\\tool\\app\\INPUT_CONTRACT.md",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r08_integration\\tool\\app\\INPUT_CONTRACT.md",
+      "exists": true
+    },
+    {
+      "source": "app/startscreen-evidence/IMPLEMENTATION_NOTES.md",
+      "reference": "BASELINE.json",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r08_integration\\tool\\app\\startscreen-evidence\\BASELINE.json",
+      "exists": true
+    },
+    {
+      "source": "app/startscreen-evidence/IMPLEMENTATION_NOTES.md",
+      "reference": "../integration-evidence/IMPLEMENTATION_NOTES.md",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r08_integration\\tool\\app\\integration-evidence\\IMPLEMENTATION_NOTES.md",
+      "exists": true
+    },
+    {
+      "source": "app/startscreen-evidence/IMPLEMENTATION_NOTES.md",
+      "reference": "ASYNC_BASELINE.json",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r08_integration\\tool\\app\\startscreen-evidence\\ASYNC_BASELINE.json",
+      "exists": true
+    },
+    {
+      "source": "app/startscreen-evidence/IMPLEMENTATION_NOTES.md",
+      "reference": "BROWSER_VERIFICATION.json",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r08_integration\\tool\\app\\startscreen-evidence\\BROWSER_VERIFICATION.json",
+      "exists": true
+    },
+    {
+      "source": "app/startscreen-evidence/IMPLEMENTATION_NOTES.md",
+      "reference": "COMBINED_VERIFICATION.json",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r08_integration\\tool\\app\\startscreen-evidence\\COMBINED_VERIFICATION.json",
       "exists": true
     },
     {
       "source": "downloads/README.md",
       "reference": "AB_Test_Workspace.zip",
-      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r07_integration\\tool\\downloads\\AB_Test_Workspace.zip",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r08_integration\\tool\\downloads\\AB_Test_Workspace.zip",
       "exists": true
     },
     {
       "source": "downloads/README.md",
       "reference": "../app/README.md",
-      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r07_integration\\tool\\app\\README.md",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r08_integration\\tool\\app\\README.md",
+      "exists": true
+    },
+    {
+      "source": "downloads/README.md",
+      "reference": "../app/startscreen-evidence/IMPLEMENTATION_NOTES.md",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r08_integration\\tool\\app\\startscreen-evidence\\IMPLEMENTATION_NOTES.md",
+      "exists": true
+    },
+    {
+      "source": "downloads/README.md",
+      "reference": "AB_Test_Workspace.zip",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r08_integration\\tool\\downloads\\AB_Test_Workspace.zip",
+      "exists": true
+    },
+    {
+      "source": "downloads/README.md",
+      "reference": "../app/README.md",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r08_integration\\tool\\app\\README.md",
       "exists": true
     },
     {
       "source": "downloads/README.md",
       "reference": "../app/help/walkthrough.mp4",
-      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r07_integration\\tool\\app\\help\\walkthrough.mp4",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r08_integration\\tool\\app\\help\\walkthrough.mp4",
       "exists": true
     },
     {
       "source": "downloads/README.md",
       "reference": "PACKAGE_ALLOWLIST.json",
-      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r07_integration\\tool\\downloads\\PACKAGE_ALLOWLIST.json",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r08_integration\\tool\\downloads\\PACKAGE_ALLOWLIST.json",
       "exists": true
     },
     {
       "source": "downloads/README.md",
       "reference": "package_verification.json",
-      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r07_integration\\tool\\downloads\\package_verification.json",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r08_integration\\tool\\downloads\\package_verification.json",
       "exists": true
     },
     {
       "source": "prd/README.md",
       "reference": "BASELINE.md",
-      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r07_integration\\tool\\prd\\BASELINE.md",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r08_integration\\tool\\prd\\BASELINE.md",
       "exists": true
     },
     {
       "source": "prd/README.md",
       "reference": "DECISIONS.md",
-      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r07_integration\\tool\\prd\\DECISIONS.md",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r08_integration\\tool\\prd\\DECISIONS.md",
       "exists": true
     },
     {
       "source": "prd/README.md",
       "reference": "INTERVIEW.md",
-      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r07_integration\\tool\\prd\\INTERVIEW.md",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r08_integration\\tool\\prd\\INTERVIEW.md",
       "exists": true
     },
     {
       "source": "prd/README.md",
       "reference": "../README.md",
-      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r07_integration\\tool\\README.md",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r08_integration\\tool\\README.md",
       "exists": true
     },
     {
       "source": "prd/README.md",
       "reference": "../app/README.md",
-      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r07_integration\\tool\\app\\README.md",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r08_integration\\tool\\app\\README.md",
       "exists": true
     },
     {
       "source": "prd/README.md",
       "reference": "../ROADMAP.md",
-      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r07_integration\\tool\\ROADMAP.md",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r08_integration\\tool\\ROADMAP.md",
       "exists": true
     },
     {
       "source": "README.md",
       "reference": "app/README.md",
-      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r07_integration\\tool\\app\\README.md",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r08_integration\\tool\\app\\README.md",
       "exists": true
     },
     {
       "source": "README.md",
       "reference": "downloads/AB_Test_Workspace.zip",
-      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r07_integration\\tool\\downloads\\AB_Test_Workspace.zip",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r08_integration\\tool\\downloads\\AB_Test_Workspace.zip",
       "exists": true
     },
     {
       "source": "README.md",
       "reference": "app/help/walkthrough.mp4",
-      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r07_integration\\tool\\app\\help\\walkthrough.mp4",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r08_integration\\tool\\app\\help\\walkthrough.mp4",
       "exists": true
     },
     {
       "source": "README.md",
       "reference": "ROADMAP.md",
-      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r07_integration\\tool\\ROADMAP.md",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r08_integration\\tool\\ROADMAP.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "reference": "app/startscreen-evidence/IMPLEMENTATION_NOTES.md",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r08_integration\\tool\\app\\startscreen-evidence\\IMPLEMENTATION_NOTES.md",
       "exists": true
     },
     {
       "source": "README.md",
       "reference": "tutorial/README.md",
-      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r07_integration\\tool\\tutorial\\README.md",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r08_integration\\tool\\tutorial\\README.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "reference": "app/README.md#방문-완료율과-수신-철회-기준으로-확대-판단",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r08_integration\\tool\\app\\README.md",
       "exists": true
     },
     {
       "source": "README.md",
       "reference": "app/",
-      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r07_integration\\tool\\app",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r08_integration\\tool\\app",
       "exists": true
     },
     {
       "source": "README.md",
       "reference": "app/README.md",
-      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r07_integration\\tool\\app\\README.md",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r08_integration\\tool\\app\\README.md",
       "exists": true
     },
     {
       "source": "README.md",
       "reference": "app/verification.json",
-      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r07_integration\\tool\\app\\verification.json",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r08_integration\\tool\\app\\verification.json",
       "exists": true
     },
     {
       "source": "README.md",
       "reference": "prd/README.md",
-      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r07_integration\\tool\\prd\\README.md",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r08_integration\\tool\\prd\\README.md",
       "exists": true
     },
     {
       "source": "README.md",
       "reference": "ROADMAP.md",
-      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r07_integration\\tool\\ROADMAP.md",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r08_integration\\tool\\ROADMAP.md",
       "exists": true
     },
     {
       "source": "README.md",
       "reference": "review/README.md",
-      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r07_integration\\tool\\review\\README.md",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r08_integration\\tool\\review\\README.md",
       "exists": true
     },
     {
       "source": "README.md",
       "reference": "app/integration_verification.json",
-      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r07_integration\\tool\\app\\integration_verification.json",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r08_integration\\tool\\app\\integration_verification.json",
       "exists": true
     },
     {
       "source": "README.md",
       "reference": "review/REVIEW_STATUS.md",
-      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r07_integration\\tool\\review\\REVIEW_STATUS.md",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r08_integration\\tool\\review\\REVIEW_STATUS.md",
       "exists": true
     },
     {
       "source": "README.md",
       "reference": "app/fix-evidence/semantic/BROWSER_VERIFICATION.json",
-      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r07_integration\\tool\\app\\fix-evidence\\semantic\\BROWSER_VERIFICATION.json",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r08_integration\\tool\\app\\fix-evidence\\semantic\\BROWSER_VERIFICATION.json",
       "exists": true
     },
     {
       "source": "README.md",
       "reference": "app/README.md#같은-csv-형식의-열-연결을-다시-쓰기",
-      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r07_integration\\tool\\app\\README.md",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r08_integration\\tool\\app\\README.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "reference": "app/r08-evidence/IMPLEMENTATION_NOTES.md",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r08_integration\\tool\\app\\r08-evidence\\IMPLEMENTATION_NOTES.md",
       "exists": true
     },
     {
       "source": "README.md",
       "reference": "app/INPUT_CONTRACT.md",
-      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r07_integration\\tool\\app\\INPUT_CONTRACT.md",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r08_integration\\tool\\app\\INPUT_CONTRACT.md",
       "exists": true
     },
     {
       "source": "review/README.md",
       "reference": "REVIEW_STATUS.md",
-      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r07_integration\\tool\\review\\REVIEW_STATUS.md",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r08_integration\\tool\\review\\REVIEW_STATUS.md",
       "exists": true
     },
     {
       "source": "ROADMAP.md",
       "reference": "app/README.md",
-      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r07_integration\\tool\\app\\README.md",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r08_integration\\tool\\app\\README.md",
       "exists": true
     },
     {
       "source": "ROADMAP.md",
       "reference": "README.md",
-      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r07_integration\\tool\\README.md",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r08_integration\\tool\\README.md",
       "exists": true
     },
     {
       "source": "ROADMAP.md",
       "reference": "app/verification.json",
-      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r07_integration\\tool\\app\\verification.json",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r08_integration\\tool\\app\\verification.json",
+      "exists": true
+    },
+    {
+      "source": "ROADMAP.md",
+      "reference": "app/startscreen-evidence/IMPLEMENTATION_NOTES.md",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r08_integration\\tool\\app\\startscreen-evidence\\IMPLEMENTATION_NOTES.md",
       "exists": true
     },
     {
       "source": "ROADMAP.md",
       "reference": "app/fix-evidence/semantic/BROWSER_VERIFICATION.json",
-      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r07_integration\\tool\\app\\fix-evidence\\semantic\\BROWSER_VERIFICATION.json",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r08_integration\\tool\\app\\fix-evidence\\semantic\\BROWSER_VERIFICATION.json",
       "exists": true
     },
     {
       "source": "ROADMAP.md",
       "reference": "app/integration_verification.json",
-      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r07_integration\\tool\\app\\integration_verification.json",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r08_integration\\tool\\app\\integration_verification.json",
       "exists": true
     },
     {
       "source": "ROADMAP.md",
       "reference": "app/column_profile_verification.json",
-      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r07_integration\\tool\\app\\column_profile_verification.json",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r08_integration\\tool\\app\\column_profile_verification.json",
       "exists": true
     },
     {
       "source": "ROADMAP.md",
       "reference": "app/profile-evidence/IMPLEMENTATION_NOTES.md",
-      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r07_integration\\tool\\app\\profile-evidence\\IMPLEMENTATION_NOTES.md",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r08_integration\\tool\\app\\profile-evidence\\IMPLEMENTATION_NOTES.md",
+      "exists": true
+    },
+    {
+      "source": "ROADMAP.md",
+      "reference": "app/r08-evidence/IMPLEMENTATION_NOTES.md",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r08_integration\\tool\\app\\r08-evidence\\IMPLEMENTATION_NOTES.md",
       "exists": true
     },
     {
       "source": "ROADMAP.md",
       "reference": "prd/BASELINE.md",
-      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r07_integration\\tool\\prd\\BASELINE.md",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r08_integration\\tool\\prd\\BASELINE.md",
       "exists": true
     },
     {
       "source": "ROADMAP.md",
       "reference": "app/INPUT_CONTRACT.md",
-      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r07_integration\\tool\\app\\INPUT_CONTRACT.md",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r08_integration\\tool\\app\\INPUT_CONTRACT.md",
       "exists": true
     },
     {
       "source": "ROADMAP.md",
       "reference": "app/CONTEXT_CONTRACT.md",
-      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r07_integration\\tool\\app\\CONTEXT_CONTRACT.md",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r08_integration\\tool\\app\\CONTEXT_CONTRACT.md",
       "exists": true
     },
     {
       "source": "tutorial/README.md",
       "reference": "../app/help/walkthrough.ko.srt",
-      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r07_integration\\tool\\app\\help\\walkthrough.ko.srt",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r08_integration\\tool\\app\\help\\walkthrough.ko.srt",
       "exists": true
     },
     {
       "source": "tutorial/README.md",
       "reference": "../app/help/walkthrough.timeline.json",
-      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r07_integration\\tool\\app\\help\\walkthrough.timeline.json",
+      "target": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r08_integration\\tool\\app\\help\\walkthrough.timeline.json",
       "exists": true
     }
   ],

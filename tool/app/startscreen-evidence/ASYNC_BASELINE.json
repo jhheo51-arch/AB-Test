@@ -1,0 +1,41 @@
+{
+  "status": "FAIL",
+  "checks": [
+    {
+      "name": "late fetched sample cannot overwrite newer CSV",
+      "pass": false
+    },
+    {
+      "name": "late fetched sample cannot overwrite newer condition",
+      "pass": false
+    },
+    {
+      "name": "late fetched sample cannot overwrite newer project",
+      "pass": true
+    },
+    {
+      "name": "old sample finally cannot unlock newer CSV read",
+      "pass": true
+    },
+    {
+      "name": "old sample cannot inject rollout while newer CSV owns input",
+      "pass": false
+    },
+    {
+      "name": "new sample cancels older file read and preserves newer result",
+      "pass": false
+    },
+    {
+      "name": "old sample cannot apply or unlock newer sample",
+      "pass": true
+    },
+    {
+      "name": "new sample actual bytes applied with controls released",
+      "pass": true
+    }
+  ],
+  "actual_model_calls": 0,
+  "human_observations": 0,
+  "scope": "actual Chrome and actual local GET sample bytes; delayed real response.text completion, no synthetic successful response; file picker automated",
+  "count": 8
+}

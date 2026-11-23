@@ -1,0 +1,123 @@
+{
+  "status": "FAIL",
+  "checks": [
+    {
+      "name": "keyboard only paste and prepare",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "keyboard arrows Space Enter analyze actual engine",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "keyboard judgment and sharing confirmation",
+      "pass": false,
+      "detail": null
+    },
+    {
+      "name": "keyboard Escape pauses video immediately and exact RAW/form/template consent state",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "modal focus restored to named help trigger",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "accessible label data-text",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "accessible label format",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "accessible label randomized",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "accessible label mature-evidence",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "accessible label profile-consent",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "CSS layout zoom 2 width 1440 no page horizontal overflow",
+      "pass": true,
+      "detail": {
+        "inner": 1440,
+        "scroll": 1440,
+        "zoom": "2",
+        "body": 1440
+      }
+    },
+    {
+      "name": "CSS layout zoom 1 width 390 no page horizontal overflow",
+      "pass": true,
+      "detail": {
+        "inner": 390,
+        "scroll": 390,
+        "zoom": "1",
+        "body": 390
+      }
+    },
+    {
+      "name": "CSS layout zoom 1 width 320 no page horizontal overflow",
+      "pass": true,
+      "detail": {
+        "inner": 320,
+        "scroll": 320,
+        "zoom": "1",
+        "body": 320
+      }
+    },
+    {
+      "name": "CSS layout zoom 2 width 390 no page horizontal overflow",
+      "pass": false,
+      "detail": {
+        "inner": 390,
+        "scroll": 487,
+        "zoom": "2",
+        "body": 390
+      }
+    },
+    {
+      "name": "CSS layout zoom 2 width 320 no page horizontal overflow",
+      "pass": false,
+      "detail": {
+        "inner": 320,
+        "scroll": 487,
+        "zoom": "2",
+        "body": 320
+      }
+    }
+  ],
+  "timings": {},
+  "blocked_requests": [],
+  "page_errors": [],
+  "human_observations": 0,
+  "actual_model_calls": 0,
+  "untested": [
+    "actual NVDA/Narrator/audio screenreader use",
+    "real human study",
+    "native OS file dialog",
+    "actual weak physical device",
+    "other operating systems",
+    "real system without Python"
+  ],
+  "scope": "synthetic automated actual Chrome; CSS zoom 200% (not deviceScaleFactor); AX tree inspection not assistive-technology use; actual read/hash/Worker with controlled completion gates",
+  "browser_version": "158.0.8127.36",
+  "error": "",
+  "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_tool_r08_integration\\tool\\app\\tests\\verify_r08_browser.py\", line 73, in <module>\n    raw='\\n'.join(lines);padding=2*1024*1024-len(raw.encode());assert padding>=0;lines[1]='P'*padding+lines[1];raw='\\n'.join(lines);assert len(raw.encode())==2097152\n                                                                      ^^^^^^^^^^\nAssertionError\n",
+  "count": 15
+}

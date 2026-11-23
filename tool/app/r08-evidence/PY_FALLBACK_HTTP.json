@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "scope": "source",
+      "pass": true,
+      "py_exe_only_in_PATH": true,
+      "url": "http://127.0.0.1:1365",
+      "stdout_until_ready": [
+        "AB_LOCAL_URL=http://127.0.0.1:1365\n"
+      ],
+      "stdin": "DEVNULL",
+      "actual_model_calls": 0,
+      "port_closed_after_stop": true
+    },
+    {
+      "scope": "extracted",
+      "pass": true,
+      "py_exe_only_in_PATH": true,
+      "url": "http://127.0.0.1:1369",
+      "stdout_until_ready": [
+        "AB_LOCAL_URL=http://127.0.0.1:1369\n"
+      ],
+      "stdin": "DEVNULL",
+      "actual_model_calls": 0,
+      "port_closed_after_stop": true
+    }
+  ],
+  "unique_additional_environment_cases": 1,
+  "source_runs": 1,
+  "extracted_runs": 1,
+  "not_added_to_integration_or_browser_totals": true,
+  "tested_zip_sha256": "1da92ed503bac7b6a46281ceb7a8d5350ae6dacbbb9fa7045b08dcc438f67b4d",
+  "scope": "actual installed py -3 launches HTTP through launch.cmd with python absent only from isolated PATH; not a real Python-uninstalled machine",
+  "human_observations": 0,
+  "actual_model_calls": 0
+}

@@ -1,0 +1,9 @@
+{
+  "status": "FAIL",
+  "case": "malformed CSV file must preserve existing valid input/result",
+  "preserved": false,
+  "after_raw": "arm,success,total\nA,\"unterminated",
+  "after_has_result": false,
+  "model_calls": 0,
+  "humans": 0
+}

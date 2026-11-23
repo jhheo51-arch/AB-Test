@@ -4,6 +4,8 @@
 
 ## 프로젝트 JSON 다운로드
 
+최신 실행 ZIP 안에도 실제 제공 입력과 같은 세 파일이 있습니다: [원래 보류](projects/routine-service-original-hold.json), [수치 충족·운영 미확인 보류](projects/routine-service-metrics-met-hold.json), [수정된 가상 검토 가능](projects/routine-service-edited-review.json). 아래는 원래 공개된 다운로드 출처입니다.
+
 - [원래 사례 JSON 다운로드](https://github.com/jhheo51-arch/AB-Test/releases/download/tool-rollout-report-20261123/routine-service-original-hold.json) — 수치 기준 미달, 센터 수용량과 비용 미확인으로 **확대 보류**.
 - [수치 기준 충족, 운영 조건 미확인 사례 JSON 다운로드](https://github.com/jhheo51-arch/AB-Test/releases/download/tool-rollout-report-20261123/routine-service-metrics-met-hold.json) — 두 수치 기준을 충족했지만 센터 수용량과 비용이 모두 미확인이라 **확대 보류**.
 - [입력값을 바꾼 사례 JSON 다운로드](https://github.com/jhheo51-arch/AB-Test/releases/download/tool-rollout-report-20261123/routine-service-edited-review.json) — 두 수치 기준을 충족하고 센터 수용량과 비용도 충족으로 설정해 **확대 검토 가능**.

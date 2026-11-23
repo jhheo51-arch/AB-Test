@@ -1,14 +1,39 @@
 {
   "status": "PASS",
-  "runtime_hashes_checked": 23,
+  "current_status": {
+    "status": "PASS",
+    "counts": {
+      "scripts": 32,
+      "smoke_unit_groups": 159,
+      "separate_semantic_cases": 1029,
+      "engine_gate_cases_included_in_semantic": 972,
+      "browser_checks": 531
+    },
+    "storage": {
+      "storage_schema": 8,
+      "csv_plan_storage_schema": 7,
+      "rollout_storage_schema": 8,
+      "legacy_storage_versions": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  },
+  "runtime_hashes_checked": 24,
   "historical_baseline_sha256": "1226659fc698ecf759298eed23b8535f5cf2ceca59113339554588c4c7d1a918",
-  "scripts": 27,
-  "unit_groups": 158,
+  "scripts": 32,
+  "unit_groups": 159,
   "separate_semantic_cases": 1029,
   "engine_gate_cases_included": 972,
-  "browser_checks": 469,
-  "preserved_control_count": 9,
+  "browser_checks": 531,
+  "preserved_control_count": 7,
   "intentional_changed_controls": [
+    "engine.js",
+    "workflow.css",
     "column-mapping.js",
     "workflow.js",
     "help/walkthrough.mp4",

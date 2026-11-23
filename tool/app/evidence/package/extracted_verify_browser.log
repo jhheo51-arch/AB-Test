@@ -34,8 +34,8 @@ PASS missing segment remains overall but blocks segment inference
 PASS untrusted segment text is escaped in result and report
 PASS non UTF-8 files are rejected rather than silently recoded
 PASS 50000 individual rows complete local UI path
-BOUNDARY_50000_ELAPSED_SECONDS 13.964
-PASS 50001 individual rows are blocked in UI
+BOUNDARY_50000_ELAPSED_SECONDS 13.418
+PASS 50001 individual file rows rejected before replacing current input
 PASS 390px input page has no global horizontal overflow
 PASS no remote browser requests and no raw file/ID transmitted
 PASS no uncaught page JavaScript errors

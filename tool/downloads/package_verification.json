@@ -1,22 +1,22 @@
 {
   "status": "PASS",
-  "checked_at_utc": "2026-11-23T09:05:38.605297+00:00",
+  "checked_at_utc": "2026-11-23T14:28:11.168780+00:00",
   "file": "AB_Test_Workspace.zip",
-  "sha256": "8de2c4e4a65687b6d68551808bd75b38450c5f3960eb359b4a1d85aa3bcf3030",
-  "bytes": 8616936,
-  "members": 158,
+  "sha256": "1da92ed503bac7b6a46281ceb7a8d5350ae6dacbbb9fa7045b08dcc438f67b4d",
+  "bytes": 11471580,
+  "members": 204,
   "duplicate_members": false,
   "CRC": "PASS",
   "all_member_bytes_match_source": true,
   "allowlist": "PACKAGE_ALLOWLIST.json",
-  "separate_extracted_server": "http://127.0.0.1:12920",
-  "extraction": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\ab_current_package_s0him8nf",
+  "separate_extracted_server": "http://127.0.0.1:1270",
+  "extraction": "C:\\Users\\Administrator\\AppData\\Local\\hermes\\profiles\\mira\\cache\\scratch\\한글 ZIP 실행 경로 vv4i7z1d",
   "server_stopped": true,
   "unpacked_browser": [
     {
       "script": "run_integration.py",
       "exit_code": 0,
-      "output": "http://127.0.0.1:12942\ncolumn_mapping_smoke PASS\ncolumn_profile_smoke PASS\ncompare_reference PASS\nconditions_smoke PASS\ndesign_smoke PASS\nengine_smoke PASS\nlineage_smoke PASS\nnarrative_smoke PASS\nproject_schema_smoke PASS\nsemantic_edges PASS\nverify_column_profiles PASS\nverify_semantic_edges PASS\nverify_conditions PASS\nverify_design PASS\nverify_design_boundaries PASS\nverify_browser PASS\nverify_regressions PASS\nverify_current_interface PASS\nverify_design_style PASS\nverify_lineage_browser PASS\nverify_workflow PASS\nverify_context PASS\nverify_issue_allowlist PASS\nverify_design_pdf PASS\nverify_pdf PASS\nverify_guided_pdf PASS\nverify_lineage_pdf PASS\nPASS summary: 27 executed scripts; 158 unit groups; 1029 separate semantic cases; 469 browser checks\n",
+      "output": "http://127.0.0.1:1275\ncolumn_mapping_smoke PASS\ncolumn_profile_smoke PASS\ncompare_reference PASS\nconditions_smoke PASS\ndesign_smoke PASS\nengine_smoke PASS\nlineage_smoke PASS\nnarrative_smoke PASS\nproject_schema_smoke PASS\nsemantic_edges PASS\nverify_startscreen_ownership PASS\nverify_combined_rollout PASS\nverify_r08_browser PASS\nverify_column_profiles PASS\nverify_semantic_edges PASS\nverify_conditions PASS\nverify_design PASS\nverify_design_boundaries PASS\nverify_browser PASS\nverify_regressions PASS\nverify_current_interface PASS\nverify_design_style PASS\nverify_lineage_browser PASS\nverify_workflow PASS\nverify_context PASS\nverify_r08_environment PASS\nverify_issue_allowlist PASS\nverify_design_pdf PASS\nverify_pdf PASS\nverify_guided_pdf PASS\nverify_lineage_pdf PASS\nverify_rollout PASS\nSTATUS {'status': 'SYNCED', 'written': True, 'counts': {'scripts': 32, 'smoke_unit_groups': 159, 'separate_semantic_cases': 1029, 'engine_gate_cases_included_in_semantic': 972, 'browser_checks': 531}}\nPASS summary: 32 executed scripts; 159 unit groups; 1029 separate semantic cases; 531 browser checks\n",
       "stderr": ""
     }
   ],

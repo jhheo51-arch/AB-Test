@@ -1,0 +1,18 @@
+PASS Python launcher Korean spaces no-browser loopback HTTP
+PASS actual AppServer socket API bind address is IPv4 loopback
+PASS two simultaneous instances unique loopback ports
+PASS explicit occupied port exits usefully without alternate server
+PASS closed server port actually refuses connection
+PASS restart same explicit port succeeds
+PASS incomplete extraction missing conditions.js blocked at startup
+PASS incomplete extraction missing design.js blocked at startup
+PASS incomplete extraction missing design-ui.js blocked at startup
+PASS incomplete extraction missing column-profile.js blocked at startup
+PASS incomplete extraction missing profile-ui.js blocked at startup
+PASS incomplete extraction missing rollout.js blocked at startup
+PASS CMD forwards no-browser and explicit port arguments
+PASS isolated PATH Python missing actionable instruction
+PASS actual launch.cmd starts Korean path HTTP with no-browser
+PASS real installed Python launcher available
+PASS real py -3 fallback help no server
+PASS all owned server ports closed

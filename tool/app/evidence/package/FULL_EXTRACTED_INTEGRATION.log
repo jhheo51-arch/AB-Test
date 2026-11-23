@@ -1,4 +1,4 @@
-http://127.0.0.1:12942
+http://127.0.0.1:1275
 column_mapping_smoke PASS
 column_profile_smoke PASS
 compare_reference PASS
@@ -9,6 +9,9 @@ lineage_smoke PASS
 narrative_smoke PASS
 project_schema_smoke PASS
 semantic_edges PASS
+verify_startscreen_ownership PASS
+verify_combined_rollout PASS
+verify_r08_browser PASS
 verify_column_profiles PASS
 verify_semantic_edges PASS
 verify_conditions PASS
@@ -21,9 +24,12 @@ verify_design_style PASS
 verify_lineage_browser PASS
 verify_workflow PASS
 verify_context PASS
+verify_r08_environment PASS
 verify_issue_allowlist PASS
 verify_design_pdf PASS
 verify_pdf PASS
 verify_guided_pdf PASS
 verify_lineage_pdf PASS
-PASS summary: 27 executed scripts; 158 unit groups; 1029 separate semantic cases; 469 browser checks
+verify_rollout PASS
+STATUS {'status': 'SYNCED', 'written': True, 'counts': {'scripts': 32, 'smoke_unit_groups': 159, 'separate_semantic_cases': 1029, 'engine_gate_cases_included_in_semantic': 972, 'browser_checks': 531}}
+PASS summary: 32 executed scripts; 159 unit groups; 1029 separate semantic cases; 531 browser checks
