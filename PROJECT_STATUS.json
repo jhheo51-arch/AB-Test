@@ -1,5 +1,5 @@
 {
-  "checked_at_seoul": "2026-11-24T11:39:33.628181+09:00",
+  "checked_at_seoul": "2026-11-24T12:29:26.465821+09:00",
   "book_title": "그래서, 이 캠페인 계속할까요?",
   "author": "허재혁",
   "publication_status": "별도 출판과 판매하지 않음. 공개 참고 자료",
@@ -7,9 +7,9 @@
     "pdf": "e-book/ebook.pdf",
     "html": "e-book/ebook.html",
     "markdown": "e-book/ebook.md",
-    "pages": 117,
-    "decision_page": 80,
-    "sha256": "541dae563b963f172fe5023c7b5c30cad0f2385385783191a9899073047649f7"
+    "pages": 127,
+    "decision_page": 89,
+    "sha256": "1573fe8494e3694e1502087f636d05588f9ea30551eb11a8b9f5dca162469676"
   },
   "storage_policy": {
     "github": "single_latest_without_version_paths",
@@ -18,17 +18,17 @@
   },
   "current_integrity_check": {
     "status": "passed",
-    "checked_at_seoul": "2026-11-24T11:39:33.628181+09:00",
+    "checked_at_seoul": "2026-11-24T12:29:26.465821+09:00",
     "scope": "Latest declared bytes and local links only; no statistical or reader retest",
     "files_checked": 26,
     "local_links_checked": 24,
-    "pdf_pages_recorded": 117,
-    "decision_page_recorded": 80,
-    "pdf_sha256": "541dae563b963f172fe5023c7b5c30cad0f2385385783191a9899073047649f7",
+    "pdf_pages_recorded": 127,
+    "decision_page_recorded": 89,
+    "pdf_sha256": "1573fe8494e3694e1502087f636d05588f9ea30551eb11a8b9f5dca162469676",
     "human_or_field_test_performed": false
   },
   "management_mode": "reported_errors_only",
-  "prior_review_notice": "저자 승인에 따른 전권 서술 개정과 두 읽기 경로 분리, 핵심 개념 36개 참고 해설 확장을 반영했다. 기존 실험 수치와 표, 코드 및 각주를 보존하고 AI 의미 대조와 독서 기능 및 조판을 검사했다. 과거 검수와 원자료는 로컬에 보존한다. 이 시각은 파일 무결성 검사 시각이며 통계 재계산이나 실제 독자시험의 완료 시각이 아니다.",
+  "prior_review_notice": "저자 승인에 따른 전권 서술 개정과 두 읽기 경로 분리, 핵심 개념 36개 참고 해설 확장을 반영했다. 이후 승인된 장별 새 쪽, 데이터 그림 다섯 개의 시각 편집과 표지 간소화를 적용하고 조판 및 독서 기능을 재검사했다. 기존 실험 수치와 표, 코드 및 각주를 보존하고 AI 의미 대조와 독서 기능 및 조판을 검사했다. 과거 검수와 원자료는 로컬에 보존한다. 이 시각은 파일 무결성 검사 시각이며 통계 재계산이나 실제 독자시험의 완료 시각이 아니다.",
   "known_historical_plan_byte_difference": "LF/CRLF 차이 고지 유지. 과거 원본을 수정해 차이를 지우지 않음.",
   "actual_reader_test_completed": false,
   "independent_human_review_completed": false,

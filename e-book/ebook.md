@@ -1031,7 +1031,7 @@ JH Motors의 시승 편의 안내 B는 후속 검토 후보로 유지하고 전�
 
 <a id="term-index"></a>
 <div class="lookup-tools"><label>용어 또는 영문 약어 <input id="term-search" type="search" placeholder="예: 검정력, MDE, SRM" /></label><button type="button" id="term-clear">지우기</button><span id="term-result" aria-live="polite"></span></div>
-<div class="index-pair"><table class="index-table"><thead><tr><th>용어</th><th>본문</th><th>해설</th></tr></thead><tbody><tr data-search="보호 지표, 가드레일 Guardrail Metric 가드레일"><td><a href="#g-guardrail">가드레일</a></td><td><a href="#b-guardrail"><span class="folio" data-id="b-guardrail">31</span></a></td><td><a href="#g-guardrail"><span class="folio" data-id="g-guardrail">83</span></a></td></tr><tr data-search="간섭 Interference, Spillover 간섭"><td><a href="#g-interference">간섭</a></td><td><a href="#b-interference"><span class="folio" data-id="b-interference">46</span></a></td><td><a href="#g-interference"><span class="folio" data-id="g-interference">84</span></a></td></tr><tr data-search="제2종 오류와 검정력 Type II Error, Power 검정력과 제2종 오류"><td><a href="#g-power">검정력과 제2종 오류</a></td><td><a href="#b-power"><span class="folio" data-id="b-power">27</span></a></td><td><a href="#g-power"><span class="folio" data-id="g-power">84</span></a></td></tr><tr data-search="고객생애가치 LTV, Lifetime Value 고객생애가치"><td><a href="#g-ltv">고객생애가치</a></td><td><a href="#b-ltv"><span class="folio" data-id="b-ltv">19</span></a></td><td><a href="#g-ltv"><span class="folio" data-id="g-ltv">85</span></a></td></tr><tr data-search="관측 성숙 Maturity 관측 성숙"><td><a href="#g-maturity">관측 성숙</a></td><td><a href="#b-maturity"><span class="folio" data-id="b-maturity">30</span></a></td><td><a href="#g-maturity"><span class="folio" data-id="g-maturity">86</span></a></td></tr><tr data-search="군집 실험 Cluster-randomized Experiment 군집 실험"><td><a href="#g-cluster">군집 실험</a></td><td><a href="#b-cluster"><span class="folio" data-id="b-cluster">24</span></a></td><td><a href="#g-cluster"><span class="folio" data-id="g-cluster">87</span></a></td></tr><tr data-search="다중 비교 Multiplicity, Multiple Testing 다중 비교"><td><a href="#g-multiplicity">다중 비교</a></td><td><a href="#b-multiplicity"><span class="folio" data-id="b-multiplicity">24</span></a></td><td><a href="#g-multiplicity"><span class="folio" data-id="g-multiplicity">87</span></a></td></tr><tr data-search="다중 팔 밴딧 Multi-armed Bandit, MAB 다중 팔 밴딧"><td><a href="#g-bandit">다중 팔 밴딧</a></td><td><a href="#b-bandit"><span class="folio" data-id="b-bandit">65</span></a></td><td><a href="#g-bandit"><span class="folio" data-id="g-bandit">88</span></a></td></tr><tr data-search="무작위 배정 Randomization 무작위 배정"><td><a href="#g-randomization">무작위 배정</a></td><td><a href="#b-randomization"><span class="folio" data-id="b-randomization">15</span></a></td><td><a href="#g-randomization"><span class="folio" data-id="g-randomization">89</span></a></td></tr><tr data-search="민감도 분석 Sensitivity Analysis 민감도 분석"><td><a href="#g-sensitivity">민감도 분석</a></td><td><a href="#b-sensitivity"><span class="folio" data-id="b-sensitivity">12</span></a></td><td><a href="#g-sensitivity"><span class="folio" data-id="g-sensitivity">89</span></a></td></tr><tr data-search="반사실 Counterfactual 반사실"><td><a href="#g-counterfactual">반사실</a></td><td><a href="#b-counterfactual"><span class="folio" data-id="b-counterfactual">49</span></a></td><td><a href="#g-counterfactual"><span class="folio" data-id="g-counterfactual">90</span></a></td></tr><tr data-search="배정 기준 분석 ITT, Intention-to-Treat 배정 기준 분석"><td><a href="#g-itt">배정 기준 분석</a></td><td><a href="#b-itt"><span class="folio" data-id="b-itt">22</span></a></td><td><a href="#g-itt"><span class="folio" data-id="g-itt">91</span></a></td></tr><tr data-search="배정 단위와 분석 단위 Units 배정 단위와 분석 단위"><td><a href="#g-units">배정 단위와 분석 단위</a></td><td><a href="#b-units"><span class="folio" data-id="b-units">15</span></a></td><td><a href="#g-units"><span class="folio" data-id="g-units">92</span></a></td></tr><tr data-search="분모 Denominator 분모"><td><a href="#g-denominator">분모</a></td><td><a href="#b-denominator"><span class="folio" data-id="b-denominator">7</span></a></td><td><a href="#g-denominator"><span class="folio" data-id="g-denominator">92</span></a></td></tr><tr data-search="상호작용과 효과 이질성 Interaction, Heterogeneity 상호작용"><td><a href="#g-interaction">상호작용</a></td><td><a href="#b-interaction"><span class="folio" data-id="b-interaction">18</span></a></td><td><a href="#g-interaction"><span class="folio" data-id="g-interaction">93</span></a></td></tr><tr data-search="세그먼트 Segments 세그먼트"><td><a href="#g-segments">세그먼트</a></td><td><a href="#b-segments"><span class="folio" data-id="b-segments">17</span></a></td><td><a href="#g-segments"><span class="folio" data-id="g-segments">94</span></a></td></tr><tr data-search="순차 검정 Sequential Testing 순차 검정"><td><a href="#g-sequential">순차 검정</a></td><td><a href="#b-sequential"><span class="folio" data-id="b-sequential">32</span></a></td><td><a href="#g-sequential"><span class="folio" data-id="g-sequential">94</span></a></td></tr><tr data-search="신뢰구간 CI, Confidence Interval 신뢰구간"><td><a href="#g-ci">신뢰구간</a></td><td><a href="#b-ci"><span class="folio" data-id="b-ci">23</span></a></td><td><a href="#g-ci"><span class="folio" data-id="g-ci">95</span></a></td></tr></tbody></table><table class="index-table"><thead><tr><th>용어</th><th>본문</th><th>해설</th></tr></thead><tbody><tr data-search="요인 설계와 다변량 테스트 Factorial Design, MVT 요인 설계와 다변량 테스트"><td><a href="#g-factorial">요인 설계와 다변량 테스트</a></td><td>—</td><td><a href="#g-factorial"><span class="folio" data-id="g-factorial">96</span></a></td></tr><tr data-search="유의수준과 제1종 오류 Alpha, Type I Error 유의수준과 제1종 오류"><td><a href="#g-alpha">유의수준과 제1종 오류</a></td><td><a href="#b-alpha"><span class="folio" data-id="b-alpha">24</span></a></td><td><a href="#g-alpha"><span class="folio" data-id="g-alpha">97</span></a></td></tr><tr data-search="유의확률 p-value 유의확률"><td><a href="#g-pvalue">유의확률</a></td><td><a href="#b-pvalue"><span class="folio" data-id="b-pvalue">22</span></a></td><td><a href="#g-pvalue"><span class="folio" data-id="g-pvalue">97</span></a></td></tr><tr data-search="이중차분법 DID, Difference-in-Differences 이중차분법"><td><a href="#g-did">이중차분법</a></td><td><a href="#b-did"><span class="folio" data-id="b-did">65</span></a></td><td><a href="#g-did"><span class="folio" data-id="g-did">98</span></a></td></tr><tr data-search="전체 평가 기준 OEC, Overall Evaluation Criterion 전체 평가 기준"><td><a href="#g-oec">전체 평가 기준</a></td><td><a href="#b-oec"><span class="folio" data-id="b-oec">58</span></a></td><td><a href="#g-oec"><span class="folio" data-id="g-oec">99</span></a></td></tr><tr data-search="절대 효과와 상대 효과 Percentage Points, Relative Effect 절대 효과와 상대 효과"><td><a href="#g-effect">절대 효과와 상대 효과</a></td><td><a href="#b-effect"><span class="folio" data-id="b-effect">22</span></a></td><td><a href="#g-effect"><span class="folio" data-id="g-effect">99</span></a></td></tr><tr data-search="주지표 Primary Metric 주지표"><td><a href="#g-primary">주지표</a></td><td><a href="#b-primary"><span class="folio" data-id="b-primary">10</span></a></td><td><a href="#g-primary"><span class="folio" data-id="g-primary">100</span></a></td></tr><tr data-search="증분 효과 Incrementality 증분 효과"><td><a href="#g-incrementality">증분 효과</a></td><td><a href="#b-incrementality"><span class="folio" data-id="b-incrementality">14</span></a></td><td><a href="#g-incrementality"><span class="folio" data-id="g-incrementality">101</span></a></td></tr><tr data-search="진단 지표 Diagnostic Metric 진단 지표"><td><a href="#g-diagnostic">진단 지표</a></td><td><a href="#b-diagnostic"><span class="folio" data-id="b-diagnostic">17</span></a></td><td><a href="#g-diagnostic"><span class="folio" data-id="g-diagnostic">101</span></a></td></tr><tr data-search="처치 후 선택 Post-treatment Selection 처치 후 선택"><td><a href="#g-post-treatment">처치 후 선택</a></td><td><a href="#b-post-treatment"><span class="folio" data-id="b-post-treatment">18</span></a></td><td><a href="#g-post-treatment"><span class="folio" data-id="g-post-treatment">102</span></a></td></tr><tr data-search="최소 검출 효과 MDE, Minimum Detectable Effect 최소 검출 효과"><td><a href="#g-mde">최소 검출 효과</a></td><td><a href="#b-mde"><span class="folio" data-id="b-mde">28</span></a></td><td><a href="#g-mde"><span class="folio" data-id="g-mde">103</span></a></td></tr><tr data-search="최소 사업 효과 Business Threshold 최소 사업 효과"><td><a href="#g-business-threshold">최소 사업 효과</a></td><td><a href="#b-business-threshold"><span class="folio" data-id="b-business-threshold">28</span></a></td><td><a href="#g-business-threshold"><span class="folio" data-id="g-business-threshold">103</span></a></td></tr><tr data-search="추정 대상 Estimand 추정 대상"><td><a href="#g-estimand">추정 대상</a></td><td><a href="#b-estimand"><span class="folio" data-id="b-estimand">16</span></a></td><td><a href="#g-estimand"><span class="folio" data-id="g-estimand">104</span></a></td></tr><tr data-search="트와이먼의 법칙 Twyman&#x27;s Law 트와이먼의 법칙"><td><a href="#g-twyman">트와이먼의 법칙</a></td><td>—</td><td><a href="#g-twyman"><span class="folio" data-id="g-twyman">105</span></a></td></tr><tr data-search="표본 비율 불일치 SRM, Sample Ratio Mismatch 표본 비율 불일치"><td><a href="#g-srm">표본 비율 불일치</a></td><td><a href="#b-srm"><span class="folio" data-id="b-srm">43</span></a></td><td><a href="#g-srm"><span class="folio" data-id="g-srm">105</span></a></td></tr><tr data-search="피킹 Peeking 피킹"><td><a href="#g-peeking">피킹</a></td><td><a href="#b-peeking"><span class="folio" data-id="b-peeking">32</span></a></td><td><a href="#g-peeking"><span class="folio" data-id="g-peeking">106</span></a></td></tr><tr data-search="홀드아웃 Holdout 홀드아웃"><td><a href="#g-holdout">홀드아웃</a></td><td><a href="#b-holdout"><span class="folio" data-id="b-holdout">35</span></a></td><td><a href="#g-holdout"><span class="folio" data-id="g-holdout">107</span></a></td></tr><tr data-search="A/A 테스트 A/A Test A/A 테스트"><td><a href="#g-aa">A/A 테스트</a></td><td><a href="#b-aa"><span class="folio" data-id="b-aa">60</span></a></td><td><a href="#g-aa"><span class="folio" data-id="g-aa">107</span></a></td></tr></tbody></table></div>
+<div class="index-pair"><table class="index-table"><thead><tr><th>용어</th><th>본문</th><th>해설</th></tr></thead><tbody><tr data-search="보호 지표, 가드레일 Guardrail Metric 가드레일"><td><a href="#g-guardrail">가드레일</a></td><td><a href="#b-guardrail"><span class="folio" data-id="b-guardrail">35</span></a></td><td><a href="#g-guardrail"><span class="folio" data-id="g-guardrail">92</span></a></td></tr><tr data-search="간섭 Interference, Spillover 간섭"><td><a href="#g-interference">간섭</a></td><td><a href="#b-interference"><span class="folio" data-id="b-interference">52</span></a></td><td><a href="#g-interference"><span class="folio" data-id="g-interference">93</span></a></td></tr><tr data-search="제2종 오류와 검정력 Type II Error, Power 검정력과 제2종 오류"><td><a href="#g-power">검정력과 제2종 오류</a></td><td><a href="#b-power"><span class="folio" data-id="b-power">30</span></a></td><td><a href="#g-power"><span class="folio" data-id="g-power">93</span></a></td></tr><tr data-search="고객생애가치 LTV, Lifetime Value 고객생애가치"><td><a href="#g-ltv">고객생애가치</a></td><td><a href="#b-ltv"><span class="folio" data-id="b-ltv">22</span></a></td><td><a href="#g-ltv"><span class="folio" data-id="g-ltv">94</span></a></td></tr><tr data-search="관측 성숙 Maturity 관측 성숙"><td><a href="#g-maturity">관측 성숙</a></td><td><a href="#b-maturity"><span class="folio" data-id="b-maturity">33</span></a></td><td><a href="#g-maturity"><span class="folio" data-id="g-maturity">95</span></a></td></tr><tr data-search="군집 실험 Cluster-randomized Experiment 군집 실험"><td><a href="#g-cluster">군집 실험</a></td><td><a href="#b-cluster"><span class="folio" data-id="b-cluster">27</span></a></td><td><a href="#g-cluster"><span class="folio" data-id="g-cluster">96</span></a></td></tr><tr data-search="다중 비교 Multiplicity, Multiple Testing 다중 비교"><td><a href="#g-multiplicity">다중 비교</a></td><td><a href="#b-multiplicity"><span class="folio" data-id="b-multiplicity">27</span></a></td><td><a href="#g-multiplicity"><span class="folio" data-id="g-multiplicity">96</span></a></td></tr><tr data-search="다중 팔 밴딧 Multi-armed Bandit, MAB 다중 팔 밴딧"><td><a href="#g-bandit">다중 팔 밴딧</a></td><td><a href="#b-bandit"><span class="folio" data-id="b-bandit">73</span></a></td><td><a href="#g-bandit"><span class="folio" data-id="g-bandit">97</span></a></td></tr><tr data-search="무작위 배정 Randomization 무작위 배정"><td><a href="#g-randomization">무작위 배정</a></td><td><a href="#b-randomization"><span class="folio" data-id="b-randomization">16</span></a></td><td><a href="#g-randomization"><span class="folio" data-id="g-randomization">98</span></a></td></tr><tr data-search="민감도 분석 Sensitivity Analysis 민감도 분석"><td><a href="#g-sensitivity">민감도 분석</a></td><td><a href="#b-sensitivity"><span class="folio" data-id="b-sensitivity">12</span></a></td><td><a href="#g-sensitivity"><span class="folio" data-id="g-sensitivity">98</span></a></td></tr><tr data-search="반사실 Counterfactual 반사실"><td><a href="#g-counterfactual">반사실</a></td><td><a href="#b-counterfactual"><span class="folio" data-id="b-counterfactual">54</span></a></td><td><a href="#g-counterfactual"><span class="folio" data-id="g-counterfactual">99</span></a></td></tr><tr data-search="배정 기준 분석 ITT, Intention-to-Treat 배정 기준 분석"><td><a href="#g-itt">배정 기준 분석</a></td><td><a href="#b-itt"><span class="folio" data-id="b-itt">25</span></a></td><td><a href="#g-itt"><span class="folio" data-id="g-itt">100</span></a></td></tr><tr data-search="배정 단위와 분석 단위 Units 배정 단위와 분석 단위"><td><a href="#g-units">배정 단위와 분석 단위</a></td><td><a href="#b-units"><span class="folio" data-id="b-units">16</span></a></td><td><a href="#g-units"><span class="folio" data-id="g-units">101</span></a></td></tr><tr data-search="분모 Denominator 분모"><td><a href="#g-denominator">분모</a></td><td><a href="#b-denominator"><span class="folio" data-id="b-denominator">7</span></a></td><td><a href="#g-denominator"><span class="folio" data-id="g-denominator">101</span></a></td></tr><tr data-search="상호작용과 효과 이질성 Interaction, Heterogeneity 상호작용"><td><a href="#g-interaction">상호작용</a></td><td><a href="#b-interaction"><span class="folio" data-id="b-interaction">19</span></a></td><td><a href="#g-interaction"><span class="folio" data-id="g-interaction">102</span></a></td></tr><tr data-search="세그먼트 Segments 세그먼트"><td><a href="#g-segments">세그먼트</a></td><td><a href="#b-segments"><span class="folio" data-id="b-segments">19</span></a></td><td><a href="#g-segments"><span class="folio" data-id="g-segments">103</span></a></td></tr><tr data-search="순차 검정 Sequential Testing 순차 검정"><td><a href="#g-sequential">순차 검정</a></td><td><a href="#b-sequential"><span class="folio" data-id="b-sequential">35</span></a></td><td><a href="#g-sequential"><span class="folio" data-id="g-sequential">103</span></a></td></tr><tr data-search="신뢰구간 CI, Confidence Interval 신뢰구간"><td><a href="#g-ci">신뢰구간</a></td><td><a href="#b-ci"><span class="folio" data-id="b-ci">26</span></a></td><td><a href="#g-ci"><span class="folio" data-id="g-ci">104</span></a></td></tr></tbody></table><table class="index-table"><thead><tr><th>용어</th><th>본문</th><th>해설</th></tr></thead><tbody><tr data-search="요인 설계와 다변량 테스트 Factorial Design, MVT 요인 설계와 다변량 테스트"><td><a href="#g-factorial">요인 설계와 다변량 테스트</a></td><td>—</td><td><a href="#g-factorial"><span class="folio" data-id="g-factorial">105</span></a></td></tr><tr data-search="유의수준과 제1종 오류 Alpha, Type I Error 유의수준과 제1종 오류"><td><a href="#g-alpha">유의수준과 제1종 오류</a></td><td><a href="#b-alpha"><span class="folio" data-id="b-alpha">27</span></a></td><td><a href="#g-alpha"><span class="folio" data-id="g-alpha">106</span></a></td></tr><tr data-search="유의확률 p-value 유의확률"><td><a href="#g-pvalue">유의확률</a></td><td><a href="#b-pvalue"><span class="folio" data-id="b-pvalue">25</span></a></td><td><a href="#g-pvalue"><span class="folio" data-id="g-pvalue">106</span></a></td></tr><tr data-search="이중차분법 DID, Difference-in-Differences 이중차분법"><td><a href="#g-did">이중차분법</a></td><td><a href="#b-did"><span class="folio" data-id="b-did">73</span></a></td><td><a href="#g-did"><span class="folio" data-id="g-did">107</span></a></td></tr><tr data-search="전체 평가 기준 OEC, Overall Evaluation Criterion 전체 평가 기준"><td><a href="#g-oec">전체 평가 기준</a></td><td><a href="#b-oec"><span class="folio" data-id="b-oec">65</span></a></td><td><a href="#g-oec"><span class="folio" data-id="g-oec">108</span></a></td></tr><tr data-search="절대 효과와 상대 효과 Percentage Points, Relative Effect 절대 효과와 상대 효과"><td><a href="#g-effect">절대 효과와 상대 효과</a></td><td><a href="#b-effect"><span class="folio" data-id="b-effect">25</span></a></td><td><a href="#g-effect"><span class="folio" data-id="g-effect">108</span></a></td></tr><tr data-search="주지표 Primary Metric 주지표"><td><a href="#g-primary">주지표</a></td><td><a href="#b-primary"><span class="folio" data-id="b-primary">10</span></a></td><td><a href="#g-primary"><span class="folio" data-id="g-primary">109</span></a></td></tr><tr data-search="증분 효과 Incrementality 증분 효과"><td><a href="#g-incrementality">증분 효과</a></td><td><a href="#b-incrementality"><span class="folio" data-id="b-incrementality">15</span></a></td><td><a href="#g-incrementality"><span class="folio" data-id="g-incrementality">110</span></a></td></tr><tr data-search="진단 지표 Diagnostic Metric 진단 지표"><td><a href="#g-diagnostic">진단 지표</a></td><td><a href="#b-diagnostic"><span class="folio" data-id="b-diagnostic">19</span></a></td><td><a href="#g-diagnostic"><span class="folio" data-id="g-diagnostic">110</span></a></td></tr><tr data-search="처치 후 선택 Post-treatment Selection 처치 후 선택"><td><a href="#g-post-treatment">처치 후 선택</a></td><td><a href="#b-post-treatment"><span class="folio" data-id="b-post-treatment">19</span></a></td><td><a href="#g-post-treatment"><span class="folio" data-id="g-post-treatment">111</span></a></td></tr><tr data-search="최소 검출 효과 MDE, Minimum Detectable Effect 최소 검출 효과"><td><a href="#g-mde">최소 검출 효과</a></td><td><a href="#b-mde"><span class="folio" data-id="b-mde">31</span></a></td><td><a href="#g-mde"><span class="folio" data-id="g-mde">112</span></a></td></tr><tr data-search="최소 사업 효과 Business Threshold 최소 사업 효과"><td><a href="#g-business-threshold">최소 사업 효과</a></td><td><a href="#b-business-threshold"><span class="folio" data-id="b-business-threshold">32</span></a></td><td><a href="#g-business-threshold"><span class="folio" data-id="g-business-threshold">112</span></a></td></tr><tr data-search="추정 대상 Estimand 추정 대상"><td><a href="#g-estimand">추정 대상</a></td><td><a href="#b-estimand"><span class="folio" data-id="b-estimand">17</span></a></td><td><a href="#g-estimand"><span class="folio" data-id="g-estimand">113</span></a></td></tr><tr data-search="트와이먼의 법칙 Twyman&#x27;s Law 트와이먼의 법칙"><td><a href="#g-twyman">트와이먼의 법칙</a></td><td>—</td><td><a href="#g-twyman"><span class="folio" data-id="g-twyman">114</span></a></td></tr><tr data-search="표본 비율 불일치 SRM, Sample Ratio Mismatch 표본 비율 불일치"><td><a href="#g-srm">표본 비율 불일치</a></td><td><a href="#b-srm"><span class="folio" data-id="b-srm">48</span></a></td><td><a href="#g-srm"><span class="folio" data-id="g-srm">114</span></a></td></tr><tr data-search="피킹 Peeking 피킹"><td><a href="#g-peeking">피킹</a></td><td><a href="#b-peeking"><span class="folio" data-id="b-peeking">35</span></a></td><td><a href="#g-peeking"><span class="folio" data-id="g-peeking">115</span></a></td></tr><tr data-search="홀드아웃 Holdout 홀드아웃"><td><a href="#g-holdout">홀드아웃</a></td><td><a href="#b-holdout"><span class="folio" data-id="b-holdout">40</span></a></td><td><a href="#g-holdout"><span class="folio" data-id="g-holdout">116</span></a></td></tr><tr data-search="A/A 테스트 A/A Test A/A 테스트"><td><a href="#g-aa">A/A 테스트</a></td><td><a href="#b-aa"><span class="folio" data-id="b-aa">67</span></a></td><td><a href="#g-aa"><span class="folio" data-id="g-aa">116</span></a></td></tr></tbody></table></div>
 <div class="english-index"><strong>영문과 약어</strong><p><a href="#g-aa">A/A</a> / <a href="#g-ci">CI</a> / <a href="#g-did">DID</a> / <a href="#g-guardrail">Guardrail</a> / <a href="#g-holdout">Holdout</a> / <a href="#g-itt">ITT</a> / <a href="#g-ltv">LTV</a> / <a href="#g-bandit">MAB</a> / <a href="#g-mde">MDE</a> / <a href="#g-factorial">MVT</a> / <a href="#g-oec">OEC</a> / <a href="#g-peeking">Peeking</a> / <a href="#g-power">Power</a> / <a href="#g-srm">SRM</a> / <a href="#g-pvalue">p-value</a></p></div>
 
 # 용어 해설
@@ -1043,7 +1043,7 @@ JH Motors의 시승 편의 안내 B는 후속 검토 후보로 유지하고 전�
 <a id="g-guardrail"></a>
 ## 가드레일
 
-<div class="term-meta">Guardrail Metric<span><a href="#b-guardrail">본문 <span class="folio" data-id="b-guardrail">31</span></a> / <a href="#term-index">찾아보기</a></span></div>
+<div class="term-meta">Guardrail Metric<span><a href="#b-guardrail">본문 <span class="folio" data-id="b-guardrail">35</span></a> / <a href="#term-index">찾아보기</a></span></div>
 
 가드레일은 핵심 성과를 높이는 동안 허용하기 어려운 악화를 막기 위해 정한 보호 지표다. 악화 검정이 유의하지 않다는 사실은 안전의 증명이 아니며, 정식 비열등성 판단에는 사전 허용 한계와 그에 맞는 설계가 필요하다. CRM에서는 철회율과 불만률을 감시하되 중대한 동의 위반을 시승 증가와 상쇄해 통과시키지 않는다.
 
@@ -1056,7 +1056,7 @@ JH Motors의 시승 편의 안내 B는 후속 검토 후보로 유지하고 전�
 <a id="g-interference"></a>
 ## 간섭
 
-<div class="term-meta">Interference, Spillover<span><a href="#b-interference">본문 <span class="folio" data-id="b-interference">46</span></a> / <a href="#term-index">찾아보기</a></span></div>
+<div class="term-meta">Interference, Spillover<span><a href="#b-interference">본문 <span class="folio" data-id="b-interference">52</span></a> / <a href="#term-index">찾아보기</a></span></div>
 
 간섭은 한 대상에게 배정한 정책이 다른 대상의 결과에도 영향을 주는 현상이다. 표본을 늘리는 것만으로 없어지지 않으며, 개인 단위 실험의 효과가 전면 적용 효과와 달라질 수 있다. CRM에서 B가 시승 슬롯을 먼저 채워 A 고객의 예약을 막는다면 공유 용량과 포화도를 포함해 비교 정책과 배정 단위를 다시 설계한다.
 
@@ -1069,7 +1069,7 @@ JH Motors의 시승 편의 안내 B는 후속 검토 후보로 유지하고 전�
 <a id="g-power"></a>
 ## 검정력과 제2종 오류
 
-<div class="term-meta">Type II Error, Power<span><a href="#b-power">본문 <span class="folio" data-id="b-power">27</span></a> / <a href="#term-index">찾아보기</a></span></div>
+<div class="term-meta">Type II Error, Power<span><a href="#b-power">본문 <span class="folio" data-id="b-power">30</span></a> / <a href="#term-index">찾아보기</a></span></div>
 
 제2종 오류는 특정 대립가설이 참일 때 귀무가설을 기각하지 못하는 오류이고, 그 확률 beta의 보수가 해당 대립가설에서의 검정력이다. 검정력은 효과 크기와 표본, 변동성 및 검정 규칙에 달리므로 모든 효과를 같은 확률로 발견한다는 뜻도, 이번 비유의 결과가 무효과일 확률도 아니다. CRM에서는 완료와 희귀한 계약의 계획 검정력을 따로 계산하고, 관측 효과로 구한 사후 검정력을 결론의 추가 근거로 쓰지 않는다.
 
@@ -1082,7 +1082,7 @@ JH Motors의 시승 편의 안내 B는 후속 검토 후보로 유지하고 전�
 <a id="g-ltv"></a>
 ## 고객생애가치
 
-<div class="term-meta">LTV, Lifetime Value<span><a href="#b-ltv">본문 <span class="folio" data-id="b-ltv">19</span></a> / <a href="#term-index">찾아보기</a></span></div>
+<div class="term-meta">LTV, Lifetime Value<span><a href="#b-ltv">본문 <span class="folio" data-id="b-ltv">22</span></a> / <a href="#term-index">찾아보기</a></span></div>
 
 LTV는 정한 기간과 할인, 비용 정의 아래에서 고객 관계가 만들어낼 미래 가치를 요약한 값이다. 관측한 장기 가치와 모형으로 예측한 가치를 구분해야 하며, 단기 클릭 상승이나 구매자의 높은 예측 LTV가 캠페인의 증분 LTV를 입증하지는 않는다. CRM에서는 장기 홀드아웃과 유지, 취소, 서비스 비용을 연결하고, 계약까지만 관측했다면 장기 가치 환산은 검증되지 않은 가정으로 남긴다.
 
@@ -1095,7 +1095,7 @@ LTV는 정한 기간과 할인, 비용 정의 아래에서 고객 관계가 만�
 <a id="g-maturity"></a>
 ## 관측 성숙
 
-<div class="term-meta">Maturity<span><a href="#b-maturity">본문 <span class="folio" data-id="b-maturity">30</span></a> / <a href="#term-index">찾아보기</a></span></div>
+<div class="term-meta">Maturity<span><a href="#b-maturity">본문 <span class="folio" data-id="b-maturity">33</span></a> / <a href="#term-index">찾아보기</a></span></div>
 
 관측 성숙은 각 대상이 미리 정한 결과 관측 창을 채운 상태다. 실험 시작 뒤 달력상 28일이 지났다고 모든 고객이 배정 후 28일을 채운 것은 아니며, 아직 관측 중인 상태를 최종 미완료와 혼동해서는 안 된다. CRM에서 늦게 등록한 고객의 계약을 읽을 때에는 개인별 180일 창이 찼는지 확인하고, 중간 스냅샷과 성숙 결과를 구분한다.
 
@@ -1108,7 +1108,7 @@ LTV는 정한 기간과 할인, 비용 정의 아래에서 고객 관계가 만�
 <a id="g-cluster"></a>
 ## 군집 실험
 
-<div class="term-meta">Cluster-randomized Experiment<span><a href="#b-cluster">본문 <span class="folio" data-id="b-cluster">24</span></a> / <a href="#term-index">찾아보기</a></span></div>
+<div class="term-meta">Cluster-randomized Experiment<span><a href="#b-cluster">본문 <span class="folio" data-id="b-cluster">27</span></a> / <a href="#term-index">찾아보기</a></span></div>
 
 군집 실험은 개인 대신 가구, 지점이나 지역 같은 묶음을 무작위로 배정하는 실험이다. 지역을 나눴다는 이유만으로 준실험이 되는 것은 아니며, 군집 안 상관과 군집 사이 간섭, 독립 군집 수를 설계와 분석에 반영해야 한다. CRM에서 지점별 시승 운영을 비교한다면 고객 수가 많아도 지점 수가 적을 수 있으므로 개인 독립 분석의 정밀도를 그대로 주장하지 않는다.
 
@@ -1121,7 +1121,7 @@ LTV는 정한 기간과 할인, 비용 정의 아래에서 고객 관계가 만�
 <a id="g-multiplicity"></a>
 ## 다중 비교
 
-<div class="term-meta">Multiplicity, Multiple Testing<span><a href="#b-multiplicity">본문 <span class="folio" data-id="b-multiplicity">24</span></a> / <a href="#term-index">찾아보기</a></span></div>
+<div class="term-meta">Multiplicity, Multiple Testing<span><a href="#b-multiplicity">본문 <span class="folio" data-id="b-multiplicity">27</span></a> / <a href="#term-index">찾아보기</a></span></div>
 
 다중 비교는 여러 후보, 지표, 대비나 집단을 검정하면서 우연한 발견을 선택할 기회가 늘어나는 문제다. 보정은 정한 검정 가족과 오류 기준을 대상으로 하므로 한 가족의 보정이 모든 탐색을 보호하거나 선택된 최대 효과의 과대추정을 자동으로 없애지는 않는다. JH Motors의 세 완료 대비에 적용한 Bonferroni 보정은 계약과 철회, 손익의 사후 비교까지 확증 결과로 만들지 않는다.
 
@@ -1134,7 +1134,7 @@ LTV는 정한 기간과 할인, 비용 정의 아래에서 고객 관계가 만�
 <a id="g-bandit"></a>
 ## 다중 팔 밴딧
 
-<div class="term-meta">Multi-armed Bandit, MAB<span><a href="#b-bandit">본문 <span class="folio" data-id="b-bandit">65</span></a> / <a href="#term-index">찾아보기</a></span></div>
+<div class="term-meta">Multi-armed Bandit, MAB<span><a href="#b-bandit">본문 <span class="folio" data-id="b-bandit">73</span></a> / <a href="#term-index">찾아보기</a></span></div>
 
 밴딧은 여러 선택지를 탐색하면서 관측 보상이 좋은 선택지에 배정을 더 주는 등 누적 보상과 학습을 함께 다루는 적응형 정책이다. 적은 표본의 불확실성을 없애거나 가장 좋은 안을 빨리 확정하는 보장은 없으며, 적응 배정과 시간 변화에 맞는 추론이 필요하다. CRM에서는 즉시 클릭을 보상으로 최적화한 정책이 지연된 계약과 고객 관계에도 좋은지 별도로 검증하고 고정 배정 A/B의 분석을 그대로 적용하지 않는다.
 
@@ -1147,7 +1147,7 @@ LTV는 정한 기간과 할인, 비용 정의 아래에서 고객 관계가 만�
 <a id="g-randomization"></a>
 ## 무작위 배정
 
-<div class="term-meta">Randomization<span><a href="#b-randomization">본문 <span class="folio" data-id="b-randomization">15</span></a> / <a href="#term-index">찾아보기</a></span></div>
+<div class="term-meta">Randomization<span><a href="#b-randomization">본문 <span class="folio" data-id="b-randomization">16</span></a> / <a href="#term-index">찾아보기</a></span></div>
 
 무작위 배정은 사전에 정한 확률 규칙으로 실험 단위를 정책에 나누어, 배정이 잠재적 결과와 독립이 되도록 만드는 절차다. 관측한 특성이 매번 정확히 같아지거나 모든 측정 오류가 사라지는 보장은 아니며, 배정 비율도 반드시 반반일 필요는 없다. CRM에서는 연락 동의 등 적격 조건을 먼저 정한 뒤 고객 ID별 A/B 배정을 유지해, 같은 고객이 재방문할 때 군을 오가지 않게 한다.
 
@@ -1173,7 +1173,7 @@ LTV는 정한 기간과 할인, 비용 정의 아래에서 고객 관계가 만�
 <a id="g-counterfactual"></a>
 ## 반사실
 
-<div class="term-meta">Counterfactual<span><a href="#b-counterfactual">본문 <span class="folio" data-id="b-counterfactual">49</span></a> / <a href="#term-index">찾아보기</a></span></div>
+<div class="term-meta">Counterfactual<span><a href="#b-counterfactual">본문 <span class="folio" data-id="b-counterfactual">54</span></a> / <a href="#term-index">찾아보기</a></span></div>
 
 반사실은 같은 대상이 실제로 받은 정책 대신 다른 정책을 받았다면 나타났을 결과다. 한 고객에게 같은 시점의 두 결과를 모두 관측할 수 없으므로 발송 이후 구매했다는 사실만으로 메시지의 효과를 알 수는 없다. CRM에서는 무작위 미발송 대조군을 통해 발송 고객에게도 메시지가 없었다면 생겼을 평균적인 구매를 추정한다.
 
@@ -1186,7 +1186,7 @@ LTV는 정한 기간과 할인, 비용 정의 아래에서 고객 관계가 만�
 <a id="g-itt"></a>
 ## 배정 기준 분석
 
-<div class="term-meta">ITT, Intention-to-Treat<span><a href="#b-itt">본문 <span class="folio" data-id="b-itt">22</span></a> / <a href="#term-index">찾아보기</a></span></div>
+<div class="term-meta">ITT, Intention-to-Treat<span><a href="#b-itt">본문 <span class="folio" data-id="b-itt">25</span></a> / <a href="#term-index">찾아보기</a></span></div>
 
 ITT는 실제 전달이나 참여 여부와 관계없이 처음 배정된 군을 기준으로 결과를 비교하는 분석 원칙이다. 무작위 배정의 비교를 유지하지만 결과 누락까지 자동으로 해결하지는 않으며, 실제로 메시지를 읽은 사람에게만 생기는 효과와도 다르다. CRM 발송 정책의 효과를 볼 때에는 전달 실패 고객도 원래 군에 남기고, 결과 기록이 빠진 고객은 별도의 누락 문제로 조사한다.
 
@@ -1199,7 +1199,7 @@ ITT는 실제 전달이나 참여 여부와 관계없이 처음 배정된 군을
 <a id="g-units"></a>
 ## 배정 단위와 분석 단위
 
-<div class="term-meta">Units<span><a href="#b-units">본문 <span class="folio" data-id="b-units">15</span></a> / <a href="#term-index">찾아보기</a></span></div>
+<div class="term-meta">Units<span><a href="#b-units">본문 <span class="folio" data-id="b-units">16</span></a> / <a href="#term-index">찾아보기</a></span></div>
 
 배정 단위는 정책을 나누는 대상이고, 분석 단위는 결과를 요약하거나 추론하는 대상이다. 서로 다를 수 있지만 그때에는 배정 구조와 대상 간 의존성을 분석에 반영해야 하며, 이벤트 행 수를 독립 고객 수로 세면 안 된다. CRM에서 고객별로 문구를 배정했다면 여러 클릭을 고객 결과로 묶고, 지점별로 배정했다면 지점 안 고객의 상관을 고려한다.
 
@@ -1225,7 +1225,7 @@ ITT는 실제 전달이나 참여 여부와 관계없이 처음 배정된 군을
 <a id="g-interaction"></a>
 ## 상호작용
 
-<div class="term-meta">Interaction, Heterogeneity<span><a href="#b-interaction">본문 <span class="folio" data-id="b-interaction">18</span></a> / <a href="#term-index">찾아보기</a></span></div>
+<div class="term-meta">Interaction, Heterogeneity<span><a href="#b-interaction">본문 <span class="folio" data-id="b-interaction">19</span></a> / <a href="#term-index">찾아보기</a></span></div>
 
 상호작용은 한 요인의 효과가 다른 요인이나 집단에 따라 달라지는 것으로, 효과 이질성을 검토하는 방식이다. 한 집단에서 유의하고 다른 집단에서 비유의하다는 사실만으로 두 효과의 차이가 입증되지는 않으며, 차이의 유무는 사용하는 척도에도 의존한다. CRM에서는 신규와 기존 고객의 B-A 완료율 차이를 직접 비교하고, 퍼센트포인트 척도에서 그 차이의 불확실성을 보고한다.
 
@@ -1238,7 +1238,7 @@ ITT는 실제 전달이나 참여 여부와 관계없이 처음 배정된 군을
 <a id="g-segments"></a>
 ## 세그먼트
 
-<div class="term-meta">Segments<span><a href="#b-segments">본문 <span class="folio" data-id="b-segments">17</span></a> / <a href="#term-index">찾아보기</a></span></div>
+<div class="term-meta">Segments<span><a href="#b-segments">본문 <span class="folio" data-id="b-segments">19</span></a> / <a href="#term-index">찾아보기</a></span></div>
 
 세그먼트는 고객 상태나 특성에 따라 정의한 집단으로, 전체 효과의 구성과 적용 대상을 이해하는 기준이다. 구매율이 높은 집단이 메시지의 증분 효과도 큰 집단인 것은 아니며, 사후에 가장 좋아 보이는 집단을 고르면 탐색과 다중 비교 문제가 남는다. CRM에서는 처치 전 신규와 기존 고객을 사전 구분하고 전체 효과와 각 집단의 효과, 새 캠페인의 고객 구성을 함께 검토한다.
 
@@ -1251,7 +1251,7 @@ ITT는 실제 전달이나 참여 여부와 관계없이 처음 배정된 군을
 <a id="g-sequential"></a>
 ## 순차 검정
 
-<div class="term-meta">Sequential Testing<span><a href="#b-sequential">본문 <span class="folio" data-id="b-sequential">32</span></a> / <a href="#term-index">찾아보기</a></span></div>
+<div class="term-meta">Sequential Testing<span><a href="#b-sequential">본문 <span class="folio" data-id="b-sequential">35</span></a> / <a href="#term-index">찾아보기</a></span></div>
 
 순차 검정은 중간 결과에 따라 계속할지 멈출지 판단할 수 있도록 조회와 종료 규칙을 포함해 설계한 추론 절차다. 집단 순차 설계, alpha 지출, 항상 유효한 추론 등은 조건이 다르므로 일반 p를 매일 계산한 뒤 순차 검정이라고 부를 수 없다. CRM에서는 중간 분석 시점과 경계, 결과 관측 지연을 사전에 정하고, 안전상 중단과 성과상 조기 종료를 구별해 기록한다.
 
@@ -1264,7 +1264,7 @@ ITT는 실제 전달이나 참여 여부와 관계없이 처음 배정된 군을
 <a id="g-ci"></a>
 ## 신뢰구간
 
-<div class="term-meta">CI, Confidence Interval<span><a href="#b-ci">본문 <span class="folio" data-id="b-ci">23</span></a> / <a href="#term-index">찾아보기</a></span></div>
+<div class="term-meta">CI, Confidence Interval<span><a href="#b-ci">본문 <span class="folio" data-id="b-ci">26</span></a> / <a href="#term-index">찾아보기</a></span></div>
 
 빈도주의 신뢰구간은 정한 가정과 절차 아래에서 반복 생성할 때 명목 신뢰수준에 대응하는 참값 포함 성질을 갖는 구간이다. 이번 구간에 참값이 들어 있을 확률을 그대로 95%라고 할 수 없고, 구간 끝이 가능한 효과의 절대 한계나 손실 보장선인 것도 아니다. CRM에서는 구간이 사업상 중요한 개선과 악화를 함께 포함하는지 읽되, 측정 편향과 원가 가정의 오류까지 그 구간이 보호한다고 해석하지 않는다.
 
@@ -1290,7 +1290,7 @@ ITT는 실제 전달이나 참여 여부와 관계없이 처음 배정된 군을
 <a id="g-alpha"></a>
 ## 유의수준과 제1종 오류
 
-<div class="term-meta">Alpha, Type I Error<span><a href="#b-alpha">본문 <span class="folio" data-id="b-alpha">24</span></a> / <a href="#term-index">찾아보기</a></span></div>
+<div class="term-meta">Alpha, Type I Error<span><a href="#b-alpha">본문 <span class="folio" data-id="b-alpha">27</span></a> / <a href="#term-index">찾아보기</a></span></div>
 
 실험이 성공했다고 잘못 보고할 위험을 어느 절차와 주장 범위에서 관리할 것인가? 제1종 오류는 참인 귀무가설을 기각하는 오류이고, 유의수준 alpha는 정한 검정 절차가 그 오류를 얼마나 허용하도록 설계됐는지 나타내는 기준이다. Alpha는 이번 유의한 결과가 틀렸을 사후확률이 아니며, 0.05는 5%이지 0.05%가 아니다. CRM에서 여러 문구를 비교하거나 중간 종료를 허용한다면 개별 검정의 기준만 적지 말고 전체 판단 절차의 오류 통제를 설계한다.
 
@@ -1303,7 +1303,7 @@ ITT는 실제 전달이나 참여 여부와 관계없이 처음 배정된 군을
 <a id="g-pvalue"></a>
 ## 유의확률
 
-<div class="term-meta">p-value<span><a href="#b-pvalue">본문 <span class="folio" data-id="b-pvalue">22</span></a> / <a href="#term-index">찾아보기</a></span></div>
+<div class="term-meta">p-value<span><a href="#b-pvalue">본문 <span class="folio" data-id="b-pvalue">25</span></a> / <a href="#term-index">찾아보기</a></span></div>
 
 관측한 완료 차이는 차이 없음이라는 가설과 분석 조건 아래 얼마나 이례적인가? p-value는 귀무가설과 분석 가정 아래에서 관측값만큼 또는 더 극단적인 검정 통계량을 얻을 확률이다. 귀무가설이 참일 확률도, 효과가 우연일 확률도 아니며, 1에서 p를 뺀 값이 B가 더 좋을 확률이 되지도 않는다. CRM 보고에서는 작은 p만 강조하지 않고 어느 대비와 지표의 검정인지, 효과 크기와 불확실성이 무엇인지 함께 쓴다.
 
@@ -1316,7 +1316,7 @@ p를 읽기 전에 어떤 두 정책의 어떤 결과를 비교했는지, 양측
 <a id="g-did"></a>
 ## 이중차분법
 
-<div class="term-meta">DID, Difference-in-Differences<span><a href="#b-did">본문 <span class="folio" data-id="b-did">65</span></a> / <a href="#term-index">찾아보기</a></span></div>
+<div class="term-meta">DID, Difference-in-Differences<span><a href="#b-did">본문 <span class="folio" data-id="b-did">73</span></a> / <a href="#term-index">찾아보기</a></span></div>
 
 일부 지역에 새 연락 정책을 도입한 뒤 나타난 변화에서 같은 시기의 공통 변화를 어떻게 구별할까? 이중차분법은 처치 집단의 전후 변화에서 비교 집단의 전후 변화를 빼 효과를 추정하는 방법이다. 처치가 없었다면 두 집단의 결과 추세가 나란했을 것이라는 평행 추세 등의 가정이 필요하므로 계절성과 외부 요인이 자동 제거되거나 단순 전후 비교가 인과 추론으로 바뀌지는 않는다. CRM에서 일부 지역만 새 연락 정책을 도입했다면 비교 지역의 추세, 동시 판촉, 고객 구성과 파급 효과를 조사하고 도입 시점 차이에 맞는 추정법을 고른다.
 
@@ -1329,7 +1329,7 @@ p를 읽기 전에 어떤 두 정책의 어떤 결과를 비교했는지, 양측
 <a id="g-oec"></a>
 ## 전체 평가 기준
 
-<div class="term-meta">OEC, Overall Evaluation Criterion<span><a href="#b-oec">본문 <span class="folio" data-id="b-oec">58</span></a> / <a href="#term-index">찾아보기</a></span></div>
+<div class="term-meta">OEC, Overall Evaluation Criterion<span><a href="#b-oec">본문 <span class="folio" data-id="b-oec">65</span></a> / <a href="#term-index">찾아보기</a></span></div>
 
 시승 예약이나 완료가 좋아졌다는 결과를 조직이 장기적으로 원하는 가치와 어떻게 연결할까? OEC는 조직이 장기적으로 개선하려는 가치를 실험 평가에 연결하는 전체적인 기준이다. 단일 지표나 사전에 정의한 복합 기준으로 구현할 수 있지만, 좋아 보이는 지표를 사후에 섞은 점수나 모든 실험의 주지표와 자동으로 같은 것은 아니다. CRM에서는 지속 가능한 고객당 기여를 목표로 두고 시승 완료를 가까운 주지표로 쓰더라도, 계약과 고객 관계로 이어지는 근거를 별도로 확인한다.
 
@@ -1342,7 +1342,7 @@ OEC를 실제 평가에 쓰려면 어떤 가치를 개선으로 볼지, 가까�
 <a id="g-effect"></a>
 ## 절대 효과와 상대 효과
 
-<div class="term-meta">Percentage Points, Relative Effect<span><a href="#b-effect">본문 <span class="folio" data-id="b-effect">22</span></a> / <a href="#term-index">찾아보기</a></span></div>
+<div class="term-meta">Percentage Points, Relative Effect<span><a href="#b-effect">본문 <span class="folio" data-id="b-effect">25</span></a> / <a href="#term-index">찾아보기</a></span></div>
 
 완료가 개선됐다는 같은 결과를 고객당 변화와 기준군 대비 변화로 각각 어떻게 설명할까? 비율의 절대 효과는 두 군 비율의 차이를 퍼센트포인트(pp)로 나타낸 것이고, 상대 효과는 그 차이를 기준군 비율로 나눈 변화다. 같은 차이라도 기준율에 따라 상대 변화가 달라지므로 단순히 몇 퍼센트 개선이라고 쓰면 의미가 흐려진다. JH Motors의 교육용 완료 결과는 약 +0.93pp와 약 +10.26%라는 두 표현을 함께 쓰며, 시승 슬롯 계획에는 절대 차이를 우선 연결한다.
 
@@ -1368,7 +1368,7 @@ OEC를 실제 평가에 쓰려면 어떤 가치를 개선으로 볼지, 가까�
 <a id="g-incrementality"></a>
 ## 증분 효과
 
-<div class="term-meta">Incrementality<span><a href="#b-incrementality">본문 <span class="folio" data-id="b-incrementality">14</span></a> / <a href="#term-index">찾아보기</a></span></div>
+<div class="term-meta">Incrementality<span><a href="#b-incrementality">본문 <span class="folio" data-id="b-incrementality">15</span></a> / <a href="#term-index">찾아보기</a></span></div>
 
 연락 뒤 생긴 계약 중 메시지가 없어도 생겼을 부분을 제외하고 무엇이 추가됐다고 말할 수 있을까? 증분 효과는 정의한 대조 정책에 비해 개입 정책이 추가로 바꾼 결과다. 발송 후 발생하거나 특정 채널에 귀속된 구매 전부와 다르며, B-A 효과와 B-미발송 효과도 서로 다른 답이다. CRM에서는 무작위 발송군과 미발송군의 고객당 계약이나 기여 차이로 메시지의 증분 가치를 추정하고, 어느 기간과 비용 범위를 비교했는지 함께 쓴다.
 
@@ -1381,7 +1381,7 @@ OEC를 실제 평가에 쓰려면 어떤 가치를 개선으로 볼지, 가까�
 <a id="g-diagnostic"></a>
 ## 진단 지표
 
-<div class="term-meta">Diagnostic Metric<span><a href="#b-diagnostic">본문 <span class="folio" data-id="b-diagnostic">17</span></a> / <a href="#term-index">찾아보기</a></span></div>
+<div class="term-meta">Diagnostic Metric<span><a href="#b-diagnostic">본문 <span class="folio" data-id="b-diagnostic">19</span></a> / <a href="#term-index">찾아보기</a></span></div>
 
 예약은 늘었는데 완료가 늘지 않았다면, 어느 경로를 더 확인해야 다음 행동을 정할 수 있을까? 진단 지표는 결과가 어느 경로에서 달라졌는지 살펴보고 경쟁 설명을 좁히는 지표다. 원인에 대한 단서를 줄 수 있지만 지표 하나의 변화만으로 작동 기제가 입증되거나 주지표의 실패가 성공으로 바뀌지는 않는다. CRM에서 전달률, 클릭률, 예약 취소율을 함께 보면 완료가 늘지 않은 이유를 조사할 수 있지만 추가 원장과 운영 기록이 필요하다.
 
@@ -1394,7 +1394,7 @@ OEC를 실제 평가에 쓰려면 어떤 가치를 개선으로 볼지, 가까�
 <a id="g-post-treatment"></a>
 ## 처치 후 선택
 
-<div class="term-meta">Post-treatment Selection<span><a href="#b-post-treatment">본문 <span class="folio" data-id="b-post-treatment">18</span></a> / <a href="#term-index">찾아보기</a></span></div>
+<div class="term-meta">Post-treatment Selection<span><a href="#b-post-treatment">본문 <span class="folio" data-id="b-post-treatment">19</span></a> / <a href="#term-index">찾아보기</a></span></div>
 
 문구를 받은 뒤 클릭하거나 예약한 사람끼리 비교하면 처음 배정한 정책의 효과를 그대로 알 수 있을까? 처치 후 선택은 정책이 영향을 줄 수 있는 행동이나 상태로 분석 대상을 다시 고르는 일이다. 그렇게 남은 두 군은 원래 무작위로 배정한 비교 집단과 달라질 수 있으므로 그 차이를 전체 정책의 인과 효과로 바로 해석하지 않는다. CRM에서 발송 후 클릭자나 예약자만 비교한 완료율은 진단으로 표시하고, 배정 고객 전체의 ITT 결과를 대신하지 않게 한다.
 
@@ -1407,7 +1407,7 @@ OEC를 실제 평가에 쓰려면 어떤 가치를 개선으로 볼지, 가까�
 <a id="g-mde"></a>
 ## 최소 검출 효과
 
-<div class="term-meta">MDE, Minimum Detectable Effect<span><a href="#b-mde">본문 <span class="folio" data-id="b-mde">28</span></a> / <a href="#term-index">찾아보기</a></span></div>
+<div class="term-meta">MDE, Minimum Detectable Effect<span><a href="#b-mde">본문 <span class="folio" data-id="b-mde">31</span></a> / <a href="#term-index">찾아보기</a></span></div>
 
 확보 가능한 고객과 정한 검정 절차로 어느 정도의 변화를 발견하도록 계획할 수 있을까? MDE는 기준율이나 변동성, 표본 수, 유의수준과 검정력 등을 정했을 때 계획상 구분하려는 효과 크기다. 검출의 딱딱한 경계도 사업상 필요한 최소 개선도 아니므로, MDE보다 작은 효과가 절대 유의해질 수 없다거나 큰 효과는 반드시 발견된다고 말하지 않는다. CRM에서 1pp 개선을 발견하도록 계획했다고 해도 회사가 도입에 요구하는 최소 사업 효과는 별도로 정하고 두 기준이 맞는지 검토한다.
 
@@ -1420,7 +1420,7 @@ MDE를 적을 때에는 기준율 또는 변동성, 군별 배정 수와 비율,
 <a id="g-business-threshold"></a>
 ## 최소 사업 효과
 
-<div class="term-meta">Business Threshold<span><a href="#b-business-threshold">본문 <span class="folio" data-id="b-business-threshold">28</span></a> / <a href="#term-index">찾아보기</a></span></div>
+<div class="term-meta">Business Threshold<span><a href="#b-business-threshold">본문 <span class="folio" data-id="b-business-threshold">32</span></a> / <a href="#term-index">찾아보기</a></span></div>
 
 효과가 있다는 것과 비용과 부담을 감수하고 정책을 바꿀 만큼 효과가 크다는 것은 어떻게 다를까? 최소 사업 효과는 비용, 운영 부담, 기회비용과 고객 가치를 고려할 때 정책을 바꿀 만하다고 정한 개선 기준이다. 0보다 큰 효과의 근거와 이 기준 이상이라는 근거는 다르며, 결과를 본 뒤 정한 기준은 사전 성공 조건으로 바꿔 부를 수 없다. JH Motors의 가상 기준 +0.5pp는 설명용 사후 가정이므로 완료 우위가 있어도 그 크기 이상의 개선까지 입증했다고 쓰지 않는다.
 
@@ -1433,7 +1433,7 @@ MDE를 적을 때에는 기준율 또는 변동성, 군별 배정 수와 비율,
 <a id="g-estimand"></a>
 ## 추정 대상
 
-<div class="term-meta">Estimand<span><a href="#b-estimand">본문 <span class="folio" data-id="b-estimand">16</span></a> / <a href="#term-index">찾아보기</a></span></div>
+<div class="term-meta">Estimand<span><a href="#b-estimand">본문 <span class="folio" data-id="b-estimand">17</span></a> / <a href="#term-index">찾아보기</a></span></div>
 
 같은 완료율 표를 두고도 서로 다른 질문에 답하는 일을 어떻게 막을까? 추정 대상은 누구에게, 어떤 정책과 대조 정책을 비교해, 어떤 결과를 어느 기간과 척도로 요약하려는지 정한 목표다. 분석 기법이나 표의 수치 자체와 다르며, 분모나 관측 창을 바꾸면 답하는 질문도 달라질 수 있다. JH Motors에서는 적격 배정 고객 전체의 배정 후 28일 시승 완료율에 대한 B-A 차이를 하나의 추정 대상으로 적는다.
 
@@ -1459,7 +1459,7 @@ MDE를 적을 때에는 기준율 또는 변동성, 군별 배정 수와 비율,
 <a id="g-srm"></a>
 ## 표본 비율 불일치
 
-<div class="term-meta">SRM, Sample Ratio Mismatch<span><a href="#b-srm">본문 <span class="folio" data-id="b-srm">43</span></a> / <a href="#term-index">찾아보기</a></span></div>
+<div class="term-meta">SRM, Sample Ratio Mismatch<span><a href="#b-srm">본문 <span class="folio" data-id="b-srm">48</span></a> / <a href="#term-index">찾아보기</a></span></div>
 
 분석 표에 들어온 군별 고객 수가 원래 계획한 배정 과정과 어긋나는지 어떻게 알아볼까? SRM은 관측된 군별 표본 수가 계획한 배정 비율에서 우연으로 설명하기 어려울 만큼 벗어나는 현상이다. 배정이나 분석 대상 포함 과정의 문제를 조사하는 신호이지, 검사를 통과하면 결과 이벤트 누락도 없다는 인증은 아니다. CRM에서는 원본 배정 명부와 분석 명부를 단계별로 대조하고, 전달 성공자만 남기는 필터가 한 군을 더 많이 제외했는지 확인한다.
 
@@ -1472,7 +1472,7 @@ MDE를 적을 때에는 기준율 또는 변동성, 군별 배정 수와 비율,
 <a id="g-peeking"></a>
 ## 피킹
 
-<div class="term-meta">Peeking<span><a href="#b-peeking">본문 <span class="folio" data-id="b-peeking">32</span></a> / <a href="#term-index">찾아보기</a></span></div>
+<div class="term-meta">Peeking<span><a href="#b-peeking">본문 <span class="folio" data-id="b-peeking">35</span></a> / <a href="#term-index">찾아보기</a></span></div>
 
 결과를 매일 보는 운영에서 품질 감시와 통계적 조기 성공 판단을 어떻게 나눌까? 피킹의 통계적 문제는 누적 결과를 반복해서 보고 유리한 순간에 종료하거나 분석을 바꾸면서 고정 시점용 추론을 그대로 사용하는 데 있다. 대시보드를 열었다는 행동 자체가 문제의 전부는 아니며, 품질과 안전 감시를 멈춰야 한다는 뜻도 아니다. CRM에서는 전달 장애를 매일 감시하되 완료 p가 처음 기준을 넘었다는 이유로 끝내지 않고 사전 종료 규칙을 따른다.
 
@@ -1485,7 +1485,7 @@ MDE를 적을 때에는 기준율 또는 변동성, 군별 배정 수와 비율,
 <a id="g-holdout"></a>
 ## 홀드아웃
 
-<div class="term-meta">Holdout<span><a href="#b-holdout">본문 <span class="folio" data-id="b-holdout">35</span></a> / <a href="#term-index">찾아보기</a></span></div>
+<div class="term-meta">Holdout<span><a href="#b-holdout">본문 <span class="folio" data-id="b-holdout">40</span></a> / <a href="#term-index">찾아보기</a></span></div>
 
 메시지를 바꿀지뿐 아니라 보내는 것 자체의 추가 가치를 알려면 어떤 대조 정책을 유지해야 할까? 홀드아웃은 특정 정책을 적용하지 않는 상태로 유지해 대조에 쓰는 집단이다. 어떤 접촉을 제외하고 다른 활동은 허용하는지 정의해야 하며, 해당 메시지 미발송을 전사 마케팅 전체 중단과 같다고 해석해서는 안 된다. CRM에서는 A/B 문구 비교와 별도로 H를 무작위 배정해 자연 발생 성과를 관측하고, 장기 홀드아웃에서는 다른 캠페인 유입과 군 간 오염도 기록한다.
 
@@ -1498,7 +1498,7 @@ MDE를 적을 때에는 기준율 또는 변동성, 군별 배정 수와 비율,
 <a id="g-aa"></a>
 ## A/A 테스트
 
-<div class="term-meta">A/A Test<span><a href="#b-aa">본문 <span class="folio" data-id="b-aa">60</span></a> / <a href="#term-index">찾아보기</a></span></div>
+<div class="term-meta">A/A Test<span><a href="#b-aa">본문 <span class="folio" data-id="b-aa">67</span></a> / <a href="#term-index">찾아보기</a></span></div>
 
 정책의 차이를 찾기 전에 배정부터 결과표까지의 경로가 예상대로 작동하는지 어떻게 점검할까? A/A 테스트는 실질적으로 같은 정책을 무작위로 나눈 군에 제공해 배정, 로깅, 집계와 추론 절차를 점검하는 실험이다. 한 번 유의한 차이가 없었다고 시스템의 정확성이 증명되는 것은 아니며, 정상 절차에서도 거짓 양성은 생길 수 있다. CRM에서는 같은 안내문을 두 군에 보내 군별 이벤트 수집 경로를 비교하고, 반복 점검에서 오류율과 추정의 편향이 예상과 맞는지 살핀다.
 
@@ -1667,12 +1667,12 @@ ASA p-value 성명: https://www.amstat.org/asa/files/pdfs/pvaluestatement.pdf
 
 | 사례 | 자료와 비교 단위 | 추론과 계획의 범위 | 재사용할 때의 경계 |
 |---|---|---|---|
-| <a id="materials-case-1"></a>[1 예약과 완료](#case-1) <span class="folio" data-id="case-1">35</span>쪽 | v01 기본 A/B, 배정 고객 | 사후 교육 분석, 개별 95% Newcombe와 미보정 양측 검정 | 예약을 완료 성공으로 바꾸지 않음 |
-| <a id="materials-case-2"></a>[2 완료와 채택](#case-2) <span class="folio" data-id="case-2">37</span>쪽 | v03 A/B/H, 배정 고객 | 생성 전 로컬 계획, 세 완료 대비 Bonferroni, 개별 약 98.33% 구간 | 사후 사업 기준과 보호 한계를 사전 성공 조건으로 바꾸지 않음 |
-| <a id="materials-case-3"></a>[3 문구와 캠페인 가치](#case-3) <span class="folio" data-id="case-3">39</span>쪽 | v03와 고정 비용 가정, 배정 고객당 손익 | 개별 탐색 Welch 구간, 계약과 비용에 조건부 | 완료 가족 보정이 손익 주장까지 보호하지 않음 |
-| <a id="materials-case-4"></a>[4 측정 역전](#case-4) <span class="folio" data-id="case-4">42</span>쪽 | 별도 원장과 결함 로그, 군당 4,000명 | 주입한 누락의 합성 실습, 개별 95% Newcombe | 원장의 정답이 알려진 교육 환경과 현장 복구를 구분 |
-| <a id="materials-case-5"></a>[5 고객군 효과](#case-5) <span class="folio" data-id="case-5">44</span>쪽 | 별도 사전 상태별 고정 배정 | 전체 0.5/0.5 층화 Wald 95%, 상태별 Newcombe 97.5%, 상호작용 명목 95% | 상호작용까지 공동 가족 확증으로 바꾸지 않음 |
-| <a id="materials-case-6"></a>[6 공유 용량](#case-6) <span class="folio" data-id="case-6">48</span>쪽 | 별도 고정 수요와 운영 정책 | 같은 수요 세계의 조건부 모형 비교, 신뢰구간 없음 | 독립 개인 p값이나 실제 기대 이익으로 해석하지 않음 |
+| <a id="materials-case-1"></a>[1 예약과 완료](#case-1) <span class="folio" data-id="case-1">40</span>쪽 | v01 기본 A/B, 배정 고객 | 사후 교육 분석, 개별 95% Newcombe와 미보정 양측 검정 | 예약을 완료 성공으로 바꾸지 않음 |
+| <a id="materials-case-2"></a>[2 완료와 채택](#case-2) <span class="folio" data-id="case-2">41</span>쪽 | v03 A/B/H, 배정 고객 | 생성 전 로컬 계획, 세 완료 대비 Bonferroni, 개별 약 98.33% 구간 | 사후 사업 기준과 보호 한계를 사전 성공 조건으로 바꾸지 않음 |
+| <a id="materials-case-3"></a>[3 문구와 캠페인 가치](#case-3) <span class="folio" data-id="case-3">44</span>쪽 | v03와 고정 비용 가정, 배정 고객당 손익 | 개별 탐색 Welch 구간, 계약과 비용에 조건부 | 완료 가족 보정이 손익 주장까지 보호하지 않음 |
+| <a id="materials-case-4"></a>[4 측정 역전](#case-4) <span class="folio" data-id="case-4">47</span>쪽 | 별도 원장과 결함 로그, 군당 4,000명 | 주입한 누락의 합성 실습, 개별 95% Newcombe | 원장의 정답이 알려진 교육 환경과 현장 복구를 구분 |
+| <a id="materials-case-5"></a>[5 고객군 효과](#case-5) <span class="folio" data-id="case-5">50</span>쪽 | 별도 사전 상태별 고정 배정 | 전체 0.5/0.5 층화 Wald 95%, 상태별 Newcombe 97.5%, 상호작용 명목 95% | 상호작용까지 공동 가족 확증으로 바꾸지 않음 |
+| <a id="materials-case-6"></a>[6 공유 용량](#case-6) <span class="folio" data-id="case-6">53</span>쪽 | 별도 고정 수요와 운영 정책 | 같은 수요 세계의 조건부 모형 비교, 신뢰구간 없음 | 독립 개인 p값이나 실제 기대 이익으로 해석하지 않음 |
 
 기본과 큰 실험을 잇는 계산은 `scripts/analyze_winner_v04.py`, 별도 세 실습은 `scripts/build_winner_scenarios_v04.py`와 그 결과 장부를 따른다. 읽기 패키지에 PDF와 HTML, 편집 원고와 그림 및 글꼴은 포함하지만 기존 고객 DB와 전체 개발 환경까지 들어 있다고 가정하지 않는다. 데이터와 코드에 접근할 권한이 있는 독자는 저장소의 명세와 경로를 확인한 별도 작업 사본에서 재현한다. 생성 명령과 읽기 전용 확인을 구분하고, 원본 데이터에 새 오류를 주입하거나 덮어쓰지 않는다.
 

@@ -1,1 +1,26 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 382.44184494018555" role="img" font-family="ReaderSans,sans-serif"><title>철회 차이가 뚜렷하지 않아도 안전 확인은 아니다</title><rect width="900" height="370" fill="white"></rect><text x="24" y="42" font-size="32" font-weight="700" fill="#1F1F1F" text-anchor="start">철회 차이가 뚜렷하지 않아도 안전 확인은 아니다</text><text x="24" y="88" font-size="26" font-weight="500" fill="#595959" text-anchor="start">철회율 차이 B-A(pp), 증가가 악화 / 개별 95% 양측 탐색 구간</text><rect x="604.0" y="124" width="216.0" height="102" rx="4" fill="#FAE9DD"></rect><line x1="172.0" y1="124" x2="172.0" y2="226" stroke="#D1D8D6" stroke-width="2"></line><text x="172.0" y="272" font-size="25" font-weight="500" fill="#1F1F1F" text-anchor="middle">-0.1</text><line x1="316.0" y1="124" x2="316.0" y2="226" stroke="#595959" stroke-width="2"></line><text x="316.0" y="272" font-size="25" font-weight="500" fill="#1F1F1F" text-anchor="middle">+0.0</text><line x1="460.0" y1="124" x2="460.0" y2="226" stroke="#D1D8D6" stroke-width="2"></line><text x="460.0" y="272" font-size="25" font-weight="500" fill="#1F1F1F" text-anchor="middle">+0.1</text><line x1="604.0" y1="124" x2="604.0" y2="226" stroke="#D1D8D6" stroke-width="2"></line><text x="604.0" y="272" font-size="25" font-weight="500" fill="#1F1F1F" text-anchor="middle">+0.2</text><line x1="747.9999999999999" y1="124" x2="747.9999999999999" y2="226" stroke="#D1D8D6" stroke-width="2"></line><text x="747.9999999999999" y="272" font-size="25" font-weight="500" fill="#1F1F1F" text-anchor="middle">+0.3</text><line x1="604.0" y1="124" x2="604.0" y2="226" stroke="#505B6A" stroke-width="2" stroke-dasharray="7 5"></line><line x1="179.27392911763155" y1="182" x2="685.3020045792706" y2="182" stroke="#002C5F" stroke-width="7"></line><circle cx="432.13778385194365" cy="182" r="7" fill="#002C5F"></circle><text x="24" y="325" font-size="26" font-weight="700" fill="#1F1F1F" text-anchor="start">추정 +0.081pp / 상한 +0.256pp는 +0.2pp를 넘는다</text><text x="24" y="365" font-size="25" font-weight="500" fill="#505B6A" text-anchor="start">+0.2pp는 사후 예시이며 정식 비열등성 판정이 아니다</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="530" viewBox="0 0 900 530" role="img" aria-labelledby="guardrail_effect-title guardrail_effect-desc" font-family="ReaderSans, sans-serif">
+<title id="guardrail_effect--guardrail_effect-title">철회 차이가 뚜렷하지 않아도 안전 확인은 아니다</title><desc id="guardrail_effect--guardrail_effect-desc">철회율 차이 B-A. 추정 +0.081pp, 개별 95% 양측 탐색 Newcombe 구간 -0.095부터 +0.256pp. +0.2pp는 사후 악화 예시로 정식 비열등성 판정이 아니다.</desc>
+<rect width="900" height="100%" fill="#FFFFFF"/>
+<text x="24" y="44" font-size="32" fill="#1F1F1F" font-weight="700" text-anchor="start">철회 차이가 뚜렷하지 않아도 안전 확인은 아니다</text>
+<text x="24" y="88" font-size="26" fill="#595959" font-weight="500" text-anchor="start">철회율 차이 B-A (pp) / 증가가 악화</text>
+<text x="24" y="130" font-size="25" fill="#595959" font-weight="500" text-anchor="start">개별 95% 양측 탐색 Newcombe 구간</text>
+<line x1="140.0" y1="224" x2="140.0" y2="297" stroke="#A8AFB8" stroke-width="1" />
+<text x="140.0" y="341" font-size="25" fill="#1F1F1F" font-weight="500" text-anchor="middle">-0.1</text>
+<line x1="305.0" y1="224" x2="305.0" y2="297" stroke="#1F1F1F" stroke-width="2" />
+<text x="305.0" y="341" font-size="25" fill="#1F1F1F" font-weight="500" text-anchor="middle">0</text>
+<line x1="470.0" y1="224" x2="470.0" y2="297" stroke="#A8AFB8" stroke-width="1" />
+<text x="470.0" y="341" font-size="25" fill="#1F1F1F" font-weight="500" text-anchor="middle">+0.1</text>
+<line x1="635.0" y1="224" x2="635.0" y2="297" stroke="#A8AFB8" stroke-width="1" />
+<text x="635.0" y="341" font-size="25" fill="#1F1F1F" font-weight="500" text-anchor="middle">+0.2</text>
+<line x1="800.0" y1="224" x2="800.0" y2="297" stroke="#A8AFB8" stroke-width="1" />
+<text x="800.0" y="341" font-size="25" fill="#1F1F1F" font-weight="500" text-anchor="middle">+0.3</text>
+<line x1="635.0" y1="177" x2="635.0" y2="297" stroke="#595959" stroke-width="1.5" stroke-dasharray="6 6" />
+<line x1="148.25" y1="246" x2="727.4" y2="246" stroke="#002C5F" stroke-width="6" id="guardrail_effect--effect-ci" data-lo="-0.095" data-hi="0.256"/>
+<line x1="148.25" y1="237" x2="148.25" y2="255" stroke="#002C5F" stroke-width="2" />
+<line x1="727.4" y1="237" x2="727.4" y2="255" stroke="#002C5F" stroke-width="2" />
+<circle id="guardrail_effect--effect-point" data-value="0.081" cx="438.65" cy="246" r="7" fill="#002C5F"/>
+<text x="438.65" y="208" font-size="26" fill="#1F1F1F" font-weight="700" text-anchor="middle">추정 +0.081pp</text>
+<text x="24" y="393" font-size="26" fill="#1F1F1F" font-weight="700" text-anchor="start">구간 [-0.095, +0.256]pp</text>
+<text x="24" y="437" font-size="26" fill="#595959" font-weight="500" text-anchor="start">점선 +0.2pp: 사후 악화 예시</text>
+<text x="24" y="481" font-size="26" fill="#1F1F1F" font-weight="700" text-anchor="start">상한은 예시를 넘지만 정식 비열등성 판정은 아니다</text>
+</svg>
