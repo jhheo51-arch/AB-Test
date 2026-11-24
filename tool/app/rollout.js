@@ -89,9 +89,25 @@
   function report(record, escape) {
     if (!record) return '';
     const {input} = record;
+    const synthetic = record.source.startsWith('synthetic');
+    const audience = synthetic
+      ? '마케팅 수신에 동의했고 30일 안에 정기점검이 예정된 가상 차주입니다. 이미 예약했거나 필수 안전 고지 대상인 차주는 제외했습니다.'
+      : '적격 조건 미기록. 이 보고서는 입력한 A/B 두 군의 배정 집계를 사용합니다.';
+    const application = record.decision === 'review'
+      ? '입력된 조건에서 확대를 검토할 수 있습니다. 실제 적용 대상과 범위는 미확정입니다.'
+      : '확대 보류. 실제 적용 대상과 범위는 미확정입니다.';
     return `<section class="rollout-report">
       <h2>방문 완료율과 수신 철회 기준으로 본 확대 판단</h2>
-      <p><strong>${decisionLabel(record)}</strong> / ${sourceLabels[record.source]}${record.source.startsWith('synthetic') ? ' / 배정 후 28일 관측 기준' : ''}</p>
+      <p><strong>${decisionLabel(record)}</strong> / ${sourceLabels[record.source]}${synthetic ? ' / 배정 후 28일 관측 기준' : ''}</p>
+      <h3>실험과 적용 범위</h3>
+      <dl class="rollout-scope">
+        <dt><strong>실험 대상</strong></dt>
+        <dd>${audience}</dd>
+        <dt><strong>분석 고객군</strong></dt>
+        <dd>A군 전체와 B군 전체의 집계를 비교했습니다. 고객군별 집계가 없어 <strong>고객군별 효과는 미확인</strong>입니다.</dd>
+        <dt><strong>적용 범위</strong></dt>
+        <dd>${application}</dd>
+      </dl>
       <h3>판단에 쓴 입력값</h3>
       <ul>${arms.map(arm => `<li>${arm.toUpperCase()}군: 배정 ${input[`total-${arm}`].toLocaleString('ko-KR')}명, 방문 완료 ${input[`visit-${arm}`].toLocaleString('ko-KR')}명, 수신 철회 ${input[`optout-${arm}`].toLocaleString('ko-KR')}명</li>`).join('')}
       <li>방문 완료율 비교 계획: ${comparisons[input.comparison]}</li>

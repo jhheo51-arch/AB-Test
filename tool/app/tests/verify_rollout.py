@@ -130,6 +130,11 @@ def verify_saved_report(page, url):
     share.click()
     expect(page.locator("#csv-share-options")).to_be_hidden()
     preview = page.locator("#report-preview")
+    scope = preview.locator(".rollout-scope")
+    expect(scope.locator("dt")).to_have_text(["실험 대상", "분석 고객군", "적용 범위"])
+    expect(scope.locator("dd").nth(0)).to_contain_text("30일 안에 정기점검")
+    expect(scope.locator("dd").nth(1)).to_contain_text("고객군별 효과는 미확인")
+    expect(scope.locator("dd").nth(2)).to_contain_text("확대 보류")
     for expected in [
         "확대 보류", "가상 정기점검 사례", "A군: 배정 15,482명, 방문 완료 1,416명, 수신 철회 129명",
         "B군: 배정 15,603명, 방문 완료 1,597명, 수신 철회 139명", *original,
@@ -140,9 +145,16 @@ def verify_saved_report(page, url):
         page.locator("#export-report").click()
     exported = download.value.path().read_text(encoding="utf-8")
     assert all(expected in exported for expected in ["확대 보류", "15,603명", *original])
+    assert all(
+        expected in exported
+        for expected in ("실험 대상", "분석 고객군", "적용 범위", "고객군별 효과는 미확인")
+    )
     page.evaluate("window.print = () => {}")
     page.locator("#print-report").click()
     expect(page.locator("#print-area")).to_contain_text(original[0], use_inner_text=False)
+    expect(page.locator("#print-area .rollout-scope")).to_contain_text(
+        "고객군별 효과는 미확인", use_inner_text=False
+    )
 
     page.locator('nav [data-view="input"]').click()
     page.locator('[name="visit-b"]').fill("1680")
