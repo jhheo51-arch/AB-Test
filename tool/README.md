@@ -1,10 +1,10 @@
 # CRM A/B 테스트 작업실
 
-**[현재 앱](app/README.md) · [최신 실행 ZIP](downloads/AB_Test_Workspace.zip) · [시연 영상](app/help/walkthrough.mp4) · [남은 과제](ROADMAP.md)**
+**[현재 앱](app/README.md) · [첫 MVP 실행 ZIP](https://github.com/jhheo51-arch/AB-Test/releases/download/tool-rollout-report-20261123/AB_Test_Workspace_rollout_scope_mvp_20261124.zip) · [시연 영상](app/help/walkthrough.mp4) · [남은 과제](ROADMAP.md)**
 
 CRM 전체 운영이 아니라 A/B 테스트 설계·분석·판단을 돕습니다. 실제 실험은 외부에서 수행하고 기기 안에서 입력·계산·판단 기록을 연결합니다.
 
-공개된 시작 화면 바로가기 실행본의 원래 [Release ZIP](https://github.com/jhheo51-arch/AB-Test/releases/download/tool-rollout-report-20261123/AB_Test_Workspace_rollout_shortcuts_20261123.zip)도 유지합니다. 위 최신 실행 ZIP은 같은 세 버튼과 R08 수정을 결합해 검사한 파일입니다. [현재 ff6d463 기준 검증](app/startscreen-evidence/IMPLEMENTATION_NOTES.md).
+공개된 시작 화면 바로가기 실행본의 원래 [Release ZIP](https://github.com/jhheo51-arch/AB-Test/releases/download/tool-rollout-report-20261123/AB_Test_Workspace_rollout_shortcuts_20261123.zip)도 유지합니다. 기존 저장소 ZIP은 같은 세 버튼과 R08 수정을 결합해 검사한 파일입니다. [현재 ff6d463 기준 검증](app/startscreen-evidence/IMPLEMENTATION_NOTES.md).
 
 ## 처음 사용하기
 

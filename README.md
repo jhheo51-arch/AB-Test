@@ -45,7 +45,7 @@ CSV나 표를 가지고 있지만 열 연결, 통계 결과 해석, 판단 기�
 | 항목 | 이번 범위 |
 | --- | --- |
 | 목표 | 처음 쓰는 CRM 담당자가 실험 대상, 결과를 읽을 고객군, 실제로 적용할 범위를 구분하고 확대 판단의 이유를 설명할 수 있는지 확인합니다. |
-| 첫 MVP | 기존 확대 판단 보고서에 **실험 대상 / 분석 고객군 / 적용 범위**를 각각 표시합니다. 가상 정기점검 원래 사례는 A/B 전체 집계를 비교하며, 고객군별 효과는 **미확인**, 최종 판단은 **확대 보류**입니다. 이 MVP는 저장소 소스에서 실행할 수 있습니다. [실행 방법](tool/app/README.md#실행) |
+| 첫 MVP | 기존 확대 판단 보고서에 **실험 대상 / 분석 고객군 / 적용 범위**를 각각 표시합니다. 가상 정기점검 원래 사례는 A/B 전체 집계를 비교하며, 고객군별 효과는 **미확인**, 최종 판단은 **확대 보류**입니다. 이 MVP는 새 실행 ZIP에서 열어 볼 수 있습니다. [실행 방법](tool/app/README.md#실행) |
 | 확인 방법 | 도구 첫 화면에서 **원래 사례**를 열고 **판단 정리**를 선택합니다. 미리보기와 내려받은 HTML에서 세 항목과 판정을 대조합니다. |
 | 다음 검증 | 처음 쓰는 사람 한 명이 설명 없이 보고서를 읽고 세 범위와 보류 이유를 구분해 말하는지 관찰합니다. 참여자와 일정은 미정입니다. 고객군별 효과 검정이나 실제 캠페인 적용은 이번 MVP 범위 밖입니다. |
 
@@ -71,14 +71,14 @@ CSV나 표를 가지고 있지만 열 연결, 통계 결과 해석, 판단 기�
 
 **아직 지원하지 않는 것:** 자유로운 상황 설명에서 후보·실험 계획을 생성하는 전체 설계 대화, 시간·금액·순차·군집 분석, CRM 고객 관리·발송 운영. 책에서 설명하는 모든 방법이 앱에 구현된 것은 아닙니다.
 
-[도구 안내](tool/README.md) · [새 실행 ZIP](https://github.com/jhheo51-arch/AB-Test/releases/download/tool-rollout-report-20261123/AB_Test_Workspace_rollout_shortcuts_20261123.zip) · [시연 영상](tool/app/help/walkthrough.mp4) · [지원 범위와 실행 방법](tool/app/README.md)
+[도구 안내](tool/README.md) · [새 실행 ZIP](https://github.com/jhheo51-arch/AB-Test/releases/download/tool-rollout-report-20261123/AB_Test_Workspace_rollout_scope_mvp_20261124.zip) · [시연 영상](tool/app/help/walkthrough.mp4) · [지원 범위와 실행 방법](tool/app/README.md)
 
 **책과 도구의 관계:** 책은 실험과 판단의 기준을 설명하고, 도구는 그중 현재 지원하는 입력·계산·기록 절차를 실행하도록 돕습니다. 계산 결과가 실제 적용 승인이나 현장 효과의 증명을 대신하지는 않습니다.
 
 ## 처음 방문하셨나요?
 
 - **책 읽기:** [전자책 PDF](e-book/ebook.pdf) 또는 [웹 읽기본 HTML](e-book/ebook.html)을 내려받으세요. HTML은 `e-book/assets/`도 함께 같은 상대 위치에 둡니다. GitHub 파일 페이지는 앱이나 HTML 실행 화면이 아닙니다.
-- **도구 사용하기:** [새 실행 ZIP](https://github.com/jhheo51-arch/AB-Test/releases/download/tool-rollout-report-20261123/AB_Test_Workspace_rollout_shortcuts_20261123.zip)을 내려받아 압축을 풀고 `launch.cmd`를 실행하세요. Windows와 Python 3가 필요합니다. 실행 창에 표시된 로컬 주소를 Chrome/Edge에서 엽니다. [실행 안내](tool/app/README.md)
+- **도구 사용하기:** [새 실행 ZIP](https://github.com/jhheo51-arch/AB-Test/releases/download/tool-rollout-report-20261123/AB_Test_Workspace_rollout_scope_mvp_20261124.zip)을 내려받아 압축을 풀고 `launch.cmd`를 실행하세요. Windows와 Python 3가 필요합니다. 실행 창에 표시된 로컬 주소를 Chrome/Edge에서 엽니다. [실행 안내](tool/app/README.md)
 - **사용법 보기:** [시연 영상 MP4](tool/app/help/walkthrough.mp4)를 내려받거나, 실행한 앱의 **시연 영상 보기**를 누르세요. GitHub에서 바로 재생되지 않으면 파일 페이지의 다운로드 버튼을 이용하세요.
 
 기본 CSV 확인·통계 계산은 LLM 없이 사용할 수 있습니다. 선택 기능인 LLM 설명에는 별도의 Hermes 설치·프로필·모델 인증 설정이 필요하며, 연결 설정과 이용 비용은 사용자 환경에 따릅니다. 자유로운 자연어 설계 대화는 아직 제공하지 않습니다.
