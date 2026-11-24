@@ -10,7 +10,7 @@ status = {
     'checked_at_seoul': verification['checked_at_seoul'],
     'book_title': '그래서, 이 캠페인 계속할까요?',
     'author': '허재혁',
-    'publication_status': '출판과 판매하지 않음. 비공개 참고 자료',
+    'publication_status': '별도 출판과 판매하지 않음. 공개 참고 자료',
     'book': {
         'pdf': 'e-book/ebook.pdf', 'html': 'e-book/ebook.html',
         'markdown': 'e-book/ebook.md', 'pages': verification['pdf_pages_recorded'],
@@ -24,7 +24,7 @@ status = {
     },
     'current_integrity_check': verification,
     'management_mode': 'reported_errors_only',
-    'prior_review_notice': '마지막 기술 검증 이후 원고 무수정. 과거 검수와 원자료는 로컬 보존. 이 시각은 통계 및 브라우저 재검사 시각이 아님.',
+    'prior_review_notice': '승인된 제작 표시와 용어, 문단, 참고 색상 수정을 반영했다. 실험 수치는 유지했으며 과거 검수와 원자료는 로컬에 보존한다. 이 시각은 파일 무결성 검사 시각이며 통계 전면 재감수나 실제 독자시험의 완료 시각이 아니다.',
     'known_historical_plan_byte_difference': 'LF/CRLF 차이 고지 유지. 과거 원본을 수정해 차이를 지우지 않음.',
     'actual_reader_test_completed': False,
     'independent_human_review_completed': False,
