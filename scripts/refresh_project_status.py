@@ -24,7 +24,7 @@ status = {
     },
     'current_integrity_check': verification,
     'management_mode': 'reported_errors_only',
-    'prior_review_notice': '승인된 제작 표시와 용어, 문단, 참고 색상 수정을 반영했다. 실험 수치는 유지했으며 과거 검수와 원자료는 로컬에 보존한다. 이 시각은 파일 무결성 검사 시각이며 통계 전면 재감수나 실제 독자시험의 완료 시각이 아니다.',
+    'prior_review_notice': '저자 승인에 따른 전권 서술 개정과 두 읽기 경로 분리, 핵심 개념 36개 참고 해설 확장을 반영했다. 기존 실험 수치와 표, 코드 및 각주를 보존하고 AI 의미 대조와 독서 기능 및 조판을 검사했다. 과거 검수와 원자료는 로컬에 보존한다. 이 시각은 파일 무결성 검사 시각이며 통계 재계산이나 실제 독자시험의 완료 시각이 아니다.',
     'known_historical_plan_byte_difference': 'LF/CRLF 차이 고지 유지. 과거 원본을 수정해 차이를 지우지 않음.',
     'actual_reader_test_completed': False,
     'independent_human_review_completed': False,

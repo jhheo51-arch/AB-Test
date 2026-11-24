@@ -4,7 +4,7 @@ CRM A/B 테스트의 설계·분석·판단을 돕는 공개 프로젝트입니�
 
 | 작업 | 진입점 |
 | --- | --- |
-| 전자책 최신본 | [안내](e-book/README.md), [PDF 97쪽](e-book/ebook.pdf), [웹 읽기본](e-book/ebook.html), [원고](e-book/ebook.md) |
+| 전자책 최신본 | [안내](e-book/README.md), [PDF 117쪽](e-book/ebook.pdf), [웹 읽기본](e-book/ebook.html), [원고](e-book/ebook.md) |
 | 판단 기록 | [웹 양식](e-book/record.html), [작성 예시](e-book/record-example.md) |
 | CRM A/B 테스트 도구 | [공유 보고서 예시](tool/app/examples/ROUTINE_SERVICE_ROLLOUT_REPORT.md), [현재 앱](tool/app/README.md), [최신 다운로드](tool/downloads/README.md), [시연 영상](tool/app/help/walkthrough.mp4), [제품 합의](tool/prd/README.md), [남은 과제](tool/ROADMAP.md) |
 | A/B 실험노트 영상 | [제작 안내](video-production/README.md) |
