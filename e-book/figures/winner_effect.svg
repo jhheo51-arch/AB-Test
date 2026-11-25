@@ -1,1 +1,43 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 557.4415588378906" role="img" font-family="ReaderSans,sans-serif"><title>B의 완료율은 높다. 도입 기준 충족은 별개다</title><rect width="900" height="550" fill="white"></rect><text x="24" y="42" font-size="32" font-weight="700" fill="#1F1F1F" text-anchor="start">B의 완료율은 높다. 도입 기준 충족은 별개다</text><text x="24" y="88" font-size="26" font-weight="500" fill="#595959" text-anchor="start">배정 고객 전체의 28일 완료율 / 합성 A/B 비교</text><line x1="280.0" y1="116" x2="280.0" y2="242" stroke="#D1D8D6" stroke-width="1"></line><text x="280.0" y="280" font-size="25" font-weight="500" fill="#1F1F1F" text-anchor="middle">0%</text><line x1="440.0" y1="116" x2="440.0" y2="242" stroke="#D1D8D6" stroke-width="1"></line><text x="440.0" y="280" font-size="25" font-weight="500" fill="#1F1F1F" text-anchor="middle">4%</text><line x1="600.0" y1="116" x2="600.0" y2="242" stroke="#D1D8D6" stroke-width="1"></line><text x="600.0" y="280" font-size="25" font-weight="500" fill="#1F1F1F" text-anchor="middle">8%</text><line x1="760.0" y1="116" x2="760.0" y2="242" stroke="#D1D8D6" stroke-width="1"></line><text x="760.0" y="280" font-size="25" font-weight="500" fill="#1F1F1F" text-anchor="middle">12%</text><text x="24" y="161" font-size="25" font-weight="700" fill="#1F1F1F" text-anchor="start">A 1,971/21,637명</text><rect x="280" y="132" width="364.37583768544624" height="32" rx="4" fill="#595959"></rect><text x="840" y="161" font-size="30" font-weight="700" fill="#1F1F1F" text-anchor="end">9.11%</text><text x="24" y="231" font-size="25" font-weight="700" fill="#1F1F1F" text-anchor="start">B 2,212/22,024명</text><rect x="280" y="202" width="401.7435524881947" height="32" rx="4" fill="#002C5F"></rect><text x="840" y="231" font-size="30" font-weight="700" fill="#1F1F1F" text-anchor="end">10.04%</text><text x="24" y="333" font-size="28" font-weight="700" fill="#1F1F1F" text-anchor="start">같은 1,000명 기준으로 환산하면 완료 차이는 약 9.3명</text><text x="24" y="378" font-size="26" font-weight="700" fill="#1F1F1F" text-anchor="start">B-A +0.93pp / 구간 [+0.26, +1.61]pp</text><line x1="198.0" y1="405" x2="198.0" y2="456" stroke="#1F1F1F" stroke-width="2"></line><line x1="368.0" y1="405" x2="368.0" y2="456" stroke="#505B6A" stroke-width="2" stroke-dasharray="7 5"></line><line x1="286.3316754211452" y1="430" x2="744.8884505027182" y2="430" stroke="#002C5F" stroke-width="7"></line><circle cx="515.6255758233619" cy="430" r="7" fill="#002C5F"></circle><text x="198.0" y="500" font-size="25" font-weight="500" fill="#1F1F1F" text-anchor="start">0 차이 없음</text><text x="368.0" y="500" font-size="25" font-weight="500" fill="#505B6A" text-anchor="start">+0.5pp 사업 문턱(사후 예시)</text><text x="24" y="540" font-size="25" font-weight="500" fill="#595959" text-anchor="start">구간이 문턱 아래도 포함하므로 도입 충분성은 미확인</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="660" viewBox="0 0 900 660" role="img" aria-labelledby="winner_effect-title winner_effect-desc" font-family="ReaderSans, sans-serif">
+<title id="winner_effect--winner_effect-title">B의 완료율은 높다. 도입 기준 충족은 별개다</title><desc id="winner_effect--winner_effect-desc">합성 A/B 비교. A 1,971/21,637명 9.11%, B 2,212/22,024명 10.04%. 차이 +0.93pp, 개별 98.33% Wilson–Newcombe 구간 +0.26부터 +1.61pp. 사후 사업 문턱 +0.5pp 미만도 포함한다.</desc>
+<rect width="900" height="100%" fill="#FFFFFF"/>
+<text x="24" y="44" font-size="32" fill="#1F1F1F" font-weight="700" text-anchor="start">B의 완료율은 높다. 도입 기준 충족은 별개다</text>
+<text x="24" y="88" font-size="26" fill="#595959" font-weight="500" text-anchor="start">배정 고객 전체의 28일 완료율 / 합성 A/B 비교</text>
+<line x1="280.0" y1="116" x2="280.0" y2="238" stroke="#A8AFB8" stroke-width="1" />
+<text x="280.0" y="276" font-size="25" fill="#1F1F1F" font-weight="500" text-anchor="middle">0%</text>
+<line x1="436.66666666666663" y1="116" x2="436.66666666666663" y2="238" stroke="#A8AFB8" stroke-width="1" />
+<text x="436.66666666666663" y="276" font-size="25" fill="#1F1F1F" font-weight="500" text-anchor="middle">4%</text>
+<line x1="593.3333333333333" y1="116" x2="593.3333333333333" y2="238" stroke="#A8AFB8" stroke-width="1" />
+<text x="593.3333333333333" y="276" font-size="25" fill="#1F1F1F" font-weight="500" text-anchor="middle">8%</text>
+<line x1="750.0" y1="116" x2="750.0" y2="238" stroke="#A8AFB8" stroke-width="1" />
+<text x="750.0" y="276" font-size="25" fill="#1F1F1F" font-weight="500" text-anchor="middle">12%</text>
+<text x="24" y="158" font-size="25" fill="#1F1F1F" font-weight="700" text-anchor="start">A 1,971/21,637명</text>
+<rect id="winner_effect--rate-A" data-value="9.11" x="280" y="132" width="356.8083333333334" height="30" fill="#727D8B"/>
+<text x="864" y="158" font-size="28" fill="#1F1F1F" font-weight="700" text-anchor="end">9.11%</text>
+<text x="24" y="228" font-size="25" fill="#1F1F1F" font-weight="700" text-anchor="start">B 2,212/22,024명</text>
+<rect id="winner_effect--rate-B" data-value="10.04" x="280" y="202" width="393.23333333333335" height="30" fill="#002C5F"/>
+<text x="864" y="228" font-size="28" fill="#1F1F1F" font-weight="700" text-anchor="end">10.04%</text>
+<text x="24" y="329" font-size="28" fill="#1F1F1F" font-weight="700" text-anchor="start">완료율 차이 B-A (pp)</text>
+<text x="24" y="369" font-size="25" fill="#595959" font-weight="500" text-anchor="start">개별 98.33% Wilson–Newcombe 구간</text>
+<line x1="130.0" y1="405" x2="130.0" y2="477" stroke="#1F1F1F" stroke-width="2" />
+<line x1="305.0" y1="405" x2="305.0" y2="477" stroke="#595959" stroke-width="1.5" stroke-dasharray="6 6" />
+<line x1="221.0" y1="442" x2="693.5" y2="442" stroke="#002C5F" stroke-width="6" id="winner_effect--effect-ci" data-lo="0.26" data-hi="1.61"/>
+<line x1="221.0" y1="433" x2="221.0" y2="451" stroke="#002C5F" stroke-width="2" />
+<line x1="693.5" y1="433" x2="693.5" y2="451" stroke="#002C5F" stroke-width="2" />
+<circle id="winner_effect--effect-point" data-value="0.93" cx="455.5" cy="442" r="7" fill="#002C5F"/>
+<text x="455.5" y="412" font-size="25" fill="#1F1F1F" font-weight="700" text-anchor="middle">추정 +0.93</text>
+<line x1="130.0" y1="484" x2="130.0" y2="491" stroke="#595959" stroke-width="1" />
+<text x="130.0" y="523" font-size="25" fill="#1F1F1F" font-weight="500" text-anchor="middle">0</text>
+<line x1="221.0" y1="484" x2="221.0" y2="491" stroke="#595959" stroke-width="1" />
+<text x="221.0" y="523" font-size="25" fill="#1F1F1F" font-weight="500" text-anchor="middle">+0.26</text>
+<line x1="305.0" y1="484" x2="305.0" y2="491" stroke="#595959" stroke-width="1" />
+<text x="305.0" y="523" font-size="25" fill="#1F1F1F" font-weight="500" text-anchor="middle">+0.5</text>
+<line x1="480.0" y1="484" x2="480.0" y2="491" stroke="#595959" stroke-width="1" />
+<text x="480.0" y="523" font-size="25" fill="#1F1F1F" font-weight="500" text-anchor="middle">+1.0</text>
+<line x1="693.5" y1="484" x2="693.5" y2="491" stroke="#595959" stroke-width="1" />
+<text x="693.5" y="523" font-size="25" fill="#1F1F1F" font-weight="500" text-anchor="middle">+1.61</text>
+<line x1="830.0" y1="484" x2="830.0" y2="491" stroke="#595959" stroke-width="1" />
+<text x="830.0" y="523" font-size="25" fill="#1F1F1F" font-weight="500" text-anchor="middle">+2.0</text>
+<text x="24" y="568" font-size="26" fill="#595959" font-weight="500" text-anchor="start">점선 +0.5pp: 사후 사업 문턱</text>
+<text x="24" y="609" font-size="26" fill="#1F1F1F" font-weight="700" text-anchor="start">구간이 문턱 아래도 포함하므로 도입 충분성은 미확인</text>
+</svg>

@@ -1,1 +1,43 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 540" role="img" font-family="ReaderSans,sans-serif"><title>전체 평균의 개선이 기존 고객의 개선은 아니다</title><rect width="900" height="540" fill="white"/><text x="24" y="42" font-size="32" font-weight="700" fill="#1F1F1F" text-anchor="start">전체 평균의 개선이 기존 고객의 개선은 아니다</text><text x="24" y="88" font-size="26" font-weight="500" fill="#595959" text-anchor="start">완료율 차이 B-A(pp) / 왼쪽은 감소, 오른쪽은 증가</text><text x="24" y="146" font-size="29" font-weight="700" fill="#1F1F1F" text-anchor="start">전체</text><text x="24" y="188" font-size="25" font-weight="500" fill="#595959" text-anchor="start">95% 층화 Wald</text><text x="290" y="146" font-size="26" font-weight="500" fill="#1F1F1F" text-anchor="start">+2.33pp [+1.07, +3.59]</text><line x1="492.5" y1="171" x2="492.5" y2="219" stroke="#1F1F1F" stroke-width="2"/><rect x="492.5" y="184" width="78.75" height="22" rx="4" fill="#EAF3FC"/><line x1="528.706793828265" y1="195" x2="613.793206171735" y2="195" stroke="#002C5F" stroke-width="5"/><circle cx="571.25" cy="195" r="7" fill="#002C5F"/><text x="24" y="258" font-size="29" font-weight="700" fill="#1F1F1F" text-anchor="start">신규 고객</text><text x="24" y="300" font-size="25" font-weight="500" fill="#595959" text-anchor="start">97.5% Newcombe</text><text x="290" y="258" font-size="26" font-weight="500" fill="#1F1F1F" text-anchor="start">+7.93pp [+6.12, +9.75]</text><line x1="492.5" y1="283" x2="492.5" y2="331" stroke="#1F1F1F" stroke-width="2"/><rect x="492.5" y="296" width="267.75" height="22" rx="4" fill="#EAF3FC"/><line x1="699.2127673938685" y1="307" x2="821.6436432178177" y2="307" stroke="#002C5F" stroke-width="5"/><circle cx="760.25" cy="307" r="7" fill="#002C5F"/><text x="24" y="370" font-size="29" font-weight="700" fill="#1F1F1F" text-anchor="start">기존 고객</text><text x="24" y="412" font-size="25" font-weight="500" fill="#595959" text-anchor="start">97.5% Newcombe</text><text x="290" y="370" font-size="26" font-weight="500" fill="#1F1F1F" text-anchor="start">-3.27pp [-5.51, -1.02]</text><line x1="492.5" y1="395" x2="492.5" y2="443" stroke="#1F1F1F" stroke-width="2"/><rect x="382.25" y="408" width="110.25" height="22" rx="4" fill="#FAE9DD"/><line x1="306.5511947732059" y1="419" x2="458.03719555394616" y2="419" stroke="#505B6A" stroke-width="5"/><circle cx="382.25" cy="419" r="7" fill="#505B6A"/><text x="290.0" y="472" font-size="25" font-weight="500" fill="#1F1F1F" text-anchor="middle">-6</text><text x="425.0" y="472" font-size="25" font-weight="500" fill="#1F1F1F" text-anchor="middle">-2</text><text x="492.5" y="472" font-size="25" font-weight="500" fill="#1F1F1F" text-anchor="middle">0</text><text x="627.5" y="472" font-size="25" font-weight="500" fill="#1F1F1F" text-anchor="middle">+4</text><text x="762.5" y="472" font-size="25" font-weight="500" fill="#1F1F1F" text-anchor="middle">+8</text><text x="830.0" y="472" font-size="25" font-weight="500" fill="#1F1F1F" text-anchor="middle">+10</text><text x="24" y="514" font-size="26" font-weight="700" fill="#1F1F1F" text-anchor="start">고객군별 효과의 차이와 신규 전용 정책의 검증은 구분한다</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="680" viewBox="0 0 900 680" role="img" aria-labelledby="segments-title segments-desc" font-family="ReaderSans, sans-serif">
+<title id="segments--segments-title">전체 평균의 개선이 기존 고객의 개선은 아니다</title><desc id="segments--segments-desc">완료율 차이 B-A pp. 전체 +2.33 [1.07,3.59], 95% 층화 Wald. 신규 +7.93 [6.12,9.75], 기존 -3.27 [-5.51,-1.02], 각 97.5% Newcombe. 동일 축과 네이비 점 및 구간을 사용한다.</desc>
+<rect width="900" height="100%" fill="#FFFFFF"/>
+<text x="24" y="44" font-size="32" fill="#1F1F1F" font-weight="700" text-anchor="start">전체 평균의 개선이 기존 고객의 개선은 아니다</text>
+<text x="24" y="88" font-size="26" fill="#595959" font-weight="500" text-anchor="start">완료율 차이 B-A (pp) / 왼쪽 감소, 오른쪽 증가</text>
+<text x="24" y="143" font-size="26" fill="#1F1F1F" font-weight="700" text-anchor="start">고객군</text>
+<text x="224" y="143" font-size="26" fill="#1F1F1F" font-weight="700" text-anchor="start">구간 수준과 방법</text>
+<line x1="581.25" y1="173" x2="581.25" y2="552" stroke="#1F1F1F" stroke-width="2" />
+<text x="24" y="207" font-size="28" fill="#1F1F1F" font-weight="700" text-anchor="start">전체</text>
+<text x="224" y="207" font-size="25" fill="#595959" font-weight="500" text-anchor="start">95% 층화 Wald</text>
+<text x="224" y="245" font-size="26" fill="#1F1F1F" font-weight="500" text-anchor="start">+2.33pp [+1.07, +3.59]</text>
+<line x1="610.00625" y1="277" x2="677.73125" y2="277" stroke="#002C5F" stroke-width="6" id="segments--전체-ci" data-lo="1.07" data-hi="3.59"/>
+<line x1="610.00625" y1="268" x2="610.00625" y2="286" stroke="#002C5F" stroke-width="2" />
+<line x1="677.73125" y1="268" x2="677.73125" y2="286" stroke="#002C5F" stroke-width="2" />
+<circle id="segments--전체-point" data-value="2.33" cx="643.86875" cy="277" r="7" fill="#002C5F"/>
+<text x="24" y="337" font-size="28" fill="#1F1F1F" font-weight="700" text-anchor="start">신규 고객</text>
+<text x="224" y="337" font-size="25" fill="#595959" font-weight="500" text-anchor="start">97.5% Newcombe</text>
+<text x="224" y="375" font-size="26" fill="#1F1F1F" font-weight="500" text-anchor="start">+7.93pp [+6.12, +9.75]</text>
+<line x1="745.725" y1="407" x2="843.28125" y2="407" stroke="#002C5F" stroke-width="6" id="segments--신규 고객-ci" data-lo="6.12" data-hi="9.75"/>
+<line x1="745.725" y1="398" x2="745.725" y2="416" stroke="#002C5F" stroke-width="2" />
+<line x1="843.28125" y1="398" x2="843.28125" y2="416" stroke="#002C5F" stroke-width="2" />
+<circle id="segments--신규 고객-point" data-value="7.93" cx="794.36875" cy="407" r="7" fill="#002C5F"/>
+<text x="24" y="467" font-size="28" fill="#1F1F1F" font-weight="700" text-anchor="start">기존 고객</text>
+<text x="224" y="467" font-size="25" fill="#595959" font-weight="500" text-anchor="start">97.5% Newcombe</text>
+<text x="224" y="505" font-size="26" fill="#1F1F1F" font-weight="500" text-anchor="start">-3.27pp [-5.51, -1.02]</text>
+<line x1="433.16875" y1="537" x2="553.8375" y2="537" stroke="#002C5F" stroke-width="6" id="segments--기존 고객-ci" data-lo="-5.51" data-hi="-1.02"/>
+<line x1="433.16875" y1="528" x2="433.16875" y2="546" stroke="#002C5F" stroke-width="2" />
+<line x1="553.8375" y1="528" x2="553.8375" y2="546" stroke="#002C5F" stroke-width="2" />
+<circle id="segments--기존 고객-point" data-value="-3.27" cx="493.36875" cy="537" r="7" fill="#002C5F"/>
+<line x1="420.0" y1="560" x2="420.0" y2="568" stroke="#595959" stroke-width="1" />
+<text x="420.0" y="603" font-size="25" fill="#1F1F1F" font-weight="500" text-anchor="middle">-6</text>
+<line x1="527.5" y1="560" x2="527.5" y2="568" stroke="#595959" stroke-width="1" />
+<text x="527.5" y="603" font-size="25" fill="#1F1F1F" font-weight="500" text-anchor="middle">-2</text>
+<line x1="581.25" y1="560" x2="581.25" y2="568" stroke="#595959" stroke-width="1" />
+<text x="581.25" y="603" font-size="25" fill="#1F1F1F" font-weight="500" text-anchor="middle">0</text>
+<line x1="688.75" y1="560" x2="688.75" y2="568" stroke="#595959" stroke-width="1" />
+<text x="688.75" y="603" font-size="25" fill="#1F1F1F" font-weight="500" text-anchor="middle">+4</text>
+<line x1="796.25" y1="560" x2="796.25" y2="568" stroke="#595959" stroke-width="1" />
+<text x="796.25" y="603" font-size="25" fill="#1F1F1F" font-weight="500" text-anchor="middle">+8</text>
+<line x1="850.0" y1="560" x2="850.0" y2="568" stroke="#595959" stroke-width="1" />
+<text x="850.0" y="603" font-size="25" fill="#1F1F1F" font-weight="500" text-anchor="middle">+10</text>
+<text x="24" y="649" font-size="26" fill="#1F1F1F" font-weight="700" text-anchor="start">고객군별 효과 차이와 신규 전용 정책의 검증은 구분한다</text>
+</svg>

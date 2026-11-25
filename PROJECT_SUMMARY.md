@@ -4,7 +4,7 @@
 
 | 범위 | 현재 자료 |
 | --- | --- |
-| 전자책 | 허재혁의 『그래서, 이 캠페인 계속할까요?』. [최신 PDF 117쪽](e-book/ebook.pdf), [웹 읽기본](e-book/ebook.html) |
+| 전자책 | 허재혁의 『그래서, 이 캠페인 계속할까요?』. [최신 PDF 127쪽](e-book/ebook.pdf), [웹 읽기본](e-book/ebook.html) |
 | TRI-V | 저자 제안의 세 축과 여섯 기록을 CRM 합성 사례에 적용. [판단 기록 양식](e-book/record.md) |
 | 도구 | 상황 기반 설계, 세 상태의 조건·근거 기록, CSV 분석·판단, 열 연결 템플릿과 시연 도움말을 제공합니다. 실행 환경·키보드·확대·복구 점검은 실제 시험 범위와 미실시 환경을 구분해 기록합니다. [현재 앱](tool/app/README.md), [다운로드](tool/downloads/README.md), [제품 합의](tool/prd/README.md), [남은 과제](tool/ROADMAP.md). 고정 질문과 사용자 확인은 AI 의미 분석이나 독립 실험 인증이 아닙니다. |
 | 영상 | A/B 테스트 교육 자료의 제작 코드. [안내](video-production/README.md) |
