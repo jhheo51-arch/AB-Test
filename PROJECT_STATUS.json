@@ -1,5 +1,5 @@
 {
-  "checked_at_seoul": "2026-11-25T15:21:21.859383+09:00",
+  "checked_at_seoul": "2026-11-25T15:38:42.243524+09:00",
   "book_title": "그래서, 이 캠페인 계속할까요?",
   "author": "허재혁",
   "publication_status": "별도 출판과 판매하지 않음. 공개 참고 자료",
@@ -9,7 +9,7 @@
     "markdown": "e-book/ebook.md",
     "pages": 127,
     "decision_page": 89,
-    "sha256": "2a3d601974568865f713c496408f93fa0a4f33878b18024f2e404cc8e8f070b0"
+    "sha256": "cb2117b145717934943fe6f9a70370db38eaa129dae262d4da3a8743707cb93c"
   },
   "storage_policy": {
     "github": "single_latest_without_version_paths",
@@ -18,17 +18,17 @@
   },
   "current_integrity_check": {
     "status": "passed",
-    "checked_at_seoul": "2026-11-25T15:21:21.859383+09:00",
+    "checked_at_seoul": "2026-11-25T15:38:42.243524+09:00",
     "scope": "Latest declared bytes and local links only; no statistical or reader retest",
-    "files_checked": 28,
-    "local_links_checked": 25,
+    "files_checked": 30,
+    "local_links_checked": 27,
     "pdf_pages_recorded": 127,
     "decision_page_recorded": 89,
-    "pdf_sha256": "2a3d601974568865f713c496408f93fa0a4f33878b18024f2e404cc8e8f070b0",
+    "pdf_sha256": "cb2117b145717934943fe6f9a70370db38eaa129dae262d4da3a8743707cb93c",
     "human_or_field_test_performed": false
   },
   "management_mode": "reported_errors_only",
-  "prior_review_notice": "저자 승인에 따른 전권 서술 개정과 두 읽기 경로 분리, 핵심 개념 36개 참고 해설 확장을 반영했다. 이후 승인된 장별 새 쪽, 데이터 그림 다섯 개의 시각 편집과 표지 간소화를 적용하고 조판 및 독서 기능을 재검사했다. 저자가 선택한 에디토리얼형 표지에서 제목은 기존 명조, 보조 글자는 SUIT Bold로 반영했으며 나머지 본문 페이지는 유지했다. 기존 실험 수치와 표, 코드 및 각주를 보존하고 AI 의미 대조와 독서 기능 및 조판을 검사했다. 과거 검수와 원자료는 로컬에 보존한다. 이 시각은 파일 무결성 검사 시각이며 통계 재계산이나 실제 독자시험의 완료 시각이 아니다.",
+  "prior_review_notice": "저자 승인에 따른 전권 서술 개정과 두 읽기 경로 분리, 핵심 개념 36개 참고 해설 확장을 반영했다. 이후 승인된 장별 새 쪽, 데이터 그림 다섯 개의 시각 편집과 표지 간소화를 적용하고 조판 및 독서 기능을 재검사했다. 저자가 선택한 에디토리얼형 표지에서 제목은 기존 명조, 보조 글자는 SUIT Bold로 반영했으며 나머지 본문 페이지는 유지했다. 웹 읽기본의 목차 바로가기, 본문 크기 조절과 각주 창을 보완하고 PDF 북마크 표시 설정을 적용했다. 기존 본문 내용과 모든 PDF 페이지의 렌더링 및 링크는 대조 보존했다. 기존 실험 수치와 표, 코드 및 각주를 보존하고 AI 의미 대조와 독서 기능 및 조판을 검사했다. 과거 검수와 원자료는 로컬에 보존한다. 이 시각은 파일 무결성 검사 시각이며 통계 재계산이나 실제 독자시험의 완료 시각이 아니다.",
   "known_historical_plan_byte_difference": "LF/CRLF 차이 고지 유지. 과거 원본을 수정해 차이를 지우지 않음.",
   "actual_reader_test_completed": false,
   "independent_human_review_completed": false,

@@ -4,17 +4,17 @@
   "author": "허재혁",
   "pdf_pages": 127,
   "decision_page": 89,
-  "file_count": 28,
+  "file_count": 30,
   "sha256": {
-    "README.md": "70ce8f8721048527c0b232aa5e0b639cfb51b38c63367c80d759ce93ac0d14ba",
+    "README.md": "fcd60e0b1ea3d80d5d7f938886f447e993bff5e1d9093e1fa6d992c56e7320c1",
     "assets/LICENSE-pagedjs.md": "f49bdde202ca66880e2d7cb7fd8103f43a917a60b61681484a66cf370e7647e0",
     "assets/LICENSE-sans.txt": "e35ffdebb2225b49814c31889cbb3ce69cb3509e6a9f431edaba5e1a6de8cd15",
     "assets/LICENSE-serif.txt": "64538aaa923b7e75559725ecf64eff7b18f623857b8e6d31a7347743ab27e907",
     "assets/reader-sans.woff2": "afa90a36e56072e7545dce530d841c8b966064a5bc0b49ff770e3992476d6799",
     "assets/reader-serif.woff2": "c1c3562015b415f650345dd11ea1867cc848358adcc8285d5c42d9a976a08448",
-    "ebook.html": "2db0f90024f2fc66aa7ca205e5898be6dccc7f83510dba77f1b7deb79a2b60e1",
+    "ebook.html": "955040f7d72cbd6aa6eaa8d3baeda950000e21444eb520a93dddd6e628665a7b",
     "ebook.md": "0e1a67a5dce5611d3987a5efda5897059e2f22700cb7cc452a55cfb0aa18af2e",
-    "ebook.pdf": "2a3d601974568865f713c496408f93fa0a4f33878b18024f2e404cc8e8f070b0",
+    "ebook.pdf": "cb2117b145717934943fe6f9a70370db38eaa129dae262d4da3a8743707cb93c",
     "figures/campaign_path.svg": "f25df2d3e1fd520dcbde8c5e1a3093b23e4238a36e556b2fc5fb685424b88e2c",
     "figures/capacity.svg": "04b17a101e9fe97f2c3f92c56415c16235d1d49074aa676bd165de78ab14be26",
     "figures/decision_record.svg": "12d1ce7e5771ad87eca16c95b4c4e54a462f7278504713f9b0206eea7bc79296",
@@ -33,7 +33,9 @@
     "record.md": "a1db48a1422d4e95e52a6494000c4736b2a50bec03866b3a80fb4bbf2a4b355f",
     "record.pdf": "65219a5c54b74f32087b39957eda77c5ec8c414f0da5ec30d3ee895142f2d7aa",
     "assets/cover-suit.woff2": "aa894a204d5a6fbae259dac6868d350cbd373a390caee0313f92946af741df23",
-    "assets/LICENSE-suit.txt": "30d101ee3c35ef629d622d933d261a27b2f60223e0a3b0f36791e569c2b9daa9"
+    "assets/LICENSE-suit.txt": "30d101ee3c35ef629d622d933d261a27b2f60223e0a3b0f36791e569c2b9daa9",
+    "assets/reader-tools.css": "a7146062ccaec67b5d3b10434b3416955e69788f1214597739aad41c714dcddd",
+    "assets/reader-tools.js": "62a0f13e84435cb4b3b8d8b5af0f1fa0a6141644414188e8f0c12f2a49d0830f"
   },
   "limits": [
     "Current file integrity, not a new statistical or human review",
