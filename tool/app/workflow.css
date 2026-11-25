@@ -20,10 +20,15 @@
 .rollout-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 20px;margin-top:16px}
 .rollout-grid fieldset{min-width:0;margin:0;padding:4px 16px 12px;border:1px solid var(--line);border-radius:14px}
 .rollout-grid legend{padding:0 6px;font-weight:700}
-.rollout-panel input[type=number],.rollout-panel select,.rollout-panel button{min-height:44px}
+.rollout-panel input[type=number],.rollout-panel input[type=text],.rollout-panel select,.rollout-panel button{min-height:44px}
+#rollout-entry{margin-top:28px;padding-top:12px;border-top:1px solid var(--line)}
+#rollout-criteria-summary{color:var(--ink);font-weight:650;overflow-wrap:anywhere}
+#rollout-criteria-heading,#rollout-entry-heading{scroll-margin-top:20px}
+.rollout-panel button{white-space:normal}
+.rollout-panel .toolbar{flex-wrap:wrap}
 .rollout-panel input[aria-invalid=true]{outline:2px solid currentColor}
 .rollout-result{margin-bottom:10px}
-.rollout-result h2,.rollout-result ul{margin:0}
+.rollout-result h3,.rollout-result ul{margin:0}
 .rollout-result ul{padding-left:1.25rem}
 .rollout-result li+li{margin-top:5px}
 @media(max-width:680px){.rollout-grid{grid-template-columns:minmax(0,1fr)}}

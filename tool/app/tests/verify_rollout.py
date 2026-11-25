@@ -43,7 +43,7 @@ def verify(page, url):
     page.locator("#rollout > summary").click()
     decision = page.locator("#rollout-decision")
     reasons = page.locator("#rollout-reasons")
-    expect(decision).to_have_text("확대 보류")
+    expect(decision).to_have_text("판정 대기")
     page.locator("#rollout-example").click()
 
     expect(decision).to_have_text("확대 보류")
@@ -86,7 +86,8 @@ def verify(page, url):
     ]:
         field = page.locator(selector)
         field.fill(invalid)
-        expect(decision).to_have_text("확대 보류")
+        expected = "판정 대기" if selector in ('[name="visit-b"]', '[name="optout-b"]') else "확대 보류"
+        expect(decision).to_have_text(expected)
         field.fill(valid)
         expect(decision).to_have_text("확대 검토 가능")
 
@@ -127,7 +128,7 @@ def verify_saved_report(page, url):
     )
     expect(page.locator("#rollout-decision")).to_have_text("확대 보류")
     expect(page.locator("#rollout-reasons li")).to_have_text(original)
-    share.click()
+    page.locator('#rollout-to-report').click()
     expect(page.locator("#csv-share-options")).to_be_hidden()
     preview = page.locator("#report-preview")
     scope = preview.locator(".rollout-scope")
@@ -190,10 +191,70 @@ def verify_saved_report(page, url):
     expect(page.locator('[name="visit-b"]')).to_have_value("")
 
 
+def verify_plan_first(page, url):
+    page.goto(url)
+    page.locator("#rollout-start").click()
+    expect(page.locator("#rollout-entry")).to_be_hidden()
+    page.locator("#rollout-goal-name").fill("예약 완료")
+    page.locator("#rollout-guard-name").fill("수신 철회")
+    page.locator('[name="visit-min"]').fill("0.50")
+    page.locator('[name="optout-max"]').fill("0.20")
+    page.locator("#rollout-next").click()
+    expect(page.locator("#rollout-criteria-summary")).to_contain_text("예약 완료 비율 최소 +0.5%p")
+    with page.expect_download() as saved:
+        page.locator("#save-project").click()
+    draft = saved.value.path().read_bytes()
+    assert json.loads(draft)["version"] == 9
+
+    page.reload()
+    page.locator("#project-file").set_input_files(
+        {"name": "criteria.json", "mimeType": "application/json", "buffer": draft}
+    )
+    expect(page.locator('[name="visit-min"]')).to_have_value("0.5")
+    expect(page.locator('[name="optout-max"]')).to_have_value("0.2")
+    expect(page.locator('[name="visit-b"]')).to_have_value("")
+    for name, value in {
+        "total-a": 15482, "visit-a": 1416, "optout-a": 129,
+        "total-b": 15603, "visit-b": 1597, "optout-b": 139,
+    }.items():
+        page.locator(f'[name="{name}"]').fill(str(value))
+    page.locator('[name="design-confirmed"]').check()
+    expect(page.locator("#rollout-decision")).to_have_text("확대 보류")
+    page.locator("#rollout-to-report").click()
+    expect(page.locator("#report-preview")).to_contain_text("예약 완료 비율")
+    expect(page.locator("#report-preview .report-warning")).to_have_count(0)
+    page.locator('nav [data-view="input"]').click()
+    page.locator('[name="visit-min"]').fill("0.51")
+    page.locator("#rollout-to-report").click()
+    expect(page.locator("#report-preview .report-warning")).to_be_visible()
+    page.locator("#share-confirm").check()
+    with page.expect_download() as saved:
+        page.locator("#export-report").click()
+    html = saved.value.path().read_text(encoding="utf-8")
+    assert all(heading in html for heading in (
+        "A/B 실험 판단 보고서", "판정 요약", "실험과 적용 범위",
+        "승리 조건과 판단 근거", "A/B 결과 입력", "다음 행동", "방법과 한계",
+    ))
+    assert "최소 개선폭 +0.510%p" in html and 'class="report-warning"' in html
+    assert page.evaluate("document.documentElement.scrollWidth === innerWidth")
+    with page.expect_download() as saved:
+        page.locator("#save-project").click()
+    result = saved.value.path().read_bytes()
+    assert json.loads(result)["version"] == 9
+    page.reload()
+    page.locator("#project-file").set_input_files(
+        {"name": "result.json", "mimeType": "application/json", "buffer": result}
+    )
+    page.locator("#rollout-to-report").click()
+    expect(page.locator("#report-preview .report-warning")).to_be_visible()
+    expect(page.locator("#report-preview")).to_contain_text("예약 완료 비율")
+
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--app", type=Path, default=Path(__file__).resolve().parents[1])
     parser.add_argument("--browser")
+    parser.add_argument("--no-record", action="store_true")
     args = parser.parse_args()
     with subprocess.Popen(
         [sys.executable, str(args.app.resolve() / "server.py")],
@@ -214,11 +275,13 @@ if __name__ == "__main__":
                     verify_shortcuts(page, url)
                     verify(page, url)
                     verify_saved_report(page, url)
+                    verify_plan_first(page, url)
                     page.close()
                     checks.append({"name":f"published rollout decision/persistence/report {width}px","pass":True})
                     print(f"PASS {width}px")
                 browser.close()
-                (args.app/"rollout_verification.json").write_text(json.dumps({"status":"PASS","count":len(checks),"checks":checks,"counting":"two viewport flow groups, not individual assertion count","actual_model_calls":0,"human_observations":0},ensure_ascii=False,indent=2),encoding="utf-8")
+                if not args.no_record:
+                    (args.app/"rollout_verification.json").write_text(json.dumps({"status":"PASS","count":len(checks),"checks":checks,"counting":"two viewport flow groups, not individual assertion count","actual_model_calls":0,"human_observations":0},ensure_ascii=False,indent=2),encoding="utf-8")
         finally:
             server.terminate()
             server.wait(timeout=15)

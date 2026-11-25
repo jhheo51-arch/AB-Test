@@ -21,6 +21,7 @@ function initDesign(){
  $('#design-fields').onchange=e=>{const k=e.target.dataset.designStatus;if(!k)return;const f=design.fields[k];if(!f.value.trim()){e.target.value='unknown';notify('빈 항목은 확인할 수 없습니다. 모르면 미확인으로 남겨 주세요.');return;}markChanged(false);f.status=e.target.value;design.revision++;if(design.resultSeen)design.changedAfterResult=true;};
  $('#design-candidates').innerHTML=ABDesign.candidates.map(c=>'<button type="button" data-candidate="'+c.id+'">'+esc(c.label)+'</button>').join('');
  $('#design-candidates').onclick=e=>{const id=e.target.dataset.candidate;if(!id)return;if(design.candidate&&!confirm('후보를 바꾸면 A/B·측정·배정·판정 초안을 교체하고 확인을 해제합니다. 계속할까요?'))return;ABDesign.propose(design,id);markChanged(false);designApply();designRender();};
+ $('#design-to-rollout').onclick=()=>{designApply();go('input');rollout.start();};
  $('#design-to-input').onclick=()=>{designApply();clearAssumptions();markChanged(false);go('input');notify('같은 실험 계획으로 결과 입력을 엽니다. 실제 배정·관측·집단 기준과 계획의 일치 여부는 별도로 확인하세요.');};
  for(const [k,id]of Object.entries(designMeta))$('#'+id).addEventListener('input',()=>{if(design){ABDesign.edit(design,k,$('#'+id).value);designRender();}});
  designRender();
