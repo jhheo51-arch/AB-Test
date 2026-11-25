@@ -1,6 +1,6 @@
 # CRM A/B 테스트 작업실
 
-**[현재 앱](app/README.md) · [첫 MVP 실행 ZIP](https://github.com/jhheo51-arch/AB-Test/releases/download/tool-rollout-report-20261123/AB_Test_Workspace_rollout_scope_mvp_20261124.zip) · [시연 영상](app/help/walkthrough.mp4) · [남은 과제](ROADMAP.md)**
+**[현재 앱](app/README.md) · [최신 실행 ZIP](https://github.com/jhheo51-arch/AB-Test/releases/download/tool-guided-flow-20261125/AB_Test_Workspace_guided_flow_20261125.zip) · [시연 영상](app/help/walkthrough.mp4) · [남은 과제](ROADMAP.md)**
 
 CRM 전체 운영이 아니라 A/B 테스트 설계·분석·판단을 돕습니다. 실제 실험은 외부에서 수행하고 기기 안에서 입력·계산·판단 기록을 연결합니다.
 

@@ -40,13 +40,17 @@ CSV나 표를 가지고 있지만 열 연결, 통계 결과 해석, 판단 기�
 
 가상 정기점검 사례에서 두 군의 입력값, 확대 기준, 보류 이유 네 가지를 바로 볼 수 있습니다. [공유 보고서 예시 보기](tool/app/examples/ROUTINE_SERVICE_ROLLOUT_REPORT.md)
 
-#### 실행 계획과 첫 MVP
+#### 최신 실행본
+
+실험 전에 **승리 조건 정하기**에서 기준을 저장하고, 관측이 끝나면 **이 기준으로 결과 입력**을 선택합니다. **판정과 보고서 저장**에서 정해진 양식의 HTML을 받을 수 있습니다. [최신 실행 ZIP](https://github.com/jhheo51-arch/AB-Test/releases/download/tool-guided-flow-20261125/AB_Test_Workspace_guided_flow_20261125.zip)에서는 원래 정기점검 사례로 이 흐름을 바로 확인할 수 있습니다.
+
+#### 첫 MVP에서 검증한 내용
 
 | 항목 | 이번 범위 |
 | --- | --- |
 | 목표 | 실험 대상, 분석 고객군, 실제 적용 범위와 확대 판단의 근거를 한 보고서에서 확인할 수 있도록 정리합니다. |
-| 첫 MVP | 기존 확대 판단 보고서에 **실험 대상 / 분석 고객군 / 적용 범위**를 각각 표시합니다. 가상 정기점검 원래 사례는 A/B 전체 집계를 비교하며, 고객군별 효과는 **미확인**, 최종 판단은 **확대 보류**입니다. 이 MVP는 새 실행 ZIP에서 열어 볼 수 있습니다. [실행 방법](tool/app/README.md#실행) |
-| 확인 방법 | 도구 첫 화면에서 **원래 사례**를 열고 **판단 정리**를 선택합니다. 미리보기와 내려받은 HTML에서 세 항목과 판정을 대조합니다. |
+| 첫 MVP | 기존 확대 판단 보고서에 **실험 대상 / 분석 고객군 / 적용 범위**를 각각 표시합니다. 가상 정기점검 원래 사례는 A/B 전체 집계를 비교하며, 고객군별 효과는 **미확인**, 최종 판단은 **확대 보류**입니다. 최신 실행본에서도 확인할 수 있습니다. [실행 방법](tool/app/README.md#실행) |
+| 확인 방법 | 도구 첫 화면에서 **원래 사례**를 열고 **판정과 보고서 저장**을 선택합니다. 미리보기와 내려받은 HTML에서 세 항목과 판정을 대조합니다. |
 | 검증 완료 | v5 계획서에 적은 경계값 점검을 배포 실행본에서 완료했습니다. 최소 개선폭을 +0.28%p에서 +0.29%p로 바꾸자 방문 기준만 충족에서 미충족으로 바뀌었습니다. 다른 보류 이유와 최종 **확대 보류**는 유지됐습니다. |
 
 ##### 최소 개선폭 경계값 검증
@@ -82,14 +86,14 @@ CSV나 표를 가지고 있지만 열 연결, 통계 결과 해석, 판단 기�
 
 **아직 지원하지 않는 것:** 자유로운 상황 설명에서 후보·실험 계획을 생성하는 전체 설계 대화, 시간·금액·순차·군집 분석, CRM 고객 관리·발송 운영. 책에서 설명하는 모든 방법이 앱에 구현된 것은 아닙니다.
 
-[도구 안내](tool/README.md) · [새 실행 ZIP](https://github.com/jhheo51-arch/AB-Test/releases/download/tool-rollout-report-20261123/AB_Test_Workspace_rollout_scope_mvp_20261124.zip) · [시연 영상](tool/app/help/walkthrough.mp4) · [지원 범위와 실행 방법](tool/app/README.md)
+[도구 안내](tool/README.md) · [새 실행 ZIP](https://github.com/jhheo51-arch/AB-Test/releases/download/tool-guided-flow-20261125/AB_Test_Workspace_guided_flow_20261125.zip) · [시연 영상](tool/app/help/walkthrough.mp4) · [지원 범위와 실행 방법](tool/app/README.md)
 
 **책과 도구의 관계:** 책은 실험과 판단의 기준을 설명하고, 도구는 그중 현재 지원하는 입력·계산·기록 절차를 실행하도록 돕습니다. 계산 결과가 실제 적용 승인이나 현장 효과의 증명을 대신하지는 않습니다.
 
 ## 처음 방문하셨나요?
 
 - **책 읽기:** [전자책 PDF](e-book/ebook.pdf) 또는 [웹 읽기본 HTML](e-book/ebook.html)을 내려받으세요. HTML은 `e-book/assets/`도 함께 같은 상대 위치에 둡니다. GitHub 파일 페이지는 앱이나 HTML 실행 화면이 아닙니다.
-- **도구 사용하기:** [새 실행 ZIP](https://github.com/jhheo51-arch/AB-Test/releases/download/tool-rollout-report-20261123/AB_Test_Workspace_rollout_scope_mvp_20261124.zip)을 내려받아 압축을 풀고 `launch.cmd`를 실행하세요. Windows와 Python 3가 필요합니다. 실행 창에 표시된 로컬 주소를 Chrome/Edge에서 엽니다. [실행 안내](tool/app/README.md)
+- **도구 사용하기:** [새 실행 ZIP](https://github.com/jhheo51-arch/AB-Test/releases/download/tool-guided-flow-20261125/AB_Test_Workspace_guided_flow_20261125.zip)을 내려받아 압축을 풀고 `launch.cmd`를 실행하세요. Windows와 Python 3가 필요합니다. 실행 창에 표시된 로컬 주소를 Chrome/Edge에서 엽니다. [실행 안내](tool/app/README.md)
 - **사용법 보기:** [시연 영상 MP4](tool/app/help/walkthrough.mp4)를 내려받거나, 실행한 앱의 **시연 영상 보기**를 누르세요. GitHub에서 바로 재생되지 않으면 파일 페이지의 다운로드 버튼을 이용하세요.
 
 기본 CSV 확인·통계 계산은 LLM 없이 사용할 수 있습니다. 선택 기능인 LLM 설명에는 별도의 Hermes 설치·프로필·모델 인증 설정이 필요하며, 연결 설정과 이용 비용은 사용자 환경에 따릅니다. 자유로운 자연어 설계 대화는 아직 제공하지 않습니다.
